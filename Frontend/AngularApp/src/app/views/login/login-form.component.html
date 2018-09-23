@@ -1,0 +1,45 @@
+
+<div class="col-md-6 col-md-offset-3" [hidden]="!submitted">
+  Please wait ...
+</div>
+<div class="col-md-6 col-md-offset-3" [hidden]="submitted">
+  <h2>Login</h2>
+  <form #loginForm="ngForm">
+    <div class="form group">
+      <label for="username" class="">Username</label>
+      <input
+        class="form-control"
+        id="username"
+        name="username"
+        type="text"
+        autocomplete="username"
+        placeholder="Enter username..."
+        [(ngModel)]="model.username"
+      >
+      <div class="help-block">Username is required</div>
+    </div>
+    <div class="form group">
+      <label for="password" class="">Username</label>
+      <input
+        class="form-control"
+        id="password"
+        name="password"
+        type="password"
+        autocomplete="current-password"
+        placeholder="Enter password..."
+        [(ngModel)]="model.password"
+      >
+      <div class="help-block">Password is required</div>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="remember" [(ngModel)]="model.remember">
+        Remember me
+      </label>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="onSubmit()">Login</button>
+      <a href="" class="btn btn-link">Cancel</a>
+    </div>
+  </form>
+</div>
