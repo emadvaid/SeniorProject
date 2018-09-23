@@ -54,7 +54,7 @@
                 name="language1"
                 [(ngModel)]="model.language1"
             >
-                <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
+                <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
             </select>
         </label>
     </div>
@@ -67,7 +67,7 @@
                     name="language2"
                     [(ngModel)]="model.language2"
                 >
-                    <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
+                    <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
                 </select>
             </label>
         </div>
@@ -80,7 +80,7 @@
                         name="role"
                         [(ngModel)]="model.role"
                     >
-                        <option *ngFor="let lang of roleArry" [ngValue]="role">{{lang.name}}</option>
+                        <option *ngFor="let role of roleArry" [ngValue]="role.name">{{role.name}}</option>
                     </select>
                 </label>
             </div>
@@ -90,8 +90,8 @@
                       Active
                     </label>
                   </div>
-        <div class="form-group">
+            <div class="form-group">
                 <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
                 <a href="" class="btn btn-link">Cancel</a>
-              </div>
+            </div>
 </form>

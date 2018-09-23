@@ -16,11 +16,7 @@ export class LoginFormComponent implements OnInit {
   submitted = false;
   private returnUrl: string;
 
-  constructor(
-    private router: Router,
-    private userLoginService: UserLoginService
-  ) {
-  }
+  constructor(private router: Router, private userLoginService: UserLoginService) {}
 
   ngOnInit() {
     // first log out of the current session

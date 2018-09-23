@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { UserService } from '../../../../services/users/user.service';
 
 @Component({
     selector: 'app-create-users',
@@ -10,6 +13,8 @@ export class CreateUserComponent implements OnInit {
     submitted = false;
     langArry: any;
     roleArry: any;
+
+    constructor(private router: Router, private userService: UserService) {}
 
     ngOnInit() {
         this.model = {};
@@ -35,6 +40,33 @@ export class CreateUserComponent implements OnInit {
             {name: 'Admin'},
             {name: 'Dealer'}
         ];
+    }
+
+    onSubmit() {
+        // validate
+        // call service method
+
+    }
+
+    validate(): boolean {
+        return (
+            !this.isEmpty (this.model.username)
+            && !this.isEmpty(this.model.language1.name)
+            && !this.isEmpty(this.model.language2.name)
+            && !this.isEmpty(this.model.active)
+            && !this.isEmpty(this.model.role)
+            && (this.model.role === 'Admin' || this.model.role === 'Dealer')
+        );
+    }
+
+    isEmpty(str: string): boolean {
+        if (str && typeof(str) === 'string') {
+            if (str.length > 0) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     get diagnostics() {

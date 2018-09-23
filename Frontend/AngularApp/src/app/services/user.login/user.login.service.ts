@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Http, Response, Headers, RequestOptions } from '@angular/Http';
 import {map} from 'rxjs/operators';
+
 @Injectable()
 export class UserLoginService {
     private accessToken: string = null;
@@ -19,7 +20,7 @@ export class UserLoginService {
         return this.http.post('http://localhost:8080/AuthorizeUser', {
                 username: username,
                 password: password
-        }, options).pipe(map(resp => {
+        }, options).pipe(map((resp: any) => {
             if (resp) {
                 const respBody = resp.json();
 
