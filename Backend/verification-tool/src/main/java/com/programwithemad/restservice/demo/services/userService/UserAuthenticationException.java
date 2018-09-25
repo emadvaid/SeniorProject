@@ -1,6 +1,6 @@
 package com.programwithemad.restservice.demo.services.userService;
 
-public class UserAuthenticationException extends RuntimeException {
+public class UserAuthenticationException extends UserException {
 
     public UserAuthenticationException() {
     }

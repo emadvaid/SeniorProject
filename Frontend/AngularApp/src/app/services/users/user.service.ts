@@ -14,10 +14,12 @@ export class UserService {
 
     createUser(user: User): Observable<User> {
 
-        const headers = new Headers({'Content=Type': 'application/Json'});
+        const headers = new Headers({'Content-Type': 'application/Json'});
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.post('', {}, options)
+        return this.http.post('http://localhost:8080/users', {
+            userDetails: user
+        }, options)
         .pipe(
             map((resp: any) => {
 

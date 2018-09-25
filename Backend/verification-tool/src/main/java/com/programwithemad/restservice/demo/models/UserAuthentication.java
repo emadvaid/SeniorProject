@@ -30,7 +30,7 @@ public class UserAuthentication {
         this.type = type;
     }
 
-    public UserAuthentication(User authCredentials) {
+    public UserAuthentication(UserRec authCredentials) {
         this.accessToken = null;
         this.userId = authCredentials.getId();
         this.type = authCredentials.getType();

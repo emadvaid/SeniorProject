@@ -8,8 +8,8 @@ public class AuthUserResponse {
     public AuthUserResponse() {
     }
 
-    public AuthUserResponse(User user, UserAuthentication auth) {
-        this.user = user;
+    public AuthUserResponse(User userRec, UserAuthentication auth) {
+        this.user = userRec;
         this.auth = auth;
     }
 
@@ -17,8 +17,8 @@ public class AuthUserResponse {
         return user;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(User userRec) {
+        this.user = userRec;
     }
 
     public UserAuthentication getAuth() {

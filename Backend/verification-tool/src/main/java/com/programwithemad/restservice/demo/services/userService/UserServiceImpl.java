@@ -4,17 +4,20 @@ import com.programwithemad.restservice.demo.dao.users.UserRepository;
 import com.programwithemad.restservice.demo.dao.authentication.UserAuthenticationRepository;
 import com.programwithemad.restservice.demo.models.AuthUserResponse;
 import com.programwithemad.restservice.demo.models.User;
+import com.programwithemad.restservice.demo.models.UserRec;
 import com.programwithemad.restservice.demo.models.UserAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    UserRepository credDao;
+    UserRepository userDao;
 
     @Autowired
     UserAuthenticationRepository authDao;
@@ -27,30 +30,72 @@ public class UserServiceImpl implements UserService {
             throw new UserAuthenticationException("Username and Password required");
         }
 
-        // try to find a user record for the given username
-        Optional<User> userOpt = credDao.findById(username);
+        // try to find a userRec record for the given username
+        Optional<UserRec> userOpt = userDao.findById(username);
 
         // fail if record not found
         if(!userOpt.isPresent()){
-            throw new UserAuthenticationException("User not found: username = " + username);
+            throw new UserAuthenticationException("UserRec not found: username = " + username);
         }
 
-        User user = userOpt.get();
+        UserRec userRec = userOpt.get();
 
         // fail if the passwords don't match
-        if(!password.equals(user.getPassword())){
-            throw new UserAuthenticationException("Password not match for user: username = " + username);
+        if(!password.equals(userRec.getPassword())){
+            throw new UserAuthenticationException("Password not match for userRec: username = " + username);
         }
 
-        // user is authenticated so create a auth record
+        // userRec is authenticated so create a auth record
         UserAuthentication auth = authDao.save(
-                new UserAuthentication(user.getId(), user.getType()));
+                new UserAuthentication(userRec.getId(), userRec.getType()));
 
-        // create a temp user object to return
-        User tmp = new User(user);
+        // create a temp userRec object to return
+        UserRec tmp = new UserRec(userRec);
         // make sure to remove the password
         tmp.setPassword(null);
         // return the new users record
-        return new AuthUserResponse(tmp, auth);
+        return new AuthUserResponse(new User(tmp), auth);
+    }
+
+    @Override
+    public User createUser(User newUserRecDetails) {
+
+        // check for empty username
+        if(newUserRecDetails == null){
+            throw new UserException("newUserRecDetails can not be null");
+        }
+
+        // check for empty username
+        if(newUserRecDetails.getUsername()==null || newUserRecDetails.getUsername().length()<1){
+            throw new UserException("Username cant be empty");
+        }
+
+        // check for duplicate username
+        if(userDao.findById(newUserRecDetails.getUsername()).isPresent()){
+            throw new UserException("Username already exists.");
+        }
+
+        // Make sure user id is null
+        UserRec tmpUserRec = new UserRec(newUserRecDetails);
+        tmpUserRec.setId(null);
+
+        // insert the new user
+        return new User(userDao.save(tmpUserRec));
+    }
+
+    public List<User> getUsers(){
+        // get the user records from the database
+        List<UserRec> userRecList = userDao.findAll();
+
+        // create a result list of user to pass back
+        List<User> results = new ArrayList<>();
+
+        // map the user records into user objects
+        for(UserRec userRec: userRecList) {
+            results.add(new User(userRec));
+        }
+
+        // return the user records
+        return results;
     }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { UserService } from '../../../../services/users/user.service';
+import { User, UserTypes } from 'Translation-Verification-Tool/Frontend/AngularApp/src/app/models/User';
 
 @Component({
     selector: 'app-create-users',
@@ -35,25 +36,62 @@ export class CreateUserComponent implements OnInit {
             {name: 'Thai'},
             {name: 'Vietnamese'},
         ];
-        this.model = {};
         this.roleArry = [
             {name: 'Admin'},
             {name: 'Dealer'}
         ];
+        this.model.role = 'Dealer';
     }
 
-    onSubmit() {
+    onSubmit(): void {
         // validate
+        if (!this.validate()) {
+            console.log('onSubmit: validation error');
+            return;
+        }
         // call service method
+        this.submitted = true;
+
+        const newUser = new User();
+        newUser.username = this.model.username;
+        newUser.firstName = this.model.firstName;
+        newUser.lastName = this.model.lastName;
+        newUser.email = this.model.email;
+        newUser.language1 = this.model.language1;
+        newUser.language2 = this.model.language2;
+        newUser.isActive = this.model.active;
+
+        // map the type
+        switch (this.model.type) {
+            case 'Admin':
+                newUser.type = UserTypes.admin;
+                break;
+            case 'Dealer':
+                newUser.type = UserTypes.dealer;
+                break;
+            default:
+                newUser.type = UserTypes.unknown;
+        }
+
+        this.userService.createUser(newUser)
+            .subscribe((user: User) => {
+                // succesfully created a new user so redirect to the manage user page
+                this.router.navigate(['/admin/manageUsers']);
+            });
 
     }
 
     validate(): boolean {
+        console.log('this.model.username', this.model.username,
+            'this.isEmpty (this.model.username)', this.isEmpty (this.model.username));
+        console.log('this.model.language1', this.model.language1,
+            'this.isEmpty (this.model.language1)', this.isEmpty (this.model.language1));
+        console.log('this.model.role', this.model.role,
+            'this.isEmpty (this.model.role)', this.isEmpty (this.model.role));
+
         return (
             !this.isEmpty (this.model.username)
-            && !this.isEmpty(this.model.language1.name)
-            && !this.isEmpty(this.model.language2.name)
-            && !this.isEmpty(this.model.active)
+            && !this.isEmpty(this.model.language1)
             && !this.isEmpty(this.model.role)
             && (this.model.role === 'Admin' || this.model.role === 'Dealer')
         );
@@ -62,11 +100,11 @@ export class CreateUserComponent implements OnInit {
     isEmpty(str: string): boolean {
         if (str && typeof(str) === 'string') {
             if (str.length > 0) {
-                return true;
+                return false;
             }
         }
 
-        return false;
+        return true;
     }
 
     get diagnostics() {

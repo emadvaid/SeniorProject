@@ -1,19 +1,9 @@
 package com.programwithemad.restservice.demo.models;
 
-import javax.persistence.*;
+public class User {
 
-@Entity
-@Table(name="user")
-public class UserRec {
-
-    @Id
     private String username;
-
-    // The user id field
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String password = null;
     private String type;
     private boolean isActive = false;
     private String firstName;
@@ -22,10 +12,10 @@ public class UserRec {
     private String language1;
     private String language2;
 
-    public UserRec() {
+    public User() {
     }
 
-    public UserRec(User original) {
+    public User(UserRec original) {
         this.username = original.getUsername();
         this.type = original.getType();
         this.isActive = original.isActive();
@@ -34,27 +24,14 @@ public class UserRec {
         this.email = original.getEmail();
         this.language1 = original.getLanguage1();
         this.language2 = original.getLanguage2();
-        password = null;
     }
 
-    public UserRec(UserRec original) {
-        this.username = original.username;
-        this.password = original.password;
-        this.type = original.type;
-        this.isActive = original.isActive;
-        this.firstName = original.firstName;
-        this.lastName = original.lastName;
-        this.email = original.email;
-        this.language1 = original.language1;
-        this.language2 = original.language2;
-        password = null;
-    }
-
-    public UserRec(String username, String type, boolean isActive,
-                   String firstName, String lastName, String email,
-                   String language1, String language2) {
+    public User(String username, Long id, String type,
+                boolean isActive, String firstName,
+                String lastName, String email,
+                String language1, String language2) {
         this.username = username;
-        this.password = password;
+        this.id = id;
         this.type = type;
         this.isActive = isActive;
         this.firstName = firstName;
@@ -62,7 +39,6 @@ public class UserRec {
         this.email = email;
         this.language1 = language1;
         this.language2 = language2;
-        password = null;
     }
 
     public String getUsername() {
@@ -79,14 +55,6 @@ public class UserRec {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getType() {

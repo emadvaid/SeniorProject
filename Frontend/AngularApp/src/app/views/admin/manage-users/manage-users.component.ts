@@ -9,9 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./manage-users.component.css']
 })
 export class ManageUsersComponent implements OnInit {
-    model: any = {
-        dealerProfiles: []
-    };
+    model: any = { };
 
     // Inject the http object into our class, so we can use it in our Ajax call
     constructor(private http: Http, private router: Router) {}
@@ -19,21 +17,21 @@ export class ManageUsersComponent implements OnInit {
     // initialize this component by making an Ajax call to our dealer profile service
     //  to get the deal list
     ngOnInit() {
-        this.http.get('http://localhost:8080/dealerProfiles')
+        this.http.get('http://localhost:8080/users')
             .subscribe(
                 resp => {
-                    console.log('ManageDealersComponent ajax response: ', resp);
+                    console.log('ManageUsersComponent ajax response: ', resp);
                     if (resp) {
                         const respBody = resp.json();
-                        console.log('ManageDealersComponent loaded dealer list: ', respBody);
-                        if (respBody.profiles) {
-                            this.model.dealerProfiles = respBody.profiles;
+                        console.log('ManageUsersComponent loaded user list: ', respBody);
+                        if (respBody.users) {
+                            this.model.users = respBody.users;
                         }
                     }
 
                 },
                 err => {
-                    console.log('ManageDealersComponent error loading dealer list: ', err);
+                    console.log('ManageUsersComponent error loading dealer list: ', err);
                 }
             );
     }
@@ -42,4 +40,10 @@ export class ManageUsersComponent implements OnInit {
     createUser() {
         this.router.navigate(['admin/createUser']);
     }
+
+    get diagnostics() {
+        return 'model = ' + JSON.stringify(this.model);
+      }
 }
+
+

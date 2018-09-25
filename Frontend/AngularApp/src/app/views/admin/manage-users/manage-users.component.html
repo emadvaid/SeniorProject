@@ -1,3 +1,4 @@
+{{diagnostics}}
 <nav>
     <ul class="nav-links">
       <li class="nav-link"><a routerLink="/home" routerLinkActive="active">Users</a></li>
@@ -47,10 +48,10 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr *ngFor="let user of model.user">
+                      <tr *ngFor="let user of model.users">
                       <td>{{user.username}}</td>
                       <td>{{user.type}}</td>
-                      <td>{{user.is_active}}</td>
+                      <td>{{user.active}}</td>
                       </tr>
                   </tbody>
               </table>
