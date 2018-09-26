@@ -4,8 +4,8 @@ public class User {
 
     private String username;
     private Long id;
-    private String type;
-    private boolean isActive = false;
+    private String typeAsStr;
+    private boolean isActive = true;
     private String firstName;
     private String lastName;
     private String email;
@@ -17,7 +17,7 @@ public class User {
 
     public User(UserRec original) {
         this.username = original.getUsername();
-        this.type = original.getType();
+        this.typeAsStr = original.getType();
         this.isActive = original.isActive();
         this.firstName = original.getFirstName();
         this.lastName = original.getLastName();
@@ -26,13 +26,13 @@ public class User {
         this.language2 = original.getLanguage2();
     }
 
-    public User(String username, Long id, String type,
+    public User(String username, Long id, String typeAsStr,
                 boolean isActive, String firstName,
                 String lastName, String email,
                 String language1, String language2) {
         this.username = username;
         this.id = id;
-        this.type = type;
+        this.typeAsStr = typeAsStr;
         this.isActive = isActive;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -57,12 +57,12 @@ public class User {
         this.id = id;
     }
 
-    public String getType() {
-        return type;
+    public String getTypeAsStr() {
+        return typeAsStr;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTypeAsStr(String typeAsStr) {
+        this.typeAsStr = typeAsStr;
     }
 
     public boolean isActive() {

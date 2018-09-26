@@ -29,6 +29,12 @@ public class UsersController {
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
 
+    /**
+     * Creates a new user.
+     *
+     * @param request the http request.
+     * @return The new user object wrapped in a {@code ResponseEntity.}
+     */
     @CrossOrigin
     @PostMapping("/users")
     public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {

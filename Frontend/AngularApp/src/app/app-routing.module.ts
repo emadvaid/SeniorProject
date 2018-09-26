@@ -35,7 +35,7 @@ const appRoutes: Routes = [
     path: 'dealer',
     canActivate: [UserTypeAuthGuardService],
     data: {
-      expectedUserType: UserTypes.admin
+      expectedUserType: UserTypes.dealer
     },
     children: [
       {path: '', component: DealerDashboardComponent}

@@ -6,16 +6,17 @@ import javax.persistence.*;
 @Table(name="user")
 public class UserRec {
 
-    @Id
-    private String username;
-
     // The user id field
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long id = null;
+
+    @Column(unique = true, nullable = false)
+    private String username;
 
     private String password = null;
     private String type;
-    private boolean isActive = false;
+    private boolean isActive = true;
     private String firstName;
     private String lastName;
     private String email;
@@ -27,7 +28,7 @@ public class UserRec {
 
     public UserRec(User original) {
         this.username = original.getUsername();
-        this.type = original.getType();
+        this.type = original.getTypeAsStr();
         this.isActive = original.isActive();
         this.firstName = original.getFirstName();
         this.lastName = original.getLastName();

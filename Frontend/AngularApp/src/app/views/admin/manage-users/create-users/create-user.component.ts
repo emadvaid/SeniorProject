@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { UserService } from '../../../../services/users/user.service';
-import { User, UserTypes } from 'Translation-Verification-Tool/Frontend/AngularApp/src/app/models/User';
+import { User } from '../../../../models/User';
 
 @Component({
     selector: 'app-create-users',
@@ -36,11 +36,19 @@ export class CreateUserComponent implements OnInit {
             {name: 'Thai'},
             {name: 'Vietnamese'},
         ];
+        this.model.language1 = 'English';
         this.roleArry = [
             {name: 'Admin'},
             {name: 'Dealer'}
         ];
         this.model.role = 'Dealer';
+
+        // just for dev purposes
+        const rnd = Math.floor(10000 * Math.random());
+        this.model.username = 'testusername' + rnd;
+        this.model.firstName = 'first' + rnd;
+        this.model.lastName = 'last' + rnd;
+        this.model.email = 'testusername' + rnd + '@test.com';
     }
 
     onSubmit(): void {
@@ -52,7 +60,7 @@ export class CreateUserComponent implements OnInit {
         // call service method
         this.submitted = true;
 
-        const newUser = new User();
+        const newUser: User = new User();
         newUser.username = this.model.username;
         newUser.firstName = this.model.firstName;
         newUser.lastName = this.model.lastName;
@@ -60,18 +68,9 @@ export class CreateUserComponent implements OnInit {
         newUser.language1 = this.model.language1;
         newUser.language2 = this.model.language2;
         newUser.isActive = this.model.active;
+        newUser.typeAsStr = this.model.role;
 
-        // map the type
-        switch (this.model.type) {
-            case 'Admin':
-                newUser.type = UserTypes.admin;
-                break;
-            case 'Dealer':
-                newUser.type = UserTypes.dealer;
-                break;
-            default:
-                newUser.type = UserTypes.unknown;
-        }
+        console.log('onSubmit(): newUser = ', newUser);
 
         this.userService.createUser(newUser)
             .subscribe((user: User) => {

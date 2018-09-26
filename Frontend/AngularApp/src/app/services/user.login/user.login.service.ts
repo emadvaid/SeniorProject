@@ -24,6 +24,8 @@ export class UserLoginService {
             if (resp) {
                 const respBody = resp.json();
 
+                console.log('authenticateWithUsernamePassword: ', respBody);
+
                 this.accessToken = respBody.auth.accessToken;
 
                 this.loggedInUser = new User();
@@ -34,19 +36,8 @@ export class UserLoginService {
                 this.loggedInUser.language2 =  respBody.user.language2;
                 this.loggedInUser.firstName =  respBody.user.firstName;
                 this.loggedInUser.lastName =  respBody.user.lastName;
+                this.loggedInUser.typeAsStr =  respBody.user.typeAsStr;
 
-                const type: string =  respBody.user.type;
-
-                switch (type) {
-                    case 'admin':
-                        this.loggedInUser.type = UserTypes.admin;
-                        break;
-                    case 'dealer':
-                        this.loggedInUser.type = UserTypes.dealer;
-                        break;
-                    default:
-                        this.loggedInUser.type = UserTypes.unknown;
-                }
                 console.log('User = ', this.loggedInUser);
 
                 return Object.assign({}, this.loggedInUser);

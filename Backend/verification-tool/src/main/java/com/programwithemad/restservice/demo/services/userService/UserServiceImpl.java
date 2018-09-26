@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
         }
 
         // try to find a userRec record for the given username
-        Optional<UserRec> userOpt = userDao.findById(username);
+        Optional<UserRec> userOpt = userDao.findByUsername(username);
 
         // fail if record not found
         if(!userOpt.isPresent()){
@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User createUser(User newUserRecDetails) {
 
-        // check for empty username
+        // check for empty details
         if(newUserRecDetails == null){
             throw new UserException("newUserRecDetails can not be null");
         }
@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService {
         }
 
         // check for duplicate username
-        if(userDao.findById(newUserRecDetails.getUsername()).isPresent()){
+        if(userDao.findByUsername(newUserRecDetails.getUsername()).isPresent()){
             throw new UserException("Username already exists.");
         }
 

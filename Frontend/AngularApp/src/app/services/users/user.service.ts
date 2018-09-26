@@ -29,16 +29,6 @@ export class UserService {
 
                     const newUser = respBody.userDetails;
 
-                    switch (newUser.type) {
-                        case 'admin':
-                            newUser.type = UserTypes.admin;
-                            break;
-                        case 'dealer':
-                            newUser.type = UserTypes.dealer;
-                            break;
-                        default:
-                            newUser.type = UserTypes.unknown;
-                    }
                     console.log('User = ', newUser);
 
                     return newUser;
