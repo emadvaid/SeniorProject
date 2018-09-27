@@ -38,10 +38,10 @@ export class CreateUserComponent implements OnInit {
         ];
         this.model.language1 = 'English';
         this.roleArry = [
-            {name: 'Admin'},
-            {name: 'Dealer'}
+            {name: 'admin'},
+            {name: 'dealer'}
         ];
-        this.model.role = 'Dealer';
+        this.model.role = 'dealer';
 
         // just for dev purposes
         const rnd = Math.floor(10000 * Math.random());
@@ -92,7 +92,7 @@ export class CreateUserComponent implements OnInit {
             !this.isEmpty (this.model.username)
             && !this.isEmpty(this.model.language1)
             && !this.isEmpty(this.model.role)
-            && (this.model.role === 'Admin' || this.model.role === 'Dealer')
+            && (this.model.role === 'admin' || this.model.role === 'dealer')
         );
     }
 
