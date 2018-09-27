@@ -1,18 +1,22 @@
 import {Injectable} from '@angular/core';
-import { User, UserTypes } from '../../models/User';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Http, Response, Headers, RequestOptions } from '@angular/Http';
 import {map} from 'rxjs/operators';
 
+import { User, UserTypes } from '../../models/User';
+
 @Injectable()
 export class UserLoginService {
-    private accessToken: string = null;
-    private loggedInUser: User;
+    private _accessToken: string = null;
+    private _loggedInUser: User;
 
     constructor(private http: Http) {}
 
-    authenticateWithUsernamePassword(username, password): Observable<User> {
+    public authenticateWithUsernamePassword(username, password): Observable<User> {
+
+        // first log out the current user
+        this.logout();
 
         const headers = new Headers({ 'Content-Type': 'application/json' });
         const  options = new RequestOptions({ headers: headers });
@@ -26,47 +30,96 @@ export class UserLoginService {
 
                 console.log('authenticateWithUsernamePassword: ', respBody);
 
-                this.accessToken = respBody.auth.accessToken;
+                // if the user is not active then deny the login
+                if (!respBody.user.active) {
+                    console.log('Tried to authenticate a inactive user');
+                    this.logout();
+                    return null;
+                }
 
-                this.loggedInUser = new User();
-                this.loggedInUser.id = respBody.user.id;
-                this.loggedInUser.isActive =  respBody.user.active;
-                this.loggedInUser.email =  respBody.user.email;
-                this.loggedInUser.language1 =  respBody.user.language1;
-                this.loggedInUser.language2 =  respBody.user.language2;
-                this.loggedInUser.firstName =  respBody.user.firstName;
-                this.loggedInUser.lastName =  respBody.user.lastName;
-                this.loggedInUser.typeAsStr =  respBody.user.typeAsStr;
+                this._accessToken = respBody.auth.accessToken;
 
-                console.log('User = ', this.loggedInUser);
+                this._loggedInUser = new User();
+                this._loggedInUser.id = respBody.user.id;
+                this._loggedInUser.isActive =  respBody.user.active;
+                this._loggedInUser.email =  respBody.user.email;
+                this._loggedInUser.language1 =  respBody.user.language1;
+                this._loggedInUser.language2 =  respBody.user.language2;
+                this._loggedInUser.firstName =  respBody.user.firstName;
+                this._loggedInUser.lastName =  respBody.user.lastName;
+                this._loggedInUser.typeAsStr =  respBody.user.typeAsStr;
 
-                return Object.assign({}, this.loggedInUser);
+                // save the User and access token to local storage
+                localStorage.setItem('access-token', this._accessToken);
+                localStorage.setItem('user', JSON.stringify(this._loggedInUser));
+
+                console.log('User = ', this._loggedInUser);
+
+                return Object.assign({}, this._loggedInUser);
             }
 
             return null;
         })).pipe(catchError(err => this.handleError(err)));
     }
 
-    logout(): void {
-        this.loggedInUser = null;
-        this.accessToken = null;
+    public logout(): void {
+        // clear the user variables
+        this._loggedInUser = null;
+        this._accessToken = null;
+
+        // clear the local storage
+        localStorage.clear();
     }
 
-    get getUserType(): UserTypes {
-        if (!this.isLoggedIn || !this.loggedInUser) {
+    public get getUserType(): UserTypes {
+        if (!this.isLoggedIn || !this._loggedInUser) {
             return UserTypes.unknown;
         } else {
-            return this.loggedInUser.type;
+            return this._loggedInUser.type;
         }
     }
 
-    get isLoggedIn(): boolean {
-        return this.accessToken && this.accessToken.length > 0;
+    public get user(): User {
+        if (this.isLoggedIn) {
+            return Object.assign({}, this._loggedInUser);
+        } else {
+            return null;
+        }
     }
 
-    isUserType(userType: UserTypes) {
+    public get accessToken(): string {
         if (this.isLoggedIn) {
-            return this.loggedInUser && this.loggedInUser.type === userType;
+            return this._accessToken.slice();
+        } else {
+            return null;
+        }
+    }
+
+    public get isLoggedIn(): boolean {
+        // fetch the user and access token from local storage, if not cached
+        if (!this._accessToken || this._accessToken.length < 1) {
+            this._accessToken = localStorage.getItem('access-token');
+
+            const stringifiedUser = localStorage.getItem('user');
+
+            if (stringifiedUser) {
+                this._loggedInUser = JSON.parse(localStorage.getItem('user'));
+            }
+        }
+        return this._accessToken && this._accessToken.length > 0;
+    }
+
+    public isUserActive(userType: UserTypes) {
+        if (this.isLoggedIn) {
+            return this._loggedInUser && this._loggedInUser.isActive;
+        }
+
+        return false;
+    }
+
+    public isUserType(userType: UserTypes) {
+        if (this.isLoggedIn) {
+            return this._loggedInUser && this._loggedInUser.type === userType;
         }
 
         return false;

@@ -32,8 +32,8 @@ export class EditUserComponent implements OnInit {
         ];
         this.model = {};
         this.roleArry = [
-            {name: 'Admin'},
-            {name: 'Dealer'}
+            {name: 'admin'},
+            {name: 'dealer'}
         ];
     }
 
