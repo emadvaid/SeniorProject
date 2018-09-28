@@ -13,6 +13,7 @@ import { UserTypeAuthGuardService } from './services/auth/authGuard.service';
 import { ManageUsersComponent } from './views/admin/manage-users/manage-users.component';
 import { CreateUserComponent } from './views/admin/manage-users/create-users/create-user.component';
 import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-user.component';
+import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
       {path: 'manageUsers', component: ManageUsersComponent},
       {path: 'createUser' , component: CreateUserComponent},
       {path: 'editUser' , component: EditUserComponent},
+      {path: 'importFile', component: FileFunctionsComponent}
     ]
   },
   {
