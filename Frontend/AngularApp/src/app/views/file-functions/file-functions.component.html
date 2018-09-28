@@ -1,0 +1,10 @@
+<h1>File Import/Export</h1>
+
+<input type="file" name="XML" ng2FileSelect [uploader]="uploader"/>
+
+<button type="button" class="btn btn-success btn-s"
+        (click)="uploader.uploadAll()"
+        [disabled]="!trueFalse" >
+  Upload an XML file
+</button>
+<h2>{{indicator}}</h2>
