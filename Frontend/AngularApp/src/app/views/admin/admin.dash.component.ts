@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <ul class="nav-links">
         <li class="nav-link"><a routerLink="/admin/manageUsers" routerLinkActive="active">Manage Users</a></li>
         <li class="nav-link"><a routerLink="/home" routerLinkActive="active">Languages</a></li>
-        <li class="nav-link"><a routerLink="/home" routerLinkActive="active">Import/Export XML</a></li>
+        <li class="nav-link"><a routerLink="/admin/importFile" routerLinkActive="active">Import/Export XML</a></li>
         <li class="nav-link"><a routerLink="/home" routerLinkActive="active">View Translations</a></li>
       </ul>
     </nav>

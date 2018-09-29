@@ -9,11 +9,15 @@ import { AppComponent } from './app.component';
 import { UserLoginService } from './services/user.login/user.login.service';
 import { UserTypeAuthGuardService } from './services/auth/authGuard.service';
 import { Http, HttpModule } from '@angular/Http';
+import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
+import { FileSelectDirective} from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    FileFunctionsComponent,
+    FileSelectDirective
   ],
   imports: [
     HttpModule,
