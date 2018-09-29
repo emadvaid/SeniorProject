@@ -10,7 +10,6 @@ const REMEMBERED_USERNAME = 'remembered_username';
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css']
 })
-
 export class LoginFormComponent implements OnInit {
   model: any = {};
   submitted = false;

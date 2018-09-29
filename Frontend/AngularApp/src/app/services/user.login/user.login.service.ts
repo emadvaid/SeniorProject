@@ -9,7 +9,7 @@ import { User, UserTypes } from '../../models/User';
 @Injectable()
 export class UserLoginService {
     private _accessToken: string = null;
-    private _loggedInUser: User;
+    private _loggedInUser: User = null;
 
     constructor(private http: Http) {}
 
