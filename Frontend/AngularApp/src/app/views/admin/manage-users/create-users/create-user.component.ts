@@ -105,8 +105,4 @@ export class CreateUserComponent implements OnInit {
 
         return true;
     }
-    get diagnostics() {
-      return 'model = ' + JSON.stringify(this.model)
-        + ', submitted = ' + this.submitted;
-    }
 }

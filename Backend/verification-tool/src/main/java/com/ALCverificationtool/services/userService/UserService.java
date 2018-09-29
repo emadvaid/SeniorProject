@@ -1,6 +1,6 @@
 package com.ALCverificationtool.services.userService;
 
-import com.ALCverificationtool.models.AuthUserResponse;
+import com.ALCverificationtool.controllers.users.AuthUserResponse;
 import com.ALCverificationtool.models.User;
 
 import java.util.List;

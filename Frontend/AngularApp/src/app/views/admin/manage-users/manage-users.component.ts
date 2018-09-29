@@ -34,10 +34,6 @@ export class ManageUsersComponent implements OnInit {
     createUser() {
         this.router.navigate(['admin/createUser']);
     }
-
-    get diagnostics() {
-        return 'model = ' + JSON.stringify(this.model);
-      }
 }
 
 

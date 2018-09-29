@@ -2,7 +2,7 @@ package com.ALCverificationtool.services.userService;
 
 import com.ALCverificationtool.dao.users.UserRepository;
 import com.ALCverificationtool.dao.authentication.UserAuthenticationRepository;
-import com.ALCverificationtool.models.AuthUserResponse;
+import com.ALCverificationtool.controllers.users.AuthUserResponse;
 import com.ALCverificationtool.models.User;
 import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.models.UserAuthentication;

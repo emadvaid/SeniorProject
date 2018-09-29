@@ -1,12 +1,14 @@
-package com.ALCverificationtool.models;
+package com.ALCverificationtool.controllers.users;
 
-public class CreateUserResponse {
+import com.ALCverificationtool.models.User;
+
+public class CreateUserRequest {
     User userDetails;
 
-    public CreateUserResponse() {
+    public CreateUserRequest() {
     }
 
-    public CreateUserResponse(User userDetails) {
+    public CreateUserRequest(User userDetails) {
         this.userDetails = userDetails;
     }
 

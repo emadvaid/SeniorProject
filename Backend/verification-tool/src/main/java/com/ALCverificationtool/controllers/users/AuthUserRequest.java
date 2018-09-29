@@ -1,4 +1,4 @@
-package com.ALCverificationtool.models;
+package com.ALCverificationtool.controllers.users;
 
 public class AuthUserRequest {
 

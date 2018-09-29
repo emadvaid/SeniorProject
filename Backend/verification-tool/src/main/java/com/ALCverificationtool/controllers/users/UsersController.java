@@ -1,10 +1,10 @@
 package com.ALCverificationtool.controllers.users;
 
 import com.ALCverificationtool.models.*;
+import com.ALCverificationtool.services.ServiceException;
 import com.ALCverificationtool.services.userService.UserAuthenticationException;
 import com.ALCverificationtool.services.userService.UserService;
-import com.ALCverificationtool.models.CreateUserResponse;
-import com.programwithemad.restservice.demo.models.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -32,14 +32,14 @@ public class UsersController {
 
     /**
      * Creates a new user.
+
      *
      * @param request the http request.
      * @return The new user object wrapped in a {@code ResponseEntity.}
      */
-    @CrossOrigin
-    @PostMapping("/users")
-    public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {
-
+        @CrossOrigin
+        @PostMapping("/users")
+        public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {
         // first create new user
         User newUser = service.createUser(request.getUserDetails());
 
@@ -64,7 +64,7 @@ public class UsersController {
     }
 
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-    @ExceptionHandler({UserAuthenticationException.class})
+    @ExceptionHandler({ServiceException.class})
     public void handleUserAuthorizationException() {
     }
 }
