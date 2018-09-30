@@ -1,11 +1,13 @@
 package com.ALCverificationtool.services.userService;
 
-import com.ALCverificationtool.dao.users.UserRepository;
-import com.ALCverificationtool.dao.authentication.UserAuthenticationRepository;
 import com.ALCverificationtool.controllers.users.AuthUserResponse;
+import com.ALCverificationtool.dao.authentication.UserAuthenticationRepository;
+import com.ALCverificationtool.dao.users.UserRepository;
+import com.ALCverificationtool.models.ResetToken;
 import com.ALCverificationtool.models.User;
-import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.models.UserAuthentication;
+import com.ALCverificationtool.models.UserRec;
+import com.ALCverificationtool.services.authResetService.AuthResetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,11 +18,22 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    UserRepository userDao;
+    private static final int MIN_PASSWORD_LEN = 8;
+
+    private final UserRepository userDao;
+    private final UserAuthenticationRepository authDao;
+    private final AuthResetService authResetService;
 
     @Autowired
-    UserAuthenticationRepository authDao;
+    public UserServiceImpl(
+        UserRepository userDao,
+        UserAuthenticationRepository authDao,
+        AuthResetService authResetService
+    ) {
+       this.userDao = userDao;
+       this.authDao = authDao;
+       this.authResetService = authResetService;
+    }
 
     @Override
     public AuthUserResponse authByUsernamePassword(String username, String password) {
@@ -58,7 +71,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User createUser(User newUserRecDetails) {
+    public UserRec createUser(UserRec newUserRecDetails) {
 
         // check for empty details
         if(newUserRecDetails == null){
@@ -70,6 +83,7 @@ public class UserServiceImpl implements UserService {
             throw new UserException("Username cant be empty");
         }
 
+
         // check for duplicate username
         if(userDao.findByUsername(newUserRecDetails.getUsername()).isPresent()){
             throw new UserException("Username already exists.");
@@ -78,9 +92,25 @@ public class UserServiceImpl implements UserService {
         // Make sure user id is null
         UserRec tmpUserRec = new UserRec(newUserRecDetails);
         tmpUserRec.setId(null);
+        tmpUserRec.setPassword(null);
 
         // insert the new user
-        return new User(userDao.save(tmpUserRec));
+        UserRec newUserRec = userDao.save(tmpUserRec);
+
+        // make sure the insert was successful
+        if (newUserRec == null || newUserRec.getId() == null) {
+            throw new UserException("Could not create new User");
+        }
+
+        // Now create a password reset entity for user
+        ResetToken reset = this.authResetService.createPasswordResetToken(newUserRec, true);
+
+        // make sure valid reset
+        if (reset == null || reset.getId() == null || reset.isActive()) {
+            throw new UserException("Error creating password reset for new user");
+        }
+
+        return newUserRec;
     }
 
     public List<User> getUsers(){

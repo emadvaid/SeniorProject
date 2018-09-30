@@ -1,55 +1,106 @@
 package com.ALCverificationtool.services.authResetService;
 
-import com.ALCverificationtool.dao.resetEntity.ResetEntityRepository;
+import com.ALCverificationtool.dao.resetTokens.ResetTokenRepository;
 import com.ALCverificationtool.dao.users.UserRepository;
-import com.ALCverificationtool.models.ResetEntity;
-import com.ALCverificationtool.models.User;
+import com.ALCverificationtool.models.ResetToken;
 import com.ALCverificationtool.models.UserRec;
+import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ResourceUtils;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import java.io.*;
 import java.util.Optional;
+import java.util.UUID;
 
 @Component
 public class AuthResetServiceImpl implements AuthResetService  {
 
     private final JavaMailSender mailSender;
     private final UserRepository userDao;
-    private final ResetEntityRepository resetDao;
+    private final ResetTokenRepository resetDao;
+    private final String passwordResetURLPref;
 
     @Autowired
     AuthResetServiceImpl(JavaMailSender mailSender,
                          UserRepository userDao,
-                         ResetEntityRepository resetDao) {
+                         ResetTokenRepository resetDao) {
 
         this.mailSender = mailSender;
         this.userDao = userDao;
         this.resetDao = resetDao;
+
+        // should come from the properties
+        passwordResetURLPref = "http://localhost:4200/resetpass";
     }
 
     @Override
-    public ResetEntity resetUserPassword(User user) {
+    public void resetPasswordWithResetToken(String resetTokenId, String newPassword) {
+        // from the resetToken, get the reset entity
+        Optional<ResetToken> resetOpt = this.resetDao.findById(UUID.fromString(resetTokenId));
+
+        if(!resetOpt.isPresent()) {
+            throw new ServiceException("Reset token not found.");
+        }
+
+        ResetToken reset = resetOpt.get();
+
+        // make sure this token is still active
+        if(!reset.isActive()) {
+            throw new ServiceException("Reset token not active.");
+        }
+
+        // find the user record for this token
+        Optional<UserRec> userRecOpt = this.userDao.findById(reset.getUserId());
+
+        if(!userRecOpt.isPresent()) {
+            throw new ServiceException("User not found for reset token.");
+        }
+
+        UserRec userRec = userRecOpt.get();
+
+        // make sure user is active
+        if(!userRec.isActive()) {
+            throw  new ServiceException("Cannot change password for inactive user.");
+        }
+
+        userRec.setPassword(newPassword);
+
+        UserRec result = this.userDao.save(userRec);
+
+        if(result==null || !result.getPassword().equals(newPassword) || !result.getId().equals(userRec.getId())) {
+            throw new ServiceException("Bad error.");
+        }
+    }
+
+    @Override
+    public ResetToken createPasswordResetToken(UserRec userRec) {
+        return this.createPasswordResetToken(userRec, false);
+    }
+
+    @Override
+    public ResetToken createPasswordResetToken(UserRec userRec, boolean newUser) {
 
         // first make sure that the user is not null and the id is set (throw an exception)
-        if(user==null || user.getId()==null) {
+        if(userRec==null || userRec.getId()==null) {
             throw new AuthResetException("user cannot be null");
         }
 
         // make sure to get the User record from the database
-        Optional<UserRec> actualUserOpt = userDao.findById(user.getId());
+        Optional<UserRec> actualUserOpt = userDao.findById(userRec.getId());
 
         if(!actualUserOpt.isPresent()) {
-            throw new AuthResetException("user not found for id: " + user.getId());
+            throw new AuthResetException("user not found for id: " + userRec.getId());
         }
 
         UserRec actualUserRec = actualUserOpt.get();
 
         // make sure the user has a valid email (throw exception)
-        if(user.getEmail() == null){
+        if(userRec.getEmail() == null){
             throw new AuthResetException("email not set for user");
         }
 
@@ -58,16 +109,16 @@ public class AuthResetServiceImpl implements AuthResetService  {
         this.userDao.save(actualUserRec);
 
         // create a reset entity
-        ResetEntity newResetDetails = new ResetEntity();
+        ResetToken newResetDetails = new ResetToken();
         newResetDetails.setId(null);
         newResetDetails.setUserId(actualUserRec.getId());
-        newResetDetails.setUsed(false);
+        newResetDetails.setActive(false);
 
-        ResetEntity newResetEntity = this.resetDao.save(newResetDetails);
+        ResetToken newResetEntity = this.resetDao.save(newResetDetails);
 
         // check to see if the reset entity was not created
         if(newResetEntity == null) {
-            throw new AuthResetException("Failed to create restet entity");
+            throw new AuthResetException("Failed to create reset entity");
         }
 
         // send an email to the registered user's email address, with the reset id
@@ -76,9 +127,34 @@ public class AuthResetServiceImpl implements AuthResetService  {
             MimeMessage msg = mailSender.createMimeMessage();
             MimeMessageHelper mailHelper = new MimeMessageHelper(msg, false, "utf-8");
 
-            String htmlMsg = "<h1>Hello World</h1>";
+            StringBuilder htmlMsgBuilder = new StringBuilder();
 
-            msg.setContent(htmlMsg, "text/html");
+            String templateLoc;
+            String resetLink;
+
+            if(newUser) {
+                templateLoc = "classpath:email-templates/password-reset/newUserEmail.template";
+                resetLink = "<a href=\"" + passwordResetURLPref + "?resetId=" +
+                        newResetEntity.getId() + "&newUser=true\">Click here to reset Password</a>";
+            }
+            else {
+                templateLoc = "classpath:email-templates/password-reset/passwordResetEmail.template";
+                resetLink = "<a href=\"" +passwordResetURLPref + "?resetId=" +
+                        newResetEntity.getId() + "\">Click here to reset Password</a>";
+            }
+
+            try (BufferedReader in = new BufferedReader(new FileReader(ResourceUtils.getFile(templateLoc)))){
+                String line;
+                while((line = in.readLine())!=null) {
+                    htmlMsgBuilder.append(line.replace("<ResetLink/>", resetLink));
+                }
+
+            }
+            catch(IOException e) {
+                throw new AuthResetException("Could not find email template for uri: " + templateLoc);
+            }
+
+            msg.setContent(htmlMsgBuilder.toString(), "text/html");
 
             mailHelper.setTo(actualUserRec.getEmail());
             mailHelper.setSubject("Password reset ...");

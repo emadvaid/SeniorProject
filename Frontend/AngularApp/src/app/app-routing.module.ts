@@ -14,11 +14,13 @@ import { ManageUsersComponent } from './views/admin/manage-users/manage-users.co
 import { CreateUserComponent } from './views/admin/manage-users/create-users/create-user.component';
 import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-user.component';
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
+import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginFormComponent},
+  {path: 'resetpass', component: PasswordResetComponent},
   {
     path: 'admin',
     canActivate: [UserTypeAuthGuardService],
@@ -56,6 +58,7 @@ export class AppRoutingModule {}
 export const routingComponents = [
   LoginFormComponent,
   HomeComponent,
+  PasswordResetComponent,
   DealerDashboardComponent,
   AdminDashboardComponent,
   ManageUsersComponent,

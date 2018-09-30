@@ -6,7 +6,7 @@ import {map} from 'rxjs/operators';
 
 import { User, UserTypes } from '../../models/User';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class UserLoginService {
     private _accessToken: string = null;
     private _loggedInUser: User = null;

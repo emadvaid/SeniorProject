@@ -41,7 +41,7 @@ public class UsersController {
         @PostMapping("/users")
         public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {
         // first create new user
-        User newUser = service.createUser(request.getUserDetails());
+        User newUser = new User(service.createUser(new UserRec(request.getUserDetails())));
 
         CreateUserResponse response = new CreateUserResponse(newUser);
 

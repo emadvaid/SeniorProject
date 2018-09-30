@@ -23,8 +23,8 @@ public class TranslationApplication {
 		mailSender.setHost("smtp.gmail.com");
 		mailSender.setPort(587);
 
-		mailSender.setUsername("myEmailAcct");
-		mailSender.setPassword("mySecret");
+		mailSender.setUsername("translationtoolverify@gmail.com");
+		mailSender.setPassword("Success$12");
 
 		Properties props = mailSender.getJavaMailProperties();
 		props.put("mail.transport.protocol", "smtp");
