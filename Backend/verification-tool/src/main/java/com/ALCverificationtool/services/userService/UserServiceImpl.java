@@ -106,7 +106,9 @@ public class UserServiceImpl implements UserService {
         ResetToken reset = this.authResetService.createPasswordResetToken(newUserRec, true);
 
         // make sure valid reset
-        if (reset == null || reset.getId() == null || reset.isActive()) {
+        if (reset == null
+                || reset.getId() == null || reset.isActive()
+                || !newUserRec.getId().equals(reset.getUserId())) {
             throw new UserException("Error creating password reset for new user");
         }
 

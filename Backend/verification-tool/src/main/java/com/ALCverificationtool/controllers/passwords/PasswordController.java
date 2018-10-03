@@ -21,6 +21,7 @@ public class PasswordController {
         this.userService = userService;
     }
 
+    @CrossOrigin
     @PutMapping(value = "/password")
     public ResponseEntity<String> resetPassword(@RequestBody ResetPasswordRequest request) {
 
@@ -28,7 +29,7 @@ public class PasswordController {
 
         HttpHeaders headers = new HttpHeaders();
 
-        return new ResponseEntity<>("Success", headers, HttpStatus.OK);
+        return new ResponseEntity<>("{'status': 'Success'}", headers, HttpStatus.OK);
     }
 
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)

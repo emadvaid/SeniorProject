@@ -41,7 +41,12 @@ public class AuthResetServiceImpl implements AuthResetService  {
     @Override
     public void resetPasswordWithResetToken(String resetTokenId, String newPassword) {
         // from the resetToken, get the reset entity
-        Optional<ResetToken> resetOpt = this.resetDao.findById(UUID.fromString(resetTokenId));
+
+        UUID searchKey = UUID.fromString(resetTokenId);
+
+        String SearchKeyStr = searchKey.toString();
+
+        Optional<ResetToken> resetOpt = this.resetDao.findById(searchKey);
 
         if(!resetOpt.isPresent()) {
             throw new ServiceException("Reset token not found.");
@@ -112,7 +117,7 @@ public class AuthResetServiceImpl implements AuthResetService  {
         ResetToken newResetDetails = new ResetToken();
         newResetDetails.setId(null);
         newResetDetails.setUserId(actualUserRec.getId());
-        newResetDetails.setActive(false);
+        newResetDetails.setActive(true);
 
         ResetToken newResetEntity = this.resetDao.save(newResetDetails);
 

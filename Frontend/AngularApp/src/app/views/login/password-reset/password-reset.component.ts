@@ -17,8 +17,10 @@ export class PasswordResetComponent implements OnInit {
         private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
-        this.activatedRoute.params.subscribe(
+        // http://localhost:4200/resetpass?resetId=1823237c-84c8-46cc-a9f7-4e790ab6f809&newUser=true
+        this.activatedRoute.queryParams.subscribe(
             (params: Params) => {
+                console.log('PasswordResetComponent.ngOnInit: prarams =', params);
                 this.tokenId = params['resetId'];
                 this.newUser = params['newUser'] || false;
             }
@@ -26,13 +28,14 @@ export class PasswordResetComponent implements OnInit {
     }
 
     onSubmit() {
+        console.log('PasswordResetComponent.onSubmit(): called with', this.model.newPassword, this.model.confirmPassword);
         // make sure the new password and the password confirm match,
         if (this.model.newPassword !== this.model.confirmPassword) {
             console.log('Error passwords do not match');
             return;
         }
         //   and meet the minimum password requirements
-        if (!this.model.newPassword || this.model.password.length < 8) {
+        if (!this.model.newPassword || this.model.newPassword.length < 8) {
             console.log('bad password format');
             return;
         }
@@ -56,8 +59,10 @@ export class PasswordResetComponent implements OnInit {
     }
 
     get diagnostics() {
-        return 'model = ' + JSON.stringify(this.model)
-          + ', submitted = ' + this.submitted;
+        return 'model = '  + JSON.stringify(this.model)
+        + ', tokenId = '   + this.tokenId
+        + ', newUser = '   + this.newUser
+        + ', submitted = ' + this.submitted;
       }
 }
 
