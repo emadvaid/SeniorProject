@@ -1,27 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { UserLoginService } from './services/user.login/user.login.service';
+import { UserTypes } from './models/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <!--The content below is only a placeholder and can be replaced.-->
-    <header>
-      <!--
-      <h1 style="text-align:center">
-        {{title}}
-      </h1>
-      <nav>
-        <ul>
-          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-          <li><a routerLink="/admin-dash" routerLinkActive="false">Admin</a></li>
-          <li><a routerLink="/dealer-dash" routerLinkActive="active">Dealer</a></li>
-        </ul>
-      </nav>
-      -->
-    </header>
-    <router-outlet></router-outlet>
-  `
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'Welcome';
+export class AppComponent implements OnInit {
+  title = 'Translation Verificaiton ';
+  loggedIn = false;
+  isAdmin = false;
+
+  constructor(private userLoginService: UserLoginService, private router: Router) {
+  }
+
+  ngOnInit() {
+    this.loggedIn = this.userLoginService.isLoggedIn;
+    this.isAdmin = this.userLoginService.isUserType(UserTypes.admin);
+    this.router.events.subscribe((val) => {
+      this.loggedIn = this.userLoginService.isLoggedIn;
+      this.isAdmin = this.userLoginService.isUserType(UserTypes.admin);
+      console.log('AppComponent: router changed event detected.');
+    });
+  }
+
+  get diagnostics() {
+    return (
+      'loggedIn = ' + this.loggedIn
+      + ', isAdmin = ' + this.isAdmin
+    );
+  }
 }

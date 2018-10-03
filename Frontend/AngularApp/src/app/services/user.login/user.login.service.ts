@@ -95,23 +95,57 @@ export class UserLoginService {
         }
     }
 
+    /*
+     *  This is a getter function, that tests to see if there is a currently logged in User.
+     *   In this method we first check the class variables, and if the user is not valid,
+     *   we then try to load the user from localstorage.
+     */
     public get isLoggedIn(): boolean {
-        // fetch the user and access token from local storage, if not cached
-        if (!this._accessToken || this._accessToken.length < 1) {
+        // first check if there is a valid user, cached in the class variables
+        if (this.validateAccessToken(this._accessToken) && this.validateUser(this._loggedInUser)) {
+            // console.log('isLoggedIn(): user was cached');
+            // cached user found return true
+            return true;
+        } else {
+            // cached user not found so try to build from local storage
+            console.log('isLoggedIn(): user is not cached');
             this._accessToken = localStorage.getItem('access-token');
-
             const stringifiedUser = localStorage.getItem('user');
+            if (stringifiedUser != null) {
+                this._loggedInUser = User.fromJsonString(stringifiedUser);
 
-            if (stringifiedUser) {
-                this._loggedInUser = JSON.parse(localStorage.getItem('user'));
+                // console.log('this.validateUser(this._loggedInUser)', this.validateUser(this._loggedInUser), this._loggedInUser);
+            } else {
+                // console.log('user not found in localstorage');
             }
+
+            if (this.validateAccessToken(this._accessToken) && this.validateUser(this._loggedInUser)) {
+                // console.log('isLoggedIn(): user found in local storage');
+                return true;
+            }
+            // console.log('isLoggedIn(): user not found in local storage', this._accessToken, stringifiedUser, this._loggedInUser);
         }
-        return this._accessToken && this._accessToken.length > 0;
+
+        // could not find valid user in cache or localstorage
+        this._accessToken = null;
+        this._loggedInUser = null;
+        localStorage.removeItem('access-token');
+        localStorage.removeItem('user');
+
+        return false;
+    }
+
+    private validateAccessToken(token: string): boolean {
+        return ((typeof token !== 'undefined') && (token !== null) && (token.length > 1));
+    }
+
+    private validateUser(user: User) {
+        return ((typeof user !== 'undefined') && (user.isActive === true) );
     }
 
     public isUserActive(userType: UserTypes) {
         if (this.isLoggedIn) {
-            return this._loggedInUser && this._loggedInUser.isActive;
+            return this._loggedInUser != null && this._loggedInUser.isActive;
         }
 
         return false;
@@ -119,9 +153,14 @@ export class UserLoginService {
 
     public isUserType(userType: UserTypes) {
         if (this.isLoggedIn) {
-            return this._loggedInUser && this._loggedInUser.type === userType;
+            console.log('isUserType(' + userType + '): user is logged in.');
+            console.log('this._loggedInUser', this._loggedInUser);
+            console.log('this._loggedInUser.type', this._loggedInUser.type);
+
+            return this._loggedInUser != null && this._loggedInUser.type === userType;
         }
 
+        console.log('isUserType(' + userType + '): user is not logged in.');
         return false;
     }
 

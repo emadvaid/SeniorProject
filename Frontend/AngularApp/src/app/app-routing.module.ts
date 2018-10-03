@@ -15,11 +15,13 @@ import { CreateUserComponent } from './views/admin/manage-users/create-users/cre
 import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-user.component';
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
+import { LogoutComponent } from './views/login/logout.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginFormComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'resetpass', component: PasswordResetComponent},
   {
     path: 'admin',
@@ -57,6 +59,7 @@ export class AppRoutingModule {}
 
 export const routingComponents = [
   LoginFormComponent,
+  LogoutComponent,
   HomeComponent,
   PasswordResetComponent,
   DealerDashboardComponent,

@@ -111,12 +111,17 @@ public class AuthResetServiceImpl implements AuthResetService  {
 
         // reset the password field to null
         actualUserRec.setPassword(null);
-        this.userDao.save(actualUserRec);
+        UserRec savedUserRec = this.userDao.save(actualUserRec);
+
+        //make sure id's are the same
+        if(savedUserRec==null || !actualUserRec.getId().equals(savedUserRec.getId())) {
+            throw new AuthResetException("Something strange ...");
+        }
 
         // create a reset entity
         ResetToken newResetDetails = new ResetToken();
         newResetDetails.setId(null);
-        newResetDetails.setUserId(actualUserRec.getId());
+        newResetDetails.setUserId(savedUserRec.getId());
         newResetDetails.setActive(true);
 
         ResetToken newResetEntity = this.resetDao.save(newResetDetails);
@@ -151,9 +156,13 @@ public class AuthResetServiceImpl implements AuthResetService  {
             try (BufferedReader in = new BufferedReader(new FileReader(ResourceUtils.getFile(templateLoc)))){
                 String line;
                 while((line = in.readLine())!=null) {
-                    htmlMsgBuilder.append(line.replace("<ResetLink/>", resetLink));
+                    // add all substitutions here
+                    line = line.replace("<ResetLink/>", resetLink);
+                    line = line.replace("<UserName/>", savedUserRec.getUsername());
+                    line = line.replace("<FistName/>", savedUserRec.getFirstName());
+                    line = line.replace("<LastName/>", savedUserRec.getLastName());
+                    htmlMsgBuilder.append(line);
                 }
-
             }
             catch(IOException e) {
                 throw new AuthResetException("Could not find email template for uri: " + templateLoc);

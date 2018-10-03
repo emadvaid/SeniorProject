@@ -1,7 +1,43 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-
+    <!--The content below is only a placeholder and can be replaced.-->
+    <header class="container">
+      <span>{{diagnostics}}</span>
+      <h1 style="text-align:center">
+        {{title}}
+      </h1>
+      <div *ngIf="loggedIn; else notLoggedIn">
+        <div *ngIf="isAdmin; else notAdmin">
+          Admin
+          <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <ul class="navbar-nav nav">
+              <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/admin/manageUsers" routerLinkActive="active">Manage Users</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="" routerLinkActive="active">Manage languages</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/admin/importFile" routerLinkActive="active">Import XML Files</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/dealer-dash" routerLinkActive="active">Translation Tool </a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/logout" routerLinkActive="active">Logout</a></li>
+            </ul>
+          </nav>
+        </div> 
+        <ng-template #notAdmin>
+          Dealer
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav nav">
+              <li class="nav-item"><a class="nav-link" routerLink="/dealer-dash" routerLinkActive="active">Translaton Tool</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/Logout" routerLinkActive="active">Logout</a></li>
+            </ul>
+          </nav>
+        </ng-template>
+      </div>
+      <ng-template #notLoggedIn>
+        Not Logged in
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="navbar-nav nav  mr-auto">
+            <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
+          </ul>
+        </nav>
+      </ng-template>
+    </header>
+    <router-outlet></router-outlet>
