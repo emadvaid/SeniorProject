@@ -1,0 +1,12 @@
+<form>
+  <input type="file" (change)="selectFiles($event)" multiple="multiple"  >
+
+  <br>
+  <span [innerHTML]="result"></span>
+<div>y</div>
+
+  <button type="button" class="btn btn-success btn-s"
+          (click)="onUpload()">
+    Upload an XML file
+  </button>
+</form>

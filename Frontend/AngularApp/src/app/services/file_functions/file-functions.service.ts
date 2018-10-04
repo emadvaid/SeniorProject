@@ -12,11 +12,13 @@ const httpOptions = {
 export class FileFunctionsService {
   private serverUrl = 'http://localhost:8080/uploadFile';
 
+
   constructor(
     private http: HttpClient
   ) { }
 
   sendFiles(formdata: FormData): Observable<any> {
-    return this.http.post(this.serverUrl, {UploadFIleRequest: formdata}, httpOptions);
+    console.log('stuff');
+      return this.http.post(this.serverUrl, formdata , httpOptions);
   }
 }
