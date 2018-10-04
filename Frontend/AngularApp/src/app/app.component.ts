@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((val) => {
       this.loggedIn = this.userLoginService.isLoggedIn;
       this.isAdmin = this.userLoginService.isUserType(UserTypes.admin);
-      console.log('AppComponent: router changed event detected.');
     });
   }
 

@@ -34,6 +34,25 @@ export class ManageUsersComponent implements OnInit {
     createUser() {
         this.router.navigate(['admin/createUser']);
     }
+
+    editUser(event: any) {
+        console.log('editUser: event.target.dataset[\'userid\'] = ', event.target.dataset['userid']);
+        this.router.navigate(['admin/editUser', {
+            queryParams: {userId: event.target.dataset['userid']}
+        }]);
+    }
+
+    activateUser() {
+        //
+    }
+
+    deactivateUser() {
+        //
+    }
+
+    resetPassword() {
+        //
+    }
 }
 
 

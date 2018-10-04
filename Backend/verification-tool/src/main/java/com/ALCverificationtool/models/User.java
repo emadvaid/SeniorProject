@@ -16,6 +16,7 @@ public class User {
     }
 
     public User(UserRec original) {
+        this.id = original.getId();
         this.username = original.getUsername();
         this.typeAsStr = original.getType();
         this.isActive = original.isActive();

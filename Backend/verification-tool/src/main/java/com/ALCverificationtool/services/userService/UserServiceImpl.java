@@ -93,6 +93,7 @@ public class UserServiceImpl implements UserService {
         UserRec tmpUserRec = new UserRec(newUserRecDetails);
         tmpUserRec.setId(null);
         tmpUserRec.setPassword(null);
+        tmpUserRec.setActive(true);
 
         // insert the new user
         UserRec newUserRec = userDao.save(tmpUserRec);

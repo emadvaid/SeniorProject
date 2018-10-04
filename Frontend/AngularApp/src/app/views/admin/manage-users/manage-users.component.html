@@ -52,6 +52,19 @@
                       <td>{{user.username}}</td>
                       <td>{{user.typeAsStr}}</td>
                       <td>{{user.active}}</td>
+                      <td>
+                            <a class="btn btn-primary" 
+                                (click)="editUser($event)"
+                                attr.data-userid="{{user.id}}"
+                            >
+                                Edit
+                            </a>
+                      </td>
+                      <td>
+                            <div><a class="text-success" *ngIf="!user.active" (click)="activateUser($event)">Activate User</a></div>
+                            <div><a class="text-danger" *ngIf="user.active" (click)="deactivateUser($event)">Deactivate User</a></div>
+                            <div><a class="text-danger" *ngIf="user.active" (click)="resetPassword($event)">Reset Password</a></div>
+                      </td>
                       </tr>
                   </tbody>
               </table>

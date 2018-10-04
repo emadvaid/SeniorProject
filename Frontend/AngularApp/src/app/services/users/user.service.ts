@@ -12,6 +12,11 @@ import { UserLoginService } from '../user.login/user.login.service';
 })
 export class UserService {
 
+    private roleArry = [
+        {name: 'admin'},
+        {name: 'dealer'}
+    ];
+
     constructor(private userLoginService: UserLoginService, private http: Http) {}
 
     createUser(user: User): Observable<User> {
@@ -50,6 +55,10 @@ export class UserService {
             .pipe(catchError(err => this.handleError(err)));
     }
 
+    public validateUserId(userId: string) {
+        return ((typeof userId !== 'undefined') && (userId != null) && (userId.length > 0) );
+    }
+
     getAllUsers() {
 
         if (!this.userLoginService.isLoggedIn) {
@@ -80,6 +89,24 @@ export class UserService {
             })
         )
         .pipe(catchError(err => this.handleError(err)));
+    }
+
+    public getUserById(userId: string): Observable<User> {
+        const user: User = new User();
+        user.id = 1;
+        user.username = 'test user';
+        user.firstName = 'first';
+        user.lastName = 'first';
+        user.email = 'test@test.com';
+        user.language1 = 'English';
+        user.isActive = true;
+        user.typeAsStr = 'Dealer';
+
+        return of(user);
+    }
+
+    public get userRoles(): any {
+        return this.roleArry.slice();
     }
 
     private handleError(err: any): Observable<User> {

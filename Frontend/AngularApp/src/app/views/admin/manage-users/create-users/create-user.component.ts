@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { UserService } from '../../../../services/users/user.service';
 import { User } from '../../../../models/User';
+import { LanguagesService } from '../../../../services/languages/languages.service';
 
 @Component({
     selector: 'app-create-users',
@@ -11,36 +12,20 @@ import { User } from '../../../../models/User';
 })
 export class CreateUserComponent implements OnInit {
     model: any;
-    submitted = false;
+    submitted: boolean;
     langArry: any;
     roleArry: any;
 
-    constructor(private router: Router, private userService: UserService) {}
+    constructor(private router: Router,
+        private languageService: LanguagesService,
+        private userService: UserService) {}
 
     ngOnInit() {
         this.model = {};
-        this.langArry = [
-            {name: 'Brazillian Portugues'},
-            {name: 'English'},
-            {name: 'Canadian French'},
-            {name: 'German'},
-            {name: 'Italian'},
-            {name: 'Japanese'},
-            {name: 'English'},
-            {name: 'Korean'},
-            {name: 'Russian'},
-            {name: 'Spanish'},
-            {name: 'Swedish'},
-            {name: 'Simplified Chinese'},
-            {name: 'Traditional Chinese'},
-            {name: 'Thai'},
-            {name: 'Vietnamese'},
-        ];
-        this.model.language1 = 'English';
-        this.roleArry = [
-            {name: 'admin'},
-            {name: 'dealer'}
-        ];
+        this.submitted = false;
+        this.langArry = this.languageService.languages;
+        this.model.language1 = this.languageService.defaultLanguage;
+        this.roleArry = this.userService.userRoles;
         this.model.role = 'dealer';
 
         // just for dev purposes

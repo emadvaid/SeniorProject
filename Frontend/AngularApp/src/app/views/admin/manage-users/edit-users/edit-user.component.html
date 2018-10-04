@@ -1,4 +1,5 @@
-{{diagnostics}}
+<div>{{diagnostics}}</div>
+<h3>Edit User</h3>
 <form #createUserForm="ngForm">
     <h2>Create User</h2>
     <div class='form-group'>
@@ -9,7 +10,7 @@
             id="username"
             name="username"
             placeholder="Enter username"
-            [(ngModel)]="model.username"
+            [(ngModel)]="model.user.username"
         >
     </div>
     <div class='form-group'>
@@ -20,7 +21,7 @@
             id="firstName"
             name="firstName"
             placeholder="Enter first name"
-            [(ngModel)]="model.firstName"
+            [(ngModel)]="model.user.firstName"
         >
     </div>
     <div class='form-group'>
@@ -31,7 +32,7 @@
             id="lastName"
             name="lastName"
             placeholder="Enter last name"
-            [(ngModel)]="model.lastName"
+            [(ngModel)]="model.user.lastName"
         >
     </div>
     <div class='form-group'>
@@ -42,7 +43,7 @@
             id="email"
             name="email"
             placeholder="Enter email"
-            [(ngModel)]="model.email"
+            [(ngModel)]="model.user.email"
         >
     </div>
     <div class='form-group'>
@@ -52,7 +53,7 @@
                 class = 'form-control'
                 id="language1"
                 name="language1"
-                [(ngModel)]="model.language1"
+                [(ngModel)]="model.user.language1"
             >
                 <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
             </select>
@@ -65,33 +66,28 @@
                     class = 'form-control'
                     id="language2"
                     name="language2"
-                    [(ngModel)]="model.language2"
+                    [(ngModel)]="model.user.language2"
                 >
                     <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
                 </select>
             </label>
         </div>
         <div class='form-group'>
-                <label>
-                    Role
-                    <select
-                        class = 'form-control'
-                        id="role"
-                        name="role"
-                        [(ngModel)]="model.role"
-                    >
-                        <option *ngFor="let lang of roleArry" [ngValue]="role">{{lang.name}}</option>
-                    </select>
-                </label>
-            </div>
-            <div class="checkbox">
-                    <label>
-                      <input type="checkbox" name="active" [(ngModel)]="model.active">
-                      Active
-                    </label>
-                  </div>
+            <label>
+                Role
+                <select
+                    class = 'form-control'
+                    id="role"
+                    name="role"
+                    [(ngModel)]="model.user.role"
+                >
+                    <option *ngFor="let lang of roleArry" [ngValue]="role">{{lang.name}}</option>
+                </select>
+            </label>
+        </div>
+            
         <div class="form-group">
-                <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
-                <a href="" class="btn btn-link">Cancel</a>
-              </div>
+            <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+            <a href="" class="btn btn-link">Cancel</a>
+        </div>
 </form>

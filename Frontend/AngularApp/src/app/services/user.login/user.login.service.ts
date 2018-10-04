@@ -153,14 +153,8 @@ export class UserLoginService {
 
     public isUserType(userType: UserTypes) {
         if (this.isLoggedIn) {
-            console.log('isUserType(' + userType + '): user is logged in.');
-            console.log('this._loggedInUser', this._loggedInUser);
-            console.log('this._loggedInUser.type', this._loggedInUser.type);
-
             return this._loggedInUser != null && this._loggedInUser.type === userType;
         }
-
-        console.log('isUserType(' + userType + '): user is not logged in.');
         return false;
     }
 

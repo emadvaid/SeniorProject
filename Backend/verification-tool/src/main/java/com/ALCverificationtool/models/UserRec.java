@@ -14,9 +14,9 @@ public class UserRec {
     @Column(unique = true, nullable = false)
     private String username;
 
-    private String password = null;
+    private String password;
     private String type;
-    private boolean isActive = true;
+    private boolean isActive;
     private String firstName;
     private String lastName;
     private String email;
