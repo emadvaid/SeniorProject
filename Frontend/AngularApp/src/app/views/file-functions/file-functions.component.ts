@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FileUploader, FileSelectDirective} from 'ng2-file-upload';
+import {FileFunctionsService} from '../../services/file_functions/file-functions.service';
 
 const URL = '';
 
@@ -12,7 +13,9 @@ export class FileFunctionsComponent implements OnInit {
 
   public uploader: FileUploader = new FileUploader({ url: URL, itemAlias: 'XML'});
 
-  constructor() { }
+  constructor(
+    fileservice: FileFunctionsService
+  ) { }
   indicator = '';
   trueFalse = false;
 
@@ -51,6 +54,10 @@ export class FileFunctionsComponent implements OnInit {
         this.uploader.queue[i].remove();
       }
     }
+  }
+
+  onFileChanged(event){
+    const file = event.target.files[0];
   }
 
 
