@@ -13,6 +13,7 @@ import { Http, HttpModule } from '@angular/Http';
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { FileSelectDirective} from 'ng2-file-upload';
 import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-fun
     HttpModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     UserLoginService,

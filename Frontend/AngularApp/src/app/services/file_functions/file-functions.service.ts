@@ -17,8 +17,13 @@ export class FileFunctionsService {
     private http: HttpClient
   ) { }
 
-  sendFiles(formdata: FormData): Observable<any> {
+  sendFiles(selectedFiles: Array<File> = []): Observable<any> {
+    const uploadData = new FormData();
     console.log('stuff');
-      return this.http.post(this.serverUrl, formdata , httpOptions);
+    for (let file of selectedFiles){
+      console.log('file entered');
+      uploadData.append('file', file, file.name);
+    }
+      return this.http.post(this.serverUrl, uploadData , httpOptions);
   }
 }
