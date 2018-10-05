@@ -7,6 +7,7 @@ import com.ALCverificationtool.controllers.keys.UploadFileResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.ServletContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -20,17 +21,23 @@ import java.io.File;
 
 @Service
 public class KeyServiceImpl implements KeyService {
+
+
+
+    public  String path = System.getProperty("user.dir") + "/src/main/java/com/ALCverificationtool/XMLFiles/";
+
     @Override
     public UploadFileResponse readFile(MultipartFile file) throws ParserConfigurationException {
         String fileName;
-        try {
-            //test only
-            fileName = "/Users/benja/Desktop/ButtonText.xml";
 
-            File file2 = new File(fileName);
+        try {
+
+            File newFile = new File(path + file.getOriginalFilename());
+            file.transferTo(newFile);
+            //test only
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(file2);
+            Document doc = dBuilder.parse(newFile);
 
             NodeList nodeList = doc.getElementsByTagName("section");
 

@@ -3,7 +3,7 @@ import {FileFunctionsService} from '../../services/file_functions/file-functions
 import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders()
 };
 
 @Component({
@@ -38,10 +38,10 @@ export class FileFunctionsRedoComponent implements OnInit {
 
   onUpload() {
     console.log('File');
-    const uploadData = new FormData();
+    let uploadData = new FormData();
     for (let file of this.selectedFiles){
       console.log('file entered');
-      uploadData.append('file', file, file.name);
+      uploadData.append('file', file);
     }
     this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
       console.log(res);

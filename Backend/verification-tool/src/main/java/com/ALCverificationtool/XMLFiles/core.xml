@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="core" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="Core constants">
+        <translation key="SetupManager_PARITY_EVEN">
+            <note>droplist choice - Even parity</note>
+            <variant>Even</variant>
+        </translation>
+        <translation key="SetupManager_PARITY_ODD">
+            <note>droplist choice - Odd parity</note>
+            <variant>Odd</variant>
+        </translation>
+        <translation key="SetupManager_PARITY_NONE">
+            <note>droplist choice - No parity</note>
+            <variant>None</variant>
+        </translation>
+    </section>
+    <section id="proxy conflicts/problems">
+        <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+        <translation key="reference_name">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a reference name was automatically changed during a copy/paste.</note>
+            <variant>Another node is already using the imported node's reference name. A new unique reference name has been automatically created for you.</variant>
+        </translation>
+        <translation key="site_number">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a site number was automatically changed during a copy/paste.</note>
+            <variant>Another site is already using the imported site's number. A new unique site number has been automatically created for you.</variant>
+        </translation>
+        <translation key="network_number">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a network number was automatically changed during a copy/paste.</note>
+            <variant>Another network is already using the imported network's number. A new unique network number has been automatically created for you.</variant>
+        </translation>
+        <translation key="device_id">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a device id was automatically changed during an import.</note>
+            <variant>Another controller is already using the imported controller's device ID. A new unique device ID has been automatically created for you.</variant>
+        </translation>
+        <translation key="nat_address">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a machine address was automatically changed during an import.</note>
+            <variant>Another controller is already using the imported controller's public IP address. A new unique address has been automatically created for you.</variant>
+        </translation>
+        <translation key="mac_address">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that a machine address was automatically changed during an import.</note>
+            <variant>Another controller is already using the imported controller's address. A new unique address has been automatically created for you.</variant>
+        </translation>
+        <translation key="instance_number">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates that an equipment instance number was automatically changed during an import.</note>
+            <variant>Another control program is already using the imported control program's instance number. A new unique instance number has been automatically created for you.</variant>
+        </translation>
+        <translation key="already_attached">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates a mismatch between a device and a piece of equipment during an import.</note>
+            <variant>The imported controller has tried to assign to itself a control program that is already assigned to a different controller. The control program was not reassigned.</variant>
+        </translation>
+        <translation key="attached_eq_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indication of an attempt to assign a non-existent equipment to a device.</note>
+            <variant>The imported controller has tried to assign to itself a control program that does not exist. You can assign this control program by exporting it (from the same database as this controller), then importing it into this database.</variant>
+        </translation>
+        <translation key="attached_device_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an attempt to assign an equipment to a non-existent device.</note>
+            <variant>The imported control program has tried to assign itself to a controller that does not exist. You can assign this control program by exporting the controller (from the same database as this control program), then importing it into this database.</variant>
+        </translation>
+        <translation key="equipment_parameter">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - error trying to set an equipment parameter</note>
+            <variant>A control program parameter could not be set. This is usually because the control program was not reloaded (either during import or before export).</variant>
+        </translation>
+        <translation key="report_parameter">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error with a report parameter due to a problem with a control program during a database import or export.  </note>
+            <variant>A report parameter could not be set. This is usually because the control program was not reloaded (either during import or before export).</variant>
+        </translation>
+        <translation key="schedule_group">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indication of an error trying to assign a schedule group</note>
+            <variant>Did not assign this node to a schedule group because the group does not exist. You must manually set up all schedule groups in both the imported and exported database.</variant>
+        </translation>
+        <translation key="reporting_action">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to assign a reporting action</note>
+            <variant>Did not assign to a reporting action because the action does not exist. You must manully set up all reporting actions in both the imported and exported database.</variant>
+        </translation>
+        <translation key="source_tree_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to set up source nodes due to a non-existent source tree</note>
+            <variant>Failed to import source nodes. The source tree was not found. You must manually add the source trees and setup the rules to both the imported and exported database.</variant>
+        </translation>
+        <translation key="source_parent_relocated">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to assign a source parent location problem.</note>
+            <variant>Cannot determine the site for the control program because it is not assigned to a controller.  Control program has been assigned to the source tree root.</variant>
+        </translation>
+        <translation key="source_parent_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to assign a source parent node.  Parent node was not found.</note>
+            <variant>Failed to assign source parent node. The source was not found in the imported database.</variant>
+        </translation>
+        <translation key="source_rules_failed">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to assign a source rule.</note>
+            <variant>Source rule failure. You must manually add the source trees and setup the rules to both the imported and exported database.</variant>
+        </translation>
+        <translation key="operator_or_group_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indication of an error with an operator or group due to a problem encountered during a database import.   </note>
+            <variant>An operator or operator group that was referred to was not found.  To correct, add the missing operator or group and re-import.</variant>
+        </translation>
+        <translation key="role_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indication of an error with a missing role encountered during a database import.   </note>
+            <variant>A role could not be found.  To correct, add the missing role and re-import.</variant>
+        </translation>
+        <translation key="privilege_key_not_found">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error with a privilege being invalid for this database version.  </note>
+            <variant>A privilege could not be retained because it doesn't apply to this version.  This should not cause any problems.</variant>
+        </translation>
+        <translation key="preference_does_not_exist">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error with a user preference being invalid for this database version. </note>
+            <variant>A user preference could not be retained because it doesn't apply to this version.  This should not cause any problems.</variant>
+        </translation>
+        <translation key="added_missing_view_category">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error with a missing category during a database import </note>
+            <variant>Added a missing view category. This happens when a view in the imported database has a category that is not in the existing database. Please go to the graphics or properties category page in the config tree.</variant>
+        </translation>
+        <translation key="add_missing_view_category_failed">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error with adding a category that was previously missing. </note>
+            <variant>Failed to add a missing view category so the views for this location will not be added.</variant>
+        </translation>
+        <translation key="view_not_attached">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error attaching a view to a node during a database import </note>
+            <variant>Failed to attach a view.  This happens when the view file used by the imported database does not exist.  Please replace the missing .view file and re-attach it to the node.</variant>
+        </translation>
+        <translation key="equipment_missing_expected_child">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error when adding a default view due to a non-existent child node.</note>
+            <variant>Failed to add default views for a child of a control program because the child cannot be found.</variant>
+        </translation>
+        <translation key="cannot_attach_equipment">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note>Label - indicates an error trying to assign an equipment.  The equipment is not allowed to be assigned to that particular device.</note>
+            <variant>The imported control program cannot be assigned to a controller because it is invalid for that controller.</variant>
+        </translation>
+        <translation key="site_group_cache_invalid">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates an error assigning the group-cache to a device because it doesn't exist. </note>
+            <variant>A specified group cache controller was invalid.  The site has been changed to not use group caching.  You should fix this after the import is complete.</variant>
+        </translation>
+        <translation key="system_nat_disabled">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where an imported site or router has been configured for NAT, but the system does not have NAT enabled. </note>
+            <variant>NAT is not enabled for the system, but an imported site or router has NAT configuration information.  You should enable NAT after the import is complete.</variant>
+        </translation>
+        <translation key="device_nat_disabled">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where an imported router has been configured for NAT, but it's site does not have NAT for devices enabled. </note>
+            <variant>The imported router has a NAT address, but the site does not indicate that it's controllers are behind a NAT.  You should enable NAT for controllers after the import is complete.</variant>
+        </translation>
+        <translation key="hs_disabled">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where hierarchical servers is not enabled for this system, but the clipping contains hierarchical server data. </note>
+            <variant>Hierarchical servers is not enabled.  The server link was not imported.</variant>
+        </translation>
+        <translation key="hs_servlink_not_allowed">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where the clipping contains a server link, but the system is a child hierarchical server and therefore does not allow server links. </note>
+            <variant>Server links are not allowed for child hierarchical servers.</variant>
+        </translation>
+        <translation key="hs_navlink_not_allowed">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where the clipping contains a navigation link, but the system is a parent hierarchical server and therefore does not allow navigation links. </note>
+            <variant>Navigation links are not allowed for parent hierarchical servers.</variant>
+        </translation>
+        <translation key="missing_component">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where a file is missing that might be needed to correctly paste the system fragment at a later time. </note>
+            <variant>A needed file is missing.  This may cause import to fail.</variant>
+        </translation>
+        <translation key="device_type_change">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem where the device in the clipping could not be imported as it was into the target database.  The device type was changed before being imported. </note>
+            <variant>Device type was changed on import.  Download will be required.</variant>
+        </translation>
+        <translation key="ccnip_connection_change">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a conflict was resolved by updating the CCN/IP connection CCN gateway address to the address of the gateway being imported. </note>
+            <variant>CCN/IP Connection CCN Gateway Address was changed.</variant>
+        </translation>
+        <translation key="ccnip_connection_change_needed">
+            <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
+            <note> label - indicates a problem that the import process could not update the CCN/IP Connection's CCN Gateway address to match the imported gateway.  Further action is required by the user.</note>
+            <variant>CCN Gateway was imported but the CCN/IP Connection CCN Gateway address could not be updated.  Please update this manually.</variant>
+        </translation>
+    </section>
+    <section id="CoreScheduleNodes">
+        <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+        <translation key="fst">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in first week of the month</note>
+            <variant>1st</variant>
+        </translation>
+        <translation key="snd">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in second week of the month</note>
+            <variant>2nd</variant>
+        </translation>
+        <translation key="trd">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in third week of the month</note>
+            <variant>3rd</variant>
+        </translation>
+        <translation key="fth">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in fourth week of the month</note>
+            <variant>4th</variant>
+        </translation>
+        <translation key="fith">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in fifth week of the month</note>
+            <variant>5th</variant>
+        </translation>
+        <translation key="last">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>As in last week of the month</note>
+            <variant>last</variant>
+        </translation>
+        <translation key="Every">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>Used with keys above to form phrase like: Every 2nd Tuesday</note>
+            <variant>Every</variant>
+        </translation>
+        <translation key="Mon">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Monday</note>
+            <variant>Mon</variant>
+        </translation>
+        <translation key="Tue">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Tuesday</note>
+            <variant>Tue</variant>
+        </translation>
+        <translation key="Wed">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Wednesday</note>
+            <variant>Wed</variant>
+        </translation>
+        <translation key="Thu">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Thursday</note>
+            <variant>Thu</variant>
+        </translation>
+        <translation key="Fri">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Friday</note>
+            <variant>Fri</variant>
+        </translation>
+        <translation key="Sat">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Saturday</note>
+            <variant>Sat</variant>
+        </translation>
+        <translation key="Sun">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note> short day name for Sunday</note>
+            <variant>Sun</variant>
+        </translation>
+        <translation key="Any">
+            <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
+            <note>For any day of the week</note>
+            <variant>Any</variant>
+        </translation>
+    </section>
+</resource-base>
+<!-- master format -->
