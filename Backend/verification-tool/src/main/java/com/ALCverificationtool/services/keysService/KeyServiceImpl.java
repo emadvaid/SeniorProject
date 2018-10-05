@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
+import org.springframework.web.multipart.MultipartFile;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -19,15 +21,16 @@ import java.io.File;
 @Service
 public class KeyServiceImpl implements KeyService {
     @Override
-    public UploadFileResponse readFile(String fileName) throws ParserConfigurationException {
+    public UploadFileResponse readFile(MultipartFile file) throws ParserConfigurationException {
+        String fileName;
         try {
             //test only
             fileName = "/Users/benja/Desktop/ButtonText.xml";
 
-            File file = new File(fileName);
+            File file2 = new File(fileName);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(file);
+            Document doc = dBuilder.parse(file2);
 
             NodeList nodeList = doc.getElementsByTagName("section");
 

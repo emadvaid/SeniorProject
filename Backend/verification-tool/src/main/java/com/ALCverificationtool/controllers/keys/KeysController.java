@@ -8,8 +8,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
 import java.util.List;
 
 @RestController
@@ -19,10 +21,12 @@ public class KeysController {
 
     @CrossOrigin
     @PostMapping("/uploadFile")
-    public ResponseEntity<UploadFileResponse> uploadFile(@RequestBody UploadFileRequest request) throws ParserConfigurationException {
+    public ResponseEntity<UploadFileResponse> uploadFile(@RequestParam(value="file")MultipartFile[] file) throws ParserConfigurationException {
         //will read the xml file
-        UploadFileResponse response = service.readFile(request.getFileName());
-
+        UploadFileResponse response = new UploadFileResponse();
+        for(int i = 0; i < file.length; i++) {
+             response = service.readFile(file[i]);
+        }
         HttpHeaders headers = new HttpHeaders();
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
