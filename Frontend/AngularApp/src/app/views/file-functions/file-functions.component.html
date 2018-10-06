@@ -2,6 +2,7 @@
   <file-drop headertext="Drop files here" (onFileDrop)="dropped($event)"
   (onFileOver)="fileOver($event)" (onFileLeave)="($event)">
   </file-drop>
+  <div style="display:none;height:450px;overflow:auto" id="filesDrop">
   <div class="upload-table">
     <table class="table">
       <thead>
@@ -16,4 +17,13 @@
       </tbody>
     </table>
   </div>
+  </div>
+  <button type="button" class="btn btn-success btn-s"
+          (click)="onUpload()" id="button1" disabled>
+    Upload XML files
+  </button>
+  <button type="button" class="btn btn-danger btn-s" style="float: right;"
+          (click)="clear()" id="button2" disabled>
+    Clear files
+  </button>
 </div>

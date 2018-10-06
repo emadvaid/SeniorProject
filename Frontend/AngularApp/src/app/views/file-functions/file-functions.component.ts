@@ -3,7 +3,11 @@ import { FileUploader, FileSelectDirective} from 'ng2-file-upload';
 import {FileFunctionsService} from '../../services/file_functions/file-functions.service';
 import {FileSystemDirectoryEntry, FileSystemEntry, FileSystemFileEntry, UploadEvent, UploadFile} from 'ngx-file-drop';
 import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
+import {HttpClient, HttpHeaders} from '../../../../node_modules/@angular/common/http';
 
+const httpOptions = {
+  headers: new HttpHeaders()
+};
 
 
 @Component({
@@ -14,10 +18,12 @@ import {forEach} from '../../../../node_modules/@angular/router/src/utils/collec
 export class FileFunctionsComponent implements OnInit {
   private serverUrl = 'http://localhost:8080/uploadFile';
   public files: UploadFile[] = [];
+  public  sendFiles: Array<File> = [];
+  public  pathList: Array<String> = [];
 
 
   constructor(
-
+    private http: HttpClient
   ) { }
 
   ngOnInit() {
@@ -25,21 +31,33 @@ export class FileFunctionsComponent implements OnInit {
 
   dropped(event: UploadEvent) {
     this.files = event.files;
+    let num = 0;
 
     for (const droppedFile of event.files) {
       //if entry is a file
       if (droppedFile.fileEntry.isFile) {
         const fileEntry = droppedFile.fileEntry as FileSystemFileEntry;
         fileEntry.file((file: File) => {
+          this.sendFiles[num] = file;
+          this.pathList[num] = droppedFile.relativePath;
+          num++;
           console.log(file.name);
+          console.log(droppedFile.relativePath);
+          console.log(this.sendFiles.length);
         });
       }
       //entry is a directory
       else {
         const fileDir = droppedFile.fileEntry as FileSystemDirectoryEntry;
+        console.log('hello');
         this.fileSearch(fileDir);
       }
     }
+    console.log('NO');
+    console.log(this.sendFiles.length);
+    document.getElementById("filesDrop").style.display = "block";
+    document.getElementById("button1").removeAttribute("disabled");
+    document.getElementById("button2").removeAttribute("disabled");
   }
   fileSearch(fileDir: FileSystemDirectoryEntry) {
     const directoryReader = fileDir.createReader();
@@ -69,4 +87,32 @@ export class FileFunctionsComponent implements OnInit {
    fileLeave(event) {
     console.log(event);
   }
+
+
+  onUpload() {
+    console.log('File');
+    let uploadData = new FormData();
+    for (let file of this.sendFiles){
+      console.log('file entered');
+      uploadData.append('file', file);
+    }
+    //var config = {"name": uploadData, "name2": this.pathList};
+    this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
+      console.log(res);
+    });
+  }
+
+  clear() {
+    document.getElementById("filesDrop").style.display = "none";
+    this.sendFiles.length = 0;
+    this.sendFiles = [];
+    this.pathList.length = 0;
+    this.pathList = [];
+    this.files.length = 0;
+    this.files = [];
+
+    document.getElementById("button1").setAttribute("disabled", "true");
+    document.getElementById("button2").setAttribute("disabled", "true");
+  }
 }
+
