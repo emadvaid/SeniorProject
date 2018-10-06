@@ -14,12 +14,14 @@ import { FileFunctionsComponent } from './views/file-functions/file-functions.co
 import { FileSelectDirective} from 'ng2-file-upload';
 import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FileDropModule} from 'ngx-file-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     FileSelectDirective,
+    FileFunctionsComponent,
     FileFunctionsRedoComponent
   ],
   imports: [
@@ -27,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FileDropModule
   ],
   providers: [
     UserLoginService,

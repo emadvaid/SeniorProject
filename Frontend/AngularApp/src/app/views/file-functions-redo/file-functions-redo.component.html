@@ -1,5 +1,5 @@
 <form method="post" enctype="multipart/form-data">
-  <input type="file" accept=".xml" (change)="selectFiles($event)" multiple="multiple"  >
+  <input #folderInput type="file" accept=".xml" (change)="selectFiles($event)" multiple="multiple">
 
   <br>
   <span [innerHTML]="result"></span>

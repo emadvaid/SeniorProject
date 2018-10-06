@@ -35,7 +35,7 @@ const appRoutes: Routes = [
       {path: 'manageUsers', component: ManageUsersComponent},
       {path: 'createUser' , component: CreateUserComponent},
       {path: 'editUser' , component: EditUserComponent},
-      {path: 'importFile', component: FileFunctionsRedoComponent}
+      {path: 'importFile', component: FileFunctionsComponent}
     ]
   },
   {
@@ -63,6 +63,7 @@ export const routingComponents = [
   LogoutComponent,
   HomeComponent,
   PasswordResetComponent,
+  FileFunctionsComponent,
   FileFunctionsRedoComponent,
   DealerDashboardComponent,
   AdminDashboardComponent,

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FileUploader, FileSelectDirective} from 'ng2-file-upload';
 import {FileFunctionsService} from '../../services/file_functions/file-functions.service';
+import {FileSystemDirectoryEntry, FileSystemEntry, FileSystemFileEntry, UploadEvent, UploadFile} from 'ngx-file-drop';
+import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
 
-const URL = '';
+
 
 @Component({
   selector: 'app-file-functions',
@@ -10,55 +12,61 @@ const URL = '';
   styleUrls: ['./file-functions.component.css']
 })
 export class FileFunctionsComponent implements OnInit {
+  private serverUrl = 'http://localhost:8080/uploadFile';
+  public files: UploadFile[] = [];
 
-  public uploader: FileUploader = new FileUploader({ url: URL, itemAlias: 'XML'});
 
   constructor(
-    fileservice: FileFunctionsService
+
   ) { }
-  indicator = '';
-  trueFalse = false;
 
   ngOnInit() {
-    this.uploader.onAfterAddingFile = (file) => {file.withCredentials = false;
-    if(file.file.name.substring(file.file.name.length - 3) !== 'xml'){
-      this.trueFalse = false;
-      this.indicator = 'File must be in XML format';
-      this.removeFromQueue('xml');
-    }
-    else {
-      this.indicator = '';
-      this.trueFalse = true;
-    }
-    };
-    this.uploader.onWhenAddingFileFailed = (items) => {
-      console.log(items);
-
-
-
-
-
-    }
-    this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
-      console.log('XMLUploaded', item, status, response);
-      alert('File uploaded succesfully');
-    };
   }
 
-  removeFromQueue(label: string){
-    for(var i = 0; i < this.uploader.queue.length; i++) {
-      let temp = '';
-       temp = this.uploader.queue[i].file.name;
+  dropped(event: UploadEvent) {
+    this.files = event.files;
 
-      if (temp.substring(temp.length - 3) !== label) {
-        this.uploader.queue[i].remove();
+    for (const droppedFile of event.files) {
+      //if entry is a file
+      if (droppedFile.fileEntry.isFile) {
+        const fileEntry = droppedFile.fileEntry as FileSystemFileEntry;
+        fileEntry.file((file: File) => {
+          console.log(file.name);
+        });
+      }
+      //entry is a directory
+      else {
+        const fileDir = droppedFile.fileEntry as FileSystemDirectoryEntry;
+        this.fileSearch(fileDir);
       }
     }
   }
+  fileSearch(fileDir: FileSystemDirectoryEntry) {
+    const directoryReader = fileDir.createReader();
+    let resultFiles: UploadFile[] = [];
+    directoryReader.readEntries((entries => {
+      //if entry is a file
+      entries.forEach((entry => {
+        if (entry.isFile) {
+          const fileEntry = entry as FileSystemFileEntry;
+          fileEntry.file((file: File) => {
+            console.log(file.name);
+          });
+        }
+        //if entry is a directory
+        else {
+          const entry2 = entry as FileSystemDirectoryEntry;
+          this.fileSearch(entry2);
+        }
+      }));
+    }));
+    }
 
-  onFileChanged(event){
-    const file = event.target.files[0];
+   fileOver(event) {
+    console.log(event);
   }
 
-
+   fileLeave(event) {
+    console.log(event);
+  }
 }
