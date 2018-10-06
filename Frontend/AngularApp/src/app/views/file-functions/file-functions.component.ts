@@ -3,7 +3,7 @@ import { FileUploader, FileSelectDirective} from 'ng2-file-upload';
 import {FileFunctionsService} from '../../services/file_functions/file-functions.service';
 import {FileSystemDirectoryEntry, FileSystemEntry, FileSystemFileEntry, UploadEvent, UploadFile} from 'ngx-file-drop';
 import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
-import {HttpClient, HttpHeaders} from '../../../../node_modules/@angular/common/http';
+import {HttpClient, HttpHeaders, HttpParams} from '../../../../node_modules/@angular/common/http';
 
 const httpOptions = {
   headers: new HttpHeaders()
@@ -96,8 +96,7 @@ export class FileFunctionsComponent implements OnInit {
       console.log('file entered');
       uploadData.append('file', file);
     }
-    //var config = {"name": uploadData, "name2": this.pathList};
-    this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
+    this.http.post(this.serverUrl, {data: uploadData, paths: this.pathList} , httpOptions).subscribe(res => {
       console.log(res);
     });
   }

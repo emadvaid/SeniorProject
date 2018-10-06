@@ -23,11 +23,12 @@ public class KeysController {
 
     @CrossOrigin
     @PostMapping("/uploadFile")
-    public ResponseEntity<UploadFileResponse> uploadFile(@RequestParam(value="file")MultipartFile[] file) throws ParserConfigurationException {
+    //@RequestParam(value="file")MultipartFile[] file
+    public ResponseEntity<UploadFileResponse> uploadFile(@RequestBody fileReturnData file) throws ParserConfigurationException {
         //will read the xml file
         UploadFileResponse response = new UploadFileResponse();
-        for(int i = 0; i < file.length; i++) {
-             response = service.readFile(file[i]);
+        for(int i = 0; i < file.file.length; i++) {
+             response = service.readFile(file.file[i]);
         }
         HttpHeaders headers = new HttpHeaders();
 
