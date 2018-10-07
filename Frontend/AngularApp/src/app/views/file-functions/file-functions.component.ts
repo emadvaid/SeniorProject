@@ -92,11 +92,14 @@ export class FileFunctionsComponent implements OnInit {
   onUpload() {
     console.log('File');
     let uploadData = new FormData();
+    let i =0;
     for (let file of this.sendFiles){
       console.log('file entered');
       uploadData.append('file', file);
+      uploadData.append('path', JSON.stringify(this.pathList[i]));
+      i++;
     }
-    this.http.post(this.serverUrl, {data: uploadData, paths: this.pathList} , httpOptions).subscribe(res => {
+    this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
       console.log(res);
     });
   }

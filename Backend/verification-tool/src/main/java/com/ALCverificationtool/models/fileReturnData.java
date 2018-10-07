@@ -3,6 +3,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class fileReturnData {
 
-    public MultipartFile[] file;
-    public String[] pathNames;
+    private MultipartFile[] data;
+    private String[] paths;
+
+    public MultipartFile[] getData(){
+        return data;
+    }
+
+    public  String[] getPaths(){
+        return paths;
+    }
 }

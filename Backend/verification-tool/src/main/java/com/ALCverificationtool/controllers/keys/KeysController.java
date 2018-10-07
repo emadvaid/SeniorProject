@@ -3,6 +3,7 @@ package com.ALCverificationtool.controllers.keys;
 import com.ALCverificationtool.models.*;
 import com.ALCverificationtool.services.keysService.KeyService;
 
+import com.sun.org.apache.xpath.internal.operations.Mult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -24,11 +25,16 @@ public class KeysController {
     @CrossOrigin
     @PostMapping("/uploadFile")
     //@RequestParam(value="file")MultipartFile[] file
-    public ResponseEntity<UploadFileResponse> uploadFile(@RequestBody fileReturnData file) throws ParserConfigurationException {
+    //,
+
+    public ResponseEntity<UploadFileResponse> uploadFile(@RequestParam (value ="file")MultipartFile[] file, @RequestParam (value ="path")String[] paths) throws ParserConfigurationException {
         //will read the xml file
         UploadFileResponse response = new UploadFileResponse();
-        for(int i = 0; i < file.file.length; i++) {
-             response = service.readFile(file.file[i]);
+        for(int i = 0; i < file.length; i++) {
+             response = service.readFile(file[i]);
+        }
+        for(int i = 0; i < paths.length; i++){
+            System.out.println(paths[i]);
         }
         HttpHeaders headers = new HttpHeaders();
 
