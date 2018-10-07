@@ -22,20 +22,10 @@ public class keysRec {
     private String sectionNote;
     private String fileName;
     private String fileNotes;
+    private boolean approved;
+    private String folderPath;
 
     public keysRec() {}
-
-    public keysRec(keys original) {
-        this.keyName = original.getKeyName();
-        this.keyModified = original.getKeyModified();
-        this.keyNew = original.getKeyNew();
-        this.keyVariant = original.getKeyVariant();
-        this.keyNote = original.getKeyNote();
-        this.sectionId = original.getSectionId();
-        this.sectionNote = original.getSectionNote();
-        this.fileName = original.getFileName();
-        this.fileNotes = original.getFileNotes();
-    }
 
     public keysRec(keysRec original) {
         this.keyName = original.keyName;
@@ -47,11 +37,14 @@ public class keysRec {
         this.sectionNote = original.sectionNote;
         this.fileName = original.fileName;
         this.fileNotes = original.fileNotes;
+        this.approved = original.approved;
+        this.folderPath = original.folderPath;
     }
 
     public keysRec(Long keyId, String keyName, boolean keyModified, boolean keyNew,
                 String keyVariant, String keyNote, String sectionId,
-                String sectionNote, String fileName, String fileNotes){
+                String sectionNote, String fileName, String fileNotes,
+                   boolean approved, String folderPath){
         this.keyId = keyId;
         this.keyName = keyName;
         this.keyModified = keyModified;
@@ -62,6 +55,8 @@ public class keysRec {
         this.sectionNote = sectionNote;
         this.fileName = fileName;
         this.fileNotes = fileNotes;
+        this.approved = approved;
+        this.folderPath = folderPath;
     }
 
     public Long getKeyId() {return keyId;}
@@ -74,7 +69,7 @@ public class keysRec {
     public void setKeyModified(boolean keymodified) {this.keyModified = keymodified;}
 
     public boolean getKeyNew() {return keyNew;}
-    public void setKeyNed(boolean keyNew) {this.keyNew = keyNew;}
+    public void setKeyNew(boolean keyNew) {this.keyNew = keyNew;}
 
     public String getKeyVariant() {return keyVariant;}
     public void setKeyVariant(String keyVariant) {this.keyVariant = keyVariant;}
@@ -93,4 +88,10 @@ public class keysRec {
 
     public String getFileNotes() {return fileNotes;}
     public void setFileNotes(String fileNotes) {this.fileNotes = fileNotes;}
+
+    public boolean getApproved() { return approved;}
+    public void setApproved(boolean approved) {this.approved = approved;}
+
+    public String getFolderPath() { return folderPath;}
+    public void setFolderPath(String folderPath) { this.folderPath = folderPath;}
 }

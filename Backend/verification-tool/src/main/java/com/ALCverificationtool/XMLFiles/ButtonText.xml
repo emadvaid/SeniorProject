@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="ButtonText" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <note>This text is used to label various buttons throughout WebCTRL.</note>
+    <section id="PROPERTY PAGE BUTTONS">
+        <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+        <translation key="Active" new="true" modified="true">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Active</variant>
+        </translation>
+        
+        <translation key="Dirty" approved="true">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Dirty</variant>
+        </translation>
+        <translation key="Disabled" new="true">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Disabled</variant>
+        </translation>
+        <translation key="Make_Default">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Button on the schedule categories page</note>
+            <variant>Make Default</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/config/webappPlugin.jsp">
+        <note>Resources for the web application manager utility.</note>
+        <translation key="WebappDeploy">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Install</variant>
+        </translation>
+        <translation key="WebappStart">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Start</variant>
+        </translation>
+        <translation key="WebappSave">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Save Data</variant>
+        </translation>
+        <translation key="WebappStop">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Stop</variant>
+        </translation>
+        <translation key="WebappDelete">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Remove Add-on and Keep Data</variant>
+        </translation>
+        <translation key="WebappClean">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Remove Add-on and Data</variant>
+        </translation>
+    </section>
+</resource-base>
+<!-- master format -->

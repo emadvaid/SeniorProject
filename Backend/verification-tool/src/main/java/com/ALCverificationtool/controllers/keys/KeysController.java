@@ -33,9 +33,9 @@ public class KeysController {
         for(int i = 0; i < file.length; i++) {
              response = service.readFile(file[i]);
         }
-        for(int i = 0; i < paths.length; i++){
-            System.out.println(paths[i]);
-        }
+//        for(int i = 0; i < paths.length; i++){
+//            System.out.println(paths[i]);
+//        }
         HttpHeaders headers = new HttpHeaders();
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
