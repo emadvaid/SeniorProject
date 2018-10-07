@@ -25,17 +25,6 @@ public class keysRec {
 
     public keysRec() {}
 
-    public keysRec(keys original) {
-        this.keyName = original.getKeyName();
-        this.keyModified = original.getKeyModified();
-        this.keyNew = original.getKeyNew();
-        this.keyVariant = original.getKeyVariant();
-        this.keyNote = original.getKeyNote();
-        this.sectionId = original.getSectionId();
-        this.sectionNote = original.getSectionNote();
-        this.fileName = original.getFileName();
-        this.fileNotes = original.getFileNotes();
-    }
 
     public keysRec(keysRec original) {
         this.keyName = original.keyName;
