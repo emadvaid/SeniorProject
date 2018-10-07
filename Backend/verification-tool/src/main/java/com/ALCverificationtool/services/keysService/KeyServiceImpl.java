@@ -121,7 +121,8 @@ public class KeyServiceImpl implements KeyService {
                             System.out.println("Translation Variant: " + translationVariant);
                             keysRec.setKeyVariant(translationVariant);
 
-                            keysDao.save(keysRec);
+                            keysRec temp = new keysRec(keysRec);
+                            keysDao.save(temp);
                         }
                     }
                 }
