@@ -3,7 +3,7 @@ package com.ALCverificationtool.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name="keys")
+@Table(name="english_current")
 public class keysRec {
 
     // The key id field
@@ -41,11 +41,10 @@ public class keysRec {
         this.folderPath = original.folderPath;
     }
 
-    public keysRec(Long keyId, String keyName, boolean keyModified, boolean keyNew,
+    public keysRec(String keyName, boolean keyModified, boolean keyNew,
                 String keyVariant, String keyNote, String sectionId,
                 String sectionNote, String fileName, String fileNotes,
                    boolean approved, String folderPath){
-        this.keyId = keyId;
         this.keyName = keyName;
         this.keyModified = keyModified;
         this.keyNew = keyNew;

@@ -3,50 +3,107 @@
     <note>This text is used to label various buttons throughout WebCTRL.</note>
     <section id="PROPERTY PAGE BUTTONS">
         <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-        <translation key="Active" new="true" modified="true">
+        <translation approved="true" key="Active" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>Active</variant>
+            <variant>Activo</variant>
         </translation>
-        
-        <translation key="Dirty" approved="true">
+        <translation approved="true" key="Download_Selected_Items" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>Dirty</variant>
+            <variant>Descargar elementos seleccionados</variant>
         </translation>
-        <translation key="Disabled" new="true">
+        <translation approved="true" key="On" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>Disabled</variant>
+            <variant>Activado</variant>
         </translation>
-        <translation key="Make_Default">
+        <translation approved="true" key="on" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>on</variant>
+        </translation>
+        <translation approved="true" key="Open" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Abrir</variant>
+        </translation>
+        <translation approved="true" key="Search" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Buscar</variant>
+        </translation>
+        <translation approved="true" key="Search_Replace" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Buscar / Reemplazar</variant>
+        </translation>
+        <translation approved="true" key="Set" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Establecer</variant>
+        </translation>
+        <translation approved="true" key="Start" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Iniciar</variant>
+        </translation>
+        <translation approved="true" key="Use_Library_Version" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Text on design properties tool page at device level</note>
+            <variant>Usar versión de la biblioteca</variant>
+        </translation>
+        <translation approved="true" key="Delete_Trend_Graph" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Button at the top of a custom trend graph page</note>
+            <variant>Eliminar gráfica de tendencias</variant>
+        </translation>
+        <translation approved="true" key="Make_Default" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
             <note>Button on the schedule categories page</note>
-            <variant>Make Default</variant>
+            <variant>Definir como Default</variant>
         </translation>
     </section>
-    <section id="/_common/lvl5/tools/config/webappPlugin.jsp">
-        <note>Resources for the web application manager utility.</note>
-        <translation key="WebappDeploy">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Install</variant>
+    <section id="/_common/lvl5/tools/ccn/autodiscovery.jsp">
+        <note>Resources for the ccn autodiscovery process.</note>
+        <translation approved="true" key="Attach" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Attach a view from a list of available views</note>
+            <variant>Adjuntar</variant>
         </translation>
-        <translation key="WebappStart">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Start</variant>
+        <translation approved="true" key="Remove" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Remove a view from the assigned list of views</note>
+            <variant>Eliminar</variant>
         </translation>
-        <translation key="WebappSave">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Save Data</variant>
+        <translation approved="true" key="RemoveAll" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Remove all views from the equipment for the selected devices in the table.</note>
+            <variant>Eliminar todo</variant>
         </translation>
-        <translation key="WebappStop">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Stop</variant>
+        <translation approved="true" key="Connect_to_Gateway" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Find the CCN Gateway.</note>
+            <variant>Conectar a puerta de enlace</variant>
         </translation>
-        <translation key="WebappDelete">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Remove Add-on and Keep Data</variant>
+        <translation approved="true" key="Reconnect_to_Gateway" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Find the CCN Gateway.</note>
+            <variant>Volver a conectar a puerta de enlace</variant>
         </translation>
-        <translation key="WebappClean">
-            <note>Resources for the web application manager utility.</note>
-            <variant>Remove Add-on and Data</variant>
+    </section>
+    <section id="Time Machine">
+        <note>Resources for the Time Machine</note>
+        <translation approved="true" key="Range_Hourly_1" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>1 h</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_4" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>4 h</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_8" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>8 h</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_12" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>12 h</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_24" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>24 h</variant>
         </translation>
     </section>
 </resource-base>

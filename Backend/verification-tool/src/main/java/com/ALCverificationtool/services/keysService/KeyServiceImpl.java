@@ -103,15 +103,25 @@ public class KeyServiceImpl implements KeyService {
                             keysRec.setKeyModified(keyModified);
 
                             //Get translation key notes
+                            /*
                             String translationNote = translationElement.getElementsByTagName("note").item(0).getTextContent();
                             System.out.println("Translation Note: " + translationNote);
                             keysRec.setKeyNote(translationNote);
+                            */
+                            NodeList notesList = ((Element) translationNode).getElementsByTagName("note");
+                            String translationNotes = "";
+                            for (int n = 0; n < notesList.getLength(); n++) {
+                                translationNotes += notesList.item(n).getTextContent();
+                            }
+                            System.out.println("Notes: " + translationNotes);
+                            keysRec.setKeyNote(translationNotes);
 
                             //Get translation variant
                             String translationVariant = translationElement.getElementsByTagName("variant").item(0).getTextContent();
                             System.out.println("Translation Variant: " + translationVariant);
                             keysRec.setKeyVariant(translationVariant);
 
+                            keysDao.save(keysRec);
                         }
                     }
                 }
