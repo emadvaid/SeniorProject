@@ -1,7 +1,7 @@
 export enum UserTypes {admin, dealer, unknown}
 
 export class User {
-    id: number;
+    id: string;
     username: string;
     typeAsStr: string;
     isActive: boolean;
@@ -55,6 +55,25 @@ export class User {
         newUser.email     = parsedJson['email'];
         newUser.language1 = parsedJson['language1'];
         newUser.language2 = parsedJson['language2'];
+
+        return newUser;
+    }
+
+    /*
+     * Simple helper method to build a User object from a parsed JSON strin.
+     */
+    static fromJsonObject(jsonObject: any): User {
+        const newUser = new User();
+
+        newUser.id        = jsonObject['id'];
+        newUser.username  = jsonObject['username'];
+        newUser.typeAsStr = jsonObject['typeAsStr'];
+        newUser.isActive  = jsonObject['isActive'];
+        newUser.firstName = jsonObject['firstName'];
+        newUser.lastName  = jsonObject['lastName'];
+        newUser.email     = jsonObject['email'];
+        newUser.language1 = jsonObject['language1'];
+        newUser.language2 = jsonObject['language2'];
 
         return newUser;
     }

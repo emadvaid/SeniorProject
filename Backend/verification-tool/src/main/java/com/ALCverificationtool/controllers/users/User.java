@@ -1,9 +1,14 @@
-package com.ALCverificationtool.models;
+package com.ALCverificationtool.controllers.users;
+
+import com.ALCverificationtool.models.UserRec;
+
+import java.util.Optional;
+import java.util.UUID;
 
 public class User {
 
     private String username;
-    private Long id;
+    private UUID id;
     private String typeAsStr;
     private boolean isActive = true;
     private String firstName;
@@ -27,7 +32,22 @@ public class User {
         this.language2 = original.getLanguage2();
     }
 
-    public User(String username, Long id, String typeAsStr,
+    public User(Optional<UserRec> originalOpt) {
+        if(originalOpt.isPresent()) {
+            UserRec original = originalOpt.get();
+            this.id = original.getId();
+            this.username = original.getUsername();
+            this.typeAsStr = original.getType();
+            this.isActive = original.isActive();
+            this.firstName = original.getFirstName();
+            this.lastName = original.getLastName();
+            this.email = original.getEmail();
+            this.language1 = original.getLanguage1();
+            this.language2 = original.getLanguage2();
+        }
+    }
+
+    public User(String username, UUID id, String typeAsStr,
                 boolean isActive, String firstName,
                 String lastName, String email,
                 String language1, String language2) {
@@ -50,11 +70,11 @@ public class User {
         this.username = username;
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 

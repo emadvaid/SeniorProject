@@ -1,15 +1,19 @@
 package com.ALCverificationtool.models;
 
+import com.ALCverificationtool.controllers.users.User;
+
 import javax.persistence.*;
+import java.util.UUID;
+
 
 @Entity
 @Table(name="user")
 public class UserRec {
 
-    // The user id field
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id = null;
+    @Column(name = "id", columnDefinition = "BINARY(16)")
+    private UUID id = null;
 
     @Column(unique = true, nullable = false)
     private String username;
@@ -26,7 +30,8 @@ public class UserRec {
     public UserRec() {
     }
 
-    public UserRec(User original) {
+    public UserRec(User original){
+        this.id = original.getId();
         this.username = original.getUsername();
         this.type = original.getTypeAsStr();
         this.isActive = original.isActive();
@@ -39,6 +44,7 @@ public class UserRec {
     }
 
     public UserRec(UserRec original) {
+        this.id = original.id;
         this.username = original.username;
         this.password = original.password;
         this.type = original.type;
@@ -55,7 +61,6 @@ public class UserRec {
                    String firstName, String lastName, String email,
                    String language1, String language2) {
         this.username = username;
-        this.password = password;
         this.type = type;
         this.isActive = isActive;
         this.firstName = firstName;
@@ -74,11 +79,11 @@ public class UserRec {
         this.username = username;
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 

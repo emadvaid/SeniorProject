@@ -1,18 +1,22 @@
 package com.ALCverificationtool.services.userService;
 
 import com.ALCverificationtool.controllers.users.AuthUserResponse;
-import com.ALCverificationtool.models.User;
+import com.ALCverificationtool.controllers.users.User;
 import com.ALCverificationtool.models.UserRec;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
     AuthUserResponse authByUsernamePassword(String username, String password);
 
-    UserRec createUser(UserRec newUserRecDetails);
+    Optional<UserRec> createUser(UserRec newUserRecDetails);
 
-    List<User> getUsers();
+    List<UserRec> getUsers();
 
+    Optional<UserRec> getUserById(String userId);
+
+    Optional<UserRec> updateUser(String userId, User userDetails);
 }
 

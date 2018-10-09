@@ -4,7 +4,7 @@ import com.ALCverificationtool.controllers.users.AuthUserResponse;
 import com.ALCverificationtool.dao.authentication.UserAuthenticationRepository;
 import com.ALCverificationtool.dao.users.UserRepository;
 import com.ALCverificationtool.models.ResetToken;
-import com.ALCverificationtool.models.User;
+import com.ALCverificationtool.controllers.users.User;
 import com.ALCverificationtool.models.UserAuthentication;
 import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.services.authResetService.AuthResetService;
@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -71,7 +72,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserRec createUser(UserRec newUserRecDetails) {
+    public Optional<UserRec> createUser(UserRec newUserRecDetails) {
 
         // check for empty details
         if(newUserRecDetails == null){
@@ -113,22 +114,78 @@ public class UserServiceImpl implements UserService {
             throw new UserException("Error creating password reset for new user");
         }
 
-        return newUserRec;
+        return Optional.of(newUserRec);
     }
 
-    public List<User> getUsers(){
+    @Override
+    public List<UserRec> getUsers(){
         // get the user records from the database
-        List<UserRec> userRecList = userDao.findAll();
+        List<UserRec> results = userDao.findAll();
 
-        // create a result list of user to pass back
-        List<User> results = new ArrayList<>();
-
-        // map the user records into user objects
-        for(UserRec userRec: userRecList) {
-            results.add(new User(userRec));
+        for(UserRec rec: results) {
+            if(rec.getUsername().equals("admin")) {
+                results.remove(rec);
+            }
         }
 
         // return the user records
         return results;
+    }
+
+    @Override
+    public Optional<UserRec> getUserById(String userId) {
+        return this.userDao.findById(UUID.fromString(userId));
+    }
+
+    @Override
+    public Optional<UserRec> updateUser(String userId, User userDetails) {
+
+        // first make sure the userId is a valid UUID
+        if(!isUUID(userId)) {
+            throw new UserException("invalid userId.");
+        }
+
+        // next make sure the user exists in the database
+        Optional<UserRec> actualUserRecOpt = this.userDao.findById(UUID.fromString(userId));
+
+        if(!actualUserRecOpt.isPresent()) {
+            throw new UserException("could not find userRec for userId = " + userId);
+        }
+
+        // make sure the user is active
+        UserRec actualUserRec = actualUserRecOpt.get();
+        if(!actualUserRec.isActive()) {
+            throw new UserException("user not active");
+        }
+
+        // then copy the relevant values to the userRec Entity
+        actualUserRec.setFirstName(userDetails.getFirstName());
+        actualUserRec.setLastName(userDetails.getLastName());
+        actualUserRec.setLanguage1(userDetails.getLanguage1());
+        actualUserRec.setLanguage2(userDetails.getLanguage2());
+
+        // then save
+        UserRec newUserRec = this.userDao.save(actualUserRec);
+
+        // then check the user was updated return the updated userRecEntity
+        if(newUserRec == null
+                || !newUserRec.getId().equals(userDetails.getId())
+                || !newUserRec.getFirstName().equals(userDetails.getFirstName())
+                || !newUserRec.getLastName().equals(userDetails.getLastName())
+        ) {
+            throw new UserException("user not updated");
+        }
+        return Optional.of(newUserRec);
+    }
+
+    public boolean isUUID(String string) {
+        if(string == null) return false;
+
+        try {
+            UUID.fromString(string);
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
     }
 }

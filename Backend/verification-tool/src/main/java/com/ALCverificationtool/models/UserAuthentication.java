@@ -12,21 +12,21 @@ public class UserAuthentication {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID accessToken;
 
-    private Long userId;
+    private UUID userId;
     private String type;
 
     public UserAuthentication() {
     }
 
-    public UserAuthentication(Long userId, String type) {
+    public UserAuthentication(UUID userId, String type) {
         this.userId = userId;
         this.type = type;
         this.accessToken = null;
     }
 
-    public UserAuthentication(Long id, UUID accessToken, String type) {
-            this.userId = id;
-            this.accessToken = accessToken;
+    public UserAuthentication(UUID userId, UUID accessToken, String type) {
+        this.userId = userId;
+        this.accessToken = accessToken;
         this.type = type;
     }
 
@@ -36,11 +36,11 @@ public class UserAuthentication {
         this.type = authCredentials.getType();
     }
 
-    public Long getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(UUID userId) {
         this.userId = userId;
     }
 

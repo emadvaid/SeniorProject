@@ -34,4 +34,5 @@ public class TranslationApplication {
 
 		return mailSender;
 	}
+
 }

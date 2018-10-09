@@ -2,7 +2,6 @@ package com.ALCverificationtool.controllers.users;
 
 import com.ALCverificationtool.models.*;
 import com.ALCverificationtool.services.ServiceException;
-import com.ALCverificationtool.services.userService.UserAuthenticationException;
 import com.ALCverificationtool.services.userService.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class UsersController {
@@ -21,7 +22,7 @@ public class UsersController {
 
     @CrossOrigin
     @PostMapping("/authorizeUser")
-    public ResponseEntity<AuthUserResponse> authUser(@RequestBody AuthUserRequest request){
+    public ResponseEntity<AuthUserResponse> authUser(@RequestBody AuthUserRequest request) {
 
         AuthUserResponse response = service.authByUsernamePassword(request.getUsername(), request.getPassword());
 
@@ -32,14 +33,13 @@ public class UsersController {
 
     /**
      * Creates a new user.
-
      *
      * @param request the http request.
      * @return The new user object wrapped in a {@code ResponseEntity.}
      */
-        @CrossOrigin
-        @PostMapping("/users")
-        public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {
+    @CrossOrigin
+    @PostMapping("/users")
+    public ResponseEntity<CreateUserResponse> createUser(@RequestBody CreateUserRequest request) {
         // first create new user
         User newUser = new User(service.createUser(new UserRec(request.getUserDetails())));
 
@@ -52,9 +52,13 @@ public class UsersController {
 
     @CrossOrigin
     @GetMapping("/users")
-    public ResponseEntity<GetUsersResponse> getUsers(){
+    public ResponseEntity<GetUsersResponse> getUsers() {
 
-        List<User> userResults = this.service.getUsers();
+        List<UserRec> userRecResults = this.service.getUsers();
+
+        List<User> userResults = new ArrayList<>();
+
+        for(UserRec rec: userRecResults) userResults.add(new User(rec));
 
         GetUsersResponse response = new GetUsersResponse(userResults);
 
@@ -62,6 +66,37 @@ public class UsersController {
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<GetUserDetailResponse> getUser(@PathVariable("userId") String userId) {
+
+        Optional<UserRec> userRecResult = this.service.getUserById(userId);
+
+        GetUserDetailResponse response = new GetUserDetailResponse(new User(userRecResult));
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PutMapping("/user/{userId}")
+    public ResponseEntity<UpdateUserResponse> updateUser(@PathVariable("userId") String userId,
+                                                         @RequestBody UpdateUserRequest request) {
+
+        Optional<UserRec> userRecResult = this.service.updateUser(userId, request.getUserDetail());
+
+        // make sure the user was in fact updated
+
+        UpdateUserResponse response = new UpdateUserResponse(200, "Success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+
 
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ExceptionHandler({ServiceException.class})

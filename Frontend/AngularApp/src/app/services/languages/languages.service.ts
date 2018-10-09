@@ -9,7 +9,6 @@ export class LanguagesService {
         {name: 'German'},
         {name: 'Italian'},
         {name: 'Japanese'},
-        {name: 'English'},
         {name: 'Korean'},
         {name: 'Russian'},
         {name: 'Spanish'},

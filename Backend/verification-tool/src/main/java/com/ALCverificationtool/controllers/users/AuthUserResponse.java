@@ -1,6 +1,5 @@
 package com.ALCverificationtool.controllers.users;
 
-import com.ALCverificationtool.models.User;
 import com.ALCverificationtool.models.UserAuthentication;
 
 public class AuthUserResponse {

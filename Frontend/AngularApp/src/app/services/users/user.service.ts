@@ -19,7 +19,7 @@ export class UserService {
 
     constructor(private userLoginService: UserLoginService, private http: Http) {}
 
-    createUser(user: User): Observable<User> {
+    create(user: User): Observable<User> {
 
         if (!this.userLoginService.isLoggedIn) {
             console.log('UserService.createUser: user not logged in');
@@ -59,7 +59,7 @@ export class UserService {
         return ((typeof userId !== 'undefined') && (userId != null) && (userId.length > 0) );
     }
 
-    getAllUsers() {
+    getAll() {
 
         if (!this.userLoginService.isLoggedIn) {
             console.log('UserService.getAllUsers: user not logged in');
@@ -91,18 +91,60 @@ export class UserService {
         .pipe(catchError(err => this.handleError(err)));
     }
 
-    public getUserById(userId: string): Observable<User> {
-        const user: User = new User();
-        user.id = 1;
-        user.username = 'test user';
-        user.firstName = 'first';
-        user.lastName = 'first';
-        user.email = 'test@test.com';
-        user.language1 = 'English';
-        user.isActive = true;
-        user.typeAsStr = 'Dealer';
+    public getById(userId: string): Observable<User> {
 
-        return of(user);
+        if (!this.userLoginService.isLoggedIn) {
+            console.log('UserService.update: user not logged in');
+            return null;
+        }
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json',
+            'access-token': this.userLoginService.accessToken
+        });
+        const options = new RequestOptions({ headers: headers});
+        return this.http.get(`http://localhost:8080/user/${userId}`, options)
+        .pipe(
+            map((resp: any) => {
+                // find the user from the response body
+                if (resp && resp != null) {
+                    const respBody: any = resp.json();
+                    if (respBody && respBody != null) {
+                        const { userDetail } = respBody;
+
+                        if (userDetail && userDetail != null) {
+                            return User.fromJsonObject(userDetail);
+                        }
+                    }
+                }
+                // no response so no user
+                return null;
+            }));
+    }
+
+    public update(userId: string, userDetail: User): Observable<boolean> {
+
+        if (!this.userLoginService.isLoggedIn) {
+            console.log('UserService.update: user not logged in');
+            return null;
+        }
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json',
+            'access-token': this.userLoginService.accessToken
+        });
+        const options = new RequestOptions({ headers: headers});
+        return this.http.put(`http://localhost:8080/user/${userId}`, {
+            userDetail
+        }, options)
+        .pipe(
+            map((resp: any) => {
+                console.log(resp);
+
+                return true;
+            }));
     }
 
     public get userRoles(): any {

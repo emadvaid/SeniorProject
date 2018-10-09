@@ -1,7 +1,7 @@
 <div>{{diagnostics}}</div>
 <h3>Edit User</h3>
 <form #createUserForm="ngForm">
-    <h2>Create User</h2>
+    <h2>Edit User</h2>
     <div class='form-group'>
         <label>Username</label>
         <input
@@ -9,9 +9,17 @@
             class = 'form-control'
             id="username"
             name="username"
+            required minlength="4"
+            appForbiddenName="admin"
             placeholder="Enter username"
             [(ngModel)]="model.user.username"
+            #username="ngModel"
         >
+        <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+            <div *ngIf="username.errors.required">Username is required</div>
+            <div *ngIf="username.errors.minlength">Username must be at least 4 characters.</div>
+            <div *ngIf="username.errors.forbiddenName">Username cannot be admin.</div>
+        </div>
     </div>
     <div class='form-group'>
         <label>First Name</label>
@@ -55,7 +63,7 @@
                 name="language1"
                 [(ngModel)]="model.user.language1"
             >
-                <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
+                <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
             </select>
         </label>
     </div>
@@ -68,7 +76,7 @@
                     name="language2"
                     [(ngModel)]="model.user.language2"
                 >
-                    <option *ngFor="let lang of langArry" [ngValue]="lang">{{lang.name}}</option>
+                    <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
                 </select>
             </label>
         </div>
@@ -79,9 +87,9 @@
                     class = 'form-control'
                     id="role"
                     name="role"
-                    [(ngModel)]="model.user.role"
+                    [(ngModel)]="model.user.typeAsStr"
                 >
-                    <option *ngFor="let lang of roleArry" [ngValue]="role">{{lang.name}}</option>
+                    <option *ngFor="let role of roleArry" [ngValue]="role.name.toLowerCase()">{{role.name}}</option>
                 </select>
             </label>
         </div>

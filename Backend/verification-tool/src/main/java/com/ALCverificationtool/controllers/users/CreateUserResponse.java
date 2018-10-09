@@ -1,7 +1,5 @@
 package com.ALCverificationtool.controllers.users;
 
-import com.ALCverificationtool.models.User;
-
 public class CreateUserResponse {
     User userDetails;
 

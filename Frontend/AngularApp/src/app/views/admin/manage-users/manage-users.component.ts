@@ -20,7 +20,7 @@ export class ManageUsersComponent implements OnInit {
     // initialize this component by making an Ajax call to our dealer profile service
     //  to get the deal list
     ngOnInit() {
-        this.userService.getAllUsers().subscribe(
+        this.userService.getAll().subscribe(
             (users: Array<User>) => {
                 this.model.users = users;
             },
@@ -37,9 +37,9 @@ export class ManageUsersComponent implements OnInit {
 
     editUser(event: any) {
         console.log('editUser: event.target.dataset[\'userid\'] = ', event.target.dataset['userid']);
-        this.router.navigate(['admin/editUser', {
+        this.router.navigate(['admin/editUser'], {
             queryParams: {userId: event.target.dataset['userid']}
-        }]);
+        });
     }
 
     activateUser() {

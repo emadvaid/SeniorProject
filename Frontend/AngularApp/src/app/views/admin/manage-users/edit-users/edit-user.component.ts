@@ -4,6 +4,8 @@ import { LanguagesService } from '../../../../services/languages/languages.servi
 import { UserService } from '../../../../services/users/user.service';
 import { User } from '../../../../models/User';
 import { error } from '@angular/compiler/src/util';
+import { ValidatorFn, AbstractControl } from '@angular/forms';
+import { ForbiddenNameValidatorDirective } from '../../../../validators/user-validator.validator';
 
 @Component({
     selector: 'app-edit-users',
@@ -39,7 +41,7 @@ export class EditUserComponent implements OnInit {
                 if (this.userService.validateUserId(this.userId)) {
                     // get the User object for this user id, using the UserService
                     // and add to the model
-                    this.userService.getUserById(this.userId).subscribe(
+                    this.userService.getById(this.userId).subscribe(
                         (user: User) => {
                             // make sure the user object is not null
                             if (user != null) {
@@ -63,6 +65,58 @@ export class EditUserComponent implements OnInit {
                 }
             }
         );
+    }
+
+    onSubmit(): void {
+
+         // validate
+         if (!this.validate()) {
+            console.log('onSubmit: validation error');
+            return;
+        }
+        // call service method
+        this.submitted = true;
+
+        const updatedUserDetails: User = new User();
+        updatedUserDetails.id = this.userId;
+
+        updatedUserDetails.username = this.model.user.username;
+        updatedUserDetails.firstName = this.model.user.firstName;
+        updatedUserDetails.lastName = this.model.user.lastName;
+        updatedUserDetails.email = this.model.user.email;
+        updatedUserDetails.language1 = this.model.user.language1;
+        updatedUserDetails.language2 = this.model.user.language2;
+        updatedUserDetails.isActive = this.model.user.active;
+        updatedUserDetails.typeAsStr = this.model.user.typeAsStr;
+
+        console.log('onSubmit(): newUser = ', updatedUserDetails);
+
+        this.userService.update(this.userId, updatedUserDetails)
+            .subscribe((result: boolean) => {
+                // succesfully created a new user so redirect to the manage user page
+                this.router.navigate(['/admin/manageUsers']);
+            });
+
+    }
+
+    validate(): boolean {
+        return (
+           !this.isEmpty(this.model.user.username)
+           && !this.isEmpty(this.model.user.language1)
+           && !this.isEmpty(this.model.user.typeAsStr)
+           && (this.model.user.typeAsStr.toLowerCase() === 'admin' || this.model.user.typeAsStr.toLowerCase() === 'dealer')
+        );
+
+    }
+
+    isEmpty(str: string): boolean {
+        if (str && typeof(str) === 'string') {
+            if (str.length > 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     get diagnostics() {

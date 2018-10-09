@@ -12,13 +12,13 @@ public class ResetToken {
     @Column(name = "id", columnDefinition = "BINARY(16)")
     private UUID id = null;
 
-    private long userId;
+    private UUID userId;
     private boolean isActive;
 
     public ResetToken() {
     }
 
-    public ResetToken(long userId, boolean isActive) {
+    public ResetToken(UUID userId, boolean isActive) {
         this.userId = userId;
         this.isActive = isActive;
     }
@@ -31,11 +31,11 @@ public class ResetToken {
         this.id = id;
     }
 
-    public long getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(UUID userId) {
         this.userId = userId;
     }
 

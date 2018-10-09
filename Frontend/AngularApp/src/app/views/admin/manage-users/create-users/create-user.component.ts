@@ -57,7 +57,7 @@ export class CreateUserComponent implements OnInit {
 
         console.log('onSubmit(): newUser = ', newUser);
 
-        this.userService.createUser(newUser)
+        this.userService.create(newUser)
             .subscribe((user: User) => {
                 // succesfully created a new user so redirect to the manage user page
                 this.router.navigate(['/admin/manageUsers']);
@@ -89,5 +89,10 @@ export class CreateUserComponent implements OnInit {
         }
 
         return true;
+    }
+
+    get diagnostics() {
+      return 'model = ' + JSON.stringify(this.model)
+        + ', submitted = ' + this.submitted;
     }
 }
