@@ -16,6 +16,7 @@ import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-us
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
+import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -62,6 +63,8 @@ export const routingComponents = [
   LogoutComponent,
   HomeComponent,
   PasswordResetComponent,
+  FileFunctionsComponent,
+  FileFunctionsRedoComponent,
   DealerDashboardComponent,
   AdminDashboardComponent,
   ManageUsersComponent,

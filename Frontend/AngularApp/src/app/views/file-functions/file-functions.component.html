@@ -1,10 +1,29 @@
-<h1>File Import/Export</h1>
-
-<input type="file" name="XML" ng2FileSelect [uploader]="uploader"/>
-
-<button type="button" class="btn btn-success btn-s"
-        (click)="uploader.uploadAll()"
-        [disabled]="!trueFalse" >
-  Upload an XML file
-</button>
-<h2>{{indicator}}</h2>
+<div>
+  <file-drop headertext="Drop files here" (onFileDrop)="dropped($event)"
+  (onFileOver)="fileOver($event)" (onFileLeave)="($event)">
+  </file-drop>
+  <div style="display:none;height:450px;overflow:auto" id="filesDrop">
+  <div class="upload-table">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+      </thead>
+      <tbody class="upload-name-style">
+      <tr *ngFor="let item of files; let i = index">
+        <td><strong>{{ item.relativePath }}</strong></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <button type="button" class="btn btn-success btn-s"
+          (click)="onUpload()" id="button1" disabled>
+    Upload XML files
+  </button>
+  <button type="button" class="btn btn-danger btn-s" style="float: right;"
+          (click)="clear()" id="button2" disabled>
+    Clear files
+  </button>
+</div>
