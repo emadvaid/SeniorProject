@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="logicbuilder-microblocks" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="microblocks">
+        <translation approved="true" key="microblock-palette-display" new="false">
+            <note/>
+            <variant>Mostrar</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-display-2" new="false">
+            <note/>
+            <variant>Mostrar 2</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-sys-in" new="false">
+            <note/>
+            <variant>Entrada sistema</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-io" new="false">
+            <note/>
+            <variant>Pts E/S</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-carrier" new="false">
+            <note/>
+            <variant>Carrier</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-misc" new="false">
+            <note/>
+            <variant>Varios</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-math2" new="false">
+            <note/>
+            <variant>Matemáticas 2</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-net-io" new="false">
+            <note/>
+            <variant>Net E/S</variant>
+        </translation>
+        <translation approved="true" key="microblocks-macroblock-io" new="false">
+            <note/>
+            <variant>E/S de macrobloque</variant>
+        </translation>
+        <translation approved="true" key="microblocks-binary" new="false">
+            <note/>
+            <variant>Binario</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-relay" new="false">
+            <note/>
+            <variant>Relé</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-convert" new="false">
+            <note/>
+            <variant>Convertir</variant>
+        </translation>
+        <translation approved="true" key="all-microblocks" new="false">
+            <note/>
+            <variant>Todos los micro bloques</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-log" new="false">
+            <note/>
+            <variant>Logaritmo</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-sys-out" new="false">
+            <note/>
+            <variant>Salida sistema</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-control" new="false">
+            <note/>
+            <variant>Control</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-logic" new="false">
+            <note/>
+            <variant>Lógica</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-limit" new="false">
+            <note/>
+            <variant>Límite</variant>
+        </translation>
+        <translation approved="true" key="microblock-palette-math" new="false">
+            <note/>
+            <variant>Matemáticas 1</variant>
+        </translation>
+        <translation approved="true" key="microblocks-analog" new="false">
+            <note/>
+            <variant>Analógico</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Analog_Clock" new="false">
+            <note/>
+            <variant>Reloj analógico</variant>
+        </translation>
+        <translation approved="true" key="PID_Reverse_Acting" new="false">
+            <note/>
+            <variant>PID (Actuación inversa)</variant>
+        </translation>
+        <translation approved="true" key="Log" new="false">
+            <note/>
+            <variant>Logaritmo</variant>
+        </translation>
+        <translation approved="true" key="Subtract_Constant" new="false">
+            <note/>
+            <variant>Restar constante de variable</variant>
+        </translation>
+        <translation approved="true" key="Lead_Standby" new="false">
+            <note/>
+            <variant>Cable/Espera</variant>
+        </translation>
+        <translation approved="true" key="Analog_Trend" new="false">
+            <note/>
+            <variant>Tendencia analógica</variant>
+        </translation>
+        <translation approved="true" key="Binary_Network_Output" new="false">
+            <note/>
+            <variant>Salida de red binaria</variant>
+        </translation>
+        <translation approved="true" key="Wet_Bulb_Temperature_Calculator" new="false">
+            <note/>
+            <variant>Calculador de temperatura de cubeta húmeda</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Time_Clock_with_TLO" new="false">
+            <note/>
+            <variant>Reloj de hora BACnet con TLO</variant>
+        </translation>
+        <translation approved="true" key="Analog_Wire_Lock" new="false">
+            <note/>
+            <variant>Bloqueo de alambre analógico</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Alarm" new="false">
+            <note/>
+            <variant>Alarma BACnet</variant>
+        </translation>
+        <translation approved="true" key="Maximum_On_Timer" new="false">
+            <note/>
+            <variant>Máximo tiempo de "activado"</variant>
+        </translation>
+        <translation approved="true" key="Runtime_Monitor" new="false">
+            <note/>
+            <variant>Monitor de tiempo de ejecución</variant>
+        </translation>
+        <translation approved="true" key="Binary_Status" new="false">
+            <note/>
+            <variant>Estado binario</variant>
+        </translation>
+        <translation approved="true" key="Sunrise_Sunset" new="false">
+            <note/>
+            <variant>Amanecer/Anochecer</variant>
+        </translation>
+        <translation approved="true" key="Delay_on_Make" new="false">
+            <note/>
+            <variant>Temporizado en Encendido</variant>
+        </translation>
+        <translation approved="true" key="Add_Two_Variables" new="false">
+            <note/>
+            <variant>Agregar</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Analog_Value_Status" new="false">
+            <note/>
+            <variant>Estado de valor analógico de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Average" new="false">
+            <note/>
+            <variant>Promedio</variant>
+        </translation>
+        <translation approved="true" key="Set_Color" new="false">
+            <note/>
+            <variant>Determinar color</variant>
+        </translation>
+        <translation approved="true" key="True_If_equalto_Constant" new="false">
+            <note/>
+            <variant>Verdadero si = constante</variant>
+        </translation>
+        <translation approved="true" key="Digital_Trend" new="false">
+            <note/>
+            <variant>Grafica digital</variant>
+        </translation>
+        <translation approved="true" key="Object_Instance" new="false">
+            <note/>
+            <variant>Instancia de objeto</variant>
+        </translation>
+        <translation approved="true" key="True_If_greater_Second_Input" new="false">
+            <note/>
+            <variant>Verdadero si &gt; Variable</variant>
+        </translation>
+        <translation approved="true" key="Toggle" new="false">
+            <note/>
+            <variant>Alternar</variant>
+        </translation>
+        <translation approved="true" key="Exclusive_Or_XOR" new="false">
+            <note/>
+            <variant>Or exclusivo</variant>
+        </translation>
+        <translation approved="true" key="Variable_Low_Signal_Selector" new="false">
+            <note/>
+            <variant>Selector de señal baja variable</variant>
+        </translation>
+        <translation approved="true" key="Total_Analog_Properties" new="false">
+            <note/>
+            <variant>Analógica total</variant>
+        </translation>
+        <translation approved="true" key="m$sysvar" new="false">
+            <note/>
+            <variant>Obtener variable del sistema</variant>
+        </translation>
+        <translation approved="true" key="m$mbee" new="false">
+            <note/>
+            <variant>Objeto mostrado de la inscripción del evento de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Multi_State_BACnet_Time_Clock" new="false">
+            <note/>
+            <variant>Reloj de hora BACnet de estado múltiple</variant>
+        </translation>
+        <translation approved="true" key="Delay_on_Break" new="false">
+            <note/>
+            <variant>Temporizado en Apagado</variant>
+        </translation>
+        <translation approved="true" key="Multiply_Variable_by_Constant" new="false">
+            <note/>
+            <variant>Multiplicar constante por variable</variant>
+        </translation>
+        <translation approved="true" key="Dewpoint_Temperature_Calculator" new="false">
+            <note/>
+            <variant>Calculador de temperatura de punto de condensación</variant>
+        </translation>
+        <translation approved="true" key="m$mbmsv" new="false">
+            <note/>
+            <variant>Objeto mostrado del valor de estado múltiple de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Latch" new="false">
+            <note/>
+            <variant>Latch</variant>
+        </translation>
+        <translation approved="true" key="Version_Microblock" new="false">
+            <note/>
+            <variant>Versión de micro bloque</variant>
+        </translation>
+        <translation approved="true" key="Text_Microblock" new="false">
+            <note/>
+            <variant>Versión de micro bloque</variant>
+        </translation>
+        <translation approved="true" key="Analog_Trend_with_Sample_Trigger" new="false">
+            <note/>
+            <variant>Tendencia analógica con activador de muestras</variant>
+        </translation>
+        <translation approved="true" key="Binary_Constant" new="false">
+            <note/>
+            <variant>Constante binaria</variant>
+        </translation>
+        <translation approved="true" key="m$syssta" new="false">
+            <note/>
+            <variant>Obtener estado del sistema</variant>
+        </translation>
+        <translation approved="true" key="m$ocl" new="false">
+            <note/>
+            <variant>OCL</variant>
+        </translation>
+        <translation approved="true" key="Zone_Controller" new="false">
+            <note/>
+            <variant>Controlador de zona</variant>
+        </translation>
+        <translation approved="true" key="m$mbmso" new="false">
+            <note/>
+            <variant>Objeto mostrado de la salida de estado múltiple BACnet</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_with_Demand_and_Learning_Adaptive_Optimal_Start" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) de zona con demanda y aprendizaje adaptativo de inicio optimo</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_BACnet_with_Opt_Learning_Adaptive_Optimal_Start" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) de zona BACnet con inicio óptimo para aprendizaje adaptado</variant>
+        </translation>
+        <translation approved="true" key="zone-linkage" new="false">
+            <note/>
+            <variant>Acoplamiento de zona</variant>
+        </translation>
+        <translation approved="true" key="air-source-linkage" new="false">
+            <note/>
+            <variant>Acoplamiento de fuente de aire</variant>
+        </translation>
+        <translation approved="true" key="min-setpoint-width" new="false">
+            <note/>
+            <variant>Separación mínima de valor propuesto</variant>
+        </translation>
+        <translation approved="true" key="use-orphan-trend-net-visible" new="false">
+            <note/>
+            <variant>Usar red de tendencia visible sin descendientes</variant>
+        </translation>
+        <translation approved="true" key="m$mbmsi" new="false">
+            <note/>
+            <variant>Objeto mostrado de la entrada de estado múltiple de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Natural_Log" new="false">
+            <note/>
+            <variant>Logaritmo natural</variant>
+        </translation>
+        <translation approved="true" key="Truncate" new="false">
+            <note/>
+            <variant>Cortar</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_Plus" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) de zona - Plus</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Time_Clock" new="false">
+            <note/>
+            <variant>Reloj de hora BACnet</variant>
+        </translation>
+        <translation approved="true" key="Ramp_Up_Down_Control" new="false">
+            <note/>
+            <variant>Control de rampa hacia arriba/hacia abajo</variant>
+        </translation>
+        <translation approved="true" key="Or" new="false">
+            <note/>
+            <variant>O</variant>
+        </translation>
+        <translation approved="true" key="Runtime_Accumulation" new="false">
+            <note/>
+            <variant>Acumulación de tiempo de ejecución</variant>
+        </translation>
+        <translation approved="true" key="Cosine" new="false">
+            <note/>
+            <variant>Coseno</variant>
+        </translation>
+        <translation approved="true" key="Analog_Network_Output" new="false">
+            <note/>
+            <variant>Salida de red analógica</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint" new="false">
+            <note/>
+            <variant>Punto de Ajuste (setpoint) de zona</variant>
+        </translation>
+        <translation approved="true" key="Digital_to_Analog_Converter" new="false">
+            <note/>
+            <variant>Convertidor de digital a análogo</variant>
+        </translation>
+        <translation approved="true" key="m$para" new="false">
+            <note/>
+            <variant>Parámetro analógico</variant>
+        </translation>
+        <translation approved="true" key="m$mbasv" new="false">
+            <note/>
+            <variant>Objeto mostrado del valor analógico de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Sine" new="false">
+            <note/>
+            <variant>Seno</variant>
+        </translation>
+        <translation approved="true" key="Variable_High_Signal_Selector" new="false">
+            <note/>
+            <variant>Selector de señal alta variable</variant>
+        </translation>
+        <translation approved="true" key="Digital_Wire_Lock" new="false">
+            <note/>
+            <variant>Bloqueo de señal digital</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_1_Plus_with_Learning_Adaptive_Optimal_Start" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) de zona - Plus con aprendedor del comienzo óptimo adaptante</variant>
+        </translation>
+        <translation approved="true" key="Pulse_to_Analog_Input" new="false">
+            <note/>
+            <variant>Entrada de pulso a analógica</variant>
+        </translation>
+        <translation approved="true" key="Switch_Normally_Closed_to_Variable" new="false">
+            <note/>
+            <variant>Conmutador normalmente cerrado para la variable</variant>
+        </translation>
+        <translation approved="true" key="m$mbbv" new="false">
+            <note/>
+            <variant>Objeto mostrado del valor binario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_1" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) de zona con aprendedor del comienzo óptimo adaptante</variant>
+        </translation>
+        <translation approved="true" key="Average_Analog_Properties" new="false">
+            <note/>
+            <variant>Analógica promedio</variant>
+        </translation>
+        <translation approved="true" key="m$mbbo" new="false">
+            <note/>
+            <variant>Objeto mostrado de la salida binaria de BACnet</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Binary_Value_Status" new="false">
+            <note/>
+            <variant>Estado de valor binario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="m$mbbi" new="false">
+            <note/>
+            <variant>Objeto mostrado de la entrada binaria de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Linear_Converter" new="false">
+            <note/>
+            <variant>Convertidor lineal</variant>
+        </translation>
+        <translation approved="true" key="Minimum_Analog_Properties" new="false">
+            <note/>
+            <variant>Analógica mínima</variant>
+        </translation>
+        <translation approved="true" key="LogiStat_Zone_Sensor_with_Optional_OAT_Display" new="false">
+            <note/>
+            <variant>Sensor de zona LogiStat</variant>
+        </translation>
+        <translation approved="true" key="RS_Sensor" new="false">
+            <note/>
+            <variant>Sensor de zona RS</variant>
+        </translation>
+        <translation approved="true" key="PID_Direct_Acting" new="false">
+            <note/>
+            <variant>PID (Actuación directa)</variant>
+        </translation>
+        <translation approved="true" key="Floating_Motor" new="false">
+            <note/>
+            <variant>Motor flotante</variant>
+        </translation>
+        <translation approved="true" key="m$mbnc" new="false">
+            <note/>
+            <variant>Objeto mostrado de la clase de notificación de BACnet</variant>
+        </translation>
+        <translation approved="true" key="m$mbav" new="false">
+            <note/>
+            <variant>Objeto mostrado del valor analógico de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Constant_Low_Signal_Selector" new="false">
+            <note/>
+            <variant>Selector de señal baja constante</variant>
+        </translation>
+        <translation approved="true" key="m$mbao" new="false">
+            <note/>
+            <variant>Objeto mostrado de la salida analógica de BACnet</variant>
+        </translation>
+        <translation approved="true" key="True_If_equalto_Second_Input" new="false">
+            <note/>
+            <variant>Verdadero si = Variable</variant>
+        </translation>
+        <translation approved="true" key="m$stata" new="false">
+            <note/>
+            <variant>Estado analógico</variant>
+        </translation>
+        <translation approved="true" key="m$mbai" new="false">
+            <note/>
+            <variant>Objeto mostrado de la entrada analógica de BACnet</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Binary_Output" new="false">
+            <note/>
+            <variant>Salida binaria de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Round_Up_Down" new="false">
+            <note/>
+            <variant>Redondear hacia arriba/abajo</variant>
+        </translation>
+        <translation approved="true" key="Add_Constant" new="false">
+            <note/>
+            <variant>Agregar constante a variable</variant>
+        </translation>
+        <translation approved="true" key="Time_Status" new="false">
+            <note/>
+            <variant>Estado de hora</variant>
+        </translation>
+        <translation approved="true" key="Divide_Variable_by_Constant" new="false">
+            <note/>
+            <variant>Dividir variable por constante</variant>
+        </translation>
+        <translation approved="true" key="m$mbtrend" new="false">
+            <note/>
+            <variant>Objeto mostrado del registro de tendencias de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Linear_Converter_for_Variable_Inputs" new="false">
+            <note/>
+            <variant>Convertidor lineal para entradas variables</variant>
+        </translation>
+        <translation approved="true" key="Set_Color_If_True" new="false">
+            <note/>
+            <variant>Determinar color, si verdadero</variant>
+        </translation>
+        <translation approved="true" key="Variable_Duty_Cycle" new="false">
+            <note/>
+            <variant>Ciclo de servicio variable</variant>
+        </translation>
+        <translation approved="true" key="Modulo" new="false">
+            <note/>
+            <variant>Módulo</variant>
+        </translation>
+        <translation approved="true" key="Add_Three_Variables" new="false">
+            <note/>
+            <variant>Agregar 3</variant>
+        </translation>
+        <translation approved="true" key="Variable_Low_Limit" new="false">
+            <note/>
+            <variant>Límite bajo variable</variant>
+        </translation>
+        <translation approved="true" key="True_If_less_Constant" new="false">
+            <note/>
+            <variant>Verdadero si &lt; Constante</variant>
+        </translation>
+        <translation approved="true" key="Square_Root" new="false">
+            <note/>
+            <variant>Raíz cuadrada</variant>
+        </translation>
+        <translation approved="true" key="Constant_Low_Limit" new="false">
+            <note/>
+            <variant>Límite bajo constante</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_with_Demand" new="false">
+            <note/>
+            <variant>Punto de ajuste (setpoint) con demanda de zona</variant>
+        </translation>
+        <translation approved="true" key="Binary_Trend_with_Sample_Trigger" new="false">
+            <note/>
+            <variant>Tendencia digital con activador de muestras</variant>
+        </translation>
+        <translation approved="true" key="History_Recorder" new="false">
+            <note/>
+            <variant>Grabadora de historial</variant>
+        </translation>
+        <translation approved="true" key="m$bmckx1" new="false">
+            <note/>
+            <variant>Reloj de hora BACnet de estado múltiple</variant>
+        </translation>
+        <translation approved="true" key="Two_Variables_Switch" new="false">
+            <note/>
+            <variant>Conmutador</variant>
+        </translation>
+        <translation approved="true" key="Variable_High_Limit" new="false">
+            <note/>
+            <variant>Límite alto variable</variant>
+        </translation>
+        <translation approved="true" key="Low_Peak_Recorder" new="false">
+            <note/>
+            <variant>Grabadora de pico bajo</variant>
+        </translation>
+        <translation approved="true" key="Analog_Network_Output_2" new="false">
+            <note/>
+            <variant>Salida de red analógica 2</variant>
+        </translation>
+        <translation approved="true" key="Multipy_Two_Variables" new="false">
+            <note/>
+            <variant>Multiplicar</variant>
+        </translation>
+        <translation approved="true" key="Binary_Parameter" new="false">
+            <note/>
+            <variant>Parámetro binario</variant>
+        </translation>
+        <translation approved="true" key="Time_Constant" new="false">
+            <note/>
+            <variant>Constante horaria</variant>
+        </translation>
+        <translation approved="true" key="DO_DI_Proof" new="false">
+            <note/>
+            <variant>Prueba de DO/DI</variant>
+        </translation>
+        <translation approved="true" key="Integrator" new="false">
+            <note/>
+            <variant>Integrador</variant>
+        </translation>
+        <translation approved="true" key="And" new="false">
+            <note/>
+            <variant>Y</variant>
+        </translation>
+        <translation approved="true" key="Binary_Network_Output_2" new="false">
+            <note/>
+            <variant>Salida de red binaria 2</variant>
+        </translation>
+        <translation approved="true" key="Tangent" new="false">
+            <note/>
+            <variant>Tangente</variant>
+        </translation>
+        <translation approved="true" key="Analog_Network_Input" new="false">
+            <note/>
+            <variant>Entrada de red analógica</variant>
+        </translation>
+        <translation approved="true" key="Divide_Two_Variables" new="false">
+            <note/>
+            <variant>Dividir</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Analog_Input" new="false">
+            <note/>
+            <variant>Entrada analógica de BACnet</variant>
+        </translation>
+        <translation approved="true" key="m$mbsched$binary" new="false">
+            <note/>
+            <variant>Objeto mostrado del horario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="True_If_greater_Constant" new="false">
+            <note/>
+            <variant>Verdadero si &gt; Constante</variant>
+        </translation>
+        <translation approved="true" key="True_If_less_Second_Input" new="false">
+            <note/>
+            <variant>Verdadero si &lt; Variable</variant>
+        </translation>
+        <translation approved="true" key="Prime_Variable" new="false">
+            <note/>
+            <variant>Variable principal</variant>
+        </translation>
+        <translation approved="true" key="High_Peak_Recorder" new="false">
+            <note/>
+            <variant>Grabadora de pico alto</variant>
+        </translation>
+        <translation approved="true" key="Airflow_Control" new="false">
+            <note/>
+            <variant>Control de flujo de aire de la línea U</variant>
+        </translation>
+        <translation approved="true" key="Timed_Local_Override" new="false">
+            <note/>
+            <variant>Omisión local temporizada</variant>
+        </translation>
+        <translation approved="true" key="Enthalpy_Calculator" new="false">
+            <note/>
+            <variant>Calculador de entalpía</variant>
+        </translation>
+        <translation approved="true" key="Exponent" new="false">
+            <note/>
+            <variant>Exponente</variant>
+        </translation>
+        <translation approved="true" key="Binary_Network_Input" new="false">
+            <note/>
+            <variant>Entrada de red binaria</variant>
+        </translation>
+        <translation approved="true" key="Add_Four_Variables" new="false">
+            <note/>
+            <variant>Agregar 4</variant>
+        </translation>
+        <translation approved="true" key="m$mbsched" new="false">
+            <note/>
+            <variant>Objeto mostrado del horario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="m$mbcal" new="false">
+            <note/>
+            <variant>Objeto mostrado del calendario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Setpoint_Optimization" new="false">
+            <note/>
+            <variant>Optimización de Punto de Ajuste (Setpoint)</variant>
+        </translation>
+        <translation approved="true" key="Minimum_On_Off_Timer" new="false">
+            <note/>
+            <variant>Mínimo de temporizador activado/desactivado</variant>
+        </translation>
+        <translation approved="true" key="Constant_High_Limit" new="false">
+            <note/>
+            <variant>Límite alto constante</variant>
+        </translation>
+        <translation approved="true" key="Constant_Duty_Cycle" new="false">
+            <note/>
+            <variant>Ciclo de servicio constante</variant>
+        </translation>
+        <translation approved="true" key="m$mbprg" new="false">
+            <note/>
+            <variant>Objeto mostrado del programa de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Time_Parameter" new="false">
+            <note/>
+            <variant>Parámetro horario</variant>
+        </translation>
+        <translation approved="true" key="m$mbbsv" new="false">
+            <note/>
+            <variant>Objeto mostrado del valor binario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Constant_High_Signal_Selector" new="false">
+            <note/>
+            <variant>Selector de señal alta constante</variant>
+        </translation>
+        <translation approved="true" key="m$consta" new="false">
+            <note/>
+            <variant>Constante analógica</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Analog_Value_Parameter" new="false">
+            <note/>
+            <variant>Parámetro de valor analógico de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Subtract_Two_Variables" new="false">
+            <note/>
+            <variant>Restar</variant>
+        </translation>
+        <translation approved="true" key="Analog_to_Digital_Converter" new="false">
+            <note/>
+            <variant>Convertidor de analógico a digital</variant>
+        </translation>
+        <translation approved="true" key="Up_Down_Counter" new="false">
+            <note/>
+            <variant>Contador hacia arriba/abajo</variant>
+        </translation>
+        <translation approved="true" key="Analog_Network_Input_2" new="false">
+            <note/>
+            <variant>Entrada de red analógica 2</variant>
+        </translation>
+        <translation approved="true" key="Pulse_Width_Output" new="false">
+            <note/>
+            <variant>Salida de ancho de pulso</variant>
+        </translation>
+        <translation approved="true" key="Switch_Normally_Closed_to_Constant" new="false">
+            <note/>
+            <variant>Conmutador normalmente cerrado para la constante</variant>
+        </translation>
+        <translation approved="true" key="True_If_Color" new="false">
+            <note/>
+            <variant>Verdadero si el Color = </variant>
+        </translation>
+        <translation approved="true" key="Binary_Network_Input_2" new="false">
+            <note/>
+            <variant>Entrada de red binaria 2</variant>
+        </translation>
+        <translation approved="true" key="Modulo_Divide_by_Constant" new="false">
+            <note/>
+            <variant>Módulo para dividir por constante</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Airflow_Control" new="false">
+            <note/>
+            <variant>Control de flujo de aire</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Analog_Output" new="false">
+            <note/>
+            <variant>Salida analógica de BACnet</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Binary_Value_Parameter" new="false">
+            <note/>
+            <variant>Parámetro de valor binario de BACnet</variant>
+        </translation>
+        <translation approved="true" key="m$mbdev" new="false">
+            <note/>
+            <variant>Objeto mostrado del dispositivo de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Absolute_Value" new="false">
+            <note/>
+            <variant>Valor absoluto</variant>
+        </translation>
+        <translation approved="true" key="Change_Sign" new="false">
+            <note/>
+            <variant>Cambiar signo</variant>
+        </translation>
+        <translation approved="true" key="Maximum_Analog_Properties" new="false">
+            <note/>
+            <variant>Analógica máxima</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Binary_Input" new="false">
+            <note/>
+            <variant>Entrada binaria de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Not" new="false">
+            <note/>
+            <variant>No</variant>
+        </translation>
+        <translation approved="true" key="active-1" new="false">
+            <note>This is an option to make a binary parameter 'active'. It has a (1) after it to let you know that as a binary parameter this is equivalent to 1.</note>
+            <variant>Activo (1)</variant>
+        </translation>
+        <translation approved="true" key="inactive-0" new="false">
+            <note>This is an option to make a binary parameter 'inactive'. It has a (0) after it to let you know that as a binary parameter this is equivalent to 0.</note>
+            <variant>Inactivo (0)</variant>
+        </translation>
+        <translation approved="true" key="Zone_Setpoint_BACnet_with_Learning_Adaptive_Optimal_Start" new="false">
+            <variant>Punto de ajuste (setpoint) de zona con inicio óptimo para aprendizaje adaptado</variant>
+        </translation>
+        <translation approved="true" key="occupied-cooling-setpoint" new="false">
+            <variant>Enfriamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied-cooling-setpoint" new="false">
+            <variant>Enfriamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="occupied-heating-setpoint" new="false">
+            <variant>Calentamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied-heating-setpoint" new="false">
+            <variant>Calentamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="cooling-adjustment-setpoint" new="false">
+            <variant>Ajuste de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="heating-adjustment-setpoint" new="false">
+            <variant>Ajuste de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling-setpoint" new="false">
+            <variant>Enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-heating-setpoint" new="false">
+            <variant>Calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling-trend-log" new="false">
+            <variant>Registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-heating-trend-log" new="false">
+            <variant>Registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="zone-temp-trend-log" new="false">
+            <variant>Registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="occupied-status-trend-log" new="false">
+            <variant>Registro de tendencia de estado ocupado</variant>
+        </translation>
+        <translation approved="true" key="demand_limiting" new="false">
+            <variant>Limitación de demanda</variant>
+        </translation>
+        <translation approved="true" key="capacity_limit" new="false">
+            <variant>Límite de capacidad</variant>
+        </translation>
+        <translation approved="true" key="ccn_linkage" new="false">
+            <variant>Acoplamiento CCN</variant>
+        </translation>
+        <!--Object Name-->
+        <translation approved="true" key="occupied_cooling_object_name" new="false">
+            <variant>Nombre de objeto de enfriamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="occupied_heating_object_name" new="false">
+            <variant>Nombre de objeto de calentamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_heating_object_name" new="false">
+            <variant>Nombre de objeto de calentamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_cooling_object_name" new="false">
+            <variant>Nombre de objeto de enfriamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="cooling_adjustment_object_name" new="false">
+            <variant>Nombre de objeto de ajuste de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="heating_adjustment_object_name" new="false">
+            <variant>Nombre de objeto de ajuste de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_object_name" new="false">
+            <variant>Nombre de objeto de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_object_name" new="false">
+            <variant>Nombre de objeto de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_trend_log_object_name" new="false">
+            <variant>Nombre de objeto del registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_trend_log_object_name" new="false">
+            <variant>Nombre de objeto del registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_object_name" new="false">
+            <variant>Nombre de objeto del registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_object_name" new="false">
+            <variant>Nombre de objeto del registro de tendencia de estado ocupado</variant>
+        </translation>
+        <!--Description-->
+        <translation approved="true" key="occupied_cooling_description" new="false">
+            <variant>Descripción de enfriamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="occupied_heating_description" new="false">
+            <variant>Descripción de calentamiento ocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_heating_description" new="false">
+            <variant>Descripción de calentamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_cooling_description" new="false">
+            <variant>Descripción de enfriamiento desocupado</variant>
+        </translation>
+        <translation approved="true" key="cooling_adjustment_description" new="false">
+            <variant>Descripción de ajuste de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="heating_adjustment_description" new="false">
+            <variant>Descripción de ajuste de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_description" new="false">
+            <variant>Descripción de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_description" new="false">
+            <variant>Descripción de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_trend_log_description" new="false">
+            <variant>Descripción del registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_trend_log_description" new="false">
+            <variant>Descripción del registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_description" new="false">
+            <variant>Descripción del registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_description" new="false">
+            <variant>Descripción del registro de tendencia de estado ocupado</variant>
+        </translation>
+        <!--Network Visible-->
+        <translation approved="true" key="occupied_cooling_network_visible" new="false">
+            <variant>Red de enfriamiento ocupado visible</variant>
+        </translation>
+        <translation approved="true" key="occupied_heating_network_visible" new="false">
+            <variant>Red de calentamiento ocupado visible</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_heating_network_visible" new="false">
+            <variant>Red de calentamiento desocupado visible</variant>
+        </translation>
+        <translation approved="true" key="unoccupied_cooling_network_visible" new="false">
+            <variant>Red de enfriamiento desocupado visible</variant>
+        </translation>
+        <translation approved="true" key="cooling_adjustment_network_visible" new="false">
+            <variant>Red de ajuste de enfriamiento visible</variant>
+        </translation>
+        <translation approved="true" key="heating_adjustment_network_visible" new="false">
+            <variant>Red de ajuste de calentamiento visible</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_network_visible" new="false">
+            <variant>Red de enfriamiento efectivo visible</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_network_visible" new="false">
+            <variant>Red de calentamiento efectivo visible</variant>
+        </translation>
+        <!--Network Visible-->
+        <translation approved="true" key="cool_max_damper_pos_network_visible" new="false">
+            <variant>Posición de Enfriamiento Máx del Damper Visible en la Red</variant>
+        </translation>
+        <translation approved="true" key="cool_min_damper_pos_network_visible" new="false">
+            <variant>Posición de enfriamiento mín del damper visible en la red</variant>
+        </translation>
+        <translation approved="true" key="heat_max_damper_pos_network_visible" new="false">
+            <variant>Posición visible del damper en el nivel máximo del calentador</variant>
+        </translation>
+        <translation approved="true" key="heat_min_damper_pos_network_visible" new="false">
+            <variant>Red de posición de damper en el mínino de calentamiento visible</variant>
+        </translation>
+        <translation approved="true" key="reheat_min_damper_pos_network_visible" new="false">
+            <variant>Red de posición mínima de humedecedor (damper) de recalentamiento</variant>
+        </translation>
+        <translation approved="true" key="vent_position_network_visible" new="false">
+            <variant>Red de posición de salida de aire visible</variant>
+        </translation>
+        <!--Description-->
+        <translation approved="true" key="cool_max_damper_pos_description" new="false">
+            <variant>Descripción de la posición del damper máx de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="cool_min_damper_pos_description" new="false">
+            <variant>Descripción de la posición de enfriamiento mín del damper</variant>
+        </translation>
+        <translation approved="true" key="heat_max_damper_pos_description" new="false">
+            <variant>Descripción de la posición de la compuerta de calefaccion máxima</variant>
+        </translation>
+        <translation approved="true" key="heat_min_damper_pos_description" new="false">
+            <variant>Descripción de la posición del damper en mínino de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="reheat_min_damper_pos_description" new="false">
+            <variant>Descripción de la mínima posición del humedecedor (damper) de recalentamiento</variant>
+        </translation>
+        <translation approved="true" key="vent_position_description" new="false">
+            <variant>Descripción de posición de salida de aire</variant>
+        </translation>
+        <!--Object Name-->
+        <translation approved="true" key="cool_max_damper_pos_object_name" new="false">
+            <variant>Nombre de objeto de posición del humedecedor máx de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="cool_min_damper_pos_object_name" new="false">
+            <variant>Nombre de objeto de posición mín de enfriamiento del damper</variant>
+        </translation>
+        <translation approved="true" key="heat_max_damper_pos_object_name" new="false">
+            <variant>Nombre de la Posición del objeto del Damper en el máximo de calor</variant>
+        </translation>
+        <translation approved="true" key="heat_min_damper_pos_object_name" new="false">
+            <variant>Nombre de objeto de posición del damper mínimo de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="reheat_min_damper_pos_object_name" new="false">
+            <variant>Nombre de objeto de posición del humedecedor (damper) mínino de recalentamiento</variant>
+        </translation>
+        <translation approved="true" key="vent_position_object_name" new="false">
+            <variant>Nombre de objeto de posición de salida de aire</variant>
+        </translation>
+        <translation approved="true" key="cool_max_damper_pos" new="false">
+            <variant>Enfriamiento máximo</variant>
+        </translation>
+        <translation approved="true" key="cool_min_damper_pos" new="false">
+            <variant>Enfriamiento mínimo</variant>
+        </translation>
+        <translation approved="true" key="heat_max_damper_pos" new="false">
+            <variant>Calentamiento máximo</variant>
+        </translation>
+        <translation approved="true" key="heat_min_damper_pos" new="false">
+            <variant>Calentamiento mínimo</variant>
+        </translation>
+        <translation approved="true" key="reheat_min_damper_pos" new="false">
+            <variant>Recalentar mínimo</variant>
+        </translation>
+        <translation approved="true" key="vent_position" new="false">
+            <variant>Posición de la salida de aire</variant>
+        </translation>
+        <!--COV increment-->
+        <translation approved="true" key="cooling_adjustment_cov_increment" new="false">
+            <variant>Incremento de COV de ajuste de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="heating_adjustment_cov_increment" new="false">
+            <variant>Incremento de COV de ajuste de calentamiento</variant>
+        </translation>
+        <translation approved="true" key="effective_cooling_cov_increment" new="false">
+            <variant>Incremento de COV de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective_heating_cov_increment" new="false">
+            <variant>Incremento de COV de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_enable" new="false">
+            <variant>Activar registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling_trend_log_enable" new="false">
+            <variant>Activar registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-heating_trend_log_enable" new="false">
+            <variant>Activar registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_enable" new="false">
+            <variant>Activar registro de tendencia de estado ocupado</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_interval" new="false">
+            <variant>Activar registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling_trend_log_interval" new="false">
+            <variant>Intervalo de registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-heating_trend_log_interval" new="false">
+            <variant>Intervalo de registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_interval" new="false">
+            <variant>Intervalo de registro de tendencia de estado ocupado</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_number_of_samples" new="false">
+            <variant>Tamaño del búfer del registro de tendencia de temperatura de zona</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling_trend_log_number_of_samples" new="false">
+            <variant>Tamaño del búfer del registro de tendencia de enfriamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="effective-heating_trend_log_number_of_samples" new="false">
+            <variant>Tamaño del búfer del registro de tendencia de calentamiento efectivo</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_number_of_samples" new="false">
+            <variant>Tamaño del búfer del registro de tendencia de estado ocupado</variant>
+        </translation>
+        <translation approved="true" key="zone_temp_trend_log_enable_trend_historian" new="false">
+            <variant>Registro de tendencia de temperatura de zona - Activar tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling_trend_log_enable_trend_historian" new="false">
+            <variant>Registro de tendencia de enfriamiento efectivo - Activar tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="effective-heating_trend_log_enable_trend_historian" new="false">
+            <variant>Registro de tendencia de calentamiento efectivo - Activar tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="occupied-status_trend_log_enable_trend_historian" new="false">
+            <variant>Registro de tendencia de estado ocupado - Activar tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="zone_temp-days-to-keep-historical-trends" new="false">
+            <variant>Temperatura de zona - Días para conservar las tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="effective-cooling-days-to-keep-historical-trends" new="false">
+            <variant>Enfriamiento efectivo - Días para guardar las tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="effective-heating-days-to-keep-historical-trends" new="false">
+            <variant>Calentamiento efectivo - Días para guardar las tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="occupied-status-days-to-keep-historical-trends" new="false">
+            <variant>Estado ocupado - Días para guardar las tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Press_Dep_Control" new="false">
+            <variant>Control dependiente de la presión BACnet</variant>
+        </translation>
+        <translation approved="true" key="Vent_Mode" new="false">
+            <variant>Modo de salida de aire</variant>
+        </translation>
+        <translation approved="true" key="Minimum" new="false">
+            <variant>Mínimo</variant>
+        </translation>
+        <translation approved="true" key="Additional_percent" new="false">
+            <variant>% x __ adicional</variant>
+        </translation>
+        <translation approved="true" key="Event_Time_Stamps" new="false">
+            <variant>Marcas de horas de evento</variant>
+        </translation>
+        <translation approved="true" key="Last_Notify_Record" new="false">
+            <variant>Último registro de notificación</variant>
+        </translation>
+        <translation approved="true" key="Schedule_Default" new="false">
+            <variant>Horario predeterminado</variant>
+        </translation>
+        <translation approved="true" key="List_of_Group_Members" new="false">
+            <variant>Lista de miembros del grupo</variant>
+        </translation>
+        <translation approved="true" key="Scale" new="false">
+            <variant>Escala</variant>
+        </translation>
+        <translation approved="true" key="Prescale" new="false">
+            <variant>Pre-escala</variant>
+        </translation>
+        <translation approved="true" key="Value_Change_Time" new="false">
+            <variant>Valorar el tiempo de cambio</variant>
+        </translation>
+        <translation approved="true" key="Value_Before_Change" new="false">
+            <variant>Valorar antes de cambiar</variant>
+        </translation>
+        <translation approved="true" key="Value_Set" new="false">
+            <variant>Conjunto de valores</variant>
+        </translation>
+        <translation approved="true" key="Logging_Record" new="false">
+            <variant>Registrando registro</variant>
+        </translation>
+        <translation approved="true" key="Logging_Object" new="false">
+            <variant>Registrando objeto</variant>
+        </translation>
+        <translation approved="true" key="Pulse_Rate" new="false">
+            <variant>Velocidad de pulso</variant>
+        </translation>
+        <translation approved="true" key="Limit_Monitoring_Interval" new="false">
+            <variant>Intervalo de monitorización límite</variant>
+        </translation>
+        <translation approved="true" key="Input_range" new="false">
+            <note>This goes along with change_in_input_that_results_in below</note>
+            <variant>Rango de entrada</variant>
+        </translation>
+        <translation approved="true" key="change_in_input_that_results_in" new="false">
+            <note>This is another way to edit the 'proportional' field in a PID loop. We're representing it here as a precentage so we're saying the value (output) is going from 0 to 100.</note>
+            <variant>(cambio de entrada que resulta en salida P de 0-100%)</variant>
+        </translation>
+        <translation approved="true" key="device_name_header" new="false">
+            <variant>Nombre del dispositivo</variant>
+        </translation>
+        <translation approved="true" key="writable" new="false">
+            <note>This indicates whether devices on other networks (i.e. BACnet, Modbus, N2, etc) are allowed write-access to the associated object. If this is not selected, the corresponding object is Read-Only.</note>
+            <variant>Se puede escribir</variant>
+        </translation>
+        <translation approved="true" key="fixed_force_level" new="false">
+            <note>This indicates a fixed 'CCN Force Level' used to relay a CCN write to devices on a CCN network. 'CCN Force Level' is a numerical priority that a write will be performed at.  </note>
+            <variant>CCN - Forzar nivel</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Collector" new="false">
+            <variant>Recolector BACnet</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Provider" new="false">
+            <variant>Proveedor BACnet</variant>
+        </translation>
+        <translation approved="true" key="BACnetPID" new="false">
+            <note>This is the BACnet-exposed PID Microblock's name. PID stands for Proportional, Integral, and Derivative which is a well known control algorithm in HVAC and Process controls. </note>
+            <variant>BACnetPID</variant>
+        </translation>
+        <translation approved="true" key="limit_pid_rate_of_change" new="false">
+            <note>This is the minimum amount of time to allow the PID to go from 0-100%. This is used to prevent the PID output from changing faster than an actuator can move from 0 to 100%. </note>
+            <variant>Tiempo mínimo de rampa para pasar de 0 a 100%</variant>
+        </translation>
+        <translation approved="true" key="per_interval" new="false">
+            <note>This is the output update Interval of a PID Microblock.  </note>
+            <variant>por intervalo</variant>
+        </translation>
+        <translation approved="true" key="calculate_continually" new="false">
+            <note>This option instructs the PID to continually recalculate the Proportional Contribution of the PID MB, vs only recalculating it on the Loop refresh Interval when the Integral and Derivative are calculated. </note>
+            <variant>Calcular continuamente</variant>
+        </translation>
+        <translation approved="true" key="pid_out" new="false">
+            <note>This is the output value of the PID Microblock.  </note>
+            <variant>PID de salida</variant>
+        </translation>
+        <translation approved="true" key="output_update_interval" new="false">
+            <note>This is the output update Interval of a PID Microblock.  </note>
+            <variant>Intervalo de actualización de salida</variant>
+        </translation>
+        <translation approved="true" key="pidout_throttling" new="false">
+            <note>This is an optional input to the PID MB that is the Slew Rate control value.   </note>
+            <variant>Tiempo de rampa</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Bypass_Control" new="false">
+            <variant>Control bypass BACnet</variant>
+        </translation>
+        <translation approved="true" key="maximum_number_of_addresses" new="false">
+            <variant>Número máximo de direcciones</variant>
+        </translation>
+        <translation approved="true" key="unscheduled_value" new="false">
+            <note>This is the value to use when there are no schedules entered.  (for all schedule microblocks)</note>
+            <variant>Valor sin horario</variant>
+        </translation>
+        <translation approved="true" key="bacnet_writable" new="false">
+            <note>Marks this field as able to be changed by other BACnet controllers.</note>
+            <variant>Se puede escribir en BACnet</variant>
+        </translation>
+        <translation approved="true" key="Aux_Heat_output_=_aux_heat_input" new="false">
+            <note>The auxiliary heat output is the same as the auxiliary heat input</note>
+            <variant>Salida de calor aux = entrada de calor aux</variant>
+        </translation>
+        <translation approved="true" key="area_1" new="false">
+            <note>Name of an area at index = 1 in a table</note>
+            <variant>área 1</variant>
+        </translation>
+        <translation approved="true" key="network_type_1" new="false">
+            <note>Network type at index = 1 in a table</note>
+            <variant>Tipo de red 1</variant>
+        </translation>
+        <translation approved="true" key="address_1" new="false">
+            <note>Address at index = 1 in a table</note>
+            <variant>Dirección 1</variant>
+        </translation>
+        <translation approved="true" key="disable_edits_1" new="false">
+            <note>Checkbox that prevents user from editing values. Shown at index = 1 in a table.</note>
+            <variant>Ediciones desactivadas 1</variant>
+        </translation>
+        <translation approved="true" key="sensor_editable_1" new="false">
+            <note>Checkbox that enables the sensor shown at index = 1 in a table.</note>
+            <variant>Sensor editable 1</variant>
+        </translation>
+        <translation approved="true" key="area_2" new="false">
+            <note>Name of an area at index = 2 in a table</note>
+            <variant>Área 2</variant>
+        </translation>
+        <translation approved="true" key="network_type_2" new="false">
+            <note>Network type at index = 2 in a table</note>
+            <variant>Tipo de red 2</variant>
+        </translation>
+        <translation approved="true" key="address_2" new="false">
+            <note>Address at index = 2 in a table</note>
+            <variant>Dirección 2</variant>
+        </translation>
+        <translation approved="true" key="disable_edits_2" new="false">
+            <note>Checkbox that prevents user from editing values. Shown at index = 2 in a table.</note>
+            <variant>Ediciones desactivadas 2</variant>
+        </translation>
+        <translation approved="true" key="sensor_editable_2" new="false">
+            <note>Checkbox that enables the sensor shown at index = 2 in a table.</note>
+            <variant>Sensor editable 2</variant>
+        </translation>
+        <translation approved="true" key="area_3" new="false">
+            <note>Name of an area at index = 3 in a table</note>
+            <variant>Área 3</variant>
+        </translation>
+        <translation approved="true" key="network_type_3" new="false">
+            <note>Network type at index = 3 in a table</note>
+            <variant>Tipo de red 3</variant>
+        </translation>
+        <translation approved="true" key="address_3" new="false">
+            <note>Address at index = 3 in a table</note>
+            <variant>Dirección 3</variant>
+        </translation>
+        <translation approved="true" key="disable_edits_3" new="false">
+            <note>Checkbox that prevents user from editing values. Shown at index = 3 in a table.</note>
+            <variant>Ediciones desactivadas 3</variant>
+        </translation>
+        <translation approved="true" key="sensor_editable_3" new="false">
+            <note>Checkbox that enables the sensor shown at index = 3 in a table.</note>
+            <variant>Sensor editable 3</variant>
+        </translation>
+        <translation approved="true" key="area_4" new="false">
+            <note>Name of an area at index = 4 in a table</note>
+            <variant>Área 4</variant>
+        </translation>
+        <translation approved="true" key="network_type_4" new="false">
+            <note>Network type at index = 4 in a table</note>
+            <variant>Tipo de red 4</variant>
+        </translation>
+        <translation approved="true" key="address_4" new="false">
+            <note>Address at index = 4 in a table</note>
+            <variant>Dirección 4</variant>
+        </translation>
+        <translation approved="true" key="disable_edits_4" new="false">
+            <note>Checkbox that prevents user from editing values. Shown at index = 4 in a table.</note>
+            <variant>Ediciones desactivadas 4</variant>
+        </translation>
+        <translation approved="true" key="sensor_editable_4" new="false">
+            <note>Checkbox that enables the sensor shown at index = 4 in a table.</note>
+            <variant>Sensor editable 4</variant>
+        </translation>
+        <translation approved="true" key="area_5" new="false">
+            <note>Name of an area at index = 5 in a table</note>
+            <variant>Área 5</variant>
+        </translation>
+        <translation approved="true" key="network_type_5" new="false">
+            <note>Network type at index = 5 in a table</note>
+            <variant>Tipo de red 5</variant>
+        </translation>
+        <translation approved="true" key="address_5" new="false">
+            <note>Address at index = 5 in a table</note>
+            <variant>Dirección 5</variant>
+        </translation>
+        <translation approved="true" key="disable_edits_5" new="false">
+            <note>Checkbox that prevents user from editing values. Shown at index = 5 in a table.</note>
+            <variant>Ediciones desactivadas 5</variant>
+        </translation>
+        <translation approved="true" key="sensor_editable_5" new="false">
+            <note>Checkbox that enables the sensor shown at index = 5 in a table.</note>
+            <variant>Sensor editable 5</variant>
+        </translation>
+        <translation approved="true" key="Enable_RNet_Functionality" new="false">
+            <note>Checkbox that turns on/off rnet sensor capabilities for this microblock.</note>
+            <variant>Activar Rnet para los sensores ZS</variant>
+        </translation>
+        <translation approved="true" key="not_compatible_with_all_systems_see_help" new="false">
+            <variant>No compatible con todas las versiones de controlador y de sistema. Consulte la ayuda siguiente.</variant>
+        </translation>
+    </section>
+    <!--end microblock names section-->
+</resource-base>

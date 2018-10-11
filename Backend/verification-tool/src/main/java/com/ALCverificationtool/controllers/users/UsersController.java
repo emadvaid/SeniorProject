@@ -58,7 +58,13 @@ public class UsersController {
 
         List<User> userResults = new ArrayList<>();
 
-        for(UserRec rec: userRecResults) userResults.add(new User(rec));
+        for(UserRec rec: userRecResults) {
+
+            if(!rec.getUsername().equals("admin")) {
+                userResults.add(new User(rec));
+            }
+
+        }
 
         GetUsersResponse response = new GetUsersResponse(userResults);
 
@@ -96,10 +102,68 @@ public class UsersController {
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
 
+    @CrossOrigin
+    @PutMapping("/user/{userId}/resetpass")
+    public ResponseEntity<UpdateUserResponse> resetUserPassword (@PathVariable("userId") String userId) {
+        Optional<UserRec> userRecResult = this.service.resetUserPassword(userId);
+
+        // make sure the user was in fact updated
+        if(!userRecResult.isPresent() || userRecResult.get().getPassword() != null) {
+
+            return new ResponseEntity<>(new UpdateUserResponse(500, "Failed"),
+                    null,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        UpdateUserResponse response = new UpdateUserResponse(200, "Success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PutMapping("/user/{userId}/activate")
+    public ResponseEntity<UpdateUserResponse> activateUser (@PathVariable("userId") String userId) {
+        Optional<UserRec> userRecResult = this.service.activateUser(userId);
+
+        // make sure the user was in fact updated
+        if(!userRecResult.isPresent() || !userRecResult.get().isActive()) {
+
+            return new ResponseEntity<>(new UpdateUserResponse(500, "Failed"),
+                    null,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        UpdateUserResponse response = new UpdateUserResponse(200, "Success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PutMapping("/user/deactivate/{userId}")
+    public ResponseEntity<UpdateUserResponse> deactivateUser (@PathVariable("userId") String userId,
+                                                              @RequestBody UpdateUserRequest request) {
+        Optional<UserRec> userRecResult = this.service.deactivateUser(userId);
+
+        // make sure the user was in fact updated
+        if(!userRecResult.isPresent() || userRecResult.get().isActive()) {
+
+            return new ResponseEntity<>(new UpdateUserResponse(500, "Failed"),
+                    null,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        UpdateUserResponse response = new UpdateUserResponse(200, "Success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
 
 
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ExceptionHandler({ServiceException.class})
-    public void handleUserAuthorizationException() {
+    public void handleUserAuthorizationException(ServiceException e) {
+        e.printStackTrace();
     }
 }

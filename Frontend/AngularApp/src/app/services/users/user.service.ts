@@ -151,6 +151,72 @@ export class UserService {
         return this.roleArry.slice();
     }
 
+
+    public activate(userId: string): Observable<boolean> {
+
+        if (!this.userLoginService.isLoggedIn) {
+            console.log('UserService.update: user not logged in');
+            return null;
+        }
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json',
+            'access-token': this.userLoginService.accessToken
+        });
+        const options = new RequestOptions({ headers: headers});
+        return this.http.put(`http://localhost:8080/user/${userId}/activate`, options)
+        .pipe(
+            map((resp: any) => {
+                console.log(resp);
+
+                return true;
+            }));
+    }
+
+    public deactivate(userId: string): Observable<boolean> {
+
+        if (!this.userLoginService.isLoggedIn) {
+            console.log('UserService.update: user not logged in');
+            return null;
+        }
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json',
+            'access-token': this.userLoginService.accessToken
+        });
+        const options = new RequestOptions({ headers: headers});
+        return this.http.put(`http://localhost:8080/user/deactivate/${userId}`, {userDetail: {}}, options)
+        .pipe(
+            map((resp: any) => {
+                console.log(resp);
+
+                return true;
+            }));
+    }
+    public resetpassword(userId: string): Observable<boolean> {
+
+        if (!this.userLoginService.isLoggedIn) {
+            console.log('UserService.update: user not logged in');
+            return null;
+        }
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json',
+            'access-token': this.userLoginService.accessToken
+        });
+        const options = new RequestOptions({ headers: headers});
+        return this.http.put(`http://localhost:8080/user/${userId}/resetpass`, options)
+        .pipe(
+            map((resp: any) => {
+                console.log(resp);
+
+                return true;
+            }));
+    }
+
     private handleError(err: any): Observable<User> {
         //
         console.log('create user failed: err =', err);

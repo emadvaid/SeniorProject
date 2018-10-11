@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="TimeZone" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="all files">
+        <note>Label - Identifies a time zone.</note>
+        <translation approved="true" key="workStationTimeZone" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <note>The site uses Work Station's time zone</note>
+            <variant>Zona horaria del sistema operativo</variant>
+        </translation>
+        <translation approved="true" key="Pacific/Honolulu" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de Hawai</variant>
+        </translation>
+        <translation approved="true" key="America/Anchorage" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de Alaska</variant>
+        </translation>
+        <translation approved="true" key="America/Los_Angeles" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial del Pacífico</variant>
+        </translation>
+        <translation approved="true" key="America/Denver" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Mountain Standard Time</variant>
+        </translation>
+        <translation approved="true" key="America/Chicago" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial del Centro</variant>
+        </translation>
+        <translation approved="true" key="America/New_York" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial del Este</variant>
+        </translation>
+        <translation approved="true" key="America/St_Johns" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de Terranova</variant>
+        </translation>
+        <translation approved="true" key="Europe/London" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora del meridiano de Greenwich</variant>
+        </translation>
+        <translation approved="true" key="CET" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de Europa Central</variant>
+        </translation>
+        <translation approved="true" key="Asia/Shanghai" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de China</variant>
+        </translation>
+        <translation approved="true" key="Asia/Tokyo" new="false">
+            <note>Label - Identifies a time zone.</note>
+            <variant>Hora oficial de Japón</variant>
+        </translation>
+    </section>
+</resource-base>
+<!-- master format -->

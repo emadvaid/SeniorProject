@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="HoverText" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="PROTOCOL_MAPPING_HOVER_TEXT">
+        <note>This section is for hover text used on the protocol mapping page</note>
+        <translation approved="true" key="lonworks" new="false">
+            <note>This section is for hover text used on the protocol mapping page</note>
+            <variant>Asignación del protocolo LonWorks</variant>
+        </translation>
+        <translation approved="true" key="modbus" new="false">
+            <note>This section is for hover text used on the protocol mapping page</note>
+            <variant>Asignación del protocolo Modbus</variant>
+        </translation>
+        <translation approved="true" key="n2" new="false">
+            <note>This section is for hover text used on the protocol mapping page</note>
+            <variant>Asignación del protocolo N2</variant>
+        </translation>
+    </section>
+    <section id="AIRFLOW_HOVER_TEXT">
+        <note>Hover text used on the airflow microblock details page</note>
+        <translation approved="true" key="copy_current_sensor_reading" new="false">
+            <note>Hover text used on the airflow microblock details page</note>
+            <variant>Copie el estado de lectura del sensor actual en el parámetro de calibración de lectura del sensor.</variant>
+        </translation>
+        <translation approved="true" key="global_damper_command" new="false">
+            <note>Hover text used on the airflow microblock details page</note>
+            <variant>Asigne a los humedecedores de las unidades de esta fuente de aire una posición específica.</variant>
+        </translation>
+    </section>
+    <section id="REPORTS_HOVER_TEXT">
+        <note>Hover text used on the custom equipment and trend reports pages</note>
+        <translation approved="true" key="Shift_row_up" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Mover fila hacia arriba</variant>
+        </translation>
+        <translation approved="true" key="Shift_row_down" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Mover fila hacia abajo</variant>
+        </translation>
+        <translation approved="true" key="Shift_column_left" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Mover la columna a la izquierda</variant>
+        </translation>
+        <translation approved="true" key="Shift_column_right" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Mover la columna a la derecha</variant>
+        </translation>
+        <translation approved="true" key="PDF_Export_Hovertext" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Convierte el informe a formato .pdf</variant>
+        </translation>
+        <translation approved="true" key="Excel_Export_Hovertext" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Convierte a formato de archivo .xls</variant>
+        </translation>
+        <translation approved="true" key="CSV_Export_Hovertext" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Genera el reporte como archivo .csv. Para activarlo, seleccione "Admitir formato de texto CSV" en Reportes &gt; ficha Opciones.</variant>
+        </translation>
+        <translation approved="true" key="Save_Report_Design_Hover" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Pueden seleccionarse diseños grabados al crear un nuevo reporte.</variant>
+        </translation>
+        <translation approved="true" key="Delete_Report_Hover" new="false">
+            <note>Hover text used on the custom equipment and trend reports pages</note>
+            <variant>Eliminar el informe de esta ubicación.</variant>
+        </translation>
+    </section>
+    <section id="COMMON_HOVER_TEXT">
+        <note>Hover text used through out the system</note>
+        <translation approved="true" key="copy_to_clipboard" new="false">
+            <note>Hover text used through out the system</note>
+            <note>hover text for the copy icon</note>
+            <variant>Copiar al portapapeles</variant>
+        </translation>
+        <translation approved="true" key="Copy_Path_to_" new="false">
+            <note>Hover text used through out the system</note>
+            <note>hover text for the copy icon on CCN tables</note>
+            <variant>Copiar ruta en el portapapeles</variant>
+        </translation>
+        <translation approved="true" key="Archive_files_hover" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Recopila archivos utilizados por este sistema en un solo archivo para su exportación</variant>
+        </translation>
+        <translation approved="true" key="Apply_archive_files_hover" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Aplica los archivos de nuevo en el sistema.</variant>
+        </translation>
+        <translation approved="true" key="Set_by_Alarm_Template" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Definido en plantilla de alarma</variant>
+        </translation>
+        <translation approved="true" key="Value_is_locked" new="false">
+            <note>Hover text used through out the system</note>
+            <note>The field is an overridden value that is locked - highlighted with a border</note>
+            <variant>El valor está bloqueado</variant>
+        </translation>
+        <translation approved="true" key="Value_is_forced" new="false">
+            <note>Hover text used through out the system</note>
+            <note>The field is an overridden value that is forced - highlighted with a border</note>
+            <variant>El valor está forzado</variant>
+        </translation>
+        <translation approved="true" key="Parameter_needs_downloading" new="false">
+            <note>Hover text used through out the system</note>
+            <note>The field is a parameter that was modified but not yet written to the controller - highlighted with a border</note>
+            <variant>El parámetro necesita descargar</variant>
+        </translation>
+        <translation approved="true" key="Database_Par" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Shows the database parameter value - will render above "Controller_Par" translation string in same popup</note>
+            <variant>Valor de la base de datos: {0}</variant>
+        </translation>
+        <translation approved="true" key="Controller_Par" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Shows the controller parameter value - will render below "Database_Par" translation string in same popup</note>
+            <variant>Valor de la controladora: {0}</variant>
+        </translation>
+    </section>
+    <section id="FACET_HOVER_TEXT">
+        <note>Hover text used through out the system</note>
+        <translation approved="true" key="GEO" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Geográfica</variant>
+        </translation>
+        <translation approved="true" key="NET" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Red</variant>
+        </translation>
+        <translation approved="true" key="GRP" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Grupos de horarios</variant>
+        </translation>
+        <translation approved="true" key="CFG" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configuración del sistema</variant>
+        </translation>
+        <translation approved="true" key="Trend_Graph_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver una gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Trend_Graph_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar una pantalla de gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Point_Trend_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver una gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Point_Trend_Configure" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar una pantalla de gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Point_Trend_Enable" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar registro de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Trend_Graph_Details" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar registro de tendencia</variant>
+        </translation>
+        <translation approved="true" key="I_O_Points_Report" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar y desproteger puntos</variant>
+        </translation>
+        <translation approved="true" key="Alarms_Report" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar y desproteger alarmas</variant>
+        </translation>
+        <translation approved="true" key="Trends_Report" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar y desproteger tendencias</variant>
+        </translation>
+        <translation approved="true" key="Network_Points_Report" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar y desproteger puntos de red</variant>
+        </translation>
+        <translation approved="true" key="Points_List_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Seleccionar opciones de informe</variant>
+        </translation>
+        <translation approved="true" key="Points_List_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver una lista de puntos</variant>
+        </translation>
+        <translation approved="true" key="Netstat_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Seleccionar opciones de informe</variant>
+        </translation>
+        <translation approved="true" key="Netstat_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver estado de red</variant>
+        </translation>
+        <translation approved="true" key="Modver_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Seleccionar opciones de informe</variant>
+        </translation>
+        <translation approved="true" key="Modver_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver versión de controlador</variant>
+        </translation>
+        <translation approved="true" key="Reports_Facet" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Vínculo a informes relacionados</variant>
+        </translation>
+        <translation approved="true" key="Security_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Seleccionar operador</variant>
+        </translation>
+        <translation approved="true" key="Security_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver privilegios del operador para la ubicación actual</variant>
+        </translation>
+        <translation approved="true" key="System_General" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver o configurar propiedades generales del sistema</variant>
+        </translation>
+        <translation approved="true" key="System_Security" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar seguridad del sistema</variant>
+        </translation>
+        <translation approved="true" key="System_Communications" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar comunicaciones de campo</variant>
+        </translation>
+        <translation approved="true" key="System_Scheduled_Tasks" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar tareas para ejecutar a horas específicas cada día</variant>
+        </translation>
+        <translation approved="true" key="System_Daylight_Saving" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar hora de horario de verano</variant>
+        </translation>
+        <translation approved="true" key="Other_Apps" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar otras aplicaciones que funcionen junto con el servidor</variant>
+        </translation>
+        <translation approved="true" key="My_Settings" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver o editar su configuración</variant>
+        </translation>
+        <translation approved="true" key="Operators" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver o configurar operadores</variant>
+        </translation>
+        <translation approved="true" key="Security" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Establecer operador y seguridad mediante contraseña</variant>
+        </translation>
+        <translation approved="true" key="SystemInfo" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver o editar la configuración de su sistema</variant>
+        </translation>
+        <translation approved="true" key="Update" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Aplicar una actualización a su sistema</variant>
+        </translation>
+        <translation approved="true" key="Update_Library" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Aplicar una actualización de biblioteca al sistema</variant>
+        </translation>
+        <translation approved="true" key="Update_control_program_from_library" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Actualizar programa de control desde la biblioteca</variant>
+        </translation>
+        <translation approved="true" key="Update_controller_from_library" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Actualizar controlador desde la biblioteca</variant>
+        </translation>
+        <translation approved="true" key="My_Contact_Info" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar mi información de contacto</variant>
+        </translation>
+        <translation approved="true" key="Schedule_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver horarios para una semana</variant>
+        </translation>
+        <translation approved="true" key="Schedule_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar horarios</variant>
+        </translation>
+        <translation approved="true" key="CCN_Schedule_Numbers" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Números de horario CCN</variant>
+        </translation>
+        <translation approved="true" key="Schedule_Report" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Informar todos los horarios que apliquen a esta ubicación o inferior</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver mensajes de alarma</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Messages" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Agregar prefijos o detalles a mensajes de alarma</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Actions" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar acciones a ejecutar cuando se active la alarma</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Enable" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Activar o desactivar fuentes de alarma</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Category" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Cambiar la categoría de fuentes de alarma</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Template" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Cambiar la plantilla de fuentes de alarma</variant>
+        </translation>
+        <translation approved="true" key="Connections_View" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver conexiones actuales</variant>
+        </translation>
+        <translation approved="true" key="Connections_Config" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Configurar conexiones</variant>
+        </translation>
+        <translation approved="true" key="Comm_Statistics" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver estadísticas de comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="Interop_Parameters" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Editar propiedades de micro bloque</variant>
+        </translation>
+        <translation approved="true" key="Status" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver propiedades de micro bloque</variant>
+        </translation>
+        <translation approved="true" key="Setpoint" new="false">
+            <note>Hover text used through out the system</note>
+            <variant>Ver o editar punto de ajuste (setpoint)</variant>
+        </translation>
+        <translation approved="true" key="System" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver propiedades cargadas e información de la versión del sistema</variant>
+        </translation>
+        <translation approved="true" key="Console" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Consola</variant>
+        </translation>
+        <translation approved="true" key="Tracer" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver información de seguimiento</variant>
+        </translation>
+        <translation approved="true" key="Gen5Stats" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Next Gen5 Stats - Access Specifiers info</note>
+            <variant>Estadísticas de Gen5</variant>
+        </translation>
+        <translation approved="true" key="Network_Logging" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Registrar tráfico de red en un archivo para su depuración</variant>
+        </translation>
+        <translation approved="true" key="Page_Expressions" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver expresiones de página</variant>
+        </translation>
+        <translation approved="true" key="Browse_DB" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Buscar en el sistema de base de datos</variant>
+        </translation>
+        <translation approved="true" key="Core_Status" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver información de la sesión de datos principales</variant>
+        </translation>
+        <translation approved="true" key="File_Browser" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Buscar en el sistema de archivos del producto</variant>
+        </translation>
+        <translation approved="true" key="Reports_Debug" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Herramientas para informes de depuración</variant>
+        </translation>
+        <translation approved="true" key="DeferredList" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Herramientas para depurar solicitudes de datos de campo</variant>
+        </translation>
+        <translation approved="true" key="TimeMachine" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Herramientas para depurar datos de time lapse</variant>
+        </translation>
+        <translation approved="true" key="Security_Check" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver la configuración de seguridad del explorador</variant>
+        </translation>
+        <translation approved="true" key="Font_Check" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver las fuentes usadas por varias páginas de IU</variant>
+        </translation>
+        <translation approved="true" key="MSXML" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Prueba de compatibilidad de componentes ActiveX</variant>
+        </translation>
+        <translation approved="true" key="HTTP_Info" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in debug popup window</note>
+            <variant>Ver toda la información de la sesión y de la solicitud http</variant>
+        </translation>
+        <translation approved="true" key="Microblock" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text for the microblock tab of the logic page Jump To dialog</note>
+            <variant>Seleccionar un microbloque para resaltarlo</variant>
+        </translation>
+        <translation approved="true" key="Section" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text for the section tab of the logic page Jump To dialog</note>
+            <variant>Seleccionar una sección (texto con una línea a lo largo) para desplazarse a</variant>
+        </translation>
+        <translation approved="true" key="Label" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text for the label tab of the logic page Jump To dialog</note>
+            <variant>Seleccione un conjunto de etiquetas para resaltarlas</variant>
+        </translation>
+        <translation approved="true" key="Add_ons" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in system settings</note>
+            <variant>Diagnosticar e instalar complementos</variant>
+        </translation>
+        <translation approved="true" key="BACnet_Discovery" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in bacnet discovery tab</note>
+            <variant>Detección de controladores</variant>
+        </translation>
+        <translation approved="true" key="Controller_Status" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in bacnet discovery tab</note>
+            <variant>Estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="Controller_Advanced_Settings" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in bacnet discovery tab</note>
+            <variant>Información detallada sobre controladores</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Failure_Info" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in network task tab</note>
+            <variant>Error de información</variant>
+        </translation>
+        <translation approved="true" key="CCN_Discovery" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in bacnet discovery tab</note>
+            <variant>Detección de controladores CCN</variant>
+        </translation>
+        <translation approved="true" key="CCN_Setup_Hover" new="false">
+            <note>Hover text used through out the system</note>
+            <note>Hover text used in bacnet discovery tab</note>
+            <variant>Configuración de puerta de enlace CCN</variant>
+        </translation>
+    </section>
+    <section id="ALARM_BUTTON_HOVER_TEXT">
+        <note>Hover text used in Alarms</note>
+        <translation approved="true" key="Select_All_Categories" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Seleccionar todas las categorías</variant>
+        </translation>
+        <translation approved="true" key="Select_All_Sources" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Seleccionar todas las fuentes</variant>
+        </translation>
+        <translation approved="true" key="View_Selected_Sources" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ver todos los incidentes de fuentes seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Ack" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Aceptar la alarma seleccionada</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Force" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Forzar retorno a normal para la alarma seleccionada</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Delete" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Eliminar la alarma seleccionada</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Add" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Realizar acciones adicionales en la lista de alarmas</variant>
+        </translation>
+        <translation approved="true" key="AlarmView_TimeLapse" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ver alarma en lapso de tiempo</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Top" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ir a la alarma más antigua</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_PU" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Retroceder página para ver alarmas más antiguas</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_LU" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ir a la alarma anterior</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Bottom" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ir a la alarma más reciente</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Next" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>50 siguientes</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Newest" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Más recientes</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Previous" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>50 anteriores</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_Oldest" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Más antiguos</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_PD" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Avanzar página para ver alarmas más recientes</variant>
+        </translation>
+        <translation approved="true" key="Alarm_View_LD" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Ir a la alarma siguiente</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Add_AckAll" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Aceptar todas las alarmas en la vista actual</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Add_DelIns" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Eliminar todos los grupos de incidentes cerrados en la vista actual</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Add_DelSys" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Eliminar todas las alarmas del sistema en la vista actual</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Add_DelAll" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Eliminar todas las alarmas en la vista actual</variant>
+        </translation>
+        <translation approved="true" key="Alarm_Add_Search" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Mostrar las 50 alarmas siguientes a esta fecha/hora.</variant>
+        </translation>
+        <translation approved="true" key="PointAlarm_SimAlarm" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Simular recibo de una alarma</variant>
+        </translation>
+        <translation approved="true" key="PointAlarm_SimReturn" new="false">
+            <note>Hover text used in Alarms</note>
+            <variant>Simular recibo de un retorno al normal</variant>
+        </translation>
+    </section>
+    <section id="ACTION_HOVER_TEXT">
+        <note>Hover text used with action buttons</note>
+        <translation approved="true" key="Action_Hover_Welcome" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Introducción</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Graphics" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver gráficas</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Properties" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o editar propiedades</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Options" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o editar opciones</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Alarms" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o configurar alarmas</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Reports" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o ejecutar informes</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Tools" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Herramientas de ingeniería</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Schedules" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o configurar horarios</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Trends" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o configurar tendencias</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Logic" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver programa de control para este equipo</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Members" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar miembros de este grupo de horario</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Privileges" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver o asignar privilegios</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Airflow_Config" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar parámetros de micro bloques de flujo de aire</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Point_Checkout" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar puntos</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_MySettings" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar mis parámetros</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Operators" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar operadores</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Security" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar seguridad</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_SystemInfo" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar los parámetros de información del sistema</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Update" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Actualizar</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Discovery" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Detectar controladores en el sistema</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Download" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Descargar enrutadores y controladores</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Manage" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ver estado del controlador y reaccionar ante problemas</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Driver_Settings" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Configurar propiedades del controlador</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Driver_Update" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Actualizar los drivers del controlador</variant>
+        </translation>
+        <translation approved="true" key="Previous_Month" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Mes anterior</variant>
+        </translation>
+        <translation approved="true" key="Next_Month" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Mes siguiente</variant>
+        </translation>
+        <translation approved="true" key="mainbar_Alarms" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Alarmas de nivel del sistema</variant>
+        </translation>
+        <translation approved="true" key="mainbar_Print" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Imprimir</variant>
+        </translation>
+        <translation approved="true" key="mainbar_Maximize_Minimize" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Minimizar/Maximizar</variant>
+        </translation>
+        <translation approved="true" key="mainbar_Help" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="mainbar_System_Menu" new="false">
+            <note>Hover text used with action buttons</note>
+            <note>This is the mainbar command menu</note>
+            <variant>Menú del sistema</variant>
+        </translation>
+        <translation approved="true" key="mainbar_Show_Schedules_Alarms" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Mostrar horarios y alarmas</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Utilities" new="false">
+            <note>Hover text used with action buttons</note>
+            <note>This is the text for the button in the debug popup window</note>
+            <variant>Depurar utilidades</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Dev_Utilities" new="false">
+            <note>Hover text used with action buttons</note>
+            <note>This is the text for the button in the debug popup window</note>
+            <variant>Utilidades de depuración del programador</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Support_Utilities" new="false">
+            <note>Hover text used with action buttons</note>
+            <note>This is the text for the button in the debug popup window</note>
+            <variant>Compatibilidad con utilidades de depuración</variant>
+        </translation>
+        <translation approved="true" key="Action_Hover_Browser_Test" new="false">
+            <note>Hover text used with action buttons</note>
+            <note>This is the text for the button in the debug popup window</note>
+            <variant>Estas pruebas se utilizan para recopilar información acerca del explorador y del servidor</variant>
+        </translation>
+        <translation approved="true" key="Download_Tasks_Hover" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>La cola de tareas de descarga para supervisar o administrar</variant>
+        </translation>
+        <translation approved="true" key="Download_Actions_Hover" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Comprobar estado del controlador e iniciar acciones</variant>
+        </translation>
+        <translation approved="true" key="properties_physical_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Puntos de E/S</variant>
+        </translation>
+        <translation approved="true" key="Calibration_Export_Hover" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Para guardar los datos de calibración</variant>
+        </translation>
+        <translation approved="true" key="Calibration_Import_Hover" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Para aplicar los datos de calibración al equipo</variant>
+        </translation>
+        <translation approved="true" key="properties_event_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Fuentes de alarma</variant>
+        </translation>
+        <translation approved="true" key="properties_trend_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Fuentes de tendencias</variant>
+        </translation>
+        <translation approved="true" key="properties_modeled_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Puntos de visualización</variant>
+        </translation>
+        <translation approved="true" key="properties_object_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Objetos BACnet</variant>
+        </translation>
+        <translation approved="true" key="properties_rnetnetwork_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Puntos Rnet</variant>
+        </translation>
+        <translation approved="true" key="properties_protocol_mapping" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Asignación de protocolo</variant>
+        </translation>
+        <translation approved="true" key="properties_equipment" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Salida del equipo</variant>
+        </translation>
+        <translation approved="true" key="properties_network_report" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Puntos de red</variant>
+        </translation>
+        <translation approved="true" key="properties_defaultactionpage" new="false">
+            <note>Hover text used with action buttons</note>
+            <variant>Programa de control</variant>
+        </translation>
+    </section>
+    <section id="DISCOVERY_HOVER_TEXT">
+        <note>This is the text for the buttons on the BACnet discovery page</note>
+        <translation approved="true" key="Discovery_Import" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Cargar el contenido de los controladores seleccionados en el sistema</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Download_Memory" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Descargar el contenido de los controladores seleccionados</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Check_Status" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Comprobar el estado actual del controlador seleccionado</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Delete" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Eliminar el controlador y todo lo que contiene</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Locate_Devices" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Buscar dispositivos situados bajos esta ubicación del árbol</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Locate_Routers" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Buscar dispositivos situados bajos esta ubicación del árbol</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Add_Equipment" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Agregar un programa de control a un controlador programable</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Cancel" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Pone las tareas pendientes en cola y permite iniciarlas más adelante</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Info" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Haga clic para ver el historial de la sesión</variant>
+        </translation>
+        <translation approved="true" key="Time_Sync_Hover" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Sincronizar la hora de los controladores</variant>
+        </translation>
+        <translation approved="true" key="DST_Update_Hover" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Actualizar las transiciones DST de todos los controladores del sistema</variant>
+        </translation>
+        <translation approved="true" key="Clear_InfoMessages" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Borrar los mensajes de información de este enrutador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Status" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Address" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Dirección desde el dial del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_IP_Address" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Dirección IP del enrutador o del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Controllers" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Número de controladores en este enrutador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Name" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Nombre del programa de control o del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Model" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Nombre del modelo del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Version" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Número de versión asignado a la biblioteca para el programa de control</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_View" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Ver archivo para este programa de control</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Auto" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>¿Utilizar el identificador de dispositivo autoasignado?</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_DeviceId" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Identificador de dispositivo BACnet</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_RouterToNetwork" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>El número de red controlada por el enrutador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Driver" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Versión del controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_Network" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>La red en que se encuentra este controlador</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_BACview" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Versión de BACview</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Header_DownloadOption" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>¿Descargar todo el origen del controlador cuando se descargue todo el contenido?</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Set_DownloadOption" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Cambiar la opción de descarga para los controladores seleccionados.</variant>
+        </translation>
+        <translation approved="true" key="NetworkTask_Header_State" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>El tipo de tarea y su estado</variant>
+        </translation>
+        <translation approved="true" key="NetworkTask_Header_Location" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Dónde se encuentra el controlador o el programa de control en el sistema.</variant>
+        </translation>
+        <translation approved="true" key="NetworkTask_Header_Model" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>El nombre del modelo del controlador.</variant>
+        </translation>
+        <translation approved="true" key="Download_CCN" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Hacer download de todos los gateways y bridges CCN que necesiten de download.</variant>
+        </translation>
+    </section>
+    <section id="SETUP_HOVER_TEXT">
+        <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+        <translation approved="true" key="Add_Area" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Agregar área</variant>
+        </translation>
+        <translation approved="true" key="Add_Equipment" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Agregar programa de control</variant>
+        </translation>
+        <translation approved="true" key="Import_Clipping" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Importar recorte</variant>
+        </translation>
+        <translation approved="true" key="Cut" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Cortar</variant>
+        </translation>
+        <translation approved="true" key="Paste" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Pegar</variant>
+        </translation>
+        <translation approved="true" key="Move_Up" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Subir</variant>
+        </translation>
+        <translation approved="true" key="Move_Down" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Bajar</variant>
+        </translation>
+        <translation approved="true" key="Delete" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="true" key="Rename" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Cambiar nombre</variant>
+        </translation>
+        <translation approved="true" key="Configure" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Configurar...</variant>
+        </translation>
+        <translation approved="true" key="Exit_System_Setup" new="false">
+            <note>This is the text for the buttons to the left of the tree in the system setup dialog (c-View)</note>
+            <variant>Salir de la Configuración del sistema</variant>
+        </translation>
+    </section>
+    <section id="DESIGN_PROPERTIES_TEXT">
+        <translation approved="true" key="Copy_Files_From_Server" new="false">
+            <variant>Obtener archivos del servidor para editarlos</variant>
+        </translation>
+        <translation approved="true" key="Copy_Files_To_Server" new="false">
+            <variant>Enviar archivos al servidor para agregar o reemplazar</variant>
+        </translation>
+        <translation approved="true" key="ERL_Export_Hover" new="false">
+            <variant>Para guardar el archivo y hacer cambios</variant>
+        </translation>
+        <translation approved="true" key="ERL_Import_Hover" new="false">
+            <variant>Para aplicar el archivo con cambios</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Drivers" new="false">
+            <variant>Elimina los archivos de controlador no utilizados</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Views" new="false">
+            <variant>Elimina los archivos de la vista no utilizados</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Equipment" new="false">
+            <variant>Elimina los archivos del programa de control no utilizados</variant>
+        </translation>
+    </section>
+    <section id="NETWORK_TASKS_HOVER_TEXT">
+        <note>This is the text for the buttons on the BACnet discovery page</note>
+        <translation approved="true" key="Network_Tasks_Hold" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Pone las tareas seleccionadas en cola y permite iniciarlas más adelante</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Start" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Inicia las tareas seleccionadas en espera o las que han dado error</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Remove" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Elimina las tareas seleccionadas y no las ejecuta. Las tareas activas no se pueden eliminar</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Move_to_Top" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Mover las tareas seleccionadas al principio de la lista de tareas</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Move_to_Bottom" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Mover las tareas seleccionadas al final de la lista de tareas</variant>
+        </translation>
+        <translation approved="true" key="Network_Tasks_Add_Task" new="false">
+            <note>This is the text for the buttons on the BACnet discovery page</note>
+            <variant>Agregar nuevas tareas a la lista</variant>
+        </translation>
+    </section>
+    <section id="SET_COLOR">
+        <translation approved="true" key="CB_Grey" new="false">
+            <variant>1 (Gris)</variant>
+        </translation>
+        <translation approved="true" key="CB_White" new="false">
+            <variant>10 (Blanco)</variant>
+        </translation>
+        <translation approved="true" key="CB_Low_Red" new="false">
+            <variant>2 (Rojo)</variant>
+        </translation>
+        <translation approved="true" key="CB_DkBlue" new="false">
+            <variant>3 (Azul oscuro)</variant>
+        </translation>
+        <translation approved="true" key="CB_LtBlue" new="false">
+            <variant>4 (Azul claro)</variant>
+        </translation>
+        <translation approved="true" key="CB_Green" new="false">
+            <variant>5 (Verde)</variant>
+        </translation>
+        <translation approved="true" key="CB_LtGreen" new="false">
+            <variant>6 (Verde manchado)</variant>
+        </translation>
+        <translation approved="true" key="CB_Yellow" new="false">
+            <variant>7 (Amarillo)</variant>
+        </translation>
+        <translation approved="true" key="CB_Orange" new="false">
+            <variant>8 (Naranja)</variant>
+        </translation>
+        <translation approved="true" key="CB_High_Red" new="false">
+            <variant>9 (Rojo)</variant>
+        </translation>
+        <translation approved="true" key="CB_Coral" new="false">
+            <variant>13 (Coral)</variant>
+        </translation>
+    </section>
+    <section id="time_machine_console">
+        <note>Resources for the Time-lapse console.</note>
+        <translation approved="true" key="Playback" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Iniciar reproducción</variant>
+        </translation>
+        <translation approved="true" key="Pause" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Pausar reproducción</variant>
+        </translation>
+        <translation approved="true" key="Fast_forward" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Avance rápido</variant>
+        </translation>
+        <translation approved="true" key="Rewind" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Rebobinar</variant>
+        </translation>
+        <translation approved="true" key="Later_time_range" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Cambiar a un momento posterior en el rango de tiempo</variant>
+        </translation>
+        <translation approved="true" key="Earlier_time_range" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Cambiar a un momento anterior en el rango de tiempo</variant>
+        </translation>
+        <translation approved="true" key="Exit_historical_view" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Salir del lapso de tiempo</variant>
+        </translation>
+        <translation approved="true" key="show_historical_view_options" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Cambiar la fecha/hora de inicio y el rango</variant>
+        </translation>
+        <translation approved="true" key="Increment" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Avanzar un paso</variant>
+        </translation>
+        <translation approved="true" key="Decrement" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Retroceder un paso</variant>
+        </translation>
+        <translation approved="true" key="timeLapseHover" new="false">
+            <note>Resources for the Time-lapse console.</note>
+            <variant>Time-lapse</variant>
+        </translation>
+    </section>
+    <section id="Common_header_Button_Hover_Text">
+        <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+        <translation approved="true" key="Resolve_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Resolver automáticamente las diferencias entre la base de datos y la controladora</variant>
+        </translation>
+        <translation approved="true" key="Import_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Cargar desde el controlador</variant>
+        </translation>
+        <translation approved="true" key="Export_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Descargar al controlador</variant>
+        </translation>
+        <translation approved="true" key="Download_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Hacer download a la controladora</variant>
+        </translation>
+        <translation approved="true" key="Details_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Mostrar diferencias</variant>
+        </translation>
+        <translation approved="true" key="Cancel_hover" new="false">
+            <note>Resources for CommonHeaderButton such as shown on parameter mismatch. The key is based on button key + "_hover"</note>
+            <variant>Cancelar la acción a la controladora</variant>
+        </translation>
+    </section>
+</resource-base>
+<!-- master format -->

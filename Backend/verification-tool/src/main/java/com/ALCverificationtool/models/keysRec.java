@@ -27,10 +27,6 @@ public class keysRec {
 
     public keysRec() {}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> benjamin
     public keysRec(keysRec original) {
         this.keyName = original.keyName;
         this.keyModified = original.keyModified;

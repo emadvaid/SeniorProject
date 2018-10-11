@@ -18,5 +18,11 @@ public interface UserService {
     Optional<UserRec> getUserById(String userId);
 
     Optional<UserRec> updateUser(String userId, User userDetails);
+
+    Optional<UserRec> resetUserPassword(String userId);
+
+    Optional<UserRec> activateUser(String userId);
+
+    Optional<UserRec> deactivateUser(String userId);
 }
 

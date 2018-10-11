@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="logicbuilder-interface" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="interface">
+        <translation approved="true" key="loading" new="false">
+            <note>This is displayed when the application first starts to let the user know we're loading.</note>
+            <variant>Cargando...</variant>
+        </translation>
+        <translation approved="true" key="keep-open-after-initialization-finished" new="false">
+            <note>Option to continue displaying a combination progress/information dialog after its already finished its action (so you can read the information).</note>
+            <variant>Manténgalo abierto una finalizada la inicialización.</variant>
+        </translation>
+        <translation approved="true" key="ao-mb" new="false">
+            <note/>
+            <variant>MB AO</variant>
+        </translation>
+        <translation approved="true" key="whats-this" new="false">
+            <note>A menu item that is displayed in many different fields when right clicked. Selected this option displays context-sensitive help about the field.</note>
+            <variant>¿Qué es esto?</variant>
+        </translation>
+        <translation approved="true" key="file-menu" new="false">
+            <note/>
+            <variant>Archivo</variant>
+        </translation>
+        <translation approved="true" key="reopen-menu" new="false">
+            <note>Menu item for reopening previously opened files</note>
+            <variant>Reabrir</variant>
+        </translation>
+        <translation approved="true" key="clear-most-recently-used" new="false">
+            <note>Menu item that clears the list of recent files to reopen</note>
+            <variant>Borrar lista</variant>
+        </translation>
+        <translation approved="true" key="ini-warning-dialog-title" new="false">
+            <note/>
+            <variant>Importar de Eikon para WebCTRL</variant>
+        </translation>
+        <translation approved="true" key="import-eiw-warning" new="false">
+            <note/>
+            <variant>Esta aplicación no utiliza archivos .eiw. El archivo importado se guardará sólo como un archivo .equipment.</variant>
+        </translation>
+        <translation approved="true" key="do-not-show-this-again" new="false">
+            <note>Text for a checkbox that allows the user to hide this message, so they won't see it again. This is for 'FYI' messages that could get annoying.</note>
+            <variant>No volver a mostrar este mensaje.</variant>
+        </translation>
+        <translation approved="true" key="validate" new="false">
+            <note/>
+            <variant>Validar</variant>
+        </translation>
+        <translation approved="true" key="edit-menu" new="false">
+            <note/>
+            <variant>Editar</variant>
+        </translation>
+        <translation approved="true" key="cut-tooltip" new="false">
+            <note/>
+            <variant>Corte la selección actual en el portapapeles.</variant>
+        </translation>
+        <translation approved="true" key="copy-tooltip" new="false">
+            <note/>
+            <variant>Copie la selección actual en el portapapeles.</variant>
+        </translation>
+        <translation approved="true" key="paste-tooltip" new="false">
+            <note/>
+            <variant>Pegue el contenido del cortapapeles.</variant>
+        </translation>
+        <translation approved="true" key="delete-tooltip" new="false">
+            <note/>
+            <variant>Elimine la selección actual.</variant>
+        </translation>
+        <translation approved="true" key="close-tooltip" new="false">
+            <note/>
+            <variant>Cierre el programa de control actual.</variant>
+        </translation>
+        <translation approved="true" key="print-tooltip" new="false">
+            <note/>
+            <variant>Imprima el programa de control actual.</variant>
+        </translation>
+        <translation approved="true" key="edit-common-properties-tooltip" new="false">
+            <note/>
+            <variant>Editar propiedades comunes a varios microbloques en formato de tabla.</variant>
+        </translation>
+        <translation approved="true" key="palette-tooltip" new="false">
+            <note/>
+            <variant>Muestre la paleta de colores y modelos.</variant>
+        </translation>
+        <translation approved="true" key="new-controlprogram-tooltip" new="false">
+            <note/>
+            <variant>Cree un nuevo programa de control vacío.</variant>
+        </translation>
+        <translation approved="true" key="open-controlprogram-tooltip" new="false">
+            <note/>
+            <variant>Abra un programa de control.</variant>
+        </translation>
+        <translation approved="true" key="file_locked_title" new="false">
+            <note/>
+            <variant>Archivo bloqueado.</variant>
+        </translation>
+        <translation approved="true" key="file_0_is_locked_from_user_edit_rename_to_edit" new="false">
+            <note>warning that you cannot edit the just-opened file. Saving it to a different name will unlock it.</note>
+            <variant>El archivo ''{0}'' está bloqueado. Si desea editarlo, debe guardarlo con un nombre distinto.</variant>
+        </translation>
+        <translation approved="true" key="file_0_is_locked_from_user_edit" new="false">
+            <note>Warning the you cannot edit the just-opened file. You must unlock it first.</note>
+            <variant>El archivo ''{0}'' está bloqueado. Para desbloquearlo, haga clic en el icono de candado de la barra de estado para poder realizar cualquier cambio.</variant>
+        </translation>
+        <translation approved="true" key="undo-tooltip" new="false">
+            <note/>
+            <variant>Deshaga la última acción.</variant>
+        </translation>
+        <translation approved="true" key="redo-tooltip" new="false">
+            <note/>
+            <variant>Rehaga la última acción deshecha.</variant>
+        </translation>
+        <translation approved="true" key="undo-droplist-tooltip" new="false">
+            <note/>
+            <variant>Deshaga varias acciones.</variant>
+        </translation>
+        <translation approved="true" key="redo-droplist-tooltip" new="false">
+            <note/>
+            <variant>Rehaga varias acciones.</variant>
+        </translation>
+        <translation approved="true" key="build-rebuild-tooltip" new="false">
+            <note>This is for building and rebuilding object instances on the Protocol Mapping Tool window.</note>
+            <variant>Crear/Reconstruir mapas</variant>
+        </translation>
+        <translation approved="true" key="Find" new="false">
+            <note>Find values.</note>
+            <variant>Buscar</variant>
+        </translation>
+        <translation approved="true" key="clear-selected-tooltip" new="false">
+            <note>This clears the selected row's object instance in the Protocol Mapping Tool..</note>
+            <variant>Borrar las asignaciones seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="junctions" new="false">
+            <note/>
+            <variant>Uniones</variant>
+        </translation>
+        <translation approved="true" key="link-palette" new="false">
+            <note/>
+            <variant>Vínculos</variant>
+        </translation>
+        <translation approved="true" key="vertical-alignment-center" new="false">
+            <note/>
+            <variant>Centro</variant>
+        </translation>
+        <translation approved="true" key="tip-of-the-day" new="false">
+            <note/>
+            <variant>Sugerencia del día...</variant>
+        </translation>
+        <translation approved="true" key="new-palette" new="false">
+            <note/>
+            <variant>Nuevo</variant>
+        </translation>
+        <translation approved="true" key="connections" new="false">
+            <note/>
+            <variant>Conexiones</variant>
+        </translation>
+        <translation approved="true" key="import-from-ini" new="false">
+            <note/>
+            <variant>Importar desde INI...</variant>
+        </translation>
+        <translation approved="true" key="edit-choice-filters" new="false">
+            <note/>
+            <variant>Opciones de la lista desplegable</variant>
+        </translation>
+        <translation approved="true" key="ini-sucessfully-imported" new="false">
+            <note/>
+            <variant>El archivo .ini se ha importado correctamente.</variant>
+        </translation>
+        <translation approved="true" key="edit-category-choices" new="false">
+            <note/>
+            <variant>Categorías de alarmas/horarios</variant>
+        </translation>
+        <translation approved="true" key="non-unique-choice-error" new="false">
+            <note/>
+            <variant>Las elecciones deben ser únicas.</variant>
+        </translation>
+        <translation approved="true" key="non-unique-choice-error-internal" new="false">
+            <note/>
+            <variant>Los valores de elección deben ser únicos. Este es un valor reservado.</variant>
+        </translation>
+        <translation approved="true" key="Overwrite_existing_logic_files" new="false">
+            <note/>
+            <variant>Reemplace los archivos lógicos existentes.</variant>
+        </translation>
+        <translation approved="true" key="Directory_label" new="false">
+            <note/>
+            <variant>Directorio</variant>
+        </translation>
+        <translation approved="true" key="browseButtonText" new="false">
+            <note/>
+            <variant>Explorar...</variant>
+        </translation>
+        <translation approved="true" key="cancelButtonText" new="false">
+            <note>a generic button to cancel an action and/or throw away changes</note>
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true" key="okButtonText" new="false">
+            <note>a generic button to approve an action and/or keep changes.</note>
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true" key="io-number" new="false">
+            <note/>
+            <variant>Número de E/S</variant>
+        </translation>
+        <translation approved="true" key="sensor-type" new="false">
+            <note/>
+            <variant>Tipo de sensor</variant>
+        </translation>
+        <translation approved="true" key="actuator-type" new="false">
+            <note/>
+            <variant>Tipo de actuador</variant>
+        </translation>
+        <translation approved="true" key="expander-number" new="false">
+            <note/>
+            <variant>N.º de ampliador</variant>
+        </translation>
+        <translation approved="true" key="io-type" new="false">
+            <note/>
+            <variant>Tipo de entrada/salida</variant>
+        </translation>
+        <translation approved="true" key="object-id" new="false">
+            <note/>
+            <variant>Identificador de objeto</variant>
+        </translation>
+        <translation approved="true" key="days-to-keep" new="false">
+            <note/>
+            <variant>Días</variant>
+        </translation>
+        <translation approved="true" key="historical-enable" new="false">
+            <note/>
+            <variant>Historiador</variant>
+        </translation>
+        <translation approved="true" key="buffer-size" new="false">
+            <note/>
+            <variant>N.º de muestras</variant>
+        </translation>
+        <translation approved="true" key="sample-interval" new="false">
+            <note/>
+            <variant>Intervalo</variant>
+        </translation>
+        <translation approved="true" key="flow_input" new="false">
+            <note/>
+            <variant>Entrada de flujo</variant>
+        </translation>
+        <translation approved="true" key="flow_control" new="false">
+            <note/>
+            <variant>Control de flujo</variant>
+        </translation>
+        <translation approved="true" key="percent_of_max" new="false">
+            <note/>
+            <variant>% del máx</variant>
+        </translation>
+        <translation approved="true" key="fan_control" new="false">
+            <note/>
+            <variant>Control del ventilador</variant>
+        </translation>
+        <translation approved="true" key="damper_cycle" new="false">
+            <note/>
+            <variant>Ciclo del Damper</variant>
+        </translation>
+        <translation approved="true" key="interval-enable" new="false">
+            <note/>
+            <variant>Act intervalo</variant>
+        </translation>
+        <translation approved="true" key="generating-content" new="false">
+            <note/>
+            <variant>Generando contenido; espere...</variant>
+        </translation>
+        <translation approved="true" key="selected-button" new="false">
+            <note/>
+            <variant>Microbloques seleccionados</variant>
+        </translation>
+        <translation approved="true" key="all-button" new="false">
+            <note/>
+            <variant>Todos los micro bloques</variant>
+        </translation>
+        <translation approved="true" key="locked-value" new="false">
+            <note/>
+            <variant>Valor bloqueado</variant>
+        </translation>
+        <translation approved="true" key="potential-alarm-source" new="false">
+            <note/>
+            <variant>Fuente de alarma</variant>
+        </translation>
+        <translation approved="true" key="alarm-enabled" new="false">
+            <note/>
+            <variant>Alarma activada</variant>
+        </translation>
+        <translation approved="true" key="enabled" new="false">
+            <note/>
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="true" key="point_type" new="false">
+            <note/>
+            <variant>Tipo de punto</variant>
+        </translation>
+        <translation approved="true" key="point_address" new="false">
+            <note/>
+            <variant>Dirección de punto</variant>
+        </translation>
+        <translation approved="true" key="address-editable" new="false">
+            <variant>Dirección editable</variant>
+        </translation>
+        <translation approved="true" key="return-to-normal" new="false">
+            <note/>
+            <variant>Devolución</variant>
+        </translation>
+        <translation approved="true" key="fault-enabled" new="false">
+            <note/>
+            <variant>Fallo Activado</variant>
+        </translation>
+        <translation approved="true" key="alarm-low-limit-enabled" new="false">
+            <note/>
+            <variant>Límite bajo</variant>
+        </translation>
+        <translation approved="true" key="alarm-high-limit-enable" new="false">
+            <note/>
+            <variant>Límite alto</variant>
+        </translation>
+        <translation approved="true" key="trend-enable" new="false">
+            <note/>
+            <variant>Activar</variant>
+        </translation>
+        <translation approved="true" key="csv-description" new="false">
+            <note/>
+            <variant>Archivos CSV (*.csv)</variant>
+        </translation>
+        <translation approved="true" key="save-control-program-step" new="false">
+            <note>a message displayed on a panel to tell the user that a saving step is in progress</note>
+            <variant>Grabar programa de control</variant>
+        </translation>
+        <translation approved="true" key="file-saved-to-0" new="false">
+            <note>a message displayed on a panel to tell the user where the file was saved to</note>
+            <variant>Ubicación del archivo: {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="create-new-control-program" new="false">
+            <note>The option in OCLBuilder to create a new control program</note>
+            <variant>Crear nuevo programa de control</variant>
+        </translation>
+        <translation approved="true" key="open-existing-control-program" new="false">
+            <note>The option in OCLBuilder to open an existing control program</note>
+            <variant>Abrir programa de control existente</variant>
+        </translation>
+        <translation approved="true" key="display-name-key" new="false">
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="true" key="configure-outputs" new="false">
+            <note/>
+            <variant>Configurar salidas</variant>
+        </translation>
+        <translation approved="true" key="configure-inputs" new="false">
+            <note/>
+            <variant>Configurar entradas</variant>
+        </translation>
+        <translation approved="true" key="control-program" new="false">
+            <note>Just general text when we need to reference the type of files LogicBuilder creates and edits to the user. Used in several places in different contexts.</note>
+            <variant>Programa de control</variant>
+        </translation>
+        <translation approved="true" key="rect" new="false">
+            <note>Abbreviation for a rectangle</note>
+            <variant>Rect</variant>
+        </translation>
+        <translation approved="true" key="label" new="false">
+            <note/>
+            <variant>Etiqueta</variant>
+        </translation>
+        <translation approved="true" key="trend_alarm" new="false">
+            <note/>
+            <variant>Tendencia/Alarma</variant>
+        </translation>
+        <translation approved="true" key="apt" new="false">
+            <note/>
+            <variant>APT</variant>
+        </translation>
+        <translation approved="true" key="import" new="false">
+            <note/>
+            <variant>Importar</variant>
+        </translation>
+        <translation approved="true"
+            key="move-properties-to-group-tooltip" new="false">
+            <note/>
+            <variant>Mover las propiedades seleccionadas a otra ficha</variant>
+        </translation>
+        <translation approved="true" key="move-properties-to-group" new="false">
+            <note/>
+            <variant>Escribir el nombre de la ficha para mover las propiedades a</variant>
+        </translation>
+        <translation approved="true" key="add-compound-property-tooltip" new="false">
+            <note/>
+            <variant>Agrupar componentes seleccionados en una sola fila</variant>
+        </translation>
+        <translation approved="true"
+            key="break-compound-property-tooltip" new="false">
+            <note/>
+            <variant>Dividir la fila seleccionada en sus componentes individuales</variant>
+        </translation>
+        <translation approved="true"
+            key="step-into-compound-property-tooltip" new="false">
+            <note/>
+            <variant>Ver las propiedades de la propiedad compuesta seleccionada</variant>
+        </translation>
+        <translation approved="true" key="save-successful" new="false">
+            <note/>
+            <variant>Se ha grabado correctamente.</variant>
+        </translation>
+        <translation approved="true" key="property-template" new="false">
+            <note/>
+            <variant>Plantilla de propiedad (.xml)</variant>
+        </translation>
+        <translation approved="true" key="add-template-instructions" new="false">
+            <note/>
+            <variant>Nombre de referencia de la plantilla</variant>
+        </translation>
+        <translation approved="true" key="add-template" new="false">
+            <note/>
+            <variant>Agregar plantilla</variant>
+        </translation>
+        <translation approved="true" key="overwrite-title" new="false">
+            <note/>
+            <variant>¿Desea reemplazarlo?</variant>
+        </translation>
+        <translation approved="true" key="overwrite-question" new="false">
+            <note/>
+            <variant>¿Desea reemplazar los archivos lógicos existentes?</variant>
+        </translation>
+        <translation approved="true" key="import-template" new="false">
+            <note/>
+            <variant>Importar plantilla...</variant>
+        </translation>
+        <translation approved="true" key="export-template" new="false">
+            <note/>
+            <variant>Exportar plantilla...</variant>
+        </translation>
+        <translation approved="true" key="add-template-tooltip" new="false">
+            <note/>
+            <variant>Agregar plantilla</variant>
+        </translation>
+        <translation approved="true" key="show-label" new="false">
+            <note/>
+            <variant>Mostrar:</variant>
+        </translation>
+        <translation approved="true"
+            key="add-binary-schedule-categories-tooltip" new="false">
+            <note/>
+            <variant>Agregar una nueva categoría de horario de Reloj</variant>
+        </translation>
+        <translation approved="true"
+            key="remove-binary-schedule-categories-tooltip" new="false">
+            <note/>
+            <variant>Eliminar categoría de horario de Reloj de hora</variant>
+        </translation>
+        <translation approved="true"
+            key="add-binary-schedule-category-instructions" new="false">
+            <note/>
+            <variant>Nombre de referencia de la categoría</variant>
+        </translation>
+        <translation approved="true"
+            key="add-binary-schedule-categories-title" new="false">
+            <note/>
+            <variant>Agregar categoría de horario de Reloj</variant>
+        </translation>
+        <translation approved="true"
+            key="add-multistate-schedule-categories-tooltip" new="false">
+            <note/>
+            <variant>Agregar nueva categoría de horario de Reloj de estado múltiple</variant>
+        </translation>
+        <translation approved="true"
+            key="remove-multistate-schedule-categories-tooltip" new="false">
+            <note/>
+            <variant>Eliminar categoría de horario de Reloj de hora de estado múltiple</variant>
+        </translation>
+        <translation approved="true"
+            key="add-multistate-schedule-categories-instructions" new="false">
+            <note/>
+            <variant>Nombre de referencia de categoría de horario de estado múltiple</variant>
+        </translation>
+        <translation approved="true"
+            key="add-multistate-schedule-categories-title" new="false">
+            <note/>
+            <variant>Agregar nueva categoría de horario de Reloj de estado múltiple</variant>
+        </translation>
+        <translation approved="true" key="add-model-schedule-tooltip" new="false">
+            <note/>
+            <variant>Agregar nueva categoría de horario de Horario modelado</variant>
+        </translation>
+        <translation approved="true" key="remove-model-schedule-tooltip" new="false">
+            <note/>
+            <variant>Eliminar categoría de horario de Horario modelado</variant>
+        </translation>
+        <translation approved="true"
+            key="add-model-schedule-instructions" new="false">
+            <note/>
+            <variant>Nombre de referencia de categoría de horario</variant>
+        </translation>
+        <translation approved="true" key="add-model-schedule-title" new="false">
+            <note/>
+            <variant>Agregar categoría de horario de Horario modelado</variant>
+        </translation>
+        <translation approved="true" key="edit-rnet-tags" new="false">
+            <note>Header for the combo sensor/rnet tags. 'tags' are unique numbers used by special sensors to store variables.</note>
+            <variant>Etiquetas Rnet</variant>
+        </translation>
+        <translation approved="true" key="add-rnet-tag" new="false">
+            <note/>
+            <variant>Agregar nueva etiqueta Rnet</variant>
+        </translation>
+        <translation approved="true" key="remove-rnet-tag-tooltip" new="false">
+            <note/>
+            <variant>Eliminar etiqueta Rnet</variant>
+        </translation>
+        <translation approved="true" key="Rnet_Tag_Value" new="false">
+            <note/>
+            <variant>Valor de etiqueta Rnet</variant>
+        </translation>
+        <translation approved="true" key="Rnet_Tag_Display_Name" new="false">
+            <note/>
+            <variant>Nombre de visualización de etiqueta Rnet</variant>
+        </translation>
+        <translation approved="true"
+            key="Import/Export_all_custom_Rnet_Tags" new="false">
+            <note>Header for options to import and export the custom Sensor Tags that are being edited on this page</note>
+            <variant>Importar/exportar todas las etiquetas Rnet personalizadas</variant>
+        </translation>
+        <translation approved="true" key="import-template-tooltip" new="false">
+            <note/>
+            <variant>Importar plantilla</variant>
+        </translation>
+        <translation approved="true" key="export-template-tooltip" new="false">
+            <note/>
+            <variant>Exportar plantilla</variant>
+        </translation>
+        <translation approved="true"
+            key="import-category-choices-tooltip" new="false">
+            <note/>
+            <variant>Importe todas las opciones de categoría de alarma/horario de un archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="export-category-choices-tooltip" new="false">
+            <note/>
+            <variant>Exporte todas las opciones de categoría de alarma/horario de un archivo.</variant>
+        </translation>
+        <translation approved="true" key="convert-eikon-files" new="false">
+            <note/>
+            <variant>Convertir EIKON para archivos de WebCTRL</variant>
+        </translation>
+        <translation approved="true" key="File_0_could_not_be_upgraded" new="false">
+            <note/>
+            <variant>Error en la actualización del archivo {0}. Este archivo está dañado o falta su firma. </variant>
+        </translation>
+        <translation approved="true" key="replace_image" new="false">
+            <note/>
+            <variant>Reemplazar imagen</variant>
+        </translation>
+        <translation approved="true" key="Replace_this_image" new="false">
+            <note/>
+            <variant>Reemplazar esta imagen</variant>
+        </translation>
+        <translation approved="true" key="with_this_image" new="false">
+            <note/>
+            <variant>con esta imagen</variant>
+        </translation>
+        <translation approved="true" key="images_file_filter" new="false">
+            <note/>
+            <variant>Imágenes (*.png; *.jpg; *.gif; *.bmp)</variant>
+        </translation>
+        <translation approved="true" key="operation_finished" new="false">
+            <note/>
+            <variant>Operación finalizada</variant>
+        </translation>
+        <translation approved="true" key="error_reading_file_0" new="false">
+            <note/>
+            <variant>Se ha producido un error al leer el archivo: {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="signature-mismatch-exception-for-file-0" new="false">
+            <note/>
+            <variant>El archivo {0} tiene una firma no válida. El archivo está dañado o se ha modificado manualmente.</variant>
+        </translation>
+        <translation approved="true"
+            key="Operation_complete_0_files_affected" new="false">
+            <note/>
+            <variant>Operación completada. {0} archivos fueron afectados.</variant>
+        </translation>
+        <translation approved="true" key="remove-template-tooltip" new="false">
+            <note/>
+            <variant>Eliminar plantilla</variant>
+        </translation>
+        <translation approved="true" key="add-category-instructions" new="false">
+            <note/>
+            <variant>Nombre de referencia de la categoría</variant>
+        </translation>
+        <translation approved="true" key="add-category" new="false">
+            <note/>
+            <variant>Agregar categoría</variant>
+        </translation>
+        <translation approved="true" key="import-category" new="false">
+            <note/>
+            <variant>Importar categoría</variant>
+        </translation>
+        <translation approved="true" key="export-category" new="false">
+            <note/>
+            <variant>Exportar categoría</variant>
+        </translation>
+        <translation approved="true" key="add-category-tooltip" new="false">
+            <note/>
+            <variant>Agregar categoría</variant>
+        </translation>
+        <translation approved="true" key="import-category-tooltip" new="false">
+            <note/>
+            <variant>Importar categoría</variant>
+        </translation>
+        <translation approved="true" key="export-category-tooltip" new="false">
+            <note/>
+            <variant>Exportar categoría</variant>
+        </translation>
+        <translation approved="true" key="remove-category-tooltip" new="false">
+            <note/>
+            <variant>Eliminar categoría</variant>
+        </translation>
+        <translation approved="true" key="save-template" new="false">
+            <note/>
+            <variant>Grabar el grupo actual como una plantilla</variant>
+        </translation>
+        <translation approved="true" key="rename-group" new="false">
+            <note/>
+            <variant>Cambiar nombre del grupo de propiedades actual</variant>
+        </translation>
+        <translation approved="true" key="inputs" new="false">
+            <note/>
+            <variant>Entradas</variant>
+        </translation>
+        <translation approved="true" key="outputs" new="false">
+            <note/>
+            <variant>Salidas</variant>
+        </translation>
+        <translation approved="true" key="debugger-title" new="false">
+            <note/>
+            <variant>Depurador</variant>
+        </translation>
+        <translation approved="true" key="debug" new="false">
+            <note/>
+            <variant>Depurar</variant>
+        </translation>
+        <translation approved="true" key="about" new="false">
+            <note/>
+            <variant>Acerca de...</variant>
+        </translation>
+        <translation approved="true" key="exit" new="false">
+            <note/>
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="organize-valuesets" new="false">
+            <note>menu item that allows the user to add, remove, and rename Program Defaults (value set) identifiers.</note>
+            <variant>Organizar valores predeterminados del programa...</variant>
+        </translation>
+        <translation approved="true" key="organize-valuesets-title" new="false">
+            <note>Title of the dialog that allows the user to add, remove, and rename Program Defaults (value set) identifiers.</note>
+            <variant>Organizar valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="value-set-name" new="false">
+            <note>this is the header for the 'name' field of a Program Default (value set) being edited</note>
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="true" key="value-set-description" new="false">
+            <note>this is the header for the 'description' field of a Program Defaults (value set) being edited</note>
+            <variant>Descripción</variant>
+        </translation>
+        <translation approved="true" key="value-set-details-title" new="false">
+            <note>The title of a dialog for editing details about a Program Defaults (value set). This is used for both adding a new value set and editing an existing one, so the text is fairly generic.</note>
+            <variant>Valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="default-value-set-name" new="false">
+            <note>This is the initial name of a new set of Program Defaults (value set) we create when a user adds one. They'll probably rename it, but we have to call it something.</note>
+            <variant>nuevos valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="value-set-uniqueness-error" new="false">
+            <note>This is displayed if the user adds or renames a Program Defaults (value set) name to something that isn't unique. Their names must be unique.</note>
+            <variant>Los nombres de los valores predeterminados del programa deben ser únicos.</variant>
+        </translation>
+        <translation approved="true" key="value-set-error-title" new="false">
+            <note>Title of a the warning dialog when the user enters an invalid Program Defaults (value set).</note>
+            <variant>Error de valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="add_new_value-set" new="false">
+            <note>Tooltip for a button that adds new Program Defaults (value sets)</note>
+            <variant>Agregar nuevo conjunto de valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="remove_value-set" new="false">
+            <note>tooltip for a button that removes a Program Defaults (value set).</note>
+            <variant>Eliminar conjunto de valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="edits_value-set_properties" new="false">
+            <note>tooltip for a button that allows you to edit the name and description of a Program Defaults (value set).</note>
+            <variant>Editar propiedades de valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="value-set-is-metric" new="false">
+            <note>this is a checkbox name for an option to make this value set metric (vs imperial)</note>
+            <variant>Métrico</variant>
+        </translation>
+        <translation approved="true" key="horizontal-alignment-left" new="false">
+            <note/>
+            <variant>Izquierda</variant>
+        </translation>
+        <translation approved="true" key="window-menu" new="false">
+            <note/>
+            <variant>Ventana</variant>
+        </translation>
+        <translation approved="true" key="moveup-property" new="false">
+            <note/>
+            <variant>Subir propiedad</variant>
+        </translation>
+        <translation approved="true" key="figure-palette" new="false">
+            <note/>
+            <variant>Figuras</variant>
+        </translation>
+        <translation approved="true" key="poly" new="false">
+            <note/>
+            <variant>Polinómica</variant>
+        </translation>
+        <translation approved="true" key="save" new="false">
+            <note/>
+            <variant>Grabar</variant>
+        </translation>
+        <translation approved="true" key="save-tooltip" new="false">
+            <note/>
+            <variant>Graba el programa de control actual.</variant>
+        </translation>
+        <translation approved="true" key="demand1" new="false">
+            <note>Denotes demand level for energy consumption</note>
+            <variant>Demanda1</variant>
+        </translation>
+        <translation approved="true" key="demand2" new="false">
+            <note>Denotes demand level for energy consumption</note>
+            <variant>Demanda2</variant>
+        </translation>
+        <translation approved="true" key="demand3" new="false">
+            <note>Denotes demand level for energy consumption</note>
+            <variant>Demanda3</variant>
+        </translation>
+        <translation approved="true" key="unoccupied" new="false">
+            <note>Indicates when a building is normally not in use and is vacant</note>
+            <variant>Desocupado</variant>
+        </translation>
+        <translation approved="true" key="junction" new="false">
+            <note/>
+            <variant>Unión</variant>
+        </translation>
+        <translation approved="true" key="vertical-orientation" new="false">
+            <note/>
+            <variant>Vertical</variant>
+        </translation>
+        <translation approved="true" key="save-as" new="false">
+            <note/>
+            <variant>Grabar Como...</variant>
+        </translation>
+        <translation approved="true" key="valueset-menu" new="false">
+            <note/>
+            <variant>Valores predeterminados del programa</variant>
+        </translation>
+        <translation approved="true" key="valueset-header" new="false">
+            <note>this is the header for list of 'program defaults' (value sets) so you can check off which ones you want to keep.</note>
+            <variant>Valores predeterminados del programa para importar:</variant>
+        </translation>
+        <translation approved="true"
+            key="value-set-locale-merge-instructions" new="false">
+            <note>when you do a merge (copy/paste, insert symbol) where the source has Program Defaults (value sets) than the destination, we'll ask you which ones do want to keep.</note>
+            <variant>Acaba de insertar lógica que contiene varios valores predeterminados del programa. Seleccione cuáles quiere importar.</variant>
+        </translation>
+        <translation approved="true" key="value-set-locale-merge-title" new="false">
+            <note/>
+            <variant>¿Qué quiere combinar?</variant>
+        </translation>
+        <translation approved="true" key="remove-group" new="false">
+            <note/>
+            <variant>Eliminar grupo de propiedades actual</variant>
+        </translation>
+        <translation approved="true" key="horizontal-orientation" new="false">
+            <note/>
+            <variant>Horizontal</variant>
+        </translation>
+        <translation approved="true" key="value" new="false">
+            <note/>
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="step" new="false">
+            <note/>
+            <variant>paso</variant>
+        </translation>
+        <translation approved="true" key="add-property" new="false">
+            <note/>
+            <variant>Agregar propiedad al grupo actual </variant>
+        </translation>
+        <translation approved="true" key="debug-validation" new="false">
+            <note/>
+            <variant>Depurar validación</variant>
+        </translation>
+        <translation approved="true" key="advanced" new="false">
+            <note/>
+            <variant>Avanzado</variant>
+        </translation>
+        <translation approved="true" key="open" new="false">
+            <note/>
+            <variant>Abrir</variant>
+        </translation>
+        <translation approved="true" key="toggle-grid" new="false">
+            <note/>
+            <variant>Cuadrícula</variant>
+        </translation>
+        <translation approved="true" key="insert-image" new="false">
+            <note/>
+            <variant>Insertar imagen...</variant>
+        </translation>
+        <translation approved="true" key="palette-menu" new="false">
+            <note/>
+            <variant>Paleta...</variant>
+        </translation>
+        <translation approved="true" key="palette" new="false">
+            <note/>
+            <variant>Paleta</variant>
+        </translation>
+        <translation approved="true" key="palette-dialog-title" new="false">
+            <note>Title for the palette dialog window</note>
+            <variant>Paleta</variant>
+        </translation>
+        <translation approved="true" key="general" new="false">
+            <note/>
+            <variant>General</variant>
+        </translation>
+        <translation approved="true" key="learning" new="false">
+            <note/>
+            <variant>Aprender</variant>
+        </translation>
+        <translation approved="true" key="learning-adaptive" new="false">
+            <note/>
+            <variant>Aprendedor adaptante</variant>
+        </translation>
+        <translation approved="true" key="setpoints" new="false">
+            <note/>
+            <variant>Puntos de Ajuste (Setpoints)</variant>
+        </translation>
+        <translation approved="true" key="setpoints-demand" new="false">
+            <note/>
+            <variant>PUntos de Ajuste (Setpoints) con Demanda</variant>
+        </translation>
+        <translation approved="true" key="horizontal-alignment-center" new="false">
+            <note/>
+            <variant>Centro</variant>
+        </translation>
+        <translation approved="true" key="export" new="false">
+            <note/>
+            <variant>Exportar</variant>
+        </translation>
+        <translation approved="true" key="apply" new="false">
+            <note/>
+            <variant>Aplicar</variant>
+        </translation>
+        <translation approved="true" key="spacer-tooltip" new="false">
+            <note/>
+            <variant>Agregar un separador</variant>
+        </translation>
+        <translation approved="true" key="select-in-tree-tooltip" new="false">
+            <note/>
+            <variant>Buscar la propiedad seleccionada en el árbol.</variant>
+        </translation>
+        <translation approved="true" key="apply-tooltip" new="false">
+            <note/>
+            <variant>Aplicar cambios</variant>
+        </translation>
+        <translation approved="true" key="close" new="false">
+            <note/>
+            <variant>Cerrar</variant>
+        </translation>
+        <translation approved="true" key="close-dialog-tooltip" new="false">
+            <note>For closing an open dialog</note>
+            <variant>Cerrar esta ventana de diálogo</variant>
+        </translation>
+        <translation approved="true" key="properties-editor-title" new="false">
+            <note>the title of the dialog where you edit properties.</note>
+            <variant>Editor de propiedades</variant>
+        </translation>
+        <translation approved="true" key="new" new="false">
+            <note/>
+            <variant>Nuevo</variant>
+        </translation>
+        <translation approved="true" key="tree" new="false">
+            <note/>
+            <variant>Árbol</variant>
+        </translation>
+        <translation approved="true" key="fileNameLabelText" new="false">
+            <note/>
+            <variant>Nombre de archivo</variant>
+        </translation>
+        <translation approved="true" key="is-filled" new="false">
+            <note/>
+            <variant>¿Está relleno?</variant>
+        </translation>
+        <translation approved="true" key="fill-patterns" new="false">
+            <note/>
+            <variant>Modelos de relleno</variant>
+        </translation>
+        <translation approved="true" key="line-patterns" new="false">
+            <note/>
+            <variant>Modelos de línea</variant>
+        </translation>
+        <translation approved="true" key="bpt-mb" new="false">
+            <note/>
+            <variant>MB BPT</variant>
+        </translation>
+        <translation approved="true" key="vertical-alignment-bottom" new="false">
+            <note/>
+            <variant>Inferior</variant>
+        </translation>
+        <translation approved="true" key="name" new="false">
+            <note/>
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="true" key="style-2" new="false">
+            <note>Key for font styles</note>
+            <variant>Estilo</variant>
+        </translation>
+        <translation approved="true" key="bold" new="false">
+            <note>Key for bold font style</note>
+            <variant>Negrita</variant>
+        </translation>
+        <translation approved="true" key="italics" new="false">
+            <note>Key for italized font style</note>
+            <variant>Cursiva</variant>
+        </translation>
+        <translation approved="true" key="ellps" new="false">
+            <note/>
+            <variant>Elips</variant>
+        </translation>
+        <translation approved="true" key="foreground" new="false">
+            <note/>
+            <variant>Primer plano</variant>
+        </translation>
+        <translation approved="true" key="clear" new="false">
+            <note/>
+            <variant>Borrar</variant>
+        </translation>
+        <translation approved="true" key="bi-mb" new="false">
+            <note/>
+            <variant>MB BI</variant>
+        </translation>
+        <translation approved="true" key="fill-pattern" new="false">
+            <note/>
+            <variant>Rellenar</variant>
+        </translation>
+        <translation approved="true" key="move" new="false">
+            <note/>
+            <variant>Mover</variant>
+        </translation>
+        <translation approved="true" key="multiblock-palette" new="false">
+            <note/>
+            <variant>Personalizar</variant>
+        </translation>
+        <translation approved="true" key="secure-multiblock-palette" new="false">
+            <note/>
+            <variant>Seguro</variant>
+        </translation>
+        <translation approved="true" key="working" new="false">
+            <note/>
+            <variant>En curso</variant>
+        </translation>
+        <translation approved="true" key="paused" new="false">
+            <note/>
+            <variant>Pausado</variant>
+        </translation>
+        <translation approved="true" key="color-picker" new="false">
+            <note/>
+            <variant>Elegir un color</variant>
+        </translation>
+        <translation approved="true" key="vertical-alignment-top" new="false">
+            <note/>
+            <variant>Arriba</variant>
+        </translation>
+        <translation approved="true" key="wires" new="false">
+            <note/>
+            <variant>alambres</variant>
+        </translation>
+        <translation approved="true" key="done" new="false">
+            <note/>
+            <variant>Hecho</variant>
+        </translation>
+        <translation approved="true" key="lookInLabelText" new="false">
+            <note/>
+            <variant>Buscar en</variant>
+        </translation>
+        <translation approved="true" key="movedown-property" new="false">
+            <note/>
+            <variant>Bajar propiedad</variant>
+        </translation>
+        <translation approved="true" key="wire" new="false">
+            <note/>
+            <variant>Alambre</variant>
+        </translation>
+        <translation approved="true" key="refresh" new="false">
+            <note/>
+            <variant>Actualizar</variant>
+        </translation>
+        <translation approved="true" key="add-valueset-label" new="false">
+            <note/>
+            <variant>Agregar valores predeterminados del programa:</variant>
+        </translation>
+        <translation approved="true" key="mb" new="false">
+            <note/>
+            <variant>MB</variant>
+        </translation>
+        <translation approved="true" key="undo" new="false">
+            <note/>
+            <variant>Deshacer</variant>
+        </translation>
+        <translation approved="true" key="horizontal-alignment-right" new="false">
+            <note/>
+            <variant>Derecha</variant>
+        </translation>
+        <translation approved="true" key="bo-mb" new="false">
+            <note/>
+            <variant>MB BO</variant>
+        </translation>
+        <translation approved="true" key="background" new="false">
+            <note/>
+            <variant>Fondo</variant>
+        </translation>
+        <translation approved="true" key="help-menu" new="false">
+            <note/>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="developer-menu" new="false">
+            <note/>
+            <variant>Programador</variant>
+        </translation>
+        <translation approved="true" key="utilities-menu" new="false">
+            <note/>
+            <variant>Utilidades</variant>
+        </translation>
+        <translation approved="true" key="help-menu-item" new="false">
+            <note/>
+            <variant>Ayuda...</variant>
+        </translation>
+        <translation approved="true" key="help-title" new="false">
+            <note/>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="help-button" new="false">
+            <note/>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="labels" new="false">
+            <note/>
+            <variant>Etiquetas</variant>
+        </translation>
+        <translation approved="true" key="remove-property" new="false">
+            <note/>
+            <variant>Eliminar la propiedad seleccionada actualmente</variant>
+        </translation>
+        <translation approved="true" key="filesOfTypeLabelText" new="false">
+            <note/>
+            <variant>Archivos del tipo</variant>
+        </translation>
+        <translation approved="true" key="add-group" new="false">
+            <note/>
+            <variant>Agregar grupo de propiedades</variant>
+        </translation>
+        <translation approved="true" key="change-editorType" new="false">
+            <note/>
+            <variant>Cambiar tipo de editor</variant>
+        </translation>
+        <translation approved="true" key="change-editor-hint" new="false">
+            <note/>
+            <variant>Cambiar sugerencia de editor</variant>
+        </translation>
+        <translation approved="true" key="add-missing-attribute" new="false">
+            <note/>
+            <variant>Agregar atributo que falta</variant>
+        </translation>
+        <translation approved="true" key="ai-mb" new="false">
+            <note/>
+            <variant>MB AI</variant>
+        </translation>
+        <translation approved="true" key="edit" new="false">
+            <note/>
+            <variant>Editar</variant>
+        </translation>
+        <translation approved="true" key="delete" new="false">
+            <note/>
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="true" key="line-pattern" new="false">
+            <note/>
+            <variant>Línea</variant>
+        </translation>
+        <translation approved="true" key="redo" new="false">
+            <note/>
+            <variant>Rehacer</variant>
+        </translation>
+        <translation approved="true"
+            key="Enter_a_new_property_group_nam" new="false">
+            <note/>
+            <variant>Introducir un nuevo nombre de grupo de propiedades </variant>
+        </translation>
+        <translation approved="true" key="Enter_a_new_property_name" new="false">
+            <note/>
+            <variant>Introducir un nuevo nombre de propiedad </variant>
+        </translation>
+        <translation approved="true" key="Zoom" new="false">
+            <note>the zoom menu</note>
+            <variant>Zoom</variant>
+        </translation>
+        <translation approved="true" key="File-Open" new="false">
+            <note>The file/open menu item</note>
+            <variant>Abrir...</variant>
+        </translation>
+        <translation approved="true" key="Copy" new="false">
+            <note>copy menu item (part of cut, copy, paste)</note>
+            <variant>Copiar</variant>
+        </translation>
+        <translation approved="true" key="Cut" new="false">
+            <note>Cut menu item (part of cut, copy, paste)</note>
+            <variant>Cortar</variant>
+        </translation>
+        <translation approved="true" key="Paste" new="false">
+            <note>paste menu item (part of cut, copy, paste)</note>
+            <variant>Pegar</variant>
+        </translation>
+        <translation approved="true" key="move-to-front-menu-item" new="false">
+            <note>menu item to move selected figures on top of everything else</note>
+            <variant>Traer al frente</variant>
+        </translation>
+        <translation approved="true" key="move-forward-menu-item" new="false">
+            <note>menu item to move selected figures one step closer to being on top of everything else</note>
+            <variant>Traer adelante</variant>
+        </translation>
+        <translation approved="true" key="move-to-back-menu-item" new="false">
+            <note>menu item to move selected figures to be behind (on bottom of) everything else</note>
+            <variant>Enviar al fondo</variant>
+        </translation>
+        <translation approved="true" key="move-backward-menu-item" new="false">
+            <note>menu item to move selected figures one step further backward (towards the bottom)</note>
+            <variant>Enviar atrás</variant>
+        </translation>
+        <translation approved="true" key="find-usages" new="false">
+            <note>menu item to display a dialog that shows all usages of a label.</note>
+            <variant>Buscar usos de etiquetas...</variant>
+        </translation>
+        <translation approved="true" key="go-to-source" new="false">
+            <note>menu item to scroll to the input of a label or wire.</note>
+            <variant>Ir a origen</variant>
+        </translation>
+        <translation approved="true" key="highlight-connection" new="false">
+            <note>menu item that highlights all wires and labels in a single connection. It does NOT go through microblocks.</note>
+            <variant>Resaltar conexión</variant>
+        </translation>
+        <translation approved="true" key="clear-connection-highlight" new="false">
+            <note>button that clears the current highlighted connection.</note>
+            <variant>Borrar resaltado</variant>
+        </translation>
+        <translation approved="true" key="change-highlight-color" new="false">
+            <note>button that allows the user to change the highlighted connection's color.</note>
+            <variant>Cambiar color</variant>
+        </translation>
+        <translation approved="true" key="step-inside-multiblock" new="false">
+            <note>menu item to step inside a multiblock. A multiblock is a control program inside a microblock (that's inside a control program). This allows you to edit the multiblock's contents.</note>
+            <variant>Entrar</variant>
+        </translation>
+        <translation approved="true" key="step-outside-of-multiblock" new="false">
+            <note>menu item to step outside of a multiblock. So you go to the multiblock's parent (a control program or possibly another multiblock)</note>
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="add-new-multiblock" new="false">
+            <note>Menu item to add a new empty multiblock</note>
+            <variant>Agregar nuevo micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="add-new-secure-multiblock" new="false">
+            <note>Menu item to add a new empty secure multiblock</note>
+            <variant>Agregar Nuevo Microbloque Seguro</variant>
+        </translation>
+        <translation approved="true" key="add-existing-multiblock" new="false">
+            <note>Menu item that displays a dialog allowing the user to select an existing multiblock to add to the control program</note>
+            <variant>Agregar micro bloque personalizado existente...</variant>
+        </translation>
+        <translation approved="true"
+            key="add-existing-secure-multiblock" new="false">
+            <note>Menu item that displays a dialog allowing the user to select an existing secure multiblock to add to the control program</note>
+            <variant>Agregar Micro bloque Seguro Existente...</variant>
+        </translation>
+        <translation approved="true" key="unlock-multiblock" new="false">
+            <note>menu item to unlock a locked multiblock. A multiblock may be locked by signing it, which makes it read only unless the lock is removed.</note>
+            <variant>Desbloquear microbloque</variant>
+        </translation>
+        <translation approved="true"
+            key="unlock-multiblock-warning-message" new="false">
+            <note>Warning message given to users to indicate that they are removing a special tag placed on the microblock that allows it's use in a zone control module.</note>
+            <variant>Al desbloquear este micro bloque se eliminarán las etiquetas ZN. ¿Desea continuar?</variant>
+        </translation>
+        <translation approved="true" key="warning-title" new="false">
+            <note>Warning message given to users to indicate that they are removing a special tag placed on the microblock that allows it's use in a zone control module.</note>
+            <variant>¡Advertencia!</variant>
+        </translation>
+        <translation approved="true"
+            key="this-microblock-is-tagged-for-zn" new="false">
+            <note>Tooltip text to let the user know that a microblock has been signed for use in a zone control module.</note>
+            <variant>Este micro bloque se ha etiquetado para usarlo en un programa de control compilado ZN.</variant>
+        </translation>
+        <translation approved="true" key="Find_Replace" new="false">
+            <note>Find/Replace menu item. Peforms a search and allows you to replace found items with something else.</note>
+            <variant>Buscar/Reemplazar...</variant>
+        </translation>
+        <translation approved="true" key="Find_menu-item" new="false">
+            <note>Find menu item. Peforms a search only (no replace).</note>
+            <variant>Buscar/Reemplazar...</variant>
+        </translation>
+        <translation approved="true" key="find_results_title" new="false">
+            <note>Title of dialog for showing text not found.</note>
+            <variant>Buscar resultados</variant>
+        </translation>
+        <translation approved="true" key="edit-order-item-not-found" new="false">
+            <note>Message shown when text in a find search wasn't found.</note>
+            <variant>El texto ''{0}'' no fue encontrado en ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="Microblock-palette" new="false">
+            <note>a heading for a list of all microblocks</note>
+            <variant>Microbloques</variant>
+        </translation>
+        <translation approved="true"
+            key="edit-display-definition-tooltip" new="false">
+            <note/>
+            <variant>Editar la definición de visualización de propiedades del micro bloque seleccionado</variant>
+        </translation>
+        <translation approved="true" key="options-menu" new="false">
+            <note/>
+            <variant>Opciones</variant>
+        </translation>
+        <translation approved="true" key="reorder-menu" new="false">
+            <note/>
+            <variant>Reordenar</variant>
+        </translation>
+        <translation approved="true" key="control-program-menu" new="false">
+            <note/>
+            <variant>Programa de control</variant>
+        </translation>
+        <translation approved="true" key="microblock-menu" new="false">
+            <note>the menu to select the current microblock palette (a different type of menu for selecting microblocks).</note>
+            <variant>Microbloques</variant>
+        </translation>
+        <translation approved="true" key="multiblock-io" new="false">
+            <note/>
+            <variant>Micro bloque de E/S personalizado</variant>
+        </translation>
+        <translation approved="true" key="menu-magnetism" new="false">
+            <note>menu item that toggles magnetism on or off. Magnetism makes figures snap to a grid. Microblocks, labels, and wires are not affected by this as magnetism is always ON for them.</note>
+            <variant>Ajustar figuras y texto a la cuadrícula</variant>
+        </translation>
+        <translation approved="true" key="menu-highlight_BACnet" new="false">
+            <note>menu item that toggles highlighting BACnet objects</note>
+            <variant>Resaltar BACnet</variant>
+        </translation>
+        <translation approved="true" key="menu-metric" new="false">
+            <note>menu item to toggle metric or american standard support</note>
+            <variant>Métrico</variant>
+        </translation>
+        <translation approved="true" key="compile-drop-down-tooltip" new="false">
+            <note>tooltip over a button that displays a menu allowing you to set the current compile (make) type.</note>
+            <variant>Le permite seleccionar la forma de crear este Programa de control.</variant>
+        </translation>
+        <translation approved="true" key="menu-suppress_Logic_Page" new="false">
+            <note>toggle for suppressing the logic page generation when compiled.</note>
+            <variant>Suprimir página lógica</variant>
+        </translation>
+        <translation approved="true" key="menu-use_unitary_naming" new="false">
+            <note>Toggle for settting the 'Use Unitary Naming' flag.</note>
+            <variant>Utilice nombres unitarios</variant>
+        </translation>
+        <translation approved="true" key="menu-control-program-info" new="false">
+            <note>menu option to display information about the control program</note>
+            <variant>Info...</variant>
+        </translation>
+        <translation approved="true" key="menu-print" new="false">
+            <note>menu item to print the control program</note>
+            <variant>Imprimir...</variant>
+        </translation>
+        <translation approved="true" key="third-party-editor-title" new="false">
+            <note>Title of the third party editor dialog window</note>
+            <variant>Herramienta de asignación de protocolo</variant>
+        </translation>
+        <translation approved="true" key="menu-edit-third-party" new="false">
+            <note>menu item to edit mapping properties to third party protocols</note>
+            <variant>Editar asignación de protocolo (PMT)...</variant>
+        </translation>
+        <translation approved="true" key="menu-edit-common-properties" new="false">
+            <note>menu item to edit properties common among many microclocks</note>
+            <variant>Editar propiedades comunes...</variant>
+        </translation>
+        <translation approved="true" key="edit-third-party-tooltip" new="false">
+            <note/>
+            <variant>Asignar propiedades de BACnet a protocolos de terceros en formato de tabla.</variant>
+        </translation>
+        <translation approved="true" key="menu-save-as-symbol" new="false">
+            <note>menu item to save the control program as a symbol</note>
+            <variant>Exportar símbolo...</variant>
+        </translation>
+        <translation approved="true" key="menu-insert-symbol" new="false">
+            <note>menu item to insert a symbol from a file into the control program</note>
+            <variant>Importar símbolo...</variant>
+        </translation>
+        <translation approved="true" key="menu-import-eikon" new="false">
+            <note>menu item to import an EIKON eiw file</note>
+            <variant>Importar...</variant>
+        </translation>
+        <translation approved="true" key="menu-export-equipment" new="false">
+            <note>menu item to export the control program to a legacy equipment file</note>
+            <variant>Exportar a .equipment</variant>
+        </translation>
+        <translation approved="true" key="menu-simulate" new="false">
+            <note>menu item that starts simulating the current control program</note>
+            <variant>Simular</variant>
+        </translation>
+        <translation approved="true" key="menu-compile" new="false">
+            <note>name of a menu with a sub menu for compiling the control program. The sub menu specifies which type of module to compile the CP for.. This directly relates to how you validate it.</note>
+            <variant>Crear programa de control</variant>
+        </translation>
+        <translation approved="true" key="menu-set-error-level" new="false">
+            <note>name of a menu with a sub menu for validating the control program. The sub menu specifies which type of module to validate the CP for. This directly relates to how you compile it.</note>
+            <variant>Comprobar el nivel de error</variant>
+        </translation>
+        <translation approved="true" key="error-title" new="false">
+            <note>This is the title on a dialog that lists errors and warnings.</note>
+            <variant>Errores</variant>
+        </translation>
+        <translation approved="true" key="menu-errors" new="false">
+            <note>The text for a menu item to display the errors and warnings dialog.</note>
+            <variant>Errores...</variant>
+        </translation>
+        <translation approved="true" key="errors-tooltip" new="false">
+            <note>tooltip for a button or menu item to display the errors and warnings dialog.</note>
+            <variant>Muestra los errores del programa de control actual</variant>
+        </translation>
+        <translation approved="true" key="simulator-tooltip" new="false">
+            <note>tooltip for a button or that runs the simulator.</note>
+            <variant>Simule el programa de control actual</variant>
+        </translation>
+        <translation approved="true" key="menu-preferences" new="false">
+            <note>menu item to display the application's preferences dialog.</note>
+            <variant>Preferencias...</variant>
+        </translation>
+        <translation approved="true" key="preferences-title" new="false">
+            <note>The title for the preferences dialog.</note>
+            <variant>Preferencias</variant>
+        </translation>
+        <translation approved="true" key="general-preferences-title" new="false">
+            <note>The title for the general preferences</note>
+            <variant>General</variant>
+        </translation>
+        <translation approved="true" key="fonts-title" new="false">
+            <note>The title for the fonts preferences tab</note>
+            <variant>Fuentes</variant>
+        </translation>
+        <translation approved="true" key="language-column" new="false">
+            <note>column header for a table of languages</note>
+            <variant>Idioma</variant>
+        </translation>
+        <translation approved="true" key="font-column" new="false">
+            <note>column header for a table of font names</note>
+            <variant>Fuente</variant>
+        </translation>
+        <translation approved="true" key="font-size-column" new="false">
+            <note>column header for a table of font sizes</note>
+            <variant>Tamaño</variant>
+        </translation>
+        <translation approved="true" key="view-multiple-properties" new="false">
+            <note>menu item that displays a dialog that simulatenously shows all selected microblocks' properties. It only shows the ones they have in common.</note>
+            <variant>Comparar propiedades...</variant>
+        </translation>
+        <translation approved="true"
+            key="microblock-common-properties-editor" new="false">
+            <note/>
+            <variant>Editor de propiedades comunes entre microbloques</variant>
+        </translation>
+        <translation approved="true" key="header-label-tooltip" new="false">
+            <note>This is a table header tool tip</note>
+            <variant>Hacer doble clic en el encabezado de columna para ordenar</variant>
+        </translation>
+        <translation approved="true"
+            key="view-multiple-properties-tooltip" new="false">
+            <note/>
+            <variant>Comparar las propiedades de los objetos seleccionados</variant>
+        </translation>
+        <translation approved="true"
+            key="selection-has-no-properties-to-view" new="false">
+            <note/>
+            <variant>La selección no tiene propiedades comunes que ver.</variant>
+        </translation>
+        <translation approved="true" key="merge-conflicts-description" new="false">
+            <note>This is description text before a list of microblocks that have been merged (via copy/paste or import symbol) and have conflicting reference names.</note>
+            <variant>Los siguientes micro bloques insertados tienen nombres de referencia conflictivos. Los nombres de referencia no se han creado automáticamente porque se han definido de forma específica.</variant>
+        </translation>
+        <translation approved="true" key="merge-conflicts-title" new="false">
+            <note>The title of the merge conflict dialog: after a merge is completed, if conflicting reference names exist, we show the user a list of them.</note>
+            <variant>Conflictos de nombres de referencia</variant>
+        </translation>
+        <translation approved="true" key="error-report-title" new="false">
+            <note>the title of a generic error dialog.</note>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="true" key="error-general" new="false">
+            <note>the name of a tab on an error dialog that displays the summary of the error. This is the error that is suitable for the end user.</note>
+            <variant>Mensaje</variant>
+        </translation>
+        <translation approved="true" key="error-details" new="false">
+            <note>the name of a tab on an error dialog that displays the details of the error. This is NOT suitable for a user and is for developers only.</note>
+            <variant>Detalles</variant>
+        </translation>
+        <translation approved="true" key="export-selected-items-only" new="false">
+            <note>checkbox on the export to symbol file chooser that allows you to export only the selected items or everything.</note>
+            <variant>Sólo elementos seleccionados</variant>
+        </translation>
+        <translation approved="true" key="export-and-add-to-favorites" new="false">
+            <note>checkbox on the export to symbol file chooser that allows you add it to the favorites after it is exported.</note>
+            <variant>Agregar a favoritos</variant>
+        </translation>
+        <translation approved="true" key="Overwrite_File" new="false">
+            <note>Dialog title when we ask the user if they want to overwrite a file or not?</note>
+            <variant>¿Desea reemplazar el archivo?</variant>
+        </translation>
+        <translation approved="true" key="Overwrite" new="false">
+            <note>Option that specifies the user want to overwrite an existing file.</note>
+            <variant>Reemplazar</variant>
+        </translation>
+        <translation approved="true" key="Select_Another_File" new="false">
+            <note>option that specifies a user does NOT want to overwrite a file, but wants to select a different file.</note>
+            <variant>Seleccionar otro archivo</variant>
+        </translation>
+        <translation approved="true" key="Cancel_Save" new="false">
+            <note>Option that specifies a user does NOT want to overwrite a file, but that they want to cancel the save altogether.</note>
+            <variant>Cancelar Guardar</variant>
+        </translation>
+        <translation approved="true"
+            key="The_file_0_already_exists_Over" new="false">
+            <note>Prompt to ask the user what to do when a file already exists. They'll be given three options: overwrite, select another file, or cancel.</note>
+            <variant>El archivo ''{0}'' ya existe. ¿Desea reemplazarlo?</variant>
+        </translation>
+        <translation approved="true"
+            key="The_file_0_is_read_only_Please" new="false">
+            <note>Message to the user when they try to save a file that its read-only and they must choose another.</note>
+            <variant>El archivo ''{0}'' es de solo lectura. Seleccione otro distinto.</variant>
+        </translation>
+        <translation approved="true"
+            key="The_file_0_is_locked_and_must_be_renamed" new="false">
+            <note>Message to the user when they try to save a file that was locked when opened. They cannot save it with the same file name and must rename it.</note>
+            <variant>El archivo ''{0}'' está bloqueado y no se puede reemplazar. Seleccione otro nombre de archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="This_file_is_currently_open_Cl" new="false">
+            <note>Message that is displayed when the user tries to save to a file that we already have open. They must either close the target file first and then save (choosing to overwrite it) or select another target file.</note>
+            <variant>El archivo ''{0}'' está abierto. Ciérrelo primero o seleccione otro archivo.</variant>
+        </translation>
+        <translation approved="true" key="no-source-found" new="false">
+            <note>Message given after a find source action when there is no source.</note>
+            <variant>No se ha encontrado el origen.</variant>
+        </translation>
+        <translation approved="true" key="no-usages-found" new="false">
+            <note>Message given after a find usages action when there is no usages.</note>
+            <variant>No se han encontrado usos.</variant>
+        </translation>
+        <translation approved="true" key="search-results-title" new="false">
+            <note>The title of a dialog that displays the results of a find usages or go to source search. This is not the same as the results of a regular find. FYI.</note>
+            <variant>Resultados de la búsqueda</variant>
+        </translation>
+        <translation approved="true" key="select-property-for-graphics" new="false">
+            <note>context menu item when a microblock is selected that allows you select a property that will show up on Graphics. ViewBuilder uses this to aid view creation.</note>
+            <variant>Seleccionar propiedades para gráficos...</variant>
+        </translation>
+        <translation approved="true"
+            key="select-property-for-graphics-title" new="false">
+            <note>Dialog title for selecting a property (or properties) from a single microblock to show up on a graphic.</note>
+            <variant>Seleccionar propiedad para gráficos</variant>
+        </translation>
+        <translation approved="true"
+            key="comment-for-property-for-graphics-title" new="false">
+            <note>Dialog title for adding/editing a comment for a property for graphics.</note>
+            <variant>Comentarios de propiedades</variant>
+        </translation>
+        <translation approved="true"
+            key="display-properties-for-graphics" new="false">
+            <note>Menu item that displays all properties in a control program that show up on Graphics. ViewBuilder uses this to aid view creation.</note>
+            <variant>Propiedades para gráficos...</variant>
+        </translation>
+        <translation approved="true" key="graphic-properties-title" new="false">
+            <note>Dialog title for displaying a list of all properties in a control program (not just microblock) that show up on a graphic.</note>
+            <variant>Propiedades para gráficos</variant>
+        </translation>
+        <translation approved="true" key="graphic-properties-comments" new="false">
+            <note>label 'comments' that the user can enter that will be visible in ViewBuilder. These comments are instruction or misc stuff that the graphic's creator needs to know about and are for the entire control program.</note>
+            <variant>Comentarios</variant>
+        </translation>
+        <translation approved="true"
+            key="graphic-properties-edit-comments-tooltip" new="false">
+            <note>tooltip for the edit comments button (which is only an image).</note>
+            <variant>Edite los comentarios de la propiedad seleccionada. Estos comentarios estarán visibles en ViewBuilder.</variant>
+        </translation>
+        <translation approved="true" key="remove-property-for-graphics" new="false">
+            <note>tootlip for a button that removes the selected graphics properties.</note>
+            <variant>Eliminar las propiedades seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="multiblock-menu" new="false">
+            <note>menu for multiblock-related functions.</note>
+            <variant>Micro bloques personalizados</variant>
+        </translation>
+        <translation approved="true" key="add-existing-multiblock-title" new="false">
+            <note>Title for the dialog where the user selects an existing multiblock to add from a list.</note>
+            <variant>Agregar micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="edit-property-page" new="false">
+            <note>Menu item to edit the property page editor.</note>
+            <variant>Editar página de propiedades...</variant>
+        </translation>
+        <translation approved="true" key="percent-sign" new="false">
+            <note>a percentage sign. Used for things like zoom level (100%, 200%)</note>
+            <variant>%</variant>
+        </translation>
+        <translation approved="true" key="equipment-wizard-menu-item" new="false">
+            <note>Menu item that starts the EquipmentBuilder (one word cannot be translated).</note>
+            <variant>EquipmentBuilder...</variant>
+        </translation>
+        <translation approved="true" key="edit-shape-menu-item" new="false">
+            <note>Menu item that allows you to edit the shape of the selected item.</note>
+            <variant>Editar forma</variant>
+        </translation>
+        <translation approved="true" key="sensor-menu-order-menu-item" new="false">
+            <note>Menu item that allows you to edit the order in which items appear on an Rnet sensor's menu.</note>
+            <variant>Orden de visualización de sensor...</variant>
+        </translation>
+        <translation approved="true" key="sensor-menu-order-title" new="false">
+            <note>Title of the dialog that allows you to edit the order in which items appear on an external sensor.</note>
+            <variant>Orden de visualización de sensor</variant>
+        </translation>
+        <translation approved="true" key="edit-order-menu-item" new="false">
+            <note>Menu item that allows you to edit the order in which items appear on the property page.</note>
+            <variant>Editar orden...</variant>
+        </translation>
+        <translation approved="true" key="show-in-edit-order-menu-item" new="false">
+            <note>Menu item that allows you to edit the order in which items appear on the property page. This version will select the currently focused microblock in the edit order dialog after it is displayed.</note>
+            <variant>Mostrar en Editar orden...</variant>
+        </translation>
+        <translation approved="true" key="edit-order-title" new="false">
+            <note>Title of the dialog that allows you to edit the order in which items appear on the property page.</note>
+            <variant>Editar orden</variant>
+        </translation>
+        <translation approved="true" key="edit-order-move-up-tooltip" new="false">
+            <note>tooltip for edit order. Specifies that you can select multiple items to change their order.</note>
+            <variant>Subir los elementos seleccionados</variant>
+        </translation>
+        <translation approved="true" key="edit-order-move-down-tooltip" new="false">
+            <note>tooltip for edit order. Specifies that you can select multiple items to change their order.</note>
+            <variant>Bajar los elementos seleccionados</variant>
+        </translation>
+        <translation approved="true" key="edit-order-cut-tooltip" new="false">
+            <note>tooltip for cutting things in edit order. First you cut them then you paste them.</note>
+            <variant>Corta los elementos seleccionados. A continuación, puede pegarlos donde desee colocarlos.</variant>
+        </translation>
+        <translation approved="true" key="edit-order-paste-tooltip" new="false">
+            <note>tooltip for pasting things in edit order. First you cut them then you paste them.</note>
+            <variant>Pegar los elementos cortados anteriormente.</variant>
+        </translation>
+        <translation approved="true" key="edit-order-edit-tooltip" new="false">
+            <note>Tooltip explaining that this button will let you edit the property page text for the select item.</note>
+            <variant>Editar el texto de la pagina de propiedades de los elementos seleccionados</variant>
+        </translation>
+        <translation approved="true" key="edit-order-find-tooltip" new="false">
+            <note>Tooltip to explain that this button allows you to perform a search within the list.</note>
+            <variant>Busca los elementos en la lista.</variant>
+        </translation>
+        <translation approved="true"
+            key="edit-order-search-from-beginning" new="false">
+            <note>checkbox that allows you to search from the start of a list of items (vs from the current selection).</note>
+            <variant>Buscar desde el principio</variant>
+        </translation>
+        <translation approved="true" key="logicbuilder-help-tooltip" new="false">
+            <note>Tooltip to explain that this button gives you context sensitive help.</note>
+            <variant>Muestra ayuda contextual importante.</variant>
+        </translation>
+        <translation approved="true" key="control-program-info-title" new="false">
+            <note>Title of the dialog that allows you to edit information about a control program.</note>
+            <variant>Información de archivo</variant>
+        </translation>
+        <translation approved="true" key="file-name" new="false">
+            <note/>
+            <variant>Nombre de archivo:</variant>
+        </translation>
+        <translation approved="true" key="directory" new="false">
+            <note/>
+            <variant>Directorio:</variant>
+        </translation>
+        <translation approved="true" key="date-last-revised" new="false">
+            <note/>
+            <variant>Última fecha de revisión:</variant>
+        </translation>
+        <translation approved="true" key="date-created" new="false">
+            <note/>
+            <variant>Fecha de creación:</variant>
+        </translation>
+        <translation approved="true" key="created-by" new="false">
+            <note/>
+            <variant>Creado Por:</variant>
+        </translation>
+        <translation approved="true" key="equipment-icon" new="false">
+            <note/>
+            <variant>Icono personalizado:</variant>
+        </translation>
+        <translation approved="true" key="description" new="false">
+            <note/>
+            <variant>Descripción</variant>
+        </translation>
+        <translation approved="true" key="revisions-tab" new="false">
+            <note/>
+            <variant>Revisiones</variant>
+        </translation>
+        <translation approved="true" key="yes" new="false">
+            <note>'yes' as an answer to a question. Usually apart of yes/no or yes/no/cancel and sometimes yes/yes to all/no/no to all/cancel</note>
+            <variant>Sí</variant>
+        </translation>
+        <translation approved="true" key="yes-to-all" new="false">
+            <note>'yes to all' as an answer to a question. Part of yes/yes to all/no/no to all/cancel</note>
+            <variant>Sí a todo</variant>
+        </translation>
+        <translation approved="true" key="no" new="false">
+            <note>'no' as an answer to a question. Usually apart of yes/no or yes/no/cancel and sometimes yes/yes to all/no/no to all/cancel</note>
+            <variant>No</variant>
+        </translation>
+        <translation approved="true" key="no-to-all" new="false">
+            <note>'no to all' as an answer to a question. Part of yes/yes to all/no/no to all/cancel</note>
+            <variant>No a todo</variant>
+        </translation>
+        <translation approved="true" key="save-modified-file" new="false">
+            <note>Prompt to save a modified flag that occurs when you close the file (or application) without saving it.</note>
+            <variant>Este programa de control se ha modificado. ¿Desea grabar los cambios?</variant>
+        </translation>
+        <translation approved="true" key="save-modified-file-title" new="false">
+            <note>Title of the dialog to prompt the user to save a modified flag that occurs when you close the file (or application) without saving it.</note>
+            <variant>¿Desea grabar el programa de control?</variant>
+        </translation>
+        <translation approved="true" key="Undo_actions_plural" new="false">
+            <note>messages telling the user how many actions will be undone. This is used when 0 or multiple actions are selected.</note>
+            <variant>Deshacer {0} acciones.</variant>
+        </translation>
+        <translation approved="true" key="Undo_actions_single" new="false">
+            <note>messages telling the user how many actions will be undone. This is used when only 1 action is selected.</note>
+            <variant>Deshacer acción 1.</variant>
+        </translation>
+        <translation approved="true" key="Redo_actions_plural" new="false">
+            <note>messages telling the user how many actions will be redone. This is used when 0 or multiple actions are selected.</note>
+            <variant>Rehacer {0} acciones.</variant>
+        </translation>
+        <translation approved="true" key="Redo_actions_single" new="false">
+            <note>messages telling the user how many actions will be redone. This is used when only 1 action is selected.</note>
+            <variant>Rehacer 1 acción.</variant>
+        </translation>
+        <translation approved="true" key="Opening_Control_Program" new="false">
+            <note>Description on a progress dialog informing the user that a specific control program is being opened. The variable may be a file name or a generic name since this may be one downloaded from online.</note>
+            <variant>Abriendo ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Saving_Control_Program" new="false">
+            <note>description on a progress dialog informing the user that a specific control program is being opened. The variable may be a file name or a generic name since this may be one downloaded from online.</note>
+            <variant>Grabando ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Making_Control_Program_X" new="false">
+            <note>description on a progress dialog informing the user that a specific control program is being made. The variable may be a file name or a generic name since this may be one downloaded from online.</note>
+            <variant>Creando ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Making_Control_Program" new="false">
+            <note>Title for a progress dialog informing the user that 'making a control program' is being performed.</note>
+            <variant>Creando programa de control</variant>
+        </translation>
+        <translation approved="true" key="Opening_File_Title" new="false">
+            <note>Title for a dialog that tells the user that a control program is being opened.</note>
+            <variant>Abriendo archivo</variant>
+        </translation>
+        <translation approved="true" key="Pasting_Progress_Title" new="false">
+            <note>Title for a dialog that tells the user that something is being pasted. This is only shown for long paste operations.</note>
+            <variant>Pegando</variant>
+        </translation>
+        <translation approved="true" key="Saving_File_Title" new="false">
+            <note>Title for a general progress dialog when a file is being saved.</note>
+            <variant>Grabando</variant>
+        </translation>
+        <translation approved="true" key="Simulation_Progress_Title" new="false">
+            <note>Title for a general progress dialog when a control program is being simulated.</note>
+            <variant>Espere...</variant>
+        </translation>
+        <translation approved="true"
+            key="Simulation_Progress_Description" new="false">
+            <note>Description for a general progress dialog when a control program is being simulated. Lets the user know what control program is being simulated.</note>
+            <variant>Inicializando simulador para </variant>
+        </translation>
+        <translation approved="true" key="dialog-property-editing" new="false">
+            <note>menu item that says whether the property editor is a floating dialog or a docked panel.</note>
+            <variant>Editor de propiedad Dock</variant>
+        </translation>
+        <translation approved="true" key="select-all" new="false">
+            <note>menu item that selects all items in the current view.</note>
+            <variant>Seleccionar todo</variant>
+        </translation>
+        <translation approved="true" key="add-joint" new="false">
+            <note>menu item that adds a new joint to a wire so you can edit its shape.</note>
+            <variant>Agregar unión</variant>
+        </translation>
+        <translation approved="true" key="remove-joint" new="false">
+            <note>menu item that adds an existing joint from a wire.</note>
+            <variant>Eliminar unión</variant>
+        </translation>
+        <translation approved="true" key="file-name-is-illegal" new="false">
+            <note>Warning message that the file name is illegal. This occurs when the user saves a control program. This will be followed by a more-specific reason why it is invalid.</note>
+            <variant>El nombre de archivo no es válido.</variant>
+        </translation>
+        <translation approved="true"
+            key="convert-spaces-to-underscores-automatically" new="false">
+            <note>If the user saves a file to an invalid name, one main reason is it may have spaces. This is the text for a check box giving them the option to convert spaces to underscores automatically for file names.</note>
+            <variant>Convertir espacios en subrayado automáticamente al guardar</variant>
+        </translation>
+        <translation approved="true"
+            key="create-new-control-programs-as-metric" new="false">
+            <note>Checkbox option for creating new control programs as metric vs imperial</note>
+            <variant>Crear nuevos programas de control como métricos</variant>
+        </translation>
+        <translation approved="true" key="import-ems-ini-header" new="false">
+            <note>Header for the section about importing EMS.ini.</note>
+            <variant>Importar desde EIKON para WebCTRL</variant>
+        </translation>
+        <translation approved="true" key="import-ems-ini-instructions" new="false">
+            <note>This explains to a user why they want to use this feature that imports settings from the app that LogicBuilder replaces.</note>
+            <variant>Esto importa la información de categoría de programación desde un EMS.ini de una instalación de EIKON para WebCTRL. La operación debe realizarse una sola vez.</variant>
+        </translation>
+        <translation approved="true"
+            key="import-export-category-choices-header" new="false">
+            <note>Header for the section about importing/exporting template and category choices.</note>
+            <variant>Importar/Exportar todas las plantillas/categorías</variant>
+        </translation>
+        <translation approved="true" key="alarm-template" new="false">
+            <note/>
+            <variant>Plantilla de alarma</variant>
+        </translation>
+        <translation approved="true" key="alarm-category" new="false">
+            <note/>
+            <variant>Categoría de alarma</variant>
+        </translation>
+        <translation approved="true"
+            key="time-clock-schedule-categories" new="false">
+            <variant>Categoría. Horario de Tiempo</variant>
+        </translation>
+        <translation approved="true"
+            key="model-schedule-schedule-categories" new="false">
+            <variant>Hor. de Horario modelado Categoría</variant>
+        </translation>
+        <translation approved="true"
+            key="multistate-time-clock-schedule-categories" new="false">
+            <variant>Horario de Tiempo multi-estado. Categoría</variant>
+        </translation>
+        <translation approved="true" key="execution-order-menu-item" new="false">
+            <note>The text for the menu item that launches the execution order wizard.</note>
+            <variant>Asistente para el orden de ejecución</variant>
+        </translation>
+        <translation approved="true" key="execution-order-title" new="false">
+            <note>Title for an advance dialog that allows a user to determine which microblock is executed next in a loopback situation.</note>
+            <variant>Asistente para el orden de ejecución</variant>
+        </translation>
+        <translation approved="true" key="execution-order-start" new="false">
+            <note>The message that appears when the execution order wizard first starts.</note>
+            <variant>Este asistente le permite elegir el micro bloque de prioridad más alta que desea ejecutar cuando se produzca una situación de bucle invertido.</variant>
+        </translation>
+        <translation approved="true" key="execution-order-save" new="false">
+            <note>A message asking the user if they wish to save the execution order they just created.</note>
+            <variant>¿Desea guardar su lista de prioridades de ejecución de micro bloques? Puede volver a ejecutar el asistente cuando lo desee para seleccionar una nueva lista. Pulse Cancelar para abortar.</variant>
+        </translation>
+        <translation approved="true"
+            key="bundled-resources-dialog-title" new="false">
+            <note>A dialog that allows you to add and remove files that are stored inside our source file. These files are for internationalization and certain customizations.</note>
+            <variant>Recursos incluidos</variant>
+        </translation>
+        <translation approved="true" key="set-execution-rate" new="false">
+            <note>Menu item to allow the user to set the control program's execution rate in milliseconds.</note>
+            <variant>Definir velocidad de ejecución</variant>
+        </translation>
+        <translation approved="true" key="set-execution-rate-msg" new="false">
+            <note/>
+            <variant>Defina la velocidad de ejecución para el programa de control en milisegundos.</variant>
+        </translation>
+        <translation approved="true" key="bundled-resources-menu" new="false">
+            <note>Menu item to dislay the bundled resources dialog</note>
+            <variant>Recursos incluidos...</variant>
+        </translation>
+        <translation approved="true" key="choices-filter-instructions" new="false">
+            <note>This explains what the 'droplist choices' panel does on LogicBuilder's configuration dialog.</note>
+            <variant>Aquí puede activar las opciones utilizadas frecuentemente para que aparezcan en listas desplegables de campos de micro bloques específicos (como tipos de unidades o de activador). Esto permite simplificar las opciones visibles.</variant>
+        </translation>
+        <translation approved="true" key="color-swatches" new="false">
+            <note>This is a header for a tab on a color chooser dialog that shows blocks of colors (swatches) that a user can pick.</note>
+            <variant>Muestras</variant>
+        </translation>
+        <translation approved="true" key="you-are-taking-ownership" new="false">
+            <note/>
+            <variant>Está asumiendo la propiedad de un archivo cuyo acceso ha adquirido a través de una clave con fecha de vencimiento. ¿Está seguro de que quiere continuar?</variant>
+        </translation>
+        <translation approved="true" key="mark-read-only" new="false">
+            <note>This is the name of a context menu item that marks the selected field as read-only.</note>
+            <variant>Convertir en sólo lectura</variant>
+        </translation>
+        <translation approved="true" key="mark-modifiable" new="false">
+            <note>This is the name of a context menu item that marks the selected field as modifiable (the opposite of the mark as read-only item).</note>
+            <variant>Permitir ediciones</variant>
+        </translation>
+        <translation approved="true" key="Third_Party_BACnet_Addresses" new="false">
+            <note>This is the name of a menu item that displays a dialog that allows you to import BACnet addresses from discovered third party devices. You can then push those addresses into selected microblocks.</note>
+            <variant>Direcciones BACnet de terceros...</variant>
+        </translation>
+        <translation approved="true" key="Unlock-Control-Program" new="false">
+            <note>Name of the menu item allowing you to unlock control programs.</note>
+            <variant>Desbloquear programa de control</variant>
+        </translation>
+        <translation approved="true" key="confirm-turn-secure-off" new="false">
+            <note/>
+            <variant>Está a punto de eliminar la seguridad de su microbloque seguro. ¿Seguro que desea continuar?
+       </variant>
+        </translation>
+    </section>
+    <!-- end interface section -->
+    <section id="interpreters">
+        <translation approved="true" key="add-arc-step-1" new="false">
+            <note>The first step to adding an arc figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar arco: haga clic donde desee que se encuentre el centro del arco (como si el arco fuera un círculo).</variant>
+        </translation>
+        <translation approved="true" key="add-arc-step-2" new="false">
+            <note>The second step to adding an arc figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar arco: haga clic donde desee que comience el arco.</variant>
+        </translation>
+        <translation approved="true" key="add-arc-step-3" new="false">
+            <note>The third step to adding an arc figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar arco: haga clic donde desee que termine el arco.</variant>
+        </translation>
+        <translation approved="true" key="add-ellipse-step-1" new="false">
+            <note>The first step to adding an ellipse figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar elipse: pulse el botón del ratón en la parte superior izquierda de la elipse.</variant>
+        </translation>
+        <translation approved="true" key="add-ellipse-step-2" new="false">
+            <note>The second step to adding an ellipse figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar elipse: arrastre el cursor del ratón a la parte inferior derecha de la elipse y suéltelo.</variant>
+        </translation>
+        <translation approved="true" key="add-label-step-1" new="false">
+            <note>The only step to adding a label. This text appears on the status bar to aid the user. The user can also hit the I or O keys to make the label switch direction (between input and output).</note>
+            <variant>Agregar etiqueta: haga clic para colocar la etiqueta. Puede pulsar E o S antes de hacer clic parar cambiar la dirección de la etiqueta como entrada o salida.</variant>
+        </translation>
+        <translation approved="true" key="add-microblock-step-1" new="false">
+            <note>The first step to adding a microblock. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar micro bloque: haga clic para seleccionar una ubicación para el micro bloque.</variant>
+        </translation>
+        <translation approved="true" key="add-rectangle-step-1" new="false">
+            <note>The first step to adding a rectangle. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar rectángulo: pulse el botón del ratón en la parte superior izquierda del rectángulo.</variant>
+        </translation>
+        <translation approved="true" key="add-rectangle-step-2" new="false">
+            <note>The second step to adding a rectangle figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar rectángulo: arrastre el cursor hasta la parte inferior derecha del rectángulo y, a continuación, suéltelo.</variant>
+        </translation>
+        <translation approved="true" key="add-text-step-1" new="false">
+            <note>The first step to adding a text figure. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar texto: haga clic en el lugar donde desee agregar el texto</variant>
+        </translation>
+        <translation approved="true" key="add-wire-step-1" new="false">
+            <note>The first step to adding a wire. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar alambre: pulse el botón izquierdo del ratón para establecer una ubicación de inicio.</variant>
+        </translation>
+        <translation approved="true" key="add-wire-step-2" new="false">
+            <note>The second step to adding a wire. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar alambre: arrastre el ratón para dibujar una línea. Suelte el botón izquierdo para parar. Haga clic con el botón secundario para agregar uniones.</variant>
+        </translation>
+        <translation approved="true" key="add-polygon-step-1" new="false">
+            <note>The first step to adding a polygon. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar polígono: pulse el botón izquierdo del ratón para establecer una ubicación de inicio.</variant>
+        </translation>
+        <translation approved="true" key="add-polygon-step-2" new="false">
+            <note>The second step to adding a polygon. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar polígono: arrastre el ratón para dibujar el polígono. Suelte el botón izquierdo para parar. Haga clic con el botón secundario para agregar uniones.</variant>
+        </translation>
+        <translation approved="true" key="add-line-step-1" new="false">
+            <note>The first step to adding a line. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar línea: pulse el botón izquierdo del ratón para establecer una ubicación de inicio.</variant>
+        </translation>
+        <translation approved="true" key="add-line-step-2" new="false">
+            <note>The second step to adding a line. This text appears on the status bar to aid the user.</note>
+            <variant>Agregar línea: arrastre el ratón para dibujar la línea. Suelte el botón izquierdo para parar. Haga clic con el botón secundario para agregar uniones.</variant>
+        </translation>
+        <translation approved="true" key="add-image" new="false">
+            <note/>
+            <variant>Agregar imagen: haga clic para colocar la imagen en el lienzo.</variant>
+        </translation>
+    </section>
+    <!-- end interpreters section -->
+    <!-- end main section -->
+    <section id="find-replace-extras">
+        <translation approved="true" key="find-replace-search-inside" new="false">
+            <note>the name of a titled border on the find/replace dialog that allows to specify what things to search.</note>
+            <variant>Buscar:</variant>
+        </translation>
+        <translation approved="true" key="find-replace-microblocks" new="false">
+            <note>This is the name of an option on the find/replace dialog to search microblocks.</note>
+            <variant>Micro bloques</variant>
+        </translation>
+        <translation approved="true" key="find-replace-labels" new="false">
+            <note>The is the name of an option on the find/replace dialog to search labels</note>
+            <variant>Etiquetas</variant>
+        </translation>
+        <translation approved="true" key="find-replace-text" new="false">
+            <note>The is the name of an option on the find/replace dialog to search text figures</note>
+            <variant>Texto</variant>
+        </translation>
+        <translation approved="true" key="find-replace-multiblock-logic" new="false">
+            <note>This is the name of an option on the find/replace dialog to search inside Custom microblocks.</note>
+            <variant>Lógica de micro bloques personalizados</variant>
+        </translation>
+    </section>
+    <!-- end of find-replace section -->
+    <section id="favorite-templates">
+        <translation approved="true" key="favorite-menu" new="false">
+            <note>The name of a menu that lists the users favorite templates</note>
+            <variant>Favoritos</variant>
+        </translation>
+        <translation approved="true" key="add-selection-to-favorites" new="false">
+            <note>Creates a symbol from the selected items and adds it to the favorites list.</note>
+            <variant>Agregar a favoritos</variant>
+        </translation>
+        <translation approved="true" key="orgranize-favorites" new="false">
+            <note>Displays a dialog allowing the user to add and remove items from the favorites as well as change their order</note>
+            <variant>Organizar...</variant>
+        </translation>
+        <translation approved="true" key="orgranize-favorites-title" new="false">
+            <note>Title for the dialog where the user adds and removes items (and re-orders) to/from favorites.</note>
+            <variant>Organizar favoritos</variant>
+        </translation>
+        <translation approved="true" key="missing-favorite-file-tooltip" new="false">
+            <note>This is the tooltip for a favorites template menu item when the file is missing</note>
+            <variant>No se encuentra el archivo ''{0}''.</variant>
+        </translation>
+        <translation approved="true" key="edit-favorite-title" new="false">
+            <note>Title for a dialog that edits the properties of favorite symbol.</note>
+            <variant>Editar propiedades de Favoritos</variant>
+        </translation>
+        <translation approved="true" key="edit-favorite-name" new="false">
+            <note>The 'name' field in a dialog that edits the properties of favorite symbol.</note>
+            <variant>Nombre:</variant>
+        </translation>
+        <translation approved="true" key="edit-favorite-description" new="false">
+            <note>The 'description' field in a dialog that edits the properties of favorite symbol.</note>
+            <variant>Descripción:</variant>
+        </translation>
+        <translation approved="true" key="Move_up" new="false">
+            <note>Button text to move the selected items in a list up</note>
+            <variant>Subir</variant>
+        </translation>
+        <translation approved="true" key="Move_down" new="false">
+            <note>Button text to move the selected items in a list up</note>
+            <variant>Bajar</variant>
+        </translation>
+        <translation approved="true" key="Add_new_favorite" new="false">
+            <note>Tooltip for a button that adds new favorites</note>
+            <variant>Agregar nuevo favorito</variant>
+        </translation>
+        <translation approved="true" key="Remove_favorite" new="false">
+            <note>tooltip for a button that removes favorite symbols from a list.</note>
+            <variant>Cambiar nombre de favorito</variant>
+        </translation>
+        <translation approved="true" key="Remove_favorites_title" new="false">
+            <note>Dialog title for removing favorites.</note>
+            <variant>Cambiar nombre de favoritos</variant>
+        </translation>
+        <translation approved="true" key="Remove_file_0_for_favorite" new="false">
+            <note>Message that asks the user if they want to delete the file for the favorite.</note>
+            <variant>¿Desea eliminar el archivo ''{0}'' del disco?</variant>
+        </translation>
+        <translation approved="true" key="Edits_favorites_properties" new="false">
+            <note>tooltip for a button that allows you to edit the way the selected favorite appears on the menu. This is mainly the name and description.</note>
+            <variant>Editar propiedades del menú de favoritos</variant>
+        </translation>
+        <translation approved="true" key="Open_the_favorite_for_editing" new="false">
+            <note>Tooltip for a button that opens the selected favorite symbol in the main view for editing.</note>
+            <variant>Abrir favorito seleccionado en la vista principal para modificarlo</variant>
+        </translation>
+    </section>
+    <!-- end of favorites section -->
+    <section id="simulator">
+        <translation approved="true" key="simulator-title" new="false">
+            <note/>
+            <variant>Simulador</variant>
+        </translation>
+        <translation approved="true" key="collector-simulator-title" new="false">
+            <note>Title for the simulator setup dialog</note>
+            <variant>Simulación de recopilador</variant>
+        </translation>
+        <translation approved="true" key="provider-simulator-title" new="false">
+            <note>Title for the simulator setup dialog</note>
+            <variant>Simulador de proveedor</variant>
+        </translation>
+        <translation approved="true" key="options-simulator-menu" new="false">
+            <note>The options for file operations in the simulator</note>
+            <variant>Opciones</variant>
+        </translation>
+        <translation approved="true" key="setup-simulator" new="false">
+            <note>The menu for setting parameters for the simulator</note>
+            <variant>Configuración...</variant>
+        </translation>
+        <translation approved="true" key="setup-simulator-title" new="false">
+            <note>Title for the simulator setup dialog</note>
+            <variant>Configuración del simulador</variant>
+        </translation>
+        <translation approved="true" key="run-simulator-menu" new="false">
+            <note>The menu for running simulations</note>
+            <variant>Ejecutar</variant>
+        </translation>
+        <translation approved="true" key="run-simulator" new="false">
+            <note>Menu item to start the simulator with the current control program</note>
+            <variant>Ejecutar</variant>
+        </translation>
+        <translation approved="true" key="stop-simulator" new="false">
+            <note>Menu item to stop the simulator</note>
+            <variant>Detener</variant>
+        </translation>
+        <translation approved="true" key="step-simulator" new="false">
+            <note>Menu item to make the simulator run a single cycle (step).</note>
+            <variant>Paso</variant>
+        </translation>
+        <translation approved="true" key="fast-forward-simulator" new="false">
+            <note>Menu item to make the simulator run in fast forward mode (only while you're pressing the button).</note>
+            <variant>Avance rápido</variant>
+        </translation>
+        <translation approved="true"
+            key="fast-forward-simulator-tooltip" new="false">
+            <note>Tooltip for the toolbar button to make the simulator run in fast forward mode (only while you're pressing the button).</note>
+            <variant>Procese continuamente la simulación por pasos mediante ciclos de ejecución</variant>
+        </translation>
+        <translation approved="true" key="exit-simulator" new="false">
+            <note>Menu item to quit the simulator</note>
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="save-simulator-values" new="false">
+            <note>Message show to the user to ask them if they wish to save changes made to values while they were running the simulator</note>
+            <variant>¿Desea grabar los cambios que usted efectuó al ejecutar la simulación?</variant>
+        </translation>
+        <translation approved="true" key="save-simulator-values-title" new="false">
+            <note>This is the title of the dialog that asks if you want to save your simulation values</note>
+            <variant>Valores para simulación</variant>
+        </translation>
+        <translation approved="true" key="simulation-calendar" new="false">
+            <note>Title for a group of calendar-related controls</note>
+            <variant>Calendario</variant>
+        </translation>
+        <translation approved="true" key="simulator-time" new="false">
+            <note>header for a field to specify the simulated time</note>
+            <variant>Hora:</variant>
+        </translation>
+        <translation approved="true" key="simulator-date" new="false">
+            <note>header for a field to specify the simulated date</note>
+            <variant>Fecha:</variant>
+        </translation>
+        <translation approved="true" key="simulator-day" new="false">
+            <note>header for a field that shows the simulated day (based on the date)</note>
+            <variant>Día:</variant>
+        </translation>
+        <translation approved="true" key="simulator-communications" new="false">
+            <note>Title for a group of communications-related controls.</note>
+            <variant>Comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="communications-ok" new="false">
+            <note>checkbox for enabling/disabling (simulated) communications.</note>
+            <variant>Comunicaciones correctas</variant>
+        </translation>
+        <translation approved="true" key="comm-enabled" new="false">
+            <note>Header for a field in a table, so it needs to be an abbreviated version</note>
+            <variant>Com activada</variant>
+        </translation>
+        <translation approved="true" key="simulator-time-increment" new="false">
+            <note>Title for a group of controls related to how time is simulated. This refers to how long each simulated step is and how often to make those steps</note>
+            <variant>Aumento de tiempo</variant>
+        </translation>
+        <translation approved="true" key="simulator-step-every" new="false">
+            <note>header for a field that specifies how often to step. The mm:ss is to let the user know its in minutes, seconds format (2 digits apiece).</note>
+            <variant>Paso cada (mm:ss)</variant>
+        </translation>
+        <translation approved="true" key="simulator-step-size" new="false">
+            <note>Header for a field that specifies how much time each simulated step represents. The mm:ss is to let the user know its in minutes, seconds format (2 digits apiece).</note>
+            <variant>Un paso (mm:ss)</variant>
+        </translation>
+        <translation approved="true" key="cannot_simulate_with_errors" new="false">
+            <variant>No puede ejecutar el simulador con errores de compilación.</variant>
+            <note>This error message appears when you attempt to simulate a control program that is not compilable.</note>
+        </translation>
+        <translation approved="true"
+            key="error_setting_microblock_0_value_1" new="false">
+            <note>Error message to user telling them that a microblock value could not be set.</note>
+            <variant>El valor ''{0}'' para el micro bloque ''{1}'' no se ha podido establecer.</variant>
+        </translation>
+        <translation approved="true"
+            key="0_had_errors_during_conversion" new="false">
+            <note>Error message to user telling them that an EIKON file couldn't be converted to a LogicBuilder file.</note>
+            <variant>{0} tenía errores y no se ha podido convertir. Debe convertir este archivo manualmente.</variant>
+        </translation>
+        <translation approved="true" key="provider-index-simulator" new="false">
+            <note>Provider row simulation index</note>
+            <variant>Índice del proveedor</variant>
+        </translation>
+        <translation approved="true" key="couldnt-find-value-0-error" new="false">
+            <note/>
+            <variant>No se han podido importar los valores para la fila. No se ha encontrado el nombre de referencia ''{0}''.</variant>
+        </translation>
+    </section>
+    <section id="error_dialog">
+        <translation approved="true" key="show_details" new="false">
+            <note/>
+            <variant>Mostrar detalles</variant>
+        </translation>
+        <translation approved="true" key="hide_details" new="false">
+            <note/>
+            <variant>Ocultar detalles</variant>
+        </translation>
+    </section>
+    <!--  end of error dialog section -->
+    <section id="pmt_interface">
+        <translation approved="true" key="PMT_BACnet_Edits" new="false">
+            <note>Description in undo list for edits made in the PMT dialog.</note>
+            <variant>Ediciones de PMT de BACnet</variant>
+        </translation>
+        <translation approved="true" key="Page" new="false">
+            <note/>
+            <variant>Página</variant>
+        </translation>
+        <translation approved="true" key="n2-tab-title" new="false">
+            <note>This is the label on a tab for the N2 protocol</note>
+            <variant>N2</variant>
+        </translation>
+        <translation approved="true" key="row-number-column-label" new="false">
+            <note>This is the label on table row that represents an auto</note>
+            <variant>N.º</variant>
+        </translation>
+        <translation approved="true" key="row_id" new="false">
+            <note>This is the label on the column that indicates the number of the table row</note>
+            <variant>N.º fila</variant>
+        </translation>
+        <translation approved="true" key="excel_id" new="false">
+            <note>This is the label on the column that indicates the Excel row number of the table row</note>
+            <variant>N.º fila de Excel</variant>
+        </translation>
+        <translation approved="true" key="object_name" new="false">
+            <note/>
+            <variant>Nombre de referencia</variant>
+        </translation>
+        <translation approved="true" key="object_type" new="false">
+            <note/>
+            <variant>Tipo de objeto</variant>
+        </translation>
+        <translation approved="true" key="ctrl_click_to_sort_cols" new="false">
+            <note/>
+            <variant>Ctrl+click con el botón izquierdo para ordenar una columna.</variant>
+        </translation>
+        <translation approved="true" key="Clear_Selected_Lon_Mappings" new="false">
+            <note/>
+            <variant>Borrar las asignaciones Lon seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="Build_N2_Point_Addresses" new="false">
+            <note/>
+            <variant>Crear Direcciones de Punto N2</variant>
+        </translation>
+        <translation approved="true" key="Clear_Selected_N2_Addresses" new="false">
+            <note/>
+            <variant>Borrar direcciones N2 seleccionadas</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed_N2_Point_Type_from_0_to_1" new="false">
+            <note/>
+            <variant>El tipo de punto N2 ha cambiado de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed_N2_Point_Address_from_0_to_1" new="false">
+            <note/>
+            <variant>La dirección de punto N2 ha cambiado de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="MODBUS_Title" new="false">
+            <note/>
+            <variant>Modbus</variant>
+        </translation>
+        <translation approved="true" key="Build_MODBUS_Registers" new="false">
+            <note/>
+            <variant>Crear Registros de Modbus</variant>
+        </translation>
+        <translation approved="true"
+            key="Clear_Selected_MODBUS_Registers" new="false">
+            <note/>
+            <variant>Borrar registros de Modbus seleccionados</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed_MODBUS_Register_Type_from_0_to_1" new="false">
+            <note/>
+            <variant>El tipo de registro de Modbus ha cambiado de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed_MODBUS_Register_Number_from_0_to_1" new="false">
+            <note/>
+            <variant>El número de registro de Modbus ha cambiado de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="register_type" new="false">
+            <note/>
+            <variant>Tipo de registro</variant>
+        </translation>
+        <translation approved="true" key="register_number" new="false">
+            <note/>
+            <variant>Número de registro</variant>
+        </translation>
+        <translation approved="true" key="is_float" new="false">
+            <note/>
+            <variant>Es flotante</variant>
+        </translation>
+        <translation approved="true" key="parent" new="false">
+            <note/>
+            <variant>Principal</variant>
+        </translation>
+        <translation approved="true" key="element_index" new="false">
+            <note/>
+            <variant>Índice de elemento</variant>
+        </translation>
+        <translation approved="true" key="self_doc_str" new="false">
+            <note/>
+            <variant>Cadena de autodocumentación</variant>
+        </translation>
+        <translation approved="true" key="snvt_identifier" new="false">
+            <note/>
+            <variant>ID SNVT</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed_Bacnet_Property_from_0_to_1" new="false">
+            <note/>
+            <variant>La propiedad BACnet ha cambiado de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="Changed_Enabled_from_0_to_1" new="false">
+            <note/>
+            <variant>Se ha permitido el cambio de ''{0}'' a ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="Couldnt_Import_File_0" new="false">
+            <note/>
+            <variant>No se pudo importar el archivo: ''{0}''.</variant>
+        </translation>
+        <translation approved="true" key="Error_Title" new="false">
+            <note/>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="true" key="bacnet-tab-title" new="false">
+            <note>This is the label on a tab for the BACnet view</note>
+            <variant>BACnet</variant>
+        </translation>
+        <translation approved="true" key="bacnet-property" new="false">
+            <note>This is the label for the BACnet Property</note>
+            <variant>Propiedad BACnet</variant>
+        </translation>
+        <translation approved="true" key="n2-tab-title" new="false">
+            <note>This is the label on a tab for the N2 view</note>
+            <variant>N2</variant>
+        </translation>
+        <translation approved="true" key="show_only_network_visible" new="false">
+            <variant>Mostrar solo elementos visibles a la red</variant>
+        </translation>
+        <translation approved="true" key="show_all" new="false">
+            <variant>Mostrar todos</variant>
+        </translation>
+        <translation approved="true" key="show_only_enabled" new="false">
+            <variant>Mostrar solo elementos activados</variant>
+        </translation>
+        <translation approved="true" key="Prev" new="false">
+            <note>Abbreviation for Previous</note>
+            <variant>Anterior</variant>
+        </translation>
+        <translation approved="true" key="Read_Write_Title" new="false">
+            <note>Label that shows that a value can both be read and written to</note>
+            <variant>Lectura/Escritura</variant>
+        </translation>
+        <translation approved="true" key="Read_Only_Label" new="false">
+            <note>Label that shows that a value can ONLY be read from</note>
+            <variant>R</variant>
+        </translation>
+        <translation approved="true" key="Read_Write_Label" new="false">
+            <note>Label that shows that a value can both be read and written to</note>
+            <variant>R/W</variant>
+        </translation>
+        <translation approved="true" key="move-down-tooltip" new="false">
+            <note>This button makes selected rows move down in the PMT table.</note>
+            <variant>Bajar las filas seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="move-up-tooltip" new="false">
+            <note>This button makes selected rows move up in the PMT table.</note>
+            <variant>Subir las filas seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="pmt-print-tooltip" new="false">
+            <note>Prints out the values on the current PMT control tab.</note>
+            <variant>Imprimir la vista actual</variant>
+        </translation>
+        <translation approved="true" key="pmt-build-object-ids" new="false">
+            <note>Description for automatically building object id numbers</note>
+            <variant>Crear ID de instancia de objeto</variant>
+        </translation>
+        <translation approved="true" key="pmt-add-text" new="false">
+            <note>Symbol for a button that adds a table row.</note>
+            <variant>+</variant>
+        </translation>
+        <translation approved="true" key="pmt-remove-text" new="false">
+            <note>Symbol for a button that removes a table row.</note>
+            <variant>-</variant>
+        </translation>
+        <translation approved="true" key="pmt-add-description" new="false">
+            <note>Description that shows up in undo list for the add BACnet property action.</note>
+            <variant>Propiedad BACnet agregada</variant>
+        </translation>
+        <translation approved="true" key="pmt-remove-description" new="false">
+            <note>Description that shows up in undo list for the remove BACnet property action.</note>
+            <variant>Propiedad BACnet eliminada</variant>
+        </translation>
+        <translation approved="true" key="pmt-add-tooltip" new="false">
+            <note>Tool tip for PMT add property button.</note>
+            <variant>Agregar otra propiedad BACnet a la lista disponible para la asignación de terceros.</variant>
+        </translation>
+        <translation approved="true" key="pmt-remove-tooltip" new="false">
+            <note>Symbol for a button that removes a table row.</note>
+            <variant>Eliminar esta propiedad BACnet de la lista disponible para la asignación de terceros.</variant>
+        </translation>
+        <translation approved="true" key="pmt-add-snvt-tooltip" new="false">
+            <note>Tool tip for PMT add snvt button.</note>
+            <variant>Agregar una nueva fila SNVT vacía.</variant>
+        </translation>
+        <translation approved="true" key="pmt-remove-snvt-tooltip" new="false">
+            <note>Tool tip for PMT remove snvt button.</note>
+            <variant>Eliminar el SNVT seleccionado de la lista de asignaciones.</variant>
+        </translation>
+        <translation approved="true" key="pmt-add-snvt-description" new="false">
+            <note>Description that shows up in undo list for the add SNVT action.</note>
+            <variant>Se ha agregado una nueva fila de SNVT vacía.</variant>
+        </translation>
+        <translation approved="true" key="pmt-remove-snvt-description" new="false">
+            <note>Description that shows up in undo list for remove SNVT action.</note>
+            <variant>Se ha eliminado el SNVT seleccionado de la lista de asignaciones.</variant>
+        </translation>
+        <translation approved="true" key="pmt-restored-snvt-description" new="false">
+            <note>Description that shows up in undo list for restored SNVT action.</note>
+            <variant>Se han restaurado los SNVT eliminados.</variant>
+        </translation>
+        <translation approved="true" key="pmt_untitled" new="false">
+            <note>Header name for printing the PMT table when there is no control program name to use.</note>
+            <variant>Sin título</variant>
+        </translation>
+        <translation approved="true"
+            key="pmt-enable-all-network-visible" new="false">
+            <note/>
+            <variant>Activar todos los elementos visibles a la red</variant>
+        </translation>
+        <translation approved="true"
+            key="pmt-disable-all-network-visible" new="false">
+            <note/>
+            <variant>Desactivar todos los elementos visibles a la red</variant>
+        </translation>
+        <translation approved="true" key="pmt-clear-all-object-ids" new="false">
+            <note/>
+            <variant>Borrar todos los ID de objeto</variant>
+        </translation>
+        <translation approved="true" key="pmt-clear-selected-object-ids" new="false">
+            <note/>
+            <variant>Borrar los ID de objeto seleccionados</variant>
+        </translation>
+        <translation approved="true" key="pmt-enable-all" new="false">
+            <note/>
+            <variant>Activar todas las asignaciones</variant>
+        </translation>
+        <translation approved="true" key="pmt-disable-all" new="false">
+            <note/>
+            <variant>Desactivar todas las asignaciones</variant>
+        </translation>
+        <translation approved="true" key="pmt-clear-all" new="false">
+            <note/>
+            <variant>Borrar todas las asignaciones</variant>
+        </translation>
+        <translation approved="true" key="pmt-set-starting-value" new="false">
+            <note/>
+            <variant>Establecer valor de creación de inicio</variant>
+        </translation>
+        <translation approved="true" key="pmt-move-up-desc" new="false">
+            <note/>
+            <variant>Se han subido las filas seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="pmt-move-down-desc" new="false">
+            <note/>
+            <variant>Se han bajado las filas seleccionadas</variant>
+        </translation>
+        <translation approved="true" key="pmt-select-snvt-type" new="false">
+            <note/>
+            <variant>El tipo SNVT ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-change-object-id" new="false">
+            <note/>
+            <variant>El ID de objeto BACnet ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-build-snvts" new="false">
+            <note/>
+            <variant>Crear asignaciones de SNVT</variant>
+        </translation>
+        <translation approved="true" key="pmt-select-direction" new="false">
+            <note/>
+            <variant>Dirección establecida como {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-network-variable-name" new="false">
+            <note/>
+            <variant>El nombre de NV ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-enabled" new="false">
+            <note/>
+            <variant>Se ha activado el cambio de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-priority" new="false">
+            <note/>
+            <variant>La prioridad ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-refresh-time" new="false">
+            <note/>
+            <variant>La hora de actualización ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-acknowledge" new="false">
+            <note/>
+            <variant>La aceptación ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-select-direction" new="false">
+            <note/>
+            <variant>La dirección ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-program-id" new="false">
+            <note/>
+            <variant>El ID de programa ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="pmt-set-self-doc-str" new="false">
+            <note/>
+            <variant>La cadena Self Doc ha cambiado de {0} a {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="property_path" new="false">
+            <note/>
+            <variant>Ruta de la propiedad</variant>
+        </translation>
+        <translation approved="true" key="deleted-selected-snvts" new="false">
+            <note/>
+            <variant>SNVTs seleccionados eliminados.</variant>
+        </translation>
+        <translation approved="true" key="Print_Button_Label" new="false">
+            <note>Prints out table values.</note>
+            <variant>Imprimir</variant>
+        </translation>
+        <translation approved="true" key="Failed_To_Print" new="false">
+            <note/>
+            <variant>Error durante la impresión. Compruebe la configuración de su impresora.</variant>
+        </translation>
+        <translation approved="true"
+            key="We_were_unable_to_import_the_following_values" new="false">
+            <note/>
+            <variant>No se pudieron importar los valores siguientes:</variant>
+        </translation>
+        <translation approved="true" key="flow_at_1_inch" new="false">
+            <note/>
+            <variant>Flujo en 1 pulgada de columna de agua</variant>
+        </translation>
+        <translation approved="true" key="controlled_variable_value" new="false">
+            <note/>
+            <variant>Valor variable controlado</variant>
+        </translation>
+        <translation approved="true" key="celsius_occ_cool" new="false">
+            <note/>
+            <variant>Frío Ocupado en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="celsius_unocc_cool" new="false">
+            <note/>
+            <variant>Refrigeración no ocupada en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="celsius_standby_cool" new="false">
+            <note/>
+            <variant>Refrigeración en espera en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="celsius_occ_heat" new="false">
+            <note/>
+            <variant>Calefacción ocupada en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="celsius_unocc_heat" new="false">
+            <note/>
+            <variant>Calefacción no ocupada en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="celsius_standby_heat" new="false">
+            <note/>
+            <variant>Calefacción en espera en grados centígrados</variant>
+        </translation>
+        <translation approved="true" key="%_of_full_state" new="false">
+            <note/>
+            <variant>% de estado completo</variant>
+        </translation>
+        <translation approved="true" key="liters_per_second" new="false">
+            <note/>
+            <variant>litros/segundo</variant>
+        </translation>
+        <translation approved="true" key="_mode" new="false">
+            <note/>
+            <variant>modo</variant>
+        </translation>
+        <translation approved="true" key="%_primary_heat_output" new="false">
+            <note/>
+            <variant>% de salida de calefacción principal</variant>
+        </translation>
+        <translation approved="true" key="%_secondary_heat_output" new="false">
+            <note/>
+            <variant>% de salida de calefacción secundaria</variant>
+        </translation>
+        <translation approved="true" key="%_cool_output" new="false">
+            <note/>
+            <variant>% de salida fría</variant>
+        </translation>
+        <translation approved="true" key="%_econ_output" new="false">
+            <note/>
+            <variant>% de salida económica</variant>
+        </translation>
+        <translation approved="true" key="%_fan_output" new="false">
+            <note/>
+            <variant>% de salida del ventilador</variant>
+        </translation>
+        <translation approved="true" key="%_in_alarm" new="false">
+            <note/>
+            <variant>% en alarma</variant>
+        </translation>
+        <translation approved="true" key="network_variable_name" new="false">
+            <note/>
+            <variant>Nombre de NV</variant>
+        </translation>
+        <translation approved="true" key="direction" new="false">
+            <note/>
+            <variant>Dirección</variant>
+        </translation>
+        <translation approved="true" key="snvt" new="false">
+            <note/>
+            <variant>SNVT</variant>
+        </translation>
+        <translation approved="true" key="element_name" new="false">
+            <note/>
+            <variant>Elemento</variant>
+        </translation>
+        <translation approved="true" key="nv_number" new="false">
+            <note/>
+            <variant>N.º de NV</variant>
+        </translation>
+        <translation approved="true" key="chiller_run_mode" new="false">
+            <note/>
+            <variant>Modo de ejecución del enfriador</variant>
+        </translation>
+        <translation approved="true" key="chiller_oper_mode" new="false">
+            <note/>
+            <variant>Modo de funcionamiento del chiller</variant>
+        </translation>
+        <translation approved="true" key="chiller_state" new="false">
+            <note/>
+            <variant>Estado del enfriador</variant>
+        </translation>
+        <translation approved="true" key="in_alarm" new="false">
+            <note/>
+            <variant>en alarma</variant>
+        </translation>
+        <translation approved="true" key="run_is_enabled" new="false">
+            <note/>
+            <variant>ejecución activada</variant>
+        </translation>
+        <translation approved="true" key="local" new="false">
+            <note/>
+            <variant>local</variant>
+        </translation>
+        <translation approved="true" key="limited" new="false">
+            <note/>
+            <variant>limitado</variant>
+        </translation>
+        <translation approved="true" key="chilled_water_flow" new="false">
+            <note/>
+            <variant>flujo de agua enfriada</variant>
+        </translation>
+        <translation approved="true" key="conditional_water_flow" new="false">
+            <note/>
+            <variant>flujo de agua condicional</variant>
+        </translation>
+        <translation approved="true" key="State" new="false">
+            <note/>
+            <variant>Estado</variant>
+        </translation>
+        <translation approved="true" key="Value" new="false">
+            <note/>
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="Elements" new="false">
+            <note/>
+            <variant>Elementos</variant>
+        </translation>
+        <translation approved="true" key="Element_Count" new="false">
+            <note/>
+            <variant>Cantidad de elemento</variant>
+        </translation>
+        <translation approved="true" key="nv_name" new="false">
+            <note/>
+            <variant>Nombre de NV</variant>
+        </translation>
+        <translation approved="true" key="snvt_type" new="false">
+            <note/>
+            <variant>Tipo de SNVT</variant>
+        </translation>
+        <translation approved="true" key="nv_index" new="false">
+            <note/>
+            <variant>Índice de NV</variant>
+        </translation>
+        <translation approved="true" key="property" new="false">
+            <note/>
+            <variant>Propiedad</variant>
+        </translation>
+        <translation approved="true" key="index" new="false">
+            <note/>
+            <variant>Índice</variant>
+        </translation>
+        <translation approved="true" key="value" new="false">
+            <note/>
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="second" new="false">
+            <note/>
+            <variant>Segundo</variant>
+        </translation>
+        <translation approved="true" key="millisecond" new="false">
+            <note/>
+            <variant>Milisegundo</variant>
+        </translation>
+        <translation approved="true" key="next_state" new="false">
+            <note/>
+            <variant>Siguiente estado</variant>
+        </translation>
+        <translation approved="true" key="current_state" new="false">
+            <note/>
+            <variant>Estado actual</variant>
+        </translation>
+        <translation approved="true" key="time_to_next_state" new="false">
+            <note/>
+            <variant>Hora para el siguiente estado</variant>
+        </translation>
+        <translation approved="true" key="direction_poll0" new="false">
+            <note/>
+            <variant>Direction0</variant>
+        </translation>
+        <translation approved="true" key="direction_poll1" new="false">
+            <note/>
+            <variant>Direction1</variant>
+        </translation>
+        <translation approved="true" key="continuous_proportional" new="false">
+            <note/>
+            <variant>Proporcional continuo</variant>
+        </translation>
+        <translation approved="true" key="byte0" new="false">
+            <note/>
+            <variant>Byte 0</variant>
+        </translation>
+        <translation approved="true" key="byte1" new="false">
+            <note/>
+            <variant>Byte 1</variant>
+        </translation>
+        <translation approved="true" key="byte2" new="false">
+            <note/>
+            <variant>Byte 2</variant>
+        </translation>
+        <translation approved="true" key="byte3" new="false">
+            <note/>
+            <variant>Byte 3</variant>
+        </translation>
+        <translation approved="true" key="priority" new="false">
+            <note/>
+            <variant>Prioridad</variant>
+        </translation>
+        <translation approved="true" key="acknowledge" new="false">
+            <note/>
+            <variant>Admitir</variant>
+        </translation>
+        <translation approved="true" key="metric" new="false">
+            <note/>
+            <variant>Métrico</variant>
+        </translation>
+        <translation approved="true" key="Lonworks" new="false">
+            <note/>
+            <variant>LonWorks</variant>
+        </translation>
+        <translation approved="true" key="is_enabled" new="false">
+            <note/>
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="true" key="view_label" new="false">
+            <note/>
+            <variant>Vista:</variant>
+        </translation>
+        <translation approved="true" key="input_passive" new="false">
+            <note/>
+            <variant>Entrada (pasiva): predeterminada</variant>
+        </translation>
+        <translation approved="true" key="input_active" new="false">
+            <note/>
+            <variant>Entrada (activa)</variant>
+        </translation>
+        <translation approved="true" key="ouput_passive" new="false">
+            <note/>
+            <variant>Salida (pasiva)</variant>
+        </translation>
+        <translation approved="true" key="output_active" new="false">
+            <note/>
+            <variant>Salida (activa): predeterminada</variant>
+        </translation>
+        <translation approved="true" key="nv_view" new="false">
+            <note/>
+            <variant>Vista variable de red</variant>
+        </translation>
+        <translation approved="true" key="bacnet_view" new="false">
+            <note/>
+            <variant>Vista de Puntos BACnet</variant>
+        </translation>
+        <translation approved="true" key="enter_value_between_0_and_1" new="false">
+            <note/>
+            <variant>Escriba un valor entre {0} y {1}.</variant>
+        </translation>
+        <translation approved="true" key="pmt-config-tooltip" new="false">
+            <note/>
+            <variant>Mostrar/ocultar columnas en la tabla.</variant>
+        </translation>
+        <translation approved="true" key="length" new="false">
+            <note/>
+            <variant>Largo</variant>
+        </translation>
+        <translation approved="true" key="lon_self_doc_str" new="false">
+            <note/>
+            <variant>Cadena Self Doc</variant>
+        </translation>
+        <translation approved="true" key="lon_program_identifier" new="false">
+            <note/>
+            <variant>ID de programa</variant>
+        </translation>
+        <translation approved="true" key="blank-prog-id-warn" new="false">
+            <note/>
+            <variant>Ha dejado el ID de programa de Lonworks en blanco.\n¿Seguro que desea continuar?</variant>
+        </translation>
+        <translation approved="true" key="dont-warn-again" new="false">
+            <note/>
+            <variant>No volver a mostrar esta advertencia.</variant>
+        </translation>
+        <translation approved="true" key="Warning" new="false">
+            <note/>
+            <variant>¡Advertencia!</variant>
+        </translation>
+        <translation approved="true" key="show_hide_label" new="false">
+            <note/>
+            <variant>Mostrar/ocultar columnas de tabla</variant>
+        </translation>
+        <translation approved="true" key="illegal_progid_length_error" new="false">
+            <note/>
+            <variant>ID de programa no válido: ''{0}''. El ID del programa debe tener 8 caracteres o menos.</variant>
+        </translation>
+        <translation approved="true" key="illegal_progid_format_error" new="false">
+            <note/>
+            <variant>ID de programa no válido: ''{0}''. El ID del programa debe comenzar con un "8" o un "9" y debe estar en formato SPID.</variant>
+        </translation>
+        <translation approved="true" key="illegal_spid_length_error" new="false">
+            <note/>
+            <variant>El valor ''{0}'' se ha especificado como SPID. Debe ser un valor hexadecimal con una longitud de 16 caracteres y no de ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="invalid_spid_character_error" new="false">
+            <note/>
+            <variant>El valor ''{0}'' contiene caracteres no válidos. El ID de programa con formato SPID solo puede contener caracteres hexadecimales.</variant>
+        </translation>
+        <translation approved="true" key="illegal_nv_name_length_error" new="false">
+            <note/>
+            <variant>Nombre de variable de red no válido: ''{0}''. Los nombres deben tener una longitud de entre 1 y 16 caracteres.</variant>
+        </translation>
+        <translation approved="true" key="continous_proportional" new="false">
+            <note/>
+            <variant>Proporcional continuo</variant>
+        </translation>
+        <translation approved="true" key="imported-csv" new="false">
+            <note/>
+            <variant>Archivo CSV importado ''{0}''.</variant>
+        </translation>
+        <translation approved="true" key="import-title" new="false">
+            <note/>
+            <variant>Información de importación</variant>
+        </translation>
+        <translation approved="true" key="set-excel-row" new="false">
+            <note/>
+            <variant>Definir n.º fila de Excel</variant>
+        </translation>
+        <translation approved="true" key="imported-x-rows" new="false">
+            <note/>
+            <variant>Se han importado ''{0}'' filas con éxito.</variant>
+        </translation>
+        <translation approved="true" key="cov" new="false">
+            <note/>
+            <variant>COV</variant>
+        </translation>
+        <translation approved="true" key="increment" new="false">
+            <note/>
+            <variant>Incremento</variant>
+        </translation>
+        <translation approved="true" key="historian" new="false">
+            <note/>
+            <variant>Historiador</variant>
+        </translation>
+        <translation approved="true" key="secure" new="false">
+            <note/>
+            <variant>Seguro</variant>
+        </translation>
+        <translation approved="true" key="enable" new="false">
+            <note/>
+            <variant>Activar</variant>
+        </translation>
+        <translation approved="true" key="notification_threshold_label" new="false">
+            <note/>
+            <variant>Escribir cada __ muestras</variant>
+        </translation>
+        <translation approved="true" key="select-microblock-on-canvas" new="false">
+            <note/>
+            <variant>Seleccionar micro bloque en lienzo</variant>
+        </translation>
+        <translation approved="true" key="no_matching_begin_microblock" new="false">
+            <note/>
+            <variant>El micro bloque de texto de fin ''{0}'' no ha conincidido con el micro bloque de texto inicial.</variant>
+        </translation>
+        <translation approved="true" key="no_matching_end_microblock" new="false">
+            <note/>
+            <variant>El micro bloque de texto de inicio ''{0}'' no ha coninidido con el micro bloque de texto de fin.</variant>
+        </translation>
+    </section>
+</resource-base>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="resources" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="resources">
+        <translation approved="false" key="reportName" new="true">
+            <variant>Nombre del informe</variant>
+        </translation>
+        <translation approved="false" key="description" new="true">
+            <variant>Descripción</variant>
+        </translation>
+        <translation approved="false" key="reportOptions" new="true">
+            <variant>Opciones de informe</variant>
+        </translation>
+        <translation approved="false" key="editButton" new="true">
+            <variant>Editar</variant>
+        </translation>
+        <translation approved="false" key="deleteButton" new="true">
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="false" key="historyButton" new="true">
+            <variant>Ver historial</variant>
+        </translation>
+        <translation approved="false" key="scheduleReportsTitle" new="true">
+            <variant>Informes programados</variant>
+        </translation>
+        <translation approved="false" key="scheduleEditorTitle" new="true">
+            <variant>Editor de horarios</variant>
+        </translation>
+        <translation approved="false" key="scheduleHistoryTitle" new="true">
+            <variant>Historial de horarios</variant>
+        </translation>
+        <translation approved="false" key="name" new="true">
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="false" key="location" new="true">
+            <variant>Ubicación</variant>
+        </translation>
+        <translation approved="false" key="operatorNotFound" new="true">
+            <variant>No se ha encontrado el operador '{{operatorName}}'</variant>
+        </translation>
+        <translation approved="false" key="deleteScheduledReportAreYouSure" new="true">
+            <variant>Eliminar '{{scheduledReportName}}', ¿está seguro?</variant>
+        </translation>
+        <translation approved="false" key="lastRun" new="true">
+            <variant>Última ejecución</variant>
+        </translation>
+        <translation approved="false" key="nextRun" new="true">
+            <variant>Siguiente ejecución</variant>
+        </translation>
+        <translation approved="false" key="status" new="true">
+            <variant>Estado</variant>
+        </translation>
+        <translation approved="false" key="date" new="true">
+            <variant>Fecha</variant>
+        </translation>
+        <translation approved="false" key="path" new="true">
+            <variant>Ruta</variant>
+        </translation>
+        <translation approved="false" key="id" new="true">
+            <variant>ID de horario</variant>
+        </translation>
+        <translation approved="false" key="file" new="true">
+            <variant>Archivo</variant>
+        </translation>
+        <translation approved="false" key="results" new="true">
+            <variant>Resultado</variant>
+        </translation>
+        <translation approved="false" key="historyFor" new="true">
+            <variant>Historial de horarios para</variant>
+        </translation>
+        <translation approved="false" key="success" new="true">
+            <variant>Éxito</variant>
+        </translation>
+        <translation approved="false" key="failure" new="true">
+            <variant>Fallas</variant>
+        </translation>
+        <translation approved="false" key="access_denied_artifact" new="true">
+            <variant>Acceso denegado: no se ha podido guardar en el archivo</variant>
+        </translation>
+        <translation approved="false" key="access_denied_configuration" new="true">
+            <variant>Acceso denegado: no se ha podido guardar la configuración de informes programada</variant>
+        </translation>
+        <translation approved="false" key="colormap_error" new="true">
+            <variant>No se han podido crear datos de fila para la tabla de mapa de colores. No se han especificado ubicaciones</variant>
+        </translation>
+        <translation approved="false" key="error_getting_table" new="true">
+            <variant>Error al obtener la tabla de historiales: la tabla no existe</variant>
+        </translation>
+        <translation approved="false" key="error_creating_html" new="true">
+            <variant>No se ha podido crear la página html</variant>
+        </translation>
+        <translation approved="false" key="runReport" new="true">
+            <variant>Ejecutar informe</variant>
+        </translation>
+        <translation approved="false" key="on" new="true">
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="false" key="at" new="true">
+            <variant>En</variant>
+        </translation>
+        <translation approved="false" key="scheduleFrequencyHelpText" new="true">
+            <variant>(las listas desplegables cambian en función del tipo)</variant>
+        </translation>
+        <translation approved="false" key="Operator" new="true">
+            <variant>Operador</variant>
+        </translation>
+        <translation approved="false" key="Task" new="true">
+            <variant>Tarea</variant>
+        </translation>
+        <translation approved="false" key="Schedule" new="true">
+            <variant>Horario</variant>
+        </translation>
+        <translation approved="false" key="Output" new="true">
+            <variant>Salida</variant>
+        </translation>
+        <translation approved="false" key="Debug" new="true">
+            <variant>Depurar</variant>
+        </translation>
+        <translation approved="false" key="Monday" new="true">
+            <variant>Lunes</variant>
+        </translation>
+        <translation approved="false" key="Tuesday" new="true">
+            <variant>Martes</variant>
+        </translation>
+        <translation approved="false" key="Wednesday" new="true">
+            <variant>Miércoles</variant>
+        </translation>
+        <translation approved="false" key="Thursday" new="true">
+            <variant>Jueves</variant>
+        </translation>
+        <translation approved="false" key="Friday" new="true">
+            <variant>Viernes</variant>
+        </translation>
+        <translation approved="false" key="Saturday" new="true">
+            <variant>Sábado</variant>
+        </translation>
+        <translation approved="false" key="Sunday" new="true">
+            <variant>Domingo</variant>
+        </translation>
+        <translation approved="false" key="Day" new="true">
+            <variant>Día</variant>
+        </translation>
+        <translation approved="false" key="1st" new="true">
+            <variant>1</variant>
+        </translation>
+        <translation approved="false" key="2nd" new="true">
+            <variant>2</variant>
+        </translation>
+        <translation approved="false" key="3rd" new="true">
+            <variant>3</variant>
+        </translation>
+        <translation approved="false" key="4th" new="true">
+            <variant>4</variant>
+        </translation>
+        <translation approved="false" key="5th" new="true">
+            <variant>5</variant>
+        </translation>
+        <translation approved="false" key="6th" new="true">
+            <variant>6</variant>
+        </translation>
+        <translation approved="false" key="7th" new="true">
+            <variant>7</variant>
+        </translation>
+        <translation approved="false" key="8th" new="true">
+            <variant>8</variant>
+        </translation>
+        <translation approved="false" key="9th" new="true">
+            <variant>9</variant>
+        </translation>
+        <translation approved="false" key="10th" new="true">
+            <variant>10</variant>
+        </translation>
+        <translation approved="false" key="11th" new="true">
+            <variant>11</variant>
+        </translation>
+        <translation approved="false" key="12th" new="true">
+            <variant>12</variant>
+        </translation>
+        <translation approved="false" key="13th" new="true">
+            <variant>13</variant>
+        </translation>
+        <translation approved="false" key="14th" new="true">
+            <variant>14</variant>
+        </translation>
+        <translation approved="false" key="15th" new="true">
+            <variant>15</variant>
+        </translation>
+        <translation approved="false" key="16th" new="true">
+            <variant>16</variant>
+        </translation>
+        <translation approved="false" key="17th" new="true">
+            <variant>17</variant>
+        </translation>
+        <translation approved="false" key="18th" new="true">
+            <variant>18</variant>
+        </translation>
+        <translation approved="false" key="19th" new="true">
+            <variant>19</variant>
+        </translation>
+        <translation approved="false" key="20th" new="true">
+            <variant>20</variant>
+        </translation>
+        <translation approved="false" key="21st" new="true">
+            <variant>21</variant>
+        </translation>
+        <translation approved="false" key="22nd" new="true">
+            <variant>22</variant>
+        </translation>
+        <translation approved="false" key="23rd" new="true">
+            <variant>23</variant>
+        </translation>
+        <translation approved="false" key="24th" new="true">
+            <variant>24</variant>
+        </translation>
+        <translation approved="false" key="25th" new="true">
+            <variant>25</variant>
+        </translation>
+        <translation approved="false" key="26th" new="true">
+            <variant>26</variant>
+        </translation>
+        <translation approved="false" key="27th" new="true">
+            <variant>27</variant>
+        </translation>
+        <translation approved="false" key="28th" new="true">
+            <variant>28</variant>
+        </translation>
+        <translation approved="false" key="Last" new="true">
+            <variant>Última</variant>
+        </translation>
+        <translation approved="false" key="Daily" new="true">
+            <variant>Diariamente</variant>
+        </translation>
+        <translation approved="false" key="Weekly" new="true">
+            <variant>Semanalmente</variant>
+        </translation>
+        <translation approved="false" key="Monthly" new="true">
+            <variant>Mensualmente</variant>
+        </translation>
+        <translation approved="false" key="Quarterly" new="true">
+            <variant>Trimestral</variant>
+        </translation>
+        <translation approved="false" key="Yearly" new="true">
+            <variant>Anual</variant>
+        </translation>
+        <translation approved="false" key="January" new="true">
+            <variant>Enero</variant>
+        </translation>
+        <translation approved="false" key="February" new="true">
+            <variant>Febrero</variant>
+        </translation>
+        <translation approved="false" key="March" new="true">
+            <variant>Marzo</variant>
+        </translation>
+        <translation approved="false" key="April" new="true">
+            <variant>Abril</variant>
+        </translation>
+        <translation approved="false" key="May" new="true">
+            <variant>Mayo</variant>
+        </translation>
+        <translation approved="false" key="June" new="true">
+            <variant>Junio</variant>
+        </translation>
+        <translation approved="false" key="July" new="true">
+            <variant>Julio</variant>
+        </translation>
+        <translation approved="false" key="August" new="true">
+            <variant>Agosto</variant>
+        </translation>
+        <translation approved="false" key="September" new="true">
+            <variant>Septiembre</variant>
+        </translation>
+        <translation approved="false" key="October" new="true">
+            <variant>Octubre</variant>
+        </translation>
+        <translation approved="false" key="November" new="true">
+            <variant>Noviembre</variant>
+        </translation>
+        <translation approved="false" key="December" new="true">
+            <variant>Diciembre</variant>
+        </translation>
+        <translation approved="false" key="started" new="true">
+            <variant>Iniciado</variant>
+        </translation>
+        <translation approved="false" key="duration" new="true">
+            <variant>Duración</variant>
+        </translation>
+        <translation approved="false" key="options" new="true">
+            <variant>Opciones</variant>
+        </translation>
+        <translation approved="false" key="keepPast" new="true">
+            <variant>Mantener la última</variant>
+        </translation>
+        <translation approved="false" key="historyEntries" new="true">
+            <variant>Entradas del historial de horarios</variant>
+        </translation>
+        <translation approved="false" key="saveReport" new="true">
+            <variant>Grabar reporte</variant>
+        </translation>
+        <translation approved="false" key="diagnostics" new="true">
+            <variant>Diagnóstico</variant>
+        </translation>
+        <translation approved="false" key="locationPath" new="true">
+            <variant>Ruta de ubicación</variant>
+        </translation>
+        <translation approved="false" key="provider" new="true">
+            <variant>Proveedor</variant>
+        </translation>
+        <translation approved="false" key="optionString" new="true">
+            <variant>Cadena de opciones</variant>
+        </translation>
+        <translation approved="false" key="emailLabel" new="true">
+            <variant>Informe de correo electrónico. El informe se enviará como archivo adjunto.</variant>
+        </translation>
+        <translation approved="false" key="emailTo" new="true">
+            <variant>A</variant>
+        </translation>
+        <translation approved="false" key="emailCC" new="true">
+            <variant>CC</variant>
+        </translation>
+        <translation approved="false" key="emailSubject" new="true">
+            <variant>Asunto</variant>
+        </translation>
+        <translation approved="false" key="emailMessage" new="true">
+            <variant>Mensaje</variant>
+        </translation>
+    </section>
+</resource-base>

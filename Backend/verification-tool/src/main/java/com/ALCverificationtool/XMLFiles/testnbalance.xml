@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="testnbalance" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="menu">
+        <!-- Titles -->
+        <translation approved="true" key="testnbalance.no-session.title" new="false">
+            <variant>No hay sesión...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.nothing-selected.title" new="false">
+            <variant>Nada seleccionado...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.session.title" new="false">
+            <variant>Sesión</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.view.title" new="false">
+            <variant>Ver</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.view.devid.action.title" new="false">
+            <variant>Identificador de dispositivo</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.view.primaryuse.action.title" new="false">
+            <variant>Uso principal</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.help.title" new="false">
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.exit.title" new="false">
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.about.title" new="false">
+            <variant>Acerca de</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.htmlviewer.title" new="false">
+            <variant>Visor HTML</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.new.title" new="false">
+            <variant>Nuevo</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.close.title" new="false">
+            <variant>Cerrar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.open.title" new="false">
+            <variant>Abrir</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.menu.close.title" new="false">
+            <variant>Cerrar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.preferences.title" new="false">
+            <variant>Preferencias</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.ok.title" new="false">
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.cancel.title" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.htmlviewer.title" new="false">
+            <variant>Visor HTML</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.help.action.title" new="false">
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.preferences.action.title" new="false">
+            <variant>Preferencias...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.eula.dialog.title" new="false">
+            <variant>Acuerdo de licencia</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.eula.dialog.message" new="false">
+            <variant>Lea el siguiente Acuerdo de licencia. Debe aceptar las condiciones del acuerdo para poder ejecutar esta aplicación por primera vez.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.eula.dialog.accept" new="false">
+            <variant>Acepto el acuerdo</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.eula.dialog.agreement.error" new="false">
+            <variant>No se encuentra el acuerdo de licencia</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.eula.dialog.accept.button" new="false">
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.session.name" new="false">
+            <variant>Información de la sesión</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-source.name" new="false">
+            <variant>Fuente de aire</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.name" new="false">
+            <variant>Terminal de aire</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.airflow.name" new="false">
+            <variant>Flujo de aire</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.airflow-pd.name" new="false">
+            <variant>Flujo de aire dependiente de la presión</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.bypass.name" new="false">
+            <variant>Bypass</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.nothing-selected.message" new="false">
+            <variant>Nada seleccionado...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.no-session.message" new="false">
+            <variant>No hay sesión...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.operator.name" new="false">
+            <variant>Nombre del operador:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.organization.name" new="false">
+            <variant>Nombre de la organización:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.comm-port.name" new="false">
+            <variant>Puerto de com:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.baud-rate.name" new="false">
+            <variant>Velocidad en baudios:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.scope.name" new="false">
+            <variant>Alcance</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.scope.local-zone.name" new="false">
+            <variant>Zona local</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.scope.all-zones.name" new="false">
+            <variant>Todas las zonas</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.new-session.name" new="false">
+            <variant>Nueva sesión</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.cancel.name" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.stopped.name" new="false">
+            <variant>Detenido</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.unable-to-connect.name" new="false">
+            <variant>No se puede conectar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.access-denied.name" new="false">
+            <variant>Acceso local: desactivado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.not-connected.name" new="false">
+            <variant>No conectado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.connecting.name" new="false">
+            <variant>Conectando...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.connected.name" new="false">
+            <variant>Conectado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.closed.name" new="false">
+            <variant>Cerrado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.connection.connect.name" new="false">
+            <variant>Conectar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.heat.name" new="false">
+            <variant>Calor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.cool.name" new="false">
+            <variant>Frío</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.damper-open-position.name" new="false">
+            <variant>Posición de damper abierto:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.percent-open.name" new="false">
+            <variant>%</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.current-damper-command.name" new="false">
+            <variant>Comando de damper actual:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.flow-setpoint.name" new="false">
+            <variant>Punto de ajuste (setpoint) de flujo:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.design-airflow.name" new="false">
+            <variant>Flujo de aire de diseño:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.current-flow.name" new="false">
+            <variant>Flujo actual:</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.cfm.name" new="false">
+            <variant>cfm</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.prmary-use.cool.name" new="false">
+            <variant>frío</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.air-terminal.prmary-use.heat.name" new="false">
+            <variant>calor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.occupied-min.name" new="false">
+            <variant>Ocupado mín</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-open.name" new="false">
+            <variant>Damper abierto</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.automatic.name" new="false">
+            <variant>Automático</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-close.name" new="false">
+            <variant>Damper Cerrado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.vent.name" new="false">
+            <variant>Salida de aire</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.reheat-min.name" new="false">
+            <variant>Mínimo Recalentamiento</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.cool-max.name" new="false">
+            <variant>Máximo Frío</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.cool-min.name" new="false">
+            <variant>Mínimo Frío</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.heat-max.name" new="false">
+            <variant>Máximo Calor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.heat-min.name" new="false">
+            <variant>Mínimo Calor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.calibrated-damper-close.name" new="false">
+            <variant>Cierre de damper calibrado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.calibrated-damper-open.name" new="false">
+            <variant>Apertura del damper calibrado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.automatic-control.name" new="false">
+            <variant>Control automático</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.zero-calibrate.name" new="false">
+            <variant>Calibrado cero</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.pressure-sensor-calibrate.name" new="false">
+            <variant>Calibración del sensor de presión</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.unknown.name" new="false">
+            <variant>DESCONOCIDO</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.close-damper.warning.message" new="false">
+            <variant>Tal vez deba apagar la fuente de aire para poder cerrar los dampers. \nSi fuera necesario, apague la fuente de aire y continúe.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.zero-calibrate.warning.message" new="false">
+            <variant>La calibración cero del damper requiere que la fuente de aire esté apagada.\nVerifique que la fuente de aire está apagada antes de continuar!</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.close-damper.required.message" new="false">
+            <variant>Tal vez deba apagar la fuente de aire para poder cerrar los dampers. \nSi necesita apagar la fuente de aire, pulse Cancelar, apague \nla fuente de aire e inténtelo de nuevo; de lo contrario, continúe.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.zero-calibrate.required.message" new="false">
+            <variant>La calibración cero del damper requiere que la fuente de aire esté apagada.\nApague la fuente de aire e inténtelo de nuevo.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.warning.title" new="false">
+            <variant>Precaución</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.warning.continue.name" new="false">
+            <variant>Continuar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.warning.cancel.name" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.required.ok.name" new="false">
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-moving.message" new="false">
+            <variant>Damper en movimiento</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-ready.message" new="false">
+            <variant>Damper listo</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-moving.short.message" new="false">
+            <variant>En movimiento</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.damper-ready.short.message" new="false">
+            <variant>Listo</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.damper-command.name" new="false">
+            <variant>Comando\nDamper</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.measured-flow.name" new="false">
+            <variant>Flujo\nmedido</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.measured-static-pressure.name" new="false">
+            <variant>Presión\nestática\nmedida</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.sensor-reading.name" new="false">
+            <variant>Lectura\nsensor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.completed.name" new="false">
+            <variant>Completado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.calibration-required.name" new="false">
+            <variant>Calibración\nrequerida</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.validation-tip.numeric-values-only" new="false">
+            <variant>sólo valores numéricos</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.validation-tip.out-of-bounds" new="false">
+            <variant>debe ser menor que {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.airflow-tab.test-and-balance.name" new="false">
+            <variant>Prueba y balance</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.airflow-tab.locks.name" new="false">
+            <variant>Bloqueos</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.airflow-tab.design-values.name" new="false">
+            <variant>Valores de diseño</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.apply.name" new="false">
+            <variant>Aplicar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.cancel.name" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.primary-use.name" new="false">
+            <variant>Uso principal:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.flow-sensor-type.name" new="false">
+            <variant>Tipo de sensor de flujo:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.damper-actuator-type.name" new="false">
+            <variant>Tipo de actuador del damper:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.cooling-maximum-airflow.name" new="false">
+            <variant>Flujo de aire máximo de enfriamiento:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.cooling-minimum-airflow.name" new="false">
+            <variant>Flujo de aire mínimo de enfriamiento:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.heating-maximum-airflow.name" new="false">
+            <variant>Flujo de aire máximo de calentamiento:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.heating-minimum-airflow.name" new="false">
+            <variant>Flujo de aire mínimo de calentamiento:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.occupied-minimum-airflow.name" new="false">
+            <variant>Flujo de aire mínimo ocupado:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.unoccupied-minimum-airflow.name" new="false">
+            <variant>Flujo de aire mínimo desocupado:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.aux-heat-minimum-airflow.name" new="false">
+            <variant>Flujo de aire mínimo de calor aux:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.vent-airflow.name" new="false">
+            <variant>Flujo de aire de salida de aire:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.design-setpoints.flow-at-1-inch-water-column.name" new="false">
+            <variant>Flujo a 1" WC:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.primary-use.heat.name" new="false">
+            <variant>calor</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.primary-use.cool.name" new="false">
+            <variant>frío</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.device-type.internal.name" new="false">
+            <variant>interno</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.device-type.zasf.name" new="false">
+            <variant>zasf</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.device-type.unknown.name" new="false">
+            <variant>desconocido</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.device-type.external.name" new="false">
+            <variant>externo</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.unapplied-changes.message" new="false">
+            <variant>Al continuar, anulará todos los cambios\nque no se hayan aplicado!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance..air-terminal.unapplied-changes.title" new="false">
+            <variant>¡Advertencia!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance..air-terminal.unapplied-changes.continue.name" new="false">
+            <variant>Continuar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance..air-terminal.unapplied-changes.cancel.name" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.last-calibration.label" new="false">
+            <variant>Última calibración:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.not-calibrated.label" new="false">
+            <variant>No calibrado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.current-sensor-reading.label" new="false">
+            <variant>Lectura\nactual\nsensor</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.damper-position.label" new="false">
+            <variant>Posición\nDamper</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.current-damper-position.label" new="false">
+            <variant>Posición\nActual\nDamper</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.aux-heat.name" new="false">
+            <variant>Calor aux:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.fan.name" new="false">
+            <variant>Ventilador:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.fan.off.name" new="false">
+            <variant>Desactivado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.fan.on.name" new="false">
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.discharge-air-temp.name" new="false">
+            <variant>Temperatura de aire de descarga:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.flow-setpoint.label" new="false">
+            <variant>Bloquear punto de ajuste (setpoint) de flujo en</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.damper-open-at.label" new="false">
+            <variant>Bloquear damper abierto en</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.damper-at-current-open-position.label" new="false">
+            <variant>Bloquear damper en posición actual abierta</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.static-pressure.label" new="false">
+            <variant>Bloquear presión estática en</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.aux-heat.label" new="false">
+            <variant>Bloquear calor aux en</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.locks.fan.label" new="false">
+            <variant>Bloquear ventilador</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.air-terminal.column.label" new="false">
+            <variant>Terminal de aire</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.damper-command.column.label" new="false">
+            <variant>Comando del damper</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.status.column.label" new="false">
+            <variant>Estado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.locked.column.label" new="false">
+            <variant>Damper bloqueado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.last-calibration.column.label" new="false">
+            <variant>Última calibración</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.select-all.label" new="false">
+            <variant>Seleccionar todo</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.show-terminal-types.label" new="false">
+            <variant>Mostrar tipos de terminal</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.show-terminal-types.airflow-pi.label" new="false">
+            <variant>Flujo de aire independiente de la presión</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.show-terminal-types.airflow-pd.label" new="false">
+            <variant>Flujo de aire dependiente de la presión</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.show-terminal-types.bypass.label" new="false">
+            <variant>Bypass</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.static-pressure.label" new="false">
+            <variant>Presión estática:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.static-pressure.unit.label" new="false">
+            <variant>pulgadas columna de agua</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.duct-static-pressure.label" new="false">
+            <variant>Presión estática del conducto:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.static-pressure.unit.label" new="false">
+            <variant>pulgadas columna de agua</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.duct-static-pressure-setpoint.label" new="false">
+            <variant>Valor propuesto de presión estática del conducto:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-terminal.lat-duct-static-pressure-setpoint.label" new="false">
+            <variant>Punto de ajuste (setpoint) de presión estática del conducto LAT:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.bypass-driver-update.title" new="false">
+            <variant>Actualizar controlador del dispositivo bypass</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.bypass-driver-update.message" new="false">
+            <variant>No se pueden recuperar los valores de bloqueo del controlador bypass.\nIntente actualizar el driver del controlador bypass.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.ok.label" new="false">
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.damper-command.ahu-on.message" new="false">
+            <variant>¡La calibración no se puede completar con la fuente de aire encendida!/nApague la fuente de aire para completar la calibración del humedecedor.</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration-prevented.title" new="false">
+            <variant>Calibración evitada</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration-prevented.message" new="false">
+            <variant>La versión del driver de este controlador es {0}.\n La calibración requiere la versión {1} o posterior.</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration-prevented.dont-show-again.message" new="false">
+            <variant>No volver a mostrar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.pressure-to-high.status" new="false">
+            <variant>¡Presión demasiado elevada!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.pressure-to-low.status" new="false">
+            <variant>¡Presión demasiado baja!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.waiting-for-input.status" new="false">
+            <variant>Esperando datos</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.ahu-on.status" new="false">
+            <variant>¡Unidad de tratamiento de aire encendida!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.lat-mode-active.status" new="false">
+            <variant>¡Modo LAT activo!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.calibration.calibrating.status" new="false">
+            <variant>Calibrando</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.title.mode" new="false">
+            <variant>Modo de fuente de aire</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.live-data.title.mode" new="false">
+            <variant>Modo de fuente de aire:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.mode.on" new="false">
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.mode.off" new="false">
+            <variant>Desactivado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.mode.auto" new="false">
+            <variant>Automático</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.air-source.mode.turn-off" new="false">
+            <variant>Apagar</variant>
+        </translation>
+        <!-- Units -->
+        <translation approved="true"
+            key="testnbalance.measuring-units.label" new="false">
+            <variant>Unidades de flujo de aire:</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.unknown" new="false">
+            <variant>unk</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.pascals" new="false">
+            <variant>Pa</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.hectopascals" new="false">
+            <variant>hPa</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.kilopascals" new="false">
+            <variant>kPa</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.bars" new="false">
+            <variant>bares</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.millibars" new="false">
+            <variant>mbares</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.pounds-force-per-square-inch" new="false">
+            <variant>psi</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.centimeters-of-water" new="false">
+            <variant>cm WC</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.inches-of-water" new="false">
+            <variant>pulg WC</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.millimeters-of-mercury" new="false">
+            <variant>mm Hg</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.centimeters-of-mercury" new="false">
+            <variant>mm Hg</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.pressure.inches-of-mercury" new="false">
+            <variant>pulg Hg</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.cubic-feet-per-minute" new="false">
+            <variant>cfm</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.cubic-meters-per-second" new="false">
+            <variant>cm</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.cubic-meters-per-minute" new="false">
+            <variant>cmm</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.cubic-meters-per-hour" new="false">
+            <variant>cmh</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.liters-per-second" new="false">
+            <variant>l/s</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.liters-per-minute" new="false">
+            <variant>l/m</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.volumnetric-flow.liters-per-hour" new="false">
+            <variant>l/h</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.celsius" new="false">
+            <variant>°C</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.days.celsius" new="false">
+            <variant>°DC</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.kelvin" new="false">
+            <variant>°K</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.kelvin.per.hour" new="false">
+            <variant>°Kph</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.kelvin.per.minute" new="false">
+            <variant>°Kpm</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.delta.degrees.kelvin" new="false">
+            <variant>delta °K</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.farenheit" new="false">
+            <variant>°F</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.degrees.days.farenheit" new="false">
+            <variant>°DF</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.measuring-units.delta.degrees.farenheit" new="false">
+            <variant>delta °F</variant>
+        </translation>
+        <!-- Reports -->
+        <translation approved="true"
+            key="testnbalance.menu.report.title" new="false">
+            <variant>Informe</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.generating" new="false">
+            <variant>Generando informe...</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.error.report" new="false">
+            <variant>Se ha producido un error al generar el informe.</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.error.report.exception" new="false">
+            <variant>Se ha producido un error al generar el informe. {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.created" new="false">
+            <variant>Informe {0} creado correctamente.</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.nosession" new="false">
+            <variant>¡No hay ninguna sesión abierta para generar el informe!</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.fileexists.title" new="false">
+            <variant>El archivo existe</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.fileexists" new="false">
+            <variant>El archivo existe, ¿qué desea hacer?</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.append" new="false">
+            <variant>Anexar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.overwrite" new="false">
+            <variant>Reemplazar</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.error.dialogtitle" new="false">
+            <variant>ERROR</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.error.session" new="false">
+            <variant>Se ha producido un error al escribir la información de la sesión. {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="testnbalance.error.airsource" new="false">
+            <variant>Se ha producido un error al escribir la información de la fuente de aire. {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.calibration" new="false">
+            <variant>Valores de calibración</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.design.airflows" new="false">
+            <variant>Valores de diseño</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.property" new="false">
+            <variant>Propiedad</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.value" new="false">
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.units" new="false">
+            <variant>Unidades</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.sensor" new="false">
+            <variant>Sensor</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.notcompleted" new="false">
+            <variant>sin finalizar</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.completed" new="false">
+            <variant>finalizado</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.aux.heat.min" new="false">
+            <variant>Calor aux mín</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.measured" new="false">
+            <variant>Medido</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.full.open" new="false">
+            <variant>Humedecedor abierto</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.min.occ" new="false">
+            <variant>Ocupado mín</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.min.unocc" new="false">
+            <variant>Mín desocupado</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.report.run.date" new="false">
+            <variant>Fecha de ejecución</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.zero.calibrate" new="false">
+            <variant>Calibrado cero</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.pressure.sensor.calibrate" new="false">
+            <variant>Calibración del sensor de presión</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.measured.static.pressure" new="false">
+            <variant>Presión estática medida</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.no-session.message" new="false">
+            <variant>No hay sesión...</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.nothing-selected.message" new="false">
+            <variant>Nada seleccionado...</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.pressure.design.duct" new="false">
+            <variant>Valor propuesto de presión estática del conducto</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.pressure.design.latduct" new="false">
+            <variant>Valor propuesto de presión estática del conducto LAT</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.tree.devid.label" new="false">
+            <variant>Identificador</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.tree.usage.label" new="false">
+            <variant>Uso</variant>
+        </translation>
+        <translation approved="true" key="testnbalance.tree.usage.label" new="false">
+            <variant>Uso</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.static-pressure" new="false">
+            <variant>Presión estática</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.discharge-air-temp" new="false">
+            <variant>Temperatura de aire de descarga</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.degrees-farenheit" new="false">
+            <variant>ºF</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.report.degrees-celcius" new="false">
+            <variant>ºC</variant>
+        </translation>
+        <!-- Mnemonics -->
+        <translation approved="true"
+            key="testnbalance.menu.session.mnemonic" new="false">
+            <variant>S</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.help.mnemonic" new="false">
+            <variant>H</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.report.mnemonic" new="false">
+            <variant>R</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.view.mnemonic" new="false">
+            <variant>V</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.showdevid.mnemonic" new="false">
+            <variant>I</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.showuse.mnemonic" new="false">
+            <variant>U</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.exit.mnemonic" new="false">
+            <variant>E</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.about.mnemonic" new="false">
+            <variant>A</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.menu.window.mnemonic" new="false">
+            <variant>W</variant>
+        </translation>
+        <translation approved="true"
+            key="testnbalance.start.error.message" new="false">
+            <variant>No se pudo iniciar la herramienta TestNBalance. La instalación del producto podría estar dañada. Pruebe a reinstalar la aplicación.</variant>
+        </translation>
+    </section>
+</resource-base>

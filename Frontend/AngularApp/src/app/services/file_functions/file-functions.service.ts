@@ -20,7 +20,7 @@ export class FileFunctionsService {
   sendFiles(selectedFiles: Array<File> = []): Observable<any> {
     const uploadData = new FormData();
     console.log('stuff');
-    for (let file of selectedFiles){
+    for (let file of selectedFiles) {
       console.log('file entered');
       uploadData.append('file', file, file.name);
     }

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- master format -->
+<resource-base id="ReportSizes" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+   <section id="alarms">
+      <translation key="alarms_occurred_date" fixed="true">
+         <variant>1.5</variant>
+      </translation>
+      <translation key="alarms_location" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="alarms_short_text" fixed="true">
+         <variant>14</variant>
+      </translation>
+   </section>
+   <section id="alarm_actions">
+      <translation key="alarm_actions_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="alarm_actions_action" fixed="true">
+         <variant>1</variant>
+      </translation>
+   </section>
+   <section id="alarm_messages">
+      <translation key="alarm_messages_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="alarm_messages_message" fixed="true">
+         <variant>1</variant>
+      </translation>
+   </section>
+   <section id="alarm_source">
+      <translation key="alarm_source_location" fixed="true">
+         <variant>.7in</variant>
+      </translation>
+      <translation key="alarm_source_equipment" fixed="true">
+         <variant>.8in</variant>
+      </translation>
+      <translation key="alarm_source_source_name" fixed="true">
+         <variant>1in</variant>
+      </translation>
+      <translation key="alarm_source_alarm_category" fixed="true">
+         <variant>.9in</variant>
+      </translation>
+      <translation key="alarm_source_alarm_template" fixed="true">
+         <variant>.7in</variant>
+      </translation>
+      <translation key="alarm_source_alarm_enabled" fixed="true">
+         <variant>.5in</variant>
+      </translation>
+      <translation key="alarm_source_rtn_enabled" fixed="true">
+         <variant>.5in</variant>
+      </translation>
+      <translation key="alarm_source_fault_enabled" fixed="true">
+         <variant>.5in</variant>
+      </translation>
+      <translation key="alarm_source_alarm_requires_ack" fixed="true">
+         <variant>.5in</variant>
+      </translation>
+      <translation key="alarm_source_req_return" fixed="true">
+         <variant>.5in</variant>
+      </translation>
+      <translation key="alarm_source_critical" fixed="true">
+         <variant>.55in</variant>
+      </translation>
+      <translation key="alarm_source_in_alarm" fixed="true">
+         <variant>.6in</variant>
+      </translation>
+      <translation key="alarm_source_path" fixed="true">
+         <variant>1*</variant>
+      </translation>
+   </section>
+   <section id="audit_log">
+      <translation key="audit_log_date" fixed="true">
+         <variant>1.4</variant>
+      </translation>
+      <translation key="audit_log_description" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="audit_log_details" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="audit_log_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="audit_log_operator_name" fixed="true">
+         <variant>1.5</variant>
+      </translation>
+      <translation key="audit_log_reason" fixed="true">
+         <variant>1</variant>
+      </translation>
+   </section>
+   <section id="effective_schedule">
+      <translation key="effective_schedule_location" fixed="true">
+         <variant>25</variant>
+      </translation>
+      <translation key="effective_schedule_equipment" fixed="true">
+         <variant>15</variant>
+      </translation>
+      <translation key="effective_schedule_effective_schedule" fixed="true">
+         <variant>2.4</variant>
+      </translation>
+      <translation key="effective_schedule_ccn_schedule" fixed="true">
+         <variant>5</variant>
+      </translation>
+      <translation key="effective_schedule_ccn_override_group" fixed="true">
+         <variant>5</variant>
+      </translation>
+      <translation key="effective_schedule_ccn_override_minutes" fixed="true">
+         <variant>5</variant>
+      </translation>
+   </section>
+   <section id="equipment_checkout">
+      <translation key="equipment_checkout_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="equipment_checkout_equipment" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="equipment_checkout_checkout" fixed="true">
+         <variant>2.6</variant>
+      </translation>
+      <translation key="equipment_checkout_notes" fixed="true">
+         <variant>2</variant>
+      </translation>
+   </section>
+   <section id="equipment_summary_report">
+      <translation key="equipment_summary_report_location" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="equipment_summary_report_equipment" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="equipment_summary_report_color" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="equipment_summary_report_summary" fixed="true">
+         <variant>20</variant>
+      </translation>
+      <translation key="equipment_summary_report_effective_schedule" fixed="true">
+         <variant>3.5</variant>
+      </translation>
+   </section>
+   <section id="locked_value">
+      <translation key="locked_value_location" fixed="true">
+         <variant>15</variant>
+      </translation>
+      <translation key="locked_value_equipment" fixed="true">
+         <variant>15</variant>
+      </translation>
+      <translation key="locked_value_name" fixed="true">
+         <variant>15</variant>
+      </translation>
+      <translation key="locked_value_value" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="locked_value_duration" fixed="true">
+         <variant>2.2</variant>
+      </translation>
+   </section>
+   <section id="module_version">
+      <translation key="module_version_status" fixed="true">
+         <variant>1.2</variant>
+      </translation>
+      <translation key="module_version_boot_version" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="module_version_driver_version" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="module_version_location" fixed="true">
+         <variant>2</variant>
+      </translation>
+      <translation key="module_version_download_option" fixed="true">
+         <variant>0.8</variant>
+      </translation>
+      <translation key="module_version_serial_number" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="module_version_rnet_local_access" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="module_version_downloaded_by" fixed="true">
+         <variant>1.2</variant>
+      </translation>
+      <translation key="module_version_vendor_name" fixed="true">
+         <variant>1</variant>
+      </translation>
+   </section>
+   <section id="network_io">
+      <translation key="network_io_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="network_io_equipment" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="network_io_name" fixed="true">
+         <variant>3</variant>
+      </translation>
+      <translation key="network_io_value" fixed="true">
+         <variant>.9</variant>
+      </translation>
+      <translation key="network_io_error" fixed="true">
+         <variant>2</variant>
+      </translation>
+      <translation key="network_io_checkout" fixed="true">
+         <variant>2.5</variant>
+      </translation>
+      <translation key="network_io_checkout_notes" fixed="true">
+         <variant>2</variant>
+      </translation>
+      <translation key="network_io_path" fixed="true">
+         <variant>3.5</variant>
+      </translation>
+   </section>
+   <section id="network_status">
+      <translation key="network_status_status" fixed="true">
+         <variant>1.2</variant>
+      </translation>
+      <translation key="network_status_prime" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="network_status_location" fixed="true">
+         <variant>2</variant>
+      </translation>
+   </section>
+   <section id="parameter_mismatch">
+      <translation key="parameter_mismatch_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="parameter_mismatch_equipment" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="parameter_mismatch_expression" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="parameter_mismatch_database_value" fixed="true">
+         <variant>1.2</variant>
+      </translation>
+      <translation key="parameter_mismatch_field_value" fixed="true">
+         <variant>1.2</variant>
+      </translation>
+      <translation key="parameter_mismatch_reason" fixed="true">
+         <variant>1</variant>
+      </translation>
+   </section>
+   <section id="point_list_report">
+      <translation key="point_list_report_location" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="point_list_report_equipment" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="point_list_report_name" fixed="true">
+         <variant>18</variant>
+      </translation>
+      <translation key="point_list_report_value" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="point_list_report_type" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="point_list_report_object_id" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_device_id" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="point_list_report_object_name" fixed="true">
+         <variant>10</variant>
+      </translation>
+      <translation key="point_list_report_cov_increment" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_offset" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_channel" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="point_list_report_io_type" fixed="true">
+         <variant>1.25</variant>
+      </translation>
+      <translation key="point_list_report_sensor_actuator_type" fixed="true">
+         <variant>1.4</variant>
+      </translation>
+      <translation key="point_list_report_minimum" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="point_list_report_locked" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_in_alarm" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_in_fault" fixed="true">
+         <variant>.6</variant>
+      </translation>
+      <translation key="point_list_report_checkout" fixed="true">
+         <variant>2.6</variant>
+      </translation>
+      <translation key="point_list_report_notes" fixed="true">
+         <variant>2</variant>
+      </translation>
+      <translation key="point_list_report_path" fixed="true">
+         <variant>3.5</variant>
+      </translation>
+   </section>
+   <section id="schedule_instance">
+      <translation key="schedule_instance_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="schedule_instance_priority" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="schedule_instance_description" fixed="true">
+         <variant>3</variant>
+      </translation>
+   </section>
+   <section id="security_assignment">
+      <translation key="security_assignment_location" fixed="true">
+         <variant>1.5</variant>
+      </translation>
+      <translation key="security_assignment_operator" fixed="true">
+         <variant>1.5</variant>
+      </translation>
+      <translation key="security_assignment_privilege_set" fixed="true">
+         <variant>1.5</variant>
+      </translation>
+   </section>
+   <section id="test_and_balance">
+      <translation key="test_and_balance_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="test_and_balance_calibrated" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="test_and_balance_loop" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="test_and_balance_calibration_table" fixed="true">
+         <variant>2</variant>
+      </translation>
+      <translation key="test_and_balance_design_flows" fixed="true">
+         <variant>1.4</variant>
+      </translation>
+      <translation key="test_and_balance_damper_motor" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="test_and_balance_uploaded" fixed="true">
+         <variant>.7</variant>
+      </translation>
+   </section>
+   <section id="trend_usage">
+      <translation key="trend_usage_location" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="trend_usage_equipment" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="trend_usage_display_name" fixed="true">
+         <variant>1</variant>
+      </translation>
+      <translation key="trend_usage_enabled" fixed="true">
+         <variant>.7</variant>
+      </translation>
+      <translation key="trend_usage_sample_interval" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="trend_usage_cov_increment" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="trend_usage_maximum_samples" fixed="true">
+         <variant>.9</variant>
+      </translation>
+      <translation key="trend_usage_stop_when_full" fixed="true">
+         <variant>.7</variant>
+      </translation>
+      <translation key="trend_usage_historian_enabled" fixed="true">
+         <variant>.7</variant>
+      </translation>
+      <translation key="trend_usage_historian_trigger" fixed="true">
+         <variant>.7</variant>
+      </translation>
+      <translation key="trend_usage_days_kept" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="trend_usage_first_sample" fixed="true">
+         <variant>1.4</variant>
+      </translation>
+      <translation key="trend_usage_last_sample" fixed="true">
+         <variant>1.4</variant>
+      </translation>
+      <translation key="trend_usage_samples_in_database" fixed="true">
+         <variant>.8</variant>
+      </translation>
+      <translation key="trend_usage_path" fixed="true">
+         <variant>3.5</variant>
+      </translation>
+      <translation key="report_header_location_tag" fixed="true">
+         <note>This is for the 'Location:' label on all report headers. The units MUST be specified. E.G. in, cm, *,
+            etc
+         </note>
+         <variant>.6in</variant>
+         <variant xml:lang="de">.8in</variant>
+         <variant xml:lang="es">.6in</variant>
+         <variant xml:lang="fr">.6in</variant>
+         <variant xml:lang="fr_FR">.6in</variant>
+         <variant xml:lang="it">.6in</variant>
+         <variant xml:lang="ja">.6in</variant>
+         <variant xml:lang="ko">.6in</variant>
+         <variant xml:lang="ru">.6in</variant>
+         <variant xml:lang="sv">.6in</variant>
+         <variant xml:lang="th">.6in</variant>
+         <variant xml:lang="vi">.6in</variant>
+         <variant xml:lang="zh">.6in</variant>
+         <variant xml:lang="zh_TW">.6in</variant>
+      </translation>
+      <translation key="report_header_path" fixed="true">
+         <note>This is for the location path on all report headers. Should be 1* normally for all languages.</note>
+         <variant>1*</variant>
+         <variant xml:lang="de">1*</variant>
+         <variant xml:lang="es">1*</variant>
+         <variant xml:lang="fr">1*</variant>
+         <variant xml:lang="fr_FR">1*</variant>
+         <variant xml:lang="it">1*</variant>
+         <variant xml:lang="ja">1*</variant>
+         <variant xml:lang="ko">1*</variant>
+         <variant xml:lang="ru">1*</variant>
+         <variant xml:lang="sv">1*</variant>
+         <variant xml:lang="th">1*</variant>
+         <variant xml:lang="vi">1*</variant>
+         <variant xml:lang="zh">1*</variant>
+         <variant xml:lang="zh_TW">1*</variant>
+      </translation>
+      <translation key="report_header_run_date" fixed="true">
+         <note>This is for the run date field on all report headers. The units MUST be specified. E.G. in, cm, *, etc.
+            Adjust to fit both the label and the date/time.
+         </note>
+         <variant>2.5in</variant>
+         <variant xml:lang="de">2.5in</variant>
+         <variant xml:lang="es">2.5in</variant>
+         <variant xml:lang="fr">2.5in</variant>
+         <variant xml:lang="fr_FR">2.5in</variant>
+         <variant xml:lang="it">2.5in</variant>
+         <variant xml:lang="ja">2.5in</variant>
+         <variant xml:lang="ko">2.5in</variant>
+         <variant xml:lang="ru">2.5in</variant>
+         <variant xml:lang="sv">2.5in</variant>
+         <variant xml:lang="th">2.5in</variant>
+         <variant xml:lang="vi">2.5in</variant>
+         <variant xml:lang="zh">2.5in</variant>
+         <variant xml:lang="zh_TW">2.5in</variant>
+      </translation>
+      <translation key="event_header_height" fixed="true">
+         <variant>62px</variant>
+         <variant xml:lang="de">93px</variant>
+         <variant xml:lang="es">93px</variant>
+         <variant xml:lang="fr">93px</variant>
+         <variant xml:lang="fr_FR">93px</variant>
+         <variant xml:lang="it">93px</variant>
+         <variant xml:lang="ja">62px</variant>
+         <variant xml:lang="ko">62px</variant>
+         <variant xml:lang="ru">62px</variant>
+         <variant xml:lang="sv">62px</variant>
+         <variant xml:lang="th">62px</variant>
+         <variant xml:lang="vi">93px</variant>
+         <variant xml:lang="zh">62px</variant>
+         <variant xml:lang="zh_TW">62px</variant>
+      </translation>
+      <translation key="network_header_height" fixed="true">
+         <variant>52px</variant>
+         <variant xml:lang="de">52px</variant>
+         <variant xml:lang="es">78px</variant>
+         <variant xml:lang="fr">78px</variant>
+         <variant xml:lang="fr_FR">78px</variant>
+         <variant xml:lang="it">78px</variant>
+         <variant xml:lang="ja">52px</variant>
+         <variant xml:lang="ko">52px</variant>
+         <variant xml:lang="ru">78px</variant>
+         <variant xml:lang="sv">52px</variant>
+         <variant xml:lang="th">52px</variant>
+         <variant xml:lang="vi">52px</variant>
+         <variant xml:lang="zh">52px</variant>
+         <variant xml:lang="zh_TW">52px</variant>
+      </translation>
+   </section>
+</resource-base>

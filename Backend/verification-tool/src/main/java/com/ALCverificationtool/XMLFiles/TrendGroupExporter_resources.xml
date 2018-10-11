@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="resources" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="resources">
+        <!--  Edit Group Page Translations-->
+        <translation approved="false" key="Edit_Group_Type" new="true">
+            <note/>
+            <variant>Tipo de datos</variant>
+        </translation>
+        <translation approved="false" key="Edit_Group_Size" new="true">
+            <note/>
+            <variant>Tamaño del Búfer</variant>
+        </translation>
+        <translation approved="false" key="Edit_Group_Trigger" new="true">
+            <note/>
+            <variant>Activador de informes</variant>
+        </translation>
+        <translation approved="false" key="Edit_Group_Lookup" new="true">
+            <note/>
+            <variant>Tecla de búsqueda</variant>
+        </translation>
+        <translation approved="false" key="Edit_Source_Group_Details" new="true">
+            <note/>
+            <variant>Detalles de grupo de fuente de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Edit_Select_All_Sources" new="true">
+            <note/>
+            <variant>Seleccionar todas las fuentes</variant>
+        </translation>
+        <translation approved="false" key="TrendSources_Configured" new="true">
+            <note/>
+            <variant>Fuentes de tendencia configuradas para exportación en grupo</variant>
+        </translation>
+        <translation approved="false" key="Edit_Source_Assignment" new="true">
+            <note/>
+            <variant>Asignación de fuente de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Source_Selection_Per_Scope" new="true">
+            <note/>
+            <variant>Selección de fuente por alcance</variant>
+        </translation>
+        <translation approved="false" key="Edit_Scope_Selection" new="true">
+            <note/>
+            <variant>Selección de alcance de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Edit_Filter_Sources" new="true">
+            <note/>
+            <variant>Filtrar fuentes</variant>
+        </translation>
+        <translation approved="false" key="Edit_Auto_Filter_Source" new="true">
+            <note/>
+            <variant>Filtrar fuentes automáticamente</variant>
+        </translation>
+        <translation approved="false" key="Edit_Group_Definition" new="true">
+            <note/>
+            <variant>Editar definición de grupo</variant>
+        </translation>
+        <translation approved="false" key="CloneOf" new="true">
+            <note/>
+            <variant>Duplicado de</variant>
+        </translation>
+        <translation approved="false" key="Edit_Tree_Scope" new="true">
+            <note/>
+            <variant>Alcance de árbol</variant>
+        </translation>
+        <translation approved="false" key="Selected_Trend_Scopes" new="true">
+            <note/>
+            <variant>
+                Alcances de tendencia seleccionados</variant>
+        </translation>
+        <translation approved="false" key="Edit_Initial_Export_Range" new="true">
+            <note/>
+            <variant>Rango de exportación inicial</variant>
+        </translation>
+        <translation approved="false" key="Edit_Show_Select_Sources" new="true">
+            <note/>
+            <variant>Mostrar fuentes de tendencias seleccionadas</variant>
+        </translation>
+        <translation approved="false" key="Edit_Hide_Select_Sources" new="true">
+            <note/>
+            <variant>Ocultar fuentes de tendencias seleccionadas</variant>
+        </translation>
+        <translation approved="false" key="Edit_Export_Format" new="true">
+            <note/>
+            <variant>Formato de exportación</variant>
+        </translation>
+        <translation approved="false" key="Edit_Export_All_Trends_Radio" new="true">
+            <note/>
+            <variant>Exportar todas la fuentes dentro del alcance seleccionado</variant>
+        </translation>
+        <translation approved="false" key="Edit_Export_Specific_Trends_Radio" new="true">
+            <note/>
+            <variant>Seleccionar fuentes para exportar dentro del alcance seleccionado</variant>
+        </translation>
+        <translation approved="false" key="Color_Trends" new="true">
+            <note/>
+            <variant>Tendencia de Color</variant>
+        </translation>
+        <!--  Manage Group Page Translations-->
+        <translation approved="false" key="Create_New_Group" new="true">
+            <note/>
+            <variant>Crear nuevo grupo</variant>
+        </translation>
+        <translation approved="false" key="Copy_Group" new="true">
+            <note/>
+            <variant>Copiar grupo</variant>
+        </translation>
+        <translation approved="false" key="Trend_Group_Definitions " new="true">
+            <note/>
+            <variant>Definiciones de grupo de tendencias</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Edit" new="true">
+            <note/>
+            <variant>Editar</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Id" new="true">
+            <note/>
+            <variant>Identificador</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Format" new="true">
+            <note/>
+            <variant>Formato de exportación</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Delete" new="true">
+            <note/>
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Export" new="true">
+            <note/>
+            <variant>Exportación manual</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Sources_List" new="true">
+            <note/>
+            <variant>Lista de todas las fuentes de tendencia de exportación por grupo</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group_Artifacts_List" new="true">
+            <note/>
+            <variant>Lista de todos los artefactos de exportación por grupo</variant>
+        </translation>
+        <translation approved="false" key="Add_Scope_To_Group" new="true">
+            <note/>
+            <variant>Agregar alcance seleccionado al grupo</variant>
+        </translation>
+        <translation approved="false" key="Delete_Export_Scope_Tags_For" new="true">
+            <note/>
+            <variant>Eliminar alcance de exportación para</variant>
+        </translation>
+        <translation approved="false" key="Edit_Scope_Tags_For" new="true">
+            <note/>
+            <variant>Editar alcance de exportación para</variant>
+        </translation>
+        <translation approved="false" key="Id_Unique_Among_Definitions" new="true">
+            <note/>
+            <variant>El identificador de grupo debe ser único entre todas las definiciones de grupo.</variant>
+        </translation>
+        <translation approved="false" key="Name_Unique_Among_Definitions" new="true">
+            <note/>
+            <variant>El nombre de grupo debe ser único entre todas las definiciones de grupo.</variant>
+        </translation>
+        <translation approved="false" key="Group_Saved" new="true">
+            <note/>
+            <variant>Se ha guardado el grupo de exportación de tendencia nuevo:</variant>
+        </translation>
+        <translation approved="false" key="Group_Updated" new="true">
+            <note/>
+            <variant>Se ha actualizado el grupo de exportación de tendencia:</variant>
+        </translation>
+        <!--  Settings Page Translations-->
+        <translation approved="false" key="Settings_System" new="true">
+            <note/>
+            <variant>Configuración del sistema</variant>
+        </translation>
+        <translation approved="false" key="Settings_Save" new="true">
+            <note/>
+            <variant>Guardar ajustes</variant>
+        </translation>
+        <translation approved="false" key="Settings_Export_Process" new="true">
+            <note/>
+            <variant>Exportar ajustes de proceso</variant>
+        </translation>
+        <translation approved="false" key="Site_Identifier" new="true">
+            <note/>
+            <variant>Identificador de sitio</variant>
+        </translation>
+        <translation approved="false" key="Hour_Schedule_Step" new="true">
+            <note/>
+            <variant>Programaciones horarias:  minutos después de la hora de inicio</variant>
+        </translation>
+        <translation approved="false" key="Daily_Schedule_Step" new="true">
+            <note/>
+            <variant>Programaciones diarias: hora de inicio</variant>
+        </translation>
+        <translation approved="false" key="Settings_Deletion" new="true">
+            <note/>
+            <variant>Activar eliminación automática de artefacto</variant>
+        </translation>
+        <translation approved="false" key="Settings_Delete_Older" new="true">
+            <note/>
+            <variant>Eliminar del disco los artefactos de antigüedad superior al n.º de días especificado</variant>
+        </translation>
+        <translation approved="false" key="Settings_Schedule_Definitions" new="true">
+            <note/>
+            <variant>Definiciones de horarios</variant>
+        </translation>
+        <translation approved="false" key="2Years_of_Data" new="true">
+            <note/>
+            <variant>2 años de datos</variant>
+        </translation>
+        <translation approved="false" key="1Year_of_Data" new="true">
+            <note/>
+            <variant>1 año de datos</variant>
+        </translation>
+        <translation approved="false" key="3Months_of_Data" new="true">
+            <note/>
+            <variant>3 meses de datos</variant>
+        </translation>
+        <translation approved="false" key="30Days_of_Data" new="true">
+            <note/>
+            <variant>30 días de datos</variant>
+        </translation>
+        <translation approved="false" key="7Days_of_Data" new="true">
+            <note/>
+            <variant>7 días de datos</variant>
+        </translation>
+        <translation approved="false" key="1Day_of_Data" new="true">
+            <note/>
+            <variant>1 día de datos</variant>
+        </translation>
+        <translation approved="false" key="1Hour_of_Data" new="true">
+            <note/>
+            <variant>1 hora de datos</variant>
+        </translation>
+        <translation approved="false" key="Setting_Export_Priority" new="true">
+            <note/>                                                                                                                       .
+            <variant>Prioridad de proceso de exportación</variant>
+        </translation>
+        <translation approved="false" key="Settings_Suspend_Export" new="true">
+            <note/>
+            <variant>Suspender proceso de exportación</variant>
+        </translation>
+        <translation approved="false" key="Setting_Artifact_Dir" new="true">
+            <note/>
+            <variant>Directorio de exportación de artefactos</variant>
+        </translation>
+        <!--  Artifacts Page Translations-->
+        <translation approved="false" key="Artifact_Success" new="true">
+            <note/>
+            <variant>Correcto</variant>
+        </translation>
+        <translation approved="false" key="Artifact_Progressing" new="true">
+            <note/>
+            <variant>En curso</variant>
+        </translation>
+        <translation approved="false" key="Artifact_Failed" new="true">
+            <note/>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="false" key="Artifact_Suspended" new="true">
+            <note/>
+            <variant>Suspendido</variant>
+        </translation>
+        <translation approved="false" key="Artifact_Preempted" new="true">
+            <note/>
+            <variant>Bloqueado</variant>
+        </translation>
+        <translation approved="false" key="Artifact_Trend_Data_History" new="true">
+            <note/>
+            <variant>Historial de exportaciones de datos de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Schedule_Time" new="true">
+            <note/>
+            <variant>Programar horario</variant>
+        </translation>
+        <translation approved="false" key="Schedule_Id" new="true">
+            <note/>
+            <variant>Horario</variant>
+        </translation>
+        <!--  Commonly Used Translations-->
+        <translation approved="false" key="Unscheduled" new="true">
+            <note/>
+            <variant>Sin horario</variant>
+        </translation>
+        <translation approved="false" key="OnDemand" new="true">
+            <note/>
+            <variant>A demanda</variant>
+        </translation>
+        <translation approved="false" key="Daily" new="true">
+            <note/>
+            <variant>Diariamente</variant>
+        </translation>
+        <translation approved="false" key="Hourly" new="true">
+            <note/>
+            <variant>Cada hora</variant>
+        </translation>
+        <translation approved="false" key="Cron" new="true">
+            <note/>
+            <variant>Cron</variant>
+        </translation>
+        <translation approved="false" key="Hourly_Definition" new="true">
+            <note/>
+            <variant>Esta es una programación predeterminada que se ejecuta cada hora de forma indefinida para exportar muestras de tendencias desde 
+                la hora actual hasta la última muestra exportada conocida.
+            </variant>
+        </translation>
+        <translation approved="false" key="Daily_Definition" new="true">
+            <note/>
+            <variant>Esta es una programación predeterminada que se ejecuta cada 24 horas para exportar muestras de tendencias desde 
+                la hora actual hasta la última muestra exportada conocida
+            </variant>
+        </translation>
+        <translation approved="false" key="OnDemand_Definition" new="true">
+            <note/>
+            <variant>Esta es una programación predeterminada que se ejecuta a demanda del usuario para exportar muestras de tendencias desde 
+                la hora actual hasta la última muestra exportada conocida.
+            </variant>
+        </translation>
+        <translation approved="false" key="Cron_Definition" new="true">
+            <note/>
+            <variant>Esta es una programación predeterminada que nunca se ejecuta y significa que la programación debe asignarse o
+                ejecutarse solo a demanda.
+            </variant>
+        </translation>
+        <translation approved="false" key="Unscheduled_Definition" new="true">
+            <note/>
+            <variant>Esta es una programación predeterminada que nunca se ejecuta y significa que la programación debe asignarse o
+                ejecutarse solo a demanda.
+            </variant>
+        </translation>
+        <translation approved="false" key="SingleSourceCSV" new="true">
+            <note/>
+            <variant>csv por fuente</variant>
+        </translation>
+        <translation approved="false" key="CombinedSourceCSV" new="true">
+            <note/>
+            <variant>csv por grupo</variant>
+        </translation>
+        <translation approved="false" key="combined" new="true">
+            <note/>
+            <variant>combinado</variant>
+        </translation>
+        <translation approved="false" key="csv" new="true">
+            <note/>
+            <variant>csv</variant>
+        </translation>
+        <translation approved="false" key="Unique" new="true">
+            <note/>
+            <variant>Único</variant>
+        </translation>
+        <translation approved="false" key="Schedule" new="true">
+            <note/>
+            <variant>Horario</variant>
+        </translation>
+        <translation approved="false" key="Save" new="true">
+            <note/>
+            <variant>Grabar</variant>
+        </translation>
+        <translation approved="false" key="Update" new="true">
+            <note/>
+            <variant>Actualizar datos</variant>
+        </translation>
+        <translation approved="false" key="Logout" new="true">
+            <note/>
+            <variant>Log out</variant>
+        </translation>
+        <translation approved="false" key="Help" new="true">
+            <note/>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="false" key="Edit_Group" new="true">
+            <note/>
+            <variant>Editar grupo</variant>
+        </translation>
+        <translation approved="false" key="Save_Cloned_Group" new="true">
+            <note/>
+            <variant>Guardar grupo duplicado</variant>
+        </translation>
+        <translation approved="false" key="Manage_Group" new="true">
+            <note/>
+            <variant>Administrar grupos</variant>
+        </translation>
+        <translation approved="false" key="Trend_Group_Definitions" new="true">
+            <note/>
+            <variant>Definiciones de grupo de tendencias</variant>
+        </translation>
+        <translation approved="false" key="Settings" new="true">
+            <note/>
+            <variant>Configuración</variant>
+        </translation>
+        <translation approved="false" key="Artifacts" new="true">
+            <note/>
+            <variant>Artefactos</variant>
+        </translation>
+        <translation approved="false" key="Export_History" new="true">
+            <note/>
+            <variant>Historial de exportación</variant>
+        </translation>
+        <translation approved="false" key="Unique" new="true">
+            <note/>
+            <variant>único</variant>
+        </translation>
+        <translation approved="false" key="True" new="true">
+            <note/>
+            <variant>Verdadero</variant>
+        </translation>
+        <translation approved="false" key="Talse" new="true">
+            <note/>
+            <variant>Falso</variant>
+        </translation>
+        <translation approved="false" key="Display" new="true">
+            <note/>
+            <variant>Mostrar</variant>
+        </translation>
+        <translation approved="false" key="Status" new="true">
+            <note/>
+            <variant>Estado</variant>
+        </translation>
+        <translation approved="false" key="Group_Id" new="true">
+            <note/>
+            <variant>ID de grupo</variant>
+        </translation>
+        <translation approved="false" key="Group_Name" new="true">
+            <note/>
+            <variant>Nombre de grupo</variant>
+        </translation>
+        <translation approved="false" key="Sources" new="true">
+            <note/>
+            <variant>Fuente</variant>
+        </translation>
+        <translation approved="false" key="Failed_Sources" new="true">
+            <note/>
+            <variant>Se ha producido un error en las fuentes</variant>
+        </translation>
+        <translation approved="false" key="Apply" new="true">
+            <note/>
+            <variant>Aplicar</variant>
+        </translation>
+        <translation approved="false" key="Actions" new="true">
+            <note/>
+            <variant>Acciones</variant>
+        </translation>
+        <translation approved="false" key="Start_Time" new="true">
+            <note/>
+            <variant>Tiempo de comienzo</variant>
+        </translation>
+        <translation approved="false" key="Run_Time" new="true">
+            <note/>
+            <variant>Tiempo de ejecución</variant>
+        </translation>
+        <translation approved="false" key="End_Time" new="true">
+            <note/>
+            <variant>Tiempo de finalización</variant>
+        </translation>
+        <translation approved="false" key="Sample_Count" new="true">
+            <note/>
+            <variant>Número de muestras</variant>
+        </translation>
+        <translation approved="false" key="Download" new="true">
+            <note/>
+            <variant>Descargar</variant>
+        </translation>
+        <translation approved="false" key="Name" new="true">
+            <note/>
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="false" key="Time" new="true">
+            <note/>
+            <variant>Hora</variant>
+        </translation>
+        <translation approved="false" key="New_Group" new="true">
+            <note/>
+            <variant>Grupo nuevo</variant>
+        </translation>
+        <translation approved="false" key="NewGroup" new="true">
+            <note/>
+            <variant>NewGroup</variant>
+        </translation>
+        <translation approved="false" key="ConfirmDeleteRequest" new="true">
+            <note/>
+            <variant>Confirmar solicitud de eliminación</variant>
+        </translation>
+        <translation approved="false" key="DeleteScopeConfirmation" new="true">
+            <note/>
+            <variant>Se eliminará la definición del alcance de exportación de tendencia seleccionado:</variant>
+        </translation>
+        <translation approved="false" key="DeleteArtifactConfirmation" new="true">
+            <note/>
+            <variant>Se eliminarán los directorios y los archivos de artefactos de exportación seleccionados ¿Desea continuar?</variant>
+        </translation>
+        <translation approved="false" key="DeleteGroupConfirmation" new="true">
+            <note/>
+            <variant>Se eliminará la definición del grupo de exportación seleccionado. ¿Desea continuar?</variant>
+        </translation>
+        <translation approved="false" key="ExportSubmitInfo" new="true">
+            <note/>
+            <variant>Exportar información de envío</variant>
+        </translation>
+        <translation approved="false" key="ManualExportNoSubmit" new="true">
+            <note/>
+            <variant>No se puede enviar una exportación manual mientras haya otra en proceso.</variant>
+        </translation>
+        <translation approved="false" key="ExportActionInfo" new="true">
+            <note/>
+            <variant>Información de acción de exportación</variant>
+        </translation>
+        <translation approved="false" key="GroupActionInfo" new="true">
+            <note/>
+            <variant>Información de acción de grupo</variant>
+        </translation>
+        <translation approved="false" key="Ok" new="true">
+            <note/>
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="false" key="Cancel" new="true">
+            <note/>
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="false" key="FieldRequired" new="true">
+            <note/>
+            <variant>Este campo es obligatorio</variant>
+        </translation>
+        <translation approved="false" key="BadRetentionFormat" new="true">
+            <note/>
+            <variant>El periodo de retención debe ser un número del 1 al 180</variant>
+        </translation>
+        <translation approved="false" key="MustBe6To25" new="true">
+            <note/>
+            <variant>Debe ser un valor sin espacios entre 6 y 25 caracteres</variant>
+        </translation>
+        <translation approved="false" key="RequiredField" new="true">
+            <note/>
+            <variant>Este campo es obligatorio</variant>
+        </translation>
+        <translation approved="false" key="MultiSelect" new="true">
+            <note/>
+            <variant>Haga clic en Ctrl para ordenar en múltiples columnas</variant>
+        </translation>
+        <translation approved="false" key="AreYouSure" new="true">
+            <note/>
+            <variant>¿Desea continuar?</variant>
+        </translation>
+    </section>
+</resource-base>

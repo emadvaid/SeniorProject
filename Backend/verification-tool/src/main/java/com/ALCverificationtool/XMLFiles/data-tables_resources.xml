@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="resources" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="resources">
+        <translation approved="false" key="warningsClickToShow" new="true">
+            <variant>Advertencias: haga clic para mostrar</variant>
+        </translation>
+        <translation approved="false" key="ignorePageWidthHelp" new="true">
+            <note/>
+            <variant>Si el informe excede el ancho de la página, haga clic en este campo para mostrar todas las columnas en el PDF en línea.</variant>
+        </translation>
+        <translation approved="false" key="pageSize" new="true">
+            <note/>
+            <variant>Tamaño de página</variant>
+        </translation>
+        <translation approved="false" key="Letter" new="true">
+            <note/>
+            <variant>Carta</variant>
+        </translation>
+        <translation approved="false" key="Legal" new="true">
+            <note/>
+            <variant>Legal</variant>
+        </translation>
+        <translation approved="false" key="_11X17" new="true">
+            <note/>
+            <variant>11x17</variant>
+        </translation>
+        <translation approved="false" key="expressionSyntaxHelp" new="true">
+            <note/>
+            <variant>Admite cálculos matemáticos (números y cadenas) y variables. Una expresión puede contener:
+
+Un ID de columna: refiera a otra columna dentro del informe mediante su id de columna entre símbolos de dólar (por ejemplo:  $zone_temp$)
+Una ruta: indique la ruta entre símbolos de dólar (por ejemplo:  $rtu-1/freezestat$)
+Una variable de informe: indique la variable entre símbolos de dólar (por ejemplo:  $max_limit$). La variable debe estar definida en la pestaña de variables.</variant>
+        </translation>
+        <translation approved="false" key="String" new="true">
+            <note/>
+            <variant>Cadena</variant>
+        </translation>
+        <translation approved="false" key="tableAlreadyExists" new="true">
+            <note/>
+            <variant>La tabla ya existe</variant>
+        </translation>
+        <translation approved="false" key="sawtoothConsumption" new="true">
+            <note/>
+            <variant>Consumo agregado</variant>
+        </translation>
+        <translation approved="false" key="formatFunctionHelp" new="true">
+            <note/>
+            <variant>Da formato a un valor mediante la función de formato Java String.
+Para obtener más información, busque en internet "formato de cadenas con java 8".</variant>
+        </translation>
+        <translation approved="false" key="path" new="true">
+            <note/>
+            <variant>Ruta</variant>
+        </translation>
+        <translation approved="false" key="includeRowWhen" new="true">
+            <note/>
+            <variant>Incluir fila cuando</variant>
+        </translation>
+        <translation approved="false" key="controlProgramsListEmpty" new="true">
+            <note/>
+            <variant>El campo de lista de programas de control no puede estar vacío</variant>
+        </translation>
+        <translation approved="false" key="trendPath" new="true">
+            <note/>
+            <variant>Ruta de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Quarters" new="true">
+            <note/>
+            <variant>Trimestre</variant>
+        </translation>
+        <translation approved="false" key="maxValueWithTime" new="true">
+            <note/>
+            <variant>Valor máximo c/hora</variant>
+        </translation>
+        <translation approved="false" key="Weeks" new="true">
+            <note/>
+            <variant>Semanas</variant>
+        </translation>
+        <translation approved="false" key="past" new="true">
+            <note/>
+            <variant>Pasado</variant>
+        </translation>
+        <translation approved="false" key="headerColumnName" new="true">
+            <note/>
+            <variant>Mostrar la etiqueta de las opciones anteriores en la columna</variant>
+        </translation>
+        <translation approved="false" key="sortColumnListHelp" new="true">
+            <note/>
+            <variant>Introducir la lista separada por comas de los ID de columna</variant>
+        </translation>
+        <translation approved="false" key="renderColumn" new="true">
+            <note/>
+            <variant>Representar los datos como</variant>
+        </translation>
+        <translation approved="false" key="averageValue" new="true">
+            <note/>
+            <variant>Valor promedio</variant>
+        </translation>
+        <translation approved="false" key="tableEditor" new="true">
+            <note/>
+            <variant>Editor de informes</variant>
+        </translation>
+        <translation approved="false" key="OrEnterLocation" new="true">
+            <note/>
+            <variant>O introducir ubicación</variant>
+        </translation>
+        <translation approved="false" key="SystemGeo" new="true">
+            <note/>
+            <variant>Sistema - Geográfico</variant>
+        </translation>
+        <translation approved="false" key="startDate" new="true">
+            <note/>
+            <variant>Fecha de inicio</variant>
+        </translation>
+        <translation approved="false" key="ValueRenderHelp" new="true">
+            <note/>
+            <variant>El valor aparece en el informe</variant>
+        </translation>
+        <translation approved="false" key="dateRange" new="true">
+            <note/>
+            <variant>Rango de fechas</variant>
+        </translation>
+        <translation approved="false" key="displayName" new="true">
+            <note/>
+            <variant>Mostrar nombre</variant>
+        </translation>
+        <translation approved="false" key="HiddenRenderHelp" new="true">
+            <note/>
+            <variant>La columna se oculta en el informe</variant>
+        </translation>
+        <translation approved="false" key="showRefNames" new="true">
+            <note/>
+            <variant>Mostrar ID de columna</variant>
+        </translation>
+        <translation approved="false" key="startEndDaySample" new="true">
+            <note/>
+            <variant>Muestra de intervalo</variant>
+        </translation>
+        <translation approved="false" key="existingtableRowHelp" new="true">
+            <note/>
+            <variant>Inserta un informe existente para que pueda añadir columnas.
+ Los cambios en el informe original también se aplicarán a este informe.</variant>
+        </translation>
+        <translation approved="false" key="colorgradientFunctionHelp" new="true">
+            <note/>
+            <variant>Convierte un número máximo y mínimo definidos cada uno en un color. A continuación, asigna números comprendidos entre el mínimo y el máximo a colores para formar un degradado.
+Formato:     mín,máx,color1,color2
+Ejemplo 1:  1, 10, rojo, azul
+Ejemplo 2:  1, 10, #FF0000, #0000FF</variant>
+        </translation>
+        <translation approved="false" key="From_Column" new="true">
+            <note/>
+            <variant>Desde la columna</variant>
+        </translation>
+        <translation approved="false" key="Days" new="true">
+            <note/>
+            <variant>Días</variant>
+        </translation>
+        <translation approved="false" key="Day" new="true">
+            <note/>
+            <variant>Una vez al día</variant>
+        </translation>
+        <translation approved="false" key="Hour" new="true">
+            <note/>
+            <variant>Cada hora</variant>
+        </translation>
+        <translation approved="false" key="FifteenMinute" new="true">
+            <note/>
+            <variant>Cada 15 minutos</variant>
+        </translation>
+        <translation approved="false" key="where" new="true">
+            <note/>
+            <variant>Dónde</variant>
+        </translation>
+        <translation approved="false" key="columnFormat" new="true">
+            <note/>
+            <variant>Formato de columna</variant>
+        </translation>
+        <translation approved="false" key="selectRowType" new="true">
+            <note/>
+            <variant>Seleccionar columna principal</variant>
+        </translation>
+        <translation approved="false" key="runButtonTitle" new="true">
+            <note/>
+            <variant>Ejecutar</variant>
+        </translation>
+        <translation approved="false" key="IconRenderHelp" new="true">
+            <note/>
+            <variant>El icono aparece en el informe</variant>
+        </translation>
+        <translation approved="false" key="setWhereType" new="true">
+            <note/>
+            <variant>Definir dónde</variant>
+        </translation>
+        <translation approved="false" key="controlPrograms" new="true">
+            <note/>
+            <variant>Programas de control</variant>
+        </translation>
+        <translation approved="false" key="meanKineticTempF" new="true">
+            <note/>
+            <variant>Temperatura cinética media (grados F)</variant>
+        </translation>
+        <translation approved="false" key="variables" new="true">
+            <note/>
+            <variant>Variables</variant>
+        </translation>
+        <translation approved="false" key="expression" new="true">
+            <note/>
+            <variant>Expresión</variant>
+        </translation>
+        <translation approved="false" key="includeEquipmentColor" new="true">
+            <note/>
+            <variant>Incluir columna de color de equipamiento</variant>
+        </translation>
+        <translation approved="false" key="includingCurrent" new="true">
+            <note/>
+            <variant>incluido actual</variant>
+        </translation>
+        <translation approved="false" key="refresh" new="true">
+            <note/>
+            <variant>Actualizar</variant>
+        </translation>
+        <translation approved="false" key="replaced" new="true">
+            <note/>
+            <variant>Reemplazar</variant>
+        </translation>
+        <translation approved="false" key="exportReport" new="true">
+            <note/>
+            <variant>Exportar informe</variant>
+        </translation>
+        <translation approved="false" key="importReport" new="true">
+            <note/>
+            <variant>Importar informe</variant>
+        </translation>
+        <translation approved="false" key="SystemNet" new="true">
+            <note/>
+            <variant>Sistema - Red</variant>
+        </translation>
+        <translation approved="false" key="operation" new="true">
+            <note/>
+            <variant>Operación</variant>
+        </translation>
+        <translation approved="false" key="chart" new="true">
+            <note/>
+            <variant>Gráfica</variant>
+        </translation>
+        <translation approved="false" key="enterReferenceName" new="true">
+            <note/>
+            <variant>Introducir un nombre de referencia</variant>
+        </translation>
+        <translation approved="false" key="fontSizeHelp" new="true">
+            <note/>
+            <variant>Introducir "0" para el tamaño predeterminado</variant>
+        </translation>
+        <translation approved="false" key="ordinalFunctionHelp" new="true">
+            <note/>
+            <variant>Convierte una enumeración de texto en su valor entero si es posible.</variant>
+        </translation>
+        <translation approved="false" key="showLegend" new="true">
+            <note/>
+            <variant>Mostrar leyenda</variant>
+        </translation>
+        <translation approved="false" key="language" new="true">
+            <note/>
+            <variant>Idioma seleccionado inglés</variant>
+        </translation>
+        <translation approved="false" key="rowType" new="true">
+            <note/>
+            <variant>Columna principal</variant>
+        </translation>
+        <translation approved="false" key="setRowType" new="true">
+            <note/>
+            <variant>Cambiar</variant>
+        </translation>
+        <translation approved="false" key="showTimeOfSample" new="true">
+            <note/>
+            <variant>Mostrar hora de la muestra</variant>
+        </translation>
+        <translation approved="false" key="minValueWithTime" new="true">
+            <note/>
+            <variant>Valor mínimo c/hora</variant>
+        </translation>
+        <translation approved="false" key="add" new="true">
+            <note/>
+            <variant>Agregar</variant>
+        </translation>
+        <translation approved="false" key="Must_select_show" new="true">
+            <note/>
+            <variant>Debe seleccionar "Mostrar en menú Informes"</variant>
+        </translation>
+        <translation approved="false" key="exportButtonTitle" new="true">
+            <note/>
+            <variant>Exportar</variant>
+        </translation>
+        <translation approved="false" key="Years" new="true">
+            <note/>
+            <variant>Años</variant>
+        </translation>
+        <translation approved="false" key="patterns" new="true">
+            <note/>
+            <variant>Modelo</variant>
+        </translation>
+        <translation approved="false" key="Color" new="true">
+            <note/>
+            <variant>Color</variant>
+        </translation>
+        <translation approved="false" key="dateRangeHelp" new="true">
+            <note/>
+            <variant>Introducir valor o nombre de variable para la cantidad/fecha.
+El formato del valor de fecha es aaaa/mm/dd</variant>
+        </translation>
+        <translation approved="false" key="stringtointFunctionHelp" new="true">
+            <note/>
+            <variant>Convierte el texto en un valor entero. La coincidencia no distingue entre mayúsculas y minúsculas.
+Formato de argumento:
+Lista de instrucciones separada por comas.
+Formato de cada instrucción:  texto=#
+Ejemplo 1:  Off=0,On=1  -o-  off=0  -o-  OFF=0
+Ejemplo 2:  a*=1,b*=2
+	a=1  -o-  APPLE=1
+	B=2  -o-  Book=2</variant>
+        </translation>
+        <translation approved="false" key="userEditableVariable" new="true">
+            <note/>
+            <variant>Editable por el usuario</variant>
+        </translation>
+        <translation approved="false" key="wildcardHelp" new="true">
+            <note/>
+            <variant>Puede utilizar comodines. Por ejemplo, introduzca:
+abc* para encontrar resultados que empiecen por abc
+*abc para encontrar resultados que terminen por abc
+*abc* para encontrar resultados que contengan abc
+</variant>
+        </translation>
+        <translation approved="false" key="showTimeOfSampleHelp" new="true">
+            <note/>
+            <variant>Se aplica solo a las operaciones de la lista desplegable anterior que muestren "c/hora"</variant>
+        </translation>
+        <translation approved="false" key="saveAsPdf" new="true">
+            <note/>
+            <variant>PDF</variant>
+        </translation>
+        <translation approved="false" key="Area" new="true">
+            <note/>
+            <variant>Área</variant>
+        </translation>
+        <translation approved="false" key="selectAll" new="true">
+            <note/>
+            <variant>Seleccionar todo</variant>
+        </translation>
+        <translation approved="false" key="showTitle" new="true">
+            <note/>
+            <variant>Mostrar título</variant>
+        </translation>
+        <translation approved="false" key="byreferencenameRowHelp" new="true">
+            <note/>
+            <variant>La lista de ubicaciones está basada en el nombre de referencia con comodines</variant>
+        </translation>
+        <translation approved="false" key="sumOfValues" new="true">
+            <note/>
+            <variant>Suma de valores</variant>
+        </translation>
+        <translation approved="false" key="name" new="true">
+            <note/>
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="false" key="Only24End" new="true">
+            <note/>
+            <variant>Excluir hora de inicio/incluir hora de finalización</variant>
+        </translation>
+        <translation approved="false" key="Icon" new="true">
+            <note/>
+            <variant>Icono</variant>
+        </translation>
+        <translation approved="false" key="Only00Start" new="true">
+            <note/>
+            <variant>Incluir hora de inicio/excluir hora de finalización</variant>
+        </translation>
+        <translation approved="false" key="preview" new="true">
+            <note/>
+            <variant>Vista preliminar</variant>
+        </translation>
+        <translation approved="false" key="fieldsNotValidMsg" new="true">
+            <note/>
+            <variant>Los campos no son válidos</variant>
+        </translation>
+        <translation approved="false" key="previewDataFailedMsg" new="true">
+            <note/>
+            <variant>Error de previsualización de datos</variant>
+        </translation>
+        <translation approved="false" key="showInReportMenu" new="true">
+            <note/>
+            <variant>Mostrar en menú Informes</variant>
+        </translation>
+        <translation approved="false" key="showMinimum" new="true">
+            <note/>
+            <variant>Mostrar mínimo</variant>
+        </translation>
+        <translation approved="false" key="show" new="true">
+            <note/>
+            <variant>Mostrar</variant>
+        </translation>
+        <translation approved="false" key="for" new="true">
+            <note/>
+            <variant>para </variant>
+        </translation>
+        <translation approved="false" key="Driver" new="true">
+            <note/>
+            <variant>Controlador</variant>
+        </translation>
+        <translation approved="false" key="primaryColumnHeader" new="true">
+            <note/>
+            <variant>Encabezado de columna principal</variant>
+        </translation>
+        <translation approved="false" key="previewLocations" new="true">
+            <note/>
+            <variant>Previsualizar ubicaciones</variant>
+        </translation>
+        <translation approved="false" key="showDebugInformationTitle" new="true">
+            <note/>
+            <variant>Mostrar información de depuración</variant>
+        </translation>
+        <translation approved="false" key="skipped" new="true">
+            <note/>
+            <variant>Omitido</variant>
+        </translation>
+        <translation approved="false" key="ignorePageWidth" new="true">
+            <note/>
+            <variant>Ignorar ancho de página</variant>
+        </translation>
+        <translation approved="false" key="locationListEmpty" new="true">
+            <note/>
+            <variant>La lista de ubicación no puede estar vacía</variant>
+        </translation>
+        <translation approved="false" key="existingTableName" new="true">
+            <note/>
+            <variant>Nombre de informe existente</variant>
+        </translation>
+        <translation approved="false" key="Number" new="true">
+            <note/>
+            <variant>Número</variant>
+        </translation>
+        <translation approved="false" key="importInstructions" new="true">
+            <note/>
+            <variant>Seleccionar un archivo .table o .zip</variant>
+        </translation>
+        <translation approved="false" key="excludeRowWhen" new="true">
+            <note/>
+            <variant>Excluir fila cuando</variant>
+        </translation>
+        <translation approved="false" key="dateRangeFormat" new="true">
+            <note/>
+            <variant>Formato de rango de fechas en informe</variant>
+        </translation>
+        <translation approved="false" key="frequency" new="true">
+            <note/>
+            <variant>Frecuencia</variant>
+        </translation>
+        <translation approved="false" key="previous" new="true">
+            <note/>
+            <variant>Anterior</variant>
+        </translation>
+        <translation approved="false" key="fullName" new="true">
+            <note/>
+            <variant>Nombre completo</variant>
+        </translation>
+        <translation approved="false" key="bucketFunctionHelp" new="true">
+            <note/>
+            <variant>Convierte un número en un valor de texto.
+Formato de argumento:
+Definir un conjunto de instrucciones separadas por comas.
+Formato de cada instrucción:  límite inferior=valor
+Ejemplo 1:  0=F,60=D,70=C,80=B,90=A,100=A+
+Ejemplo 2:  F,60=D,70=C,80=B,90=A,100=A+
+(el primer depósito es el predeterminado para cualquier elemento por debajo del valor del segundo depósito)
+Ejemplo 3:  Frío,68=Perfecto,75=Calor
+Ejemplo 4:  65=Frío,68=Perfecto,74=Perfecto,75=Calor,76=Calor</variant>
+        </translation>
+        <translation approved="false" key="inttostringFunctionHelp" new="true">
+            <note/>
+            <variant>Convierte un valor entero en texto. Si no hay coincidencia, el valor queda vacío.
+Formato de argumento:
+Lista de instrucciones separadas por comas.
+Formato de cada instrucción:  #=texto
+Ejemplo:  0=Cero,1=Uno,2=Dos,3=Vaya</variant>
+        </translation>
+        <translation approved="false" key="rowfilter-processor" new="true">
+            <note/>
+            <variant>Filtrar filas</variant>
+        </translation>
+        <translation approved="false" key="scheduleButtonTitle" new="true">
+            <note/>
+            <variant>Horario</variant>
+        </translation>
+        <translation approved="false" key="Equipment" new="true">
+            <note/>
+            <variant>Equipo</variant>
+        </translation>
+        <translation approved="false" key="sort-processor" new="true">
+            <note/>
+            <variant>Ordenar columna</variant>
+        </translation>
+        <translation approved="false" key="data_error" new="true">
+            <note/>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="false" key="maxrowsHelp" new="true">
+            <note/>
+            <variant>Introducir un número o nombre de variable</variant>
+        </translation>
+        <translation approved="false" key="location" new="true">
+            <note/>
+            <variant>Ubicación</variant>
+        </translation>
+        <translation approved="false" key="maxrows-processor" new="true">
+            <note/>
+            <variant>Mostrar las primeras ___ filas</variant>
+        </translation>
+        <translation approved="false" key="timeinrangeInstructions" new="true">
+            <note/>
+            <variant>Introducir valores como: "1,2,3,8,9,10" o "1:3,8:10" o "! 0" (no 0)</variant>
+        </translation>
+        <translation approved="false" key="hidePrimaryColumn" new="true">
+            <note/>
+            <variant>Ocultar columna principal en el informe</variant>
+        </translation>
+        <translation approved="false" key="endDate" new="true">
+            <note/>
+            <variant>Fecha de finalización</variant>
+        </translation>
+        <translation approved="false" key="dbTrendsOnly" new="true">
+            <note/>
+            <variant>Solo tendencias de base de datos</variant>
+        </translation>
+        <translation approved="false" key="reportManager" new="true">
+            <note/>
+            <variant>Administrador de informes</variant>
+        </translation>
+        <translation approved="false" key="Digits" new="true">
+            <note/>
+            <variant>Dígitos</variant>
+        </translation>
+        <translation approved="false" key="useCustomRefreshRate" new="true">
+            <note/>
+            <variant>Utilizar índice de actualización personalizado</variant>
+        </translation>
+        <translation approved="false" key="type" new="true">
+            <note/>
+            <variant>Tipo</variant>
+        </translation>
+        <translation approved="false" key="reverseSort" new="true">
+            <note/>
+            <variant>Orden inverso</variant>
+        </translation>
+        <translation approved="false" key="output" new="true">
+            <note/>
+            <variant>Salida</variant>
+        </translation>
+        <translation approved="false" key="maxRows" new="true">
+            <note/>
+            <variant>Número máximo de filas</variant>
+        </translation>
+        <translation approved="false" key="seconds" new="true">
+            <note/>
+            <variant>Segundos</variant>
+        </translation>
+        <translation approved="false" key="titleFontSize" new="true">
+            <note/>
+            <variant>Tamaño de fuente de título</variant>
+        </translation>
+        <translation approved="false" key="Network" new="true">
+            <note/>
+            <variant>Red</variant>
+        </translation>
+        <translation approved="false" key="options" new="true">
+            <note/>
+            <variant>Opciones</variant>
+        </translation>
+        <translation approved="false" key="Hidden" new="true">
+            <note/>
+            <variant>Oculto</variant>
+        </translation>
+        <translation approved="false" key="id" new="true">
+            <note/>
+            <variant>Identificador</variant>
+        </translation>
+        <translation approved="false" key="timeRange" new="true">
+            <note/>
+            <variant>Rango de tiempo</variant>
+        </translation>
+        <translation approved="false" key="showMaximum" new="true">
+            <note/>
+            <variant>Mostrar máximo</variant>
+        </translation>
+        <translation approved="false" key="showAverage" new="true">
+            <note/>
+            <variant>Mostrar promedio</variant>
+        </translation>
+        <translation approved="false" key="invalidRefNameMsg" new="true">
+            <note/>
+            <variant>ID no válido</variant>
+        </translation>
+        <translation approved="false" key="Align" new="true">
+            <note/>
+            <variant>Alinear</variant>
+        </translation>
+        <translation approved="false" key="categoryHeader" new="true">
+            <note/>
+            <variant>Categoría</variant>
+        </translation>
+        <translation approved="false" key="byColumn" new="true">
+            <note/>
+            <variant>Por columna</variant>
+        </translation>
+        <translation approved="false" key="graphicsRefresh" new="true">
+            <note/>
+            <variant>Actualizar gráficos</variant>
+        </translation>
+        <translation approved="false" key="loading" new="true">
+            <note/>
+            <variant>Cargando...</variant>
+        </translation>
+        <translation approved="false" key="ColorRenderHelp" new="true">
+            <note/>
+            <variant>La columna está oculta en el informe</variant>
+        </translation>
+        <translation approved="false" key="allColumnsHidden" new="true">
+            <note/>
+            <variant>Todas las columnas ocultas</variant>
+        </translation>
+        <translation approved="false" key="daterangestartFunctionHelp" new="true">
+            <note/>
+            <variant>Da formato a la hora/fecha de INICIO de un rango de fechas.
+Ejemplos:
+	aaaa/MM/dd hh:mm = 2017/07/04 11:30
+	hh:mm:ss = 08:35:16
+Para obtener más información, busque en internet "personalización de los formatos de hora y fecha en java".</variant>
+        </translation>
+        <translation approved="false" key="forExistingReports" new="true">
+            <note/>
+            <variant>Si ya existe un ID para un informe importado</variant>
+        </translation>
+        <translation approved="false" key="daterangeRowHelp" new="true">
+            <note/>
+            <variant>Muestra fechas secuenciales (días, semanas, meses, trimestres, años)</variant>
+        </translation>
+        <translation approved="false" key="reportAccessedFrom" new="true">
+            <note/>
+            <variant>A este informe se puede acceder desde</variant>
+        </translation>
+        <translation approved="false" key="columnHelpSelect" new="true">
+            <note/>
+            <variant>Seleccionar una columna para editar sus criterios</variant>
+        </translation>
+        <translation approved="false" key="invalid" new="true">
+            <note/>
+            <variant>No válido</variant>
+        </translation>
+        <translation approved="false" key="reset" new="true">
+            <note/>
+            <variant>Restablecer</variant>
+        </translation>
+        <translation approved="false" key="referenceNamesListEmpty" new="true">
+            <note/>
+            <variant>La lista de nombres de referencia no puede estar vacía</variant>
+        </translation>
+        <translation approved="false" key="fontSize" new="true">
+            <note/>
+            <variant>Tamaño de la fuente</variant>
+        </translation>
+        <translation approved="false" key="dateFormatHelp" new="true">
+            <note/>
+            <variant>Déjelo en blanco para utilizar el formato predeterminado del sistema.
+Por ejemplo:
+  aaaa/MM/dd = 2017/07/04</variant>
+        </translation>
+        <translation approved="false" key="Site" new="true">
+            <note/>
+            <variant>Sitio</variant>
+        </translation>
+        <translation approved="false" key="csscolorFunctionHelp" new="true">
+            <note/>
+            <variant>Intenta convertir un valor de color ALC (de 0 a 15) en un color para una asignación de colores.</variant>
+        </translation>
+        <translation approved="false" key="fromRow" new="true">
+            <note/>
+            <variant>Desde la columna principal</variant>
+        </translation>
+        <translation approved="false" key="helpLeaveBlankForLocation" new="true">
+            <note/>
+            <variant>Introducir ID de columna o dejar en blanco para mostrar en la primera columna visible</variant>
+        </translation>
+        <translation approved="false" key="columns" new="true">
+            <note/>
+            <variant>Columnas</variant>
+        </translation>
+        <translation approved="false" key="selectLocationTypeMsg" new="true">
+            <note/>
+            <variant>Debe seleccionar al menos un tipo de ubicación.</variant>
+        </translation>
+        <translation approved="false" key="includeCurrent" new="true">
+            <note/>
+            <variant>Incluir actual</variant>
+        </translation>
+        <translation approved="false" key="skip" new="true">
+            <note/>
+            <variant>Omitir</variant>
+        </translation>
+        <translation approved="false" key="timeInRange" new="true">
+            <note/>
+            <variant>% de rango de tiempo</variant>
+        </translation>
+        <translation approved="false" key="daterangeendFunctionHelp" new="true">
+            <note/>
+            <variant>Da formato a la hora/fecha de FIN de un rango de fechas.
+Ejemplos:
+	aaaa/MM/dd hh:mm = 2017/07/04 11:30
+	hh:mm:ss = 08:35:16
+Para obtener más información, busque en internet "personalización de los formatos de hora y fecha en java".</variant>
+        </translation>
+        <translation approved="false" key="displayNameHeader" new="true">
+            <note/>
+            <variant>Mostrar nombre</variant>
+        </translation>
+        <translation approved="false" key="showAllColumns" new="true">
+            <note/>
+            <variant>Mostrar todas las columnas</variant>
+        </translation>
+        <translation approved="false" key="axisLabel" new="true">
+            <note/>
+            <variant>Etiqueta de eje</variant>
+        </translation>
+        <translation approved="false" key="resetToDefaults" new="true">
+            <note/>
+            <variant>Restablecer predeterminados</variant>
+        </translation>
+        <translation approved="false" key="bydefinitionRowHelp" new="true">
+            <note/>
+            <variant>La lista de ubicaciones está basada en el nombre del programa de control con comodines</variant>
+        </translation>
+        <translation approved="false" key="importAgain" new="true">
+            <note/>
+            <variant>Volver a importar</variant>
+        </translation>
+        <translation approved="false" key="colormapRowHelp" new="true">
+            <note/>
+            <variant>Lista de ubicaciones basada en asociaciones de mapa de color</variant>
+        </translation>
+        <translation approved="false" key="showChartBorder" new="true">
+            <note/>
+            <variant>Mostrar borde de gráfica</variant>
+        </translation>
+        <translation approved="false" key="copy" new="true">
+            <note/>
+            <variant>Copiar</variant>
+        </translation>
+        <translation approved="false" key="Width" new="true">
+            <note/>
+            <variant>Ancho</variant>
+        </translation>
+        <translation approved="false" key="validcolumnFunctionHelp" new="true">
+            <note/>
+            <variant>Devuelve el resultado verdadero/falso si la columna de entrada es válida.</variant>
+        </translation>
+        <translation approved="false" key="lastValueWithTime" new="true">
+            <note/>
+            <variant>Último valor c/hora</variant>
+        </translation>
+        <translation approved="false" key="sortColumn" new="true">
+            <note/>
+            <variant>Ordenar columnas</variant>
+        </translation>
+        <translation approved="false" key="hide" new="true">
+            <note/>
+            <variant>Ocultar</variant>
+        </translation>
+        <translation approved="false" key="importexportTitle" new="true">
+            <note/>
+            <variant>Importar y Exportar</variant>
+        </translation>
+        <translation approved="false" key="invalidReportDefinitions" new="true">
+            <note/>
+            <variant>Definiciones de informe no válidas</variant>
+        </translation>
+        <translation approved="false" key="referenceNames" new="true">
+            <note/>
+            <variant>Nombre de referencia</variant>
+        </translation>
+        <translation approved="false" key="rename" new="true">
+            <note/>
+            <variant>Cambiar nombre</variant>
+        </translation>
+        <translation approved="false" key="selectOperation" new="true">
+            <note/>
+            <variant>Seleccionar operación</variant>
+        </translation>
+        <translation approved="false" key="variableLabel" new="true">
+            <note/>
+            <variant>Mostrar nombre</variant>
+        </translation>
+        <translation approved="false" key="exportAgain" new="true">
+            <note/>
+            <variant>Volver a exportar</variant>
+        </translation>
+        <translation approved="false" key="SelectLocationInTree" new="true">
+            <note/>
+            <variant>Seleccionar ubicaciones en el árbol</variant>
+        </translation>
+        <translation approved="false" key="pdfOutput" new="true">
+            <note/>
+            <variant>Salida en PDF</variant>
+        </translation>
+        <translation approved="false" key="editButtonTitle" new="true">
+            <note/>
+            <variant>Editar</variant>
+        </translation>
+        <translation approved="false" key="replace" new="true">
+            <note/>
+            <variant>Reemplazar</variant>
+        </translation>
+        <translation approved="false" key="dataSeries" new="true">
+            <note/>
+            <variant>Serie de datos</variant>
+        </translation>
+        <translation approved="false" key="firstValueWithTime" new="true">
+            <note/>
+            <variant>Primer valor c/hora</variant>
+        </translation>
+        <translation approved="false" key="durationformatFunctionHelp" new="true">
+            <note/>
+            <variant>Da formato a un valor de duración de tendencia.
+Formatos de argumento:
+%d%, %h%, %m%, %s%  (basados en el reloj)
+%D%, %H%, %M%, %S%  (cantidad total redondeada a la baja)
+Ejemplo 1:  %ddd% días %hh%:%mm% = 003 días 13:50
+Ejemplo 2:  %M% min = 283 min</variant>
+        </translation>
+        <translation approved="false" key="BothEnds" new="true">
+            <note/>
+            <variant>Incluir hora de inicio/incluir hora de finalización</variant>
+        </translation>
+        <translation approved="false" key="defaultvalueFunctionHelp" new="true">
+            <note/>
+            <variant>Devuelve como resultado el valor de la columna, si es un valor, de lo contrario, devuelve el argumento.</variant>
+        </translation>
+        <translation approved="false" key="saveReportAs" new="true">
+            <note/>
+            <variant>Grabar reporte</variant>
+        </translation>
+        <translation approved="false" key="function" new="true">
+            <note/>
+            <variant>Función</variant>
+        </translation>
+        <translation approved="false" key="byRow" new="true">
+            <note/>
+            <variant>Por fila</variant>
+        </translation>
+        <translation approved="false" key="new" new="true">
+            <note/>
+            <variant>Nuevo</variant>
+        </translation>
+        <translation approved="false" key="columnSelect" new="true">
+            <note/>
+            <variant>Los datos de la columna son de</variant>
+        </translation>
+        <translation approved="false" key="saveAsCsv" new="true">
+            <note/>
+            <variant>CSV</variant>
+        </translation>
+        <translation approved="false" key="Device" new="true">
+            <note/>
+            <variant>Dispositivo</variant>
+        </translation>
+        <translation approved="false" key="Months" new="true">
+            <note/>
+            <variant>Meses</variant>
+        </translation>
+        <translation approved="false" key="Month" new="true">
+            <note/>
+            <variant>Una vez al mes</variant>
+        </translation>
+        <translation approved="false" key="showValueAsText" new="true">
+            <note/>
+            <variant>¿Mostrar valor como texto?</variant>
+        </translation>
+        <translation approved="false" key="enterControlProgramName" new="true">
+            <note/>
+            <variant>Introducir el nombre de un programa de control</variant>
+        </translation>
+        <translation approved="false" key="displayNoDataFoundMessage" new="true">
+            <note/>
+            <variant>No se ha encontrado ningún dato para el criterio/tipo de fila</variant>
+        </translation>
+        <translation approved="false" key="fromDate" new="true">
+            <note/>
+            <variant>Fecha de inicio</variant>
+        </translation>
+        <translation approved="false" key="pageOrientation" new="true">
+            <note/>
+            <variant>Orientación de página</variant>
+        </translation>
+        <translation approved="false" key="Portrait" new="true">
+            <note/>
+            <variant>Vertical</variant>
+        </translation>
+        <translation approved="false" key="Landscape" new="true">
+            <note/>
+            <variant>Horizontal</variant>
+        </translation>
+        <translation approved="false" key="regexFunctionHelp" new="true">
+            <note/>
+            <variant>Encuentra un fragmento de texto dentro de un cuerpo de texto más grande. Por ejemplo: encuentra un fragmento de texto en un modstat.
+Para obtener más información, busque en internet "patrones de expresiones regulares en java 8".</variant>
+        </translation>
+        <translation approved="false" key="ofLocationType" new="true">
+            <note/>
+            <variant>Seleccionar tipos de nombres de referencia en esta columna</variant>
+        </translation>
+        <translation approved="false" key="showTotal" new="true">
+            <note/>
+            <variant>Mostrar total</variant>
+        </translation>
+        <translation approved="false" key="countAll" new="true">
+            <note/>
+            <variant>Contar todos los registros de tendencia</variant>
+        </translation>
+        <translation approved="false" key="deleteButtonTitle" new="true">
+            <note/>
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="false" key="selectControlProgram" new="true">
+            <note/>
+            <variant>O seleccionar los programas de control existentes</variant>
+        </translation>
+        <translation approved="false" key="existingTables" new="true">
+            <note/>
+            <variant>Informes existentes</variant>
+        </translation>
+        <translation approved="false" key="deleteTableAreYouSure" new="true">
+            <note/>
+            <variant>Eliminar "{{tableName}}", ¿seguro?</variant>
+        </translation>
+        <translation approved="false" key="deleteTableFileAreYouSure" new="true">
+            <note/>
+            <variant>Eliminar definición de tabla corrupta "{{tableFileName}}" del sistema, ¿seguro?</variant>
+        </translation>
+        <translation approved="false" key="invalidReportDefinitionsDetectedMessage" new="true">
+            <note/>
+            <variant>Se han detectado una o más definiciones de informe no válidas.</variant>
+        </translation>
+        <translation approved="false" key="SignatureMissing" new="true">
+            <note/>
+            <variant>La definición del informe no contiene una firma digital o no está firmado digitalmente.</variant>
+        </translation>
+        <translation approved="false" key="SignatureMismatch" new="true">
+            <note/>
+            <variant>Parece que se ha manipulado la definición de informe ya que la firma digital no es válida.</variant>
+        </translation>
+        <translation approved="false" key="InvalidSignatureVersionTableException" new="true">
+            <note/>
+            <variant>La definición de informe contiene una versión de cifrado de firmas no reconocida, puede que se haya manipulado o que sea necesario actualizar el producto de software.</variant>
+        </translation>
+        <translation approved="false" key="ParseError" new="true">
+            <note/>
+            <variant>La estructura de la definición de informe no es válida y no puede analizarse.</variant>
+        </translation>
+        <translation approved="false" key="UnrecognizedError" new="true">
+            <note/>
+            <variant>Se ha producido un error grave al leer el archivo de definición de informe.</variant>
+        </translation>
+        <translation approved="false" key="InvalidFileName" new="true">
+            <note/>
+            <variant>El nombre de archivo de definición de informe contiene caracteres no válidos.</variant>
+        </translation>
+        <translation approved="false" key="ProviderNotFound" new="true">
+            <note/>
+            <variant>No se ha encontrado un complemento de proveedor de componente de informe para esta definición de informe. Instale el complemento necesario para activar este informe.</variant>
+        </translation>
+        <translation approved="false" key="systemErrorDetail" new="true">
+            <note/>
+            <variant>Detalle de error de sistema</variant>
+        </translation>
+        <translation approved="false" key="corruptReportId" new="true">
+            <note/>
+            <variant>ID de informe corrupto</variant>
+        </translation>
+        <translation approved="false" key="errorDetail" new="true">
+            <note/>
+            <variant>Detalle del error</variant>
+        </translation>
+        <translation approved="false" key="importButtonTitle" new="true">
+            <note/>
+            <variant>Importar</variant>
+        </translation>
+        <translation approved="false" key="bylocationlistRowHelp" new="true">
+            <note/>
+            <variant>Lista de ubicaciones basada en la selección del usuario</variant>
+        </translation>
+        <translation approved="false" key="uniqueRefNameMsg" new="true">
+            <note/>
+            <variant>El ID debe ser exclusivo.</variant>
+        </translation>
+        <translation approved="false" key="value" new="true">
+            <note/>
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="false" key="statistics-footer-processor" new="true">
+            <note/>
+            <variant>Mostrar máx/mín/prom/total</variant>
+        </translation>
+        <translation approved="false" key="selectFunction" new="true">
+            <note/>
+            <variant>Seleccionar función</variant>
+        </translation>
+        <translation approved="false" key="Data" new="true">
+            <note/>
+            <variant>Datos</variant>
+        </translation>
+        <translation approved="false" key="inputColumn" new="true">
+            <note/>
+            <variant>columna de entrada (ID)</variant>
+        </translation>
+        <translation approved="false" key="countOnlyData" new="true">
+            <note/>
+            <variant>Contar solo muestras de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Date" new="true">
+            <note/>
+            <variant>Fecha</variant>
+        </translation>
+        <translation approved="false" key="notInMenu" new="true">
+            <note/>
+            <variant>(No en el menú)</variant>
+        </translation>
+        <translation approved="false" key="useAnywhere" new="true">
+            <note/>
+            <variant>Puede utilizarse en cualquier parte</variant>
+        </translation>
+        <translation approved="false" key="arguments" new="true">
+            <note/>
+            <variant>Argumentos</variant>
+        </translation>
+        <translation approved="false" key="locations" new="true">
+            <note/>
+            <variant>Ubicación</variant>
+        </translation>
+        <translation approved="false" key="category" new="true">
+            <note/>
+            <variant>en esta categoría</variant>
+        </translation>
+        <translation approved="false" key="renamed" new="true">
+            <note/>
+            <variant>Cambiar nombre</variant>
+        </translation>
+        <translation approved="false" key="anywhere" new="true">
+            <note/>
+            <variant>En cualquier parte</variant>
+        </translation>
+        <translation approved="false" key="locationTypes" new="true">
+            <note/>
+            <variant>Tipos de ubicación</variant>
+        </translation>
+        <translation approved="false" key="colorMap" new="true">
+            <note/>
+            <variant>Mapa de color</variant>
+        </translation>
+        <translation approved="false" key="existingReport" new="true">
+            <note/>
+            <variant>Informe existente</variant>
+        </translation>
+        <translation approved="false" key="rowFilter" new="true">
+            <note/>
+            <variant>Filtro de fila</variant>
+        </translation>
+        <translation approved="false" key="trendData" new="true">
+            <note/>
+            <variant>Datos de tendencia</variant>
+        </translation>
+        <translation approved="false" key="Cannot_find_child1" new="true">
+            <variant>No se puede encontrar al niño {0} en {1}</variant>
+        </translation>
+        <translation approved="false" key="Cannot_find_child2" new="true">
+            <variant>No se puede encontrar al niño {0}</variant>
+        </translation>
+        <translation approved="false" key="No_value" new="true">
+            <variant>Sin valor</variant>
+        </translation>
+        <translation approved="false" key="Cell_x_not_found" new="true">
+            <variant>No se ha encontrado la celda "{0}"</variant>
+        </translation>
+        <translation approved="false" key="Cell_x_not_valid" new="true">
+            <variant>El valor de la celda "{0}" no es válido</variant>
+        </translation>
+        <translation approved="false" key="no_samples_in_range" new="true">
+            <variant>No hay muestras en el rango</variant>
+        </translation>
+        <translation approved="false" key="Invalid_variable_name" new="true">
+            <variant>Nombre de variable de "{0}" no válido</variant>
+        </translation>
+        <translation approved="false" key="Expression_is_invalid" new="true">
+            <variant>La expresión no es válida</variant>
+        </translation>
+        <translation approved="false" key="Expression_is_invalid_expression" new="true">
+            <variant>La expresión no es válida: {0}
+</variant>
+        </translation>
+        <translation approved="false" key="Valid_Column" new="true">
+            <variant>Columna válida</variant>
+        </translation>
+        <translation approved="false" key="Default_Value" new="true">
+            <variant>Valor predeterminado</variant>
+        </translation>
+        <translation approved="false" key="Format" new="true">
+            <variant>Formato</variant>
+        </translation>
+        <translation approved="false" key="Format_Duration" new="true">
+            <variant>Formatear duración</variant>
+        </translation>
+        <translation approved="false" key="Convert_Values_to_Text" new="true">
+            <variant>Convertir valores en texto</variant>
+        </translation>
+        <translation approved="false" key="Convert_Integer_to_Text" new="true">
+            <variant>Convertir enteros en texto</variant>
+        </translation>
+        <translation approved="false" key="Convert_Text_to_Integer" new="true">
+            <variant>Convertir textos en enteros</variant>
+        </translation>
+        <translation approved="false" key="Convert_to_Color" new="true">
+            <variant>Convertir en color</variant>
+        </translation>
+        <translation approved="false" key="Color_Gradient" new="true">
+            <variant>Degradado de color</variant>
+        </translation>
+        <translation approved="false" key="Date_Range_Start" new="true">
+            <variant>Inicio de rango de fechas</variant>
+        </translation>
+        <translation approved="false" key="Date_Range_End" new="true">
+            <variant>Fin de rango de fechas</variant>
+        </translation>
+        <translation approved="false" key="Ordinal_Value" new="true">
+            <variant>Valor ordinal</variant>
+        </translation>
+        <translation approved="false" key="Regular_Expression" new="true">
+            <variant>Expresión regular</variant>
+        </translation>
+        <translation approved="false" key="color_only_valid" new="true">
+            <variant>~color válido solo en Equipo</variant>
+        </translation>
+        <translation approved="false" key="invalid_step" new="true">
+            <variant>paso no válido en "{0}"</variant>
+        </translation>
+        <translation approved="false" key="Column_not_found" new="true">
+            <variant>No se ha encontrado la columna "{0}"</variant>
+        </translation>
+        <translation approved="false" key="Exceeded_max_row_count" new="true">
+            <variant>Se ha excedido el máximo de {0} de la fila</variant>
+        </translation>
+        <translation approved="false" key="Left" new="true">
+            <variant>Izquierda</variant>
+        </translation>
+        <translation approved="false" key="Right" new="true">
+            <variant>Derecha</variant>
+        </translation>
+        <translation approved="false" key="Center" new="true">
+            <variant>Centro</variant>
+        </translation>
+        <translation approved="false" key="Maximum" new="true">
+            <variant>Máximo</variant>
+        </translation>
+        <translation approved="false" key="Minimum" new="true">
+            <variant>Mínimo</variant>
+        </translation>
+        <translation approved="false" key="Average" new="true">
+            <variant>Promedio</variant>
+        </translation>
+        <translation approved="false" key="Total" new="true">
+            <variant>Total</variant>
+        </translation>
+        <translation approved="false" key="added" new="true">
+            <variant>Agregado</variant>
+        </translation>
+    </section>
+</resource-base>

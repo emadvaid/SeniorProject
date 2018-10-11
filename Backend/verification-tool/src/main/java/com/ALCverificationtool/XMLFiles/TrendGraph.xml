@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="TrendApplet" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="Colors">
+        <!-- Note that these keys must match the names used in the enumeration com.controlj.green.addonsupport.access.EquipmentColor -->
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+        <translation approved="true" key="UNKNOWN" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color -1 on a color trend</note>
+            <variant>Desconocido</variant>
+        </translation>
+        <translation approved="true" key="HARDWARE_COMM_ERROR" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 0 on a color trend</note>
+            <variant>Error de comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="UNOCCUPIED" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 1 on a color trend</note>
+            <variant>Desocupado</variant>
+        </translation>
+        <translation approved="false" key="HEATING_ALARM" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 2 on a color trend</note>
+            <variant>Alarma de calentamiento</variant>
+        </translation>
+        <translation approved="false" key="MAXIMUM_HEATING" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 3 on a color trend</note>
+            <variant>Calentamiento 2</variant>
+        </translation>
+        <translation approved="false" key="MODERATE_HEATING" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 4 on a color trend</note>
+            <variant>Calentamiento 1</variant>
+        </translation>
+        <translation approved="true" key="OPERATIONAL" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 5 on a color trend</note>
+            <variant>Verde</variant>
+        </translation>
+        <translation approved="false" key="SPECKLED_GREEN" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 6 on a color trend</note>
+            <variant>Refrigeración libre</variant>
+        </translation>
+        <translation approved="true" key="MODERATE_COOLING" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 7 on a color trend</note>
+            <variant>Enfriamiento 1</variant>
+        </translation>
+        <translation approved="true" key="MAXIMUM_COOLING" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 8 on a color trend</note>
+            <variant>Enfriamiento 2</variant>
+        </translation>
+        <translation approved="false" key="COOLING_ALARM" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 9 on a color trend</note>
+            <variant>Alarma de enfriamiento</variant>
+        </translation>
+        <translation approved="true" key="OCCUPIED" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 10 on a color trend</note>
+            <variant>Ocupado</variant>
+        </translation>
+        <translation approved="false" key="CORAL" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 13 on a color trend</note>
+            <variant>Error del programa de control</variant>
+        </translation>
+        <translation approved="true" key="DOWNLOAD_REQUIRED" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 14 on a color trend</note>
+            <variant>Descarga requerida</variant>
+        </translation>
+        <translation approved="false" key="SOFTWARE_COMM_ERROR" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note> label - name for color 15 on a color trend</note>
+            <variant>Error de comunicaciones</variant>
+        </translation>
+    </section>
+    <section id="ButtonBar">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+        <translation approved="false" key="BB_Pan_Mode" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Modo panorámico</variant>
+        </translation>
+        <translation approved="true" key="BB_Zoom_Mode" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Modo Zoom</variant>
+        </translation>
+        <translation approved="false" key="BB_Click_and_Drag" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) addition for Pan Mode and Zoom Mode on the button bar</note>
+            <variant>(hacer clic y arrastrar)</variant>
+        </translation>
+        <translation approved="false" key="BB_Scale_Fit" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Ajustar al tamaño</variant>
+        </translation>
+        <translation approved="false" key="BB_Back" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Atrás</variant>
+        </translation>
+        <translation approved="false" key="BB_Time_Range" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Seleccionar rango de tiempo</variant>
+        </translation>
+        <translation approved="true" key="BB_Options" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Opciones</variant>
+        </translation>
+        <translation approved="false" key="BB_Download" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Guardar gráfico</variant>
+        </translation>
+        <translation approved="true" key="BB_Help" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="BB_Popup" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Hover text (tooltip) for button on the button bar</note>
+            <variant>Ver gráfico interactivo</variant>
+        </translation>
+        <translation approved="false" key="Save_as_PNG" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Save Graph' menu</note>
+            <variant>Guardar como imagen PNG</variant>
+        </translation>
+        <translation approved="false" key="Save_as_JPG" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Save Graph' menu</note>
+            <variant>Guardar como imagen JPEG</variant>
+        </translation>
+        <translation approved="false" key="Save_as_SVG" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Save Graph' menu</note>
+            <variant>Guardar como imagen SVG</variant>
+        </translation>
+        <translation approved="false" key="Save_as_PDF" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Save Graph' menu</note>
+            <variant>Guardar como documento PDF</variant>
+        </translation>
+        <translation approved="false" key="Save_as_CSV" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Save Graph' menu</note>
+            <variant>Guardar como datos CSV</variant>
+        </translation>
+        <translation approved="false" key="Auto_update" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Options' menu</note>
+            <variant>Actualizar automáticamente desde el campo</variant>
+        </translation>
+        <translation approved="false" key="Show_historical_only" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Options' menu</note>
+            <variant>Mostrar solo valores de base de datos</variant>
+        </translation>
+        <translation approved="false" key="Black_and_White" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Options' menu</note>
+            <variant>Blanco y negro</variant>
+        </translation>
+        <translation approved="false" key="connect_trendGraph_lines" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the buttons/menus that appear when you mouse over the graph.
+      </note>
+            <note>Label used in the 'Options' menu</note>
+            <variant>Mostrar espacio en blanco en la línea de gráfico para los datos que faltan</variant>
+        </translation>
+    </section>
+    <section id="DatePicker">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+        <translation approved="true" key="DP_Done" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Label used in the date picker</note>
+            <variant>Hecho</variant>
+        </translation>
+        <translation approved="false" key="DP_Prev" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Label used in the date picker</note>
+            <variant>Anterior</variant>
+        </translation>
+        <translation approved="true" key="DP_Next" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Label used in the date picker</note>
+            <variant>Siguiente</variant>
+        </translation>
+        <translation approved="true" key="DP_Today" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Label used in the date picker</note>
+            <variant>Hoy</variant>
+        </translation>
+        <translation approved="false" key="DP_Week_Header" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Label used in the date picker</note>
+            <variant>Sem</variant>
+        </translation>
+    </section>
+    <section id="DateTime">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+        <translation approved="true" key="January" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Enero</variant>
+        </translation>
+        <translation approved="true" key="S_Jan" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Ene</variant>
+        </translation>
+        <translation approved="true" key="February" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <variant>Febrero</variant>
+        </translation>
+        <translation approved="true" key="S_Feb" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Feb</variant>
+        </translation>
+        <translation approved="true" key="March" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Marzo</variant>
+        </translation>
+        <translation approved="true" key="S_Mar" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Mar</variant>
+        </translation>
+        <translation approved="true" key="April" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Abril</variant>
+        </translation>
+        <translation approved="true" key="S_Apr" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Abr</variant>
+        </translation>
+        <translation approved="true" key="May" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Mayo</variant>
+        </translation>
+        <translation approved="false" key="S_May" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Mayo</variant>
+        </translation>
+        <translation approved="true" key="June" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Junio</variant>
+        </translation>
+        <translation approved="true" key="S_Jun" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Jun</variant>
+        </translation>
+        <translation approved="true" key="July" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Julio</variant>
+        </translation>
+        <translation approved="true" key="S_Jul" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Jul</variant>
+        </translation>
+        <translation approved="true" key="August" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Agosto</variant>
+        </translation>
+        <translation approved="true" key="S_Aug" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Ago</variant>
+        </translation>
+        <translation approved="true" key="September" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Septiembre</variant>
+        </translation>
+        <translation approved="true" key="S_Sep" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Sep</variant>
+        </translation>
+        <translation approved="true" key="October" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Octubre</variant>
+        </translation>
+        <translation approved="true" key="S_Oct" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Oct</variant>
+        </translation>
+        <translation approved="true" key="November" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Noviembre</variant>
+        </translation>
+        <translation approved="true" key="S_Nov" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Nov</variant>
+        </translation>
+        <translation approved="true" key="December" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full month name</note>
+            <variant>Diciembre</variant>
+        </translation>
+        <translation approved="true" key="S_Dec" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for month</note>
+            <variant>Dic</variant>
+        </translation>
+        <translation approved="true" key="Monday" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Lunes</variant>
+        </translation>
+        <translation approved="true" key="S_Mon" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Lun</variant>
+        </translation>
+        <translation approved="false" key="M_Mo" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>L</variant>
+        </translation>
+        <translation approved="true" key="Tuesday" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Martes</variant>
+        </translation>
+        <translation approved="false" key="S_Tue" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Mar</variant>
+        </translation>
+        <translation approved="false" key="M_Tu" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>M</variant>
+        </translation>
+        <translation approved="false" key="Wednesday" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Miércoles</variant>
+        </translation>
+        <translation approved="false" key="S_Wed" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Mié</variant>
+        </translation>
+        <translation approved="false" key="M_We" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>X</variant>
+        </translation>
+        <translation approved="true" key="Thursday" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Jueves</variant>
+        </translation>
+        <translation approved="false" key="S_Thu" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Jue</variant>
+        </translation>
+        <translation approved="false" key="M_Th" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>J</variant>
+        </translation>
+        <translation approved="true" key="Friday" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Viernes</variant>
+        </translation>
+        <translation approved="false" key="S_Fri" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Vie</variant>
+        </translation>
+        <translation approved="false" key="M_Fr" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>V</variant>
+        </translation>
+        <translation approved="false" key="Saturday" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Sábado</variant>
+        </translation>
+        <translation approved="false" key="S_Sat" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Sáb</variant>
+        </translation>
+        <translation approved="false" key="M_Sa" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>S</variant>
+        </translation>
+        <translation approved="true" key="Sunday" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Full weekday name</note>
+            <variant>Domingo</variant>
+        </translation>
+        <translation approved="true" key="S_Sun" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Short name (about 3 chars) for weekday name</note>
+            <variant>Dom</variant>
+        </translation>
+        <translation approved="false" key="M_Su" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These are used to format dates and times.
+      </note>
+            <note>Minimal name (smallest unique chars) for weekday name</note>
+            <variant>D</variant>
+        </translation>
+    </section>
+    <section id="HelpResources">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+        <translation approved="true" key="Help_Title" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="false" key="Help_Mouse_Mode" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Modo ratón</variant>
+        </translation>
+        <translation approved="false" key="Help_click_and_drag_will" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Si hace clic y arrastra hará</variant>
+        </translation>
+        <translation approved="false" key="Help_Pan" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Panorámica</variant>
+        </translation>
+        <translation approved="true" key="Help_Or" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>o</variant>
+        </translation>
+        <translation approved="true" key="Help_Zoom" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Zoom</variant>
+        </translation>
+        <translation approved="false" key="Help_quick_swap" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Mantenga la tecla de mayúsculas presionada para intercambiar.</variant>
+        </translation>
+        <translation approved="false" key="Scale_to_fit" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Ajustar el eje Y a los datos</variant>
+        </translation>
+        <translation approved="false" key="Help_Keyboard_Intro" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Haga clic en el gráfico para utilizar lo siguiente</variant>
+        </translation>
+        <translation approved="true" key="Help_Keyboard_Tools" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Herramientas de teclado</variant>
+        </translation>
+        <translation approved="false" key="Help_Arrow_Keys" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Teclas de flecha</variant>
+        </translation>
+        <translation approved="false" key="Help_PAGE_UP" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page.  Refers to the PAGE UP key on the keyboard.</note>
+            <variant>Retroceder página</variant>
+        </translation>
+        <translation approved="true" key="Help_Zoom_out" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Alejar</variant>
+        </translation>
+        <translation approved="false" key="Help_PAGE_DOWN" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page.  Refers to the PAGE DOWN key on the keyboard.</note>
+            <variant>Avanzar página</variant>
+        </translation>
+        <translation approved="false" key="Help_Zoom_in" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Acercar</variant>
+        </translation>
+        <translation approved="false" key="Help_HOME" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page.  Refers to the HOME key on the keyboard.</note>
+            <variant>Inicio</variant>
+        </translation>
+        <translation approved="false" key="Help_Note_Flag" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Indica que las notas del sistema como sincronización de hora o registro de tendencia están activadas. Pase el ratón por encima para obtener más información.</variant>
+        </translation>
+        <translation approved="false" key="Help_Reset_view" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Restablecer a vista inicial</variant>
+        </translation>
+        <translation approved="true" key="Help_Status_Messages" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Mensajes de estado</variant>
+        </translation>
+        <translation approved="false" key="Help_Sticky_Tooltip" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Pase el ratón por encima de un punto para obtener los datos de muestra de tendencia. Pulse la barra espaciadora para bloquear los detalles. Haga clic y arrastre para mover.</variant>
+        </translation>
+        <translation approved="false" key="Help_Ctrl_Click" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Pulse Ctrl y haga clic para ver los detalles de la muestra de tendencia más cercana al cursor.</variant>
+        </translation>
+        <translation approved="false" key="Help_Touch_Sticky_Tooltip" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Modo táctil: toque un punto para ver los datos de tendencia.  Toque y mantenga tocado un punto para bloquear los datos.</variant>
+        </translation>
+        <translation approved="false" key="Help_Click_legend" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Haga clic en la leyenda para alternar visibilidad</variant>
+        </translation>
+        <translation approved="false" key="Help_SA" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as header</note>
+            <variant>Guardar como:</variant>
+        </translation>
+        <translation approved="true" key="Help_SA_PNG" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as PNG</note>
+            <variant>PNG</variant>
+        </translation>
+        <translation approved="true" key="Help_SA_JPEG" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as JPEG</note>
+            <variant>JPEG</variant>
+        </translation>
+        <translation approved="true" key="Help_SA_SVG" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as SVG</note>
+            <variant>SVG</variant>
+        </translation>
+        <translation approved="true" key="Help_SA_PDF" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as PDF</note>
+            <variant>PDF</variant>
+        </translation>
+        <translation approved="true" key="Help_SA_CSV" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Save as CSV</note>
+            <variant>CSV</variant>
+        </translation>
+        <translation approved="true" key="Help_Touch_Mode" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Modo táctil</variant>
+        </translation>
+        <translation approved="false" key="Help_Touch_Pinch_Zoom" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Acercar/alejar mediante pellizco</variant>
+        </translation>
+        <translation approved="false" key="Help_Touch_Pan" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the help "?" button.
+      </note>
+            <note>Used on the help page</note>
+            <variant>Panorámica con un dedo</variant>
+        </translation>
+    </section>
+    <section id="Highcharts">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+        <translation approved="true" key="Decimal_sep" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The decimal point separator (1.2 = one and two tenths)</note>
+            <variant>.</variant>
+        </translation>
+        <translation approved="true" key="Thousands_sep" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The thousands separator (1,234 = one thousand two hundred and thirty four)</note>
+            <variant>,</variant>
+        </translation>
+        <translation approved="true" key="SI_prefix_k" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'kilo-' (10^3)</note>
+            <variant>k</variant>
+        </translation>
+        <translation approved="true" key="SI_prefix_M" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'mega-' (10^6)</note>
+            <variant>M</variant>
+        </translation>
+        <translation approved="true" key="SI_prefix_G" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'giga-' (10^9)</note>
+            <variant>G</variant>
+        </translation>
+        <translation approved="false" key="SI_prefix_T" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'tera-' (10^12)</note>
+            <variant>M</variant>
+        </translation>
+        <translation approved="true" key="SI_prefix_P" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'peta-' (10^15)</note>
+            <variant>P</variant>
+        </translation>
+        <translation approved="true" key="SI_prefix_E" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend.
+      </note>
+            <note>The SI symbol for 'exa-' (10^18)</note>
+            <variant>E</variant>
+        </translation>
+    </section>
+    <section id="MiscResources">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+        <translation approved="false" key="No_trend_points_to_display" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>No hay puntos de tendencias para mostrar</variant>
+        </translation>
+        <translation approved="false" key="No_trend_defined_at" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>No se ha definido tendencia en {0}</variant>
+        </translation>
+        <translation approved="true" key="Legend_Notes" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Legend title for notes (special records like Time Syncs)</note>
+            <variant>Notas</variant>
+        </translation>
+        <translation approved="false" key="Calculated_data" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Appended (inside parenthesis) after the value of data points that have been synthesized</note>
+            <variant>datos calculados</variant>
+        </translation>
+        <translation approved="false" key="Auto_scale" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Text on button that appears when the graph is zoomed in</note>
+            <variant>Ajuste automático</variant>
+        </translation>
+        <translation approved="false" key="Auto_scale_hover" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Hover text (tooltip) for button that appears when the graph is zoomed in</note>
+            <variant>Ajuste automático del eje Y</variant>
+        </translation>
+        <translation approved="false" key="Trend_Graph" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>Gráfica de tendencia</variant>
+        </translation>
+        <translation approved="false" key="View" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>Vista</variant>
+        </translation>
+        <translation approved="false" key="View_Hover" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>Ver una gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="Configure" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>Configurar</variant>
+        </translation>
+        <translation approved="false" key="Configure_Hover" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <variant>Configurar una pantalla de gráfica de tendencia</variant>
+        </translation>
+        <translation approved="true" key="CSV_Date" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Title of column in CSV data</note>
+            <variant>Fecha</variant>
+        </translation>
+        <translation approved="false" key="CSV_Excel_Time" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Title of column in CSV data</note>
+            <variant>Hora de Excel</variant>
+        </translation>
+        <translation approved="true" key="CSV_Value" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Title of column in CSV data</note>
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="CSV_Notes" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Title of column in CSV data</note>
+            <variant>Notas</variant>
+        </translation>
+        <translation approved="false" key="New_Graph_Save_Alert" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in various places in the trend graph.
+      </note>
+            <note>Save alert in new graph</note>
+            <variant>Guarde el gráfico de tendencia</variant>
+        </translation>
+    </section>
+    <section id="SpecialRecords">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+        <translation approved="false" key="SR_Log_Disabled" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Registro desactivado</variant>
+        </translation>
+        <translation approved="false" key="SR_Log_Enabled" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Registro activado</variant>
+        </translation>
+        <translation approved="false" key="SR_and_Buffer_purged" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>y búfer purgado</variant>
+        </translation>
+        <translation approved="false" key="SR_Historian_Enabled" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Historiador activado</variant>
+        </translation>
+        <translation approved="false" key="SR_Historian_Disabled" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Historiador desactivado</variant>
+        </translation>
+        <translation approved="true" key="SR_Trend_source_changed" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Fuente de tendencia cambiada</variant>
+        </translation>
+        <translation approved="false" key="SR_Gateway_Down" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>No hay respuesta de la puerta de enlace</variant>
+        </translation>
+        <translation approved="true" key="SR_Field_Communications_Down" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>El sistema no tiene comunicaciones de campo</variant>
+        </translation>
+        <translation approved="false" key="SR_Dead" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>El módulo no ha respondido a este sondeo de colores</variant>
+        </translation>
+        <translation approved="true" key="SR_Unknown_Value" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Valor desconocido</variant>
+        </translation>
+        <translation approved="false" key="SR_Manual_Save_Start" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Inicio de grabación manual</variant>
+        </translation>
+        <translation approved="false" key="SR_Manual_Save_End" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Fin de grabación manual</variant>
+        </translation>
+        <translation approved="false" key="SR_Time_Synchronization" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Sincronización de hora</variant>
+        </translation>
+        <translation approved="false" key="SR_Failure" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>No se han podido registrar los datos</variant>
+        </translation>
+        <translation approved="false" key="SR_Datatype_Mismatch" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Tipo de datos no válido</variant>
+        </translation>
+        <translation approved="false" key="SR_Datatype_Mismatch_Analog" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Tipo de datos no válido (analógicos)</variant>
+        </translation>
+        <translation approved="false" key="SR_Datatype_Mismatch_Digital" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <variant>Tipo de datos no válido (digitales)</variant>
+        </translation>
+        <translation approved="true" key="SR_sec" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <note>label - time duration of seconds (used for 1 second and multiple seconds)</note>
+            <variant>segundo(s)</variant>
+        </translation>
+        <translation approved="true" key="SR_minsec" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <note>label - time duration in minutes:seconds format (e.g. 5:20 means 5 minutes and 20 seconds)</note>
+            <variant>m:s</variant>
+        </translation>
+        <translation approved="true" key="SR_hourminsec" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <note>label - time duration in hours:minutes:seconds format (e.g. 1:5:20 means 1 hour, 5 minutes and 20 seconds)</note>
+            <variant>h:m:s</variant>
+        </translation>
+        <translation approved="false" key="SR_days" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <note>label - time duration of days (used for 1 day and multiple days)</note>
+            <variant>día(s)</variant>
+        </translation>
+        <translation approved="false" key="SR_more" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. This text is used in the hover details for the note flags (triangles that can appear at the top).
+      </note>
+            <note>label used in tooltip description - indicates that not all note descriptions are being shown</note>
+            <variant>más notas que no se muestran</variant>
+        </translation>
+    </section>
+    <section id="StatusBar">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found at the bottom of a trend graph in certain situations.
+      </note>
+        <translation approved="true" key="StatusBar_Loading_Data" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found at the bottom of a trend graph in certain situations.
+      </note>
+            <note>Status bar (bottom of Graph) text</note>
+            <variant>Cargando datos...</variant>
+        </translation>
+        <translation approved="false" key="StatusBar_Field_Error" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found at the bottom of a trend graph in certain situations.
+      </note>
+            <note>Status bar (bottom of Graph) text</note>
+            <variant>Error de lectura de datos de campo</variant>
+        </translation>
+        <translation approved="true" key="StatusBar_Auto_Update" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found at the bottom of a trend graph in certain situations.
+      </note>
+            <note>Status bar (bottom of Graph) text</note>
+            <variant>Auto</variant>
+        </translation>
+    </section>
+    <section id="StatusFlags">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found in the hover details for certain points.
+      </note>
+        <translation approved="false" key="StatusFlags_In_Alarm" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found in the hover details for certain points.
+      </note>
+            <variant>En alarma</variant>
+        </translation>
+        <translation approved="true" key="StatusFlags_Locked" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found in the hover details for certain points.
+      </note>
+            <variant>Bloqueado</variant>
+        </translation>
+        <translation approved="false" key="StatusFlags_In_Fault" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found in the hover details for certain points.
+      </note>
+            <variant>En error</variant>
+        </translation>
+        <translation approved="false" key="StatusFlags_Out_Of_Service" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. These messages can be found in the hover details for certain points.
+      </note>
+            <note>label - item is Out of Service</note>
+            <variant>Fuera de servicio</variant>
+        </translation>
+    </section>
+    <section id="TimeRangeDialog">
+        <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+        <translation approved="false" key="TR_Graph_Center" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Centro del gráfico</variant>
+        </translation>
+        <translation approved="true" key="TR_Go" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Ir</variant>
+        </translation>
+        <translation approved="false" key="TR_Invalid_date" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Fecha no válida</variant>
+        </translation>
+        <translation approved="false" key="TR_Graph_Width" new="true">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Ancho de la gráfica</variant>
+        </translation>
+        <translation approved="true" key="TR_Day" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Día</variant>
+        </translation>
+        <translation approved="true" key="TR_Week" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Semana</variant>
+        </translation>
+        <translation approved="true" key="TR_Month" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Mes</variant>
+        </translation>
+        <translation approved="true" key="TR_Year" new="false">
+            <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
+         view the trend. Mouse over the graph and click the calendar button.  This text is displayed on the resulting dialog.
+      </note>
+            <note> label - used on the time range dialog</note>
+            <variant>Año</variant>
+        </translation>
+    </section>
+</resource-base>
+<!-- master format -->

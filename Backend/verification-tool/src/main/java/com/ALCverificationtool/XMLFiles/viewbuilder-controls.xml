@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="viewbuilder-controls" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="controls">
+        <translation approved="true" key="zone-control" new="false">
+            <note>The iVuExpress Zone Control</note>
+            <variant>Zona</variant>
+        </translation>
+        <translation approved="true" key="equipment-color-control" new="false">
+            <note>The iVuExpress Equipment Color Control</note>
+            <variant>Color del equipo</variant>
+        </translation>
+        <translation approved="true" key="webapp-control" new="false">
+            <variant>Contenido de WebApp</variant>
+        </translation>
+    </section>
+    <section id="control-editors">
+        <translation approved="true" key="label-control-text-field" new="false">
+            <variant>Texto:</variant>
+        </translation>
+        <translation approved="true" key="show-prime-variable" new="false">
+            <variant>Mostrar variable principal:</variant>
+        </translation>
+        <translation approved="true" key="show-color-block" new="false">
+            <variant>Mostrar bloque de colores:</variant>
+        </translation>
+        <translation approved="true" key="equipment-path" new="false">
+            <variant>Ruta del equipo:</variant>
+        </translation>
+        <translation approved="true" key="size" new="false">
+            <variant>Tamaño</variant>
+        </translation>
+        <translation approved="true" key="size.large" new="false">
+            <variant>Grande</variant>
+        </translation>
+        <translation approved="true" key="size.small" new="false">
+            <variant>Pequeño</variant>
+        </translation>
+        <translation approved="true" key="webapp.name" new="false">
+            <variant>Nombre de WebApp:</variant>
+        </translation>
+        <translation approved="true" key="webapp.content.path" new="false">
+            <variant>Ruta de contenido:</variant>
+        </translation>
+        <translation approved="true" key="webapp.location" new="false">
+            <variant>Ubicación</variant>
+        </translation>
+        <translation approved="true" key="webapp.location.attached" new="false">
+            <variant>Adjunto</variant>
+        </translation>
+        <translation approved="true" key="webapp.location.alternate" new="false">
+            <variant>Alternar</variant>
+        </translation>
+        <translation approved="true" key="webapp.size" new="false">
+            <variant>Tamaño</variant>
+        </translation>
+        <translation approved="true" key="webapp.size.width" new="false">
+            <variant>Ancho:</variant>
+        </translation>
+        <translation approved="true" key="webapp.size.height" new="false">
+            <variant>Altura:</variant>
+        </translation>
+        <translation approved="true" key="webapp.parameters" new="false">
+            <variant>Parámetros</variant>
+        </translation>
+        <translation approved="true" key="webapp.parameters.name" new="false">
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="true" key="webapp.parameters.value" new="false">
+            <variant>Valor</variant>
+        </translation>
+    </section>
+    <section id="control-edit-validators">
+        <translation approved="true" key="value-cannot-be-zero" new="false">
+            <variant>El valor no puede ser cero.</variant>
+        </translation>
+    </section>
+</resource-base>

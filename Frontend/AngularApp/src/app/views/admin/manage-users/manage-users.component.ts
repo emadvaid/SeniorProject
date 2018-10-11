@@ -19,7 +19,11 @@ export class ManageUsersComponent implements OnInit {
 
     // initialize this component by making an Ajax call to our dealer profile service
     //  to get the deal list
-    ngOnInit() {
+    public ngOnInit() {
+        this.refresh();
+    }
+
+    private refresh(): void {
         this.userService.getAll().subscribe(
             (users: Array<User>) => {
                 this.model.users = users;
@@ -42,16 +46,46 @@ export class ManageUsersComponent implements OnInit {
         });
     }
 
-    activateUser() {
-        //
+    activateUser(event: any) {
+        this.userService.activate(event.target.dataset['userid'])
+        .subscribe(
+            (status: boolean) => {
+                if (status) {
+                    // happy path refresh page (in future add a success flash message)
+                    this.refresh();
+                } else {
+                    // unhappy path do something else, refresh
+                }
+            }
+        );
     }
 
-    deactivateUser() {
-        //
+    deactivateUser(event: any) {
+        this.userService.deactivate(event.target.dataset['userid'])
+        .subscribe(
+            (status: boolean) => {
+                if (status) {
+                    // happy path refresh page (in future add a success flash message)
+                    this.refresh();
+                } else {
+                    // unhappy path do something else, refresh
+                }
+            }
+        );
     }
 
-    resetPassword() {
-        //
+    resetPassword(event: any) {
+        this.userService.resetpassword(event.target.dataset['userid'])
+        .subscribe(
+            (status: boolean) => {
+                if (status) {
+                    // happy path refresh page (in future add a success flash message)
+                    this.refresh();
+                } else {
+                    // unhappy path do something else, refresh
+                }
+            }
+        );
     }
 }
 

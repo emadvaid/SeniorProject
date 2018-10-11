@@ -122,13 +122,13 @@ public class UserServiceImpl implements UserService {
         // get the user records from the database
         List<UserRec> results = userDao.findAll();
 
-        for(UserRec rec: results) {
-            if(rec.getUsername().equals("admin")) {
-                results.remove(rec);
-            }
-        }
-
-        // return the user records
+//        for(UserRec rec: results) {
+//            if(rec.getUsername().equals("admin")) {
+//                results.remove(rec);
+//            }
+//        }
+//
+//        // return the user records
         return results;
     }
 
@@ -174,6 +174,117 @@ public class UserServiceImpl implements UserService {
                 || !newUserRec.getLastName().equals(userDetails.getLastName())
         ) {
             throw new UserException("user not updated");
+        }
+        return Optional.of(newUserRec);
+    }
+
+    @Override
+    public Optional<UserRec> resetUserPassword(String userId) {
+        // first make sure the userId is a valid UUID
+        if(!isUUID(userId)) {
+            throw new UserException("invalid userId.");
+        }
+
+        // next make sure the user exists in the database
+        Optional<UserRec> actualUserRecOpt = this.userDao.findById(UUID.fromString(userId));
+
+        if(!actualUserRecOpt.isPresent()) {
+            throw new UserException("could not find userRec for userId = " + userId);
+        }
+
+        // make sure the user is active
+        UserRec actualUserRec = actualUserRecOpt.get();
+        if(!actualUserRec.isActive()) {
+            throw new UserException("user not active");
+        }
+
+        // then copy the relevant values to the userRec Entity
+       // actualUserRec.setPassword(null);
+
+        // then save
+        UserRec newUserRec = this.userDao.save(actualUserRec);
+
+        // then check the user was updated return the updated userRecEntity
+//        if(newUserRec == null|| newUserRec.getPassword() == null) {
+//            throw new UserException("user not updated");
+//        }
+
+        // create a reset Entity for the user (sends the email)
+
+
+        // Now create a password reset entity for user
+        ResetToken reset = this.authResetService.createPasswordResetToken(newUserRec, false);
+
+        // make sure valid reset
+//        if (reset == null
+//                || reset.getId() == null || !reset.isActive()
+//                || !newUserRec.getId().equals(reset.getUserId())) {
+//            throw new UserException("Error creating password reset for user");
+//        }
+
+        return Optional.of(newUserRec);
+
+    }
+
+    @Override
+    public Optional<UserRec> activateUser(String userId) {
+        // first make sure the userId is a valid UUID
+        if(!isUUID(userId)) {
+            throw new UserException("invalid userId.");
+        }
+
+        // next make sure the user exists in the database
+        Optional<UserRec> actualUserRecOpt = this.userDao.findById(UUID.fromString(userId));
+
+        if(!actualUserRecOpt.isPresent()) {
+            throw new UserException("could not find userRec for userId = " + userId);
+        }
+
+        UserRec actualUserRec = actualUserRecOpt.get();
+
+        // then copy the relevant values to the userRec Entity
+        actualUserRec.setActive(true);
+
+        // then save
+        UserRec newUserRec = this.userDao.save(actualUserRec);
+
+        // then check the user was updated return the updated userRecEntity
+        if(newUserRec == null || !newUserRec.isActive() ) {
+            throw new UserException("user not active");
+        }
+        return Optional.of(newUserRec);
+
+    }
+
+    @Override
+    public Optional<UserRec> deactivateUser(String userId) {
+        // first make sure the userId is a valid UUID
+        if(!isUUID(userId)) {
+            throw new UserException("invalid userId.");
+        }
+
+        // next make sure the user exists in the database
+        Optional<UserRec> actualUserRecOpt = this.userDao.findById(UUID.fromString(userId));
+
+        if(!actualUserRecOpt.isPresent()) {
+            throw new UserException("could not find userRec for userId = " + userId);
+        }
+
+        // make sure the user is active
+        UserRec actualUserRec = actualUserRecOpt.get();
+        if(!actualUserRec.isActive()) {
+            throw new UserException("user not active");
+        }
+
+        // then copy the relevant values to the userRec Entity
+        actualUserRec.setActive(false);
+
+        // then save
+        UserRec newUserRec = this.userDao.save(actualUserRec);
+
+        // then check the user was updated return the updated userRecEntity
+        if(newUserRec == null || newUserRec.isActive()) {
+            throw new UserException("user not active");
         }
         return Optional.of(newUserRec);
     }

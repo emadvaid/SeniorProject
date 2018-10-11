@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="logicbuilder-foundation" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="foundation">
+        <translation approved="true" key="multiblock-binary-input" new="false">
+            <variant>Entrada binaria de micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="multiblock-analog-input" new="false">
+            <variant>Entrada analógica de micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="multiblock-analog-output" new="false">
+            <variant>Salida analógica de micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="multiblock-binary-output" new="false">
+            <variant>Salida binaria de micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="multiblock-base" new="false">
+            <variant>Micro bloque personalizado</variant>
+        </translation>
+        <translation approved="true" key="binary-input-test" new="false">
+            <variant>Prueba de entrada binaria</variant>
+        </translation>
+        <translation approved="true" key="binary-pass-through-test" new="false">
+            <variant>Pase binario mediante prueba</variant>
+        </translation>
+        <translation approved="true" key="enth-test" new="false">
+            <variant>Prueba de entalpía</variant>
+        </translation>
+        <translation approved="true" key="analog-output-test" new="false">
+            <variant>Prueba de salida analógica</variant>
+        </translation>
+        <translation approved="true" key="analog-pass-through-test" new="false">
+            <variant>Pase analógico mediante prueba</variant>
+        </translation>
+        <translation approved="true" key="binary-output-test" new="false">
+            <variant>Prueba de salida binaria</variant>
+        </translation>
+        <translation approved="true" key="analog-input-test" new="false">
+            <variant>Prueba de entrada analógica</variant>
+        </translation>
+        <translation approved="true" key="file-filter-image-file-description" new="false">
+            <variant>Archivos de imagen (*.eiw; *.sym)</variant>
+        </translation>
+        <translation approved="true" key="logic-symbol-file-description" new="false">
+            <variant>Símbolo (*.logicsymbol) </variant>
+        </translation>
+        <translation approved="true" key="control-program-file-description" new="false">
+            <variant>Programa de control (*.equipment)</variant>
+        </translation>
+        <translation approved="true" key="gen5_control-program-file-description" new="false">
+            <variant>Programa de control Gen5 (*.equipo)</variant>
+        </translation>
+        <translation approved="true" key="file-filter-directories-description" new="false">
+            <variant>Directorios</variant>
+        </translation>
+        <translation approved="true" key="file-filter-compiled-file-description" new="false">
+            <variant>Archivos de equipo (*.equipment)</variant>
+        </translation>
+        <translation approved="true" key="file-filter-eikon-file-description" new="false">
+            <variant>(*.eiw; *.sym)</variant>
+        </translation>
+        <translation approved="true" key="Arc" new="false">
+            <note>an arc figure (part of a circle)</note>
+            <variant>Arco</variant>
+        </translation>
+        <translation approved="true" key="Ellipse" new="false">
+            <note>an ellipse figure</note>
+            <variant>Elipse</variant>
+        </translation>
+        <translation approved="true" key="line" new="false">
+            <note>line figure</note>
+            <variant>Línea</variant>
+        </translation>
+        <translation approved="true" key="Point" new="false">
+            <note>Point figure (just a dot)</note>
+            <variant>Punto</variant>
+        </translation>
+        <translation approved="true" key="Polygon" new="false">
+            <note>Polygon figure</note>
+            <variant>Polígono</variant>
+        </translation>
+        <translation approved="true" key="Rectangle" new="false">
+            <note>rectangle figure</note>
+            <variant>Rectángulo</variant>
+        </translation>
+        <translation approved="true" key="conditional-figure" new="false">
+            <note>conditional figure</note>
+            <variant>Región condicional</variant>
+        </translation>
+        <translation approved="true" key="Image" new="false">
+            <note>Image figure</note>
+            <variant>Imagen</variant>
+        </translation>
+        <translation approved="true" key="Text" new="false">
+            <note>text figure</note>
+            <variant>Texto</variant>
+        </translation>
+        <translation approved="true" key="Plain" new="false">
+            <note/>
+            <variant>Sin formato</variant>
+        </translation>
+        <translation approved="true" key="Separator" new="false">
+            <variant>Separador</variant>
+        </translation>
+        <translation approved="true" key="Bold" new="false">
+            <variant>Negrita</variant>
+        </translation>
+        <translation approved="true" key="ExpandableBeginClosed" new="false">
+            <variant>Ampliar comienzo cerrado</variant>
+        </translation>
+        <translation approved="true" key="ExpandableBeginOpen" new="false">
+            <variant>Ampliar comienzo abierto</variant>
+        </translation>
+        <translation approved="true" key="ExpandableEnd" new="false">
+            <variant>Ampliar fin</variant>
+        </translation>
+        <translation approved="true" key="TableBegin" new="false">
+            <variant>Comienzo de la tabla</variant>
+        </translation>
+        <translation approved="true" key="TableEnd" new="false">
+            <variant>Fin de la tabla</variant>
+        </translation>
+        <translation approved="true" key="ConditionalHideBegin" new="false">
+            <variant>Comienzo de oculto condicional</variant>
+        </translation>
+        <translation approved="true" key="ConditionalHideEnd" new="false">
+            <variant>Fin de oculto condicional</variant>
+        </translation>
+        <translation approved="true" key="ImportantBegin" new="false">
+            <variant>Comienzo importante</variant>
+        </translation>
+        <translation approved="true" key="ImportantEnd" new="false">
+            <variant>Fin importante</variant>
+        </translation>
+        <translation approved="true" key="Input_Label" new="false">
+            <note>label with the input on the left side.</note>
+            <variant>Etiqueta de entrada</variant>
+        </translation>
+        <translation approved="true" key="Output_Label" new="false">
+            <note>label with the input on the right side.</note>
+            <variant>Etiqueta de salida</variant>
+        </translation>
+        <translation approved="true" key="Wire" new="false">
+            <note>The name shown to add a wire</note>
+            <variant>Alambre</variant>
+        </translation>
+        <translation approved="true" key="reference-name" new="false">
+            <note>unique name for each object</note>
+            <variant>Nombre de la referencia</variant>
+        </translation>
+        <translation approved="true" key="label-direction" new="false">
+            <note>Whether or not a label is an input vs an output</note>
+            <variant>Dirección</variant>
+        </translation>
+        <translation approved="true" key="Label_Text" new="false">
+            <note>This is a header for the field to edit a label's text</note>
+            <variant>Texto de etiqueta</variant>
+        </translation>
+        <translation approved="true" key="analog" new="false">
+            <variant>analógico</variant>
+        </translation>
+        <translation approved="true" key="binary" new="false">
+            <variant>binario</variant>
+        </translation>
+        <!-- Figure attribute names -->
+        <translation approved="true" key="foreground" new="false">
+            <note>Header for figure foreground color</note>
+            <variant>Primer plano</variant>
+        </translation>
+        <translation approved="true" key="background" new="false">
+            <note>Header for figure background color</note>
+            <variant>Fondo</variant>
+        </translation>
+        <translation approved="true" key="transparent-background" new="false">
+            <note>Header for whether or not a figure has a transparent background color</note>
+            <variant>Fondo transparente</variant>
+        </translation>
+        <translation approved="true" key="font" new="false">
+            <note>Header for text font</note>
+            <variant>Fuente</variant>
+        </translation>
+        <translation approved="true" key="size" new="false">
+            <note>Header for text font size</note>
+            <variant>Tamaño de la fuente</variant>
+        </translation>
+        <translation approved="true" key="style" new="false">
+            <note>Header for text font style</note>
+            <variant>Estilo de la fuente</variant>
+        </translation>
+        <translation approved="true" key="normal" new="false">
+            <note>Header for normal text direction ( horizontal )</note>
+            <variant>Normal</variant>
+        </translation>
+        <translation approved="true" key="vertical" new="false">
+            <note>Header for vertical text direction</note>
+            <variant>Vertical</variant>
+        </translation>
+        <translation approved="true" key="ascending" new="false">
+            <note>Header for text direction that is ascending ( climbing from left to right )</note>
+            <variant>Ascendente</variant>
+        </translation>
+        <translation approved="true" key="descending" new="false">
+            <note>Header for text direction that is descending ( going down from left to right )</note>
+            <variant>Descendente</variant>
+        </translation>
+        <!-- End figure attribute names -->
+        <translation approved="true" key="Rename_single_label" new="false">
+            <note>Text for undo/redo when a single label is renamed. Note: The dual single quotes below must be preserved.</note>
+            <variant>Cambiar nombre de una etiqueta de ''{0}'' a ''{1}''</variant>
+        </translation>
+        <translation approved="true" key="Rename_multiple_labels" new="false">
+            <note>Text for undo/redo when multiple labels are renamed. Note: The dual single quotes below must be preserved.</note>
+            <variant>Cambiar nombre de múltiples etiquetas de ''{0}'' a ''{1}''</variant>
+        </translation>
+        <translation approved="true" key="Changed_pattern" new="false">
+            <variant>Modelo cambiado</variant>
+        </translation>
+        <translation approved="true" key="Changed_Color" new="false">
+            <variant>Color cambiado</variant>
+        </translation>
+        <translation approved="true" key="Changed_Color" new="false">
+            <variant>Color cambiado</variant>
+        </translation>
+        <translation approved="true" key="changed-font-size" new="false">
+            <variant>Tamaño de fuente cambiado</variant>
+        </translation>
+        <translation approved="true" key="changed-font" new="false">
+            <variant>Fuente cambiada</variant>
+        </translation>
+        <translation approved="true" key="changed-font-style" new="false">
+            <variant>Estilo de fuente cambiado</variant>
+        </translation>
+        <translation approved="true" key="changed-text-direction" new="false">
+            <variant>Dirección del texto cambiada</variant>
+        </translation>
+        <translation approved="true" key="changed-text" new="false">
+            <variant>Texto cambiado</variant>
+        </translation>
+        <translation approved="true" key="set-figure-properties" new="false">
+            <note>Undo list message for setting the color values of selected figures</note>
+            <variant>Establecer propiedades de la figura</variant>
+        </translation>
+        <translation approved="true" key="Turned_Fill_On" new="false">
+            <variant>Relleno activado</variant>
+        </translation>
+        <translation approved="true" key="Turned_Fill_Off" new="false">
+            <variant>Relleno desactivado</variant>
+        </translation>
+        <translation approved="true" key="Edited_Wire" new="false">
+            <variant>conexión modificado</variant>
+        </translation>
+        <translation approved="true" key="Untitled_0" new="false">
+            <note>The name of a new control program that has not been saved yet. [Untitled X].</note>
+            <variant>[ Sin título {0} ]</variant>
+        </translation>
+        <translation approved="true" key="Microblock_0_1" new="false">
+            <note>short description of a single microblock. The first parameter is for the short name. The second is the type. There's nothing here to translate.</note>
+            <variant>{0} - {1}</variant>
+        </translation>
+        <translation approved="true" key="Multiblock_0_1" new="false">
+            <variant>{0}{1}
+            </variant>
+        </translation>
+        <translation approved="true" key="Label_0_1" new="false">
+            <note>Short description of a single label. The first argument is the name. The second is whether or not its an input or an output</note>
+            <variant>{1} Etiqueta ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Wire_0" new="false">
+            <note>Short description of a wire. The argument is the type (analog or binary).</note>
+            <variant>Alambre: {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="imported_symbol_0" new="false">
+            <note>Description shown for undo/redo when a symbol is imported.</note>
+            <variant>Símbolo importado: {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="paste_undo_redo" new="false">
+            <note>Description shown for undo/redo when something is pasted.</note>
+            <variant>Pegar</variant>
+        </translation>
+        <translation approved="true" key="imported_favorite_undo_redo" new="false">
+            <note>Description shown for undo/redo when a favorite something is inserted.</note>
+            <variant>Símbolo favorito importado: {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Receptacle_description_with_name" new="false">
+            <note>Short description of a receptacle. This version includes input/ouput, the type, the name, and its index</note>
+            <variant>Recipiente: {0}{1}{2}{3}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Receptacle_description_without_name" new="false">
+            <note>Short description of a receptacle. This version includes input/ouput, the type, (NO NAME) and its index</note>
+            <variant>Recipiente: {0}{1}{2}
+            </variant>
+        </translation>
+        <translation approved="true" key="input" new="false">
+            <note>description of something that is an input vs an output.</note>
+            <variant>entrada</variant>
+        </translation>
+        <translation approved="true" key="output" new="false">
+            <note>description of something that is an output vs an input.</note>
+            <variant>salida</variant>
+        </translation>
+        <translation approved="true" key="default-value-set" new="false">
+            <note>The name of the default value set. It cannot be renamed (by the user) and must always exist. This is basically the baseline values that must always be present.</note>
+            <variant>Predeterminado</variant>
+        </translation>
+        <translation approved="true"
+            key="Symbol_successfully_saved_to_0" new="false">
+            <note>status message notifying the user that the symbol was successfully saved and where it was saved.</note>
+            <variant>Símbolo guardado correctamente en ''{0}''</variant>
+        </translation>
+        <translation approved="true"
+            key="Control_Program_successfully_s" new="false">
+            <note>status message notifying the user that the control was successfully saved and where it was saved.</note>
+            <variant>Programa de control guardado correctamente en ''{0}''</variant>
+        </translation>
+        <translation approved="true"
+            key="Equipment_successfully_built_t" new="false">
+            <note>status message notifying the user that the control program was successfully compiled to an equipment file and where it was saved.</note>
+            <variant>Equipo creado correctamente en ''{0}'' </variant>
+        </translation>
+        <translation approved="true" key="unknown-microblock-definition" new="false">
+            <note>This is for a microblock that we read in and do not know what type it is. This is for forward compatibility so current versions can at least open files created by future version of the application.</note>
+            <variant>Micro bloque desconocido</variant>
+        </translation>
+        <translation approved="true" key="add-msg-singular" new="false">
+            <note>message that 1 item has been added.</note>
+            <variant>Agregue 1 elemento.</variant>
+        </translation>
+        <translation approved="true" key="add-msg-plural" new="false">
+            <note> "added x items." message for when multiple (or no) items have been added (just not 1). where x is the number of items added.</note>
+            <variant>Agregar {0} elementos.</variant>
+        </translation>
+        <translation approved="true" key="edit-ellipse-msg" new="false">
+            <variant>Edite la elipse.</variant>
+        </translation>
+        <translation approved="true" key="remove-vertex-msg" new="false">
+            <note>"Delete point (x,y)" where x and y are the coordinates of the point deleted.</note>
+            <variant>Elimine el punto ( {0}, {1} )
+        </variant>
+        </translation>
+        <translation approved="true" key="figures-not-implemented" new="false">
+            <variant>Las figuras no se han implementado aún.</variant>
+        </translation>
+        <translation approved="true" key="set-linecolor-msg" new="false">
+            <variant>Cambie el color de la línea.</variant>
+        </translation>
+        <translation approved="true" key="delete-msg-plural" new="false">
+            <note>"Deleted x items." where x is the number of items deleted. This is for deleting multiple or no items (just not 1).</note>
+            <variant>Borrar {0} elementos. </variant>
+        </translation>
+        <translation approved="true" key="move-many-message" new="false">
+            <note>"message that mulitple things were moved</note>
+            <variant>Mover elementos</variant>
+        </translation>
+        <translation approved="true" key="move-microblock-message" new="false">
+            <note>"message that a microblock was moved</note>
+            <variant>Mover ''{0}'' micro bloque</variant>
+        </translation>
+        <translation approved="true" key="move-label-message" new="false">
+            <note>"message that a label was moved</note>
+            <variant>Mover etiqueta</variant>
+        </translation>
+        <translation approved="true" key="move-figure-message" new="false">
+            <note>"message that a figure was moved</note>
+            <variant>Mover ''{0}'' figura</variant>
+        </translation>
+        <translation approved="true" key="move-wire-message" new="false">
+            <note>"message that a wire was moved</note>
+            <variant>Mover conexión</variant>
+        </translation>
+        <translation approved="true" key="add-vertex-msg" new="false">
+            <note>"New point (x,y)." message that a new point was created at x,y coordinates.</note>
+            <variant>Nuevo punto ( {0}, {1} )</variant>
+        </translation>
+        <translation approved="true" key="clipboard-msg" new="false">
+            <variant>El código se encuentra en el portapapeles.</variant>
+        </translation>
+        <translation approved="true" key="edit-rect-msg" new="false">
+            <variant>Editar rectángulo</variant>
+        </translation>
+        <translation approved="true" key="edit-line-msg" new="false">
+            <variant>Editar línea</variant>
+        </translation>
+        <translation approved="true" key="Deleted_Microblock" new="false">
+            <variant>Borrar microbloque ''{0}'' </variant>
+        </translation>
+        <translation approved="true" key="Deleted_Label" new="false">
+            <variant>Eliminar etiqueta</variant>
+        </translation>
+        <translation approved="true" key="Deleted_Wire" new="false">
+            <variant>Eliminar alambre</variant>
+        </translation>
+        <translation approved="true" key="Added_Microblock" new="false">
+            <variant>Agregar microbloque ''{0}'' </variant>
+        </translation>
+        <translation approved="true" key="Added_Wire" new="false">
+            <variant>Agregar alambre</variant>
+        </translation>
+        <translation approved="true" key="Added_Label" new="false">
+            <variant>Agregar etiqueta</variant>
+        </translation>
+        <translation approved="true" key="Added_Figure" new="false">
+            <variant>Agregar figura ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Deleted_Figure" new="false">
+            <variant>Borrar figura ''{0}'' </variant>
+        </translation>
+        <translation approved="true" key="error-improper-flow-direction" new="false">
+            <variant>Dirección de flujo no válida</variant>
+        </translation>
+        <translation approved="true" key="error-too-many-label-inputs" new="false">
+            <variant>Hay 2 o más salidas conectadas</variant>
+        </translation>
+        <translation approved="true" key="error-no-label-inputs" new="false">
+            <variant>Falta una etiqueta de entrada</variant>
+        </translation>
+        <translation approved="true" key="error-no-inputs" new="false">
+            <variant>Falta una entrada</variant>
+        </translation>
+        <translation approved="true" key="unknown_figure_0" new="false">
+            <variant>Figura desconocida: {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="error-invalid-reference-name-too-long" new="false">
+            <variant>El nombre de referencia ''{0}'' es demasiado largo. Los nombres de referencia sólo pueden tener {1} caracteres.</variant>
+        </translation>
+        <translation approved="true"
+            key="error-duplicate-reference-name" new="false">
+            <variant>El nombre de referencia ''{0}'' se usa varias veces. Los nombres de referencia deben ser únicos.<nbsp/>
+            </variant>
+        </translation>
+        <translation approved="true" key="invalid_duration_error_0" new="false">
+            <variant>La duración ''{0}'' no es válida. La duración sólo puede contener dígitos numéricos.<nbsp/>
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="reference_name_cannot_start_with_number" new="false">
+            <variant>Un nombre de referencia no puede comenzar con un número.</variant>
+        </translation>
+        <translation approved="true" key="reference_name_rules" new="false">
+            <variant>Un nombre de referencia sólo puede contener letras, dígitos y caracteres de subrayado, y no puede comenzar con un número.</variant>
+        </translation>
+        <translation approved="true" key="reference_name_is_reserved" new="false">
+            <variant>El nombre de referencia ''{0}'' está reservado y no se puede utilizar.</variant>
+        </translation>
+        <translation approved="true" key="restricted_microblock_mistake" new="false">
+            <variant>Este micro bloque no está permitido en programas de control con esta clasificación de equipo.</variant>
+        </translation>
+        <translation approved="true"
+            key="not_allowed_for_equipment_classification_microblock_mistake" new="false">
+            <variant>El microbloque [{0}] no está admitido en esta clasificación de equipo.</variant>
+        </translation>
+        <translation approved="true" key="parameter_not_closed" new="false">
+            <variant>Uno o varios parámetros no se han cerrado correctamente.</variant>
+        </translation>
+        <translation approved="true" key="error-type-mismatch" new="false">
+            <variant>No coinciden los tipos</variant>
+        </translation>
+        <translation approved="true" key="error-io-mismatch" new="false">
+            <variant>No coincide la Entrada/Salida</variant>
+        </translation>
+        <translation approved="true" key="error-too-many-inputs" new="false">
+            <variant>Hay 2 o más salidas conectadas.</variant>
+        </translation>
+        <translation approved="true" key="An_unknown_error_occured_" new="false">
+            <variant>Se produjo un error desconocido.<nbsp/></variant>
+        </translation>
+        <translation approved="true"
+            key="unknown_error_compiling_native_equipment" new="false">
+            <variant>Se produjo un error desconocido de compilación interna. El archivo no podrá adjuntarse en SiteBuilder.</variant>
+        </translation>
+        <translation approved="true"
+            key="error_retrieving_simulation_values" new="false">
+            <variant>No se han podido recuperar los valores de simulación.</variant>
+        </translation>
+        <translation approved="true"
+            key="error_setting_simulation_values" new="false">
+            <variant>No se han podido actualizar los valores de simulación.</variant>
+        </translation>
+        <translation approved="true" key="Not_a_valid_file" new="false">
+            <note>Generic error message when a file is not valid.</note>
+            <variant>El archivo no es válido.</variant>
+        </translation>
+        <translation approved="true" key="missing_correct_root" new="false">
+            <variant>Falta una etiqueta raíz correcta.</variant>
+        </translation>
+        <translation approved="true" key="Invalid_version" new="false">
+            <variant>Versión no válida.</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_create_file_File_co" new="false">
+            <variant>No se ha podido crear el archivo. No se ha podido guardar el archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="An_unknown_error_occured_while" new="false">
+            <variant>Se produjo un error desconocido al intentar escribir el archivo.</variant>
+        </translation>
+        <translation approved="true" key="no_source_file" new="false">
+            <variant>Falta el archivo de origen.</variant>
+        </translation>
+        <translation approved="true" key="failed-to-create-preview" new="false">
+            <variant>No se ha podido crear la imagen de vista previa.</variant>
+        </translation>
+        <translation approved="true"
+            key="failed-to-create-equipment-icon" new="false">
+            <variant>No se ha podido crear el icono del equipo.</variant>
+        </translation>
+        <translation approved="true" key="none-specified" new="false">
+            <note>this is for a list of images but the user can chose nothing. If they do, we display [none specified]</note>
+            <variant>[Ninguno especificado]</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_read_in_microblock_s" new="false">
+            <variant>No se ha podido leer en la ubicación del micro bloque. Nombre de referencia: {0} ( tipo: {1} )</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_read_in_unknown_micr" new="false">
+            <variant>No se ha podido leer en el tipo de micro bloque desconocido ( {0} ) {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="Failed_to_save_resource_0" new="false">
+            <variant>No se ha podido guardar el programa ''{0}''</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_load_an_unknown_reso" new="false">
+            <variant>No se ha podido cargar un recurso desconocido</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_load_0_resource" new="false">
+            <variant>Falló al cargar ''{0}''.</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_load_0_resource_data" new="false">
+            <variant>No se ha podido cargar la fuente de datos ''{0}''.</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_write_microblock_pro" new="false">
+            <variant>No se ha podido escribir la propiedad del micro bloque ( {0} )</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_read_in_unknown_micr2" new="false">
+            <variant>No se ha podido leer en el micro bloque desconocido ( {0} )</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_read_in_microblock" new="false">
+            <variant>No se ha podido leer en el micro bloque ( {0} )</variant>
+        </translation>
+        <translation approved="true" key="An_unknown_error_occured" new="false">
+            <variant>Se produjo un error desconocido.</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_add_0_wire" new="false">
+            <variant>No se ha podido agregar el alambre {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="Failed_to_read_in_an_object" new="false">
+            <variant>No se ha podido leer en un objeto.</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_write_file" new="false">
+            <variant>No se ha podido escribir el archivo</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_read_file" new="false">
+            <variant>No se ha podido leer el archivo</variant>
+        </translation>
+        <translation approved="true"
+            key="Cannot_determine_correct_forma" new="false">
+            <variant>No se puede determinar el formato correcto.</variant>
+        </translation>
+        <translation approved="true" key="Save_failed_See_0_for_more" new="false">
+            <variant>Ha fallado la grabación. Consulte {0} para obtener más información.</variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_file_Cann" new="false">
+            <variant>{0} no es un archivo válido. (No se puede determinar el tipo de archivo)</variant>
+        </translation>
+        <translation approved="true"
+            key="invalid-format-cannot-determine-type" new="false">
+            <note>error message when we can't determine what type of file this is so we can't read it in.</note>
+            <variant>Formato no válido. No se puede determinar el tipo.</variant>
+        </translation>
+        <translation approved="true" key="An_error_occured_while_trying" new="false">
+            <variant>Se produjo un error al intentar escribir un archivo de error.  No se pudo generar ningún archivo de error</variant>
+        </translation>
+        <translation approved="true" key="Duplicate_reference_names_0" new="false">
+            <variant>Nombres de referencia duplicados: ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="Too_many_MBs_of_type_0" new="false">
+            <variant>Es posible que haya demasiados micro bloques del tipo ''{0}'' ( {1} )</variant>
+        </translation>
+        <translation approved="true" key="This_cannot_be_blank" new="false">
+            <variant>Este campo no puede dejarse en blanco</variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_integer" new="false">
+            <variant>{0} no es un entero válido.</variant>
+        </translation>
+        <translation approved="true" key="Must_be_between_0_and_1" new="false">
+            <variant>El valor debe estar entre {0} y {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_real_number" new="false">
+            <variant>{0} no es un número real válido.</variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_unsigned_in" new="false">
+            <variant>{0} no es un entero sin signo válido.</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed_to_read_location_of_0_1" new="false">
+            <note>Error that will say 'failed to read location of [input/output label] [name].</note>
+            <variant>No se ha podido leer la ubicación de {0} ''{1}''.</variant>
+        </translation>
+        <translation approved="true" key="File_not_found" new="false">
+            <note>Generic error meaning the user tried to open a file that doesn't exist. It will be followed by a newline and the file pathInstance.</note>
+            <variant>No se ha encontrado el archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="This_is_not_a_valid_value_This" new="false">
+            <variant>Este valor no es válido. Este valor puede ser "verdadero" o "falso".</variant>
+        </translation>
+        <translation approved="true"
+            key="This_is_not_a_valid_value_Bit_OneZero" new="false">
+            <variant>Este valor no es válido. Debe ser '1' o '0'.</variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_choice" new="false">
+            <variant>{0} no es una elección válida.</variant>
+        </translation>
+        <translation approved="true" key="Simulation_failed" new="false">
+            <note>Generic error meaning the user tried to simulate a control program and an unspecified error occurred.</note>
+            <variant>No se ha podido realizar la simulación.</variant>
+        </translation>
+        <translation approved="true" key="0_is_not_a_valid_URL" new="false">
+            <variant>{0} no es una dirección URL válida.
+         </variant>
+        </translation>
+        <translation approved="true" key="0_invalid_template_value" new="false">
+            <variant>{0} no es un valor de plantilla válido. Entre los caracteres válidos se incluyen letras, números o guiones bajos "_". Los nombres de plantilla deben comenzar con una letra.</variant>
+        </translation>
+        <translation approved="true" key="edit-order-name" new="false">
+            <note>the name field on the edit order list. Shows the name of the microblock. This is not editable.</note>
+            <variant>Nombre</variant>
+        </translation>
+        <translation approved="true" key="edit-order-description" new="false">
+            <note>the description field on the edit order list. Shows the description of the microblock (if it has one). This is not editable.</note>
+            <variant>Descripción</variant>
+        </translation>
+        <translation approved="true" key="edit-order-reference-name" new="false">
+            <note>the reference name field on the edit order list. Shows the reference name of the microblock. This is not editable.</note>
+            <variant>Nombre de la referencia</variant>
+        </translation>
+        <translation approved="true" key="edit-order-property-page-text" new="false">
+            <note>the property page text field on the edit order list. Shows the property page text of the microblock if is has a field (may be blank). This is not editable.</note>
+            <variant>Propiedad</variant>
+        </translation>
+        <translation approved="true" key="ocl-text-label" new="false">
+            <note>Label for OCL programming language text.</note>
+            <variant>Texto OCL</variant>
+        </translation>
+        <translation approved="true" key="active-text-label" new="false">
+            <note>Label for active text.</note>
+            <variant>Texto activo</variant>
+        </translation>
+        <translation approved="true" key="inactive-text-label" new="false">
+            <note>Label for inactive text.</note>
+            <variant>Texto inactivo</variant>
+        </translation>
+        <translation approved="true" key="name-ovr-label" new="false">
+            <note>Label abbreviation for Name Override</note>
+            <variant>Ovr nombre</variant>
+        </translation>
+        <translation approved="true" key="Failed_to_read_in_image" new="false">
+            <note>Error message that occurs when an image fails to load</note>
+            <variant>No se ha podido leer en la imagen:</variant>
+        </translation>
+        <translation approved="true"
+            key="embedded_images_are_not_supported_in_this_version" new="false">
+            <note>Error message to notify the user that embedded images are not supported.</note>
+            <variant>El archivo contiene imágenes incrustadas que no son compatibles con esta versión.</variant>
+        </translation>
+        <translation approved="true" key="unknown_property_for_path" new="false">
+            <note>Error message to notify that the property for the supplied path wasn't found.</note>
+            <variant>Propiedad desconocida para la ruta: </variant>
+        </translation>
+        <translation approved="true" key="Printing" new="false">
+            <note>Heading for dialog to notify the user that their document is printing.</note>
+            <variant>Impresión</variant>
+        </translation>
+        <translation approved="true" key="signature-mismatch-exception" new="false">
+            <note>Error message thrown when a signed file fails validation.</note>
+            <variant>El archivo no es válido. Su firma no es válida.</variant>
+        </translation>
+        <translation approved="true" key="signature-does-not-exist" new="false">
+            <note>Error message thrown when a signed file has missing signatures.</note>
+            <variant>Este archivo no es válido. Faltan sus firmas.</variant>
+        </translation>
+        <translation approved="true" key="internal-simulation-error" new="false">
+            <note>Error thrown when the simulator detects an error during run time.</note>
+            <variant>Se ha producido un error irrecuperable durante la simulación.</variant>
+        </translation>
+        <translation approved="true" key="simulation-run-tooltip" new="false">
+            <note>Tooltip that appears when the cursor hovers over the button to run the simulation.</note>
+            <variant>Ejecuta la simulación a través de intervalos de tiempo predeterminados.</variant>
+        </translation>
+        <translation approved="true" key="simulation-step-tooltip" new="false">
+            <note>Tooltip that appears when the cursor hovers over the button to step the simulation through one execution cycle.</note>
+            <variant>Administra la simulación mediante un único ciclo de ejecución.</variant>
+        </translation>
+        <translation approved="true" key="simulation-stop-tooltip" new="false">
+            <note>Tooltip that appears when the cursor hovers over the button to stop a running simulation.</note>
+            <variant>Detiene una simulación que se está ejecutando.</variant>
+        </translation>
+        <translation approved="true" key="file-name-cannot-be-empty" new="false">
+            <note>Warning to the user informing them why a file name they selected (when they tried to save a control program) is empty and thus illegal. They didn't really pick a name.</note>
+            <variant>Falta el nombre de archivo</variant>
+        </translation>
+        <translation approved="true"
+            key="file-name-cannot-exceed-x-characters" new="false">
+            <note>Warning to the user informing them why a file name they selected (when they tried to save a control program) is too long and thus illegal.</note>
+            <variant>Los nombres de archivo no pueden exceder de {0} caracteres</variant>
+        </translation>
+        <translation approved="true" key="file-name-rules" new="false">
+            <note>Warning to the user informing them why a file name they selected (when they tried to save a control program) is invalid.</note>
+            <variant>Los nombres de archivo sólo pueden contener caracteres alfanuméricos, guiones y caracteres de subrayado (sin espacios), y no pueden comenzar con un número.</variant>
+        </translation>
+        <translation approved="true"
+            key="logic-builder-plugin-description" new="false">
+            <note>File description for plugins that only shows up in the file chooser dialog.</note>
+            <variant>Complementos de {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="Failed-to-convert-type" new="false">
+            <note>Error message for failing to convert a property from one type to another ( i.e. from bit '0','1' to boolean 'true','false' )</note>
+            <variant>No se ha podido convertir el tipo</variant>
+        </translation>
+        <translation approved="true" key="Internal-Error" new="false">
+            <note>Generic error message where the problem is not known.</note>
+            <variant>Error interno</variant>
+        </translation>
+        <translation approved="true"
+            key="Definition-may-be-out-of-synch" new="false">
+            <note>Error message that occurs when the conversion table is out of sync with the definitions.</note>
+            <variant>Error interno. Es posible que la definición no esté sincronizada con la información de conversión.</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed-to-read-unknown-property-for-0-1" new="false">
+            <note>Error message generated when we try to read in a property that is undefined.</note>
+            <variant>No se ha podido leer la propiedad desconocida de {0} ( {1} )</variant>
+        </translation>
+        <translation approved="true" key="Invalid-Fill-Type" new="false">
+            <note>Error message generated if we try to fill a figure with an unknown fill pattern.</note>
+            <variant>Tipo de relleno no válido</variant>
+        </translation>
+        <translation approved="true"
+            key="No-font-exists-with-the-name-0" new="false">
+            <note>Error message generated when an unknown font name if found.</note>
+            <variant>No existe ninguna fuente con el nombre {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="Invalid-value" new="false">
+            <note>Error message generated when a bad color is found</note>
+            <variant>Color no válido (posible error interno)</variant>
+        </translation>
+        <translation approved="true" key="Illegal-style-argument" new="false">
+            <note>Error message generated when a bad font stle is found</note>
+            <variant>Argumento de estilo no válido</variant>
+        </translation>
+        <translation approved="true" key="0-is-not-a-valid-font-size" new="false">
+            <note>Error message generated when an illegal font size for a font is found.</note>
+            <variant>{0} no es un tamaño de fuente válido para esta fuente</variant>
+        </translation>
+        <translation approved="true" key="Invalid-Line-Type" new="false">
+            <note>Error message generated when an illegal line type is found.</note>
+            <variant>Tipo de línea no válido</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed-background-transparency" new="false">
+            <note>Message generated whenever the background transparency is modified.</note>
+            <variant>Transparencia de fondo cambiada</variant>
+        </translation>
+        <translation approved="true" key="Not-a-valid-wire-type" new="false">
+            <note>Message generated when an invalid wire type is found.</note>
+            <variant>El tipo de alambre no es válido</variant>
+        </translation>
+        <translation approved="true"
+            key="Changed-microblock-0-property-1-from-2-to-3" new="false">
+            <note>Message seen in undo list that shows a microblock property has changed values.</note>
+            <variant>Cambió la propiedad ''{1}' en el microbloque ({0}) de ''{2}'' a ''{3}''</variant>
+        </translation>
+        <translation approved="true" key="Failed-to-build-equipment" new="false">
+            <note>Error message generated when we save the source, but could not compile it during the save.</note>
+            <variant>Error interno. No se ha podido generar el equipo. El archivo de origen NO está dañado a menos que se produzcan otros errores.</variant>
+        </translation>
+        <translation approved="true" key="Cannot-determine-file-version" new="false">
+            <note>Error message generated when we read in a file but can't find the file version information</note>
+            <variant>No se puede determinar la versión del archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="Failed-to-read-property-for-0-1" new="false">
+            <note>Error message generated when we try to read in a property that is undefined.</note>
+            <variant>No pudo leer correctamente de  {0} ({1})</variant>
+        </translation>
+        <translation approved="true"
+            key="The-following-properties-were-not-read-in-correctly-0-1" new="false">
+            <note>Error message generated when we try to read in properties and they could not be read correctly.</note>
+            <variant>Las siguientes propiedades no se han leído correctamente {0}: {1}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Illegal-Location-Error-Details" new="false">
+            <note>Error message generated when the user ( or program ) tries to place a microblock in an illegal location.</note>
+            <variant>Causa probable: {0} no permite micro bloques sobre otros micro bloques o extremos de alambre/etiqueta. EIKON para WebCTRL solía permitirlos, pero en ocasiones esto hacía que se ocultaran conexiones involuntariamente, lo que dificultaba la localización y, en algunos casos, daba lugar a un comportamiento inesperado. Pulse el botón Corregir para volver a colocarlo.</variant>
+        </translation>
+        <translation approved="true" key="Error-Corrected" new="false">
+            <note>Message displayed when an error has been fixed</note>
+            <variant>Error corregido</variant>
+        </translation>
+        <translation approved="true" key="attempted-to-set-to" new="false">
+            <note>This is a partial message generated when an attempt is made to set a property to an illegal value.</note>
+            <variant>se ha intentado establecer en</variant>
+        </translation>
+        <translation approved="true" key="Error-" new="false">
+            <note>This is a partial message generated when an attempt is made to set a property to an illegal value.</note>
+            <variant>Error:</variant>
+        </translation>
+        <translation approved="true" key="Replace-0-with-1" new="false">
+            <note>Message displayed for a search and replace.</note>
+            <variant>Reemplazar {0} con {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="Changed-wire-from-0" new="false">
+            <note>Message displayed when a wire changes type, for example from analog to binary.</note>
+            <variant>Alambre cambiado de {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Internal-error-Invalid-property-0" new="false">
+            <note>Error message for a bad property value. Not really meant for the end user to see.</note>
+            <variant>Error interno. Propiedad no válida: {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="ocl-too-many-inputs-error" new="false">
+            <note>Error message for an OCL microblock that has had too many inputs created.</note>
+            <variant>Se han definido demasiado entradas. El número máximo de entradas permitido es 16.</variant>
+        </translation>
+        <translation approved="true"
+            key="0-at-index-1-invalid-character" new="false">
+            <note>Error message for an invalid character in a label.</note>
+            <variant>'{0}' en índice {1} no es un carácter válido para etiquetas.</variant>
+        </translation>
+        <translation approved="true" key="Illegal-time-value-for-0" new="false">
+            <note>Message displayed when a bad time value is found. It either has illegal characters or an incorrect format.</note>
+            <variant>Valor de hora no válido: {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="There-are-no-details-for-this-error" new="false">
+            <note>Message displayed when an error has no detailed information to display.</note>
+            <variant>No existen detalles para este error.</variant>
+        </translation>
+        <translation approved="true"
+            key="Show-properties-typically-shown-on-graphics" new="false">
+            <note>Message for an option to show typical or common properties on graphics.</note>
+            <variant>Mostrar propiedades que se muestran normalmente en los gráficos.</variant>
+        </translation>
+        <translation approved="true" key="Too-Many-Microblocks-for-ZN" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but having more microblocks than are allowed. It says what the max is and how many you've exceeded it by some amount. It also points out that not all types of microblocks are included in the count.</note>
+            <variant>Un programa de control ZN admite como máximo {0} micro bloques (sin incluir etiquetas, texto, micro bloques estado y micro bloques de E/S dentro de micro bloques personalizados). Este programa de control supera el máximo en {1} micro bloques.</variant>
+        </translation>
+        <translation approved="true" key="Microblock-0-is-not-allowed" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but having a microblocks that is not allowed.</note>
+            <variant>El microbloque {0} no se admite en el equipo ZN.</variant>
+        </translation>
+        <translation approved="true"
+            key="Missing-required-microblocks-for-ZN" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but not having the required microblocks.</note>
+            <variant>Faltan microbloques necesarios para el ZN.  El ZN requiere un reloj de hora BACnet, un setpoint y un sensor de zona RS o Logistat, o una entrada con el nombre "temperatura de zona".</variant>
+        </translation>
+        <translation approved="true"
+            key="Too-many-PID-loop-microblocks-0" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but having too many PID microblocks.</note>
+            <variant>Hay demasiados micro bloques de bucles PID. Los módulos ZN sólo pueden contener {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Too-many-set-color-microblocks-0" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but having too many Set Color.</note>
+            <variant>Hay demasiados micro bloques de color establecidos. Los módulos ZN sólo pueden contener {0}
+            </variant>
+        </translation>
+        <translation approved="true"
+            key="Required-microblocks-not-within-bounds-0" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but having microblocks outside the allowed bounds.</note>
+            <variant>Los micro bloques necesarios deben tener entre ({0}, {1}) y ({2}, {3}) límites para ZN.</variant>
+        </translation>
+        <translation approved="true" key="Missing-required-input" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but not having the required microblocks.</note>
+            <variant>Falta la entrada necesaria para el setpoint. La entrada "zona" del setpoint debe ser o una entrada analógica, una entrada analógica de red, un sensor de zona Logistat, un sensor de zona RS (con o sin control de ventilador) o una etiqueta con el nombre 'temperatura de zona'. Si la entrada proviene de Logistat, debe estar asociada a la salida "temperatura de zona". Si la entrada proviene de un sensor RS o RSF, debe estar asociada a la salida "zona".</variant>
+        </translation>
+        <translation approved="true"
+            key="Missing-required-microblocks-for-UNI" new="false">
+            <note>Error message displayed when trying to compile the control program for ZN, but not having the required microblocks.</note>
+            <variant>Faltan micro bloques necesarios para UNI. UNI requiere un reloj de hora BACnet y un valor propuesto.</variant>
+        </translation>
+        <translation approved="true"
+            key="Microblock-0-is-not-allowed-UNI" new="false">
+            <note>Error message displayed when trying to compile the control program for UNI, but having a microblocks that is not allowed.</note>
+            <variant>El microbloque {0} no se admite en el equipo UNI.</variant>
+        </translation>
+        <translation approved="true"
+            key="All-0-microblocks-must-be-connected-to-setpoints-1-output-UNI" new="false">
+            <note>Error message displayed when trying to compile the control program for UNI, but having a microblocks that is not allowed.</note>
+            <variant>Todos los {0} micro bloques deben estar conectados a la salida del punto de ajuste {1} para UNI.</variant>
+        </translation>
+        <translation approved="true" key="image-0-could-not-be-loaded" new="false">
+            <note>Error message displayed when an image could not be loaded because the image file wasn't found.</note>
+            <variant>No se ha podido leer ''{0}'' debido a que no se encuentra la imagen o está dañada.</variant>
+        </translation>
+        <translation approved="true" key="LABEL" new="false">
+            <note>Default label name for a new label.</note>
+            <variant>ETIQUETA</variant>
+        </translation>
+        <translation approved="true" key="comments-appendage" new="false">
+            <note>Label when general comments when present (and optional) for something in a list. The item will be displayed. If it has comments, this text will be shown followed by the comments.</note>
+            <variant>Comentarios: </variant>
+        </translation>
+        <translation approved="true" key="property-errors-exist" new="false">
+            <note>Error messages stating that a specific microblock has at least 1 property that is in error.</note>
+            <variant>Existen errores de propiedad para el micro bloque ''{0}''</variant>
+        </translation>
+        <translation approved="true" key="image-files-description" new="false">
+            <note>Description of image files in the 'file type' combo box of a file chooser dialog</note>
+            <variant>Archivos de imagen</variant>
+        </translation>
+        <translation approved="true" key="value-set-blank-error" new="false">
+            <note>This is displayed if the user adds or renames a Program Defaults (value set) name so its blank (or just whitespace).</note>
+            <variant>Los nombres predeterminados del programa no pueden dejarse en blanco.</variant>
+        </translation>
+        <translation approved="true" key="value-set-too-long-error" new="false">
+            <note>This is displayed if the user adds or renames a Program Defaults (value set) name that has too many characters. The parameter here is for the maximum number of characters</note>
+            <variant>Los nombres predeterminados del programa pueden tener {0} caracteres como máximo.</variant>
+        </translation>
+        <translation approved="true" key="unsupported-microblock" new="false">
+            <note>This is displayed if the user tries to open a file containing (or other operations using) an unsupported microblocks.</note>
+            <variant>{0} no es un microbloque admitido.</variant>
+        </translation>
+        <translation approved="true" key="Unsupported_Control_Program" new="false">
+            <note>General error message for a control program that is not supported in this version/brand of LogicBuilder.</note>
+            <variant>Programa de control no admitido</variant>
+        </translation>
+        <translation approved="true"
+            key="multiple_program_defaults_not_supported" new="false">
+            <note>These are details to an error. It specifies that the control program that was attempted to be opened contains multiple 'program defaults'. This features is not supported in this version/brand of LogicBuilder -- which doesn't even present the user with the feature.</note>
+            <variant>Contiene varios valores predeterminados del programa. Esta función no se admite.</variant>
+        </translation>
+        <translation approved="true"
+            key="third-party-bacnet-utility-file-type-description" new="false">
+            <note>This is the description for files that are created by the Third Party BACnet Utility. This shows up in File dialogs when a user tries to select a file.</note>
+            <variant>Archivos de utilidades BACnet de terceros</variant>
+        </translation>
+        <translation approved="true"
+            key="bacnet-export-file-type-description" new="false">
+            <note>This is the description for files that contain information about BACnet objects. This file is generated by WebCTRL and imported by the Third Party BACnet Utility. This shows up in File dialogs when a user tries to select a file.</note>
+            <variant>Archivos de exportación BACnet</variant>
+        </translation>
+    </section>
+</resource-base>
