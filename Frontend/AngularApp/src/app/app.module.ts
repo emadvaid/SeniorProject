@@ -15,6 +15,7 @@ import { FileSelectDirective} from 'ng2-file-upload';
 import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
+import { StatisticsComponent } from './views/admin/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {FileDropModule} from 'ngx-file-drop';
     routingComponents,
     FileSelectDirective,
     FileFunctionsComponent,
-    FileFunctionsRedoComponent
+    FileFunctionsRedoComponent,
+    StatisticsComponent,
   ],
   imports: [
     HttpModule,

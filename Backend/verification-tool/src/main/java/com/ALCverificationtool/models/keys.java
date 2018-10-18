@@ -4,7 +4,7 @@ public class keys {
 
     private Long keyId;
     private String keyName;
-    private boolean keyModified;
+    private boolean keyApproved;
     private boolean keyNew;
     private String keyVariant;
     private String keyNote;
@@ -17,7 +17,6 @@ public class keys {
 
     public keys(keysRec original) {
         this.keyName = original.getKeyName();
-        this.keyModified = original.getKeyModified();
         this.keyNew = original.getKeyNew();
         this.keyVariant = original.getKeyVariant();
         this.keyNote = original.getKeyNote();
@@ -27,12 +26,12 @@ public class keys {
         this.fileNotes = original.getFileNotes();
     }
 
-    public keys(Long keyId, String keyName, boolean keyModified, boolean keyNew,
+    public keys(Long keyId, String keyName, boolean keyNew,
                 String keyVariant, String keyNote, String sectionId,
                 String sectionNote, String fileName, String fileNotes){
         this.keyId = keyId;
         this.keyName = keyName;
-        this.keyModified = keyModified;
+        this.keyApproved = keyApproved;
         this.keyNew = keyNew;
         this.keyVariant = keyVariant;
         this.keyNote = keyNote;
@@ -48,8 +47,8 @@ public class keys {
     public String getKeyName() {return keyName;}
     public void setKeyName(String keyName) {this.keyName = keyName;}
 
-    public boolean getKeyModified() {return keyModified;}
-    public void setKeyModified(boolean keymodified) {this.keyModified = keymodified;}
+    public boolean getKeyApproved() {return keyApproved;}
+    public void setKeyApproved(boolean keyApproved) {this.keyApproved = keyApproved;}
 
     public boolean getKeyNew() {return keyNew;}
     public void setKeyNed(boolean keyNew) {this.keyNew = keyNew;}
