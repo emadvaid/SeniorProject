@@ -30,4 +30,8 @@ export class StatisticsService {
         console.log('http://localhost:8080/statistics/approved')
         return this.http.get('http://localhost:8080/statistics/approved')
     }
+
+    getTotalKeys() {
+        return this.http.get('http://localhost:8080/statistics/total')
+    }
 }

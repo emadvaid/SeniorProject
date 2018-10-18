@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="core" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="core" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
     <section id="Core constants">
         <translation approved="true" key="SetupManager_PARITY_EVEN" new="false">
             <note>droplist choice - Even parity</note>
-            <variant>Par</variant>
+            <variant>偶數</variant>
         </translation>
         <translation approved="true" key="SetupManager_PARITY_ODD" new="false">
             <note>droplist choice - Odd parity</note>
-            <variant>Impar</variant>
+            <variant>奇數</variant>
         </translation>
         <translation approved="true" key="SetupManager_PARITY_NONE" new="false">
             <note>droplist choice - No parity</note>
-            <variant>Ninguno</variant>
+            <variant>無</variant>
         </translation>
     </section>
     <section id="proxy conflicts/problems">
@@ -19,187 +19,188 @@
         <translation approved="true" key="reference_name" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a reference name was automatically changed during a copy/paste.</note>
-            <variant>Otro nodo ya está utilizando el nombre de referencia del nodo importado. Se ha creado automáticamente un nombre de referencia exclusivo para usted.</variant>
+            <variant>因其它節點已使用載入節點的参考名，所以现在已自動为您建立新的唯一参考名。</variant>
         </translation>
         <translation approved="true" key="site_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a site number was automatically changed during a copy/paste.</note>
-            <variant>Otro sitio ya está utilizando el número del sitio importado. Se ha creado automáticamente un número de sitio exclusivo para usted.</variant>
+            <variant>因其它所在地已使用載入所在地編號，現已自動建立新的唯一所在地編號。</variant>
         </translation>
         <translation approved="true" key="network_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a network number was automatically changed during a copy/paste.</note>
-            <variant>Otra red ya está utilizando el número de la red importada. Se ha creado automáticamente un número de red exclusivo para usted.</variant>
+            <variant>因其它網路已使用載入網路的编号，所以现已自動為您建立新的唯一網路编号。</variant>
         </translation>
         <translation approved="true" key="device_id" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a device id was automatically changed during an import.</note>
-            <variant>Otro controlador ya está utilizando el identificador de controlador del dispositivo importado. Se ha creado automáticamente un identificador de dispositivo exclusivo para usted.</variant>
+            <variant>因其它控制器已使用新增控制器的裝置ID, 已自動為您建立新的唯一装置 ID。</variant>
         </translation>
         <translation approved="true" key="nat_address" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
-            <variant>Ya hay otra controlador usando la dirección IP pública del controlador importado. Se ha creado automáticamente una dirección exclusiva para usted.</variant>
+            <variant>另一個控制器已在使用所載入之控制器的公用 IP 位址。已為您自動建立一個新的唯一位址。</variant>
         </translation>
         <translation approved="true" key="mac_address" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
-            <variant>Otro controlador ya está utilizando la dirección del controlador importado. Se ha creado automáticamente una dirección exclusiva para usted.</variant>
+            <variant>因其它控制器已使用載入控制器的位址，已自動建立新的唯一地址。</variant>
         </translation>
         <translation approved="true" key="instance_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that an equipment instance number was automatically changed during an import.</note>
-            <variant>Otro programa de control ya está utilizando el número de instancia del programa de control importado. Se ha creado automáticamente un número de instancia exclusivo para usted.</variant>
+            <variant>因其它控制程式已使用載入控制程式的例号，所以现已自動建立新的唯一例号。</variant>
         </translation>
         <translation approved="true" key="already_attached" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates a mismatch between a device and a piece of equipment during an import.</note>
-            <variant>El controlador importado ha intentado asignarse a un programa de control que ya se encuentra asignado a otro controlador. El programa  de control no esta asignado.</variant>
+            <variant>載入的控制器已嘗試将已指定给其它装置的控制程式指定給自己。此控制程式未重新指定。</variant>
         </translation>
         <translation approved="true" key="attached_eq_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indication of an attempt to assign a non-existent equipment to a device.</note>
-            <variant>El controlador importado ha intentado asignarse  un programa de control que no existe. Puede asignar este programa de control exportándolo (desde la misma base de datos que este controlador) y luego importárlo en esta base de datos.</variant>
+            <variant>載入之控制器將某個不存在的控制程式指定給自己, 您可以藉由輸出控制程式來指定（從該控制器所在之相同資料庫），然后再將其載入到此資料庫。</variant>
         </translation>
         <translation approved="true" key="attached_device_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an attempt to assign an equipment to a non-existent device.</note>
-            <variant>El programa de control importado ha intentado asignarse a un controlador que no existe. Puede asignar este programa de control exportando el controlador (desde la misma base de datos que este programa de control) y luego importándolo en esta base de datos.</variant>
+            <variant>載入之控制程式將自己指定到某個不存在的控制器。您可以藉由輸出控制器來指定控制程式（從該控制程式所在之相同資料庫），然后再將其載入到此資料庫</variant>
         </translation>
         <translation approved="true" key="equipment_parameter" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - error trying to set an equipment parameter</note>
-            <variant>No se pudo establecer un parámetro de programa de control. Esto se debe normalmente a que el programa de control no ha vuelto a cargarse (durante la importación o antes de la exportación).</variant>
+            <variant>無法設定程式參數。通常是因為未重新載入控制程式(載入時或載出時)。
+ </variant>
         </translation>
         <translation approved="true" key="report_parameter" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error with a report parameter due to a problem with a control program during a database import or export.  </note>
-            <variant>No se pudo establecer un parámetro de informe. Esto se debe normalmente a que el programa de control no ha vuelto a cargarse (durante la importación o antes de la exportación).</variant>
+            <variant>無法設定報表參數。通常這是因為未重新載入該控制程式（載入過程中，或載出之前）。</variant>
         </translation>
         <translation approved="true" key="schedule_group" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indication of an error trying to assign a schedule group</note>
-            <variant>No asignó este nodo a un grupo de horarios debido a que el grupo no existe. Debe configurar manualmente todos los grupos de horarios, tanto en la base de datos importada como en la exportada.</variant>
+            <variant>因為日程群组不存在，因此沒有將此節點指定到日程群组。您必须在載入和載出的資料庫中，手動建立所有日程群组。</variant>
         </translation>
         <translation approved="true" key="reporting_action" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a reporting action</note>
-            <variant>No asignó a una acción de elaboración de informes debido a que la acción no existe. Debe configurar manualmente todas las acciones de elaboración de informes, tanto en la base de datos importada como en la exportada.</variant>
+            <variant>因為該動作不存在，因此没有指定给報表。您必須在所有載入與載出的資料庫中，手動設定所有報表動作。</variant>
         </translation>
         <translation approved="true" key="source_tree_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to set up source nodes due to a non-existent source tree</note>
-            <variant>No se pudieron importar los nodos de la fuente. No se encontró el árbol de la fuente. Debe agregar manualmente los árboles de la fuente y configurar las normas tanto para la base de datos importada como para la exportada.</variant>
+            <variant>載入來源節點失败。未找到來源樹狀圖。您必须手動添加來源樹狀圖，並為載入和載出的資料庫建立规则。</variant>
         </translation>
         <translation approved="true" key="source_parent_relocated" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source parent location problem.</note>
-            <variant>No puede determinar el sitio para el programa de control debido a que no está asignado a un controlador.  El programa de control se ha asignado a la raíz del árbol de la fuente.</variant>
+            <variant>未指定到控制器，無法確定控制程式的所在地。控制程式已被指定到來源樹狀圖根目錄下。</variant>
         </translation>
         <translation approved="true" key="source_parent_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source parent node.  Parent node was not found.</note>
-            <variant>No se pudo asignar el nodo de origen de la fuente. No se encontró la fuente en la base de datos importada.</variant>
+            <variant>指定來源節點失败。在載入的資料庫中，無法找到來源。</variant>
         </translation>
         <translation approved="true" key="source_rules_failed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source rule.</note>
-            <variant>Error de norma de la fuente. Debe agregar manualmente los árboles de la fuente y configurar las normas tanto para la base de datos importada como para la exportada.</variant>
+            <variant>來源规则错误。您必须手動添加來源樹狀圖，並為載入和載出的資料庫建立规则。</variant>
         </translation>
         <translation approved="true" key="operator_or_group_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indication of an error with an operator or group due to a problem encountered during a database import.   </note>
-            <variant>No se encontró un operador o grupo de operadores a donde se le se remitió.  Para corregir, agregue el operador o grupo que falta y vuelva a importar.</variant>
+            <variant>未找到引用的操作员或操作员群组。要更正，请添加缺少的操作员或操作员群组並重新載入。</variant>
         </translation>
         <translation approved="true" key="role_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indication of an error with a missing role encountered during a database import.   </note>
-            <variant>No se pudo encontrar un rol.  Para corregir, agregue el rol que falta y vuelva a importar.</variant>
+            <variant>無法找到任務。要更正，請添加缺少的任務並重新載入。</variant>
         </translation>
         <translation approved="true" key="privilege_key_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a privilege being invalid for this database version.  </note>
-            <variant>No se pudo retener un privilegio debido a que no aplica para esta versión.  Esto no debe causar ningún problema.</variant>
+            <variant>因該權限不適用此版本，因此無法保留它。這不會導致任何問題。</variant>
         </translation>
         <translation approved="true" key="preference_does_not_exist" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a user preference being invalid for this database version. </note>
-            <variant>No se pudo retener una preferencia de usuario debido a que no aplica para esta versión.  Esto no debe causar ningún problema.</variant>
+            <variant>因使用者偏好不適用此版本，因此無法保留它。但不會導致任何問題。</variant>
         </translation>
         <translation approved="true" key="added_missing_view_category" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a missing category during a database import </note>
-            <variant>Agregó una categoría de visores que falta. Esto sucede cuando un visor en la base de datos importada posee una categoría que no está en la base de datos existente. Vaya a la página de categorías de gráficas o propiedades, en el árbol de configuración.</variant>
+            <variant>添加的視圖類别已遺失。當載入的資料庫中有某一視圖其類別不存在於現有資料庫時，就會發生此類情况。請到组態樹中的圖形或屬性類别页。</variant>
         </translation>
         <translation approved="true" key="add_missing_view_category_failed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with adding a category that was previously missing. </note>
-            <variant>No se pudo agregar una categoría de visor que falta, por lo que no se agregarán los visores para esta ubicación.</variant>
+            <variant>添加失敗, 檢視類別已遺失, 無法為該位置加入檢視。</variant>
         </translation>
         <translation approved="true" key="view_not_attached" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error attaching a view to a node during a database import </note>
-            <variant>No se pudo adjuntar el visor.  Esto sucede cuando no existe el archivo visor utilizado por la base de datos importada.  Sustituya el archivo de vistas que falta y vuelva a adjuntarlo al nodo.</variant>
+            <variant>附加視圖失敗。當載入的資料庫使用的視圖檔案不存在時，就會出現此類情况。請取代缺少的 .view 檔案，並將其重新附加到該節點。</variant>
         </translation>
         <translation approved="true" key="equipment_missing_expected_child" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error when adding a default view due to a non-existent child node.</note>
-            <variant>No se pudieron agregar las vistas predeterminadas para un secundario de un programa de control debido a que no se encontró el secundario.</variant>
+            <variant>加入子控制程式預設視圖失敗，未找到該控制程式。</variant>
         </translation>
         <translation approved="true" key="cannot_attach_equipment" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign an equipment.  The equipment is not allowed to be assigned to that particular device.</note>
-            <variant>El programa de control importado no se puede asignar a un controlador debido a que no es válido para dicho controlador.</variant>
+            <variant>所載入之控制程式對該控制器是無效的, 無法進行指定。</variant>
         </translation>
         <translation approved="true" key="site_group_cache_invalid" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error assigning the group-cache to a device because it doesn't exist. </note>
-            <variant>Uno de los controladores de caché de grupo especificados no era válido. Se ha modificado el sitio para que no utilice caché de grupos. Debe solucionar este problema cuando finalice la importación.</variant>
+            <variant>指定的群组高速缓存控制器無效。所在地已被改為不使用群组高速缓存處理。載入结束後，須進行修復。</variant>
         </translation>
         <translation approved="true" key="system_nat_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where an imported site or router has been configured for NAT, but the system does not have NAT enabled. </note>
-            <variant>NAT no está habilitado para el sistema, pero un sitio o enrutador importado dispone de información de configuración de NAT.  Debe habilitar NAT después de que concluya la importación.</variant>
+            <variant>系统未啟用 NAT，但是載入的所在地或路由器具有 NAT 配置資訊。載入结束後，應啟用 NAT。</variant>
         </translation>
         <translation approved="true" key="device_nat_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where an imported router has been configured for NAT, but it's site does not have NAT for devices enabled. </note>
-            <variant>El enrutador importado posee una dirección NAT, pero el sitio no indica que sus controladores están detrás de un NAT. Debe habilitar NAT para controladores cuando finalice la importación.</variant>
+            <variant>載入的路由器有 NAT 位址，但是現場未顯示其控制器位於NAT之下。載入结束後，啟用控制器 NAT。</variant>
         </translation>
         <translation approved="true" key="hs_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where hierarchical servers is not enabled for this system, but the clipping contains hierarchical server data. </note>
-            <variant>Los servidores jerárquicos no están habilitados.  No se ha importado el vínculo del servidor.</variant>
+            <variant>未啟用階層伺服器。未載入伺服器鏈接。</variant>
         </translation>
         <translation approved="true" key="hs_servlink_not_allowed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the clipping contains a server link, but the system is a child hierarchical server and therefore does not allow server links. </note>
-            <variant>Los vínculos de servidores no son compatibles con los servidores jerárquicos secundarios.</variant>
+            <variant>下層階層伺服器不允許伺服器鏈接。</variant>
         </translation>
         <translation approved="true" key="hs_navlink_not_allowed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the clipping contains a navigation link, but the system is a parent hierarchical server and therefore does not allow navigation links. </note>
-            <variant>Los vínculos de navegación no son compatibles con los servidores jerárquicos principales.</variant>
+            <variant>上層階層伺服器不允許瀏覽器鏈接。</variant>
         </translation>
         <translation approved="true" key="missing_component" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where a file is missing that might be needed to correctly paste the system fragment at a later time. </note>
-            <variant>Falta un archivo necesario.  Esto puede generar un error en la importación.</variant>
+            <variant>缺少所需檔案。这可能導致載入失败。</variant>
         </translation>
         <translation approved="true" key="device_type_change" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the device in the clipping could not be imported as it was into the target database.  The device type was changed before being imported. </note>
-            <variant>El nombre del dispositivo cambió durante la importación. Se precisa descarga.</variant>
+            <variant>裝置類型在載入時有所變動，需要進行下載。</variant>
         </translation>
         <translation approved="true" key="ccnip_connection_change" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a conflict was resolved by updating the CCN/IP connection CCN gateway address to the address of the gateway being imported. </note>
-            <variant>La dirección de puerta de enlace CCN de conexión CCN/IP ha cambiado.</variant>
+            <variant>CCN/IP 連接的 CCN 介面位址有所變動。</variant>
         </translation>
         <translation approved="true" key="ccnip_connection_change_needed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem that the import process could not update the CCN/IP Connection's CCN Gateway address to match the imported gateway.  Further action is required by the user.</note>
-            <variant>Se ha importado la puerta de enlace CCN, pero no ha podido actualizarse la dirección de puerta de enlace CCN de conexión CCN/IP. Actualícela manualmente.</variant>
+            <variant>介面位址已載入，但無法更新 CCN/IP 連接的 CCN 介面位址。請手動進行此更新。</variant>
         </translation>
     </section>
     <section id="CoreScheduleNodes">
@@ -207,77 +208,77 @@
         <translation approved="true" key="fst" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in first week of the month</note>
-            <variant>1</variant>
+            <variant>第一</variant>
         </translation>
         <translation approved="true" key="snd" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in second week of the month</note>
-            <variant>2</variant>
+            <variant>第二週</variant>
         </translation>
         <translation approved="true" key="trd" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in third week of the month</note>
-            <variant>3</variant>
+            <variant>第三週</variant>
         </translation>
         <translation approved="true" key="fth" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in fourth week of the month</note>
-            <variant>4</variant>
+            <variant>第四</variant>
         </translation>
         <translation approved="true" key="fith" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in fifth week of the month</note>
-            <variant>5</variant>
+            <variant>第五週</variant>
         </translation>
         <translation approved="true" key="last" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in last week of the month</note>
-            <variant>último</variant>
+            <variant>最後一週</variant>
         </translation>
         <translation approved="true" key="Every" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>Used with keys above to form phrase like: Every 2nd Tuesday</note>
-            <variant>Cada</variant>
+            <variant>每</variant>
         </translation>
         <translation approved="true" key="Mon" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Monday</note>
-            <variant>Lun</variant>
+            <variant>星期一</variant>
         </translation>
         <translation approved="true" key="Tue" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Tuesday</note>
-            <variant>Mar</variant>
+            <variant>星期二</variant>
         </translation>
         <translation approved="true" key="Wed" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Wednesday</note>
-            <variant>Mié</variant>
+            <variant>星期三</variant>
         </translation>
         <translation approved="true" key="Thu" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Thursday</note>
-            <variant>Jue</variant>
+            <variant>星期四</variant>
         </translation>
         <translation approved="true" key="Fri" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Friday</note>
-            <variant>Vie</variant>
+            <variant>星期五</variant>
         </translation>
         <translation approved="true" key="Sat" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Saturday</note>
-            <variant>Sáb</variant>
+            <variant>星期六</variant>
         </translation>
         <translation approved="true" key="Sun" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Sunday</note>
-            <variant>Dom</variant>
+            <variant>星期日</variant>
         </translation>
         <translation approved="true" key="Any" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>For any day of the week</note>
-            <variant>Cualquier</variant>
+            <variant>任意</variant>
         </translation>
     </section>
 </resource-base>

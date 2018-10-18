@@ -176,4 +176,11 @@ public class KeyServiceImpl implements KeyService {
         System.out.println("Approved Keys " + totalApproved);
         return totalApproved;
     }
+
+    @Override
+    public int countTotal() {
+        List<keysRec> results = keysDao.findAll();
+
+        return results.size();
+    }
 }

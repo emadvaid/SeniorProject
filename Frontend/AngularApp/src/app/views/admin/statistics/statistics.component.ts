@@ -8,6 +8,7 @@ import { StatisticsService }  from '../../../services/statistics/statistics.serv
 export class StatisticsComponent implements OnInit {
   newKeys: number;
   approvedKeys: number;
+  totalKeys: number;
 
   constructor(
     private statisticsService: StatisticsService,
@@ -27,5 +28,10 @@ export class StatisticsComponent implements OnInit {
         this.approvedKeys = approvedKeys.json();
       }
     );
+    this.statisticsService.getTotalKeys().subscribe(
+      (totalKeys) => {
+        this.totalKeys = totalKeys.json();
+      }
+    )
   }
 }

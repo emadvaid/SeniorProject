@@ -13,4 +13,6 @@ public interface KeyService {
     int countNew();
 
     int countApproved();
+
+    int countTotal();
 }

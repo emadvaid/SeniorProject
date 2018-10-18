@@ -61,4 +61,14 @@ public class KeysController {
 
         return approvedKeys;
     }
+
+    @CrossOrigin
+    @GetMapping("/statistics/total")
+    public int getTotalKeys() {
+        int totalKeys = service.countTotal();
+
+        System.out.println(totalKeys);
+
+        return totalKeys;
+    }
 }
