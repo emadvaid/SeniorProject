@@ -17,6 +17,9 @@ import { FileFunctionsComponent } from './views/file-functions/file-functions.co
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
 import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
+import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
+import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
+
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -35,7 +38,10 @@ const appRoutes: Routes = [
       {path: 'manageUsers', component: ManageUsersComponent},
       {path: 'createUser' , component: CreateUserComponent},
       {path: 'editUser' , component: EditUserComponent},
-      {path: 'importFile', component: FileFunctionsComponent}
+      {path: 'manageLanguages' , component: ManageLanguageComponent},
+      {path: 'createLanguage' , component: CreateLanguageComponent},
+      {path: 'importFile', component: FileFunctionsComponent},
+
     ]
   },
   {
@@ -70,6 +76,8 @@ export const routingComponents = [
   ManageUsersComponent,
   CreateUserComponent,
   EditUserComponent,
+  ManageLanguageComponent,
+  CreateLanguageComponent,
   PageNotFoundComponent,
   ErrorPageComponent
 ];
