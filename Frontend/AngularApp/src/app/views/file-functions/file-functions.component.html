@@ -18,6 +18,17 @@
     </table>
   </div>
   </div>
+  <div class='form-group'>
+    <label>Verison Number</label>
+    <input
+        type="text"
+        class = 'form-control'
+        id="verNumber"
+        name="verNumber"
+        placeholder="Enter Verison Number"
+        [(ngModel)]="model.verNumber"
+    >
+</div>
   <button type="button" class="btn btn-success btn-s"
           (click)="onUpload()" id="button1" disabled>
     Upload XML files
