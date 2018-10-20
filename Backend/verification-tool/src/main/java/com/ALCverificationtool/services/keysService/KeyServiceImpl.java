@@ -160,7 +160,7 @@ public class KeyServiceImpl implements KeyService {
                 totalNew += 1;
             }
         }
-        System.out.println("New Keys " + totalNew);
+        //System.out.println("New Keys " + totalNew);
         return totalNew;
     }
 
@@ -173,7 +173,7 @@ public class KeyServiceImpl implements KeyService {
                 totalApproved += 1;
             }
         }
-        System.out.println("Approved Keys " + totalApproved);
+        //System.out.println("Approved Keys " + totalApproved);
         return totalApproved;
     }
 

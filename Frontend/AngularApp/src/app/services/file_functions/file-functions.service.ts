@@ -26,4 +26,9 @@ export class FileFunctionsService {
     }
       return this.http.post(this.serverUrl, uploadData , httpOptions);
   }
+
+  exportFiles() {
+    console.log("http://localhost:8080/exportFile");
+    return this.http.get('http://localhost:8080/exportFile');
+  }
 }

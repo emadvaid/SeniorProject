@@ -22,12 +22,10 @@ export class StatisticsService {
     ) { }
 
     getNewKeys() {
-        console.log('http://localhost:8080/statistics/new')
         return this.http.get('http://localhost:8080/statistics/new')
     }
 
     getApprovedKeys() {
-        console.log('http://localhost:8080/statistics/approved')
         return this.http.get('http://localhost:8080/statistics/approved')
     }
 

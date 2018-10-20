@@ -16,6 +16,7 @@ import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-fun
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
+import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { StatisticsComponent } from './views/admin/statistics/statistics.compone
     FileFunctionsComponent,
     FileFunctionsRedoComponent,
     StatisticsComponent,
+    ExportFilesComponent,
   ],
   imports: [
     HttpModule,

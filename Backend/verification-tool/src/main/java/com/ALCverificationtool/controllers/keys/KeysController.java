@@ -29,10 +29,6 @@ public class KeysController {
              response = service.readFile(file[i]);
         }
 
-//        int i = service.countNew();
-//
-//        int j = service.countApproved();
-
 //        for(int i = 0; i < paths.length; i++){
 //            System.out.println(paths[i]);
 //        }
@@ -47,7 +43,7 @@ public class KeysController {
 
         int newKeys = service.countNew();
 
-        System.out.println(newKeys);
+        //System.out.println(newKeys);
 
         return newKeys;
     }
@@ -57,7 +53,7 @@ public class KeysController {
 
         int approvedKeys = service.countApproved();
 
-        System.out.println(approvedKeys);
+        //System.out.println(approvedKeys);
 
         return approvedKeys;
     }
@@ -67,7 +63,7 @@ public class KeysController {
     public int getTotalKeys() {
         int totalKeys = service.countTotal();
 
-        System.out.println(totalKeys);
+        //System.out.println(totalKeys);
 
         return totalKeys;
     }
