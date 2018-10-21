@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource-base id="TrendApplet" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
     <section id="Colors">
-        <!-- Note that these keys must match the names used in the enumeration com.controlj.green.addonsupport.access.EquipmentColor -->
+        <!-- Note that these fileuploads must match the names used in the enumeration com.controlj.green.addonsupport.access.EquipmentColor -->
         <note>Location: In GEO tree, select a piece of equipment that displays a Trends action button. Click the button to
          view the trend.
       </note>

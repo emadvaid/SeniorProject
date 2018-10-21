@@ -1538,7 +1538,7 @@
             <note/>
             <variant>Registros desde la notificación</variant>
         </translation>
-        <!-- Missing property keys -->
+        <!-- Missing property fileuploads -->
         <translation approved="true" key="ZN_V_Built_In" new="false">
             <note>Selection value for flow sensor.</note>
             <variant>V ZN + Integrado</variant>
@@ -1663,7 +1663,7 @@
             <note/>
             <variant>Desactivar botón de inactividad</variant>
         </translation>
-        <!-- end missing property keys (but not the end of the section)-->
+        <!-- end missing property fileuploads (but not the end of the section)-->
         <translation approved="true" key="show_property_text" new="false">
             <note/>
             <variant>Mostrar texto de la página de propiedades</variant>

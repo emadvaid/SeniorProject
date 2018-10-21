@@ -3,6 +3,8 @@ package com.ALCverificationtool.models;
 public class keys {
 
     private Long keyId;
+    private String languageCode;
+    private String LanguageVersion;
     private String keyName;
     private boolean keyModified;
     private boolean keyNew;
@@ -15,7 +17,7 @@ public class keys {
 
     public keys() {}
 
-    public keys(keysRec original) {
+    public keys(TranslationResourceRec original) {
         this.keyName = original.getKeyName();
         this.keyModified = original.getKeyModified();
         this.keyNew = original.getKeyNew();

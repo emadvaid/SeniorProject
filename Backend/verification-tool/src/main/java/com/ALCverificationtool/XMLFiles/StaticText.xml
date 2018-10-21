@@ -6514,7 +6514,7 @@
        Expand "Display Objects" equipment.  Choose the "Event Enrollment" point.  Click through the tabs.</note>
             <variant>Parámetros de rango no designado</variant>
         </translation>
-        <!-- New Event Parameter keys for PR 9 and PR 12 -->
+        <!-- New Event Parameter fileuploads for PR 9 and PR 12 -->
         <translation approved="true" key="Access_Event_Parameters" new="false">
             <note>This page displays characteristics of a third-party (non-Automated Logic) device.</note>
             <note>Navigate to this page by clicking the &lt;cfg&gt; button at the bottom of the navigation pane.

@@ -1,19 +1,12 @@
 package com.ALCverificationtool.models;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name="english_current")
-public class keysRec {
+public class TranslationResourceRec {
 
-    // The key id field
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long keyId = null;
-
-    @Column(unique = true, nullable = false)
+    private String languageCode;
+    private String languageVersion;
+    private Long keyId;
     private String keyName;
-
     private boolean keyModified;
     private boolean keyNew;
     private String keyVariant;
@@ -25,9 +18,11 @@ public class keysRec {
     private boolean approved;
     private String folderPath;
 
-    public keysRec() {}
+    public TranslationResourceRec() {
+        keyId = null;
+    }
 
-    public keysRec(keysRec original) {
+    public TranslationResourceRec(TranslationResourceRec original) {
         this.keyName = original.keyName;
         this.keyModified = original.keyModified;
         this.keyNew = original.keyNew;
@@ -39,12 +34,15 @@ public class keysRec {
         this.fileNotes = original.fileNotes;
         this.approved = original.approved;
         this.folderPath = original.folderPath;
+        this.languageCode = original.languageCode;
+        this.languageVersion = original.languageVersion;
+        keyId = null;
     }
 
-    public keysRec(String keyName, boolean keyModified, boolean keyNew,
-                String keyVariant, String keyNote, String sectionId,
-                String sectionNote, String fileName, String fileNotes,
-                   boolean approved, String folderPath){
+    public TranslationResourceRec(String keyName, boolean keyModified, boolean keyNew,
+                                  String keyVariant, String keyNote, String sectionId,
+                                  String sectionNote, String fileName, String fileNotes,
+                                  boolean approved, String folderPath, String languageCode, String languageVersion){
         this.keyName = keyName;
         this.keyModified = keyModified;
         this.keyNew = keyNew;
@@ -56,6 +54,9 @@ public class keysRec {
         this.fileNotes = fileNotes;
         this.approved = approved;
         this.folderPath = folderPath;
+        this.languageCode = languageCode;
+        this.languageVersion = languageVersion ;
+        keyId = null;
     }
 
     public Long getKeyId() {return keyId;}
@@ -93,4 +94,10 @@ public class keysRec {
 
     public String getFolderPath() { return folderPath;}
     public void setFolderPath(String folderPath) { this.folderPath = folderPath;}
+
+    public String getLanguageCode() { return languageCode;}
+    public void setLanguageCode(String languageCode) {this.languageCode = languageCode ;}
+
+    public String getLanguageVersion() { return languageVersion;}
+    public void setLanguageVersion(String languageVersion) {this.languageVersion = languageVersion ;}
 }

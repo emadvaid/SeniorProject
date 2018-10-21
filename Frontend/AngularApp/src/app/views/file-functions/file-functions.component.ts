@@ -88,16 +88,15 @@ export class FileFunctionsComponent implements OnInit {
     console.log(event);
   }
 
-  
+
   onUpload() {
     console.log('File');
-    let uploadData = new FormData();
-    let i =0;
-    for (let file of this.sendFiles) {
+    const uploadData = new FormData();
+    let i = 0;
+    for (const file of this.sendFiles) {
       console.log('file entered');
       uploadData.append('file', file);
       uploadData.append('path', JSON.stringify(this.pathList[i]));
-      uploadData.append('verison', file );
       i++;
     }
     this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
@@ -106,7 +105,7 @@ export class FileFunctionsComponent implements OnInit {
   }
 
   clear() {
-    document.getElementById("filesDrop").style.display = "none";
+    document.getElementById('filesDrop').style.display = 'none';
     this.sendFiles.length = 0;
     this.sendFiles = [];
     this.pathList.length = 0;

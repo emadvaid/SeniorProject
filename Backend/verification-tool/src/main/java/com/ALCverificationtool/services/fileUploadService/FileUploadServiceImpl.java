@@ -1,14 +1,14 @@
-package com.ALCverificationtool.services.keysService;
+package com.ALCverificationtool.services.fileUploadService;
 
 
-import com.ALCverificationtool.models.keysRec;
-import com.ALCverificationtool.controllers.keys.UploadFileResponse;
+import com.ALCverificationtool.models.TranslationResourceRec;
+import com.ALCverificationtool.controllers.fileuploads.FileUploadResponse;
 import com.ALCverificationtool.dao.keys.KeysRepository;
 
+import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.ServletContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -21,23 +21,27 @@ import org.w3c.dom.Element;
 import java.io.File;
 
 @Service
-public class KeyServiceImpl implements KeyService {
+public class FileUploadServiceImpl implements FileUploadService {
     private final KeysRepository keysDao;
 
     @Autowired
-    public KeyServiceImpl (KeysRepository keysDao) {
+    public FileUploadServiceImpl(KeysRepository keysDao) {
         this.keysDao = keysDao;
     }
+
     public  String path = System.getProperty("user.dir") + "/src/main/java/com/ALCverificationtool/XMLFiles/";
 
     @Override
-    public UploadFileResponse readFile(MultipartFile file) throws ParserConfigurationException {
-        keysRec keysRec = new keysRec();
+    public void readFile(MultipartFile file, String versionNumber) throws ParserConfigurationException {
+        TranslationResourceRec transResRec = new TranslationResourceRec();
+
+        transResRec.setLanguageVersion(versionNumber);
 
         try {
 
             File newFile = new File(path + file.getOriginalFilename());
             file.transferTo(newFile);
+
             //test only
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -47,14 +51,20 @@ public class KeyServiceImpl implements KeyService {
             doc.getDocumentElement().normalize();
             String fileName = doc.getDocumentElement().getAttribute("id");
             System.out.println("File Name: " + fileName);
-            keysRec.setFileName(fileName);
+            transResRec.setFileName(fileName);
+
+            //Get the file name
+            doc.getDocumentElement().normalize();
+            String langCode = doc.getDocumentElement().getAttribute("xml:lang");
+            System.out.println("Language Code: " + langCode);
+            transResRec.setLanguageCode(langCode);
 
             //Get the file notes
             NodeList test = doc.getElementsByTagName("note");
             test.item(0).getTextContent();
             String fileNotes = test.item(0).getTextContent().toString();
             System.out.println("File Notes: " + fileNotes);
-            keysRec.setFileNotes(fileNotes);
+            transResRec.setFileNotes(fileNotes);
 
 
             NodeList sectionNodeList = doc.getElementsByTagName("section");
@@ -66,12 +76,12 @@ public class KeyServiceImpl implements KeyService {
                     //Get the section name
                     String sectionName = sectionElement.getAttribute("id");
                     System.out.println("Section Name: " + sectionName);
-                    keysRec.setSectionId(sectionName);
+                    transResRec.setSectionId(sectionName);
 
                     //Get the section note
                     String sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
                     System.out.println("Section Notes: " + sectionNotes);
-                    keysRec.setKeyNote(sectionNotes);
+                    transResRec.setKeyNote(sectionNotes);
 
                     NodeList translationNodeList = ((Element) sectionNode).getElementsByTagName("translation");
                     for (int j = 0; j < translationNodeList.getLength(); j++) {
@@ -82,7 +92,7 @@ public class KeyServiceImpl implements KeyService {
                             //Get the translation key name
                             String translationKey = translationElement.getAttribute("key");
                             System.out.println("Translation Key: " + translationKey);
-                            keysRec.setKeyName(translationKey);
+                            transResRec.setKeyName(translationKey);
 
                             //Get new key variable
                             String translationKeyNew = translationElement.getAttribute("new");
@@ -91,7 +101,7 @@ public class KeyServiceImpl implements KeyService {
                                 keyNew = true;
                             }
                             System.out.println("Translation Key New: " + keyNew);
-                            keysRec.setKeyNew(keyNew);
+                            transResRec.setKeyNew(keyNew);
 
                             //Get modified key variable
                             String translationKeyModified = translationElement.getAttribute("modified");
@@ -100,13 +110,13 @@ public class KeyServiceImpl implements KeyService {
                                 keyModified = true;
                             }
                             System.out.println("Translation Key Modified: " + keyModified);
-                            keysRec.setKeyModified(keyModified);
+                            transResRec.setKeyModified(keyModified);
 
                             //Get translation key notes
                             /*
                             String translationNote = translationElement.getElementsByTagName("note").item(0).getTextContent();
                             System.out.println("Translation Note: " + translationNote);
-                            keysRec.setKeyNote(translationNote);
+                            transResRec.setKeyNote(translationNote);
                             */
                             NodeList notesList = ((Element) translationNode).getElementsByTagName("note");
                             String translationNotes = "";
@@ -114,27 +124,22 @@ public class KeyServiceImpl implements KeyService {
                                 translationNotes += notesList.item(n).getTextContent();
                             }
                             System.out.println("Notes: " + translationNotes);
-                            keysRec.setKeyNote(translationNotes);
+                            transResRec.setKeyNote(translationNotes);
 
                             //Get translation variant
                             String translationVariant = translationElement.getElementsByTagName("variant").item(0).getTextContent();
                             System.out.println("Translation Variant: " + translationVariant);
-                            keysRec.setKeyVariant(translationVariant);
+                            transResRec.setKeyVariant(translationVariant);
 
-                            keysRec temp = new keysRec(keysRec);
-                            keysDao.save(temp);
+                            TranslationResourceRec temp = new TranslationResourceRec(transResRec);
+                            keysDao.create(temp);
                         }
                     }
                 }
             }
         }
         catch (Exception e) {
-            e.printStackTrace();
+            throw new ServiceException("Exception Failed");
         }
-
-
-
-
-        return new UploadFileResponse();
     }
 }
