@@ -98,26 +98,11 @@ public class KeyServiceImpl implements KeyService {
                             //System.out.println("Translation Key New: " + keyNew);
                             keysRec.setKeyNew(keyNew);
 
-                            //Get modified key variable
-                            String translationKeyModified = translationElement.getAttribute("modified");
-//                            boolean keyModified = false;
-//                            if (translationKeyModified.equals("true")) {
-//                                keyModified = true;
-//                            }
-                            //System.out.println("Translation Key Modified: " + keyModified);
-                            //keysRec.setKeyApproved(keyModified);
 
-                            //Get translation key notes
-                            /*
-                            String translationNote = translationElement.getElementsByTagName("note").item(0).getTextContent();
-                            System.out.println("Translation Note: " + translationNote);
-                            keysRec.setKeyNote(translationNote);
-                            */
-
-                            boolean approved = false;
+                            boolean approved = true;
                             String translationKeyApproved = translationElement.getAttribute("approved");
-                            if (translationKeyApproved.equals("true")) {
-                                approved = true;
+                            if (translationKeyApproved.equals("false")) {
+                                approved = false;
                             }
                             keysRec.setApproved(approved);
 

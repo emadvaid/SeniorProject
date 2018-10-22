@@ -53,9 +53,7 @@ public class FolderServiceImpl implements FolderService {
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
         Document doc = dBuilder.newDocument();
-
         Element resourceBase = doc.createElement("resource-base");
         doc.appendChild(resourceBase);
 
@@ -63,9 +61,19 @@ public class FolderServiceImpl implements FolderService {
         String previousNotes = "";
         String previousID = "";
         for (int i = 0; i < keys.size(); i++) {
-            if (!previousFileName.equals(keys.get(i).getFileName())) {
+            String currentFileName = keys.get(i).getFileName();
+
+            if (!currentFileName.equals(previousFileName)) {
+                doc = dBuilder.newDocument();
+                resourceBase = doc.createElement("resource-base");
+                doc.appendChild(resourceBase);
+                previousNotes = "";
+            }
+
+            if (previousFileName.equals(currentFileName)) {
+
                 //XML header
-                resourceBase.setAttribute("id", keys.get(i).getFileName()); //File name
+                resourceBase.setAttribute("id", currentFileName); //File name
                 resourceBase.setAttribute("version", "1.0");
                 resourceBase.setAttribute("xml:lang", "en");
                 resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
@@ -99,40 +107,56 @@ public class FolderServiceImpl implements FolderService {
                     }
 
                     for (int j = i; j < keys.size(); j++) {
-                        //Translation key, approved, and new
-                        String keyNameDB = "";
-                        keyNameDB = keys.get(j).getKeyName();
-                        boolean keyApprovedDB = false;
-                        boolean keyNewDB = false;
-                        keyApprovedDB = keys.get(j).getApproved();
-                        keyNewDB = keys.get(j).getApproved();
-                        Element translationKey = doc.createElement("translation");
-                        translationKey.setAttribute("key", keyNameDB);
-                        translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
-                        translationKey.setAttribute("new", String.valueOf(keyNewDB));
-                        section.appendChild(translationKey);
-                        //Key note
-                        String keyNoteDB = "";
-                        keyNoteDB = keys.get(j).getKeyNote();
-                        Element translationNote = doc.createElement("note");
-                        if (!keyNoteDB.equals("")) {
-                            translationNote.appendChild(doc.createTextNode(keyNoteDB));
-                            translationKey.appendChild(translationNote);
+                        currentFileName = keys.get(j).getFileName();
+                        if (previousFileName.equals(currentFileName)) {
+                            //Translation key, approved, and new
+                            String keyNameDB = "";
+                            keyNameDB = keys.get(j).getKeyName();
+                            boolean keyApprovedDB = false;
+                            boolean keyNewDB = false;
+                            keyApprovedDB = keys.get(j).getApproved();
+                            keyNewDB = keys.get(j).getApproved();
+                            Element translationKey = doc.createElement("translation");
+                            translationKey.setAttribute("key", keyNameDB);
+                            translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
+                            translationKey.setAttribute("new", String.valueOf(keyNewDB));
+                            section.appendChild(translationKey);
+                            //Key note
+                            String keyNoteDB = "";
+                            keyNoteDB = keys.get(j).getKeyNote();
+                            Element translationNote = doc.createElement("note");
+                            if (!keyNoteDB.equals("")) {
+                                translationNote.appendChild(doc.createTextNode(keyNoteDB));
+                                translationKey.appendChild(translationNote);
+                            }
+                            //Key variant
+                            String keyVariantDB = "";
+                            keyVariantDB = keys.get(j).getKeyVariant();
+                            Element translationVariant = doc.createElement("variant");
+                            translationVariant.appendChild(doc.createTextNode(keyVariantDB));
+                            translationKey.appendChild(translationVariant);
+                            previousFileName = currentFileName;
                         }
-                        //Key variant
-                        String keyVariantDB = "";
-                        keyVariantDB = keys.get(j).getKeyVariant();
-                        Element translationVariant = doc.createElement("variant");
-                        translationVariant.appendChild(doc.createTextNode(keyVariantDB));
-                        translationKey.appendChild(translationVariant);
-                        previousFileName = keys.get(j).getFileName();
                     }
+//                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+//                    Transformer transformer = transformerFactory.newTransformer();
+//                    DOMSource source = new DOMSource(doc);
+//
+//                    String desktopPath = System.getProperty("user.home") + "/Desktop";
+//                    StreamResult result = new StreamResult(new File("/Users/benja/Desktop/Export Files/" + currentFileName + ".xml"));
+//
+//                    transformer.transform(source, result);
+//
+//                    System.out.println("File " + currentFileName + " created");
                 }
                 TransformerFactory transformerFactory = TransformerFactory.newInstance();
                 Transformer transformer = transformerFactory.newTransformer();
+                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
                 DOMSource source = new DOMSource(doc);
 
-                StreamResult result = new StreamResult(new File("/Users/benja/Desktop/Export Files/" + keys.get(i).getFileName() + ".xml"));
+                String desktopPath = System.getProperty("user.home") + "/Desktop";
+                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + keys.get(i).getFileName() + ".xml"));
 
                 transformer.transform(source, result);
 

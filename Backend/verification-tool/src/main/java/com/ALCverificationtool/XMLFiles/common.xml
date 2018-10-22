@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="common" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="common" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
     <!-- This file must be translated a little differently. This represents mnemonics for each menu/menu item
         How this works is the translation (variant) must consist of a single letter from the menu and must be
         unique for each section. This is because each letter is a hotkey to press to select a given menu.
@@ -159,6 +159,10 @@
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>PSM</variant>
         </translation>
+        <translation approved="false" key="compile-OPT" new="true">
+            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
+            <variant>OPT</variant>
+        </translation>
         <translation approved="true" key="compile-internal" new="false">
             <note>This version is for several internal use only. They should never show up to a user, but if they accidentally do, this shows something intentionally vague.</note>
             <variant>Sólo interno</variant>
@@ -214,6 +218,10 @@
         <translation approved="true" key="compile-unit-link-controller" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>Abrir vínculo</variant>
+        </translation>
+        <translation approved="false" key="compile-vav-3bp-open" new="true">
+            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
+            <variant>Controlador de zona</variant>
         </translation>
         <translation approved="true" key="general.yes-to-all" new="false">
             <variant>Sí a todo</variant>
