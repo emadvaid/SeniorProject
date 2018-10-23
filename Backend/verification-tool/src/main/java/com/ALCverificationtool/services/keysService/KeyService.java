@@ -9,4 +9,10 @@ import java.util.List;
 
 public interface KeyService {
     UploadFileResponse readFile(MultipartFile file) throws ParserConfigurationException;
+
+    int countNew();
+
+    int countApproved();
+
+    int countTotal();
 }

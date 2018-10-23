@@ -14,7 +14,6 @@ public class keysRec {
     @Column(unique = true, nullable = false)
     private String keyName;
 
-    private boolean keyModified;
     private boolean keyNew;
     private String keyVariant;
     private String keyNote;
@@ -29,7 +28,6 @@ public class keysRec {
 
     public keysRec(keysRec original) {
         this.keyName = original.keyName;
-        this.keyModified = original.keyModified;
         this.keyNew = original.keyNew;
         this.keyVariant = original.keyVariant;
         this.keyNote = original.keyNote;
@@ -41,12 +39,11 @@ public class keysRec {
         this.folderPath = original.folderPath;
     }
 
-    public keysRec(String keyName, boolean keyModified, boolean keyNew,
+    public keysRec(String keyName, boolean keyNew,
                 String keyVariant, String keyNote, String sectionId,
                 String sectionNote, String fileName, String fileNotes,
                    boolean approved, String folderPath){
         this.keyName = keyName;
-        this.keyModified = keyModified;
         this.keyNew = keyNew;
         this.keyVariant = keyVariant;
         this.keyNote = keyNote;
@@ -63,9 +60,6 @@ public class keysRec {
 
     public String getKeyName() {return keyName;}
     public void setKeyName(String keyName) {this.keyName = keyName;}
-
-    public boolean getKeyModified() {return keyModified;}
-    public void setKeyModified(boolean keymodified) {this.keyModified = keymodified;}
 
     public boolean getKeyNew() {return keyNew;}
     public void setKeyNew(boolean keyNew) {this.keyNew = keyNew;}

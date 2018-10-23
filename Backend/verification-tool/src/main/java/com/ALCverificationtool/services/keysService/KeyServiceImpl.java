@@ -19,6 +19,8 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.util.List;
+import java.util.ListIterator;
 
 @Service
 public class KeyServiceImpl implements KeyService {
@@ -28,7 +30,7 @@ public class KeyServiceImpl implements KeyService {
     public KeyServiceImpl (KeysRepository keysDao) {
         this.keysDao = keysDao;
     }
-    public  String path = System.getProperty("user.dir") + "/src/main/java/com/ALCverificationtool/XMLFiles/";
+    public String path = System.getProperty("user.dir") + "/src/main/java/com/ALCverificationtool/XMLFiles/";
 
     @Override
     public UploadFileResponse readFile(MultipartFile file) throws ParserConfigurationException {
@@ -46,14 +48,14 @@ public class KeyServiceImpl implements KeyService {
             //Get the file name
             doc.getDocumentElement().normalize();
             String fileName = doc.getDocumentElement().getAttribute("id");
-            System.out.println("File Name: " + fileName);
+            //System.out.println("File Name: " + fileName);
             keysRec.setFileName(fileName);
 
             //Get the file notes
             NodeList test = doc.getElementsByTagName("note");
             test.item(0).getTextContent();
             String fileNotes = test.item(0).getTextContent().toString();
-            System.out.println("File Notes: " + fileNotes);
+            //System.out.println("File Notes: " + fileNotes);
             keysRec.setFileNotes(fileNotes);
 
 
@@ -65,12 +67,15 @@ public class KeyServiceImpl implements KeyService {
                     Element sectionElement = (Element) sectionNode;
                     //Get the section name
                     String sectionName = sectionElement.getAttribute("id");
-                    System.out.println("Section Name: " + sectionName);
+                    //System.out.println("Section Name: " + sectionName);
                     keysRec.setSectionId(sectionName);
 
                     //Get the section note
-                    String sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
-                    System.out.println("Section Notes: " + sectionNotes);
+                    String sectionNotes = "";
+                    //Check to see if notes are empty, if they are not, then copy into the sectionNotes
+                    if (sectionElement.getElementsByTagName("note").item(0) != null) {
+                        sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
+                    }
                     keysRec.setKeyNote(sectionNotes);
 
                     NodeList translationNodeList = ((Element) sectionNode).getElementsByTagName("translation");
@@ -81,7 +86,7 @@ public class KeyServiceImpl implements KeyService {
                             Element translationElement = (Element) translationNode;
                             //Get the translation key name
                             String translationKey = translationElement.getAttribute("key");
-                            System.out.println("Translation Key: " + translationKey);
+                            //System.out.println("Translation Key: " + translationKey);
                             keysRec.setKeyName(translationKey);
 
                             //Get new key variable
@@ -90,35 +95,28 @@ public class KeyServiceImpl implements KeyService {
                             if (translationKeyNew.equals("true")) {
                                 keyNew = true;
                             }
-                            System.out.println("Translation Key New: " + keyNew);
+                            //System.out.println("Translation Key New: " + keyNew);
                             keysRec.setKeyNew(keyNew);
 
-                            //Get modified key variable
-                            String translationKeyModified = translationElement.getAttribute("modified");
-                            boolean keyModified = false;
-                            if (translationKeyModified.equals("true")) {
-                                keyModified = true;
-                            }
-                            System.out.println("Translation Key Modified: " + keyModified);
-                            keysRec.setKeyModified(keyModified);
 
-                            //Get translation key notes
-                            /*
-                            String translationNote = translationElement.getElementsByTagName("note").item(0).getTextContent();
-                            System.out.println("Translation Note: " + translationNote);
-                            keysRec.setKeyNote(translationNote);
-                            */
+                            boolean approved = true;
+                            String translationKeyApproved = translationElement.getAttribute("approved");
+                            if (translationKeyApproved.equals("false")) {
+                                approved = false;
+                            }
+                            keysRec.setApproved(approved);
+
                             NodeList notesList = ((Element) translationNode).getElementsByTagName("note");
                             String translationNotes = "";
                             for (int n = 0; n < notesList.getLength(); n++) {
                                 translationNotes += notesList.item(n).getTextContent();
                             }
-                            System.out.println("Notes: " + translationNotes);
+                            //System.out.println("Notes: " + translationNotes);
                             keysRec.setKeyNote(translationNotes);
 
                             //Get translation variant
                             String translationVariant = translationElement.getElementsByTagName("variant").item(0).getTextContent();
-                            System.out.println("Translation Variant: " + translationVariant);
+                            //System.out.println("Translation Variant: " + translationVariant);
                             keysRec.setKeyVariant(translationVariant);
 
                             keysRec temp = new keysRec(keysRec);
@@ -136,5 +134,38 @@ public class KeyServiceImpl implements KeyService {
 
 
         return new UploadFileResponse();
+    }
+
+    @Override
+    public int countNew() {
+        int totalNew = 0;
+        List<keysRec> results = keysDao.findAll();
+        for (int i = 0; i < results.size(); i++) {
+            if (results.get(i).getKeyNew() == true) {
+                totalNew += 1;
+            }
+        }
+        //System.out.println("New Keys " + totalNew);
+        return totalNew;
+    }
+
+    @Override
+    public int countApproved() {
+        int totalApproved = 0;
+        List<keysRec> results = keysDao.findAll();
+        for (int i = 0; i < results.size(); i++) {
+            if (results.get(i).getApproved() == true) {
+                totalApproved += 1;
+            }
+        }
+        //System.out.println("Approved Keys " + totalApproved);
+        return totalApproved;
+    }
+
+    @Override
+    public int countTotal() {
+        List<keysRec> results = keysDao.findAll();
+
+        return results.size();
     }
 }
