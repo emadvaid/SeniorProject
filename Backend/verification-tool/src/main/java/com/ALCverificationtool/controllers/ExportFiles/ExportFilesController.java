@@ -29,20 +29,7 @@ public class ExportFilesController {
         //Create empty export folder
         folderService.createFolder();
 
-        //Get keys
-        List<keysRec> keyList = this.folderService.getKeys();
-//        int lastCurrentFileID = 0;
-//        int currentFileID = 0;
-//        String previousFileName = keyList.get(0).getFileName();
-//        for (int i = 0; i < keyList.size(); i++) {
-//            if (previousFileName.equals(keyList.get(i).getFileName())) {
-//                currentFileID++;
-//                previousFileName = keyList.get(i).getFileName();
-//            }
-//        }
-//        System.out.println(currentFileID);
-//        System.out.println(previousFileName);
-//        System.out.println(previousFileName.equals(keyList.get(9).getFileName()));
         folderService.createXMLFile();
+
     }
 }

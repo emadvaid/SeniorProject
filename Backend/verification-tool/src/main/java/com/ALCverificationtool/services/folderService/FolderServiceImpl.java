@@ -17,10 +17,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 @Service
 public class FolderServiceImpl implements FolderService {
@@ -92,6 +89,7 @@ public class FolderServiceImpl implements FolderService {
                 String sectionDB = "";
                 sectionDB = keys.get(i).getSectionId();
                 Element section = doc.createElement("section");
+
                 if (!previousID.equals(sectionDB)) {
                     section.setAttribute("id", sectionDB);
                     resourceBase.appendChild(section);
@@ -108,119 +106,54 @@ public class FolderServiceImpl implements FolderService {
 
                     for (int j = i; j < keys.size(); j++) {
                         currentFileName = keys.get(j).getFileName();
+                        sectionDB = keys.get(j).getSectionId();
                         if (previousFileName.equals(currentFileName)) {
-                            //Translation key, approved, and new
-                            String keyNameDB = "";
-                            keyNameDB = keys.get(j).getKeyName();
-                            boolean keyApprovedDB = false;
-                            boolean keyNewDB = false;
-                            keyApprovedDB = keys.get(j).getApproved();
-                            keyNewDB = keys.get(j).getApproved();
-                            Element translationKey = doc.createElement("translation");
-                            translationKey.setAttribute("key", keyNameDB);
-                            translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
-                            translationKey.setAttribute("new", String.valueOf(keyNewDB));
-                            section.appendChild(translationKey);
-                            //Key note
-                            String keyNoteDB = "";
-                            keyNoteDB = keys.get(j).getKeyNote();
-                            Element translationNote = doc.createElement("note");
-                            if (!keyNoteDB.equals("")) {
-                                translationNote.appendChild(doc.createTextNode(keyNoteDB));
-                                translationKey.appendChild(translationNote);
+                            if (previousID.equals(sectionDB)) {
+                                //Translation key, approved, and new
+                                String keyNameDB = "";
+                                keyNameDB = keys.get(j).getKeyName();
+                                boolean keyApprovedDB = keys.get(j).getApproved();
+                                boolean keyNewDB = keys.get(j).getKeyNew();
+                                Element translationKey = doc.createElement("translation");
+                                translationKey.setAttribute("key", keyNameDB);
+                                translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
+                                translationKey.setAttribute("new", String.valueOf(keyNewDB));
+                                section.appendChild(translationKey);
+                                //Key note
+                                String keyNoteDB = "";
+                                keyNoteDB = keys.get(j).getKeyNote();
+                                Element translationNote = doc.createElement("note");
+                                if (!keyNoteDB.equals("")) {
+                                    translationNote.appendChild(doc.createTextNode(keyNoteDB));
+                                    translationKey.appendChild(translationNote);
+                                }
+                                //Key variant values
+                                String keyVariantDB = "";
+                                keyVariantDB = keys.get(j).getKeyVariant();
+                                Element translationVariant = doc.createElement("variant");
+                                translationVariant.appendChild(doc.createTextNode(keyVariantDB));
+                                translationKey.appendChild(translationVariant);
+                                previousID = keys.get(j).getSectionId();
+                                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                                Transformer transformer = transformerFactory.newTransformer();
+                                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+                                DOMSource source = new DOMSource(doc);
+
+                                String desktopPath = System.getProperty("user.home") + "/Desktop";
+                                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + keys.get(i).getFileName() + ".xml"));
+
+                                transformer.transform(source, result);
+
+                                System.out.println("File " + keys.get(i).getFileName() + " created");
+                                previousFileName = currentFileName;
                             }
-                            //Key variant
-                            String keyVariantDB = "";
-                            keyVariantDB = keys.get(j).getKeyVariant();
-                            Element translationVariant = doc.createElement("variant");
-                            translationVariant.appendChild(doc.createTextNode(keyVariantDB));
-                            translationKey.appendChild(translationVariant);
-                            previousFileName = currentFileName;
                         }
                     }
-//                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
-//                    Transformer transformer = transformerFactory.newTransformer();
-//                    DOMSource source = new DOMSource(doc);
-//
-//                    String desktopPath = System.getProperty("user.home") + "/Desktop";
-//                    StreamResult result = new StreamResult(new File("/Users/benja/Desktop/Export Files/" + currentFileName + ".xml"));
-//
-//                    transformer.transform(source, result);
-//
-//                    System.out.println("File " + currentFileName + " created");
+                    previousID = keys.get(i).getSectionId();
                 }
-                TransformerFactory transformerFactory = TransformerFactory.newInstance();
-                Transformer transformer = transformerFactory.newTransformer();
-                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-                DOMSource source = new DOMSource(doc);
-
-                String desktopPath = System.getProperty("user.home") + "/Desktop";
-                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + keys.get(i).getFileName() + ".xml"));
-
-                transformer.transform(source, result);
-
-                System.out.println("File " + keys.get(i).getFileName() + " created");
+                previousFileName = currentFileName;
             }
         }
     }
 }
-
-//
-//                if (previousFileName.equals(keys.get(i).getFileName())) {
-//                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
-//                    Transformer transformer = transformerFactory.newTransformer();
-//                    DOMSource source = new DOMSource(doc);
-//
-//                    StreamResult result = new StreamResult(new File("/Users/benja/Desktop/Export Files/" + keys.get(i).getFileName() + ".xml"));
-//
-//                    transformer.transform(source, result);
-//
-//                    System.out.println("File created");
-//                }
-
-
-//            //Section Note
-//            String sectionNoteDB = keys.get(i).getSectionNote();
-//            //sectionNoteDB = keys.get(i).getSectionNote();
-//            if (sectionNoteDB != null) {
-//                Element sectionNote = doc.createElement("note");
-//                sectionNote.appendChild(doc.createTextNode(sectionNoteDB));
-//                section.appendChild(sectionNote);
-//            }
-
-//            //Translation key, approved, and new
-//            String keyNameDB = "";
-//            keyNameDB = keys.get(i).getKeyName();
-//            boolean keyApprovedDB = false;
-//            boolean keyNewDB = false;
-//            keyApprovedDB = keys.get(i).getApproved();
-//            keyNewDB = keys.get(i).getApproved();
-//            Element translationKey = doc.createElement("translation");
-//            translationKey.setAttribute("key", keyNameDB);
-//            translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
-//            translationKey.setAttribute("new", String.valueOf(keyNewDB));
-//            section.appendChild(translationKey);
-//            //Key note
-//            String keyNoteDB = "";
-//            keyNoteDB = keys.get(i).getKeyNote();
-//            Element translationNote = doc.createElement("note");
-//            translationNote.appendChild(doc.createTextNode(keyNoteDB));
-//            translationKey.appendChild(translationNote);
-//            //Key variant
-//            String keyVariantDB = "";
-//            keyVariantDB = keys.get(i).getKeyVariant();
-//            Element translationVariant = doc.createElement("variant");
-//            translationVariant.appendChild(doc.createTextNode(keyVariantDB));
-//            translationKey.appendChild(translationVariant);
-
-
-//        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-//        Transformer transformer = transformerFactory.newTransformer();
-//        DOMSource source = new DOMSource(doc);
-//
-//        StreamResult result = new StreamResult(new File("/Users/benja/Desktop/Export Files/test.xml"));
-//
-//        transformer.transform(source, result);
-//
-//        System.out.println("File created");
