@@ -22,11 +22,11 @@
     
 </div>
   <button type="button" class="btn btn-success btn-s"
-          (click)="onUpload()" id="button1" *ngIf="versionSaved">
+          (click)="onUpload()" id="button1" disabled>
     Upload XML files
   </button>
   <button type="button" class="btn btn-danger btn-s" style="float: right;"
-          (click)="clear()" id="button2" *ngIf="versionSaved==false">
+          (click)="clear()" id="button2" disabled>
     Clear files
   </button>
   <button type="button" class="btn btn-success btn-s"

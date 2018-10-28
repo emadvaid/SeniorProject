@@ -26,7 +26,7 @@ public class FileUploadController {
     @PostMapping(value = "/uploadFile", consumes = "multipart/form-data")
     public ResponseEntity<FileUploadResponse> uploadFile(
             @RequestParam (value ="file")MultipartFile[] files,
-            @RequestParam (value="versionNumber") String versionNumber
+            @RequestParam (value="verNumber") String versionNumber
     ) throws ParserConfigurationException {
 
         System.out.println(files);

@@ -133,6 +133,7 @@ export class FileFunctionsComponent implements OnInit {
       uploadData.append('path', JSON.stringify(this.pathList[i]));
       i++;
     }
+    uploadData.append('verNumber', JSON.stringify(this.versionNumber));
     this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
       console.log(res);
     });
