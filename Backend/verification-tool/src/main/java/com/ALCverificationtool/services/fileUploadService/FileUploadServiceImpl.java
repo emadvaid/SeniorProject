@@ -65,20 +65,17 @@ public class FileUploadServiceImpl implements FileUploadService {
             //Get the file name
             doc.getDocumentElement().normalize();
             String fileName = doc.getDocumentElement().getAttribute("id");
-            System.out.println("File Name: " + fileName);
             transResRec.setFileName(fileName);
 
-            //Get the file name
+            //Get the file language
             doc.getDocumentElement().normalize();
             String langCode = doc.getDocumentElement().getAttribute("xml:lang");
-            System.out.println("Language Code: " + langCode);
             transResRec.setLanguageCode(langCode);
 
             //Get the file notes
             NodeList test = doc.getElementsByTagName("note");
             test.item(0).getTextContent();
             String fileNotes = test.item(0).getTextContent().toString();
-            System.out.println("File Notes: " + fileNotes);
             transResRec.setFileNotes(fileNotes);
 
 
@@ -90,12 +87,14 @@ public class FileUploadServiceImpl implements FileUploadService {
                     Element sectionElement = (Element) sectionNode;
                     //Get the section name
                     String sectionName = sectionElement.getAttribute("id");
-                    System.out.println("Section Name: " + sectionName);
                     transResRec.setSectionId(sectionName);
 
                     //Get the section note
-                    String sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
-                    System.out.println("Section Notes: " + sectionNotes);
+                    String sectionNotes = "";
+                    //Check to see if notes are empty, if they are not, then copy into the sectionNotes
+                    if (sectionElement.getElementsByTagName("note").item(0) != null) {
+                        sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
+                    }
                     transResRec.setKeyNote(sectionNotes);
 
                     NodeList translationNodeList = ((Element) sectionNode).getElementsByTagName("translation");
@@ -106,7 +105,6 @@ public class FileUploadServiceImpl implements FileUploadService {
                             Element translationElement = (Element) translationNode;
                             //Get the translation key name
                             String translationKey = translationElement.getAttribute("key");
-                            System.out.println("Translation Key: " + translationKey);
                             transResRec.setKeyName(translationKey);
 
                             //Get new key variable
@@ -115,46 +113,36 @@ public class FileUploadServiceImpl implements FileUploadService {
                             if (translationKeyNew.equals("true")) {
                                 keyNew = true;
                             }
-                            System.out.println("Translation Key New: " + keyNew);
                             transResRec.setKeyNew(keyNew);
 
                             //Get modified key variable
-                            String translationKeyModified = translationElement.getAttribute("modified");
-                            boolean keyModified = false;
-                            if (translationKeyModified.equals("true")) {
-                                keyModified = true;
+                            String translationKeyApproved = translationElement.getAttribute("approved");
+                            boolean keyApproved = false;
+                            if (translationKeyApproved.equals("true")) {
+                                keyApproved = true;
                             }
-                            System.out.println("Translation Key Modified: " + keyModified);
-                            transResRec.setKeyModified(keyModified);
+                            transResRec.setKeyApproved(keyApproved);
 
-                            //Get translation key notes
-                            /*
-                            String translationNote = translationElement.getElementsByTagName("note").item(0).getTextContent();
-                            System.out.println("Translation Note: " + translationNote);
-                            transResRec.setKeyNote(translationNote);
-                            */
                             NodeList notesList = ((Element) translationNode).getElementsByTagName("note");
                             String translationNotes = "";
                             for (int n = 0; n < notesList.getLength(); n++) {
-                                translationNotes += notesList.item(n).getTextContent();
+                                translationNotes += " " + notesList.item(n).getTextContent();
                             }
-                            System.out.println("Notes: " + translationNotes);
                             transResRec.setKeyNote(translationNotes);
 
                             //Get translation variant
                             String translationVariant = translationElement.getElementsByTagName("variant").item(0).getTextContent();
-                            System.out.println("Translation Variant: " + translationVariant);
                             transResRec.setKeyVariant(translationVariant);
 
                             TranslationResourceRec temp = new TranslationResourceRec(transResRec);
-                            keysDao.create(temp);
+                            keysDao.create(transResRec);
                         }
                     }
                 }
             }
         }
         catch (Exception e) {
-            throw new ServiceException("Exception Failed");
+            throw new ServiceException(e);
         }
     }
 }
