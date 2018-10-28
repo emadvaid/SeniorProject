@@ -24,7 +24,7 @@ export class FileFunctionsComponent implements OnInit {
   public files: UploadFile[] = [];
   public  sendFiles: Array<File> = [];
   public  pathList: Array<String> = [];
-  public versionNumber =  '1.0.0.1';
+  public versionNumber = '';
   public versionSavedMsg = '';
   public versionSaved = false;
 
@@ -133,6 +133,7 @@ export class FileFunctionsComponent implements OnInit {
       uploadData.append('path', JSON.stringify(this.pathList[i]));
       i++;
     }
+
     uploadData.append('verNumber', JSON.stringify(this.versionNumber));
     this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
       console.log(res);

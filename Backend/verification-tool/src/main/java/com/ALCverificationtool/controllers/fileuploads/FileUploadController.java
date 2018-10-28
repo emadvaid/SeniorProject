@@ -32,7 +32,8 @@ public class FileUploadController {
         System.out.println(files);
         // Loop over all the files in the request
         for (MultipartFile file : files) {
-            service.readFile(file, versionNumber);
+            String tmp = versionNumber.replaceAll("\"", "");
+            service.readFile(file, tmp);
         }
 
         HttpHeaders headers = new HttpHeaders();
