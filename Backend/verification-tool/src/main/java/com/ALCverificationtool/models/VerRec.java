@@ -13,15 +13,23 @@ public class VerRec {
     @Column(name = "id", columnDefinition = "BINARY(16)")
 
     private UUID id = null;
-    private String verNum;
+
+    @Column(name="verNum")
+    private String rawVerNum;
 
 
     public VerRec() {
     }
 
-    public VerRec(String verNum, UUID verCode) {
-        this.verNum = verNum;
+    public VerRec(String verNum) {
+        this.rawVerNum = verNum;
 
+    }
+
+    public String getSafeVersionNumber() {
+        // make the raw version number safe to use as a MySQL tables suffix
+        String tmp = rawVerNum.replaceAll("\\.", "_");
+        return tmp;
     }
 
     public UUID getId() {
@@ -33,10 +41,10 @@ public class VerRec {
     }
 
     public String getVerNum() {
-        return verNum;
+        return rawVerNum;
     }
 
     public void setVerNum(String verNum) {
-        this.verNum = verNum;
+        this.rawVerNum = verNum;
     }
 }

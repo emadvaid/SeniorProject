@@ -3,20 +3,20 @@ package com.ALCverificationtool.controllers.version;
 import com.ALCverificationtool.models.VerRec;
 
 public class CreateVersionsRequest {
-    VerRec VersionDetails;
+    VerRec versionDetails;
 
     public CreateVersionsRequest() {
     }
 
     public CreateVersionsRequest(VerRec versionDetails) {
-        this.VersionDetails = versionDetails;
+        this.versionDetails = versionDetails;
     }
 
     public VerRec getVersionDetails() {
-        return VersionDetails;
+        return versionDetails;
     }
 
     public void setVersionDetails(VerRec versionDetails) {
-        this.VersionDetails = versionDetails;
+        this.versionDetails = versionDetails;
     }
 }

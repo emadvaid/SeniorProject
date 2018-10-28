@@ -1,5 +1,6 @@
 package com.ALCverificationtool.dao.keys;
 
+import com.ALCverificationtool.models.LangRec;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.services.ServiceException;
 import com.ALCverificationtool.services.userService.UserException;
@@ -10,6 +11,26 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class KeysRepositoryImpl implements KeysRepository {
+
+    private static final String DROP_SQL =
+            "DROP TABLE IF EXISTS `TABLE_NAME`";
+
+    private static final String CREATE_SQL =
+            "CREATE TABLE `TABLE_NAME` ( " +
+            "  `approved` tinyint(4) NOT NULL," +
+            "  `file_name` varchar(255) DEFAULT NULL," +
+            "  `file_notes` varchar(255) DEFAULT NULL," +
+            "  `folder_path` varchar(255) DEFAULT NULL," +
+            "  `key_name` varchar(255) NOT NULL," +
+            "  `key_new` tinyint(4) NOT NULL," +
+            "  `key_note` varchar(255) DEFAULT NULL," +
+            "  `key_variant` varchar(2000) DEFAULT NULL," +
+            "  `section_id` varchar(255) DEFAULT NULL," +
+            "  `section_note` varchar(255) DEFAULT NULL," +
+            "  `key_id` bigint(20) NOT NULL," +
+            "  PRIMARY KEY (`key_id`)" +
+            ") ENGINE=MyISAM DEFAULT CHARSET=utf8";
+
 
     private static final String INSERT_SQL =
             "INSERT INTO `alksudb`.`english_current`\n" +
@@ -22,25 +43,34 @@ public class KeysRepositoryImpl implements KeysRepository {
     JdbcTemplate jdbcTemplate;
 
     @Override
-    public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
-        boolean result = false;
+    public boolean createKeyTable(String keyLanguageVersion, String keyLanguageCode, boolean dropExisting) {
+
+        String newTableName= keyLanguageCode + "_" + keyLanguageVersion;
+        System.out.println(DROP_SQL.replace("TABLE_NAME", newTableName));
+        System.out.println(CREATE_SQL.replace("TABLE_NAME", newTableName));
 
         // first make sure that keyLanguageCode and keyLanguageVersion are not null and valid
-
-        // map keyLanguageCode and keyLanguageVersion to a table name
-        // (hint use toTableName(String keyLanguageCode, String keyLanguageVersion)
+        if(keyLanguageCode == null && keyLanguageVersion == null) {
+            throw new ServiceException("keyLanguageCode & keyLanguageVersion");
+        }
 
         // if dropExisting
         if(true) {
             // then drop any existing table
+            jdbcTemplate.update(DROP_SQL.replace("TABLE_NAME", newTableName));
+            jdbcTemplate.update(CREATE_SQL.replace("TABLE_NAME", newTableName));
+
+            // make sure the table exists
+
+            return true;
         }
+
         else {
             // check to see if table exists
             if(true) {
                 return true;
             }
         }
-
         // create new table with the the given tablename
 
 
@@ -74,6 +104,7 @@ public class KeysRepositoryImpl implements KeysRepository {
        }
 
         // add entry to the correct table
+
         int nrows = jdbcTemplate.update(INSERT_SQL,
                 keyData.getApproved(),keyData.getFileName(),keyData.getFileNotes(),
                 keyData.getFolderPath(), keyData.getKeyName(), keyData.getKeyNew(),

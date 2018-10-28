@@ -5,6 +5,10 @@ import {FileSystemDirectoryEntry, FileSystemEntry, FileSystemFileEntry, UploadEv
 import {forEach} from '../../../../node_modules/@angular/router/src/utils/collection';
 import {HttpClient, HttpHeaders, HttpParams} from '../../../../node_modules/@angular/common/http';
 
+import {VersionService} from '../../services/versions/versions.service';
+import { Version } from 'src/app/models/Version';
+
+
 const httpOptions = {
   headers: new HttpHeaders()
 };
@@ -20,10 +24,15 @@ export class FileFunctionsComponent implements OnInit {
   public files: UploadFile[] = [];
   public  sendFiles: Array<File> = [];
   public  pathList: Array<String> = [];
+  public versionNumber =  '1.0.0.1';
+  public versionSavedMsg = '';
+  public versionSaved = false;
+
 
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private versionService: VersionService
   ) { }
 
   ngOnInit() {
@@ -34,7 +43,7 @@ export class FileFunctionsComponent implements OnInit {
     let num = 0;
 
     for (const droppedFile of event.files) {
-      //if entry is a file
+      // if entry is a file
       if (droppedFile.fileEntry.isFile) {
         const fileEntry = droppedFile.fileEntry as FileSystemFileEntry;
         fileEntry.file((file: File) => {
@@ -45,9 +54,7 @@ export class FileFunctionsComponent implements OnInit {
           console.log(droppedFile.relativePath);
           console.log(this.sendFiles.length);
         });
-      }
-      //entry is a directory
-      else {
+      } else {
         const fileDir = droppedFile.fileEntry as FileSystemDirectoryEntry;
         console.log('hello');
         this.fileSearch(fileDir);
@@ -55,24 +62,23 @@ export class FileFunctionsComponent implements OnInit {
     }
     console.log('NO');
     console.log(this.sendFiles.length);
-    document.getElementById("filesDrop").style.display = "block";
-    document.getElementById("button1").removeAttribute("disabled");
-    document.getElementById("button2").removeAttribute("disabled");
+    document.getElementById('filesDrop').style.display = 'block';
+    document.getElementById('button1').removeAttribute('disabled');
+    document.getElementById('button2').removeAttribute('disabled');
   }
   fileSearch(fileDir: FileSystemDirectoryEntry) {
     const directoryReader = fileDir.createReader();
-    let resultFiles: UploadFile[] = [];
+    const resultFiles: UploadFile[] = [];
     directoryReader.readEntries((entries => {
-      //if entry is a file
+      // if entry is a file
       entries.forEach((entry => {
         if (entry.isFile) {
           const fileEntry = entry as FileSystemFileEntry;
           fileEntry.file((file: File) => {
             console.log(file.name);
           });
-        }
-        //if entry is a directory
-        else {
+        } else {
+          // if entry is a directory
           const entry2 = entry as FileSystemDirectoryEntry;
           this.fileSearch(entry2);
         }
@@ -86,6 +92,34 @@ export class FileFunctionsComponent implements OnInit {
 
    fileLeave(event) {
     console.log(event);
+  }
+
+  createVersion() {
+
+    const newVersion = new Version(null, this.versionNumber);
+
+    console.log(newVersion);
+    this.versionService.create(newVersion)
+      .subscribe(
+        (version: Version) => {
+          console.log('FileFunctionsComponent.createVersion: returned', version);
+          if (version && version !== null) {
+            console.log('FileFunctionsComponent.createVersion: success', version);
+            // add a visible message version created
+            this.versionSavedMsg = 'New Version created.';
+            this.versionSaved = true;
+          } else {
+            console.log('FileFunctionsComponent.createVersion: version not created');
+            this.versionSavedMsg = 'Error creating version.';
+            this.versionSaved = false;
+          }
+        },
+        (err: any) => {
+          console.log('FileFunctionsComponent.createVersion: error', err);
+          this.versionSavedMsg = 'Error creating version.';
+          this.versionSaved = true;
+        }
+      );
   }
 
 
@@ -113,8 +147,8 @@ export class FileFunctionsComponent implements OnInit {
     this.files.length = 0;
     this.files = [];
 
-    document.getElementById("button1").setAttribute("disabled", "true");
-    document.getElementById("button2").setAttribute("disabled", "true");
+    document.getElementById('button1').setAttribute('disabled', 'true');
+    document.getElementById('button2').setAttribute('disabled', 'true');
   }
 }
 

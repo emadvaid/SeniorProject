@@ -22,11 +22,50 @@
     
 </div>
   <button type="button" class="btn btn-success btn-s"
-          (click)="onUpload()" id="button1" disabled>
+          (click)="onUpload()" id="button1" *ngIf="versionSaved">
     Upload XML files
   </button>
   <button type="button" class="btn btn-danger btn-s" style="float: right;"
-          (click)="clear()" id="button2" disabled>
+          (click)="clear()" id="button2" *ngIf="versionSaved==false">
     Clear files
   </button>
+  <button type="button" class="btn btn-success btn-s"
+  (click)="createVersion()" id="button1" >
+Create Version
+</button>
+<div class='form-group'>
+  <label>Version Number</label>
+  <input
+      type="text"
+      class = 'form-control'
+      id="verNum"
+      name="verNum"
+      placeholder="Enter Version Number"
+      [(ngModel)]="versionNumber"
+
+  >
+</div>
+<div>{{versionSavedMsg}}</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+        <table width="100%" class="table table-striped  table-hover dataTable no-footer dtr-inline collapsed">
+            <thead>
+                <tr role="row">
+                    <th>Version Number</th>                  
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="">
+                <td></td>       
+           
+           
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
 </div>

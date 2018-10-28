@@ -9,6 +9,6 @@ import java.util.UUID;
 
 @Repository
 public interface VersionRepository extends JpaRepository <VerRec, UUID> {
-    Optional<VerRec> findByVerNum(String verNum);
+    Optional<VerRec> findByRawVerNum(String verNum);
 
 }

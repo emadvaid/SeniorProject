@@ -23,19 +23,26 @@ public class FileUploadController {
     }
 
     @CrossOrigin
-    @PostMapping("/uploadFile")
-    public ResponseEntity<FileUploadResponse> uploadFile(@RequestParam (value ="file")MultipartFile[] files,
-                                                         @RequestBody FileUploadRequest request
+    @PostMapping(value = "/uploadFile", consumes = "multipart/form-data")
+    public ResponseEntity<FileUploadResponse> uploadFile(
+            @RequestParam (value ="file")MultipartFile[] files,
+            @RequestParam (value="versionNumber") String versionNumber
     ) throws ParserConfigurationException {
 
+        System.out.println(files);
         // Loop over all the files in the request
         for (MultipartFile file : files) {
-            service.readFile(file, request.getFileVersionNumber());
+            service.readFile(file, versionNumber);
         }
 
         HttpHeaders headers = new HttpHeaders();
 
         return new ResponseEntity<>(new FileUploadResponse(200, "Success"),
                 headers, HttpStatus.OK);
+    }
+
+    @ExceptionHandler({Exception.class})
+    public void resolveException(Exception e) {
+        e.printStackTrace();
     }
 }

@@ -16,9 +16,9 @@ import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-us
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
-import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
 import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
 import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
+import { VersionComponent } from './views/version/version.component';
 
 
 const appRoutes: Routes = [
@@ -41,6 +41,7 @@ const appRoutes: Routes = [
       {path: 'manageLanguages' , component: ManageLanguageComponent},
       {path: 'createLanguage' , component: CreateLanguageComponent},
       {path: 'importFile', component: FileFunctionsComponent},
+      {path: 'createVersion', component: VersionComponent},
 
     ]
   },
@@ -70,7 +71,7 @@ export const routingComponents = [
   HomeComponent,
   PasswordResetComponent,
   FileFunctionsComponent,
-  FileFunctionsRedoComponent,
+  VersionComponent,
   DealerDashboardComponent,
   AdminDashboardComponent,
   ManageUsersComponent,

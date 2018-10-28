@@ -1,10 +1,11 @@
 package com.ALCverificationtool.services.fileUploadService;
 
 
+import com.ALCverificationtool.dao.version.VersionRepository;
 import com.ALCverificationtool.models.TranslationResourceRec;
-import com.ALCverificationtool.controllers.fileuploads.FileUploadResponse;
 import com.ALCverificationtool.dao.keys.KeysRepository;
 
+import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,23 +20,37 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.util.Optional;
 
 @Service
 public class FileUploadServiceImpl implements FileUploadService {
     private final KeysRepository keysDao;
+    private final VersionRepository verDao;
 
     @Autowired
-    public FileUploadServiceImpl(KeysRepository keysDao) {
+    public FileUploadServiceImpl(
+            KeysRepository keysDao,
+            VersionRepository verDao
+    ) {
         this.keysDao = keysDao;
+        this.verDao = verDao;
     }
 
     public  String path = System.getProperty("user.dir") + "/src/main/java/com/ALCverificationtool/XMLFiles/";
 
     @Override
     public void readFile(MultipartFile file, String versionNumber) throws ParserConfigurationException {
+
+        // first get the version record for this version number
+        Optional<VerRec> verRecOpt = verDao.findByRawVerNum(versionNumber);
+
+        if(!verRecOpt.isPresent()) {
+            throw new ServiceException("unknown version number");
+        }
+
         TranslationResourceRec transResRec = new TranslationResourceRec();
 
-        transResRec.setLanguageVersion(versionNumber);
+        transResRec.setLanguageVersion(verRecOpt.get().getSafeVersionNumber());
 
         try {
 
