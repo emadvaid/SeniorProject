@@ -70,7 +70,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                 //XML header
                 resourceBase.setAttribute("id", currentFileName); //File name
                 resourceBase.setAttribute("version", "1.0");
-                resourceBase.setAttribute("xml:lang", "en");
+                resourceBase.setAttribute("xml:lang", language);
                 resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
 
                 //File notes
@@ -102,7 +102,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                         section.appendChild(sectionNote);
                     }
 
-                    for (int j = i; j < keys.size(); j++) {
+                    for (int j = 0; j < keys.size(); j++) {
                         currentFileName = keys.get(j).getFileName();
                         sectionDB = keys.get(j).getSectionId();
                         if (previousFileName.equals(currentFileName)) {

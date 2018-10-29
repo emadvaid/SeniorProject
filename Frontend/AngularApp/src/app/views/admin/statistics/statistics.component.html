@@ -1,0 +1,28 @@
+<div class="form-group">
+  <input
+  type="text"
+  class = 'form-control'
+  id="language"
+  name="language"
+  placeholder="Enter Language Number"
+  [(ngModel)]="language"
+>
+</div>
+  
+  <div class="form-group">
+    <input
+    type="text"
+    class = 'form-control'
+    id="versionNumber"
+    name="versionNumber"
+    placeholder="Enter Version Number"
+    [(ngModel)]="versionNumber"
+>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" (click)="onSubmit()">View Statistics</button>
+  </div>
+  
+  New Keys: {{ newKeys }} <br>
+  Approved Keys: {{ approvedKeys }}<br>
+  Total Keys: {{ totalKeys }}
