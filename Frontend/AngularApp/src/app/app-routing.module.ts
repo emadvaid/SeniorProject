@@ -19,6 +19,7 @@ import { LogoutComponent } from './views/login/logout.component';
 import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
 import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
 import { VersionComponent } from './views/version/version.component';
+import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
 
 
 const appRoutes: Routes = [
@@ -42,6 +43,7 @@ const appRoutes: Routes = [
       {path: 'createLanguage' , component: CreateLanguageComponent},
       {path: 'importFile', component: FileFunctionsComponent},
       {path: 'createVersion', component: VersionComponent},
+      {path: 'exportFile', component: ExportFilesComponent},
 
     ]
   },
@@ -80,5 +82,6 @@ export const routingComponents = [
   ManageLanguageComponent,
   CreateLanguageComponent,
   PageNotFoundComponent,
-  ErrorPageComponent
+  ErrorPageComponent,
+  ExportFilesComponent,
 ];

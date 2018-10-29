@@ -2,6 +2,8 @@ package com.ALCverificationtool.dao.keys;
 
 import com.ALCverificationtool.models.TranslationResourceRec;
 
+import java.util.List;
+
 
 public interface KeysRepository {
 
@@ -12,4 +14,6 @@ public interface KeysRepository {
     boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dopExisiting);
 
     TranslationResourceRec create(TranslationResourceRec keyData);
+
+    List<TranslationResourceRec> getKeys(String tableName);
 }

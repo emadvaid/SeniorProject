@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Version } from 'src/app/models/Version';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders()
 };
 
 @Injectable({
@@ -30,5 +30,12 @@ export class FileFunctionsService {
     }
 
       return this.http.post(this.serverUrl, uploadData , httpOptions);
+  }
+
+  exportFiles(language: string, versionNumber: string) {
+    const tableInfo = new FormData();
+    tableInfo.append('language', language);
+    tableInfo.append('versionNumber', versionNumber);
+    return this.http.post('http://localhost:8080/exportFile', tableInfo, httpOptions);
   }
 }

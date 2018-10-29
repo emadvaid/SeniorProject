@@ -1,6 +1,5 @@
 package com.ALCverificationtool.dao.keys;
 
-import com.ALCverificationtool.models.LangRec;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.services.ServiceException;
 import com.ALCverificationtool.services.userService.UserException;
@@ -8,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import java.sql.PreparedStatement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 
 @Component
@@ -109,5 +110,71 @@ public class KeysRepositoryImpl implements KeysRepository {
     private String toTableName(String keyLanguageCode, String keyLanguageVersion) {
 
         return keyLanguageCode + "_" + keyLanguageVersion;
+    }
+
+    @Override
+    public List<TranslationResourceRec> getKeys(String tableName) {
+        List<TranslationResourceRec> results = new ArrayList<>();
+        String query = "SELECT * FROM " + tableName;
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList(query);
+        for (Map row : rows) {
+////        List<Map<String, Object>> temp = jdbcTemplate.queryForList(query);
+////        for (Map<String, Object> map : temp){
+            TranslationResourceRec tmp = new TranslationResourceRec();
+////            for (Map.Entry<String, Object> entry : map.entrySet()) {
+////                String key = entry.getKey();
+////                Object value = entry.getValue();
+////                if (key.equals("file_name")) {
+////                    result.setFileName(value.toString());
+////                }
+////                if (key.equals("file_notes")) {
+////                    result.setFileNotes(value.toString());
+////                }
+////                if (key.equals("folder_path")) {
+////                    result.setFolderPath(value.toString());
+////                }
+////                if (key.equals("key_name")) {
+////                    result.setKeyName(value.toString());
+////                }
+////                if (key.equals("key_note")) {
+////                    result.setKeyNote(value.toString());
+////                }
+////                if (key.equals("key_variant")) {
+////                    result.setKeyVariant(value.toString());
+////                }
+////                if (key.equals("section_id")) {
+////                    result.setSectionId(value.toString());
+////                }
+////                if (key.equals("section_note")) {
+////                    result.setSectionNote(value.toString());
+////                }
+////                if (key.equals("key_id")) {
+////                    result.setKeyId(Long.parseLong(value.toString()));
+////                }
+            //tmp.setApproved((Boolean)row.get("approved"));
+            if (row.get("approved").equals(1)) {
+                tmp.setApproved(true);
+            } else {
+                tmp.setApproved(false);
+            }
+            tmp.setFileName((String)row.get("file_name"));
+            tmp.setFileNotes((String)row.get("file_notes"));
+            tmp.setKeyName((String)row.get("key_name"));
+            //tmp.setKeyNew((Boolean)row.get("key_new"));
+            if (row.get("key_new").equals(1)) {
+                tmp.setKeyNew(true);
+            } else {
+                tmp.setKeyNew(false);
+            }
+            tmp.setKeyNote((String)row.get("key_note"));
+            tmp.setKeyVariant((String)row.get("key_variant"));
+            tmp.setSectionId((String)row.get("section_id"));
+            tmp.setSectionNote((String)row.get("section_note"));
+            tmp.setKeyId((Long)row.get("key_id"));
+            if (tmp != null) {
+                results.add(tmp);
+            }
+        }
+        return results;
     }
 }
