@@ -75,7 +75,7 @@ public class FileUploadServiceImpl implements FileUploadService {
             //Get the file notes
             NodeList test = doc.getElementsByTagName("note");
             test.item(0).getTextContent();
-            String fileNotes = test.item(0).getTextContent().toString();
+            String fileNotes = test.item(0).getTextContent();
             transResRec.setFileNotes(fileNotes);
 
 
@@ -95,7 +95,7 @@ public class FileUploadServiceImpl implements FileUploadService {
                     if (sectionElement.getElementsByTagName("note").item(0) != null) {
                         sectionNotes = sectionElement.getElementsByTagName("note").item(0).getTextContent();
                     }
-                    transResRec.setKeyNote(sectionNotes);
+                    transResRec.setSectionNote(sectionNotes);
 
                     NodeList translationNodeList = ((Element) sectionNode).getElementsByTagName("translation");
                     for (int j = 0; j < translationNodeList.getLength(); j++) {
@@ -130,11 +130,19 @@ public class FileUploadServiceImpl implements FileUploadService {
                             }
                             transResRec.setKeyNote(translationNotes);
 
+
+                            //Check to see if the value of the files notes is the same as the key notes or the
+                            //section notes.
+                            if (fileNotes.equals(translationNotes) || fileNotes.equals(sectionNotes)) {
+                                transResRec.setFileNotes("");
+                            }
+//                            transResRec.setFileNotes(fileNotes);
+//                            transResRec.setSectionNote(sectionNotes);
+
                             //Get translation variant
                             String translationVariant = translationElement.getElementsByTagName("variant").item(0).getTextContent();
                             transResRec.setKeyVariant(translationVariant);
 
-                            TranslationResourceRec temp = new TranslationResourceRec(transResRec);
                             keysDao.create(transResRec);
                         }
                     }

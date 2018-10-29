@@ -1,53 +1,1088 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="ButtonText" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="ButtonText" version="1.0" xml:lang="it" xmlns="http://www.controlj.com/rbase1.0">
     <note>This text is used to label various buttons throughout WebCTRL.</note>
     <section id="PROPERTY PAGE BUTTONS">
         <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
         <translation approved="true" key="Active" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>啟用</variant>
+            <variant>Attivo</variant>
         </translation>
-        
+        <translation approved="true" key="Add" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiungi</variant>
+        </translation>
+        <translation approved="true" key="Add_Dialog" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiungi...</variant>
+        </translation>
+        <translation approved="true" key="AM" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>AM</variant>
+        </translation>
+        <translation approved="true" key="Apply" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Applica</variant>
+        </translation>
+        <translation approved="true" key="Apply_Restart_Now" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Applica e riavvia ora</variant>
+        </translation>
+        <translation approved="true" key="Update_Restart_Later" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiorna con riavvio successivo</variant>
+        </translation>
+        <translation approved="true" key="Update_Library" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiorna libreria</variant>
+        </translation>
+        <translation approved="true" key="Continue" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Continua</variant>
+        </translation>
+        <translation approved="true" key="Create" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Crea</variant>
+        </translation>
+        <translation approved="true" key="Decrease" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Riduci</variant>
+        </translation>
+        <translation approved="true" key="Delete" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Elimina</variant>
+        </translation>
+        <translation approved="true" key="Details" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Dettagli</variant>
+        </translation>
+        <translation approved="true" key="Dirty" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Intasato</variant>
+        </translation>
+        <translation approved="true" key="Disabled" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Disabilitato</variant>
+        </translation>
+        <translation approved="true" key="Disconnect" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Scollega</variant>
+        </translation>
+        <translation approved="true" key="Download" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Download</variant>
+        </translation>
+        <translation approved="true" key="Management_Tool" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Strumento di gestione</variant>
+        </translation>
+        <translation approved="true" key="Edit" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Modifica</variant>
+        </translation>
+        <translation approved="true" key="Edit_Template" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Modifica modello</variant>
+        </translation>
+        <translation approved="true" key="Enabled" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Abilitato</variant>
+        </translation>
+        <translation approved="true" key="False" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Falso</variant>
+        </translation>
+        <translation approved="true" key="Finish" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Fine</variant>
+        </translation>
+        <translation approved="true" key="Go" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Vai</variant>
+        </translation>
+        <translation approved="true" key="Add_Members" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiungi membri a gruppo</variant>
+        </translation>
+        <translation approved="true" key="Discover_CCN_Network" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Rileva rete Carrier</variant>
+        </translation>
+        <translation approved="true" key="Reload" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Ricarica</variant>
+        </translation>
         <translation approved="true" key="Reset_to_Defaults" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>重置為預設值</variant>
+            <variant>Reimposta su valori predefiniti</variant>
         </translation>
         <translation approved="true" key="Copy_" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
-            <variant>複製...</variant>
+            <variant>Copia...</variant>
+        </translation>
+        <translation approved="true" key="Copy_to_Clipboard" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Copia negli Appunti</variant>
+        </translation>
+        <translation approved="true" key="Help" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Guida</variant>
+        </translation>
+        <translation approved="true" key="Inactive" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Inattivo</variant>
+        </translation>
+        <translation approved="true" key="Increase" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aumenta</variant>
+        </translation>
+        <translation approved="true" key="Lower" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Diminuisci</variant>
+        </translation>
+        <translation approved="true" key="Modify" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Modifica</variant>
+        </translation>
+        <translation approved="true" key="No" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>No</variant>
+        </translation>
+        <translation approved="true" key="Off" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Off</variant>
+        </translation>
+        <translation approved="true" key="Occupied" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Occupato</variant>
+        </translation>
+        <translation approved="true" key="OK" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>OK</variant>
+        </translation>
+        <translation approved="true" key="Download_Selected_Items" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Download elementi selezionati</variant>
+        </translation>
+        <translation approved="true" key="On" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>On</variant>
+        </translation>
+        <translation approved="true" key="on" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>acceso</variant>
+        </translation>
+        <translation approved="true" key="Open" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Apri</variant>
+        </translation>
+        <translation approved="true" key="PM" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>PM</variant>
+        </translation>
+        <translation approved="true" key="Raise" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Solleva</variant>
+        </translation>
+        <translation approved="true" key="Redo" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Ripeti</variant>
+        </translation>
+        <translation approved="true" key="Reset" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Reimposta</variant>
+        </translation>
+        <translation approved="true" key="Save" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Salva</variant>
+        </translation>
+        <translation approved="true" key="Search" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Cerca</variant>
+        </translation>
+        <translation approved="true" key="Search_Replace" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Cerca/Sostituisci</variant>
+        </translation>
+        <translation approved="true" key="Set" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Imposta</variant>
+        </translation>
+        <translation approved="true" key="Start" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Avvia</variant>
+        </translation>
+        <translation approved="true" key="Stop" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Arresta</variant>
+        </translation>
+        <translation approved="true" key="Submit" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Invia</variant>
+        </translation>
+        <translation approved="true" key="Table" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Tabella</variant>
+        </translation>
+        <translation approved="true" key="Test" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Test</variant>
+        </translation>
+        <translation approved="true" key="True" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>True</variant>
+        </translation>
+        <translation approved="true" key="Undo" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Annulla</variant>
+        </translation>
+        <translation approved="true" key="Update" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Aggiorna</variant>
+        </translation>
+        <translation approved="true" key="Upload" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Carica</variant>
+        </translation>
+        <translation approved="true" key="Export" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Download</variant>
+        </translation>
+        <translation approved="true" key="Import_File" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Importa</variant>
+        </translation>
+        <translation approved="true" key="System_Statistics" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Statistiche sistema</variant>
+        </translation>
+        <translation approved="true" key="Export_File" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Esporta</variant>
+        </translation>
+        <translation approved="true" key="View" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Visualizza</variant>
+        </translation>
+        <translation approved="true" key="Yes" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Sì</variant>
+        </translation>
+        <translation approved="true" key="hand" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>This is one of the three states of the hand-off-auto control</note>
+            <variant>mano</variant>
+        </translation>
+        <translation approved="true" key="off" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>This is one of the three states of the hand-off-auto control</note>
+            <variant>spento</variant>
+        </translation>
+        <translation approved="true" key="auto" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>This is one of the three states of the hand-off-auto control - automatic</note>
+            <variant>auto</variant>
+        </translation>
+        <translation approved="true" key="HAND" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>MANO</variant>
+        </translation>
+        <translation approved="true" key="OFF" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>SPENTO</variant>
+        </translation>
+        <translation approved="true" key="AUTO" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>AUTO</variant>
+        </translation>
+        <translation approved="true" key="Auto" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Automatic</note>
+            <variant>Auto</variant>
+        </translation>
+        <translation approved="true" key="Force" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Force a field back to normal</note>
+            <variant>Applica</variant>
+        </translation>
+        <translation approved="true" key="global_damper_commands" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Comandi globali smorzatore...</variant>
+        </translation>
+        <translation approved="true" key="dampers_full_open" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Serranda completamente aperta</variant>
+        </translation>
+        <translation approved="true" key="damper_full_close" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Serranda completamente chiusa</variant>
+        </translation>
+        <translation approved="true" key="damper_full_open" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Serranda completamente aperta</variant>
+        </translation>
+        <translation approved="true" key="zero_flow" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Nessun flusso</variant>
+        </translation>
+        <translation approved="true" key="automatic_control" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Controllo automatico</variant>
+        </translation>
+        <translation approved="true" key="cool_max_airflow" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Cool Max Airflow</variant>
+        </translation>
+        <translation approved="true" key="heat_max_airflow" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Flusso aria calda al massimo</variant>
+        </translation>
+        <translation approved="true" key="cal_damper_close" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Chiusura serranda calibrata</variant>
+        </translation>
+        <translation approved="true" key="cal_damper_open" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Apertura serranda calibrata</variant>
+        </translation>
+        <translation approved="true" key="static_pressure_setpoint" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Cal sensore di pressione</variant>
+        </translation>
+        <translation approved="true" key="cool_max" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Raffreddamento max</variant>
+        </translation>
+        <translation approved="true" key="heat_max" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Riscaldamento max</variant>
+        </translation>
+        <translation approved="true" key="cool_min" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Raffreddamento min</variant>
+        </translation>
+        <translation approved="true" key="heat_min" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Riscaldamento min</variant>
+        </translation>
+        <translation approved="true" key="reheat_min" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Nuovo riscaldamento min</variant>
+        </translation>
+        <translation approved="true" key="vent" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Presa</variant>
+        </translation>
+        <translation approved="true" key="auto_zero" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Auto Zero</variant>
+        </translation>
+        <translation approved="true" key="zero_cal" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Cal zero</variant>
+        </translation>
+        <translation approved="true" key="close_damper" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Chiudi serranda</variant>
+        </translation>
+        <translation approved="true" key="occupied_min_airflow" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Flusso aria occupato minimo</variant>
+        </translation>
+        <translation approved="true" key="store_trends_now" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Archivia tendenze ora</variant>
+        </translation>
+        <translation approved="true" key="Next" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Avanti</variant>
+        </translation>
+        <translation approved="true" key="Previous" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Indietro</variant>
+        </translation>
+        <translation approved="true" key="Use_For_Tables" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Solo tabelle</variant>
+        </translation>
+        <translation approved="true" key="Use_For_Integrator" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>In integratore</variant>
+        </translation>
+        <translation approved="true" key="Use_Delete" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Inutilizzato</variant>
+        </translation>
+        <translation approved="true" key="Absent" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Assente</variant>
+        </translation>
+        <translation approved="true" key="Present" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Presente</variant>
+        </translation>
+        <translation approved="true" key="Rescan" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Esegui nuova scansione</variant>
+        </translation>
+        <translation approved="true" key="Clear_Mismatch" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Annulla mancata corrispondenza</variant>
+        </translation>
+        <translation approved="true" key="View_Results" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Visualizza risultati</variant>
+        </translation>
+        <translation approved="true" key="Back" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Indietro</variant>
+        </translation>
+        <translation approved="true" key="Unknown" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Sconosciuto</variant>
+        </translation>
+        <translation approved="true" key="Try_Again" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Riprova</variant>
+        </translation>
+        <translation approved="true" key="Read_Log_Buffer" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <variant>Leggi buffer di registro</variant>
+        </translation>
+        <translation approved="true" key="Use_Controller_Version" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Text on design properties tool page at device level</note>
+            <variant>Usa versione controller</variant>
+        </translation>
+        <translation approved="true" key="Use_Library_Version" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Text on design properties tool page at device level</note>
+            <variant>Usa versione libreria</variant>
+        </translation>
+        <translation approved="true" key="Delete_Trend_Graph" new="false">
+            <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+            <note>Button at the top of a custom trend graph page</note>
+            <variant>Elimina grafico trend</variant>
+        </translation>
+        <translation approved="true" key="Make_Default" new="false">
+            <note>Button on the schedule categories page</note>
+            <variant>Fai Default</variant>
+        </translation>
+    </section>
+    <section id="ACTION BUTTONS">
+        <note>Make a change on any page to locate.</note>
+        <translation approved="true" key="Accept" new="false">
+            <note>Make a change on any page to locate.</note>
+            <variant>Accetta</variant>
+        </translation>
+        <translation approved="true" key="Cancel" new="false">
+            <note>Make a change on any page to locate.</note>
+            <variant>Annulla</variant>
+        </translation>
+        <translation approved="true" key="Close" new="false">
+            <note>Make a change on any page to locate.</note>
+            <variant>Chiudi</variant>
+        </translation>
+    </section>
+    <section id="TREE BUTTONS">
+        <note>Location: Button at bottom lefthand side of main page under tree.</note>
+        <translation approved="true" key="CFG" new="false">
+            <note>Location: Button at bottom lefthand side of main page under tree.</note>
+            <note>Abbreviation for Configuration tree.</note>
+            <variant>CFG</variant>
+        </translation>
+        <translation approved="true" key="GEO" new="false">
+            <note>Location: Button at bottom lefthand side of main page under tree.</note>
+            <note>Abbreviation for Geographic tree.</note>
+            <variant>GEO</variant>
         </translation>
         <translation approved="true" key="GRP" new="false">
             <note>Location: Button at bottom lefthand side of main page under tree.</note>
             <note>Abbreviation for Schedule Groups tree.</note>
-            <variant>群組</variant>
+            <variant>GRP</variant>
         </translation>
-        <translation approved="false" key="NET" new="true">
+        <translation approved="true" key="NET" new="false">
             <note>Location: Button at bottom lefthand side of main page under tree.</note>
             <note>Abbreviation for Network tree.</note>
-            <variant>網路</variant>
+            <variant>NET</variant>
         </translation>
         <translation approved="true" key="Install" new="false">
             <note>Location: Button at bottom lefthand side of main page under tree.</note>
             <note>Abbreviation for Network tree in iVu Open.</note>
-            <variant>安装</variant>
+            <variant>Installa</variant>
         </translation>
-        <translation approved="true" key="UserTreeButtonText" new="true">
+        <translation approved="true" key="UserTreeButtonText" new="false">
             <note>Location: Button at bottom lefthand side of main page under tree.</note>
             <note>Abbreviation for User/view tree in iVu Open.</note>
-            <variant>使用者</variant>
+            <variant>Utente</variant>
         </translation>
-        <translation approved="false" key="InstallerTreeButtonText" new="false">
+        <translation approved="true" key="InstallerTreeButtonText" new="false">
             <note>Location: Button at bottom lefthand side of main page under tree.</note>
             <note>Abbreviation for Installer/Install tree in iVu Open.</note>
-            <variant>安装商</variant>
+            <variant>Programma di installazione</variant>
+        </translation>
+    </section>
+    <section id="System Settings Buttons">
+        <note>Location: In the CFG tree on System Settings pages.</note>
+        <translation approved="true" key="Change_Policy" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - Change Policy</note>
+            <variant>Modifica Policy</variant>
+        </translation>
+        <translation approved="true" key="Force_expiration" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> button - this button lets the user expire all the users passwords</note>
+            <variant>Forza scadenza</variant>
+        </translation>
+        <translation approved="true" key="Clear_lockouts" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - clears all the lockouts of users</note>
+            <variant>Annulla blocchi forzati</variant>
+        </translation>
+        <translation approved="true" key="Load_Supported_Fonts" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <variant>Carica caratteri supportati</variant>
+        </translation>
+        <translation approved="true" key="Synchronize_Now" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - synchronizes all operator and privilege information between heirachical servers</note>
+            <variant>Sincronizza ora</variant>
+        </translation>
+        <translation approved="true" key="Run_Now" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - runs the timed event now</note>
+            <variant>Esegui ora</variant>
+        </translation>
+        <translation approved="true" key="Run_Simulate" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - Simulates the event</note>
+            <variant>Simula</variant>
+        </translation>
+        <translation approved="true" key="Enable_Writes" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - Enables writing to ccn devices from ivu integrator</note>
+            <variant>Abilita scritture</variant>
+        </translation>
+        <translation approved="true" key="Time_Sync" new="false">
+            <note>Location: In the CFG tree on System Settings pages.</note>
+            <note> label - issues a time sync request</note>
+            <variant>Sincronizzazione ora</variant>
+        </translation>
+    </section>
+    <section id="event pages buttons">
+        <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+        <translation approved="true" key="view_sources" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Visualizza origini selezionate</variant>
+        </translation>
+        <translation approved="true" key="Select_All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Seleziona tutto</variant>
+        </translation>
+        <translation approved="true" key="Acknowledge" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Riconosci</variant>
+        </translation>
+        <translation approved="true" key="Additional_Actions" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Avanzate</variant>
+        </translation>
+        <translation approved="true" key="TimeLapse_View" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Attiva time-lapse</variant>
+        </translation>
+        <translation approved="true" key="Acknowledge_All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Riconosci tutto</variant>
+        </translation>
+        <translation approved="true" key="Delete_All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Elimina tutto</variant>
+        </translation>
+        <translation approved="true" key="Delete_Closed" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Elimina incidenti chiusi</variant>
+        </translation>
+        <translation approved="true" key="All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti</variant>
+        </translation>
+        <translation approved="true" key="All_Closed" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti i chiusi</variant>
+        </translation>
+        <translation approved="true" key="All_Noncritical_Alarms" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti gli allarmi non critici</variant>
+        </translation>
+        <translation approved="true" key="All_Critical_Alarms" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti gli allarmi critici</variant>
+        </translation>
+        <translation approved="true" key="All_Noncritical_Closed_Incidents" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti gli incidenti non critici chiusi</variant>
+        </translation>
+        <translation approved="true" key="All_Critical_Closed_Incidents" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Tutti gli incidenti critici chiusi</variant>
+        </translation>
+        <translation approved="true" key="Clear_Selected_Failures" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Cancella problemi selezionati</variant>
+        </translation>
+        <translation approved="true" key="Closed" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <variant>Chiuso</variant>
+        </translation>
+        <translation approved="true" key="Closed_Incidents" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <note> text on a button - to choose closed alarms </note>
+            <variant>Incidenti chiusi</variant>
+        </translation>
+        <translation approved="true" key="All_System" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <note>text on a button - to choose all system level alarms</note>
+            <variant>Tutti gli allarmi di sistema</variant>
+        </translation>
+        <translation approved="true" key="Force_Normal" new="false">
+            <note>Location: In the GEO tree select a piece of equipment or area, then click its Alarms action button.</note>
+            <note>text on a button - choose to change alarm status to normal</note>
+            <variant>Forza normale</variant>
+        </translation>
+    </section>
+    <section id="schedule page buttons">
+        <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+        <translation approved="true" key="add_category" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <variant>Aggiungi categoria</variant>
+        </translation>
+        <translation approved="true" key="add_value" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <variant>Aggiungi valore</variant>
+        </translation>
+        <translation approved="true" key="add_priority_level" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adding schedule priorities</note>
+            <variant>Aggiungi livello di priorità</variant>
+        </translation>
+        <translation approved="true" key="Add_Group" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adding schedule groups</note>
+            <variant>Aggiungi gruppo</variant>
+        </translation>
+        <translation approved="true" key="Add_Folder" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adding schedule group folders</note>
+            <variant>Aggiungi cartella</variant>
+        </translation>
+        <translation approved="true" key="Cut" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for moving schedule groups into folders</note>
+            <variant>Taglia</variant>
+        </translation>
+        <translation approved="true" key="Paste" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for moving schedule groups into folders</note>
+            <variant>Incolla</variant>
+        </translation>
+        <translation approved="true" key="Up" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adjusting schedule precedence</note>
+            <variant>Su</variant>
+        </translation>
+        <translation approved="true" key="Down" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adjusting schedule precedence</note>
+            <variant>Giù</variant>
+        </translation>
+        <translation approved="true" key="Move_Up" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adjusting schedule precedence</note>
+            <variant>Sposta su</variant>
+        </translation>
+        <translation approved="true" key="Move_Down" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Schedules action button.</note>
+            <note>text on a button - used for adjusting schedule precedence</note>
+            <variant>Sposta giù</variant>
+        </translation>
+    </section>
+    <section id="global modify buttons">
+        <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+        <translation approved="true" key="Apply_Changes" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Applica modifiche</variant>
+        </translation>
+        <translation approved="true" key="Change" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Modifica</variant>
+        </translation>
+        <translation approved="true" key="Change_All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Modifica tutto</variant>
+        </translation>
+        <translation approved="true" key="Change_All_By" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Modifica tutto in base a</variant>
+        </translation>
+        <translation approved="true" key="Find_All" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Trova tutto</variant>
+        </translation>
+        <translation approved="true" key="Show_Advanced" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <note>text on a button - To show information only pertinent to advanced users.</note>
+            <variant>Mostra avanzate</variant>
+        </translation>
+        <translation approved="true" key="show_advanced" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <note>text on a button - To show information only pertinent to advanced users.</note>
+            <variant>Mostra avanzate</variant>
+        </translation>
+        <translation approved="true" key="hide_advanced" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <note>text on a button - To hide information only pertinent to advanced users.</note>
+            <variant>Nascondi avanzate</variant>
+        </translation>
+        <translation approved="true" key="Set_All_To" new="false">
+            <note>Location: In the GEO tree select a piece of equipment, then click its Properties action button. Alt-click a field that can be updated, then on the Global Modify page, click Find All.</note>
+            <variant>Imposta tutto su</variant>
+        </translation>
+    </section>
+    <section id="Reports Page Buttons">
+        <translation approved="true" key="Run" new="false">
+            <note> label - Run the report</note>
+            <variant>Esegui</variant>
+        </translation>
+        <translation approved="true" key="Pdf" new="false">
+            <note> label - Run the report as Pdf</note>
+            <variant>PDF</variant>
+        </translation>
+        <translation approved="true" key="Excel" new="false">
+            <note> label - Run the report as Excel</note>
+            <variant>XLS</variant>
+        </translation>
+        <translation approved="true" key="CSV_Text" new="false">
+            <note> label - Run the report as CSV (text file)</note>
+            <variant>CSV</variant>
+        </translation>
+        <translation approved="true" key="Save_Report_Design" new="false">
+            <note> label - Save a custom report as a reportdesign file</note>
+            <variant>Salva progetto rapporto</variant>
+        </translation>
+        <translation approved="true" key="Today" new="false">
+            <note> label - on effective schedule options page - set date to today</note>
+            <variant>Oggi</variant>
+        </translation>
+    </section>
+    <section id="webroot/_common/lvl5/tools/design_properties.jsp">
+        <note>Resources for the upload/download of logic files and views</note>
+        <translation approved="true" key="Download_To_Modify" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Download per la modifica</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Elimina inutilizzato</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Drivers" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Elimina inutilizzate...</variant>
+        </translation>
+        <translation approved="true" key="Add_New" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Aggiungi nuovo</variant>
+        </translation>
+        <translation approved="true" key="Edit_Existing" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Modifica esistente</variant>
+        </translation>
+        <translation approved="true" key="BACnet" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>BACnet</variant>
+        </translation>
+        <translation approved="true" key="N2" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>N2</variant>
+        </translation>
+        <translation approved="true" key="Modbus" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Modbus</variant>
+        </translation>
+        <translation approved="true" key="Lonworks" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Lonworks</variant>
+        </translation>
+        <translation approved="true" key="Generate_Pdf" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Genera PDF</variant>
+        </translation>
+        <translation approved="true" key="Generate_Excel" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Genera Excel</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Views" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Elimina inutilizzate...</variant>
+        </translation>
+        <translation approved="true" key="Delete_Unused_Equipment" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Elimina inutilizzate...</variant>
+        </translation>
+        <translation approved="true" key="Upload_To_Add" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Carica per aggiungere</variant>
+        </translation>
+        <translation approved="true" key="ERL_Export_Button" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Esporta .erl</variant>
+        </translation>
+        <translation approved="true" key="ERL_Import_Button" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Importa .erl</variant>
+        </translation>
+        <translation approved="true" key="Upload_To_Replace" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Carica per sostituire</variant>
+        </translation>
+        <translation approved="true" key="Upload_To_Replace_lvl5" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Carica per sostituire vista grafico</variant>
+        </translation>
+        <translation approved="true" key="Upload_To_Replace_wap" new="false">
+            <note>Resources for the upload/download of logic files and views</note>
+            <variant>Carica per sostituire vista WAP</variant>
+        </translation>
+    </section>
+    <section id="webroot/_common/lvl5/properties/hardwaredevice.jsp">
+        <translation approved="true" key="Module_Status" new="false">
+            <variant>Stato modulo</variant>
+        </translation>
+        <translation approved="true" key="Show_Bindings" new="false">
+            <variant>Mostra collegamenti</variant>
+        </translation>
+        <translation approved="true" key="Bacnet_Backup" new="false">
+            <variant>Backup</variant>
+        </translation>
+        <translation approved="true" key="Bacnet_Restore" new="false">
+            <variant>Ripristino</variant>
+        </translation>
+        <translation approved="true" key="Bacnet_Time_Sync" new="false">
+            <variant>Sincronizzazione ora</variant>
+        </translation>
+        <translation approved="true" key="Bacnet_UTC_Time_Sync" new="false">
+            <variant>Sincronizzazione orario UTC</variant>
+        </translation>
+        <translation approved="true" key="Event_Info" new="false">
+            <variant>Informazioni evento</variant>
+        </translation>
+        <translation approved="true" key="Event_Summary" new="false">
+            <variant>Riepilogo evento</variant>
+        </translation>
+        <translation approved="true" key="DCC" new="false">
+            <variant>Contr. comunicaz. disp.</variant>
+        </translation>
+        <translation approved="true" key="Warmstart" new="false">
+            <variant>Avvio a caldo</variant>
+        </translation>
+        <translation approved="true" key="Coldstart" new="false">
+            <variant>Avvio a freddo</variant>
+        </translation>
+        <translation approved="true" key="Bacnet_Abort" new="false">
+            <variant>Interrompi</variant>
+        </translation>
+        <translation approved="true" key="Create_Object" new="false">
+            <variant>Crea oggetto</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/ccn/autodiscovery.jsp">
+        <note>Resources for the ccn autodiscovery process.</note>
+        <translation approved="true" key="Attach" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Attach a view from a list of available views</note>
+            <variant>Allega</variant>
+        </translation>
+        <translation approved="true" key="Remove" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Remove a view from the assigned list of views</note>
+            <variant>Rimuovi</variant>
+        </translation>
+        <translation approved="true" key="RemoveAll" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Remove all views from the equipment for the selected devices in the table.</note>
+            <variant>Rimuovi tutto</variant>
+        </translation>
+        <translation approved="true" key="Connect_to_Gateway" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Find the CCN Gateway.</note>
+            <variant>Collega a gateway</variant>
+        </translation>
+        <translation approved="true" key="Reconnect_to_Gateway" new="false">
+            <note>Resources for the ccn autodiscovery process.</note>
+            <note> label - Find the CCN Gateway.</note>
+            <variant>Ricollega a gateway</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/ccnw2/autodiscovery.jsp">
+        <note>Resources for the ccn web 2 autodiscovery process.</note>
+        <translation approved="true" key="Start_Scan" new="false">
+            <note>Resources for the ccn web 2 autodiscovery process.</note>
+            <variant>Avvia scansione</variant>
+        </translation>
+        <translation approved="true" key="Stop_Scan" new="false">
+            <note>Resources for the ccn web 2 autodiscovery process.</note>
+            <variant>Arresta scansione</variant>
+        </translation>
+        <translation approved="true" key="Skip_Bus" new="false">
+            <note>Resources for the ccn web 2 autodiscovery process.</note>
+            <variant>Ignora bus</variant>
+        </translation>
+        <translation approved="true" key="Skip_Element" new="false">
+            <note>Resources for the ccn web 2 autodiscovery process.</note>
+            <variant>Ignora elemento</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/bacnetdiscovery.jsp">
+        <note>Resources for the bacnet discovery process.</note>
+        <translation approved="true" key="Locate_Devices" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Trova dispositivi</variant>
+        </translation>
+        <translation approved="true" key="Locate_Networks" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Trova dispositivi</variant>
+        </translation>
+        <translation approved="true" key="Add_Equipment" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Aggiungi programma di controllo</variant>
+        </translation>
+        <translation approved="true" key="Download_CCN" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Scarica CCN</variant>
+        </translation>
+        <translation approved="true" key="Check_Status" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Controlla stato</variant>
+        </translation>
+        <translation approved="true" key="Import" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Carica</variant>
+        </translation>
+        <translation approved="true" key="Resolve" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Risolvi</variant>
+        </translation>
+        <translation approved="true" key="Show_Log" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Mostra registro</variant>
+        </translation>
+        <translation approved="true" key="Clear_InfoMessages" new="false">
+            <note>Resources for the bacnet discovery process.</note>
+            <variant>Reimposta</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/network_tasks.jsp">
+        <note>Resources for the network tasks process.</note>
+        <translation approved="true" key="Hold_Task" new="false">
+            <note>Resources for the network tasks process.</note>
+            <variant>Blocca</variant>
+        </translation>
+        <translation approved="true" key="Start_Task" new="false">
+            <note>Resources for the network tasks process.</note>
+            <variant>Avvia</variant>
+        </translation>
+        <translation approved="true" key="Move_to_Top" new="false">
+            <note>Resources for the network tasks process.</note>
+            <variant>Sposta in alto</variant>
+        </translation>
+        <translation approved="true" key="Move_to_Bottom" new="false">
+            <note>Resources for the network tasks process.</note>
+            <variant>Sposta in basso</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/setup/changeaddress.jsp">
+        <note>Resources for the change address dialog.</note>
+        <translation approved="true" key="Change_Address" new="false">
+            <note>Resources for the change address dialog.</note>
+            <variant>Modifica indirizzo</variant>
+        </translation>
+    </section>
+    <section id="webroot/_common/lvl5/properties/protocol__mapping.jsp">
+        <translation approved="true" key="Build" new="false">
+            <variant>Build</variant>
+        </translation>
+        <translation approved="true" key="Rebuild" new="false">
+            <variant>Ricostruisci</variant>
+        </translation>
+        <translation approved="true" key="Clear_All" new="false">
+            <variant>Cancella tutto</variant>
+        </translation>
+    </section>
+    <section id="webroot/_common/lvl5/setup/systemsetupframe.jsp">
+        <translation approved="true" key="Exit_Setup" new="false">
+            <variant>Esci da configurazione</variant>
+        </translation>
+    </section>
+    <section id="webroot/_common/lvl5/properties/site.jsp">
+        <translation approved="true" key="View_DST_Dates" new="false">
+            <variant>Visualizza date DST</variant>
         </translation>
     </section>
     <section id="webroot/_common/lvl5/wizard/checkingcontrols.inc">
         <translation approved="true" key="Check_all" new="false">
-            <variant>全部選取</variant>
+            <variant>Seleziona tutto</variant>
         </translation>
         <translation approved="true" key="Uncheck_all" new="false">
-            <variant>全部取消選取</variant>
+            <variant>Deseleziona tutto</variant>
+        </translation>
+    </section>
+    <section id="/_common/lvl5/tools/config/webappPlugin.jsp">
+        <note>Resources for the web application manager utility.</note>
+        <translation approved="true" key="WebappDeploy" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Installa</variant>
+        </translation>
+        <translation approved="true" key="WebappStart" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Avvia</variant>
+        </translation>
+        <translation approved="true" key="WebappSave" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Salva dati</variant>
+        </translation>
+        <translation approved="true" key="WebappStop" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Arresta</variant>
+        </translation>
+        <translation approved="true" key="WebappDelete" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Rimuovi componente aggiuntivo e conserva dati</variant>
+        </translation>
+        <translation approved="true" key="WebappClean" new="false">
+            <note>Resources for the web application manager utility.</note>
+            <variant>Rimuovi componente aggiuntivo e dati</variant>
+        </translation>
+    </section>
+    <section id="Time Machine">
+        <note>Resources for the Time Machine</note>
+        <translation approved="true" key="Range_Hourly_1" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>1 ora</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_4" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>4 ore</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_8" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>8 ore</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_12" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>12 ore</variant>
+        </translation>
+        <translation approved="true" key="Range_Hourly_24" new="false">
+            <note>Resources for the Time Machine</note>
+            <variant>24 ore</variant>
         </translation>
     </section>
 </resource-base>
