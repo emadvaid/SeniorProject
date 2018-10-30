@@ -20,12 +20,12 @@ export class VersionService {
         return this.http.get('http://localhost:8080/versions', options)
         .pipe(
             map((resp: any) => {
-                console.log(' file-functions.component ajax response: ', resp);
+                console.log('versionService', resp);
                 if (resp) {
                     const respBody = resp.json();
-                    console.log(' file-functions.component language list: ', respBody);
-                   if (respBody.VersionDetails) {
-                        return <Array<Version>> respBody.VersionDetails;
+                    console.log('respBody  ', respBody);
+                   if (respBody.versionDetails) {
+                        return <Array<Version>> respBody.versionDetails;
                     }
 
                 }
