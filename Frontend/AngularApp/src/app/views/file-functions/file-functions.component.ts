@@ -27,6 +27,7 @@ export class FileFunctionsComponent implements OnInit {
   public versionNumber =  '1.0.0.1';
   public versionSavedMsg = '';
   public versionSaved = false;
+  model: any = { };
 
 
 
@@ -36,6 +37,7 @@ export class FileFunctionsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.refresh();
   }
 
   dropped(event: UploadEvent) {
@@ -122,6 +124,18 @@ export class FileFunctionsComponent implements OnInit {
       );
   }
 
+  private refresh(): void {
+    this.versionService.getAll().subscribe(
+        (versions: Array<Version>) => {
+          console.log('versions', versions);
+            this.model.versions = versions;
+        },
+        (err: any) => {
+            console.log('VersionComponent: error getting users', err);
+        }
+    );
+}
+
 
   onUpload() {
     console.log('File');
@@ -151,5 +165,8 @@ export class FileFunctionsComponent implements OnInit {
     document.getElementById('button1').setAttribute('disabled', 'true');
     document.getElementById('button2').setAttribute('disabled', 'true');
   }
+  get diagnostics() {
+    return 'model = ' + JSON.stringify(this.model);
+}
 }
 
