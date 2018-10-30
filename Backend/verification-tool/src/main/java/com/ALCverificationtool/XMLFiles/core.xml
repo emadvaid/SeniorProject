@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="core" version="1.0" xml:lang="it" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="core" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
     <section id="Core constants">
         <translation approved="true" key="SetupManager_PARITY_EVEN" new="false">
             <note>droplist choice - Even parity</note>
-            <variant>Pari</variant>
+            <variant>Par</variant>
         </translation>
         <translation approved="true" key="SetupManager_PARITY_ODD" new="false">
             <note>droplist choice - Odd parity</note>
-            <variant>Dispari</variant>
+            <variant>Impar</variant>
         </translation>
         <translation approved="true" key="SetupManager_PARITY_NONE" new="false">
             <note>droplist choice - No parity</note>
-            <variant>Nessuno</variant>
+            <variant>Ninguno</variant>
         </translation>
     </section>
     <section id="proxy conflicts/problems">
@@ -19,187 +19,187 @@
         <translation approved="true" key="reference_name" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a reference name was automatically changed during a copy/paste.</note>
-            <variant>Il nome di riferimento del nodo importato è già in uso da parte di un altro nodo. È stato creato automaticamente un nuovo nome di riferimento univoco.</variant>
+            <variant>Otro nodo ya está utilizando el nombre de referencia del nodo importado. Se ha creado automáticamente un nombre de referencia exclusivo para usted.</variant>
         </translation>
         <translation approved="true" key="site_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a site number was automatically changed during a copy/paste.</note>
-            <variant>Il numero del sito importato è già in uso da parte di un altro sito. È stato creato automaticamente un nuovo numero di sito univoco.</variant>
+            <variant>Otro sitio ya está utilizando el número del sitio importado. Se ha creado automáticamente un número de sitio exclusivo para usted.</variant>
         </translation>
         <translation approved="true" key="network_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a network number was automatically changed during a copy/paste.</note>
-            <variant>Il numero di rete importato è già in uso da parte di un'altra rete. È stato creato automaticamente un nuovo numero di rete univoco.</variant>
+            <variant>Otra red ya está utilizando el número de la red importada. Se ha creado automáticamente un número de red exclusivo para usted.</variant>
         </translation>
         <translation approved="true" key="device_id" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a device id was automatically changed during an import.</note>
-            <variant>L'ID del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo ID di dispositivo univoco.</variant>
+            <variant>Otro controlador ya está utilizando el identificador de controlador del dispositivo importado. Se ha creado automáticamente un identificador de dispositivo exclusivo para usted.</variant>
         </translation>
         <translation approved="true" key="nat_address" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
-            <variant>L'indirizzo pubblico del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo indirizzo di dispositivo univoco.</variant>
+            <variant>Ya hay otra controlador usando la dirección IP pública del controlador importado. Se ha creado automáticamente una dirección exclusiva para usted.</variant>
         </translation>
         <translation approved="true" key="mac_address" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
-            <variant>L'indirizzo del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo indirizzo di dispositivo univoco.</variant>
+            <variant>Otro controlador ya está utilizando la dirección del controlador importado. Se ha creado automáticamente una dirección exclusiva para usted.</variant>
         </translation>
         <translation approved="true" key="instance_number" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that an equipment instance number was automatically changed during an import.</note>
-            <variant>il numero di istanza dell'attrezzatura importato è già in uso da parte di un'altra attrezzatura. È stato creato automaticamente un nuovo numero di istanza univoco.</variant>
+            <variant>Otro programa de control ya está utilizando el número de instancia del programa de control importado. Se ha creado automáticamente un número de instancia exclusivo para usted.</variant>
         </translation>
         <translation approved="true" key="already_attached" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates a mismatch between a device and a piece of equipment during an import.</note>
-            <variant>Il controller importato ha eseguito un tentativo di assegnazione a se stesso un programma di controllo già assegnato ad un controller differente. Il programma di controllo non è stato riassegnato.</variant>
+            <variant>El controlador importado ha intentado asignarse a un programa de control que ya se encuentra asignado a otro controlador. El programa  de control no esta asignado.</variant>
         </translation>
         <translation approved="true" key="attached_eq_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indication of an attempt to assign a non-existent equipment to a device.</note>
-            <variant>Il controller importato ha eseguito un tentativo di assegnazione a se stesso di un programma di controllo inesistente. Per assegnare il programma di controllo specificato, è necessario esportarlo dallo stesso database a cui appartiene il controller, quindi importarlo in questo database.</variant>
+            <variant>El controlador importado ha intentado asignarse  un programa de control que no existe. Puede asignar este programa de control exportándolo (desde la misma base de datos que este controlador) y luego importárlo en esta base de datos.</variant>
         </translation>
         <translation approved="true" key="attached_device_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an attempt to assign an equipment to a non-existent device.</note>
-            <variant>Il programma di controllo importato ha eseguito un tentativo di assegnazione a se stesso di un controller inesistente. Per assegnare il programma di controllo specificato, è necessario esportare il controller dallo stesso database a cui appartiene il programma di controllo, quindi importarlo in questo database.</variant>
+            <variant>El programa de control importado ha intentado asignarse a un controlador que no existe. Puede asignar este programa de control exportando el controlador (desde la misma base de datos que este programa de control) y luego importándolo en esta base de datos.</variant>
         </translation>
         <translation approved="true" key="equipment_parameter" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - error trying to set an equipment parameter</note>
-            <variant>Impossibile impostare un parametro del programma di controllo. In genere, questo problema si verifica perché il programma di controllo non è stato ricaricato durante l'importazione o prima dell'esportazione.</variant>
+            <variant>No se pudo establecer un parámetro de programa de control. Esto se debe normalmente a que el programa de control no ha vuelto a cargarse (durante la importación o antes de la exportación).</variant>
         </translation>
         <translation approved="true" key="report_parameter" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error with a report parameter due to a problem with a control program during a database import or export.  </note>
-            <variant>Impossibile impostare un parametro del rapporto. In genere, questo problema si verifica perché il programma di controllo non è stato ricaricato durante l'importazione o prima dell'esportazione.</variant>
+            <variant>No se pudo establecer un parámetro de informe. Esto se debe normalmente a que el programa de control no ha vuelto a cargarse (durante la importación o antes de la exportación).</variant>
         </translation>
         <translation approved="true" key="schedule_group" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indication of an error trying to assign a schedule group</note>
-            <variant>Il nodo specificato non è stato assegnato ad un gruppo di Schedule perché il gruppo non esiste. È necessario configurare manualmente tutti i gruppi di Schedule nel database importato e in quello esportato.</variant>
+            <variant>No asignó este nodo a un grupo de horarios debido a que el grupo no existe. Debe configurar manualmente todos los grupos de horarios, tanto en la base de datos importada como en la exportada.</variant>
         </translation>
         <translation approved="true" key="reporting_action" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a reporting action</note>
-            <variant>Non è stata eseguita l'assegnazione ad un' azione dei rapporti perché l'azione non esiste. È necessario configurare manualmente tutte le azioni dei rapporti nel database importato e in quello esportato.</variant>
+            <variant>No asignó a una acción de elaboración de informes debido a que la acción no existe. Debe configurar manualmente todas las acciones de elaboración de informes, tanto en la base de datos importada como en la exportada.</variant>
         </translation>
         <translation approved="true" key="source_tree_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to set up source nodes due to a non-existent source tree</note>
-            <variant>Importazione dei nodi di origine non riuscita. Impossibile trovare la struttura di origine. È necessario aggiungere manualmente le strutture di origine e configurare le regole nel database importato e in quello esportato.</variant>
+            <variant>No se pudieron importar los nodos de la fuente. No se encontró el árbol de la fuente. Debe agregar manualmente los árboles de la fuente y configurar las normas tanto para la base de datos importada como para la exportada.</variant>
         </translation>
         <translation approved="true" key="source_parent_relocated" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source parent location problem.</note>
-            <variant>Impossibile definire il sito del programma di controllo perché non è stato assegnato ad un dispositivo.  Il programma di controllo è stato assegnato alla directory principale della struttura di origine.</variant>
+            <variant>No puede determinar el sitio para el programa de control debido a que no está asignado a un controlador.  El programa de control se ha asignado a la raíz del árbol de la fuente.</variant>
         </translation>
         <translation approved="true" key="source_parent_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source parent node.  Parent node was not found.</note>
-            <variant>Assegnazione del nodo di origine principale non riuscita. Impossibile trovare l'origine nel database importato.</variant>
+            <variant>No se pudo asignar el nodo de origen de la fuente. No se encontró la fuente en la base de datos importada.</variant>
         </translation>
         <translation approved="true" key="source_rules_failed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign a source rule.</note>
-            <variant>Errore di una regola di origine. È necessario aggiungere manualmente le strutture di origine e configurare le regole nel database importato e in quello esportato.</variant>
+            <variant>Error de norma de la fuente. Debe agregar manualmente los árboles de la fuente y configurar las normas tanto para la base de datos importada como para la exportada.</variant>
         </translation>
         <translation approved="true" key="operator_or_group_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indication of an error with an operator or group due to a problem encountered during a database import.   </note>
-            <variant>Impossibile trovare un operatore o un gruppo di operatori di riferimento.  Per correggere l'errore, aggiungere l'operatore o il gruppo di operatori mancanti, quindi eseguire di nuovo l'importazione.</variant>
+            <variant>No se encontró un operador o grupo de operadores a donde se le se remitió.  Para corregir, agregue el operador o grupo que falta y vuelva a importar.</variant>
         </translation>
         <translation approved="true" key="role_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indication of an error with a missing role encountered during a database import.   </note>
-            <variant>Impossibile trovare un ruolo.  Per correggere l'errore, aggiungere il ruolo mancante, quindi eseguire di nuovo l'importazione.</variant>
+            <variant>No se pudo encontrar un rol.  Para corregir, agregue el rol que falta y vuelva a importar.</variant>
         </translation>
         <translation approved="true" key="privilege_key_not_found" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a privilege being invalid for this database version.  </note>
-            <variant>Impossibile mantenere un privilegio perché non è pertinente alla versione in uso.  Ciò non dovrebbe provocare problemi.</variant>
+            <variant>No se pudo retener un privilegio debido a que no aplica para esta versión.  Esto no debe causar ningún problema.</variant>
         </translation>
         <translation approved="true" key="preference_does_not_exist" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a user preference being invalid for this database version. </note>
-            <variant>Impossibile mantenere una preferenza utente perché non è pertinente alla versione in uso.  Ciò non dovrebbe provocare problemi.</variant>
+            <variant>No se pudo retener una preferencia de usuario debido a que no aplica para esta versión.  Esto no debe causar ningún problema.</variant>
         </translation>
         <translation approved="true" key="added_missing_view_category" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with a missing category during a database import </note>
-            <variant>È stata aggiunta una categoria di viste mancante. Questo evento si verifica quando una vista nel database importato contiene una categoria non inclusa nel database esistente. Accedere alla pagina relativa alla categoria dei grafici o delle proprietà nel Config Tree.</variant>
+            <variant>Agregó una categoría de visores que falta. Esto sucede cuando un visor en la base de datos importada posee una categoría que no está en la base de datos existente. Vaya a la página de categorías de gráficas o propiedades, en el árbol de configuración.</variant>
         </translation>
         <translation approved="true" key="add_missing_view_category_failed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error with adding a category that was previously missing. </note>
-            <variant>Aggiunta di una categoria di viste mancante non riuscita. Non verranno aggiunte le viste relative alla posizione specificata.</variant>
+            <variant>No se pudo agregar una categoría de visor que falta, por lo que no se agregarán los visores para esta ubicación.</variant>
         </translation>
         <translation approved="true" key="view_not_attached" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error attaching a view to a node during a database import </note>
-            <variant>Tentativo di allegare una vista non riuscito.  Questo evento si verifica quando il file della vista utilizzato dal database importato è inesistente.  Sostituire il file .view mancante, quindi allegarlo di nuovo al nodo.</variant>
+            <variant>No se pudo adjuntar el visor.  Esto sucede cuando no existe el archivo visor utilizado por la base de datos importada.  Sustituya el archivo de vistas que falta y vuelva a adjuntarlo al nodo.</variant>
         </translation>
         <translation approved="true" key="equipment_missing_expected_child" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error when adding a default view due to a non-existent child node.</note>
-            <variant>Aggiunta delle viste predefinite ad un componente child del programma di controllo non riuscito perché non è stato trovato.</variant>
+            <variant>No se pudieron agregar las vistas predeterminadas para un secundario de un programa de control debido a que no se encontró el secundario.</variant>
         </translation>
         <translation approved="true" key="cannot_attach_equipment" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates an error trying to assign an equipment.  The equipment is not allowed to be assigned to that particular device.</note>
-            <variant>Il programma di controllo importato non può essere assegnato al controller perché non è valido per il dispositivo specificato.</variant>
+            <variant>El programa de control importado no se puede asignar a un controlador debido a que no es válido para dicho controlador.</variant>
         </translation>
         <translation approved="true" key="site_group_cache_invalid" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates an error assigning the group-cache to a device because it doesn't exist. </note>
-            <variant>Il dispositivo cache di gruppo specificato non è valido.  Le impostazioni del sito sono state modificate per non utilizzare la cache di gruppo.  È consigliabile risolvere il problema al termine dell'importazione.</variant>
+            <variant>Uno de los controladores de caché de grupo especificados no era válido. Se ha modificado el sitio para que no utilice caché de grupos. Debe solucionar este problema cuando finalice la importación.</variant>
         </translation>
         <translation approved="true" key="system_nat_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where an imported site or router has been configured for NAT, but the system does not have NAT enabled. </note>
-            <variant>NAT non è abilitato per il sistema; tuttavia, un sito o un router importato presentano informazioni di configurazione NAT.  È consigliabile abilitare NAT al termine dell'importazione.</variant>
+            <variant>NAT no está habilitado para el sistema, pero un sitio o enrutador importado dispone de información de configuración de NAT.  Debe habilitar NAT después de que concluya la importación.</variant>
         </translation>
         <translation approved="true" key="device_nat_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where an imported router has been configured for NAT, but it's site does not have NAT for devices enabled. </note>
-            <variant>Il router importato presenta un indirizzo NAT; tuttavia, le impostazioni del sito non indicano che i relativi indirizzi sono protetti da una configurazione NAT. È consigliabile abilitare NAT per i dispositivi al termine dell'importazione.</variant>
+            <variant>El enrutador importado posee una dirección NAT, pero el sitio no indica que sus controladores están detrás de un NAT. Debe habilitar NAT para controladores cuando finalice la importación.</variant>
         </translation>
         <translation approved="true" key="hs_disabled" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where hierarchical servers is not enabled for this system, but the clipping contains hierarchical server data. </note>
-            <variant>I server gerarchici sono disabilitati.  Il collegamento al server non è stato importato.</variant>
+            <variant>Los servidores jerárquicos no están habilitados.  No se ha importado el vínculo del servidor.</variant>
         </translation>
         <translation approved="true" key="hs_servlink_not_allowed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the clipping contains a server link, but the system is a child hierarchical server and therefore does not allow server links. </note>
-            <variant>Non sono consentiti collegamenti ai server per i server secondari della gerarchia.</variant>
+            <variant>Los vínculos de servidores no son compatibles con los servidores jerárquicos secundarios.</variant>
         </translation>
         <translation approved="true" key="hs_navlink_not_allowed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the clipping contains a navigation link, but the system is a parent hierarchical server and therefore does not allow navigation links. </note>
-            <variant>Non sono consentiti collegamenti di navigazione per i server principali della gerarchia.</variant>
+            <variant>Los vínculos de navegación no son compatibles con los servidores jerárquicos principales.</variant>
         </translation>
         <translation approved="true" key="missing_component" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where a file is missing that might be needed to correctly paste the system fragment at a later time. </note>
-            <variant>Manca un file richiesto.  È possibile che l'importazione non riesca.</variant>
+            <variant>Falta un archivo necesario.  Esto puede generar un error en la importación.</variant>
         </translation>
         <translation approved="true" key="device_type_change" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem where the device in the clipping could not be imported as it was into the target database.  The device type was changed before being imported. </note>
-            <variant>Il tipo di dispositivo è stato modificato durante l'importazione. Sarà necessario eseguire uno scaricamento.</variant>
+            <variant>El nombre del dispositivo cambió durante la importación. Se precisa descarga.</variant>
         </translation>
         <translation approved="true" key="ccnip_connection_change" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a conflict was resolved by updating the CCN/IP connection CCN gateway address to the address of the gateway being imported. </note>
-            <variant>L'indirizzo del gateway CCN della connessione CCN/IP è stato modificato.</variant>
+            <variant>La dirección de puerta de enlace CCN de conexión CCN/IP ha cambiado.</variant>
         </translation>
         <translation approved="true" key="ccnip_connection_change_needed" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note> label - indicates a problem that the import process could not update the CCN/IP Connection's CCN Gateway address to match the imported gateway.  Further action is required by the user.</note>
-            <variant>Il gateway CCN è stato importato ma non è stato possibile aggiornare l'indirizzo del gateway CCN di connessione CCN/IP. Aggiornarlo manualmente.</variant>
+            <variant>Se ha importado la puerta de enlace CCN, pero no ha podido actualizarse la dirección de puerta de enlace CCN de conexión CCN/IP. Actualícela manualmente.</variant>
         </translation>
     </section>
     <section id="CoreScheduleNodes">
@@ -207,37 +207,37 @@
         <translation approved="true" key="fst" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in first week of the month</note>
-            <variant>1°</variant>
+            <variant>1</variant>
         </translation>
         <translation approved="true" key="snd" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in second week of the month</note>
-            <variant>2°</variant>
+            <variant>2</variant>
         </translation>
         <translation approved="true" key="trd" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in third week of the month</note>
-            <variant>3°</variant>
+            <variant>3</variant>
         </translation>
         <translation approved="true" key="fth" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in fourth week of the month</note>
-            <variant>4°</variant>
+            <variant>4</variant>
         </translation>
         <translation approved="true" key="fith" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in fifth week of the month</note>
-            <variant>5°</variant>
+            <variant>5</variant>
         </translation>
         <translation approved="true" key="last" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>As in last week of the month</note>
-            <variant>ultimo</variant>
+            <variant>último</variant>
         </translation>
         <translation approved="true" key="Every" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>Used with keys above to form phrase like: Every 2nd Tuesday</note>
-            <variant>Ogni</variant>
+            <variant>Cada</variant>
         </translation>
         <translation approved="true" key="Mon" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
@@ -252,22 +252,22 @@
         <translation approved="true" key="Wed" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Wednesday</note>
-            <variant>Mer</variant>
+            <variant>Mié</variant>
         </translation>
         <translation approved="true" key="Thu" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Thursday</note>
-            <variant>Gio</variant>
+            <variant>Jue</variant>
         </translation>
         <translation approved="true" key="Fri" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Friday</note>
-            <variant>Ven</variant>
+            <variant>Vie</variant>
         </translation>
         <translation approved="true" key="Sat" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note> short day name for Saturday</note>
-            <variant>Sab</variant>
+            <variant>Sáb</variant>
         </translation>
         <translation approved="true" key="Sun" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
@@ -277,7 +277,7 @@
         <translation approved="true" key="Any" new="false">
             <note> Used in formatting dates of schedules by CoreSchedule*Node.java. (See schedule report.)</note>
             <note>For any day of the week</note>
-            <variant>Qualsiasi</variant>
+            <variant>Cualquier</variant>
         </translation>
     </section>
 </resource-base>

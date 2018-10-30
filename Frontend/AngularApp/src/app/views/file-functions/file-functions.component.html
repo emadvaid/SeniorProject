@@ -22,18 +22,22 @@
   <div class='form-group'>
     
 </div>
+<div *ngIf="versionSaved;else createdVersion">
   <button type="button" class="btn btn-success btn-s"
-          (click)="onUpload()" id="button1" disabled>
+          (click)="onUpload()" id="button1" >
     Upload XML files
   </button>
   <button type="button" class="btn btn-danger btn-s" style="float: right;"
-          (click)="clear()" id="button2" disabled>
+          (click)="clear()" id="button2" >
     Clear files
   </button>
-  <button type="button" class="btn btn-success btn-s"
-  (click)="createVersion()" id="button1" >
-Create Version
-</button>
+</div>
+<ng-template #createdVersion>
+    <button type="button" class="btn btn-success btn-s"
+    (click)="createVersion()" id="button1" >
+  Create Version
+  </button>
+</ng-template>
 <div class='form-group'>
   <label>Version Number</label>
   <input

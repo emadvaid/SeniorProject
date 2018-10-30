@@ -110,6 +110,7 @@ export class FileFunctionsComponent implements OnInit {
             // add a visible message version created
             this.versionSavedMsg = 'New Version created.';
             this.versionSaved = true;
+            this.refresh();
           } else {
             console.log('FileFunctionsComponent.createVersion: version not created');
             this.versionSavedMsg = 'Error creating version.';
