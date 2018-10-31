@@ -7,9 +7,11 @@ import javax.xml.transform.TransformerException;
 import java.util.List;
 
 public interface ExportFilesService {
-    void createFolder();
+   // void createFolder();
 
    // List<TranslationResourceRec> getKeys();
+
+    void createFolder(String language);
 
     void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException;
 }

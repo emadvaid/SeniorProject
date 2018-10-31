@@ -36,7 +36,7 @@
             <note>Label - indicates that a device id was automatically changed during an import.</note>
             <variant>L'ID del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo ID di dispositivo univoco.</variant>
         </translation>
-        <translation approved="true" key="nat_address" new="false">
+        <translation approved="false" key="nat_address" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
             <variant>L'indirizzo pubblico del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo indirizzo di dispositivo univoco.</variant>
@@ -46,17 +46,17 @@
             <note>Label - indicates that a machine address was automatically changed during an import.</note>
             <variant>L'indirizzo del dispositivo importato è già in uso da parte di un altro dispositivo. È stato creato automaticamente un nuovo indirizzo di dispositivo univoco.</variant>
         </translation>
-        <translation approved="true" key="instance_number" new="false">
+        <translation approved="true" key="instance_number" new="true">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates that an equipment instance number was automatically changed during an import.</note>
             <variant>il numero di istanza dell'attrezzatura importato è già in uso da parte di un'altra attrezzatura. È stato creato automaticamente un nuovo numero di istanza univoco.</variant>
         </translation>
-        <translation approved="true" key="already_attached" new="false">
+        <translation approved="false" key="already_attached" new="false">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indicates a mismatch between a device and a piece of equipment during an import.</note>
             <variant>Il controller importato ha eseguito un tentativo di assegnazione a se stesso un programma di controllo già assegnato ad un controller differente. Il programma di controllo non è stato riassegnato.</variant>
         </translation>
-        <translation approved="true" key="attached_eq_not_found" new="false">
+        <translation approved="true" key="attached_eq_not_found" new="true">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - indication of an attempt to assign a non-existent equipment to a device.</note>
             <variant>Il controller importato ha eseguito un tentativo di assegnazione a se stesso di un programma di controllo inesistente. Per assegnare il programma di controllo specificato, è necessario esportarlo dallo stesso database a cui appartiene il controller, quindi importarlo in questo database.</variant>
@@ -66,7 +66,7 @@
             <note>Label - indicates an attempt to assign an equipment to a non-existent device.</note>
             <variant>Il programma di controllo importato ha eseguito un tentativo di assegnazione a se stesso di un controller inesistente. Per assegnare il programma di controllo specificato, è necessario esportare il controller dallo stesso database a cui appartiene il programma di controllo, quindi importarlo in questo database.</variant>
         </translation>
-        <translation approved="true" key="equipment_parameter" new="false">
+        <translation approved="true" key="equipment_parameter" new="true">
             <note>These keys are used in the SiteBuilder application. They are information/error messages resulting from the creation of the HVAC network (sites/areas/devices/equipment). This text results from the copy and paste of items, import/export of items, and assignment of 1 item to another.</note>
             <note>Label - error trying to set an equipment parameter</note>
             <variant>Impossibile impostare un parametro del programma di controllo. In genere, questo problema si verifica perché il programma di controllo non è stato ricaricato durante l'importazione o prima dell'esportazione.</variant>

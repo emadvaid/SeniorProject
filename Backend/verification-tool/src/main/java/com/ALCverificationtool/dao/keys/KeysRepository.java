@@ -6,7 +6,6 @@ import java.util.List;
 
 
 public interface KeysRepository {
-
     default boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion) {
         return createKeyTable(keyLanguageCode, keyLanguageVersion, false);
     }

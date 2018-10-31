@@ -32,10 +32,10 @@ public class ExportFilesServiceImpl implements ExportFilesService {
 
 
     @Override
-    public void createFolder() {
+    public void createFolder(String language) {
         //Create export folder on user Desktop
         String homeFolder = System.getProperty("user.home");
-        Paths.get(homeFolder, "Desktop", "Export Files").toFile().mkdir();
+        Paths.get(homeFolder, "Desktop", "Export Files/" + language + "/").toFile().mkdirs();
     }
 
     @Override
@@ -139,7 +139,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                                 DOMSource source = new DOMSource(doc);
 
                                 String desktopPath = System.getProperty("user.home") + "/Desktop";
-                                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + keys.get(i).getFileName() + ".xml"));
+                                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + language + "/"+ keys.get(i).getFileName() + ".xml"));
 
                                 transformer.transform(source, result);
 
