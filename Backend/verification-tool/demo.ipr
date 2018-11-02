@@ -81,11 +81,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
-    </modules>
-  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" />
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />

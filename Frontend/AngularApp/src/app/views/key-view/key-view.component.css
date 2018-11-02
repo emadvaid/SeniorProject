@@ -1,0 +1,49 @@
+#parent {
+  width: 100%;
+  border: 1px;
+  overflow: hidden;
+  position: relative;
+  left: 9%;
+}
+
+#leftChild {
+  width: 30%;
+  float: left;
+  border: 1px
+}
+
+#rightChild {
+  float: left;
+  border: 1px;
+
+}
+
+#keyList {
+  width: 80%;
+  margin: 0 auto;
+  height: 66vh;
+  overflow:auto;
+}
+
+#keyInput {
+  width: 90% ;
+  margin: 0 auto;
+  height: 16vh;
+  position: relative;
+  right: 5%;
+}
+
+#keyEnglish {
+  width: 100% ;
+  margin: 0 auto;
+  height: 16vh;
+  position: relative;
+}
+
+#descriptionInput {
+  width: 90% ;
+  margin: 0 auto;
+  height: 16vh;
+  position: relative;
+  right: 5%;
+}

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  title = 'Translation Verificaiton ';
+  title = 'Translation Verification ';
   loggedIn = false;
   isAdmin = false;
 

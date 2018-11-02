@@ -1,0 +1,59 @@
+
+<form>
+<div>
+  <div>
+    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block">
+      <option >Version 1</option>
+      <option >option 2</option>
+    </select>
+    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block">
+      <option >Language 1</option>
+      <option >option 2</option>
+    </select>
+    <input type="text" class="form-control" id="searchBar"  style="width: 300px; left: 6px;position:  relative;left: 50%; display: inline-block"
+           placeholder="Search" [(ngModel)]="criteria"
+           name="search" >
+
+  </div>
+
+</div>
+<div id="parent">
+<div id="leftChild" >
+  <label style="position: relative; left: 10%">List of Keys</label>
+  <div id="keyList" class="panel panel-default">
+    Hello2
+  </div>
+</div>
+  <div id="rightChild">
+    <div style="position: relative; left: 5%">
+      <label >Key Text</label>
+      <div id="keyInput">
+        <input type="text" class="form-control" id="input"  style="width: 90vh; height: 100%;padding-bottom: 135px "
+               placeholder="Translation Text" [(ngModel)]="criteria"
+               name="search" >
+
+      </div>
+      <div style=" padding-top: 1%">
+        <button class="btn btn-primary">Accept</button>
+        <button class="btn btn-info" style="position: relative; left: 4px">Reset</button>
+      </div>
+
+      <hr>
+      <label >Key Text in English</label>
+      <div id="keyEnglish" class="panel panel-default">
+
+      </div>
+      <hr>
+      <label>Key Descriptions/Notes</label>
+      <div id="descriptionInput">
+        <input type="text" class="form-control" id="input2"  style="width: 90vh; height: 100%; left: 6px; padding-bottom: 135px "
+               placeholder="Translation Text" [(ngModel)]="criteria"
+               name="search" >
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</form>

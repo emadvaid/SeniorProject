@@ -21,6 +21,7 @@ import { CreateLanguageComponent } from './views/admin/manage-language/create-la
 import { VersionComponent } from './views/version/version.component';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
 import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
+import { KeyViewComponent } from './views/key-view/key-view.component';
 
 
 const appRoutes: Routes = [
@@ -46,7 +47,7 @@ const appRoutes: Routes = [
       {path: 'createVersion', component: VersionComponent},
       {path: 'exportFile', component: ExportFilesComponent},
       {path: 'statistics', component: StatisticsComponent},
-
+      {path: 'keyView', component: KeyViewComponent}
     ]
   },
   {
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
       expectedUserType: UserTypes.dealer
     },
     children: [
-      {path: '', component: DealerDashboardComponent}
+      {path: '', component: DealerDashboardComponent},
+      {path: 'keyView', component: KeyViewComponent}
     ]
   },
   {path: 'error-page', component: ErrorPageComponent},
