@@ -54,40 +54,46 @@ public class ExportFilesServiceImpl implements ExportFilesService {
         String previousFileName = keys.get(0).getFileName();
         String previousNotes = "";
         String previousID = "";
-        for (int i = 0; i < keys.size(); i++) {
-            String currentFileName = keys.get(i).getFileName();
-
-            if (!currentFileName.equals(previousFileName)) {
-                doc = dBuilder.newDocument();
-                resourceBase = doc.createElement("resource-base");
-                doc.appendChild(resourceBase);
-                previousNotes = "";
-                previousFileName = currentFileName;
+        int i = 0;
+        while (i < keys.size()) {
+       // for (int i = 0; i < keys.size(); ) {
+            String currentFileName = "";
+            if (!keys.get(i).getFileName().isEmpty()) {
+                currentFileName = keys.get(i).getFileName();
             }
 
-            if (previousFileName.equals(currentFileName)) {
-
-                //XML header
-                resourceBase.setAttribute("id", currentFileName); //File name
-                resourceBase.setAttribute("version", "1.0");
-                resourceBase.setAttribute("xml:lang", language);
-                resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
-
-                //File notes
-                String fileNotesDB = "";
-                fileNotesDB = keys.get(i).getFileNotes();
-                Element fileNotes = doc.createElement("note");
-                if (!previousNotes.equals(fileNotesDB)) {
-                    fileNotes.appendChild(doc.createTextNode(fileNotesDB));
-                    resourceBase.appendChild(fileNotes);
-                    previousNotes = fileNotesDB;
+            int j = i;
+            while (j < keys.size()) {
+                if (!currentFileName.equals(previousFileName)) {
+                    doc = dBuilder.newDocument();
+                    resourceBase = doc.createElement("resource-base");
+                    doc.appendChild(resourceBase);
+                    previousNotes = "";
+                    previousFileName = currentFileName;
                 }
 
-                //Section ID
-                String sectionDB = "";
-                sectionDB = keys.get(i).getSectionId();
-                int j = i;
-                while (j < keys.size()) {
+                if (previousFileName.equals(currentFileName)) {
+
+                    //XML header
+                    resourceBase.setAttribute("id", currentFileName); //File name
+                    resourceBase.setAttribute("version", "1.0");
+                    resourceBase.setAttribute("xml:lang", language);
+                    resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
+
+                    //File notes
+                    String fileNotesDB = "";
+                    fileNotesDB = keys.get(j).getFileNotes();
+                    Element fileNotes = doc.createElement("note");
+                    if (!previousNotes.equals(fileNotesDB)) {
+                        fileNotes.appendChild(doc.createTextNode(fileNotesDB));
+                        resourceBase.appendChild(fileNotes);
+                        previousNotes = fileNotesDB;
+                    }
+
+                    //Section ID
+                    String sectionDB;
+//                int j = i;
+//                while (j < keys.size()) {
                     //for (int j = 0; j < keys.size(); j++) {
                     currentFileName = keys.get(j).getFileName();
                     sectionDB = keys.get(j).getSectionId();
@@ -101,7 +107,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                         //Section Note
                         String sectionNoteDB = keys.get(i).getSectionNote();
                         //sectionNoteDB = keys.get(i).getSectionNote();
-                        if (sectionNoteDB != null) {
+                        if (!sectionNoteDB.equals("")) {
                             Element sectionNote = doc.createElement("note");
                             sectionNote.appendChild(doc.createTextNode(sectionNoteDB));
                             section.appendChild(sectionNote);
@@ -134,7 +140,13 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                             translationVariant.appendChild(doc.createTextNode(keyVariantDB));
                             translationKey.appendChild(translationVariant);
                             previousID = keys.get(j).getSectionId();
+                            i = j;
                             j++;
+
+
+                            section.appendChild(translationKey);
+                            resourceBase.appendChild(section);
+
 
                             TransformerFactory transformerFactory = TransformerFactory.newInstance();
                             Transformer transformer = transformerFactory.newTransformer();
@@ -153,9 +165,11 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                     }
                 }
                 previousID = keys.get(i).getSectionId();
+                System.out.println(i);
             }
+            i = j + 1;
             previousFileName = currentFileName;
         }
-        //System.out.println("File " + keys.get(i).getFileName() + " created");
+//        System.out.println("File " + keys.get(i).getFileName() + " created");
     }
 }
