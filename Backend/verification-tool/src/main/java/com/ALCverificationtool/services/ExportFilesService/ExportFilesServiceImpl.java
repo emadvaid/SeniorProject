@@ -57,10 +57,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
         int i = 0;
         while (i < keys.size()) {
        // for (int i = 0; i < keys.size(); ) {
-            String currentFileName = "";
-            if (!keys.get(i).getFileName().isEmpty()) {
-                currentFileName = keys.get(i).getFileName();
-            }
+            String currentFileName = keys.get(i).getFileName();
 
             int j = i;
             while (j < keys.size()) {
@@ -81,8 +78,12 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                     resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
 
                     //File notes
-                    String fileNotesDB = "";
+                    String fileNotesDB;
                     fileNotesDB = keys.get(j).getFileNotes();
+                    if (fileNotesDB.length() == 0) {
+                        fileNotesDB = "";
+                        System.out.println("null");
+                    }
                     Element fileNotes = doc.createElement("note");
                     if (!previousNotes.equals(fileNotesDB)) {
                         fileNotes.appendChild(doc.createTextNode(fileNotesDB));
@@ -144,7 +145,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                             j++;
 
 
-                            section.appendChild(translationKey);
+                            //section.appendChild(translationKey);
                             resourceBase.appendChild(section);
 
 
