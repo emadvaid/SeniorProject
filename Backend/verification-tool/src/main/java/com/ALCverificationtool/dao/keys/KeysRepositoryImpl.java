@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.sql.RowSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -178,6 +179,11 @@ public class KeysRepositoryImpl implements KeysRepository {
         return results;
     }
 
+    @Override
+    public List<TranslationResourceRec> getKeyById(String tableName, int key_Id) {
+        List <TranslationResourceRec> results = new ArrayList<>();
+        return results;
+    }
     @Override
     public boolean updateKey(String tableName, TranslationResourceRec keyData) {
         String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?" +

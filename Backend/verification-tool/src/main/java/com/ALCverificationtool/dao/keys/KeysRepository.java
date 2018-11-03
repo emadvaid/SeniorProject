@@ -16,5 +16,7 @@ public interface KeysRepository {
 
     List<TranslationResourceRec> getKeys(String tableName);
 
+    List<TranslationResourceRec> getKeyById(String tableName, int key_Id);
+
     boolean updateKey(String tableName, TranslationResourceRec keyData);
 }
