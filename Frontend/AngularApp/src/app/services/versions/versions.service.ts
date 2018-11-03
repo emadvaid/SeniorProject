@@ -24,8 +24,8 @@ export class VersionService {
                 if (resp) {
                     const respBody = resp.json();
                     console.log(' file-functions.component language list: ', respBody);
-                   if (respBody.VersionDetails) {
-                        return <Array<Version>> respBody.VersionDetails;
+                   if (respBody.versionDetails) {
+                        return <Array<Version>> respBody.versionDetails;
                     }
 
                 }

@@ -2,14 +2,20 @@
 <form>
 <div>
   <div>
-    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block">
-      <option >Version 1</option>
-      <option >option 2</option>
+    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
+            [(ngModel)]="currVersion"
+            #lang="ngModel"
+            name="verselect">
+      <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
     </select>
-    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block">
-      <option >Language 1</option>
-      <option >option 2</option>
+    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
+            [(ngModel)]="currLanguage"
+            (ngModelChange)="setLangCode()"
+            #lang="ngModel"
+            name="langselect">
+      <option *ngFor="let lang of languages.lang" >{{lang.langCode}}</option>
     </select>
+
     <input type="text" class="form-control" id="searchBar"  style="width: 300px; left: 6px;position:  relative;left: 50%; display: inline-block"
            placeholder="Search" [(ngModel)]="criteria"
            name="search" >
