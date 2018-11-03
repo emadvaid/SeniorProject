@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Version } from 'src/app/models/Version';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders()
 };
 
 @Injectable({
@@ -17,18 +18,24 @@ export class FileFunctionsService {
     private http: HttpClient
   ) { }
 
-  sendFiles(selectedFiles: Array<File> = []): Observable<any> {
+  sendFiles(versionNumber: string, selectedFiles: Array<File> = []): Observable<any> {
+
     const uploadData = new FormData();
+
     console.log('stuff');
-    for (let file of selectedFiles) {
+    uploadData.append('versionNumber', versionNumber);
+    for (const file of selectedFiles) {
       console.log('file entered');
       uploadData.append('file', file, file.name);
     }
+
       return this.http.post(this.serverUrl, uploadData , httpOptions);
   }
 
-  exportFiles() {
-    console.log("http://localhost:8080/exportFile");
-    return this.http.get('http://localhost:8080/exportFile');
+  exportFiles(language: string, versionNumber: string) {
+    const tableInfo = new FormData();
+    tableInfo.append('language', language);
+    tableInfo.append('versionNumber', versionNumber);
+    return this.http.post('http://localhost:8080/exportFile', tableInfo, httpOptions);
   }
 }

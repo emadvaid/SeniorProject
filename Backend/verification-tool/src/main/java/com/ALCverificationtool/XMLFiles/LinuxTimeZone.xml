@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- master format -->
+<resource-base id="LinuxTimeZone" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="all files">
+        <note>Label - Identifies a Linux time zone.</note>
+        <translation approved="true" key="Europe" new="false">
+            <variant>Europa</variant>
+        </translation>
+        <translation approved="true" key="Netherlands" new="false">
+            <variant>Holanda</variant>
+        </translation>
+        <translation approved="true" key="Greece" new="false">
+            <variant>Grecia</variant>
+        </translation>
+        <translation approved="true" key="Northern_Ireland" new="false">
+            <variant>Irlanda del Norte</variant>
+        </translation>
+        <translation approved="true" key="Yugoslavia" new="false">
+            <variant>Yugoslavia</variant>
+        </translation>
+        <translation approved="true" key="Germany" new="false">
+            <variant>Alemania</variant>
+        </translation>
+        <translation approved="true" key="Slovakia" new="false">
+            <variant>Eslovaquia</variant>
+        </translation>
+        <translation approved="true" key="Belgium" new="false">
+            <variant>Bélgica</variant>
+        </translation>
+        <translation approved="true" key="Romania" new="false">
+            <variant>Rumanía</variant>
+        </translation>
+        <translation approved="true" key="Hungary" new="false">
+            <variant>Hungría</variant>
+        </translation>
+        <translation approved="true" key="Moldova" new="false">
+            <variant>Moldavia</variant>
+        </translation>
+        <translation approved="true" key="Denmark" new="false">
+            <variant>Dinamarca</variant>
+        </translation>
+        <translation approved="true" key="Ireland" new="false">
+            <variant>Irlanda</variant>
+        </translation>
+        <translation approved="true" key="Gibraltar" new="false">
+            <variant>Gibraltar</variant>
+        </translation>
+        <translation approved="true" key="Finland" new="false">
+            <variant>Finlandia</variant>
+        </translation>
+        <translation approved="true" key="Turkey" new="false">
+            <variant>Turquía</variant>
+        </translation>
+        <translation approved="true" key="Ukraine" new="false">
+            <variant>Ucrania</variant>
+        </translation>
+        <translation approved="true" key="Portugal" new="false">
+            <variant>Portugal</variant>
+        </translation>
+        <translation approved="true" key="Slovenia" new="false">
+            <variant>Eslovenia</variant>
+        </translation>
+        <translation approved="true" key="United_Kingdom" new="false">
+            <variant>Reino Unido</variant>
+        </translation>
+        <translation approved="true" key="Luxembourg" new="false">
+            <variant>Luxemburgo</variant>
+        </translation>
+        <translation approved="true" key="Spain" new="false">
+            <variant>España</variant>
+        </translation>
+        <translation approved="true" key="Malta" new="false">
+            <variant>Malta</variant>
+        </translation>
+        <translation approved="true" key="Monaco" new="false">
+            <variant>Mónaco</variant>
+        </translation>
+        <translation approved="true" key="Russia" new="false">
+            <variant>Rusia</variant>
+        </translation>
+        <translation approved="true" key="Norway" new="false">
+            <variant>Noruega</variant>
+        </translation>
+        <translation approved="true" key="France" new="false">
+            <variant>Francia</variant>
+        </translation>
+        <translation approved="true" key="Czech_Republic" new="false">
+            <variant>República Checa</variant>
+        </translation>
+        <translation approved="true" key="Latvia" new="false">
+            <variant>Letonia</variant>
+        </translation>
+        <translation approved="true" key="Italy" new="false">
+            <variant>Italia</variant>
+        </translation>
+        <translation approved="true" key="Bosnia_&amp;_Herzegovina" new="false">
+            <variant>Bosnia y Herzegovina</variant>
+        </translation>
+        <translation approved="true" key="Macedonia" new="false">
+            <variant>Macedonia</variant>
+        </translation>
+        <translation approved="true" key="Bulgaria" new="false">
+            <variant>Bulgaria</variant>
+        </translation>
+        <translation approved="true" key="Sweden" new="false">
+            <variant>Suecia</variant>
+        </translation>
+        <translation approved="true" key="Estonia" new="false">
+            <variant>Estonia</variant>
+        </translation>
+        <translation approved="true" key="Albania" new="false">
+            <variant>Albania</variant>
+        </translation>
+        <translation approved="true" key="Liechtenstein" new="false">
+            <variant>Liechtenstein</variant>
+        </translation>
+        <translation approved="true" key="Vatican" new="false">
+            <variant>Vaticano</variant>
+        </translation>
+        <translation approved="true" key="Austria" new="false">
+            <variant>Austria</variant>
+        </translation>
+        <translation approved="true" key="Lithuania" new="false">
+            <variant>Lituania</variant>
+        </translation>
+        <translation approved="true" key="Poland" new="false">
+            <variant>Polonia</variant>
+        </translation>
+        <translation approved="true" key="Croatia" new="false">
+            <variant>Croacia</variant>
+        </translation>
+        <translation approved="true" key="Iceland" new="false">
+            <variant>Islandia</variant>
+        </translation>
+        <translation approved="true" key="Azores" new="false">
+            <variant>Azores</variant>
+        </translation>
+        <translation approved="true" key="Switzerland" new="false">
+            <variant>Suiza</variant>
+        </translation>
+        <translation approved="true" key="USA" new="false">
+            <variant>EE.UU.</variant>
+        </translation>
+        <translation approved="true" key="Alaska" new="false">
+            <variant>Alaska</variant>
+        </translation>
+        <translation approved="true" key="Aleutian" new="false">
+            <variant>Aleutianas</variant>
+        </translation>
+        <translation approved="true" key="Arizona" new="false">
+            <variant>Arizona</variant>
+        </translation>
+        <translation approved="true" key="Central" new="false">
+            <variant>Central</variant>
+        </translation>
+        <translation approved="true" key="East_Indiana" new="false">
+            <variant>East Indiana</variant>
+        </translation>
+        <translation approved="true" key="Hawaii" new="false">
+            <variant>Hawai</variant>
+        </translation>
+        <translation approved="true" key="Indiana_Starke" new="false">
+            <variant>Indiana-Starke</variant>
+        </translation>
+        <translation approved="true" key="Michigan" new="false">
+            <variant>Michigan</variant>
+        </translation>
+        <translation approved="true" key="Mountain" new="false">
+            <variant>Rocosas</variant>
+        </translation>
+        <translation approved="true" key="Pacific" new="false">
+            <variant>Pacífico</variant>
+        </translation>
+        <translation approved="true" key="Samoa" new="false">
+            <variant>Samoa</variant>
+        </translation>
+        <translation approved="true" key="Eastern" new="false">
+            <variant>Canadá</variant>
+        </translation>
+        <translation approved="true" key="Canada" new="false">
+            <variant>Canadá</variant>
+        </translation>
+        <translation approved="true" key="Atlantic" new="false">
+            <variant>Atlántico</variant>
+        </translation>
+        <translation approved="true" key="Newfoundland" new="false">
+            <variant>Terranova</variant>
+        </translation>
+        <translation approved="true" key="Saskatchewan" new="false">
+            <variant>Saskatchewan</variant>
+        </translation>
+        <translation approved="true" key="East_Saskatchewan" new="false">
+            <variant>Saskatchewan Este</variant>
+        </translation>
+        <translation approved="true" key="Yukon" new="false">
+            <variant>Yukon</variant>
+        </translation>
+        <translation approved="true" key="Central_and_South_America" new="false">
+            <variant>Centro y Sur América</variant>
+        </translation>
+        <translation approved="true" key="Brazil_East" new="false">
+            <variant>Brasil Oriental</variant>
+        </translation>
+        <translation approved="true" key="Brazil_West" new="false">
+            <variant>Brasil Occidental</variant>
+        </translation>
+        <translation approved="true" key="Chile_Continental" new="false">
+            <variant>Chile Continental</variant>
+        </translation>
+        <translation approved="true" key="Chile_EasterIsland" new="false">
+            <variant>Chile, Isla de Pascua</variant>
+        </translation>
+        <translation approved="true" key="Jamaica" new="false">
+            <variant>Jamaica</variant>
+        </translation>
+        <translation approved="true" key="Bermuda" new="false">
+            <variant>Las Bermudas</variant>
+        </translation>
+        <translation approved="true" key="Mexico_BajaNorte" new="false">
+            <variant>México BajaNorte</variant>
+        </translation>
+        <translation approved="true" key="Mexico_BajaSur" new="false">
+            <variant>México BajaSur</variant>
+        </translation>
+        <translation approved="true" key="Asuncion" new="false">
+            <variant>Asunción</variant>
+        </translation>
+        <translation approved="true" key="Barbados" new="false">
+            <variant>Barbados</variant>
+        </translation>
+        <translation approved="true" key="Bogota" new="false">
+            <variant>Bogotá</variant>
+        </translation>
+        <translation approved="true" key="Buenos_Aires" new="false">
+            <variant>Buenos Aires</variant>
+        </translation>
+        <translation approved="true" key="Caracas" new="false">
+            <variant>Caracas</variant>
+        </translation>
+        <translation approved="true" key="Costa_Rica" new="false">
+            <variant>Costa Rica</variant>
+        </translation>
+        <translation approved="true" key="Dominica" new="false">
+            <variant>Dominica</variant>
+        </translation>
+        <translation approved="true" key="El_Salvador" new="false">
+            <variant>El Salvador</variant>
+        </translation>
+        <translation approved="true" key="Grenada" new="false">
+            <variant>Granada</variant>
+        </translation>
+        <translation approved="true" key="Guadeloupe" new="false">
+            <variant>Guadalupe</variant>
+        </translation>
+        <translation approved="true" key="Guatemala" new="false">
+            <variant>Guatemala</variant>
+        </translation>
+        <translation approved="true" key="Lima" new="false">
+            <variant>Lima</variant>
+        </translation>
+        <translation approved="true" key="Managua" new="false">
+            <variant>Managua</variant>
+        </translation>
+        <translation approved="true" key="Martinique" new="false">
+            <variant>Martinica</variant>
+        </translation>
+        <translation approved="true" key="Panama" new="false">
+            <variant>Panamá</variant>
+        </translation>
+        <translation approved="true" key="Puerto_Rico" new="false">
+            <variant>Puerto Rico</variant>
+        </translation>
+        <translation approved="true" key="Uruguay" new="false">
+            <variant>Uruguay</variant>
+        </translation>
+        <translation approved="true" key="Virgin" new="false">
+            <variant>Islas Vírgenes</variant>
+        </translation>
+        <translation approved="true" key="Mexico_General" new="false">
+            <variant>México General</variant>
+        </translation>
+        <translation approved="true" key="Asia" new="false">
+            <variant>Asia</variant>
+        </translation>
+        <translation approved="true" key="Japan" new="false">
+            <variant>Japón</variant>
+        </translation>
+        <translation approved="true" key="China" new="false">
+            <variant>China</variant>
+        </translation>
+        <translation approved="true" key="Korea" new="false">
+            <variant>Corea</variant>
+        </translation>
+        <translation approved="true" key="Hongkong" new="false">
+            <variant>Hong Kong</variant>
+        </translation>
+        <translation approved="true" key="Bahrain" new="false">
+            <variant>Bahréin</variant>
+        </translation>
+        <translation approved="true" key="Bangkok" new="false">
+            <variant>Bangkok</variant>
+        </translation>
+        <translation approved="true" key="Beirut" new="false">
+            <variant>Beirut</variant>
+        </translation>
+        <translation approved="true" key="Brunei" new="false">
+            <variant>Brunei</variant>
+        </translation>
+        <translation approved="true" key="Calcutta" new="false">
+            <variant>Calcuta</variant>
+        </translation>
+        <translation approved="true" key="Colombo" new="false">
+            <variant>Colombo</variant>
+        </translation>
+        <translation approved="true" key="Damascus" new="false">
+            <variant>Damasco</variant>
+        </translation>
+        <translation approved="true" key="Dhaka" new="false">
+            <variant>Dhaka</variant>
+        </translation>
+        <translation approved="true" key="Dubai" new="false">
+            <variant>Dubai</variant>
+        </translation>
+        <translation approved="true" key="Gaza" new="false">
+            <variant>Gaza</variant>
+        </translation>
+        <translation approved="true" key="Jakarta" new="false">
+            <variant>Yakarta</variant>
+        </translation>
+        <translation approved="true" key="Katmandu" new="false">
+            <variant>Katmandú</variant>
+        </translation>
+        <translation approved="true" key="Kuala_Lumpur" new="false">
+            <variant>Kuala Lumpur</variant>
+        </translation>
+        <translation approved="true" key="Kuwait" new="false">
+            <variant>Kuwait</variant>
+        </translation>
+        <translation approved="true" key="Macao" new="false">
+            <variant>Macao</variant>
+        </translation>
+        <translation approved="true" key="Manila" new="false">
+            <variant>Manila</variant>
+        </translation>
+        <translation approved="true" key="Qatar" new="false">
+            <variant>Qatar</variant>
+        </translation>
+        <translation approved="true" key="Saigon" new="false">
+            <variant>Saigón</variant>
+        </translation>
+        <translation approved="true" key="Samarkand" new="false">
+            <variant>Samarkanda</variant>
+        </translation>
+        <translation approved="true" key="Tashkent" new="false">
+            <variant>Tashkent</variant>
+        </translation>
+        <translation approved="true" key="Tel_Aviv" new="false">
+            <variant>Tel Aviv</variant>
+        </translation>
+        <translation approved="true" key="Vladivostok" new="false">
+            <variant>Vladivostok</variant>
+        </translation>
+        <translation approved="true" key="Yekaterinburg" new="false">
+            <variant>Yekaterinburgo</variant>
+        </translation>
+        <translation approved="true" key="Tokyo" new="false">
+            <variant>Tokio</variant>
+        </translation>
+        <translation approved="true" key="Shanghai" new="false">
+            <variant>Shanghai</variant>
+        </translation>
+        <translation approved="true" key="Taipei" new="false">
+            <variant>Taipei</variant>
+        </translation>
+        <translation approved="true" key="Seoul" new="false">
+            <variant>Seúl</variant>
+        </translation>
+        <translation approved="true" key="Israel" new="false">
+            <variant>Israel</variant>
+        </translation>
+        <translation approved="true" key="Mideast_Riyadh87" new="false">
+            <variant>Oriente Medio, Riad87</variant>
+        </translation>
+        <translation approved="true" key="Mideast_Riyadh88" new="false">
+            <variant>Oriente Medio, Riad88</variant>
+        </translation>
+        <translation approved="true" key="Mideast_Riyadh89" new="false">
+            <variant>Oriente Medio, Riad89</variant>
+        </translation>
+        <translation approved="true" key="Singapore" new="false">
+            <variant>Singapur</variant>
+        </translation>
+        <translation approved="true" key="Australia" new="false">
+            <variant>Australia</variant>
+        </translation>
+        <translation approved="true" key="Northern_Territory--Darwin" new="false">
+            <variant>Territorio del Norte--Darwin</variant>
+        </translation>
+        <translation approved="true" key="Queensland--Brisbane" new="false">
+            <variant>Queensland--Brisbane</variant>
+        </translation>
+        <translation approved="true" key="South_Australia--Adelaide" new="false">
+            <variant>Australia del Sur--Adelaida</variant>
+        </translation>
+        <translation approved="true" key="New_South_Wales--Sydney" new="false">
+            <variant>Nueva Gales del Sur--Sydney</variant>
+        </translation>
+        <translation approved="true" key="Australian_Capital_Territory--Canberra" new="false">
+            <variant>Territorio de la Capital Australiana--Canberra</variant>
+        </translation>
+        <translation approved="true" key="Tasmania--Hobart" new="false">
+            <variant>Tasmania--Hobart</variant>
+        </translation>
+        <translation approved="true" key="Victoria--Melbourne" new="false">
+            <variant>Victoria--Melbourne</variant>
+        </translation>
+        <translation approved="true" key="Western_Australia--Perth" new="false">
+            <variant>Australia Occidental--Perth</variant>
+        </translation>
+        <translation approved="true" key="Africa" new="false">
+            <variant>África</variant>
+        </translation>
+        <translation approved="true" key="Algiers" new="false">
+            <variant>Algeria</variant>
+        </translation>
+        <translation approved="true" key="Brazzaville" new="false">
+            <variant>Brazzaville</variant>
+        </translation>
+        <translation approved="true" key="Casablanca" new="false">
+            <variant>Casablanca</variant>
+        </translation>
+        <translation approved="true" key="Ceuta" new="false">
+            <variant>Ceuta</variant>
+        </translation>
+        <translation approved="true" key="Dakar" new="false">
+            <variant>Dakar</variant>
+        </translation>
+        <translation approved="true" key="Dar_es_Salaam" new="false">
+            <variant>Dar es Salaam</variant>
+        </translation>
+        <translation approved="true" key="Djibouti" new="false">
+            <variant>Yibuti</variant>
+        </translation>
+        <translation approved="true" key="Freetown" new="false">
+            <variant>Freetown</variant>
+        </translation>
+        <translation approved="true" key="Johannesburg" new="false">
+            <variant>Johannesburgo</variant>
+        </translation>
+        <translation approved="true" key="Libreville" new="false">
+            <variant>Libreville</variant>
+        </translation>
+        <translation approved="true" key="Monrovia" new="false">
+            <variant>Monrovia</variant>
+        </translation>
+        <translation approved="true" key="Nairobi" new="false">
+            <variant>Nairobi</variant>
+        </translation>
+        <translation approved="true" key="Timbuktu" new="false">
+            <variant>Timbuktú</variant>
+        </translation>
+        <translation approved="true" key="Tunis" new="false">
+            <variant>Túnez</variant>
+        </translation>
+        <translation approved="true" key="Windhoek" new="false">
+            <variant>Windhoek</variant>
+        </translation>
+        <translation approved="true" key="Cairo" new="false">
+            <variant>El Cairo</variant>
+        </translation>
+        <translation approved="true" key="Egypt" new="false">
+            <variant>Egipto</variant>
+        </translation>
+        <translation approved="true" key="Tripoli" new="false">
+            <variant>Trípoli</variant>
+        </translation>
+        <translation approved="true" key="New_Zealand" new="false">
+            <variant>Nueva Zelanda</variant>
+        </translation>
+        <translation approved="true" key="Fiji" new="false">
+            <variant>Fiji</variant>
+        </translation>
+        <translation approved="true" key="Galapagos" new="false">
+            <variant>Galápagos</variant>
+        </translation>
+        <translation approved="true" key="Guadalcanal" new="false">
+            <variant>Guadalcanal</variant>
+        </translation>
+        <translation approved="true" key="Guam" new="false">
+            <variant>Guam</variant>
+        </translation>
+        <translation approved="true" key="Midway" new="false">
+            <variant>Midway</variant>
+        </translation>
+        <translation approved="true" key="Nauru" new="false">
+            <variant>Nauru</variant>
+        </translation>
+        <translation approved="true" key="Palau" new="false">
+            <variant>Palaos</variant>
+        </translation>
+        <translation approved="true" key="Pitcairn" new="false">
+            <variant>Pitcairn</variant>
+        </translation>
+        <translation approved="true" key="Tahiti" new="false">
+            <variant>Tahití</variant>
+        </translation>
+        <translation approved="true" key="Global" new="false">
+            <variant>Global</variant>
+        </translation>
+        <translation approved="true" key="South_Pole" new="false">
+            <variant>Polo Sur</variant>
+        </translation>
+        <translation approved="true" key="Arctic_Longyearbyen" new="false">
+            <variant>Longyearbyen Ártico</variant>
+        </translation>
+        <translation approved="true" key="CET" new="false">
+            <variant>CET</variant>
+        </translation>
+        <translation approved="true" key="CST6CDT" new="false">
+            <variant>CST6CDT</variant>
+        </translation>
+        <translation approved="true" key="EET" new="false">
+            <variant>EET</variant>
+        </translation>
+        <translation approved="true" key="EST" new="false">
+            <variant>EST</variant>
+        </translation>
+        <translation approved="true" key="EST5EDT" new="false">
+            <variant>EST5EDT</variant>
+        </translation>
+        <translation approved="true" key="GMT" new="false">
+            <variant>GMT</variant>
+        </translation>
+        <translation approved="true" key="GMT+0" new="false">
+            <variant>GMT+0</variant>
+        </translation>
+        <translation approved="true" key="GMT-0" new="false">
+            <variant>GMT-0</variant>
+        </translation>
+        <translation approved="true" key="GMT0" new="false">
+            <variant>GMT0</variant>
+        </translation>
+        <translation approved="true" key="Greenwich" new="false">
+            <variant>Greenwich</variant>
+        </translation>
+        <translation approved="true" key="HST" new="false">
+            <variant>HST</variant>
+        </translation>
+        <translation approved="true" key="MET" new="false">
+            <variant>MET</variant>
+        </translation>
+        <translation approved="true" key="MST" new="false">
+            <variant>MST</variant>
+        </translation>
+        <translation approved="true" key="MST7MDT" new="false">
+            <variant>MST7MDT</variant>
+        </translation>
+        <translation approved="true" key="NZ" new="false">
+            <variant>NZ</variant>
+        </translation>
+        <translation approved="true" key="NZ-CHAT" new="false">
+            <variant>NZ-CHAT</variant>
+        </translation>
+        <translation approved="true" key="Navajo" new="false">
+            <variant>Navajo</variant>
+        </translation>
+        <translation approved="true" key="PST8PDT" new="false">
+            <variant>PST8PDT</variant>
+        </translation>
+        <translation approved="true" key="UCT" new="false">
+            <variant>UCT</variant>
+        </translation>
+        <translation approved="true" key="UTC" new="false">
+            <variant>UTC</variant>
+        </translation>
+        <translation approved="true" key="Universal" new="false">
+            <variant>Universal</variant>
+        </translation>
+        <translation approved="true" key="W-SU" new="false">
+            <variant>W-SU</variant>
+        </translation>
+        <translation approved="true" key="WET" new="false">
+            <variant>WET</variant>
+        </translation>
+        <translation approved="true" key="Zulu" new="false">
+            <variant>Zulú</variant>
+        </translation>
+        <translation approved="true" key="Etc" new="false">
+            <variant>Etc.</variant>
+        </translation>
+        <translation approved="true" key="GMT+1" new="false">
+            <variant>GMT+1</variant>
+        </translation>
+        <translation approved="true" key="GMT+10" new="false">
+            <variant>GMT+10</variant>
+        </translation>
+        <translation approved="true" key="GMT+11" new="false">
+            <variant>GMT+11</variant>
+        </translation>
+        <translation approved="true" key="GMT+12" new="false">
+            <variant>GMT+12</variant>
+        </translation>
+        <translation approved="true" key="GMT+2" new="false">
+            <variant>GMT+2</variant>
+        </translation>
+        <translation approved="true" key="GMT+3" new="false">
+            <variant>GMT+3</variant>
+        </translation>
+        <translation approved="true" key="GMT+4" new="false">
+            <variant>GMT+4</variant>
+        </translation>
+        <translation approved="true" key="GMT+5" new="false">
+            <variant>GMT+5</variant>
+        </translation>
+        <translation approved="true" key="GMT+6" new="false">
+            <variant>GMT+6</variant>
+        </translation>
+        <translation approved="true" key="GMT+7" new="false">
+            <variant>GMT+7</variant>
+        </translation>
+        <translation approved="true" key="GMT+8" new="false">
+            <variant>GMT+8</variant>
+        </translation>
+        <translation approved="true" key="GMT+9" new="false">
+            <variant>GMT+9</variant>
+        </translation>
+        <translation approved="true" key="GMT-1" new="false">
+            <variant>GMT-1</variant>
+        </translation>
+        <translation approved="true" key="GMT-10" new="false">
+            <variant>GMT-10</variant>
+        </translation>
+        <translation approved="true" key="GMT-11" new="false">
+            <variant>GMT-11</variant>
+        </translation>
+        <translation approved="true" key="GMT-12" new="false">
+            <variant>GMT-12</variant>
+        </translation>
+        <translation approved="true" key="GMT-13" new="false">
+            <variant>GMT-13</variant>
+        </translation>
+        <translation approved="true" key="GMT-14" new="false">
+            <variant>GMT-14</variant>
+        </translation>
+        <translation approved="true" key="GMT-2" new="false">
+            <variant>GMT-2</variant>
+        </translation>
+        <translation approved="true" key="GMT-3" new="false">
+            <variant>GMT-3</variant>
+        </translation>
+        <translation approved="true" key="GMT-4" new="false">
+            <variant>GMT-4</variant>
+        </translation>
+        <translation approved="true" key="GMT-5" new="false">
+            <variant>GMT-5</variant>
+        </translation>
+        <translation approved="true" key="GMT-6" new="false">
+            <variant>GMT-6</variant>
+        </translation>
+        <translation approved="true" key="GMT-7" new="false">
+            <variant>GMT-7</variant>
+        </translation>
+        <translation approved="true" key="GMT-8" new="false">
+            <variant>GMT-8</variant>
+        </translation>
+        <translation approved="true" key="GMT-9" new="false">
+            <variant>GMT-9</variant>
+        </translation>
+    </section>
+</resource-base>

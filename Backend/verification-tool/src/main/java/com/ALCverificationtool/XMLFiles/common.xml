@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="common" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <note>test file notes</note>
+    <!-- This file must be translated a little differently. This represents mnemonics for each menu/menu item
+        How this works is the translation (variant) must consist of a single letter from the menu and must be
+        unique for each section. This is because each letter is a hotkey to press to select a given menu.
+        Preferably, the letter should be the first character of the menu item, however, this is not always
+        possible.
+
+         Note: these must be single keyboard characters. You cannot use Chinese characters that require multiple
+         key strokes to create.-->
+    <section id="common-resources">
+        <note>test section1 notes</note>
+        <translation approved="true" key="button.add.name" new="false">
+            <note>test key notes</note>
+            <variant>Agregar</variant>
+        </translation>
+        <translation approved="true" key="button.delete.name" new="false">
+            <note>test key2 notes</note>
+            <variant>eliminar</variant>
+        </translation>
+    </section>
+     <section id="resources">
+        <note></note>
+        <translation approved="true" key="testKey" new="false">
+            <note>test key3 notes</note>
+            <variant>testKeyVariant</variant>
+        </translation>
+    </section>
+    <!--begin secion equipment-classifications-->
+</resource-base>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="touchview" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="touchview">
+        <translation approved="true" key="touchview.import-alarms-file-description" new="false">
+            <variant>Programas de control (*.equipment)</variant>
+        </translation>
+        <translation approved="true" key="touchview.event-descriptor.text-field-edit" new="false">
+            <variant>Edición campo de texto</variant>
+        </translation>
+        <translation approved="true" key="touchview.text-list-control-editor.default-value" new="false">
+            <variant>Valor predeterminado</variant>
+        </translation>
+        <translation approved="true" key="touchview.text-list-control-editor.preview-text-label" new="false">
+            <variant>Vista previa del texto "{0}" para los valores:</variant>
+        </translation>
+        <translation approved="true" key="touchview.control-editor.autosize-label" new="false">
+            <variant>Ajuste de tamaño automático:</variant>
+        </translation>
+        <translation approved="true" key="touchview-file-too-large-error" new="false">
+            <variant>El archivo táctil ''{0}'' excede el tamaño máximo de 512 k.</variant>
+        </translation>
+        <translation approved="true" key="touchview-file-too-large-uncompressed-error" new="false">
+            <variant>El archivo tácil ''{0}'' excede el tamaño máximo descomprimdo de 1MB</variant>
+        </translation>
+        <translation approved="true" key="touchview-entry-too-large-error" new="false">
+            <variant>La entrada de archivo táctil ''{0}'' supera el tamaño máximo de 512 K.</variant>
+        </translation>
+        <translation approved="true" key="touchview-screen-too-large-error" new="false">
+            <variant>La pantalla con nombre ''{0}'' excede el tamaño máximo de 256 k.</variant>
+        </translation>
+        <translation approved="true" key="touchview-image-too-large-error" new="false">
+            <variant>La imagen con nombre ''{0}'' supera el tamaño máximo de 256 k.</variant>
+        </translation>
+        <translation approved="true" key="view-save-error-dialog-title" new="false">
+            <variant>La vista guardada contiene errores</variant>
+        </translation>
+        <translation approved="true" key="touch.image.size.exceeded" new="false">
+            <variant>Tamaño Máximo de Imagen Excedido.</variant>
+        </translation>
+        <translation approved="true" key="touchview.unify-width" new="false">
+            <variant>Unificar ancho</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.label" new="false">
+            <variant>Etiqueta</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.image" new="false">
+            <variant>Imagen</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.checkbox" new="false">
+            <variant>Casilla de verificación</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.number" new="false">
+            <variant>Número</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.time" new="false">
+            <variant>Hora</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.duration" new="false">
+            <variant>Duración</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.multi-state" new="false">
+            <variant>Estado múltiple</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.image-list" new="false">
+            <variant>Lista de imágenes</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.button" new="false">
+            <variant>Botón</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.hot-spot" new="false">
+            <variant>Punto de actividad</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.view-port" new="false">
+            <variant>Puerto de visualización</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.duration" new="false">
+            <variant>Duración</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.radio-button" new="false">
+            <variant>Botón de Radio</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.text-list" new="false">
+            <variant>Lista de texto</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.setpoint" new="false">
+            <variant>Punto de Ajuste</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.prime-value" new="false">
+            <variant>Valor principal</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.text-field" new="false">
+            <variant>Campo de texto</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.text-toggle" new="false">
+            <variant>Cambio de Texto</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.date" new="false">
+            <variant>Fecha</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.on-off-auto" new="false">
+            <variant>Encendido-Apagado-Automático</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.multi-state.previewtext" new="false">
+            <variant>Estado múltiple</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.viewport" new="false">
+            <variant>Puerto de visualización</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.table" new="false">
+            <variant>Tabla</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.time_local_override" new="false">
+            <variant>Sustitución de Tiempo Local</variant>
+        </translation>
+        <translation approved="true" key="touchview.controls.style" new="false">
+            <variant>Estilo</variant>
+        </translation>
+        <translation approved="true" key="touchview.table.close" new="false">
+            <variant>Cerrar Editor de tablas</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.close" new="false">
+            <variant>Cerrar Editor de Puertos de Visualización</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.min" new="false">
+            <variant>Mín.</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.max" new="false">
+            <variant>Máx.</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.width" new="false">
+            <variant>Ancho:</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.height" new="false">
+            <variant>Altura:</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.border-color" new="false">
+            <variant>Color de celda:</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.choose-border-color" new="false">
+            <variant>Elegir color del borde</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.choose-background-color" new="false">
+            <variant>Elegir color de fondo</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.background-color" new="false">
+            <variant>Color de fondo:</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.border-enabled" new="false">
+            <variant>Borde activado:</variant>
+        </translation>
+        <translation approved="true" key="touchview.viewport.change" new="false">
+            <variant>Cambiar</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.enable-link" new="false">
+            <variant>Activar enlace:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to-screen" new="false">
+            <variant>Vínculo a la pantalla:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to-screen.label" new="false">
+            <variant>Pantalla:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to-bacnet-device-id.label" new="false">
+            <variant>Identificador de dispositivo BACnet:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to-bacnet-device-id.no-colon" new="false">
+            <variant>Identificador del dispositivo BACnet</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to-bacnet-device-id.label" new="false">
+            <variant>Identificador de dispositivo BACnet:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-to" new="false">
+            <variant>Vincular a</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.use_custom_link" new="false">
+            <variant>Usar nombre de vínculo personalizado:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.custom_link" new="false">
+            <variant>Nombre de vínculo personalizado:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.previous-screen" new="false">
+            <variant>Pantalla anterior:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.link-text" new="false">
+            <variant>Texto del vínculo:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.button-style" new="false">
+            <variant>Estilo de botón:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.font-size" new="false">
+            <variant>Tamaño de fuente: </variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.font-color" new="false">
+            <variant>Color de fuente: </variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.change-button" new="false">
+            <variant>Cambiar</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.label-text" new="false">
+            <variant>Texto de etiqueta: </variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.choose-text-color" new="false">
+            <variant>Elegir color de texto</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.onoffautocontrol.showstate.title" new="false">
+            <variant>Mostrar como</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.onoffautocontrol.showstate.on" new="false">
+            <variant>Activado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.onoffautocontrol.showstate.off" new="false">
+            <variant>Desactivado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.onoffautocontrol.showstate.auto" new="false">
+            <variant>Automático</variant>
+        </translation>
+        <translation approved="true" key="touchview.view-port-image-dialog.label1" new="false">
+            <variant>El tamaño de la imagen seleccionada es mayor que el Puerto de Visualización.</variant>
+        </translation>
+        <translation approved="true" key="touchview.view-port-image-dialog.label2" new="false">
+            <variant>¿Qué desea hacer?</variant>
+        </translation>
+        <translation approved="true" key="touchview.view-port-image-dialog.shrink-option" new="false">
+            <variant>Reducir imagen hasta ajustar</variant>
+        </translation>
+        <translation approved="true" key="touchview.view-port-image-dialog.grow-option" new="false">
+            <variant>Agrandar puerto de visualización hasta ajustar (al tamaño máx.)</variant>
+        </translation>
+        <translation approved="true" key="touchview.view-port-image-dialog.title" new="false">
+            <variant>Tamaño de imagen excesivo</variant>
+        </translation>
+        <translation approved="true" key="touchview.screen.header.aspects" new="false">
+            <variant>Aspectos de encabezado</variant>
+        </translation>
+        <translation approved="true" key="touchview-event-descriptor.header.aspects" new="false">
+            <variant>Cambiar aspectos de encabezado</variant>
+        </translation>
+        <translation approved="true" key="touchview.font.displayname.large" new="false">
+            <variant>grande</variant>
+        </translation>
+        <translation approved="true" key="touchview.font.displayname.medium" new="false">
+            <variant>mediano</variant>
+        </translation>
+        <translation approved="true" key="touchview.font.displayname.small" new="false">
+            <variant>pequeño</variant>
+        </translation>
+        <translation approved="true" key="touchview.font.displayname.xsmall" new="false">
+            <variant>extra pequeño</variant>
+        </translation>
+        <translation approved="true" key="touchview.font.displayname.na" new="false">
+            <variant>N/D</variant>
+        </translation>
+        <translation approved="true" key="touchview.tools-window-title" new="false">
+            <variant>Pantallas</variant>
+        </translation>
+        <translation approved="true" key="touchview.import-alarms-window-title" new="false">
+            <variant>Importar alarmas</variant>
+        </translation>
+        <translation approved="true" key="touchview.import-alarms-label" new="false">
+            <variant>Importar...</variant>
+        </translation>
+        <translation approved="true" key="touchview.import-alarms-error" new="false">
+            <variant>Se ha producido un error al intentar importar las alarmas: {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="conditional.name" new="false">
+            <variant>Condicional</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.bottom" new="false">
+            <variant>Alinear abajo</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.top" new="false">
+            <variant>Alinear arriba</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.right" new="false">
+            <variant>Alinear a la derecha</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.middle" new="false">
+            <variant>Centrar verticalmente</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.left" new="false">
+            <variant>Alinear a la izquierda</variant>
+        </translation>
+        <translation approved="true" key="table.cell.align.center" new="false">
+            <variant>Centrar horizontalmente</variant>
+        </translation>
+        <translation approved="true" key="table.insert.row" new="false">
+            <variant>Insertar fila</variant>
+        </translation>
+        <translation approved="true" key="table.delete.row" new="false">
+            <variant>Eliminar fila</variant>
+        </translation>
+        <translation approved="true" key="table.insert.column" new="false">
+            <variant>Insertar columna</variant>
+        </translation>
+        <translation approved="true" key="table.delete.column" new="false">
+            <variant>Eliminar columna</variant>
+        </translation>
+        <translation approved="true" key="editor.path-to-setpoint-microblock" new="false">
+            <variant>Ruta a Micro bloque de punto de ajuste (setpoint):</variant>
+        </translation>
+        <translation approved="true" key="editor.path-to-occupied-status" new="false">
+            <variant>Ruta a Estado ocupado:</variant>
+        </translation>
+        <translation approved="true" key="editor.path-to-hvac-mode" new="false">
+            <variant>Ruta a Modo HVAC:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.path-to-time-clock-microblock" new="false">
+            <variant>Ruta a microbloque de reloj de tiempo:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-as" new="false">
+            <variant>Mostrar como</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-as.occupied" new="false">
+            <variant>Ocupado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-as.unoccupied" new="false">
+            <variant>Desocupado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-as.occupied-override" new="false">
+            <variant>Anular Ocupado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-as.unoccupied-override" new="false">
+            <variant>Anular desocupado</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.display-format" new="false">
+            <variant>Formato de visualización:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-time-to-next-transition" new="false">
+            <variant>Mostrar siempre el tiempo hasta la próxima transición de programación</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.time-local-override-control.show-time-to-next-transition.parenthesis" new="false">
+            <variant>(Si está desactivada, solo se mostrará en caso de anular)</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.multi-state.use-custom-defined-states" new="false">
+            <variant>Utilizar estados personalizados definidos:</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.multi-state.custom-defined.value" new="false">
+            <variant>Valor</variant>
+        </translation>
+        <translation approved="true" key="touchview.editor.multi-state.use-custom-defined.display" new="false">
+            <variant>Mostrar</variant>
+        </translation>
+    </section>
+    <section id="actions">
+        <translation approved="true" key="touchview.unify-width" new="false">
+            <variant>Unificar ancho</variant>
+        </translation>
+        <translation approved="true" key="touchview.unify-width.mnemonic" new="false">
+            <variant>w</variant>
+        </translation>
+        <translation approved="true" key="touchview.unify-width.tooltip" new="false">
+            <variant>Todos los controles asignados al ancho de control máximo</variant>
+        </translation>
+        <translation approved="true" key="touchview.unify-width.accelerator" new="false">
+            <variant>Ctrl</variant>
+        </translation>
+        <translation approved="true" key="touchview.unify-width.descriptor" new="false">
+            <variant>Unificar ancho</variant>
+        </translation>
+    </section>
+    <section id="actuator_descriptors">
+        <translation approved="true" key="time-control.set-display-format.change-descriptor" new="false">
+            <variant>Hora: Definir Formato de visualización</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.insert-table-row" new="false">
+            <variant>Insertar fila</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.delete-table-row" new="false">
+            <variant>Eliminar fila</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.insert-table-column" new="false">
+            <variant>Insertar columna</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.delete-table-column" new="false">
+            <variant>Eliminar columna</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.move-control-in-table" new="false">
+            <variant>Control Copiar</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.move-control-in-table" new="false">
+            <variant>Control Copiar</variant>
+        </translation>
+        <translation approved="true" key="event-descriptor.resize-table-column" new="false">
+            <variant>Cambiar tamaño de columna</variant>
+        </translation>
+        <translation approved="true" key="button-control.use-custom-link.change-descriptor" new="false">
+            <variant>Botón - Usar Nombre de Vínculo Personalizado</variant>
+        </translation>
+        <translation approved="true" key="button-control.set-custom-link-text.change-descriptor" new="false">
+            <variant>Botón - Definir Nombre de Vínculo Personalizado</variant>
+        </translation>
+        <translation approved="true" key="checkbox-control.set-show-selected.change-descriptor" new="false">
+            <variant>Casilla - Definir Mostrar Seleccionados</variant>
+        </translation>
+        <translation approved="true" key="date-control.set-date-format.change-descriptor" new="false">
+            <variant>Fecha - Definir Formato de fecha</variant>
+        </translation>
+        <translation approved="true" key="duration-control.set-display-format.change-descriptor" new="false">
+            <variant>Duración - Definir Mostrar formato</variant>
+        </translation>
+        <translation approved="true" key="duration-control.set-microblock-units.change-descriptor" new="false">
+            <variant>Duración - Definir Unidad de Microbloque</variant>
+        </translation>
+        <translation approved="true" key="image-list-control.add-conditional-image.change-descriptor" new="false">
+            <variant>Lista de imágenes: Agregar imagen</variant>
+        </translation>
+        <translation approved="true" key="image-list-control.remove-conditional-image.change-descriptor" new="false">
+            <variant>Lista de imágenes: Eliminar imagen</variant>
+        </translation>
+        <translation approved="true" key="image-list-control.move-up-conditional-image.change-descriptor" new="false">
+            <variant>Lista de imágenes: Subir imagen</variant>
+        </translation>
+        <translation approved="true" key="image-list-control.move-down-conditional-image.change-descriptor" new="false">
+            <variant>Lista de imágenes: Mover hacia abajo la imagen</variant>
+        </translation>
+        <translation approved="true" key="image-resource-user.set-image-resource-user.change-descriptor" new="false">
+            <variant>Usuario de recursos de imagen: Definir Usuario</variant>
+        </translation>
+        <translation approved="true" key="label-control.update-language-value.change-descriptor" new="false">
+            <variant>Etiqueta - Definir Texto</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.set-preview-text.change-descriptor" new="false">
+            <variant>Estado múltiple: Definir Vista previa del texto</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.set-use-custom-states.change-descriptor" new="false">
+            <variant>Estado múltiple: establecer el uso de estados personalizados</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.custom-states.change-descriptor" new="false">
+            <variant>Estado múltiple: estados definidos personalizados modificados</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.added-custom-state.change-descriptor" new="false">
+            <variant>Estado múltiple: estado definido personalizado agregado</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.removed-custom-state.change-descriptor" new="false">
+            <variant>Estado múltiple: estado definido personalizado eliminado</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.custom-state.value.change-descriptor" new="false">
+            <variant>Estado múltiple: valor de estado definido personalizado modificado</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.custom-state.display.change-descriptor" new="false">
+            <variant>Estado múltiple: visualización de estado definido personalizado modificada</variant>
+        </translation>
+        <translation approved="true" key="multi-state-control.custom-state.sort-order.change-descriptor" new="false">
+            <variant>Estado múltiple: orden de estados definidos personalizados modificado</variant>
+        </translation>
+        <translation approved="true" key="number-control.set-scaling-factor.change-descriptor" new="false">
+            <variant>Número: Definir Factor de escala</variant>
+        </translation>
+        <translation approved="true" key="number-control.set-number-format.change-descriptor" new="false">
+            <variant>Número: Definir Formato</variant>
+        </translation>
+        <translation approved="true" key="number-control.set-limits.change-descriptor" new="false">
+            <variant>Número: Definir Límites</variant>
+        </translation>
+        <translation approved="true" key="number-control.set-show-units.change-descriptor" new="false">
+            <variant>Número: Definir conjunto de unidades muestra</variant>
+        </translation>
+        <translation approved="true" key="number-control.set-preview-units.change-descriptor" new="false">
+            <variant>Número: Definir Vista previa de unidades</variant>
+        </translation>
+        <translation approved="true" key="on-off-auto-control.set-automatic-gql-path.change-descriptor" new="false">
+            <variant>Encendido-Apagado-Automático: Definir Ruta GQL automática</variant>
+        </translation>
+        <translation approved="true" key="on-off-auto-control.set-manual-gql-path.change-descriptor" new="false">
+            <variant>Encendido-Apagado-Automático: Definir Ruta GQL manual</variant>
+        </translation>
+        <translation approved="true" key="on-off-auto-control.set-use-state-text.change-descriptor" new="false">
+            <variant>Encendido-Apagado-Automático: Definir Utilizar Texto de estado</variant>
+        </translation>
+        <translation approved="true" key="on-off-auto-control.set-show-state.change-descriptor" new="false">
+            <variant>Encendido-Apagado-Auto: definir Mostrar como</variant>
+        </translation>
+        <translation approved="true" key="on-off-auto-control.set-use-advanced-path.change-descriptor" new="false">
+            <variant>Encendido-Apagado-Automático: Definir Utilizar ruta avanzada</variant>
+        </translation>
+        <translation approved="true" key="radio-button.set-value.change-descriptor" new="false">
+            <variant>Botón de selección: Definir Texto</variant>
+        </translation>
+        <translation approved="true" key="radio-button.set-show-selected.change-descriptor" new="false">
+            <variant>Botón de selección: Definir Mostrar seleccionados</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-path-to-mb.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Ruta como Micro bloque</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-adjustment-type.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Tipo de ajuste</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-display-option.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Opción de visualización</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-show-effective-setpoints.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Mostrar valores propuestos</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-hvac-mode-path.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Ruta de modo HVAC</variant>
+        </translation>
+        <translation approved="true" key="setpoint-adjust.set-occupied-status-path.change-descriptor" new="false">
+            <variant>Ajustar punto de ajuste (setpoint) - Definir Ruta de estado ocupado</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.set-preview-text.change-descriptor" new="false">
+            <variant>Lista de texto: Definir Vista previa del texto</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.add-conditional-value.change-descriptor" new="false">
+            <variant>Lista de texto: Agregar Opción</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.remove-conditional-value.change-descriptor" new="false">
+            <variant>Lista de texto: Eliminar Opción</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.move-up-conditional-value.change-descriptor" new="false">
+            <variant>Lista de texto: Subir Opción</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.move-down-conditional-value.change-descriptor" new="false">
+            <variant>Lista de texto: Mover hacia Abajo Opción</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.set-type.change-descriptor" new="false">
+            <variant>Lista de texto: Definir Tipo</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.set-static-text-value.change-descriptor" new="false">
+            <variant>Lista de texto: Definir Texto estático</variant>
+        </translation>
+        <translation approved="true" key="text-list-control.set-path-value.change-descriptor" new="false">
+            <variant>Lista de texto: definir valor de ruta</variant>
+        </translation>
+        <translation approved="true" key="text-toggle-control.set-preview-text.change-descriptor" new="false">
+            <variant>Alternación de textos: Definir Vista previa del texto</variant>
+        </translation>
+        <translation approved="true" key="view-port-control.update-view-port-size.change-descriptor" new="false">
+            <variant>Puerto de Visualización: Definir Tamaño de Puerto de Visualización</variant>
+        </translation>
+        <translation approved="true" key="view-port-control.update-border-color.change-descriptor" new="false">
+            <variant>Puerto de Visualización: Definir Color del borde</variant>
+        </translation>
+        <translation approved="true" key="view-port-control.update-background-color.change-descriptor" new="false">
+            <variant>Puerto de Visualización: Definir Color de fondo</variant>
+        </translation>
+        <translation approved="true" key="view-port-control.set-border-enabled.change-descriptor" new="false">
+            <variant>Puerto de visualización: Definir Borde activado</variant>
+        </translation>
+        <translation approved="true" key="prime-value-control.set-number-format.change-descriptor" new="false">
+            <variant>Valor principal: Definir Formato</variant>
+        </translation>
+        <translation approved="true" key="prime-value-control.set-show-units.change-descriptor" new="false">
+            <variant>Valor principal: Definir Mostrar unidades</variant>
+        </translation>
+        <translation approved="true" key="prime-value-control.set-preview-units.change-descriptor" new="false">
+            <variant>Valor principal: Definir Vista previa de unidades</variant>
+        </translation>
+        <translation approved="true" key="time-local-override-control.set-show-selected.change-descriptor" new="false">
+            <variant>Omisión local temporizada: definir Mostrar seleccionados</variant>
+        </translation>
+        <translation approved="true" key="time-local-override-control.set-display-format.change-descriptor" new="false">
+            <variant>Omisión local temporizada: mostrar formato de visualización</variant>
+        </translation>
+        <translation approved="true" key="time-local-override-control.set-show-as.change-descriptor" new="false">
+            <variant>Omisión local temporizada: definir Mostrar como</variant>
+        </translation>
+        <translation approved="true" key="time-local-override-control.show-time-to-next-transition.change-descriptor" new="false">
+            <variant>Anular Tiempo Local: mostrar siempre el tiempo hasta la próxima transición de horario</variant>
+        </translation>
+    </section>
+</resource-base>

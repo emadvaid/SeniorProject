@@ -7,6 +7,8 @@ import { FileFunctionsService } from '../../../services/file_functions/file-func
   styleUrls: ['./export-files.component.css']
 })
 export class ExportFilesComponent implements OnInit {
+  public versionNumber = '';
+  public language = '';
 
   constructor(
     private fileFunctionsService: FileFunctionsService,
@@ -16,6 +18,6 @@ export class ExportFilesComponent implements OnInit {
   }
 
   onSubmit() {
-    this.fileFunctionsService.exportFiles().subscribe();
+    this.fileFunctionsService.exportFiles(this.language, this.versionNumber).subscribe();
   }
 }

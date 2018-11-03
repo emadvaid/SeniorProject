@@ -1,14 +1,20 @@
 package com.ALCverificationtool.dao.keys;
 
-import com.ALCverificationtool.models.keysRec;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import com.ALCverificationtool.models.TranslationResourceRec;
 
-import java.util.Optional;
+import java.util.List;
 
-@Repository
-public interface KeysRepository extends JpaRepository<keysRec, Long> {
 
-    Optional<keysRec> findByKeyName(String username);
+public interface KeysRepository {
+    default boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion) {
+        return createKeyTable(keyLanguageCode, keyLanguageVersion, false);
+    }
 
+    boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dopExisiting);
+
+    TranslationResourceRec create(TranslationResourceRec keyData);
+
+    List<TranslationResourceRec> getKeys(String tableName);
+
+    boolean updateKey(String tableName, TranslationResourceRec keyData);
 }

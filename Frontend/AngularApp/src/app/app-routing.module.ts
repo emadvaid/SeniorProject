@@ -16,9 +16,12 @@ import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-us
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
-import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
+import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
+import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
+import { VersionComponent } from './views/version/version.component';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
 import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
+
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -37,9 +40,13 @@ const appRoutes: Routes = [
       {path: 'manageUsers', component: ManageUsersComponent},
       {path: 'createUser' , component: CreateUserComponent},
       {path: 'editUser' , component: EditUserComponent},
+      {path: 'manageLanguages' , component: ManageLanguageComponent},
+      {path: 'createLanguage' , component: CreateLanguageComponent},
       {path: 'importFile', component: FileFunctionsComponent},
-      {path: 'statistics', component: StatisticsComponent},
+      {path: 'createVersion', component: VersionComponent},
       {path: 'exportFile', component: ExportFilesComponent},
+      {path: 'statistics', component: StatisticsComponent},
+
     ]
   },
   {
@@ -68,14 +75,16 @@ export const routingComponents = [
   HomeComponent,
   PasswordResetComponent,
   FileFunctionsComponent,
-  FileFunctionsRedoComponent,
+  VersionComponent,
   DealerDashboardComponent,
   AdminDashboardComponent,
   ManageUsersComponent,
   CreateUserComponent,
   EditUserComponent,
+  ManageLanguageComponent,
+  CreateLanguageComponent,
   PageNotFoundComponent,
   ErrorPageComponent,
-  StatisticsComponent,
   ExportFilesComponent,
+  StatisticsComponent,
 ];

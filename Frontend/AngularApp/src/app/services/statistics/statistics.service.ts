@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
@@ -7,29 +6,41 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 // Add in JSON header and access token header
-const headers = new Headers({
-    'Content-Type': 'application/Json'
-});
-const options = new RequestOptions({ headers: headers });
-
+// const headers = new Headers({
+//     'Content-Type': 'application/Json'
+// });
+// const options = new RequestOptions({ headers: headers });
+const httpOptions = {
+    headers: new HttpHeaders()
+  };
 @Injectable({
     providedIn: 'root'
 })
 export class StatisticsService {
 
     constructor(
-        private http: Http,
+        private http: HttpClient,
     ) { }
 
-    getNewKeys() {
-        return this.http.get('http://localhost:8080/statistics/new')
+    getNewKeys(language: string, versionNumber: string) {
+        const tableInfo = new FormData();
+        tableInfo.append('language', language);
+        tableInfo.append('versionNumber', versionNumber);
+
+        return this.http.post('http://localhost:8080/statistics/new', tableInfo, httpOptions)
     }
 
-    getApprovedKeys() {
-        return this.http.get('http://localhost:8080/statistics/approved')
+    getApprovedKeys(language: string, versionNumber: string) {
+        const tableInfo = new FormData();
+        tableInfo.append('language', language);
+        tableInfo.append('versionNumber', versionNumber);
+        return this.http.post('http://localhost:8080/statistics/approved', tableInfo, httpOptions)
     }
 
-    getTotalKeys() {
-        return this.http.get('http://localhost:8080/statistics/total')
+    getTotalKeys(language: string, versionNumber: string) {
+        const tableInfo = new FormData();
+        tableInfo.append('language', language);
+        tableInfo.append('versionNumber', versionNumber);
+        return this.http.post('http://localhost:8080/statistics/total', tableInfo, httpOptions)
     }
 }

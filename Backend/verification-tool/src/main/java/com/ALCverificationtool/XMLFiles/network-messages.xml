@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="network-messages" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <note>This text is used to label various buttons throughout WebCTRL.</note>
+    <section id="download-stages">
+        <note>Resources for the different stages of download.</note>
+        <translation approved="true" key="NetworkStage_InitializeDownload" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Inicializando</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_VerifyDeviceServiceStatus" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Verificando estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_ValidateDownload" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Verificando estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_ValidateSourceFiles" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Comprobando archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_AcquireConnection" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Conectando con el controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_ValidateDriverFile" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Comprobando falta de coincidencia de controlador/dispositivo</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadCMnetMemory" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando memoria</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadMpxBoot" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido BOOT</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadMpxMain" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido MAIN</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadDriverSourceFiles" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido de origen del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadDriverParameters" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando parámetros del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadLocalesFile" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando configuraciones regionales</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadScreen" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido de pantalla</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadMarquee" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido del texto desplazable</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadScreenSourceFiles" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido de origen de pantalla</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadEquipmentProgram" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando programas de control</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadEquipmentParameters" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando parámetros del programa de control</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadEquipmentValueSetFiles" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando conjuntos de valores del programa de control</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadEquipmentSourceFiles" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando contenido de origen del programa de control</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadIndexSourceFile" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando índice de archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_ColdStartModule" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Reiniciando controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_WarmStartModule" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Reiniciando controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_TimeSyncModule" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Sincronizando hora del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadSchedules" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando horarios</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadBBMD" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descargando tablas BBMD</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_SaveUploadParameters" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Guardando parámetros especiales</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_UploadParameters" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Cargando parámetros</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_UploadSchedules" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Cargando horarios</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_UploadHistoricalTrends" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Guardando tendencias históricas</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_EndDownload" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Descarga finalizada</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_SavePreservedParameters" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>Guardando parámetros preservidos</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadFirmware_Preprocessing" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>preparando el dispositivo para el nuevo firmware</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadFirmware" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>descargando contenido del firmware</variant>
+        </translation>
+        <translation approved="true" key="NetworkStage_DownloadFirmware_Postprocessing" new="false">
+            <note>Resources for the different stages of download.</note>
+            <variant>el controlador está aplicando los cambios</variant>
+        </translation>
+    </section>
+    <section id="download-failure-types">
+        <note>Resources for the general types of download failure.</note>
+        <translation approved="true" key="NetworkFailureType_None" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Fallo general</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_Critical" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Fallo crítico</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_LimitExceeded" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Se han superado los límites</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_Database" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Error de configuración</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_DatabaseCritical" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Error de base de datos</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_Communications" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Las comunicaciones han fallado</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_OutOfService" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Fuera de servicio</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_Permissions" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>No hay permiso</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_ScheduleValidation" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Horarios no válidos</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_SchedulesIncomplete" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Descarga de horario incompleta</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_FileError" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Archivo no válido</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_DriverValidation" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Controlador incorrecto</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_ControllerValidation" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Fallo del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureType_EquipmentConfiguration" new="false">
+            <note>Resources for the general types of download failure.</note>
+            <note>label - summary error message when a download fails</note>
+            <variant>Fallo de configuración de equipos</variant>
+        </translation>
+    </section>
+    <section id="download-failures">
+        <note>Resources for specific download failures.</note>
+        <translation approved="true" key="Stored_Network_Failure_Message" new="false">
+            <note>Resources for specific download failures.</note>
+            <note>label - error message when a download fails. This contains the failure details (0) and stage (1) that the failure occurred</note>
+            <variant>{0}. Ha fallado durante {1}</variant>
+        </translation>
+        <translation approved="true" key="Active_Task_Not_Modifiable" new="false">
+            <note>Resources for specific download failures.</note>
+            <note>label - error message when trying to modify an active task</note>
+            <variant>Las tareas activas no se pueden modificar</variant>
+        </translation>
+        <translation approved="true" key="Illegal_network_task_X_for_Y" new="false">
+            <note>Resources for specific download failures.</note>
+            <note>label - error message when trying to modify an active task</note>
+            <variant>{0} no se puede agregar para {1}</variant>
+        </translation>
+        <translation approved="true" key="No_download_privilege" new="false">
+            <note>Resources for specific download failures.</note>
+            <note>label - error message when trying to modify an active task</note>
+            <variant>No tiene privilegios para descargar controladores</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_UnexpectedError" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Se ha producido un error inesperado, consulte los registros para obtener más información. Error del programador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InteropNotSupported" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se admite la descarga de memoria interoperativa</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FieldDatasessionNotSupported" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Está intentando descargar con una sesión que contiene una sesión de datos de campo. Error del programador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InvalidDownloadOption" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Opción de descarga inesperada "{0}". Error del programador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_TooManyPrograms" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Hay demasiados programas de control ({0}) asociados al controlador. El número máximo es ({1}) incluido el controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_TooManyCcnPrograms" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Hay demasiados controladores CCN ({0}) en el bus serie. El límite es ({1})</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControlProgramNotAttached" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El programa de control "{0}" no está asociado a un controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BadCmnetIPAddress" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La configuración IP no se ha establecido correctamente. Defina la configuración IP en la página de parámetros de este controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InvalidControlProgramsForDevice" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los siguientes programas de control no se admiten en el controlador: {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_DuplicateControlProgramNames" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los programas de control ({0}, {1}) tienen el mismo nombre de referencia de base. Cambie el nombre de uno de los programas de control antes de descargarlos</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BadHSScheduleMessage" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se ha podido crear el mensaje para enviar horarios al servidor secundario</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BadCmnetAddressingInformation" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al obtener información de direcciones</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_TimestampNotSaved" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al guardar marca de hora de descarga</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NoValueSet" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al encontrar información del conjunto de valores</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerNotFound" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al encontrar controlador en la base de datos</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToOpenDatabase" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al abrir la base de datos</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_CorruptParameters" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al crear parámetros para {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_CorruptProgram" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al crear programa para {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_SiteNotFound" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se ha podido encontrar el sitio</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BbmdSetup" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al configurar tablas BBMD</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_RnetConnectionNotFound" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se ha encontrado la conexión Rnet</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_RnetConnectionNotFunctional" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La conexión Rnet no funciona</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ConnectionsNotInitialized" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se han inicializado las conexiones. ¿Está en modo de diseño?</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ConnectionNoConnect" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El tipo de conexión es NO-CONNECT. No es posible descargar en este modo de conexión</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ConnectionNotConnected" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La conexión no es CONNECTED</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ConnectionInvalid" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La conexión no es válida. Compruebe la configuración de la conexión</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerFailedToRespond" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha respondido</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerFailedToRespondDetailed" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha respondido {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerRespondedWithErrorDetail" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador respondió con un error {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ChildServerFailedToRespond" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El servidor secundario no ha respondido</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BindToControllerFailed" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se ha podido vincular al controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_OutOfService" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador o el enrutador se han marcado como fuera de servicio</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NoPermissionsFound" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se pueden determinar los permisos para el controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NotPermitted" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No está permitida la descarga, se necesitan permisos de {0}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_DownloadNotPermitted" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Uno o más archivos de origen no permiten descarga"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InvalidVendorPermission" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No está permitida la descarga, canal de producto {0} no válido"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_AllSourceNotFromSameVendor" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Todos los archivos de origen deben ser del mismo proveedor. Estos no lo son {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ScheduleUnsupportedCategory" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La categoría de horario "{0}" no se admite</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ScheduleValidation" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los horarios no son válidos para la descarga. {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ScheduleDownload" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>No se han podido descargar horarios. {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ScheduleIncomplete" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Se ha superado la memoria de horarios disponible en el controlador. Disminuya el número de horarios e inténtelo de nuevo</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BadDriver" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Controlador no válido o dañado "{0}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_BadScreen" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Archivo de pantalla no válido o dañado "{0}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToPrepare" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al preparar el archivo "{0}" para la descarga {1}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_SourceFilesTooLarge" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los archivos de origen no caben en el controlador. {0}% del espacio</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_MissingFileWithLog" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Falta el archivo "{0}"; consulte "{1}" para obtener detalles</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToPrepareMany" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al preparar los archivos para la descarga</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_MissingFile" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Falta el archivo "{0}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_IllegalWAPFileForSourceDownload" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los archivos WAP no se pueden descargar en los controladores. Desactive la asignación de estos archivos en el programa de control "{0}" antes de la descarga</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_IllegalJSPFileForSourceDownload" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Los archivos JSP no se pueden descargar en los controladores. Desactive la asignación de estos archivos en el programa de control "{0}" antes de la descarga</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_WrongDriverVersion" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Controlador incorrecto para el dispositivo; se esperaba "{0}" pero se obtuvo "{1}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_WrongDriverForController" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Controlador incorrecto para el dispositivo</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NotEnoughRAM" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>La memoria necesaria para el driver es superior a la disponible en el controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ModelNameNotFoundInDriver" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>"Nombre de modelo "{0}" no encontrado en el controlador."</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_RnetConnectionUnconfigured" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El host Rnet no está configurado. Debe descargar SOLAMENTE el controlador del host si no está configurado</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NoControllerStatus" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al obtener el estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToSetCMnetRouterAddress" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al definir la información de direcciones de puerta de enlace</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerStatusNotOperational" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Compruebe el estado del controlador. El controlador parece no funcionar como debiera</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_ControllerStatusNotOperationalTimeout" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Compruebe el estado del controlador. El controlador parece no funcionar como debiera. Intente ajustar la propiedad {0}</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InvalidControllerVersion" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador contiene información de versión no válida</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_InvalidControllerVersionAfterDownload" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador contiene una versión no válida "{0}" tras la descarga</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToUpdateControllerVersion" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha podido actualizar de la versión "{0}" a la versión "{1}"</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToColdStart" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha podido responder a una solicitud de encendido en frío</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToWarmStart" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha podido responder a una solicitud de encendido en caliente</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToGetControllerVersion" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>Error al obtener la información de versión del controlador</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToPrepareControllerForDownload" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha podido prepararse para la descarga de memoria</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_FailedToPrepareControllerForDownloadFlash" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El controlador no ha podido prepararse para la descarga de memoria, la memoria Flash no se ha borrado correctamente</variant>
+        </translation>
+        <translation approved="true" key="NetworkFailureDetail_NetworkVisibleNotSet" new="false">
+            <note>Resources for specific download failures.</note>
+            <variant>El indicador de red visible para "{0}" debe definirse antes para conservar el valor de las propiedades antes de la descarga</variant>
+        </translation>
+    </section>
+    <section id="download-task-sets">
+        <note>Resources for the different permutations of download tasks.</note>
+        <translation approved="true" key="TaskSet_MP--S-" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar todo el contenido</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_MP--SB" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar todo el contenido</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-P--S-" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar parámetros y horarios</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-P---B" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar parámetros y BBMD</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-P----" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar parámetros</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-P--SB" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar parámetros, horarios y BBMD</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_----SB" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar horarios y BBMD</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_----S-" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar horarios</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-----B" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Descargar BBMD</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_--U---" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Cargar parámetros</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_---V--" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Parámetros de resolución</variant>
+        </translation>
+        <translation approved="true" key="TaskSet_-P-V--" new="false">
+            <note>Resources for the different permutations of download tasks.</note>
+            <variant>Parámetros de resolución</variant>
+        </translation>
+    </section>
+    <section id="download-wait-states">
+        <note>Resources for the wait states a task can be in.</note>
+        <translation approved="true" key="NetworkWaitState_active" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>Activo</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_cancelled" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>Cancelado</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_Detail_active" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>El controlador se está descargando</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_pending" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>Pendiente</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_Detail_pending" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>El controlador se descargará cuando haya recursos disponibles</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_suspended" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>En espera</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_Detail_suspended" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>El controlador está en espera hasta que lo inicie un operario</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_failure" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="true" key="NetworkWaitState_Detail_failure" new="false">
+            <note>Resources for the wait states a task can be in.</note>
+            <variant>El controlador no ha podido descargarse</variant>
+        </translation>
+    </section>
+    <section id="controller-status-short-messages">
+        <note>Resources for short controller status messages.</note>
+        <translation approved="true" key="controller_status_short_unsupported_device" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Controlador no admitido</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_not_uploadable" new="false">
+            <note>Resources for short controller status messages.</note>
+            <note>The controller is not set up to upload all content or does not have the capability</note>
+            <variant>No se puede cargar</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_no_upload_permission" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>No se permite la carga</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_no_download_permission" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>No se permite la descarga</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_download_failed" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Error en la descarga</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_new_device" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Nuevo controlador</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_discovery" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Red lista para buscar dispositivos</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_blank_module" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Controlador sin programar</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_download_scheds" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Descargar horario</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_download_params" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Descargar parámetros</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_resolve_equip_params" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Parámetros no coincidentes</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_resolve_driver_params" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Falta de coincidencia de parámetros del controlador</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_import" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Cargar todo el contenido</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_download" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Descargar todo el contenido</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_needs_resolve_memory" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Falta de coincidencia de programas</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_module_replaced" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Controlador reemplazado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_module_offline" new="false">
+            <note>Resources for short controller status messages.</note>
+            <note>The controller has the offline color</note>
+            <variant>Controlador desconectado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_module_disabled" new="false">
+            <note>Resources for short controller status messages.</note>
+            <note>The controller is out of service</note>
+            <variant>Fuera de servicio</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_no_connection" new="false">
+            <note>Resources for short controller status messages.</note>
+            <note>Communications to the controller have been disabled</note>
+            <variant>Conexión desactivada</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_failed_connection" new="false">
+            <note>Resources for short controller status messages.</note>
+            <note>Communications to the controller failed</note>
+            <variant>Error de conexión</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_no_comm" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Error de comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_unplugged" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>USB desconectado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_missing_files" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Archivos no presentes</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_error" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_canceled" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Cancelado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_processing" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Pendiente</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_downloading" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Descargando</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_uploading" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Cargando</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_busy" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Ocupado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_short_processing_clipping" new="false">
+            <note>Resources for short controller status messages.</note>
+            <variant>Procesando recorte</variant>
+        </translation>
+    </section>
+    <section id="controller-discovery-phase">
+        <note>Resources for detailed controller status messages.</note>
+        <translation approved="true" key="Deep_Scanning_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Comprobando estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="Uploading_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Cargando desde controladores</variant>
+        </translation>
+        <translation approved="true" key="Downloading_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Descargando en controladores</variant>
+        </translation>
+        <translation approved="true" key="Discovering_Routers_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Buscando enrutadores</variant>
+        </translation>
+        <translation approved="true" key="Searching_for_Routers_on_Network" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Buscando enrutadores en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="Discovering_Controllers_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Detectando enrutadores</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Invalid_Connection" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Conexión no válida</variant>
+        </translation>
+        <translation approved="true" key="Find_Devices_Is_Missing_Child_Network" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>No existen redes para detectar dispositivos</variant>
+        </translation>
+        <translation approved="true" key="Status_Check_Phase" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Comprobando estado del controlador</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_deep_scanning_phase_started" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Comprobando el estado del controlador en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_uploading_phase_started" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Cargando desde controladores en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_downloading_phase_started" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Descargando en controladores en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_deep_scanning_phase_complete" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se ha terminado de comprobar el estado del controlador en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_uploading_phase_complete" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se ha terminado de cargar desde los controladores en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_discovery_downloading_phase_complete" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se ha terminado de descargar en los controladores en la red {0}</variant>
+        </translation>
+        <translation approved="true" key="Download_Schedules_Below" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note> label - There is a schedule that has been changed and must be downloaded - used as informative text at area and group schedule pages</note>
+            <variant>Se requiere hacer download de horarios a {0} controladoras bajo esta ubicación</variant>
+        </translation>
+        <translation approved="true" key="Downloading_Schedules_Below" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Descargando horarios para controladores {0} de esta ubicación</variant>
+        </translation>
+    </section>
+    <section id="controller-discovery-errors">
+        <translation approved="true" key="Rnet_Connection_is_busy" new="false">
+            <variant>Conexión de acceso local ocupada</variant>
+        </translation>
+        <translation approved="true" key="Rnet_Connection_is_busy_percent" new="false">
+            <variant>Conexión de acceso local ocupada - {0}% finalizado</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Router_is_not_on_ip_network" new="false">
+            <variant>El enrutador {2} en {1} de la red {0} no se cargará. No se encuentra en la red de búsqueda actual.</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Router_has_wrong_vendor_id" new="false">
+            <variant>El enrutador {3} de {2} de la red {1} no se cargará. No se admite la carga de {0}.</variant>
+        </translation>
+        <translation approved="true" key="Discovered_Device_ID_is_not_configured" new="false">
+            <variant>{2} de {1} de la red {0} no se cargará. Su identificador de dispositivo BACnet no es válido.</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Device_Creation_Failed" new="false">
+            <variant>No se ha podido crear {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Upload_Failed" new="false">
+            <variant>No se ha podido cargar {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Upload_System_Limit_Reached" new="false">
+            <variant>No se ha podido cargar {0}. Este sistema no admite más controladores.</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Upload_Device_Limit_Reached" new="false">
+            <variant>No se ha podido cargar {0}. Esta red no admite más controladores.</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Upload_Equipment_Limit_Reached" new="false">
+            <variant>No se ha podido cargar {0}. Este controlador no admite más programas de control.</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Progress_Failed" new="false">
+            <variant>No se ha podido obtener el progreso de {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Download_Failed" new="false">
+            <variant>No se ha podido descargar en {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Parameter_Upload_Failed" new="false">
+            <variant>No se han podido cargar parámetros desde {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Discovery_Scan_Failed" new="false">
+            <variant>No se ha podido determinar el estado de {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Failed_To_Assign_View" new="false">
+            <variant>No se han podido asignar vistas a {0}. {1}</variant>
+        </translation>
+        <translation approved="true" key="Device_With_This_Device_Id_Already_Exists" new="false">
+            <variant>Error al crear el controlador {0}:{1}. El controlador con identificador de dispositivo {2} ya existe en el sistema.</variant>
+        </translation>
+    </section>
+    <section id="controller-status-detail-messages">
+        <note>Resources for detailed controller status messages.</note>
+        <translation approved="true" key="controller_status_detail_unsupported_device" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador no admite carga de contenido.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_not_uploadable" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note>The controller is not set up to upload all content or does not have the capability</note>
+            <variant>Este controlador no está configurado para poder cargar contenido.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_no_upload_permission" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador no tiene permiso para cargar.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_no_download_permission" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador no está permitido para descargas.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_download_failed" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>No se ha podido descargar en el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_confirmed" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador funciona correctamente.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_new_device" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se ha encontrado un nuevo controlador y se ha agregado al sistema.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_discovery" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Para buscar dispositivos en esta red, seleccione el enrutador en la estructura de árbol.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_blank_module" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Esto es un controlador programable. Para agregar programas de control, haga clic en el botón "Agregar programa de control" situado en la parte superior de la pantalla.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_download_scheds" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Para descargar horarios, resalte la fila que desee y seleccione "Horarios" en el menú de acciones de descarga. A continuación, haga clic en "Descargar"</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_download_params" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Para descargar parámetros, resalte la fila que desee y seleccione "Parámetros" en el menú de acciones de descarga. A continuación, haga clic en "Descargar"</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_resolve_equip_params" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se han detectado diferencias en el parámetro Programa de Control. Haga clic en el enlace para resolver o mostrar las diferencias de parámetros en la controladora.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_resolve_driver_params" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se han detectado diferencias de parámetros de controlador. Haga clic en el enlace para resolver o mostrar las diferencias de parámetros en la controladora.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_import" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Cargue todo el contenido desde el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_download" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Descargue todo el contenido desde el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_needs_resolve_memory" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se han detectado diferencias de contenido. Cargue todo el contenido desde el controlador o descargue todo el contenido en el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_module_replaced" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador ha sido reemplazado por otro del mismo tiempo en el campo.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_module_offline" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note>The controller has the offline color</note>
+            <variant>Es posible que el controlador esté desconectado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_module_disabled" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note>The module is marked as out of service</note>
+            <variant>Este controlador está fuera de servicio</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_no_connection" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note>Communications to the controller have been disabled</note>
+            <variant>La conexión con este controlador se ha deshabilitado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_failed_connection" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <note>Communications to the controller failed</note>
+            <variant>No se puede iniciar la conexión con este controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_no_comm" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>No se puede comunicar con este controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_unplugged" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>No se puede comunicar con el controlador porque el cable USB está desconectado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_missing_files" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Error de carga. Faltan archivos de origen en el servidor.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_error" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se ha producido un error desconocido.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_canceled" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Se canceló la última operación de este controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_processing" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador está esperando a ser procesado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_busy" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Este controlador está ocupado; las comunicaciones podrían desactivarse</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_processing_clipping" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>Operación de recorte en curso. No realice cambios, ya que estos podrían dañar el sistema.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_downloading" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>El controlador está descargando; es posible que se desactiven las comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="controller_status_detail_uploading" new="false">
+            <note>Resources for detailed controller status messages.</note>
+            <variant>El controlador está descargando; es posible que se desactiven las comunicaciones</variant>
+        </translation>
+    </section>
+    <section id="controller-status-page-messages">
+        <note>Resources for detailed controller status messages shown in page headers.</note>
+        <translation approved="true" key="controller_status_page_confirmed" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <variant>Este controlador funciona correctamente.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_new_device" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>A controller is new to the system and files must be uploaded into the database before it can be used</note>
+            <variant>Este controlador es nuevo y debe cargar contenido antes de poder configurarlo.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_resolve_memory" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The configuration files in the controller itself differ from those in the database.</note>
+            <variant>Se han detectado diferencias de contenido. Cargue contenido desde el controlador, en el controlador o pulse el botón de detalles para obtener más información.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_download" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>There are no files in the controller but there are in the system. The use can only download.</note>
+            <variant>Ha cambiado la programación del controlador. Descargue todo el contenido para actualizar los programas de controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_import" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller has configuration files but the system does not. The use can only upload.</note>
+            <variant>El controlador no se ha cargado. Realice el proceso de carga para acceder al contenido del controlador en el sistema.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_discovery" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>This router has been uploaded but no controllers have been discovered under it</note>
+            <variant>Vaya a la página Administración de dispositivos para buscar los controladores situados bajo este enrutador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_module_replaced" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The user must press resolve to clear up differences between a previously installed controller and its replacement</note>
+            <variant>Este controlador ha sido reemplazado por otro controlador del mismo tipo en el campo. Cargue todo el contenido desde el controlador, descargue todo el contenido en el controlador o pulse la opción de detalles para obtener más información.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_resolve_equip_params" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The parameters in the field controller differ from those in the system.</note>
+            <variant>Se han detectado diferencias en el parámetro Programa de Control.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_resolve_driver_params" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The parameters in the field controller differ from those in the system.</note>
+            <variant>Detectadas diferencias de parámetros de controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_download_params" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The control program or controller is marked for parameter download.</note>
+            <variant>Se requiere la descarga de parámetros.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_needs_download_scheds" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The control program or controller is marked for schedule download.</note>
+            <variant>Se requiere la descarga de horarios.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_unsupported_device" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>An unsupported controller exists but cannot be used in the system</note>
+            <variant>Este controlador no admite el proceso de carga.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_not_uploadable" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is not set up to upload programs or does not have the capability</note>
+            <variant>Este controlador no está configurado para poder cargar contenido.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_no_upload_permission" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>A controller exists but it's control programs cannot be used in the system</note>
+            <variant>Este controlador no está permitido para cargas.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_no_download_permission" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The control programs cannot be used in the controller</note>
+            <variant>Este controlador no está permitido para descargas.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_download_failed" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <variant>No se ha podido descargar el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_blank_module" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>A programmable module exists which does not have any equipment added to it yet.</note>
+            <variant>Esto es un controlador programable. Para agregar programas de control, vaya a la página de administración de dispositivos y haga clic en el botón "Agregar programa de control" situado en la parte superior de la pantalla.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_module_offline" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller has the offline color</note>
+            <variant>Es posible que el controlador esté desconectado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_module_disabled" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The module is disabled</note>
+            <variant>El controlador está fuera de servicio. Vaya a la página de propiedades del controlador para reactivarlo.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_no_connection" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>Communications to the controller have been disabled</note>
+            <variant>La conexión con este controlador se ha deshabilitado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_failed_connection" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>Communications to the controller failed</note>
+            <variant>No se puede iniciar la conexión con este controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_no_comm" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>Communications have been lost to the controller.</note>
+            <variant>No se puede comunicar con el controlador.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_unplugged" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>Communications have been lost to the usb controller.</note>
+            <variant>El cable USB está desconectado.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_busy" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is currently being modified by some process.</note>
+            <variant>Esta red está en uso. {0}% finalizado. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_processing_clipping" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The system is importing or creating a clipping.</note>
+            <variant>Operación de recorte en curso. No realice cambios, ya que estos podrían dañar el sistema.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_processing" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is in the list of pending download/upload tasks.</note>
+            <variant>El controlador está esperando a ser procesado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_downloading" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is currently being downloaded.</note>
+            <variant>Descargando controlador - {0}% finalizado. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_uploading" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is currently being uploaded.</note>
+            <variant>Cargando controlador - {0}% finalizado. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_scanning" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller is currently being scanned.</note>
+            <variant>Comprobando estado del controlador - {0}% finalizado. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_missing_files" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller failed to upload because of missing source files. {0}</note>
+            <variant>El controlador no pudo cargarse debido a que faltan archivos de origen en el servidor. {0}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_error" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <note>The controller state is unknown due to an error. The user can press the details button for more information.</note>
+            <variant>No es posible determinar el estado del controlador. Pulse el botón Detalles para obtener más información.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_page_canceled" new="false">
+            <note>Resources for detailed controller status messages shown in page headers.</note>
+            <variant>Se canceló la última operación de este controlador.</variant>
+        </translation>
+    </section>
+    <section id="controller-status-log-messages">
+        <note>Resources for detailed controller status messages shown in the log popup.</note>
+        <translation approved="true" key="controller_status_log_blank_module" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} es un controlador sin programar</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_uploading" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} se está cargando</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_downloading" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} se está descargando</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_busy" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} está ocupado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_confirmed" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} funciona correctamente</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_missing_files" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} no pudo cargarse debido a que faltan archivos de origen en el servidor. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_error" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>No se ha podido crear el controlador {0} : {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_module_replaced" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} se ha reemplazado por otro controlador del mismo tipo.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_download" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere una descarga de contenido</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_import" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere una carga de contenido</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_resolve_memory" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere que se resuelvan las diferencias de contenido entre el controlador y el sistema</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_resolve_equip_params" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere que se resuelvan las diferencias de parámetros entre el controlador y el sistema</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_resolve_driver_params" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere que se resuelvan las diferencias de parámetros entre el controlador del dispositivo y el controlador del sistema</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_download_params" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere la descarga de parámetros</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_needs_download_scheds" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} requiere la descarga de horarios</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_new_device" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} detectado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_module_offline" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <note>The controller has the offline color</note>
+            <variant>{0} puede estar desconectado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_module_disabled" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <note>The module is out of service</note>
+            <variant>{0} está fuera de servicio</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_no_connection" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <note>Communications to the controller have been disabled</note>
+            <variant>{0} La conexión se ha desactivado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_failed_connection" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <note>Communications to the controller failed</note>
+            <variant>{0} La conexión no se ha podido iniciar</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_no_comm" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} error de comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_unplugged" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} cable usb desconectado</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_network_conflicts" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} tiene conflictos de red. {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_canceled" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} operación cancelada</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_unsupported_device" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} no se ha creado porque no se admite</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_not_uploadable" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <note>The controller is not set up to upload programs or does not have the capability</note>
+            <variant>{0} no está configurado para poder cargar contenido.</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_no_upload_permission" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} no se permite para cargar contenido; se requiere permiso de {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_no_download_permission" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} no se permite para descargar contenido; se requiere permiso de {1}</variant>
+        </translation>
+        <translation approved="true" key="controller_status_log_download_failed" new="false">
+            <note>Resources for detailed controller status messages shown in the log popup.</note>
+            <variant>{0} no ha podido {1}. {2}</variant>
+        </translation>
+    </section>
+    <section id="debug-mode-messages">
+        <translation approved="true" key="Debug_Mode_Header_Msg" new="false">
+            <variant>MODO DE DEPURACIÓN: NO deje el controlador en este estado.</variant>
+        </translation>
+        <translation approved="true" key="Debug_Mode_Controller_Status_Msg" new="false">
+            <note>This status is appended to the equipment status on the devices manage page when controller in debug mode</note>
+            <variant>MODO DE DEPURACIÓN</variant>
+        </translation>
+    </section>
+</resource-base>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Copyright (c) 1999 - 2010 AUTOMATED LOGIC CORPORATION. All Rights Reserved. This document contains confidential/proprietary information. This notice does not evidence any actual or intended publication of this document.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- master format -->

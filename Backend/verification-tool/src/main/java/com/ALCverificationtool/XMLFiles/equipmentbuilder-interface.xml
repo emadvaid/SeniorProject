@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="equipmentbuilder-interface" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="equipmentbuilder">
+        <translation approved="true" key="equipmentbuilder-title" new="false">
+            <note/>
+            <variant>EquipmentBuilder</variant>
+        </translation>
+        <translation approved="true" key="name-label" new="false">
+            <note/>
+            <variant>Nombre:</variant>
+        </translation>
+        <translation approved="true" key="select-equipment-label" new="false">
+            <note/>
+            <variant>Seleccione un tipo de equipo:</variant>
+        </translation>
+        <translation approved="true" key="restriction-level-column-header" new="false">
+            <note/>
+            <variant>Tipo de aplicación*</variant>
+        </translation>
+        <translation approved="true" key="cannot-find-equipment-library-error" new="false">
+            <note/>
+            <variant>No se puede localizar la biblioteca.</variant>
+        </translation>
+        <translation approved="true" key="invalid-equipment-library-version" new="false">
+            <note/>
+            <variant>La versión de la biblioteca del equipo no es correcta.</variant>
+        </translation>
+        <translation approved="true" key="type-label" new="false">
+            <note/>
+            <variant>Tipo:</variant>
+        </translation>
+        <translation approved="true" key="library-label" new="false">
+            <note/>
+            <variant>Biblioteca:</variant>
+        </translation>
+        <translation approved="true" key="library-title" new="false">
+            <note/>
+            <variant>Biblioteca</variant>
+        </translation>
+        <translation approved="true" key="check-for-library-updates" new="false">
+            <note/>
+            <variant>Buscar actualizaciones de la biblioteca en:</variant>
+        </translation>
+        <translation approved="true" key="go-to-the-engineering-tab" new="false">
+            <note/>
+            <variant>Vaya a la ficha Ingeniería y busque en el área EquipmentBuilder.</variant>
+        </translation>
+        <translation approved="true" key="equipmentbuilder-about-title" new="false">
+            <note/>
+            <variant>Acerca de EquipmentBuilder</variant>
+        </translation>
+        <translation approved="true" key="select-item" new="false">
+            <note/>
+            <variant>Seleccionar</variant>
+        </translation>
+        <translation approved="true" key="Continue_Anyway" new="false">
+            <note/>
+            <variant>Continuar de todas formas</variant>
+        </translation>
+        <translation approved="true" key="Retry" new="false">
+            <note/>
+            <variant>Intentar de nuevo</variant>
+        </translation>
+        <translation approved="true" key="Loading_Title" new="false">
+            <note/>
+            <variant>Cargando</variant>
+        </translation>
+        <translation approved="true" key="Error_Title" new="false">
+            <note/>
+            <variant>Error</variant>
+        </translation>
+        <translation approved="true" key="invalid-equipment-file" new="false">
+            <note/>
+            <variant>El archivo seleccionado NO es un archivo de equipo válido.</variant>
+        </translation>
+        <translation approved="true" key="help-dialog-title" new="false">
+            <note/>
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="help-mnemonic" new="false">
+            <note/>
+            <variant>h</variant>
+        </translation>
+        <translation approved="true" key="safe-name-tooltip" new="false">
+            <note>Tooltip to explain that this field automatically formats the value into a safe or 'legal' format..</note>
+            <variant>Se aplica formato automáticamente a este campo con un nombre de archivo de equipo válido.</variant>
+        </translation>
+        <translation approved="true" key="option-help-tooltip" new="false">
+            <note>Tooltip to explain that this button gives you context sensitive help.</note>
+            <variant>Mostrar ayuda para esta opción.</variant>
+        </translation>
+        <translation approved="true" key="option-delete-tooltip" new="false">
+            <note>Tooltip to explain that this button deletes the associated option.</note>
+            <variant>Eliminar este elemento de la aplicación.</variant>
+        </translation>
+        <translation approved="true" key="Error_Setting_Default_System" new="false">
+            <note/>
+            <variant>Error al establecer el sistema predeterminado para {0} El archivo local.properties es de sólo lectura.\nElimine el atributo de sólo lectura del archivo e inténtelo de nuevo.</variant>
+        </translation>
+        <translation approved="true"
+            key="Error_Setting_Default_System_Title" new="false">
+            <note/>
+            <variant>Error al establecer el sistema predeterminado</variant>
+        </translation>
+        <translation approved="true"
+            key="Generate-Engineering-Files-Title" new="false">
+            <note/>
+            <variant>Generando archivos, espere...</variant>
+        </translation>
+        <translation approved="true" key="EquipmentBuilder" new="false">
+            <note/>
+            <variant>EquipmentBuilder</variant>
+        </translation>
+        <translation approved="true"
+            key="Generate-Engineering-Files-Name" new="false">
+            <note/>
+            <variant>Generando archivos, espere...</variant>
+        </translation>
+        <translation approved="true" key="points-tab-title" new="false">
+            <note/>
+            <variant>Puntos</variant>
+        </translation>
+        <translation approved="true" key="add-custom-points" new="false">
+            <note/>
+            <variant>Agregar puntos personalizados</variant>
+        </translation>
+        <translation approved="true" key="add-button" new="false">
+            <note/>
+            <variant>Agregar</variant>
+        </translation>
+        <translation approved="true" key="delete-button" new="false">
+            <note/>
+            <variant>Eliminar</variant>
+        </translation>
+        <translation approved="true" key="automatedlogic-company" new="false">
+            <note>Automated Logic company name.</note>
+            <variant>Automated Logic Corporation</variant>
+        </translation>
+        <translation approved="true" key="carrier-company" new="false">
+            <note>Carrier company name.</note>
+            <variant>Carrier Corporation</variant>
+        </translation>
+        <translation approved="true" key="control-program-label" new="false">
+            <note/>
+            <variant>Programa de control</variant>
+        </translation>
+        <translation approved="true" key="graphic-label" new="false">
+            <note/>
+            <variant>Gráfico</variant>
+        </translation>
+        <translation approved="true" key="bacview-label" new="false">
+            <note/>
+            <variant>BACview</variant>
+        </translation>
+        <translation approved="true" key="equipment-touch-label" new="false">
+            <note/>
+            <variant>Equipo táctil</variant>
+        </translation>
+        <translation approved="true" key="sequence-label" new="false">
+            <note/>
+            <variant>Secuencia/puntos</variant>
+        </translation>
+        <translation approved="true" key="schematic-label" new="false">
+            <note/>
+            <variant>Esquemático</variant>
+        </translation>
+        <translation approved="true" key="driver-label" new="false">
+            <note/>
+            <variant>Controlador</variant>
+        </translation>
+        <translation approved="true" key="program-spec-label" new="false">
+            <note/>
+            <variant>Especificaciones del programa</variant>
+        </translation>
+        <translation approved="true" key="attachment-label" new="false">
+            <note/>
+            <variant>Adjunto</variant>
+        </translation>
+        <translation approved="true" key="admin-password-label" new="false">
+            <note>Label to explain that the admin pasword is four numbers.</note>
+            <variant>Contraseña de Administrador (4 dígitos): </variant>
+        </translation>
+        <translation approved="true" key="equipment-errors-dialog-title" new="false">
+            <note/>
+            <variant>Errores del equipo</variant>
+        </translation>
+        <translation approved="true" key="english-label" new="false">
+            <note>This refers to the English or 'Imperial' measurement system, not to the english language (i.e. ounces vs milliliters )</note>
+            <variant>Inglés</variant>
+        </translation>
+        <translation approved="true" key="metric-label" new="false">
+            <note/>
+            <variant>Métrico</variant>
+        </translation>
+        <translation approved="true" key="language-label" new="false">
+            <note/>
+            <variant>Idioma</variant>
+        </translation>
+        <translation approved="true" key="point-name-label" new="false">
+            <note/>
+            <variant>Nombre de punto</variant>
+        </translation>
+        <translation approved="true" key="ai-label" new="false">
+            <note>Table header. Abbreviate for 'Analog Input'</note>
+            <variant>AI</variant>
+        </translation>
+        <translation approved="true" key="ao-label" new="false">
+            <note>Table header. Abbreviate for 'Analog Output'</note>
+            <variant>AO</variant>
+        </translation>
+        <translation approved="true" key="bi-label" new="false">
+            <note>Table header. Abbreviate for 'Binary Input'</note>
+            <variant>BI</variant>
+        </translation>
+        <translation approved="true" key="bo-label" new="false">
+            <note>Table header. Abbreviate for 'Binary Output'</note>
+            <variant>BO</variant>
+        </translation>
+        <translation approved="true" key="av-label" new="false">
+            <note>Table header. Abbreviate for 'Analog Value'</note>
+            <variant>AV</variant>
+        </translation>
+        <translation approved="true" key="bv-label" new="false">
+            <note>Table header. Abbreviate for 'Binary Value'</note>
+            <variant>BV</variant>
+        </translation>
+        <translation approved="true" key="loop-label" new="false">
+            <note/>
+            <variant>Bucle</variant>
+        </translation>
+        <translation approved="true" key="sched-label" new="false">
+            <note>Table header. Abbreviate for 'Schedule'</note>
+            <variant>Horario</variant>
+        </translation>
+        <translation approved="true" key="trend-label" new="false">
+            <note/>
+            <variant>Tendencia</variant>
+        </translation>
+        <translation approved="true" key="alarm-label" new="false">
+            <note/>
+            <variant>Alarma</variant>
+        </translation>
+        <translation approved="true" key="show-on-graphic-label" new="false">
+            <note/>
+            <variant>Mostrar en gráfico</variant>
+        </translation>
+        <translation approved="true" key="ai-total-label" new="false">
+            <note>Label to denote the total number of AI elements in a table.</note>
+            <variant>AI:</variant>
+        </translation>
+        <translation approved="true" key="bi-total-label" new="false">
+            <note>Label to denote the total number of BI elements in a table.</note>
+            <variant>BI:</variant>
+        </translation>
+        <translation approved="true" key="av-total-label" new="false">
+            <note>Label to denote the total number of AV elements in a table.</note>
+            <variant>AV:</variant>
+        </translation>
+        <translation approved="true" key="alarm-total-label" new="false">
+            <note>Label to denote the total number of Alarms in a table.</note>
+            <variant>Alarma:</variant>
+        </translation>
+        <translation approved="true" key="loop-total-label" new="false">
+            <note>Label to denote the total number of Loop elements in a table.</note>
+            <variant>Bucle:</variant>
+        </translation>
+        <translation approved="true" key="sched-total-label" new="false">
+            <note>Label to denote the total number of Schedule elements in a table.</note>
+            <variant>Horario:</variant>
+        </translation>
+        <translation approved="true" key="hardware-total-label" new="false">
+            <note>Label to denote the total number of Hardware elements in a table.</note>
+            <variant>Hardware:</variant>
+        </translation>
+        <translation approved="true" key="ao-total-label" new="false">
+            <note>Label to denote the total number of AO elements in a table.</note>
+            <variant>AO:</variant>
+        </translation>
+        <translation approved="true" key="bo-total-label" new="false">
+            <note>Label to denote the total number of BO elements in a table.</note>
+            <variant>BO:</variant>
+        </translation>
+        <translation approved="true" key="bv-total-label" new="false">
+            <note>Label to denote the total number of BV elements in a table.</note>
+            <variant>BV:</variant>
+        </translation>
+        <translation approved="true" key="trend-total-label" new="false">
+            <note>Label to denote the total number of Trends in a table.</note>
+            <variant>Tendencia:</variant>
+        </translation>
+        <translation approved="true" key="graphic-total-label" new="false">
+            <note>Label to denote the total number of Graphic elements in a table.</note>
+            <variant>Gráfico:</variant>
+        </translation>
+        <translation approved="true" key="software-total-label" new="false">
+            <note>Label to denote the total number of Software elements in a table.</note>
+            <variant>Software:</variant>
+        </translation>
+        <translation approved="true" key="totals-label" new="false">
+            <note>Label to denote the section of the user interface that displays totals values</note>
+            <variant>Totales:</variant>
+        </translation>
+        <translation approved="true" key="zn-dialog-title" new="false">
+            <note>Dialog title. ZN is the abbreviation for 'Zone'</note>
+            <variant>Errores de validación de ZN</variant>
+        </translation>
+        <translation approved="true" key="zn-dialog-message" new="false">
+            <note>Message displayed in a dialog. ZN is the abbreviation for 'Zone'</note>
+            <variant>La aplicación tiene opciones seleccionadas que no cumplen las reglas de zona ZN. Sigue siendo posible etiquetarla para su uso en un módulo ZN pero perderá las etiquetas si se edita tras la descarga. ¿Desea conservar las etiquetas ZN?</variant>
+        </translation>
+        <translation approved="true" key="dont-tag-button" new="false">
+            <note>Button text. The button removes the zone 'tagging' (i.e. the item is no longer marked or flagged as being 'ZN' or zone.)</note>
+            <variant>No etiquetar</variant>
+        </translation>
+        <translation approved="true" key="warning-title" new="false">
+            <note>Message dialog title, capitalized for emphasis</note>
+            <variant>ADVERTENCIA</variant>
+        </translation>
+        <translation approved="true"
+            key="couldnt-find-original-library-warning" new="false">
+            <note/>
+            <variant>No se encuentra el archivo de biblioteca utilizado para crear este equipo. Se cargará la coincidencia más próxima. Es posible que se produzcan discrepancias.</variant>
+        </translation>
+        <translation approved="true" key="equipment-errors-message" new="false">
+            <note/>
+            <variant>El equipo creado contiene errores y no se compilará. Estos errores suelen deberse a datos introducidos incorrectamente. Si no puede resolver estos problemas, póngase en contacto con el servicio de soporte técnico.</variant>
+        </translation>
+        <translation approved="true"
+            key="unable-to-load-configuration-text-error" new="false">
+            <note>General error message given when we fail to load the information for an option from the equipment.</note>
+            <variant>No hemos podido cargar la información para este elemento.</variant>
+        </translation>
+        <translation approved="true"
+            key="automatically-selected-because" new="false">
+            <note>This is a sentence fragment that should read something like 'Automatically selected because 'option1' in category 'category2' is selected.</note>
+            <variant>Seleccionado automáticamente porque</variant>
+        </translation>
+        <translation approved="true" key="in-category" new="false">
+            <note>This is a sentence fragment that should read something like 'Automatically selected because 'option1' in category 'category2' is selected.</note>
+            <variant>en la categoría</variant>
+        </translation>
+        <translation approved="true" key="is-selected" new="false">
+            <note>This is a sentence fragment that should read something like 'Automatically selected because 'option1' in category 'category2' is selected.</note>
+            <variant>está seleccionado.</variant>
+        </translation>
+        <translation approved="true" key="open-equipment-button" new="false">
+            <note/>
+            <variant>Abrir equipo</variant>
+        </translation>
+        <translation approved="true" key="opening-equipment-message" new="false">
+            <note/>
+            <variant>Abriendo equipo; espere...</variant>
+        </translation>
+        <translation approved="true" key="create-equipment-button" new="false">
+            <note/>
+            <variant>Crear equipo</variant>
+        </translation>
+        <translation approved="true" key="summary-panel-name" new="false">
+            <note/>
+            <variant>Resumen</variant>
+        </translation>
+        <translation approved="true" key="elements-label" new="false">
+            <note/>
+            <variant>Elementos</variant>
+        </translation>
+        <translation approved="true" key="type-label" new="false">
+            <note/>
+            <variant>Tipo</variant>
+        </translation>
+        <translation approved="true" key="quantity-label" new="false">
+            <note/>
+            <variant>Cantidad</variant>
+        </translation>
+        <translation approved="true" key="empty-validation-text" new="false">
+            <note/>
+            <variant>Este valor no se puede dejar vacío.</variant>
+        </translation>
+        <translation approved="true" key="grey-text-label" new="false">
+            <note/>
+            <variant>El texto gris indica que pueden existir opciones que entren en conflicto con los valores actuales seleccionados.</variant>
+        </translation>
+        <translation approved="true" key="blue-text-label" new="false">
+            <note/>
+            <variant>El texto azul indica opciones que no cumplen las reglas ZN. Si se sigue editando, se podrían perder las etiquetas ZN.</variant>
+        </translation>
+        <translation approved="true" key="number-validation-text" new="false">
+            <note/>
+            <variant>Este valor solo puede contener dígitos y una coma decimal para ser un número válido.</variant>
+        </translation>
+        <translation approved="true"
+            key="append-referencebase-validation-text" new="false">
+            <note/>
+            <variant>Este valor solo puede contener letras, números y los caracteres _ - #.</variant>
+        </translation>
+        <translation approved="true" key="referencebase-validation-text" new="false">
+            <note/>
+            <variant>Este valor solo puede contener letras, números y los caracteres _ - #. No puede empezar por un número.</variant>
+        </translation>
+        <translation approved="true"
+            key="reference-length-validation-text" new="false">
+            <note/>
+            <variant>Este valor debe tener entre 1 y {0} caracteres de longitud.</variant>
+        </translation>
+        <translation approved="true" key="referencebase-duplicate-text" new="false">
+            <note/>
+            <variant>Los valores de base de referencia no pueden contener duplicados.</variant>
+        </translation>
+        <translation approved="true"
+            key="equipment-name-length-validation-text" new="false">
+            <note/>
+            <variant>Los nombres de equipo con más de {0} caracteres se truncarán al usarse como nombres de archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="equipment-name-blank-validation-text" new="false">
+            <note/>
+            <variant>Los nombres de equipos no se pueden dejar en blanco.</variant>
+        </translation>
+        <translation approved="true" key="equipment-name-label" new="false">
+            <note/>
+            <variant>Nombre de equipo</variant>
+        </translation>
+        <translation approved="true" key="equipment-file-label" new="false">
+            <note/>
+            <variant>Archivo de equipo</variant>
+        </translation>
+        <translation approved="true" key="save-files-label" new="false">
+            <note/>
+            <variant>Grabar Archivos</variant>
+        </translation>
+        <translation approved="true" key="choose-a-folder" new="false">
+            <note/>
+            <variant>Elija una carpeta...</variant>
+        </translation>
+        <translation approved="true" key="saving-files-label" new="false">
+            <note/>
+            <variant>Grabando Archivo(s), por favor espere....</variant>
+        </translation>
+        <translation approved="true" key="files-saved-label" new="false">
+            <note/>
+            <variant>Guardado correctamente.</variant>
+        </translation>
+        <translation approved="true" key="save-message-label" new="false">
+            <note/>
+            <variant>Archivo(s) grabado(s) en </variant>
+        </translation>
+        <translation approved="true" key="click-link-message-label" new="false">
+            <note/>
+            <variant>Haga clic en uno de los vínculos siguientes para abrir el archivo.</variant>
+        </translation>
+        <translation approved="true" key="save-canceled-label" new="false">
+            <note/>
+            <variant>Se ha cancelado el proceso de grabación.</variant>
+        </translation>
+        <translation approved="true" key="ccn-table-type" new="false">
+            <note/>
+            <variant>Tipo de tabla</variant>
+        </translation>
+        <translation approved="true" key="ccn-table-name" new="false">
+            <note/>
+            <variant>Nombre de tabla</variant>
+        </translation>
+        <translation approved="true" key="ccn-point-name" new="false">
+            <note/>
+            <variant>Nombre de punto</variant>
+        </translation>
+        <translation approved="true" key="ccn-table-data" new="false">
+            <note/>
+            <variant>Datos</variant>
+        </translation>
+        <translation approved="true" key="ccn-properties-tab-title" new="false">
+            <note/>
+            <variant>Propiedades CCN</variant>
+        </translation>
+        <translation approved="true" key="configuration-text-error" new="false">
+            <note/>
+            <variant>No se ha podido cargar el texto de configuración</variant>
+        </translation>
+        <translation approved="true"
+            key="unable-to-launch-equipmentbuilder-error" new="false">
+            <note/>
+            <variant>No se puede iniciar EquipmentBuilder.</variant>
+        </translation>
+        <translation approved="true" key="configuration-text-title" new="false">
+            <note/>
+            <variant>Texto de configuración</variant>
+        </translation>
+        <translation approved="true" key="engineering-options-title" new="false">
+            <note/>
+            <variant>Opciones de ingeniería</variant>
+        </translation>
+        <translation approved="true" key="evaluation-warning" new="false">
+            <note>Message warning the customer to take a look at the generated control program to ensure it is valid before using it.</note>
+            <variant>Los archivos generados con este software se deben analizar cuidadosamente antes de utilizarse.</variant>
+        </translation>
+        <translation approved="true"
+            key="select-files-to-generate-message" new="false">
+            <note/>
+            <variant>Seleccione el(los) archivo(s) que desea generar.</variant>
+        </translation>
+        <translation approved="true" key="documentation-label" new="false">
+            <note/>
+            <variant>Documentación:</variant>
+        </translation>
+        <translation approved="true" key="select-save-location-label" new="false">
+            <note/>
+            <variant>Seleccione la ubicación en la que desea guardar los archivos.</variant>
+        </translation>
+        <translation approved="true" key="save-to-folder-label" new="false">
+            <note/>
+            <variant>En una carpeta</variant>
+        </translation>
+        <translation approved="true" key="simple-save-to-folder-label" new="false">
+            <note/>
+            <variant>Guardar archivos en</variant>
+        </translation>
+        <translation approved="true" key="save-to-system-label" new="false">
+            <note/>
+            <variant>En las carpetas correspondientes del sistema</variant>
+        </translation>
+        <translation approved="true" key="documentation-folder-label" new="false">
+            <note/>
+            <variant>Carpeta de documentación:</variant>
+        </translation>
+        <translation approved="true" key="restart-button-label" new="false">
+            <note>Button label for button to start over creating an equipment from the beginning of the process</note>
+            <variant>Volver a iniciar</variant>
+        </translation>
+        <translation approved="true" key="restart-button-tooltip" new="false">
+            <note>Tool tip to explain the function of the restart button</note>
+            <variant>Volver al principio y crear/abrir una aplicación.</variant>
+        </translation>
+        <translation approved="true" key="overwrite-label" new="false">
+            <note/>
+            <variant>Reemplazar</variant>
+        </translation>
+        <translation approved="true" key="overwrite-files-message" new="false">
+            <note/>
+            <variant>Ya existen archivos con ese nombre. ¿Sobrescribir?</variant>
+        </translation>
+        <translation approved="true" key="key-heading" new="false">
+            <note>Provides definitions for the abbreviations found in the 'restriction-level-column-header' column.</note>
+            <variant>Tecla *</variant>
+        </translation>
+        <translation approved="true" key="restricted-definition" new="false">
+            <note/>
+            <variant>R = Restringido.  No mezclar con otras aplicaciones de tipo restringido o especial en el mismo controlador.</variant>
+        </translation>
+        <translation approved="true"
+            key="conditionally-restricted-definition" new="false">
+            <note/>
+            <variant>CR = Condicional Restringido. Algunas opciones hacen que la aplicación sea restringida.</variant>
+        </translation>
+        <translation approved="true" key="special-definition" new="false">
+            <note/>
+            <variant>S-XX = Tipo Especial.  No mezclar con aplicaciones restringidas ni con otra aplicación especial con el mismo código de tipo "XX".</variant>
+        </translation>
+    </section>
+    <section id="factory">
+        <translation approved="true" key="factory-downloader-title" new="false">
+            <note/>
+            <variant>Herramienta de descarga de fábrica</variant>
+        </translation>
+        <translation approved="true" key="connection-menu-item" new="false">
+            <note/>
+            <variant>Conexión</variant>
+        </translation>
+        <translation approved="true" key="libraries-menu-item" new="false">
+            <note/>
+            <variant>Bibliotecas</variant>
+        </translation>
+        <translation approved="true" key="archive-menu-item" new="false">
+            <note/>
+            <variant>Archivo de ficheros</variant>
+        </translation>
+        <translation approved="true" key="device-id-menu-item" new="false">
+            <note/>
+            <variant>Identificador de dispositivo</variant>
+        </translation>
+        <translation approved="true" key="Marker" new="false">
+            <note/>
+            <variant>Marcador</variant>
+        </translation>
+        <translation approved="true" key="Full_Source" new="false">
+            <note/>
+            <variant>Origen completo</variant>
+        </translation>
+        <translation approved="true" key="download-option-menu-item" new="false">
+            <note/>
+            <variant>Opción de descarga</variant>
+        </translation>
+        <translation approved="true" key="download_full_source" new="false">
+            <note/>
+            <variant>Descargar origen completo</variant>
+        </translation>
+        <translation approved="true" key="checking_rnet_enabled" new="false">
+            <note/>
+            <variant>Comprobando estado de la conexión local</variant>
+        </translation>
+        <translation approved="true" key="interface-mode-menu-item" new="false">
+            <note/>
+            <variant>Modo de interfaz</variant>
+        </translation>
+        <translation approved="true" key="configure-menu" new="false">
+            <note/>
+            <variant>Configurar</variant>
+        </translation>
+        <translation approved="true" key="configure-menu-mnemonic" new="false">
+            <note/>
+            <variant>C</variant>
+        </translation>
+        <translation approved="true" key="equipment-wizard-menu-item" new="false">
+            <note>Menu item that starts the EquipmentBuilder (one word cannot be translated).</note>
+            <variant>EquipmentBuilder...</variant>
+        </translation>
+        <translation approved="true" key="equipment-wizard-mnemonic" new="false">
+            <note/>
+            <variant>e</variant>
+        </translation>
+        <translation approved="true" key="exit-menu-item" new="false">
+            <note/>
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="file-menu-mnemonic" new="false">
+            <note/>
+            <variant>F</variant>
+        </translation>
+        <translation approved="true" key="exit-menu-item-mnemonic" new="false">
+            <note/>
+            <variant>x</variant>
+        </translation>
+        <translation approved="true" key="libraries-menu-item" new="false">
+            <note/>
+            <variant>Biblioteca...</variant>
+        </translation>
+        <translation approved="true" key="libraries-menu-item-mnemonic" new="false">
+            <note/>
+            <variant>L</variant>
+        </translation>
+        <translation approved="true" key="about-menu-item" new="false">
+            <note/>
+            <variant>Acerca de</variant>
+        </translation>
+        <translation approved="true" key="about-menu-item-mnemonic" new="false">
+            <note/>
+            <variant>A</variant>
+        </translation>
+        <translation approved="true" key="model-number-label" new="false">
+            <note/>
+            <variant>Nº de modelo:</variant>
+        </translation>
+        <translation approved="true" key="control-program-field-label" new="false">
+            <note/>
+            <variant>Programa de control:</variant>
+        </translation>
+        <translation approved="true" key="graphic-field-label" new="false">
+            <note/>
+            <variant>Gráfico:</variant>
+        </translation>
+        <translation approved="true" key="screen-file-field-label" new="false">
+            <note/>
+            <variant>Archivo de pantalla:</variant>
+        </translation>
+        <translation approved="true" key="driver-field-label" new="false">
+            <note/>
+            <variant>Controlador:</variant>
+        </translation>
+        <translation approved="true" key="xml-file-label" new="false">
+            <note/>
+            <variant>Archivo XML:</variant>
+        </translation>
+        <translation approved="true" key="files" new="false">
+            <note/>
+            <variant>archivos</variant>
+        </translation>
+        <translation approved="true" key="model-serial-mode-label" new="false">
+            <note/>
+            <variant>Introducir modelo/números de serie</variant>
+        </translation>
+        <translation approved="true" key="select-files-mode-label" new="false">
+            <note/>
+            <variant>Seleccionar archivos</variant>
+        </translation>
+        <translation approved="true" key="import-xml-mode-label" new="false">
+            <note/>
+            <variant>Importar XML</variant>
+        </translation>
+        <translation approved="true" key="connection-type-label" new="false">
+            <note/>
+            <variant>Tipo de conexión:</variant>
+        </translation>
+        <translation approved="true" key="settings-menu-item" new="false">
+            <note/>
+            <variant>Configuración</variant>
+        </translation>
+        <translation approved="true" key="settings-menu-item-mnemonic" new="false">
+            <note/>
+            <variant>S</variant>
+        </translation>
+        <translation approved="true" key="rnet-settings-group-label" new="false">
+            <note/>
+            <variant>Acceso local</variant>
+        </translation>
+        <translation approved="true" key="ip-settings-group-label" new="false">
+            <note/>
+            <variant>Configuración IP/BACnet</variant>
+        </translation>
+        <translation approved="true" key="com-port-label" new="false">
+            <note/>
+            <variant>Puerto de com:</variant>
+        </translation>
+        <translation approved="true" key="baud-rate-label" new="false">
+            <note/>
+            <variant>Velocidad en baudios:</variant>
+        </translation>
+        <translation approved="true" key="device-mac-label" new="false">
+            <note/>
+            <variant>Dirección Mac del dispositivo:</variant>
+        </translation>
+        <translation approved="true" key="router-ip-address-label" new="false">
+            <note/>
+            <variant>Dirección IP del enrutador:</variant>
+        </translation>
+        <translation approved="true" key="router-subnet-mask-label" new="false">
+            <note/>
+            <variant>Máscara de subred del enrutador:</variant>
+        </translation>
+        <translation approved="true" key="router-default-gateway-label" new="false">
+            <note/>
+            <variant>Puerta de enlace predeterminada del enrutador:</variant>
+        </translation>
+        <translation approved="true" key="router-network-number-label" new="false">
+            <note/>
+            <variant>Número de red MS/TP:</variant>
+        </translation>
+        <translation approved="true" key="module-type-label" new="false">
+            <note/>
+            <variant>Tipo de módulo:</variant>
+        </translation>
+        <translation approved="true" key="root-path-label" new="false">
+            <note/>
+            <variant>Ubicación de la biblioteca:</variant>
+        </translation>
+        <translation approved="true" key="archive-path-label" new="false">
+            <note/>
+            <variant>Ubicación de archivo de ficheros:</variant>
+        </translation>
+        <translation approved="true" key="enable-archive-label" new="false">
+            <note/>
+            <variant>¿Guardar automáticamente archivos generados para archivar?</variant>
+        </translation>
+        <translation approved="true" key="prompt-for-device-id-label" new="false">
+            <note/>
+            <variant>¿Solicitar el identificador de dispositivo en cada descarga?</variant>
+        </translation>
+        <translation approved="true" key="current-device-id-scheme" new="false">
+            <note/>
+            <variant>Esquema de ID de dispositivo en uso: </variant>
+        </translation>
+        <translation approved="true" key="database-teardown-failed" new="false">
+            <note/>
+            <variant>No se ha podido eliminar la base de datos del sistema</variant>
+        </translation>
+        <translation approved="true" key="database-teardown-successful" new="false">
+            <note/>
+            <variant>Base de datos del sistema eliminada correctamente</variant>
+        </translation>
+        <translation approved="true"
+            key="unable-to-create-system-directory" new="false">
+            <note/>
+            <variant>No se ha podido crear la base de datos del sistema</variant>
+        </translation>
+        <translation approved="true"
+            key="system-directory-created-successfully" new="false">
+            <note/>
+            <variant>Base de datos del sistema creada correctamente</variant>
+        </translation>
+        <translation approved="true" key="libraries-loaded-successfully" new="false">
+            <note/>
+            <variant>Bibliotecas cargadas correctamente</variant>
+        </translation>
+        <translation approved="true" key="libraries-already-loaded" new="false">
+            <note/>
+            <variant>Las bibliotecas ya están cargadas</variant>
+        </translation>
+        <translation approved="true"
+            key="no-libraries-found-in-directory" new="false">
+            <note/>
+            <variant>No se han encontrado bibliotecas válidas en el directorio</variant>
+        </translation>
+        <translation approved="true" key="no-available-comm-ports" new="false">
+            <note/>
+            <variant>No se han encontrado puertos com disponibles</variant>
+        </translation>
+        <translation approved="true" key="some-functions-disabled" new="false">
+            <note/>
+            <variant>Algunas funciones del programa se han desactivado.</variant>
+        </translation>
+        <translation approved="true" key="driver-required" new="false">
+            <note/>
+            <variant>Se requiere un controlador para la descarga. Especifique un controlador.</variant>
+        </translation>
+        <translation approved="true" key="choose-valid-xml" new="false">
+            <note/>
+            <variant>Seleccione un archivo xml válido antes de intentar la descarga.</variant>
+        </translation>
+        <translation approved="true" key="save-path-label" new="false">
+            <note/>
+            <variant>Grabar ubicación </variant>
+        </translation>
+        <translation approved="true" key="driver-path-label" new="false">
+            <note/>
+            <variant>Controlador:</variant>
+        </translation>
+        <translation approved="true" key="serial-number-label" new="false">
+            <note/>
+            <variant>Nº de serie:</variant>
+        </translation>
+        <translation approved="true" key="product-label" new="false">
+            <note/>
+            <variant>Producto:</variant>
+        </translation>
+        <translation approved="true" key="download-button" new="false">
+            <note/>
+            <variant>Descargar</variant>
+        </translation>
+        <translation approved="true" key="reset-button" new="false">
+            <note/>
+            <variant>Restablecer</variant>
+        </translation>
+        <translation approved="true" key="test-button" new="false">
+            <note/>
+            <variant>Probar</variant>
+        </translation>
+        <translation approved="true" key="getting-modstat" new="false">
+            <note/>
+            <variant>Recuperando estado del módulo</variant>
+        </translation>
+        <translation approved="true" key="downloading-please-wait" new="false">
+            <note/>
+            <variant>Descargando; espere...</variant>
+        </translation>
+        <translation approved="true" key="Success" new="false">
+            <note/>
+            <variant>Éxito</variant>
+        </translation>
+        <translation approved="true" key="all-tests-passed" new="false">
+            <note/>
+            <variant>Todas las pruebas pasaron bien.</variant>
+        </translation>
+        <translation approved="true" key="file-filter-file-description" new="false">
+            <variant>Archivos de equipo (*.equipment)</variant>
+        </translation>
+        <translation approved="true" key="unable-to-generate-files" new="false">
+            <variant>No se han podido generar archivos</variant>
+        </translation>
+        <translation approved="true" key="files-generated-successfully" new="false">
+            <variant>Archivos generados correctamente</variant>
+        </translation>
+        <translation approved="true"
+            key="equipment-created-successfully" new="false">
+            <variant>Objeto de equipo generado correctamente</variant>
+        </translation>
+        <translation approved="true" key="parsing-model-serial-number" new="false">
+            <variant>Modelo de análisis y números de serie</variant>
+        </translation>
+        <translation approved="true" key="parsing-xml" new="false">
+            <variant>Analizando xml</variant>
+        </translation>
+        <translation approved="true" key="download-failed" new="false">
+            <variant>Error de descarga</variant>
+        </translation>
+        <translation approved="true" key="download-successful" new="false">
+            <note/>
+            <variant>Descarga correcta.</variant>
+        </translation>
+        <translation approved="true" key="local-access-disabled" new="false">
+            <note/>
+            <variant>Acceso local: desactivado.</variant>
+        </translation>
+        <translation approved="true"
+            key="invalid-model-or-serial-number" new="false">
+            <variant>Modelo o número de serie no válido</variant>
+        </translation>
+        <translation approved="true"
+            key="invalid-xml-formatting-or-content" new="false">
+            <variant>El xml no está en formato correcto o contiene contenido no válido</variant>
+        </translation>
+        <translation approved="true" key="no-match-found-in-libraries" new="false">
+            <variant>No se ha encontrado ninguna coincidencia en las bibliotecas</variant>
+        </translation>
+        <translation approved="true" key="unable_to_select_ice" new="false">
+            <note/>
+            <variant>No se ha podido seleccionar ICE con nombre de referencia {0}.  ICE no existe."</variant>
+        </translation>
+        <translation approved="true"
+            key="unable_to_select_engineering_option" new="false">
+            <note/>
+            <variant>No se ha podido seleccionar la opción de ingeniería con nombre de referencia {0} para ICE con nombre de referencia {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="options_are_in_conflict" new="false">
+            <note/>
+            <variant>Hay un conflicto entre las opciones {0} y {1}
+            </variant>
+        </translation>
+        <translation approved="true" key="saving-file-to-archive" new="false">
+            <note/>
+            <variant>Grabando {0} en el directorio de archivo</variant>
+        </translation>
+        <translation approved="true" key="error-saving-file-to-archive" new="false">
+            <note/>
+            <variant>ERROR: no se puede guardar {0} en el directorio de archivo</variant>
+        </translation>
+        <translation approved="true" key="error-unable-to-generate-file" new="false">
+            <note/>
+            <variant>ERROR: no se puede generar {0}
+            </variant>
+        </translation>
+        <translation approved="true" key="creating-system" new="false">
+            <note/>
+            <variant>Creando directorio del sistema</variant>
+        </translation>
+        <translation approved="true" key="configuring-database" new="false">
+            <note/>
+            <variant>Configurando base de datos</variant>
+        </translation>
+        <translation approved="true" key="initiating-comm" new="false">
+            <note/>
+            <variant>Iniciando comunicación con el controlador</variant>
+        </translation>
+        <translation approved="true" key="use-factory-auto-assign" new="false">
+            <note/>
+            <variant>Utilizar identificador de dispositivo autoasignado de fábrica  </variant>
+        </translation>
+        <translation approved="true" key="use-module-auto-assign" new="false">
+            <note/>
+            <variant>Utilizar identificador de dispositivo autoasignado actual  </variant>
+        </translation>
+        <translation approved="true" key="use-assigned" new="false">
+            <note/>
+            <variant>Utilizar identificador de dispositivo asignado </variant>
+        </translation>
+        <translation approved="true" key="use-specific" new="false">
+            <note/>
+            <variant>Definir ID de dispositivo como </variant>
+        </translation>
+        <translation approved="true" key="choose-valid-file" new="false">
+            <note/>
+            <variant>"Seleccione un archivo {0} válido.</variant>
+        </translation>
+        <translation approved="true" key="invalid-file" new="false">
+            <note/>
+            <variant>Archivo no válido</variant>
+        </translation>
+        <translation approved="true" key="set-device-id" new="false">
+            <note/>
+            <variant>Definir identificador de dispositivo</variant>
+        </translation>
+        <translation approved="true" key="module-not-responding" new="false">
+            <note/>
+            <variant>El módulo no responde. Compruebe la configuración del puerto com y la conexión física con el módulo.</variant>
+        </translation>
+    </section>
+    <section id="logging">
+        <translation approved="true" key="writing-download-data-to-log" new="false">
+            <note/>
+            <variant>Escribiendo datos de descarga en el registro</variant>
+        </translation>
+        <translation approved="true"
+            key="error-writing-download-data-to-log" new="false">
+            <note/>
+            <variant>Error: no se han podido escribir los datos de descarga en el registro</variant>
+        </translation>
+        <translation approved="true" key="download-log" new="false">
+            <note/>
+            <variant>Descargar registro</variant>
+        </translation>
+        <translation approved="true" key="download-attempt-number" new="false">
+            <note/>
+            <variant>N.º de intentos de descarga</variant>
+        </translation>
+        <translation approved="true" key="not-applicable-label" new="false">
+            <note>Common abbreviation for "Not Applicable".</note>
+            <variant>N/D</variant>
+        </translation>
+        <translation approved="true" key="archived-to-directory-label" new="false">
+            <note/>
+            <variant>Archivado en el directorio:</variant>
+        </translation>
+        <translation approved="true" key="result-label" new="false">
+            <note/>
+            <variant>Resultado:</variant>
+        </translation>
+        <translation approved="true" key="locale-label" new="false">
+            <note/>
+            <variant>Configuración regional:</variant>
+        </translation>
+        <translation approved="true" key="error-message-label" new="false">
+            <note/>
+            <variant>Mensaje de error:</variant>
+        </translation>
+        <translation approved="true" key="date-time-label" new="false">
+            <note/>
+            <variant>Fecha/Hora:</variant>
+        </translation>
+        <translation approved="true" key="device-id-scheme-label" new="false">
+            <note/>
+            <variant>Esquema de identificador de dispositivo:</variant>
+        </translation>
+    </section>
+    <section id="field">
+        <translation approved="true" key="Custom" new="false">
+            <note/>
+            <variant>Personalizar</variant>
+        </translation>
+    </section>
+    <section id="field-assistant">
+        <translation approved="true" key="field-assistant-title" new="false">
+            <note/>
+            <variant>Iniciador del Asistente para campos</variant>
+        </translation>
+        <translation approved="true" key="field-assistant-exit-title" new="false">
+            <note/>
+            <variant>¿Salir del asistente del campo?</variant>
+        </translation>
+        <translation approved="true" key="server_is_running_exit_anyway" new="false">
+            <note/>
+            <variant>El servidor sigue ejecutándose. ¿Salir de todos modos?</variant>
+        </translation>
+        <translation approved="true" key="select-comm-port" new="false">
+            <note/>
+            <variant>Puerto de comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="Opening_system" new="false">
+            <note/>
+            <variant>Abriendo sistema; espere...</variant>
+        </translation>
+        <translation approved="true" key="Overwrite_System" new="false">
+            <note/>
+            <variant>El sistema ya existe. ¿Desea reemplazarlo?</variant>
+        </translation>
+        <translation approved="true" key="Creating_system" new="false">
+            <note/>
+            <variant>Creando sistema; espere...</variant>
+        </translation>
+        <translation approved="true" key="Creating" new="false">
+            <note/>
+            <variant>Creando</variant>
+        </translation>
+        <translation approved="true" key="Deleting_system" new="false">
+            <note/>
+            <variant>Eliminando sistema; espere...</variant>
+        </translation>
+        <translation approved="true" key="All_Source_Files" new="false">
+            <variant>Todos los archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="Copying_source_files" new="false">
+            <note/>
+            <variant>Copiando archivos de origen; espere...</variant>
+        </translation>
+        <translation approved="true" key="File_differences_warn_user" new="false">
+            <note>This is used to let the user know that there were differences in a specific file within a  zip file they are importing and a file on the disk. </note>
+            <variant>Los siguientes archivos han cambiado y se deben importar manualmente:</variant>
+        </translation>
+        <translation approved="true" key="Enter_system_name" new="false">
+            <note/>
+            <variant>Introducir un nombre del sistema</variant>
+        </translation>
+        <translation approved="true" key="new-system-hover" new="false">
+            <note/>
+            <variant>Crear un nuevo sistema</variant>
+        </translation>
+        <translation approved="true" key="delete-system-hover" new="false">
+            <note/>
+            <variant>Eliminar este sistema</variant>
+        </translation>
+        <translation approved="true" key="create-button" new="false">
+            <note/>
+            <variant>Crear</variant>
+        </translation>
+        <translation approved="true" key="import-button" new="false">
+            <note/>
+            <variant>Importar</variant>
+        </translation>
+        <translation approved="true" key="import-button-hover" new="false">
+            <note/>
+            <variant>Importar archivos de origen en el sistema</variant>
+        </translation>
+        <translation approved="true" key="export-button" new="false">
+            <note/>
+            <variant>Exportar</variant>
+        </translation>
+        <translation approved="true" key="export-button-hover" new="false">
+            <note/>
+            <variant>Exportar archivos de origen desde el sistema</variant>
+        </translation>
+        <translation approved="true" key="file-exists" new="false">
+            <note/>
+            <variant>El archivo existe</variant>
+        </translation>
+        <translation approved="true" key="zip-file-exists-overwrite" new="false">
+            <note/>
+            <variant>Este archivo ya existe. ¿Desea reemplazarlo?</variant>
+        </translation>
+        <translation approved="true" key="close-button" new="false">
+            <note/>
+            <variant>Cerrar</variant>
+        </translation>
+        <translation approved="true" key="Import_Files" new="false">
+            <note/>
+            <variant>Importar archivos</variant>
+        </translation>
+        <translation approved="true" key="Export_Files" new="false">
+            <note/>
+            <variant>Exportar archivos</variant>
+        </translation>
+        <translation approved="true" key="Zip_Archive" new="false">
+            <note/>
+            <variant>Archivo zip</variant>
+        </translation>
+        <translation approved="true" key="start-button" new="false">
+            <note/>
+            <variant>Iniciar</variant>
+        </translation>
+        <translation approved="true" key="stop-button" new="false">
+            <note/>
+            <variant>Detener</variant>
+        </translation>
+        <translation approved="true" key="start-hover" new="false">
+            <note/>
+            <variant>Iniciar sistema y abrir navegador</variant>
+        </translation>
+        <translation approved="true" key="stop-hover" new="false">
+            <note/>
+            <variant>Detener sistema y cerrar navegador</variant>
+        </translation>
+        <translation approved="true" key="get-ie-path-dialog-title" new="false">
+            <note/>
+            <variant>No se ha podido encontrar Internet Explorer</variant>
+        </translation>
+        <translation approved="true" key="ask-for-ie-location" new="false">
+            <note/>
+            <variant>Introduzca la ubicación de Internet Explorer o haga clic en "Examinar" para seleccionarla.</variant>
+        </translation>
+        <translation approved="true" key="ip-radio-button" new="false">
+            <note/>
+            <variant>BACnet/IP</variant>
+        </translation>
+        <translation approved="true" key="network-number-label" new="false">
+            <note/>
+            <variant>Red nº</variant>
+        </translation>
+        <translation approved="true" key="rnet-radio-button" new="false">
+            <note/>
+            <variant>Acceso local</variant>
+        </translation>
+        <translation approved="true" key="communications" new="false">
+            <note/>
+            <variant>Comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="time-zone" new="false">
+            <note/>
+            <variant>Zona horaria del sistema</variant>
+        </translation>
+        <translation approved="true" key="system-name" new="false">
+            <note/>
+            <variant>Nombre del sistema</variant>
+        </translation>
+        <translation approved="true" key="source-files" new="false">
+            <note/>
+            <variant>Archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="Current_System" new="false">
+            <note/>
+            <variant>Sistema actual</variant>
+        </translation>
+        <translation approved="true" key="System_Status" new="false">
+            <note/>
+            <variant>Estado del sistema</variant>
+        </translation>
+        <translation approved="true" key="SystemState_NotStarted" new="false">
+            <note/>
+            <variant>No iniciado</variant>
+        </translation>
+        <translation approved="true" key="SystemState_Starting" new="false">
+            <note/>
+            <variant>Iniciando</variant>
+        </translation>
+        <translation approved="true" key="SystemState_Started" new="false">
+            <note/>
+            <variant>Iniciado</variant>
+        </translation>
+        <translation approved="true" key="SystemState_Stopping" new="false">
+            <note/>
+            <variant>Deteniendo</variant>
+        </translation>
+        <translation approved="true" key="SystemState_NoSystem" new="false">
+            <note/>
+            <variant>Cree un sistema</variant>
+        </translation>
+        <translation approved="true" key="Stop_System_to_perform_action" new="false">
+            <note/>
+            <variant>Detenga el sistema antes de llevar a cabo esta acción.</variant>
+        </translation>
+        <translation approved="true" key="Create_System_before_starting" new="false">
+            <note/>
+            <variant>Cree o seleccione un sistema antes de iniciarlo.</variant>
+        </translation>
+        <translation approved="true" key="License_expires_on" new="false">
+            <note/>
+            <variant>La licencia vence el</variant>
+        </translation>
+        <translation approved="true"
+            key="Your_license_will_expire_in_0_days_contact_rep" new="false">
+            <note/>
+            <variant>Su licencia vencerá en {0} días. Póngase en contacto con su representante de {1} para solicitar una versión actualizada.</variant>
+        </translation>
+        <translation approved="true" key="connect-usb-link" new="false">
+            <note/>
+            <variant>Si su puerto no aparece en la lista, vuelva a iniciar la aplicación con USB-L conectado.</variant>
+        </translation>
+        <translation approved="true" key="Help_Topics" new="false">
+            <note/>
+            <variant>Temas de la ayuda</variant>
+        </translation>
+        <translation approved="true" key="Starting_Server" new="false">
+            <note/>
+            <variant>Iniciando servidor</variant>
+        </translation>
+        <translation approved="true" key="Stopping_Server" new="false">
+            <note/>
+            <variant>Deteniendo servidor</variant>
+        </translation>
+        <translation approved="true" key="Opening_Database" new="false">
+            <note/>
+            <variant>Abriendo base de datos</variant>
+        </translation>
+        <translation approved="true" key="Opening_Database_Failed" new="false">
+            <note/>
+            <variant>Error al abrir la base de datos</variant>
+        </translation>
+        <translation approved="true" key="Starting_Web_Server" new="false">
+            <note/>
+            <variant>Iniciando servidor</variant>
+        </translation>
+        <translation approved="true" key="Starting_Web_Server_Failed" new="false">
+            <note/>
+            <variant>Error al iniciar el servidor</variant>
+        </translation>
+        <translation approved="true" key="Starting_Communications" new="false">
+            <note/>
+            <variant>Iniciando comunicaciones</variant>
+        </translation>
+        <translation approved="true"
+            key="Starting_Communications_Failed" new="false">
+            <note/>
+            <variant>Error al iniciar comunicaciones</variant>
+        </translation>
+        <translation approved="true" key="Permission_Keys" new="false">
+            <note/>
+            <variant>Claves de permiso</variant>
+        </translation>
+        <translation approved="true" key="Permissions_Header_Expiration" new="false">
+            <note/>
+            <variant>Vence</variant>
+        </translation>
+        <translation approved="true" key="Permissions_Header_Name" new="false">
+            <note/>
+            <variant>Nombre de clave</variant>
+        </translation>
+        <translation approved="true" key="Permissions_Header_Author" new="false">
+            <note/>
+            <variant>Autor</variant>
+        </translation>
+        <translation approved="true" key="Permissions_Header_Notes" new="false">
+            <note/>
+            <variant>Notas</variant>
+        </translation>
+        <translation approved="true"
+            key="Permission_key_not_for_this_license" new="false">
+            <note/>
+            <variant>Esta clave de permiso no se aplica a la licencia actual</variant>
+        </translation>
+        <translation approved="true" key="Permission_key_expired" new="false">
+            <note/>
+            <variant>Vencido</variant>
+        </translation>
+        <translation approved="true" key="Permission_key_never_expires" new="false">
+            <note/>
+            <variant>Nunca</variant>
+        </translation>
+        <translation approved="true" key="license-owner" new="false">
+            <note/>
+            <variant>Nombre:</variant>
+        </translation>
+        <translation approved="true" key="license-permissionid" new="false">
+            <note/>
+            <variant>Identificador de permisos:</variant>
+        </translation>
+        <translation approved="true" key="license-vendorkey" new="false">
+            <note/>
+            <variant>Clave del proveedor:</variant>
+        </translation>
+        <translation approved="true" key="copy-to-clipboard" new="false">
+            <note/>
+            <variant>Copiar en el portapapeles</variant>
+        </translation>
+        <translation approved="true" key="copy-to-clipboard-hover" new="false">
+            <note/>
+            <variant>Copia la información de la licencia en el portapapeles. Esta información es necesaria para poder crear una clave de permisos para la licencia.</variant>
+        </translation>
+    </section>
+</resource-base>

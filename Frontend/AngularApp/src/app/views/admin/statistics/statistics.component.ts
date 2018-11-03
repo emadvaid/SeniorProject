@@ -6,9 +6,11 @@ import { StatisticsService }  from '../../../services/statistics/statistics.serv
   styleUrls: ['./statistics.component.css']
 })
 export class StatisticsComponent implements OnInit {
-  newKeys: number;
-  approvedKeys: number;
-  totalKeys: number;
+  newKeys: string;
+  approvedKeys: string;
+  totalKeys: string;
+  public versionNumber = '';
+  public language = '';
 
   constructor(
     private statisticsService: StatisticsService,
@@ -18,19 +20,19 @@ export class StatisticsComponent implements OnInit {
   }
 
   onSubmit() {
-    this.statisticsService.getNewKeys().subscribe(
-      (newKeys) => {
-        this.newKeys = newKeys.json();
+    this.statisticsService.getNewKeys(this.language, this.versionNumber).subscribe(
+      (keys) => {
+        this.newKeys = JSON.stringify(keys);
       }
-    );
-    this.statisticsService.getApprovedKeys().subscribe(
-      (approvedKeys) => {
-        this.approvedKeys = approvedKeys.json();
+    )
+    this.statisticsService.getApprovedKeys(this.language, this.versionNumber).subscribe(
+      (keys) => {
+        this.approvedKeys = JSON.stringify(keys);
       }
-    );
-    this.statisticsService.getTotalKeys().subscribe(
-      (totalKeys) => {
-        this.totalKeys = totalKeys.json();
+    )
+    this.statisticsService.getTotalKeys(this.language, this.versionNumber).subscribe(
+      (keys) => {
+        this.totalKeys = JSON.stringify(keys);
       }
     )
   }

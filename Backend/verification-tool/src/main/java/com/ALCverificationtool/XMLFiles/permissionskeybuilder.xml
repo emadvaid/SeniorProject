@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-base id="permissionskeybuilder" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+    <section id="menu">
+        <!-- Titles -->
+        <translation approved="true" key="permissionskeybuilider.title" new="false">
+            <variant>PermissionsKeyBuilder</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.permissions.tab.title" new="false">
+            <variant>Permisos</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.filetypes.tab.title" new="false">
+            <variant>Tipos de archivo</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.notes.tab.title" new="false">
+            <variant>Notas</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.file.title" new="false">
+            <variant>Archivo</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.window.title" new="false">
+            <variant>Ventana</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.configure.title" new="false">
+            <variant>Configurar</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.help.title" new="false">
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.exit.title" new="false">
+            <variant>Salir</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.about.title" new="false">
+            <variant>Acerca de PermissionsKeyBuilder</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.htmlviewer.title" new="false">
+            <variant>Visor HTML</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.new.title" new="false">
+            <variant>Nuevo</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.open.title" new="false">
+            <variant>Abrir</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.save.title" new="false">
+            <variant>Guardar</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.saveas.title" new="false">
+            <variant>Guardar como</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.menu.close.title" new="false">
+            <variant>Cerrar</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.allow.title" new="false">
+            <variant>Permitir</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.key.filefilter.title" new="false">
+            <variant>Archivos de clave de permisos</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.allow.type-is.title" new="false">
+            <variant>El tipo es</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.owners.title" new="false">
+            <variant>Propietario(s)</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.permissions-ids.title" new="false">
+            <variant>Identificadores de permisos</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.vendor-ids.title" new="false">
+            <variant>Claves del proveedor</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.permissions-id.title" new="false">
+            <variant>Identificador de permisos</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.vendor-id.title" new="false">
+            <variant>Clave del proveedor</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.expiration.title" new="false">
+            <variant>Vencimiento</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.expiration.expires.title" new="false">
+            <variant>Vence</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.main.borderTitle" new="false">
+            <variant>La clave se aplica a...</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.all.buttonLabel" new="false">
+            <variant>Todos los archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.type.buttonLabel" new="false">
+            <variant>Archivos de origen de tipo...</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.specific.buttonLabel" new="false">
+            <variant>Archivos de origen específicos</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.equipment.checkboxLabel" new="false">
+            <variant>Programa de control</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.view.checkboxLabel" new="false">
+            <variant>Gráfico</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.bacview.checkboxLabel" new="false">
+            <variant>BACView</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.touchscreen.checkboxLabel" new="false">
+            <variant>Equipo táctil (Equipment Touch)</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.files.filter.description" new="false">
+            <variant>Archivos de origen</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.confirm-save.title" new="false">
+            <variant>Confirmar guardar</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.confirm-save.save-changes.message" new="false">
+            <variant>¿Desea guardar los cambios en los archivos modificados?</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.confirm-save.overwrite.title" new="false">
+            <variant>¿Desea reemplazar el archivo?</variant>
+        </translation>
+        <translation approved="true" key="permissionskeybuilider.confirm-save.overwrite.message" new="false">
+            <variant>El archivo {0} ya existe. ¿Desea reemplazarlo?</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.file-open.close.message" new="false">
+            <variant>El archivo {0} ya está abierto. Debe cerrarlo para poder reemplazar el archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.preferences.title" new="false">
+            <variant>Preferencias</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.ok.title" new="false">
+            <variant>Aceptar</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.cancel.title" new="false">
+            <variant>Cancelar</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.htmlviewer.title" new="false">
+            <variant>Visor HTML</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.help.action.title" new="false">
+            <variant>Ayuda</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.preferences.action.title" new="false">
+            <variant>Preferencias...</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.error.notOwner" new="false">
+            <variant>No es el propietario de este archivo.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.error.noId" new="false">
+            <variant>El programa con el que se creó este archivo era de una versión anterior. Abra y guarde el archivo con la versión más reciente.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.start.error.message" new="false">
+            <variant>No se ha podido iniciar PermissionsKeyBuilder. El programa de instalación del producto está dañado. Intente volver a instalar la aplicación.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.validation.error.PermissionsIdNotBlank" new="false">
+            <variant>Especifique un identificador de permisos o una clave de proveedor.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.validation.error.ExpirationDateIsNotPast" new="false">
+            <variant>La fecha de vencimiento ya ha pasado. Seleccione una nueva fecha de vencimiento.</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilder.validation.error.AtLeastOnePermissionIsSelected" new="false">
+            <variant>Seleccione al menos un tipo de permiso para desbloquear.</variant>
+        </translation>
+        <!-- Mnemonics -->
+        <translation approved="true"
+            key="permissionskeybuilider.menu.file.mnemonic" new="false">
+            <variant>F</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.menu.help.mnemonic" new="false">
+            <variant>H</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.menu.exit.mnemonic" new="false">
+            <variant>E</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.menu.about.mnemonic" new="false">
+            <variant>A</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.menu.window.mnemonic" new="false">
+            <variant>W</variant>
+        </translation>
+        <translation approved="true"
+            key="permissionskeybuilider.menu.configure.mnemonic" new="false">
+            <variant>C</variant>
+        </translation>
+    </section>
+</resource-base>
