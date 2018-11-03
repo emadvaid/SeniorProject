@@ -146,7 +146,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
 
 
                             //section.appendChild(translationKey);
-                            resourceBase.appendChild(section);
+                            //resourceBase.appendChild(section);
 
 
                             TransformerFactory transformerFactory = TransformerFactory.newInstance();

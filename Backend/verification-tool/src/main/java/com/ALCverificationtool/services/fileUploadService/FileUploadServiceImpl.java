@@ -207,6 +207,9 @@ public class FileUploadServiceImpl implements FileUploadService {
                 keyData.setSectionNote(sectionNotes);
 //                System.out.println("\tSection Notes: " + transResRec.getSectionNote());
             }
+            if (keyData.getSectionNote() == null) {
+                keyData.setSectionNote("");
+            }
 
             if (childNode.getNodeName().equals("translation")) {
 //                boolean keyApproved = false;
