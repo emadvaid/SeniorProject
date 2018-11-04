@@ -62,7 +62,16 @@ export class KeyViewComponent implements OnInit {
   }
 
   async getKeyList(){
-    const resultList =  await this.keySevice.getNewKeys(this.currLanguage, this.currVersion).toPromise();
+
+    console.log(this.currLanguage + '' + this.currVersion);
+    let tempString = this.currVersion;
+    if(this.currVersion.indexOf('.') > -1){
+      tempString = tempString.replace(/\./g, '_');
+    }
+    console.log(tempString);
+
+    const resultList =  await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
+
     this.keys = resultList;
     console.log(this.keys);
   }
