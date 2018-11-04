@@ -33,6 +33,11 @@ export class ManageLanguageComponent implements OnInit {
     createLanguages() {
         this.router.navigate(['admin/createLanguage']);
     }
+
+    manageVersions(event: any) {
+        this.router.navigate(['admin/deleteLangByVerNum']);
+
+    }
     get diagnostics() {
         return 'model = ' + JSON.stringify(this.model);
     }

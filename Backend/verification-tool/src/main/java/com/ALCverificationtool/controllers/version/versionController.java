@@ -1,5 +1,6 @@
 package com.ALCverificationtool.controllers.version;
 
+import com.ALCverificationtool.controllers.BasicResponse;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.versionService.VersionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,11 @@ public class versionController {
     @Autowired
     private VersionService service;
 
+    /**
+     * This controller method creates a new Version
+     * @param request
+     * @return
+     */
     @CrossOrigin
     @PostMapping("/versions")
     public ResponseEntity<CreateVersionsResponse> createVersion(@RequestBody CreateVersionsRequest request) {
@@ -27,6 +33,52 @@ public class versionController {
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
+
+    /**
+     * This controller method deletes a version
+     * @return
+     */
+    @CrossOrigin
+    @DeleteMapping("/versions/{versionNumber}")
+    public ResponseEntity<BasicResponse> deleteVersion(
+            @PathVariable("versionNumber") String versionNumber) {
+
+        // we call the service method, and if no Exception, then we consider it a success
+        this.service.deleteVersion(versionNumber);
+
+        BasicResponse response = new BasicResponse(200, "success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    /**
+     * This controller method deletes a particular language for te given version
+     * @param versionNumber
+     * @param langCode
+     * @return
+     */
+    @CrossOrigin
+    @DeleteMapping("/versions/{versionNumber}/{langCode}")
+    public ResponseEntity<BasicResponse> deleteVersionLanguage(
+            @PathVariable("versionNumber") String versionNumber,
+            @PathVariable String langCode) {
+
+        // we call the service method, and if no Exception, then we consider it a success
+        this.service.deleteVersionLanguage(langCode, versionNumber);
+
+        BasicResponse response = new BasicResponse(200,"success");
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    /**
+     * This controller method gets a list of all the available versions
+     * @return
+     */
     @CrossOrigin
     @GetMapping("/versions")
     public ResponseEntity<GetVersionsResponse> getVer() {

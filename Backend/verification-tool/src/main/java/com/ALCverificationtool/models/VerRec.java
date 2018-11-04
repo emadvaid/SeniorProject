@@ -26,10 +26,15 @@ public class VerRec {
 
     }
 
-    public String getSafeVersionNumber() {
+    public static String getSafeVersionNumber(String rawVerNum) {
         // make the raw version number safe to use as a MySQL tables suffix
         String tmp = rawVerNum.replaceAll("\\.", "_");
         return tmp;
+    }
+
+
+    public String getSafeVersionNumber() {
+        return getSafeVersionNumber(this.rawVerNum);
     }
 
     public UUID getId() {
