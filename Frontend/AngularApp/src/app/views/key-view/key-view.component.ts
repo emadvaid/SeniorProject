@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LanguageKey} from '../../models/LanguageKey';
 import {VersionService} from '../../services/versions/versions.service';
 import {LanguagesService} from '../../services/languages/languages.service';
+import {KeysService} from '../../services/keys/keys.service';
 import { Version } from 'src/app/models/Version';
 import { Language } from 'src/app/models/Language';
 
@@ -29,12 +30,14 @@ export class KeyViewComponent implements OnInit {
 
   constructor(
     private versionService: VersionService,
-    private languageService: LanguagesService
+    private languageService: LanguagesService,
+    private keySevice: KeysService
   ) { }
 
-  ngOnInit() {
-    this.getVersions();
-    this.getLanguages();
+  async ngOnInit() {
+    await this.getVersions();
+    await this.getLanguages();
+    await this.getKeyList();
 
   }
 
@@ -42,7 +45,7 @@ export class KeyViewComponent implements OnInit {
     const versions = await this.versionService.getAll().toPromise();
     this.model.versions = versions;
       this.currVersion = this.model.versions[0].verNum;
-      console.log(versions);
+      console.log(this.currVersion);
   }
 
   async getLanguages() {
@@ -58,8 +61,10 @@ export class KeyViewComponent implements OnInit {
     console.log(this.currLanguage);
   }
 
-  getKeyList(){
-    const tableName = this.currLanguage + '_' + this.currVersion;
+  async getKeyList(){
+    const resultList =  await this.keySevice.getNewKeys(this.currLanguage, this.currVersion).toPromise();
+    this.keys = resultList;
+    console.log(this.keys);
   }
 
 }
