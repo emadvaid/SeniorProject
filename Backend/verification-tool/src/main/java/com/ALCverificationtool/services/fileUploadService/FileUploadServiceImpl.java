@@ -241,6 +241,9 @@ public class FileUploadServiceImpl implements FileUploadService {
                 keyData.setKeyNote(childNode.getTextContent());
 //                System.out.println("\t\tKey Notes: " + transResRec.getKeyNote());
             }
+            if (keyData.getKeyNote() == null) {
+                keyData.setKeyNote("");
+            }
             if (childNode.getNodeName().equals("variant") && childNode.getParentNode().getNodeName().equals("translation")) {
                 //System.out.println("\t\tTranslation Variant: " + childNode.getTextContent());
                 //System.out.println();
@@ -257,6 +260,7 @@ public class FileUploadServiceImpl implements FileUploadService {
 //                transResRec.setKeyNew(keyNew);
 //                transResRec.setKeyApproved(keyApproved);
                 keysDao.create(keyData);
+                keyData.setKeyNote("");
             }
             visitRecursively(childNode, keyData);
         }
