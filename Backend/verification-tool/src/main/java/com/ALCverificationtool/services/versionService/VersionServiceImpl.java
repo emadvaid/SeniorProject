@@ -34,6 +34,9 @@ public class VersionServiceImpl implements VersionService{
             throw new ServiceException("version cannot be null");
         }
 
+        if(newVerRecDetails.getVerNum()== null || newVerRecDetails.getVerNum().trim().length() < 1) {
+            throw new ServiceException("version number cannot be null or less than 1");
+        }
 
         if (verDao.findByRawVerNum(newVerRecDetails.getVerNum()).isPresent()) {
             throw new ServiceException("version already exist ");
@@ -54,7 +57,7 @@ public class VersionServiceImpl implements VersionService{
 
         // loop over all the language codes, and create a versioned table for each n
         for(LangRec langRec :languages) {
-            this.keysDao.createKeyTable(newVerRec.getSafeVersionNumber(),langRec.getLangCode(),true);
+            this.keysDao.createKeyTable(langRec.getLangCode(), newVerRec.getSafeVersionNumber(),true);
         }
 
         return newVerRec;
@@ -66,4 +69,41 @@ public class VersionServiceImpl implements VersionService{
 
         return results;
     }
+
+    @Override
+    public boolean deleteVersion(String versionNumber) {
+        if(versionNumber == null || versionNumber.trim().length() < 1) {
+            throw new ServiceException("version number cannot be empty");
+        }
+
+        boolean couldDelTables = this.keysDao.deleteKeyTablesByVersion(versionNumber);
+
+        if(!couldDelTables) {
+            throw new ServiceException("table deleted not successful");
+        }
+
+        this.verDao.deleteVerRecByRawVerNum(versionNumber);
+
+        return true;
+
+    }
+
+    @Override
+    public boolean deleteVersionLanguage(String langCode, String versionNumber) {
+        if(versionNumber == null || versionNumber.trim().length() < 1) {
+            throw new ServiceException("version number cannot be empty");
+        }
+        if(langCode == null || langCode.trim().length() < 1) {
+            throw new ServiceException("version number cannot be empty");
+        }
+
+        boolean couldDelTable = this.keysDao.deleteKeyTable(langCode, versionNumber);
+
+        if(!couldDelTable) {
+            throw new ServiceException("table deleted not successful");
+        }
+
+        return true;
+    }
 }
+

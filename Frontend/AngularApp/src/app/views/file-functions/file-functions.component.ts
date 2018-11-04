@@ -7,6 +7,8 @@ import {HttpClient, HttpHeaders, HttpParams} from '../../../../node_modules/@ang
 
 import {VersionService} from '../../services/versions/versions.service';
 import { Version } from 'src/app/models/Version';
+import { DeclareFunctionStmt } from '@angular/compiler';
+
 
 
 const httpOptions = {
@@ -150,10 +152,33 @@ export class FileFunctionsComponent implements OnInit {
     }
 
     uploadData.append('verNumber', JSON.stringify(this.versionNumber));
-    this.http.post(this.serverUrl, uploadData , httpOptions).subscribe(res => {
-      console.log(res);
-    });
+    this.http.post(this.serverUrl, uploadData , httpOptions)
+      .subscribe(
+        res => {
+        console.log('file-DeclareFunctionStmt.onUpload: results: ', res);
+        },
+        err => {
+          console.log('file-DeclareFunctionStmt.onUpload: error: ', err);
+        }
+      );
   }
+
+  deleteVersion(event: any) {
+    const verNum = event.target.dataset['vernum'];
+
+    this.versionService.deleteByVerNum(verNum)
+      .subscribe(
+        res => {
+          this.refresh();
+          console.log('file-DeclareFunctionStmt.deleteVersion: results: ', res);
+        },
+        err => {
+          this.refresh();
+          console.log('file-DeclareFunctionStmt.deleteVersion: error: ', err);
+        }
+      );
+  }
+
 
   clear() {
     document.getElementById('filesDrop').style.display = 'none';
@@ -169,6 +194,7 @@ export class FileFunctionsComponent implements OnInit {
   }
   get diagnostics() {
     return 'model = ' + JSON.stringify(this.model);
-}
+  }
+
 }
 

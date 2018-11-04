@@ -64,7 +64,11 @@
               <tbody>
                 <tr *ngFor="let version of model.versions">
                   <td>{{version.verNum}}</td>    
-                  <td></td>                      
+                  <td>
+                    <a class="btn btn-danger" attr.data-vernum="{{version.verNum}}" (click)="deleteVersion($event)" >
+                      Drop Version
+                    </a>
+                  </td>                      
                 </tr>
               </tbody>
           </table>
