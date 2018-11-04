@@ -20,6 +20,7 @@ export class KeyViewComponent implements OnInit {
   languages: any = {};
 
   //current Data
+  currLang: Language;
   currVersion = '';
   currLanguage = '';
 
