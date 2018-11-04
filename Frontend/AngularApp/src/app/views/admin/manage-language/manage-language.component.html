@@ -51,7 +51,7 @@
                       <tr *ngFor="let language of model.languages">
                       <td>{{language.langName}}</td>
                       <td>{{language.langCode}}</td>
-                      <td><a (click)="manageVersions($event)" attr.data-vernum="{{Language.langCode}}">Manage versions</a></td>
+                      <td><a (click)="manageVersions($event)" attr.data-vernum="{{language.langCode}}">Manage versions</a></td>
                       </tr>
                   </tbody>
               </table>
