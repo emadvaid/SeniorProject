@@ -4,755 +4,755 @@
         <!--  Building Translations-->
         <translation approved="false" key="Buildings" new="true">
             <note/>
-            <variant>Edificios</variant>
+            <variant>Buildings</variant>
         </translation>
         <translation approved="false" key="Address" new="true">
             <note/>
-            <variant>Dirección</variant>
+            <variant>Address</variant>
         </translation>
         <translation approved="false" key="Postal_Code" new="true">
             <note/>
-            <variant>Código postal</variant>
+            <variant>Postal Code</variant>
         </translation>
         <translation approved="false" key="Building_Name" new="true">
             <note/>
-            <variant>Nombre del edificio</variant>
+            <variant>Building Name</variant>
         </translation>
         <translation approved="false" key="Building_Type" new="true">
             <note/>
-            <variant>Tipo de edificio</variant>
+            <variant>Building Type</variant>
         </translation>
         <translation approved="false" key="Type" new="true">
             <note/>
-            <variant>Tipo</variant>
+            <variant>Type</variant>
         </translation>
         <translation approved="false" key="Building_Settings" new="true">
             <note/>
-            <variant>Configuración de edificio</variant>
+            <variant>Building Settings</variant>
         </translation>
         <translation approved="false" key="Building_Definitions" new="true">
             <note/>
-            <variant>Definiciones de edificio</variant>
+            <variant>Building Definitions</variant>
         </translation>
         <translation approved="false" key="Building_Properties" new="true">
             <note/>
-            <variant>Propiedades del edificio</variant>
+            <variant>Building Properties</variant>
         </translation>
         <translation approved="false" key="Building_and_Meter_Properties" new="true">
             <note/>
-            <variant>Propiedades del edificio y del contador</variant>
+            <variant>Building and Meter Properties</variant>
         </translation>
         <translation approved="false" key="Area_Size" new="true">
             <note/>
-            <variant>Tamaño de área</variant>
+            <variant>Area Size</variant>
         </translation>
         <translation approved="false" key="Area_Units" new="true">
             <note/>
-            <variant>Unidades de área</variant>
+            <variant>Area Units</variant>
         </translation>
         <translation approved="false" key="Geo_ZipCode" new="true">
             <note/>
-            <variant>Código postal/geográfico</variant>
+            <variant>Geo/Zip Code</variant>
         </translation>
         <translation approved="false" key="Geo_ZipCode_Country" new="true">
             <note/>
-            <variant>País del código postal/geográfico</variant>
+            <variant>Geo/Zip Code Country</variant>
         </translation>
         <translation approved="false" key="Country" new="true">
             <note/>
-            <variant>País</variant>
+            <variant>Country</variant>
         </translation>
         <translation approved="false" key="Building_Cat_Mgt" new="true">
             <note/>
-            <variant>Administración del catálogo de edificios</variant>
+            <variant>Building Catalog Management</variant>
         </translation>
         <translation approved="false" key="Add_Building" new="true">
             <note/>
-            <variant>Añadir un edificio</variant>
+            <variant>Add a Building</variant>
         </translation>
         <!--  Edit Group Page Translations-->
         <translation approved="false" key="Data_Type" new="true">
             <note/>
-            <variant>Tipo de datos</variant>
+            <variant>Data Type</variant>
         </translation>
         <translation approved="false" key="Sample_Interval" new="true">
             <note/>
-            <variant>Intervalo de muestra</variant>
+            <variant>Sample Interval</variant>
         </translation>
         <translation approved="false" key="Collection_Interval" new="true">
             <note/>
-            <variant>Intervalo de recopilación de datos de campo</variant>
+            <variant>Field Data Collection Interval</variant>
         </translation>
         <translation approved="false" key="Collection_Interval_Warning" new="true">
             <note/>
-            <variant>Las lecturas de este contador se recopilan desde los dispositivos de campo conforme a un intervalo superior a 15 minutos. Esto puede ocasionar retrasos en los datos de EnergyReports™. Para corregirlo, cambie el valor "escrito en el historiador" de la fuente de tendencias por un número inferior.</variant>
+            <variant>Readings for this meter are collected from field devices at an interval that is more than 15 minutes. This may cause data in EnergyReports™ to be delayed.  To correct this, change the trend source's 'write to historian' value to a lower number.</variant>
         </translation>
         <translation approved="false" key="Report_Trigger" new="true">
             <note/>
-            <variant>Activador de informes</variant>
+            <variant>Report Trigger</variant>
         </translation>
         <translation approved="false" key="Source_Selection_Per_Scope" new="true">
             <note/>
-            <variant>Selección de fuente por alcance</variant>
+            <variant>Source Selection per Scope</variant>
         </translation>
         <translation approved="false" key="Edit_Scope_Selection" new="true">
             <note/>
-            <variant>Selección de alcance de tendencia</variant>
+            <variant>Trend Scope Selection</variant>
         </translation>
         <translation approved="false" key="Edit_Tree_Scope" new="true">
             <note/>
-            <variant>Alcance de árbol</variant>
+            <variant>Tree Scope</variant>
         </translation>
         <translation approved="false" key="Selected_Trend_Scopes" new="true">
             <note/>
-            <variant>Alcances de tendencia seleccionados</variant>
+            <variant>Selected Trend Scopes</variant>
         </translation>
         <translation approved="false" key="Edit_Initial_Export_Range" new="true">
             <note/>
-            <variant>Rango de exportación inicial</variant>
+            <variant>Initial Export Range</variant>
         </translation>
         <translation approved="false" key="Edit_Export_Format" new="true">
             <note/>
-            <variant>Formato de exportación</variant>
+            <variant>Export Format</variant>
         </translation>
         <translation approved="false" key="Edit_Export_All_Trends_Radio" new="true">
             <note/>
-            <variant>Exportar todas la fuentes dentro del alcance seleccionado</variant>
+            <variant>Export all sources within selected scope</variant>
         </translation>
         <translation approved="false" key="Edit_Export_Specific_Trends_Radio" new="true">
             <note/>
-            <variant>Seleccionar fuentes para exportar dentro del alcance seleccionado</variant>
+            <variant>Select sources to export within selected scope</variant>
         </translation>
         <!--  Manage Group Page Translations-->
         <translation approved="false" key="Export_Enabled" new="true">
             <note/>
-            <variant>Exportación activada</variant>
+            <variant>Export Enabled</variant>
         </translation>
         <translation approved="false" key="Trend_Unit" new="true">
             <note/>
-            <variant>Unidad de tendencia</variant>
+            <variant>Trend Unit</variant>
         </translation>
         <translation approved="false" key="Trend_Type" new="true">
             <note/>
-            <variant>Tipo de tendencia</variant>
+            <variant>Trend Type</variant>
         </translation>
         <translation approved="false" key="Meter_Name" new="true">
             <note/>
-            <variant>Nombre del medidor</variant>
+            <variant>Meter Name</variant>
         </translation>
         <translation approved="false" key="Meter_Type" new="true">
             <note/>
-            <variant>Tipo de medidor</variant>
+            <variant>Meter Type</variant>
         </translation>
         <translation approved="false" key="Select_Row" new="true">
             <note/>
-            <variant>Seleccionar fila</variant>
+            <variant>Select Row</variant>
         </translation>
         <translation approved="false" key="Lookup_Tag" new="true">
             <note/>
-            <variant>Etiqueta Looup</variant>
+            <variant>Looup Tag</variant>
         </translation>
         <translation approved="false" key="Find_Meter_Sources" new="true">
             <note/>
-            <variant>Encontrar fuentes de contador</variant>
+            <variant>Find Meter Sources</variant>
         </translation>
         <translation approved="false" key="Enabled_For_Export" new="true">
             <note/>
-            <variant>Activado para exportación</variant>
+            <variant>Enabled For Export</variant>
         </translation>
         <translation approved="false" key="Meter_Sources_Mapped" new="true">
             <note/>
-            <variant>Fuentes de contador conectadas</variant>
+            <variant>Meter Sources Paired</variant>
         </translation>
         <translation approved="false" key="Save_Meter_Sources" new="true">
             <note/>
-            <variant>Guardar conexiones del contador</variant>
+            <variant>Save Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Update_Meter_Sources" new="true">
             <note/>
-            <variant>Actualizar conexiones del contador</variant>
+            <variant>Update Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Meters_To_SaaS_Success" new="true">
             <note/>
-            <variant>se han creado correctamente los contadores en el SaaS de EnergyReports™.</variant>
+            <variant>meters have been successfully created in the EnergyReports™ SaaS.</variant>
         </translation>
         <translation approved="false" key="Assigned_Meter_Sources" new="true">
             <note/>
-            <variant>Fuentes de contador asignadas</variant>
+            <variant>Assigned Meter Sources</variant>
         </translation>
         <translation approved="false" key="MeterSuccessSave" new="true">
             <note/>
-            <variant>Se han guardado correctamente las fuentes de contador.</variant>
+            <variant>Meter sources have been successfully saved.</variant>
         </translation>
         <translation approved="false" key="Meter_Success_Update" new="true">
             <note/>
-            <variant>Se han actualizado correctamente las fuentes de contador.</variant>
+            <variant>Meter sources have been successfully updated.</variant>
         </translation>
         <translation approved="false" key="Assigned_Meter_Sources" new="true">
             <note/>
-            <variant>Fuentes de contador asignadas</variant>
+            <variant>Assigned Meter Sources</variant>
         </translation>
         <translation approved="false" key="MeterSuccessAssign" new="true">
             <note/>
-            <variant>Se han asignado fuentes de contador. Diríjase a la página "Conexiones de contador" para completar la configuración, la conexión y los ajustes de inserción de datos.</variant>
+            <variant>Meter sources have been assigned. Navigate to the 'Meter Pairings' page to complete the configuration, pairing, and data push setup.</variant>
         </translation>
         <translation approved="false" key="Delete_Selected_Meter_Sources" new="true">
             <note/>
-            <variant>Borrar fuentes de contador seleccionadas</variant>
+            <variant>Delete Selected Meter Sources</variant>
         </translation>
         <translation approved="false" key="Manage_Meter_Assignments" new="true">
             <note/>
-            <variant>Administrar asignaciones de contador</variant>
+            <variant>Manage Meter Assignments</variant>
         </translation>
         <translation approved="false" key="Requires_Configuration" new="true">
             <note/>
-            <variant>El contador requiere configuración</variant>
+            <variant>Meter Requires Configuration</variant>
         </translation>
         <!--  Manage Meter Mapping Page Translations-->
         <translation approved="false" key="In_Service" new="true">
             <note/>
-            <variant>En servicio</variant>
+            <variant>In Service</variant>
         </translation>
         <translation approved="false" key="Ready_To_Push" new="true">
             <note/>
-            <variant>Listo para puesta en servicio</variant>
+            <variant>Ready to push into Service</variant>
         </translation>
         <translation approved="false" key="Requires_Export_Enabled" new="true">
             <note/>
-            <variant>Debe activarse la exportación</variant>
+            <variant>Requires Export to be Enabled</variant>
         </translation>
         <translation approved="false" key="Require_Configuration" new="true">
             <note/>
-            <variant>Requieren configuración</variant>
+            <variant>Require Configuration</variant>
         </translation>
         <translation approved="false" key="Meter_Is_In_Service" new="true">
             <note/>
-            <variant>Datos en servicio y de exportación del contador</variant>
+            <variant>In Service and Exporting Meter Data</variant>
         </translation>
         <translation approved="false" key="Meter_Source_Mappings_Management" new="true">
             <note/>
-            <variant>Administración de conexiones de fuentes de contador</variant>
+            <variant>Meter Source Pairing Management</variant>
         </translation>
         <translation approved="false" key="Select_Meter_Mappings" new="true">
             <note/>
-            <variant>Seleccionar todas las conexiones del contador</variant>
+            <variant>Select All Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Unselect_Meter_Mappings" new="true">
             <note/>
-            <variant>Deseleccionar todas las conexiones del contador</variant>
+            <variant>Un-select All Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Delete_Meter_Mappings" new="true">
             <note/>
-            <variant>Eliminar todas las conexiones de contador seleccionadas</variant>
+            <variant>Delete Selected Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Push_Meter_Mapping" new="true">
             <note/>
-            <variant>Introducir conexión de contador</variant>
+            <variant>Push Meter Pairing</variant>
         </translation>
         <translation approved="false" key="Sync_Meter_Mapping" new="true">
             <note/>
-            <variant>Sincronizar la conexión de contador con la instancia de contador de SaaS</variant>
+            <variant>Synchronize Meter Pairing with SaaS Meter Instance</variant>
         </translation>
         <translation approved="false" key="Edit_Meter_Mapping" new="true">
             <note/>
-            <variant>Editar conexiones de contador</variant>
+            <variant>Edit Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Hide_Source_Details" new="true">
             <note/>
-            <variant>Ocultar detalles de fuente</variant>
+            <variant>Hide Source Details</variant>
         </translation>
         <translation approved="false" key="Show_Source_Details" new="true">
             <note/>
-            <variant>Mostrar detalles de fuente</variant>
+            <variant>Show Source Details</variant>
         </translation>
         <translation approved="false" key="Hide_Building_Details" new="true">
             <note/>
-            <variant>Ocultar detalles de edificio</variant>
+            <variant>Hide Building Details</variant>
         </translation>
         <translation approved="false" key="Show_Building_Details" new="true">
             <note/>
-            <variant>Mostrar detalles de edificio</variant>
+            <variant>Show Building Details</variant>
         </translation>
         <translation approved="false" key="Reading_Type" new="true">
             <note/>
-            <variant>Tipo de lectura</variant>
+            <variant>Reading Type</variant>
         </translation>
         <translation approved="false" key="Resource_Type" new="true">
             <note/>
-            <variant>Tipo de recurso</variant>
+            <variant>Resource Type</variant>
         </translation>
         <translation approved="false" key="Source_Units" new="true">
             <note/>
-            <variant>Unidades de fuente</variant>
+            <variant>Source Units</variant>
         </translation>
         <translation approved="false" key="Storage_Units" new="true">
             <note/>
-            <variant>Unidades de almacenamiento</variant>
+            <variant>Storage Units</variant>
         </translation>
         <translation approved="false" key="Display_Units" new="true">
             <note/>
-            <variant>Mostrar unidades</variant>
+            <variant>Display Units</variant>
         </translation>
         <translation approved="false" key="Integration" new="true">
             <note/>
-            <variant>Integración</variant>
+            <variant>Integration</variant>
         </translation>
         <translation approved="false" key="First_Reading" new="true">
             <note/>
-            <variant>Primera lectura</variant>
+            <variant>First Reading</variant>
         </translation>
         <translation approved="false" key="Latest_Reading" new="true">
             <note/>
-            <variant>Última lectura</variant>
+            <variant>Latest Reading</variant>
         </translation>
         <translation approved="false" key="Manual_Meter_Export" new="true">
             <note/>
-            <variant>Exportación de contador manual</variant>
+            <variant>Manual Meter Export</variant>
         </translation>
         <translation approved="false" key="Manual_Meter_Data_Export_For" new="true">
             <note/>
-            <variant>Exportación de datos de contador manual para</variant>
+            <variant>Manual Meter Data Export For</variant>
         </translation>
         <translation approved="false" key="Export" new="true">
             <note/>
-            <variant>Exportar</variant>
+            <variant>Export</variant>
         </translation>
         <translation approved="false" key="Run_Export" new="true">
             <note/>
-            <variant>Ejecutar exportación</variant>
+            <variant>Run Export</variant>
         </translation>
         <translation approved="false" key="Meter_Source_Properties" new="true">
             <note/>
-            <variant>Propiedades de fuente de contador</variant>
+            <variant>Meter Source Properties</variant>
         </translation>
         <translation approved="false" key="Meter_Source_Name" new="true">
             <note/>
-            <variant>Nombre de fuente de contador</variant>
+            <variant>Meter Source Name</variant>
         </translation>
         <translation approved="false" key="Delete_Meter_Paring" new="true">
             <note/>
-            <variant>Eliminar conexión de contador</variant>
+            <variant>Delete Meter Pairing</variant>
         </translation>
         <translation approved="false" key="Manage_Export_Settings" new="true">
             <note/>
-            <variant>Administrar ajustes de exportación para</variant>
+            <variant>Manage Export Settings for</variant>
         </translation>
         <translation approved="false" key="Disable_Export_Selected" new="true">
             <note/>
-            <variant>Desactivar exportación para las conexiones de contador seleccionadas</variant>
+            <variant>Disable Export for Selected Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Push_Meters_To_Saas" new="true">
             <note/>
-            <variant>Poner en servicio los contadores seleccionados</variant>
+            <variant>Push Selected Meters into Service</variant>
         </translation>
         <translation approved="false" key="Assign_Meters_To_Building" new="true">
             <note/>
-            <variant>Asignar los contadores seleccionados a un edificio</variant>
+            <variant>Assign Selected Meters to a Building</variant>
         </translation>
         <translation approved="false" key="Enable_Export_Selected" new="true">
             <note/>
-            <variant>Activar la exportación para las conexiones de contador seleccionadas</variant>
+            <variant>Enable Export for Selected Meter Pairings</variant>
         </translation>
         <!--  Manage Meter Sources Page Translations-->
         <translation approved="false" key="Select_Meter_Sources" new="true">
             <note/>
-            <variant>Seleccionar todas las fuentes de contador</variant>
+            <variant>Select All Meter Sources</variant>
         </translation>
         <translation approved="false" key="Unselect_Meter_Sources" new="true">
             <note/>
-            <variant>Deseleccionar todas las fuentes de contador</variant>
+            <variant>Un-select All Meter Sources</variant>
         </translation>
         <translation approved="false" key="Assign_Meter_Sources" new="true">
             <note/>
-            <variant>Asignar fuentes de contador seleccionadas</variant>
+            <variant>Assign Selected Meter Sources</variant>
         </translation>
         <translation approved="false" key="Apply_Filter" new="true">
             <note/>
-            <variant>Aplicar filtro</variant>
+            <variant>Apply Filter</variant>
         </translation>
         <translation approved="false" key="Refresh_Meter_Sources" new="true">
             <note/>
-            <variant>Actualizar fuentes de contador</variant>
+            <variant>Refresh Meter Sources</variant>
         </translation>
         <translation approved="false" key="Meter_Sources_Filter" new="true">
             <note/>
-            <variant>Criterios de filtro de fuentes de contador</variant>
+            <variant>Meter Sources Filter Criteria</variant>
         </translation>
         <translation approved="false" key="System_Scope" new="true">
             <note/>
-            <variant>Alcance de sistema</variant>
+            <variant>System Scope</variant>
         </translation>
         <translation approved="false" key="Filter" new="true">
             <note/>
-            <variant>Filtros</variant>
+            <variant>Filter</variant>
         </translation>
         <translation approved="false" key="Selected" new="true">
             <note/>
-            <variant>Seleccionado</variant>
+            <variant>Selected</variant>
         </translation>
         <translation approved="false" key="Meter_Property" new="true">
             <note/>
-            <variant>Propiedad de contador</variant>
+            <variant>Meter Property</variant>
         </translation>
         <translation approved="false" key="Meter_Properties" new="true">
             <note/>
-            <variant>Propiedades de contador</variant>
+            <variant>Meter Properties</variant>
         </translation>
         <translation approved="false" key="Meter_Configurations" new="true">
             <note/>
-            <variant>Configuraciones de contador</variant>
+            <variant>Meter Configurations</variant>
         </translation>
         <translation approved="false" key="Unassigned_Meter_Sources" new="true">
             <note/>
-            <variant>Fuentes de contador no asignadas</variant>
+            <variant>Unassigned Meter Sources</variant>
         </translation>
         <translation approved="false" key="Unassigned_Meter_Selection" new="true">
             <note/>
-            <variant>Selección de fuentes de contador no asignadas</variant>
+            <variant>Unassigned Meter Sources Selection</variant>
         </translation>
         <translation approved="false" key="Manage_Export_History" new="true">
             <note/>
-            <variant>Administrar historial de exportación</variant>
+            <variant>Manage Export History</variant>
         </translation>
         <translation approved="false" key="Delete_Export_History" new="true">
             <note/>
-            <variant>Eliminar historial de exportación</variant>
+            <variant>Delete Export History</variant>
         </translation>
         <translation approved="false" key="Export_Properties" new="true">
             <note/>
-            <variant>Propiedades de exportación</variant>
+            <variant>Export Properties</variant>
         </translation>
         <!--  Navigation Bar Translations-->
         <translation approved="false" key="Remote_Meter_Assignments" new="true">
             <note/>
-            <variant>Asignaciones de contador remotas</variant>
+            <variant>Remote Meter Assignments</variant>
         </translation>
         <translation approved="false" key="Buildings" new="true">
             <note/>
-            <variant>Edificios</variant>
+            <variant>Buildings</variant>
         </translation>
         <translation approved="false" key="Meter_Mappings" new="true">
             <note/>
-            <variant>Conexiones de contador</variant>
+            <variant>Meter Pairings</variant>
         </translation>
         <translation approved="false" key="Meter_Sources" new="true">
             <note/>
-            <variant>Fuentes de contador</variant>
+            <variant>Meter Sources</variant>
         </translation>
         <!--        -->
         <translation approved="false" key="Remote_Meters" new="true">
             <note/>
-            <variant>Contadores remotos</variant>
+            <variant>Remote Meters</variant>
         </translation>
         <translation approved="false" key="Scope" new="true">
             <note/>
-            <variant>Alcance</variant>
+            <variant>Scope</variant>
         </translation>
         <translation approved="false" key="Remote_Meters_Report" new="true">
             <note/>
-            <variant>Informe de contadores remotos</variant>
+            <variant>Remote Meters Report</variant>
         </translation>
         <translation approved="false" key="Comm_Access_Settings" new="true">
             <note/>
-            <variant>Ajustes de acceso y comunicación de la plataforma de energía</variant>
+            <variant>Energy Platform Communication and Access Settings</variant>
         </translation>
         <translation approved="false" key="Refresh_Access_Credentials" new="true">
             <note/>
-            <variant>Inicializar credenciales OAuth</variant>
+            <variant>Initialize OAuth Credentials</variant>
         </translation>
         <translation approved="false" key="Clear_Access_Credentials" new="true">
             <note/>
-            <variant>Borrar credenciales de acceso</variant>
+            <variant>Clear Access Credentials</variant>
         </translation>
         <translation approved="false" key="Clear_Export_History" new="true">
             <note/>
-            <variant>Borrar historial de exportación</variant>
+            <variant>Clear Export History</variant>
         </translation>
         <translation approved="false" key="Meter_Id" new="true">
             <note/>
-            <variant>Identificador de contador</variant>
+            <variant>Meter ID</variant>
         </translation>
         <translation approved="false" key="Trend_Source_Reference_Id" new="true">
             <note/>
-            <variant>Identificador de referencia de la fuente de tendencia</variant>
+            <variant>Trend Source Reference ID</variant>
         </translation>
         <translation approved="false" key="Property" new="true">
             <note/>
-            <variant>Propiedad</variant>
+            <variant>Property</variant>
         </translation>
         <translation approved="false" key="Measure_Energy" new="true">
             <note/>
-            <variant>Energía</variant>
+            <variant>Energy</variant>
         </translation>
         <translation approved="false" key="Measure_OAT" new="true">
             <note/>
-            <variant>Temperatura del aire exterior</variant>
+            <variant>Outside Air Temperature</variant>
         </translation>
         <translation approved="false" key="Measure_Flow" new="true">
             <note/>
-            <variant>Flujo</variant>
+            <variant>Flow</variant>
         </translation>
         <translation approved="false" key="Measure_EI" new="true">
             <note/>
-            <variant>Índice Ambiental</variant>
+            <variant>Environmental Index</variant>
         </translation>
         <translation approved="false" key="Measure_All" new="true">
             <note/>
-            <variant>Todo</variant>
+            <variant>All</variant>
         </translation>
         <translation approved="false" key="Delete" new="true">
             <note/>
-            <variant>Eliminar</variant>
+            <variant>Delete</variant>
         </translation>
         <!--  Settings Page Translations-->
         <translation approved="false" key="Https_Only_Warning" new="true">
             <note/>
-            <variant>** Este complemento requiere que HTTPS esté activado en el servidor. **
+            <variant>** This addon requires that HTTPS be enabled on the server. **
             </variant>
         </translation>
         <translation approved="false" key="Local_HTTPS_Port" new="true">
             <note/>
-            <variant>Puerto HTTPS local</variant>
+            <variant>Local HTTPS Port</variant>
         </translation>
         <translation approved="false" key="REST_API_Host" new="true">
             <note/>
-            <variant>URI de destino de la API</variant>
+            <variant>API Target URI</variant>
         </translation>
         <translation approved="false" key="OAuth_Client_Id" new="true">
             <note/>
-            <variant>Identificador de cliente OAuth</variant>
+            <variant>OAuth Client Id</variant>
         </translation>
         <translation approved="false" key="OAuth_Client_Secret" new="true">
             <note/>
-            <variant>Secreto del cliente OAuth</variant>
+            <variant>OAuth Client Secret</variant>
         </translation>
         <translation approved="false" key="Partner_OAuth_Initialization" new="true">
             <note/>
-            <variant>Inicialización OAuth de socio</variant>
+            <variant>Partner OAuth Initialization</variant>
         </translation>
         <translation approved="false" key="OAuth_Callback_Registered_Host" new="true">
             <note/>
-            <variant>Host registrado de verificación OAuth</variant>
+            <variant>OAuth Callback Registered Host</variant>
         </translation>
         <translation approved="false" key="OAuth_Callback_Fully_Qualified_URL" new="true">
             <note/>
-            <variant>URL de verificación OAuth totalmente cualificada</variant>
+            <variant>OAuth Callback Fully Qualified URL</variant>
         </translation>
         <translation approved="false" key="OAuth_Authorization_Path" new="true">
             <note/>
-            <variant>Ruta de autorización OAuth</variant>
+            <variant>OAuth Authorization Path</variant>
         </translation>
         <translation approved="false" key="Application_Target_URI" new="true">
             <note/>
-            <variant>URI de destino de la aplicación</variant>
+            <variant>Application Target URI</variant>
         </translation>
         <translation approved="false" key="OAuth_Token_Path" new="true">
             <note/>
-            <variant>Ruta del símbolo OAuth</variant>
+            <variant>OAuth Token Path</variant>
         </translation>
         <translation approved="false" key="OAuth_Callback_Path" new="true">
             <note/>
-            <variant>Ruta de verificación de OAuth</variant>
+            <variant>OAuth Callback Path</variant>
         </translation>
         <translation approved="false" key="Log_Settings" new="true">
             <note/>
-            <variant>Ajustes de registro</variant>
+            <variant>Log Settings</variant>
         </translation>
         <translation approved="false" key="Enable_Verbose_Logging" new="true">
             <note/>
-            <variant>Activar registro detallado</variant>
+            <variant>Enable Verbose Logging</variant>
         </translation>
         <translation approved="false" key="Verbose_Log_Instructional_Text" new="true">
             <note/>
-            <variant>** Realice esta tarea con ayuda de Soporte técnico. Hacer clic en este botón activa el registro de aplicación detallado durante 5 minutos. **</variant>
+            <variant>** Perform this task under the direction of Technical Support. Clicking this button enables verbose application logging for 5 minutes. **</variant>
         </translation>
         <translation approved="false" key="System_Settings" new="true">
             <note/>
-            <variant>Configuración del sistema</variant>
+            <variant>System Settings</variant>
         </translation>
         <translation approved="false" key="Settings_Save" new="true">
             <note/>
-            <variant>Guardar configuraciones</variant>
+            <variant>Save Settings</variant>
         </translation>
         <translation approved="false" key="Settings_Export_Process" new="true">
             <note/>
-            <variant>Exportar configuraciones de proceso</variant>
+            <variant>Export Process Settings</variant>
         </translation>
         <translation approved="false" key="Site_Identifier" new="true">
             <note/>
-            <variant>Identificador de sitio</variant>
+            <variant>Site Identifier</variant>
         </translation>
         <translation approved="false" key="Settings_Deletion" new="true">
             <note/>
-            <variant>Activar eliminación automática de artefacto</variant>
+            <variant>Enable Artifact Auto-deletion</variant>
         </translation>
         <translation approved="false" key="Settings_Delete_Older" new="true">
             <note/>
-            <variant>Eliminar del disco los artefactos de antigüedad superior al n.º de días especificado</variant>
+            <variant>Delete Artifacts on Disk Older than Specified # of Days</variant>
         </translation>
         <translation approved="false" key="Settings_Schedule_Definitions" new="true">
             <note/>
-            <variant>Definiciones de horarios</variant>
+            <variant>Schedule Definitions</variant>
         </translation>
         <translation approved="false" key="2Years_of_Data" new="true">
             <note/>
-            <variant>2 años de datos</variant>
+            <variant>2 years of data</variant>
         </translation>
         <translation approved="false" key="1Year_of_Data" new="true">
             <note/>
-            <variant>1 año de datos</variant>
+            <variant>1 year of data</variant>
         </translation>
         <translation approved="false" key="3Months_of_Data" new="true">
             <note/>
-            <variant>3 meses de datos</variant>
+            <variant>3 months of data</variant>
         </translation>
         <translation approved="false" key="30Days_of_Data" new="true">
             <note/>
-            <variant>30 días de datos</variant>
+            <variant>30 days of data</variant>
         </translation>
         <translation approved="false" key="7Days_of_Data" new="true">
             <note/>
-            <variant>7 días de datos</variant>
+            <variant>7 days of data</variant>
         </translation>
         <translation approved="false" key="1Day_of_Data" new="true">
             <note/>
-            <variant>1 día de datos</variant>
+            <variant>1 day of data</variant>
         </translation>
         <translation approved="false" key="1Hour_of_Data" new="true">
             <note/>
-            <variant>1 hora de datos</variant>
+            <variant>1 hour of data</variant>
         </translation>
         <translation approved="false" key="Custom_Date_Range" new="true">
             <note/>
-            <variant>Personalizar rango de fechas</variant>
+            <variant>Custom Date Range</variant>
         </translation>
         <translation approved="false" key="Settings_Suspend_Export" new="true">
             <note/>
-            <variant>Suspender proceso de exportación</variant>
+            <variant>Suspend Export Process</variant>
         </translation>
         <translation approved="false" key="Setting_Artifact_Dir" new="true">
             <note/>
-            <variant>Directorio de artefactos de exportación</variant>
+            <variant>Export artifact directory</variant>
         </translation>
         <translation approved="false" key="Export_History_Management" new="true">
             <note/>
-            <variant>Administración de historial de exportación</variant>
+            <variant>Export History Management</variant>
         </translation>
         <translation approved="false" key="Delete_All_Export_History" new="true">
             <note/>
-            <variant>Eliminar todo el historial de exportación</variant>
+            <variant>Delete all export history</variant>
         </translation>
         <translation approved="false" key="Delete_Log_History_Instructional_Text" new="true">
             <note/>
-            <variant>** ¡Esta operación eliminará TODO el historial de exportación, con lo que todos los datos de tendencias volverán a exportarse a EnergyReports™! Utilícela con precaución. **</variant>
+            <variant>** This operation will remove ALL export history resulting in all trend data being re-exported to EnergyReports™! Use with caution. **</variant>
         </translation>
         <!--  Artifacts Page Translations-->
         <translation approved="false" key="Artifact_Success" new="true">
             <note/>
-            <variant>Correcto</variant>
+            <variant>Successful</variant>
         </translation>
         <translation approved="false" key="Artifact_Progressing" new="true">
             <note/>
-            <variant>En curso</variant>
+            <variant>In Progress</variant>
         </translation>
         <translation approved="false" key="Artifact_Failed" new="true">
             <note/>
-            <variant>Error</variant>
+            <variant>Failed</variant>
         </translation>
         <translation approved="false" key="Artifact_Suspended" new="true">
             <note/>
-            <variant>Suspendido</variant>
+            <variant>Suspended</variant>
         </translation>
         <translation approved="false" key="Artifact_Preempted" new="true">
             <note/>
-            <variant>Bloqueado</variant>
+            <variant>Blocked</variant>
         </translation>
         <translation approved="false" key="Artifact_Trend_Data_History" new="true">
             <note/>
-            <variant>Historial de exportaciones de datos de tendencia</variant>
+            <variant>Trend Data Export History</variant>
         </translation>
         <translation approved="false" key="Delete_All_Export_History" new="true">
             <note/>
-            <variant>Eliminar todo el historial de exportación</variant>
+            <variant>Delete All Export History</variant>
         </translation>
         <translation approved="false" key="Delete_Selected_Export_History" new="true">
             <note/>
-            <variant>Eliminar el historial de exportación seleccionado</variant>
+            <variant>Delete Selected Export History</variant>
         </translation>
         <translation approved="false" key="Schedule_Time" new="true">
             <note/>
-            <variant>Programar horario</variant>
+            <variant>Schedule Time</variant>
         </translation>
         <translation approved="false" key="Schedule_Id" new="true">
             <note/>
-            <variant>Horario</variant>
+            <variant>Schedule</variant>
         </translation>
         <translation approved="false" key="Show_Details_For" new="true">
             <note/>
-            <variant>Mostrar detalles para</variant>
+            <variant>Show Details For</variant>
         </translation>
         <translation approved="false" key="Hide_Details_For" new="true">
             <note/>
-            <variant>Ocultar detalles para</variant>
+            <variant>Hide Details For</variant>
         </translation>
         <translation approved="false" key="Display_Path" new="true">
             <note/>
-            <variant>Mostrar ruta</variant>
+            <variant>Display Path</variant>
         </translation>
         <translation approved="false" key="Sample_Count" new="true">
             <note/>
-            <variant>Número de lecturas</variant>
+            <variant>Reading Count</variant>
         </translation>
         <translation approved="false" key="Exported_Sample_Count" new="true">
             <note/>
-            <variant>Número de lecturas exportadas</variant>
+            <variant>Exported Reading Count</variant>
         </translation>
         <translation approved="false" key="Attempted_Sample_Count" new="true">
             <note/>
-            <variant>Número de intentos de lectura</variant>
+            <variant>Attempted Reading Count</variant>
         </translation>
         <translation approved="false" key="First_Sample_Time" new="true">
             <note/>
-            <variant>Hora de la primera lectura</variant>
+            <variant>First Reading Time</variant>
         </translation>
         <translation approved="false" key="Last_Sample_Time" new="true">
             <note/>
-            <variant>Hora de la última lectura</variant>
+            <variant>Last Reading Time</variant>
         </translation>
         <translation approved="false" key="buildingOS_Meter_Id" new="true">
             <note/>
-            <variant>Identificador de contador EnergyReports™</variant>
+            <variant>EnergyReports™ Meter Id</variant>
         </translation>
         <translation approved="false" key="Start_Auto_Refresh" new="true">
             <note/>
-            <variant>Iniciar actualización automática</variant>
+            <variant>Start Auto Refresh</variant>
         </translation>
         <translation approved="false" key="Stop_Auto_Refresh" new="true">
             <note/>
-            <variant>Detener actualización automática</variant>
+            <variant>Stop Auto Refresh</variant>
         </translation>
         <!-- proxy Translations -->
         <translation approved="false" key="Proxy_Configuration" new="true">
             <note/>
-            <variant>Configuración del proxy</variant>
+            <variant>Proxy Configuration</variant>
         </translation>
         <translation approved="false" key="Proxy_Modify_Warning" new="true">
             <note/>
-            <variant>** ¡Ajustes generales del proxy! Los cambios en estos ajustes pueden afectar a todo el servidor. Cambie 
-                estos ajustes con precaución **
+            <variant>** Global Proxy settings!! Changes to these settings may have server-wide effect. Be careful when
+                changing these setting **
             </variant>
         </translation>
         <translation approved="false" key="Test_URL" new="true">
             <note/>
-            <variant>Probar URL</variant>
+            <variant>Test URL</variant>
         </translation>
         <translation approved="false" key="Invalid_URL" new="true">
             <note/>
-            <variant>La URL introducida no es válida</variant>
+            <variant>Invalid URL entered</variant>
         </translation>
         <translation approved="false" key="Test_Proxy_Connection" new="true">
             <note/>
-            <variant>Probar conexión</variant>
+            <variant>Test Connection</variant>
         </translation>
         <translation approved="false" key="Http_label" new="true">
             <note/>
@@ -760,137 +760,137 @@
         </translation>
         <translation approved="false" key="Enable_Proxy" new="true">
             <note/>
-            <variant>Utilizar un proxy</variant>
+            <variant>Use a Proxy</variant>
         </translation>
         <translation approved="false" key="Use_Default_Proxy" new="true">
             <note/>
-            <variant>Determinar automáticamente la configuración del proxy</variant>
+            <variant>Automatically Determine Proxy Settings</variant>
         </translation>
         <translation approved="false" key="Proxy_Http_Address" new="true">
             <note/>
-            <variant>Dirección Http</variant>
+            <variant>Http Address</variant>
         </translation>
         <translation approved="false" key="Proxy_Http_Port" new="true">
             <note/>
-            <variant>Puerto Http</variant>
+            <variant>Http Port</variant>
         </translation>
         <translation approved="false" key="Proxy_Https_Address" new="true">
             <note/>
-            <variant>Dirección Https</variant>
+            <variant>Https Address</variant>
         </translation>
         <translation approved="false" key="Proxy_Https_Port" new="true">
             <note/>
-            <variant>Puerto Https</variant>
+            <variant>Https Port</variant>
         </translation>
         <translation approved="false" key="Proxy_Http_Address" new="true">
             <note/>
-            <variant>Dirección Http</variant>
+            <variant>Http Address</variant>
         </translation>
         <translation approved="false" key="Proxy_Require_Password" new="true">
             <note/>
-            <variant>El proxy requiere autenticación</variant>
+            <variant>Proxy Requires Authentication</variant>
         </translation>
         <translation approved="false" key="Proxy_Username" new="true">
             <note/>
-            <variant>Nombre de usuario</variant>
+            <variant>UserName</variant>
         </translation>
         <translation approved="false" key="Proxy_Password" new="true">
             <note/>
-            <variant>Contraseña</variant>
+            <variant>Password</variant>
         </translation>
         <translation approved="false" key="ProxyTimeout" new="true">
             <note/>
-            <variant>Tiempo de espera de conexión agotado</variant>
+            <variant>Connection Timeout</variant>
         </translation>
         <translation approved="false" key="ProxyUnableToConnect" new="true">
             <note/>
-            <variant>No se ha podido conectar</variant>
+            <variant>Unable to Connect</variant>
         </translation>
         <translation approved="false" key="ProxyInternalError" new="true">
             <note/>
-            <variant>Error interno</variant>
+            <variant>Internal Error</variant>
         </translation>
         <translation approved="false" key="ProxyCommunication" new="true">
             <note/>
-            <variant>Comunicación con el proxy</variant>
+            <variant>Communication with Proxy</variant>
         </translation>
         <translation approved="false" key="ProxyRequired" new="true">
             <note/>
-            <variant>Se requiere proxy</variant>
+            <variant>Proxy Required</variant>
         </translation>
         <translation approved="false" key="ProxyAuthRequired" new="true">
             <note/>
-            <variant>Autenticación necesaria</variant>
+            <variant>Authentication Required</variant>
         </translation>
         <translation approved="false" key="ProxyInvalidTestUrl" new="true">
             <note/>
-            <variant>La URL de prueba no es válida.</variant>
+            <variant>Test URL is not valid.</variant>
         </translation>
         <translation approved="false" key="ProxyErrorCode" new="true">
             <note/>
-            <variant>Código de error del proxy</variant>
+            <variant>Proxy Error Code</variant>
         </translation>
         <translation approved="false" key="ProxyUnauthorized" new="true">
             <note/>
-            <variant>Sin autorización</variant>
+            <variant>Unauthorized</variant>
         </translation>
         <translation approved="false" key="ProxyUrlNotFound" new="true">
             <note/>
-            <variant>Url no encontrada</variant>
+            <variant>Url Not Found</variant>
         </translation>
         <!-- error message Translations -->
         <translation approved="false" key="Building_Post" new="true">
             <note/>
-            <variant>Creación de edificios</variant>
+            <variant>Building creation</variant>
         </translation>
         <translation approved="false" key="Meter_Post" new="true">
             <note/>
-            <variant>Creación de contadores</variant>
+            <variant>Meter creation</variant>
         </translation>
         <translation approved="false" key="OAuth_token" new="true">
             <note/>
-            <variant>Credenciales de autenticación</variant>
+            <variant>Authentication Credentials</variant>
         </translation>
         <translation approved="false" key="Duplicate_Meter" new="true">
             <note/>
-            <variant>Se ha producido un error. Ya existe un contador para esta combinación de puerta de enlace/identificador de contador.</variant>
+            <variant>Failed. A meter already exists for this Gateway / Meter ID combo.</variant>
         </translation>
         <translation approved="false" key="Duplicate_Building" new="true">
             <note/>
-            <variant>Se ha producido un error. Ya existe un edificio con el código postal y el nombre especificados en la organización.</variant>
+            <variant>Failed. A building with the specified name and postal code already exists in the organization.</variant>
         </translation>
         <translation approved="false" key="Invalid_Zipcode_Country" new="true">
             <note/>
-            <variant>Se ha producido un error. El código postal no es válido para el país seleccionado.</variant>
+            <variant>Failed. Zipcode is invalid for the selected country.</variant>
         </translation>
         <translation approved="false" key="Building_License_Limit_Exceeded" new="true">
             <note/>
-            <variant>Se ha producido un error. Su licencia no le permite crear más edificios. Póngase en contacto con el administrador del sistema.</variant>
+            <variant>Failed. Your license doesn't allow creating more buildings. Please contact your system administrator.</variant>
         </translation>
         <translation approved="false" key="Meter_License_Limit_Exceeded" new="true">
             <note/>
-            <variant>Se ha producido un error. Esta organización está utilizando todos los contadores en tiempo real asignados. Su licencia no le permite crear más edificios. Póngase en contacto con el administrador del sistema.</variant>
+            <variant>Failed. This organization is using all allocated realtime meters. Your license doesn't allow creating more meters. Please contact your system administrator.</variant>
         </translation>
         <translation approved="false" key="Authorization_required" new="true">
             <note/>
-            <variant>vencido. Diríjase a la página de configuración para actualizar las credenciales OAuth.</variant>
+            <variant>expired. Please use settings page to refresh OAuth credentials.</variant>
         </translation>
         <translation approved="false" key="Incompatible_resources" new="true">
             <note/>
-            <variant>Se ha producido un error. Error al crear este contador. Compruebe si el tipo de lectura, el tipo de recurso y las unidades son compatibles.</variant>
+            <variant>Failed. Encountered an error while creating this meter. You might want to check that the reading type, resource type and units are compatible.</variant>
         </translation>
         <!--  Commonly Used Translations-->
         <translation approved="false" key="Unscheduled" new="true">
             <note/>
-            <variant>Sin horario</variant>
+            <variant>Unscheduled</variant>
         </translation>
         <translation approved="false" key="OnDemand" new="true">
             <note/>
-            <variant>A petición</variant>
+            <variant>On Demand</variant>
         </translation>
         <translation approved="false" key="FifteenMinutes" new="true">
             <note/>
-            <variant>Cada quince minutos</variant>
+            <variant>Every Fifteen Minutes</variant>
         </translation>
         <translation approved="false" key="Cron" new="true">
             <note/>
@@ -898,31 +898,31 @@
         </translation>
         <translation approved="false" key="FifteenMinutes_Definition" new="true">
             <note/>
-            <variant>Esta es una programación predeterminada que se ejecuta cada 15 minutos indefinidamente para exportar muestras de tendencias desde 
-                la hora actual hasta la última muestra exportada conocida. Se ejecuta en los minutos 0, 15, 30 y 45 después de la hora.
+            <variant>This is a default schedule that runs every 15 minutes indefinitely to export trend samples from the
+                current time back to the last known exported sample. Runs at 0, 15, 30, 45 minutes after the hour.
             </variant>
         </translation>
         <translation approved="false" key="OnDemand_Definition" new="true">
             <note/>
-            <variant>Esta es una programación predeterminada que se ejecuta a petición del usuario para exportar muestras de tendencias desde 
-                la hora actual hasta la última muestra exportada conocida.
+            <variant>This is a default schedule that runs on user demand to export trend samples from the current time
+                back to the last known exported sample.
             </variant>
         </translation>
         <translation approved="false" key="Cron_Definition" new="true">
             <note/>
-            <variant>Esta es una programación predeterminada que nunca se ejecuta y significa que la programación debe asignarse o
-                ejecutarse solo a petición.
+            <variant>This is a default schedule that never runs and means that a schedule should likely be assigned or
+                run only on demand.
             </variant>
         </translation>
         <translation approved="false" key="Unscheduled_Definition" new="true">
             <note/>
-            <variant>Esta es una programación predeterminada que nunca se ejecuta y significa que la programación debe asignarse o
-                ejecutarse solo a demanda.
+            <variant>This is a default schedule that never runs and means that a schedule should likely be assigned or
+                run only on demand.
             </variant>
         </translation>
         <translation approved="false" key="combined" new="true">
             <note/>
-            <variant>combinado</variant>
+            <variant>combined</variant>
         </translation>
         <translation approved="false" key="csv" new="true">
             <note/>
@@ -934,224 +934,224 @@
         </translation>
         <translation approved="false" key="Unique" new="true">
             <note/>
-            <variant>Único</variant>
+            <variant>Unique</variant>
         </translation>
         <translation approved="false" key="Schedule" new="true">
             <note/>
-            <variant>Horario</variant>
+            <variant>Schedule</variant>
         </translation>
         <translation approved="false" key="Save" new="true">
             <note/>
-            <variant>Grabar</variant>
+            <variant>Save</variant>
         </translation>
         <translation approved="false" key="Update" new="true">
             <note/>
-            <variant>Actualizar datos</variant>
+            <variant>Update Data</variant>
         </translation>
         <translation approved="false" key="Logout" new="true">
             <note/>
-            <variant>Log out</variant>
+            <variant>Logout</variant>
         </translation>
         <translation approved="false" key="Help" new="true">
             <note/>
-            <variant>Ayuda</variant>
+            <variant>Help</variant>
         </translation>
         <translation approved="false" key="Settings" new="true">
             <note/>
-            <variant>Configuración</variant>
+            <variant>Settings</variant>
         </translation>
         <translation approved="false" key="Artifacts" new="true">
             <note/>
-            <variant>Artefactos</variant>
+            <variant>Artifacts</variant>
         </translation>
         <translation approved="false" key="Export_History" new="true">
             <note/>
-            <variant>Historial de exportación</variant>
+            <variant>Export History</variant>
         </translation>
         <translation approved="false" key="Unique" new="true">
             <note/>
-            <variant>único</variant>
+            <variant>unique</variant>
         </translation>
         <translation approved="false" key="True" new="true">
             <note/>
-            <variant>Verdadero</variant>
+            <variant>True</variant>
         </translation>
         <translation approved="false" key="False" new="true">
             <note/>
-            <variant>Falso</variant>
+            <variant>False</variant>
         </translation>
         <translation approved="false" key="Display" new="true">
             <note/>
-            <variant>Mostrar</variant>
+            <variant>Display</variant>
         </translation>
         <translation approved="false" key="Status" new="true">
             <note/>
-            <variant>Estado</variant>
+            <variant>Status</variant>
         </translation>
         <translation approved="false" key="Sources" new="true">
             <note/>
-            <variant>Fuente</variant>
+            <variant>Sources</variant>
         </translation>
         <translation approved="false" key="Failed_Sources" new="true">
             <note/>
-            <variant>Se ha producido un error en las fuentes</variant>
+            <variant>Failed Sources</variant>
         </translation>
         <translation approved="false" key="Apply" new="true">
             <note/>
-            <variant>Aplicar</variant>
+            <variant>Apply</variant>
         </translation>
         <translation approved="false" key="Ok" new="true">
             <note/>
-            <variant>Aceptar</variant>
+            <variant>Ok</variant>
         </translation>
         <translation approved="false" key="Actions" new="true">
             <note/>
-            <variant>Acciones</variant>
+            <variant>Actions</variant>
         </translation>
         <translation approved="false" key="Action" new="true">
             <note/>
-            <variant>Acción</variant>
+            <variant>Action</variant>
         </translation>
         <translation approved="false" key="Start_Time" new="true">
             <note/>
-            <variant>Tiempo de comienzo</variant>
+            <variant>Start Time</variant>
         </translation>
         <translation approved="false" key="Run_Time" new="true">
             <note/>
-            <variant>Tiempo de ejecución</variant>
+            <variant>Run Time</variant>
         </translation>
         <translation approved="false" key="End_Time" new="true">
             <note/>
-            <variant>Tiempo de finalización</variant>
+            <variant>End Time</variant>
         </translation>
         <translation approved="false" key="Sample_Count" new="true">
             <note/>
-            <variant>Número de muestras</variant>
+            <variant>Sample Count</variant>
         </translation>
         <translation approved="false" key="Download" new="true">
             <note/>
-            <variant>Descargar</variant>
+            <variant>Download</variant>
         </translation>
         <translation approved="false" key="Name" new="true">
             <note/>
-            <variant>Nombre</variant>
+            <variant>Name</variant>
         </translation>
         <translation approved="false" key="Time" new="true">
             <note/>
-            <variant>Hora</variant>
+            <variant>Time</variant>
         </translation>
         <translation approved="false" key="ConfirmDeleteRequest" new="true">
             <note/>
-            <variant>Confirmar solicitud de eliminación</variant>
+            <variant>Confirm Delete Request</variant>
         </translation>
         <translation approved="false" key="DeleteArtifactConfirmation" new="true">
             <note/>
-            <variant>Se eliminarán los directorios y los archivos de artefactos de exportación seleccionados ¿Desea continuar?</variant>
+            <variant>Selected export artifact files and directories will be deleted. Are you sure?</variant>
         </translation>
         <translation approved="false" key="DeleteMultipleArtifactConfirmation" new="true">
             <note/>
-            <variant>Se eliminarán los directorios y los archivos de artefactos de exportación seleccionados ¿Seguro que desea eliminar las conexiones de fuente seleccionadas?</variant>
+            <variant>All selected export artifact files and directories will be deleted. Are you sure you want to delete the selected source pairings?</variant>
         </translation>
         <translation approved="false" key="DeleteMultipleArtifactWarningConfirmation" new="true">
             <note/>
-            <variant>Una o más fuentes seleccionadas ya se han conectado con contadores EnergyReports™. Debe eliminar también todos los contadores asociados de EnergyReports™ después de eliminar estas fuentes para que el funcionamiento sea correcto. Si selecciona Aceptar, se eliminarán también todos los directorios y archivos de artefactos de exportación relacionados. ¿Seguro que desea eliminar estas conexiones de fuente?</variant>
+            <variant>One or more of the selected sources have already been paired with EnergyReports™ meters. You must also delete all associated meters from EnergyReports™ after deleting these sources to function as required. Selecting 'OK' would also result in the deletion of all related artifact files and directories. Are you sure you want to delete the selected source pairings?</variant>
         </translation>
         <translation approved="false" key="DeleteSingleArtifactConfirmation" new="true">
             <note/>
-            <variant>Se eliminarán los directorios y los archivos de artefactos de exportación seleccionados. ¿Seguro que desea eliminar esta conexión de fuente?</variant>
+            <variant>The selected export artifact files and directories will be deleted. Are you sure you want to delete this source pairing?</variant>
         </translation>
         <translation approved="false" key="DeleteSingleArtifactWarningConfirmation" new="true">
             <note/>
-            <variant>La fuente seleccionada ya se ha conectado con un contador EnergyReports™. Debe eliminar también el contador asociado de EnergyReports™ después de eliminar esta fuente para que el funcionamiento sea correcto. Si selecciona Aceptar, se eliminarán también todos los directorios y archivos de artefactos de exportación relacionados. ¿Seguro que desea eliminar esta conexión de fuente?</variant>
+            <variant>The selected source has already been paired with EnergyReports™ meter. You must also delete the associated meter from EnergyReports™ after deleting this source to function as required. Selecting 'OK' would also result in the deletion of all related export artifact files and directories. Are you sure you want to delete this source pairing?</variant>
         </translation>
         <translation approved="false" key="ExportSubmitInfo" new="true">
             <note/>
-            <variant>Exportar información de envío</variant>
+            <variant>Export Submit Information</variant>
         </translation>
         <translation approved="false" key="ManualExportNoSubmit" new="true">
             <note/>
-            <variant>No se puede enviar una exportación manual mientras haya otra en proceso.</variant>
+            <variant>A manual export may not be submitted while another one is already in progress.</variant>
         </translation>
         <translation approved="false" key="ExportActionInfo" new="true">
             <note/>
-            <variant>Información de acción de exportación</variant>
+            <variant>Export Action Information</variant>
         </translation>
         <translation approved="false" key="Export_Artifacts" new="true">
             <note/>
-            <variant>Exportar artefactos</variant>
+            <variant>Export Artifacts</variant>
         </translation>
         <translation approved="false" key="Cancel" new="true">
             <note/>
-            <variant>Cancelar</variant>
+            <variant>Cancel</variant>
         </translation>
         <translation approved="false" key="FieldRequired" new="true">
             <note/>
-            <variant>* Este campo es obligatorio</variant>
+            <variant>* This field is required</variant>
         </translation>
         <translation approved="false" key="Field128CharMax" new="true">
             <note/>
-            <variant>* Este campo admite un máximo de 128 caracteres</variant>
+            <variant>* This field allows a maximum of 128 characters</variant>
         </translation>
         <translation approved="false" key="ChooseFieldValueFromList" new="true">
             <note/>
-            <variant>* Elija un valor válido de la lista de escritura anticipada</variant>
+            <variant>* Please choose a valid value from the type-ahead list</variant>
         </translation>
         <translation approved="false" key="BadRetentionFormat" new="true">
             <note/>
-            <variant>El periodo de retención debe ser un número del 1 al 180</variant>
+            <variant>Retention period must be numerical from 1 to 180</variant>
         </translation>
         <translation approved="false" key="MustBe6To25" new="true">
             <note/>
-            <variant>Debe ser un valor sin espacios que tenga entre 6 y 25 caracteres</variant>
+            <variant>Must be a value with no spaces between from 6 to 25 characters</variant>
         </translation>
         <translation approved="false" key="RequiredField" new="true">
             <note/>
-            <variant>Este campo es obligatorio</variant>
+            <variant>This field is required</variant>
         </translation>
         <translation approved="false" key="MultiSelect" new="true">
             <note/>
-            <variant>Haga clic presionando la tecla Ctrl para ordenar en múltiples columnas</variant>
+            <variant>Ctrl-Click multi-column Sort</variant>
         </translation>
         <translation approved="false" key="Organization_Name" new="true">
             <note/>
-            <variant>Nombre de la organización:</variant>
+            <variant>Organization Name</variant>
         </translation>
         <translation approved="false" key="ER_Gateway" new="true">
             <note/>
-            <variant>Puerta de enlace ER</variant>
+            <variant>ER Gateway</variant>
         </translation>
         <translation approved="false" key="System_Update_Failure" new="true">
             <note/>
-            <variant>Información de fallo de actualización del sistema</variant>
+            <variant>System Update Failure Information</variant>
         </translation>
         <translation approved="false" key="Fail_Proxy_Test" new="true">
             <note/>
-            <variant>¡Se ha producido un error en la prueba!</variant>
+            <variant>Test Failed!</variant>
         </translation>
         <translation approved="false" key="Pass_Proxy_Test" new="true">
             <note/>
-            <variant>Prueba realizada correctamente mediante proxy.</variant>
+            <variant>Successful Test through Proxy.</variant>
         </translation>
         <!-- Meter Configuration Translations -->
         <translation approved="false" key="Choose_Common_Meter_Config" new="true">
             <note/>
-            <variant>Elija una configuración de contador común</variant>
+            <variant>Choose a Common Meter Configuration</variant>
         </translation>
         <translation approved="false" key="Stored_As" new="true">
             <note/>
-            <variant>Almacenado como</variant>
+            <variant>Stored as</variant>
         </translation>
         <translation approved="false" key="Displayed_As" new="true">
             <note/>
-            <variant>Mostrado como</variant>
+            <variant>Displayed as</variant>
         </translation>
         <translation approved="false" key="energy" new="true">
             <note/>
-            <variant>Energía</variant>
+            <variant>Energy</variant>
         </translation>
         <translation approved="false" key="flow" new="true">
             <note/>
-            <variant>Flujo</variant>
+            <variant>Flow</variant>
         </translation>
         <translation approved="false" key="OAT" new="true">
             <note/>
@@ -1163,7 +1163,7 @@
         </translation>
         <translation approved="false" key="meter_type_electric" new="true">
             <note/>
-            <variant>Electricidad</variant>
+            <variant>Electricity</variant>
         </translation>
         <translation approved="false" key="meter_type_gas" new="true">
             <note/>
@@ -1171,47 +1171,47 @@
         </translation>
         <translation approved="false" key="meter_type_oil" new="true">
             <note/>
-            <variant>Combustible</variant>
+            <variant>Oil</variant>
         </translation>
         <translation approved="false" key="meter_type_btu" new="true">
             <note/>
-            <variant>Vapor</variant>
+            <variant>Steam</variant>
         </translation>
         <translation approved="false" key="meter_type_chw_btu" new="true">
             <note/>
-            <variant>Enfriamiento</variant>
+            <variant>Cooling</variant>
         </translation>
         <translation approved="false" key="meter_type_water_flow" new="true">
             <note/>
-            <variant>Agua</variant>
+            <variant>Water</variant>
         </translation>
         <translation approved="false" key="meter_type_temperature_outdoors" new="true">
             <note/>
-            <variant>Temperatura exterior</variant>
+            <variant>Temperature Outdoors</variant>
         </translation>
         <translation approved="false" key="meter_type_EI" new="true">
             <note/>
-            <variant>Índice Ambiental</variant>
+            <variant>Environmental Index</variant>
         </translation>
         <translation approved="false" key="trend_type_demand" new="true">
             <note/>
-            <variant>Demanda de intervalo</variant>
+            <variant>Interval Demand</variant>
         </translation>
         <translation approved="false" key="trend_type_consumption" new="true">
             <note/>
-            <variant>Consumo de intervalo</variant>
+            <variant>Interval Consumption</variant>
         </translation>
         <translation approved="false" key="trend_type_peak" new="true">
             <note/>
-            <variant>Pico</variant>
+            <variant>Peak</variant>
         </translation>
         <translation approved="false" key="trend_type_OAT" new="true">
             <note/>
-            <variant>Lectura OAT</variant>
+            <variant>OAT Reading</variant>
         </translation>
         <translation approved="false" key="trend_type_EI" new="true">
             <note/>
-            <variant>Lectura El</variant>
+            <variant>EI Reading</variant>
         </translation>
         <translation approved="false" key="kW" new="true">
             <note/>
@@ -1223,84 +1223,84 @@
         </translation>
         <translation approved="false" key="other" new="true">
             <note/>
-            <variant>Otro</variant>
+            <variant>Other</variant>
         </translation>
         <translation approved="false" key="other/hour" new="true">
             <note/>
-            <variant>Otro/hora</variant>
+            <variant>Other / Hour</variant>
         </translation>
         <translation approved="false" key="liters" new="true">
             <note/>
-            <variant>Litros</variant>
+            <variant>Liters</variant>
         </translation>
         <translation approved="false" key="liters/minute" new="true">
             <note/>
-            <variant>Litros/minuto</variant>
+            <variant>Liters / Minute</variant>
         </translation>
         <translation approved="false" key="liters/hour" new="true">
             <note/>
-            <variant>Litros/hora</variant>
+            <variant>Liters / Hour</variant>
         </translation>
         <translation approved="false" key="cubic meters" new="true">
             <note/>
-            <variant>Metros cúbicos</variant>
+            <variant>Cubic Meters</variant>
         </translation>
         <translation approved="false" key="cubic meters/hour" new="true">
             <note/>
-            <variant>Metros cúbicos/hora</variant>
+            <variant>Cubic Meters / Hour</variant>
         </translation>
         <translation approved="false" key="degrees Celsius" new="true">
             <note/>
-            <variant>Grados Celsius</variant>
+            <variant>Degrees Celsius</variant>
         </translation>
         <translation approved="false" key="% of 100" new="true">
             <note/>
-            <variant>Porcentaje de 100</variant>
+            <variant>Percent of 100</variant>
         </translation>
         <!-- Meter Configuration Translations -->
         <translation approved="false" key="Landing" new="true">
             <note/>
-            <variant>Inicio</variant>
+            <variant>Home</variant>
         </translation>
         <translation approved="false" key="Data_Connector" new="true">
             <note/>
-            <variant>Conector de datos</variant>
+            <variant>Data Connector</variant>
         </translation>
         <translation approved="false" key="Config_And_Auth" new="true">
             <note/>
-            <variant>Configurar y autenticar</variant>
+            <variant>Configure and Authenticate</variant>
         </translation>
         <translation approved="false" key="Building_Landing_Summary" new="true">
             <note/>
-            <variant>El primer paso en el recorrido para la administración del uso de energía es crear definiciones de edificios. Aquí debe indicar el nombre, la dirección, el tipo, el tamaño y la ubicación de los edificios que administra energéticamente. Agregue tantos edificios como desee para una mayor eficacia energética.</variant>
+            <variant>The first step on your journey to managing energy usage is creating building definitions. Here you will provide the name, address, type, size, and location of your energy managed buildings. Add as many buildings as you want for more energy efficiency.</variant>
         </translation>
         <translation approved="false" key="Meter_Landing_Summary" new="true">
             <note/>
-            <variant>Una vez que ha definido uno o más edificios, debe conectar las fuentes de tendencia de energía con los contadores EnergyReports™. Esto exige seleccionar las fuentes de datos, especificar un edificio y unas cuantas propiedades de datos y activar la exportación de datos continua.</variant>
+            <variant>Once you have one or more buildings defined, it is time to pair energy trend sources with EnergyReports™ 'meters'. This involves selecting your data sources, specifying a building and a few data properties, and enabling continuous data export.</variant>
         </translation>
         <translation approved="false" key="History_Landing_Summary" new="true">
             <note/>
-            <variant>¡Ajústela y despreocúpese! Una vez que se han completado las actividades de conexión del contador y del edificio, esta aplicación funciona durante todo el tiempo exportando datos a intervalos periódicos conforme están disponibles en su base de datos de tendencias BMS. Si falta algún dato, compruebe primero este proceso.</variant>
+            <variant>Set it and forget it! Once your building and meter pairing activities are complete, this application gets to work over the long haul exporting data on regular intervals as it becomes available in your BMS trend database. Come here first if data goes missing.</variant>
         </translation>
         <translation approved="false" key="Header_Landing_Message" new="true">
             <note/>
-            <variant>Aquí es donde sus datos energéticos se encuentran con la galardonada plataforma en la nube para el análisis y la administración de energía EnergyReports™. Utilice esta herramienta para seleccionar datos energéticos de tendencia, exportar de forma continua y segura esos datos a contadores EnergyReports™ y utilizarlos para crear informes completos, gráficos y otras herramientas de análisis para ahorrar costes.</variant>
+            <variant>This is where your energy data meets the award winning EnergyReports™ energy management and analysis cloud platform. Use this tool to select trended energy data, securely and continuously export that data into EnergyReports™ meters, and use that data to create sophisticated reports, charts, and other cost saving analysis tools.</variant>
         </translation>
         <translation approved="false" key="Welcome_Landing_Message" new="true">
             <note/>
-            <variant>Bienvenido a</variant>
+            <variant>Welcome to the</variant>
         </translation>
         <translation approved="false" key="Lookup_String" new="true">
             <note/>
-            <variant>Buscar cadena</variant>
+            <variant>Lookup String</variant>
         </translation>
         <translation approved="false" key="Vendor_Id" new="true">
             <note/>
-            <variant>Identificador de contador de proveedor</variant>
+            <variant>Vendor Meter ID</variant>
         </translation>
         <translation approved="false" key="Details" new="true">
             <note/>
-            <variant>Detalles</variant>
+            <variant>Details</variant>
         </translation>
     </section>
 </resource-base>

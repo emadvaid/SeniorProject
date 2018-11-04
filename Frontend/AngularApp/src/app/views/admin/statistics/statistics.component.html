@@ -16,28 +16,29 @@
   </div>
 </div>
 <div class="form-group">
-  <button class="btn btn-primary" (click)="onSubmit()">View Statistics</button>
+  <button class="btn btn-primary" (click)="viewStatistics(language, versionNumber)">View Statistics</button>
+  <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)">Compare Versions</button>
 </div>
 
 <table class="comparison">
-  <thead>
-    <th>Version Number</th>
-  </thead>
-
   <tr>
-    <td>{{ versionNumber }}</td>
+    <td class="col-md-2">Version Number:</td>
+    <td class="col-md-2">{{ firstVersion }}</td>
+    <td class="col-md-2">{{ secondVersion }}</td>
   </tr>
   <tr>
-    <td>New Keys: {{ newKeys }}</td>
+    <td class="col-md-2">New Keys:</td>
+    <td class="col-md-2">{{ firstNewKeys }}</td>
+    <td class="col-md-2">{{ secondNewKeys }}</td>
   </tr>
   <tr>
-    <td>Approved Keys: {{ approvedKeys }}</td>
+    <td class="col-md-2">Approved Keys:</td>
+    <td class="col-md-2">{{ firstApprovedKeys }}</td>
+    <td class="col-md-2">{{ secondApprovedKeys }}</td>
   </tr>
   <tr>
-    <td>Total Keys: {{ totalKeys }}</td>
+    <td class="col-md-2">Total Keys:</td>
+    <td class="col-md-2">{{ firstTotalKeys }}</td>
+    <td class="col-md-2">{{ secondTotalKeys }}</td>
   </tr>
 </table>
-<!-- {{versionNumber}}                   
-New Keys: {{ newKeys }} <br>
-Approved Keys: {{ approvedKeys }}<br>
-Total Keys: {{ totalKeys }} -->

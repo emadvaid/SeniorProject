@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Version } from 'src/app/models/Version';
+import { Http, Headers, RequestOptions } from '@angular/Http';
 
 const httpOptions = {
   headers: new HttpHeaders()
@@ -15,7 +16,8 @@ export class FileFunctionsService {
 
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private https: Http
   ) { }
 
   sendFiles(versionNumber: string, selectedFiles: Array<File> = []): Observable<any> {
@@ -38,4 +40,5 @@ export class FileFunctionsService {
     tableInfo.append('versionNumber', versionNumber);
     return this.http.post('http://localhost:8080/exportFile', tableInfo, httpOptions);
   }
+
 }

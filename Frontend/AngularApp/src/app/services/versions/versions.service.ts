@@ -20,10 +20,14 @@ export class VersionService {
         return this.http.get('http://localhost:8080/versions', options)
         .pipe(
             map((resp: any) => {
-                console.log(' file-functions.component ajax response: ', resp);
+                console.log('versionService', resp);
                 if (resp) {
                     const respBody = resp.json();
+<<<<<<< HEAD
                     console.log(' file-functions.component language list: ', respBody);
+=======
+                    console.log('respBody  ', respBody);
+>>>>>>> master
                    if (respBody.versionDetails) {
                         return <Array<Version>> respBody.versionDetails;
                     }
@@ -70,6 +74,37 @@ export class VersionService {
     private handleError(err: any): Observable<Version> {
         console.log('create version  failed: err =', err);
         return of(null);
+    }
+
+    deleteByVerNum(verNum: string): Observable<boolean> {
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json'
+        });
+        const options = new RequestOptions({ headers: headers});
+        const deleteVerUri = `http://localhost:8080/versions/${verNum}`;
+        console.log(`deleteVerUri=${deleteVerUri}`);
+        return this.http.delete(deleteVerUri, options)
+            .pipe(
+                map((results: any) => true),
+                catchError(error => of(false))
+            );
+    }
+
+    deleteLanguageByVer(langCode: string, verNum: string): Observable<boolean> {
+       // Add in JSON header and access token header
+       const headers = new Headers({
+        'Content-Type': 'application/Json'
+    });
+    const options = new RequestOptions({headers: headers});
+    const deleteLangUri = `http://localhost:8080/versions/${verNum}/${langCode}`;
+    console.log(`deleteVerUri=${deleteLangUri}`);
+    return this.http.delete(deleteLangUri, options)
+        .pipe(
+            map((results: any) => true),
+            catchError(error => of(false))
+        );
+
     }
 }
 

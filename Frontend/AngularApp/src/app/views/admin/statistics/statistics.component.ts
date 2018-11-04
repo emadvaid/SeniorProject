@@ -6,11 +6,14 @@ import { StatisticsService }  from '../../../services/statistics/statistics.serv
   styleUrls: ['./statistics.component.css']
 })
 export class StatisticsComponent implements OnInit {
-  newKeys: string;
-  approvedKeys: string;
-  totalKeys: string;
-  public versionNumber = '';
-  public language = '';
+  firstNewKeys: string;
+  firstApprovedKeys: string;
+  firstTotalKeys: string;
+  secondNewKeys: string;
+  secondApprovedKeys: string;
+  secondTotalKeys: string;
+  firstVersion: string;
+  secondVersion: string;
 
   constructor(
     private statisticsService: StatisticsService,
@@ -19,20 +22,42 @@ export class StatisticsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
-    this.statisticsService.getNewKeys(this.language, this.versionNumber).subscribe(
+  viewStatistics(language: string, versionNumber: string) {
+    this.firstVersion = versionNumber;
+    //Statistics for first version
+    this.statisticsService.getNewKeys(language, versionNumber).subscribe(
       (keys) => {
-        this.newKeys = JSON.stringify(keys);
+        this.firstNewKeys = JSON.stringify(keys);
       }
     )
-    this.statisticsService.getApprovedKeys(this.language, this.versionNumber).subscribe(
+    this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
       (keys) => {
-        this.approvedKeys = JSON.stringify(keys);
+        this.firstApprovedKeys = JSON.stringify(keys);
       }
     )
-    this.statisticsService.getTotalKeys(this.language, this.versionNumber).subscribe(
+    this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
       (keys) => {
-        this.totalKeys = JSON.stringify(keys);
+        this.firstTotalKeys = JSON.stringify(keys);
+      }
+    )
+    }
+
+    compareVersions(language: string, versionNumber: string) {
+      this.secondVersion = versionNumber;
+    //Statistics for second version
+    this.statisticsService.getNewKeys(language, versionNumber).subscribe(
+      (keys) => {
+        this.secondNewKeys = JSON.stringify(keys);
+      }
+    )
+    this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
+      (keys) => {
+        this.secondApprovedKeys = JSON.stringify(keys);
+      }
+    )
+    this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
+      (keys) => {
+        this.secondTotalKeys = JSON.stringify(keys);
       }
     )
   }

@@ -1,12 +1,14 @@
 package com.ALCverificationtool.dao.keys;
 
 import com.ALCverificationtool.models.TranslationResourceRec;
+import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
 import com.ALCverificationtool.services.userService.UserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-
+import java.sql.ResultSet;
+import javax.sql.RowSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -34,13 +36,14 @@ public class KeysRepositoryImpl implements KeysRepository {
             "  PRIMARY KEY (`key_id`)" +
             ") ENGINE=MyISAM DEFAULT CHARSET=utf8";
 
+
     @Autowired
     JdbcTemplate jdbcTemplate;
 
     @Override
-    public boolean createKeyTable(String keyLanguageVersion, String keyLanguageCode, boolean dropExisting) {
+    public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
 
-        String newTableName= keyLanguageCode + "_" + keyLanguageVersion;
+        String newTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
         System.out.println(DROP_SQL.replace("TABLE_NAME", newTableName));
         System.out.println(CREATE_SQL.replace("TABLE_NAME", newTableName));
 
@@ -75,6 +78,83 @@ public class KeysRepositoryImpl implements KeysRepository {
         }
 
         return false;
+    }
+
+    @Override
+    public boolean deleteKeyTable(String keyLanguageCode, String keyLanguageVersion) {
+        // convert the landCode and VerNum to a table name
+        String oldTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+
+        if(keyLanguageCode == null && keyLanguageVersion == null) {
+            throw new ServiceException("keyLanguageCode & keyLanguageVersion");
+        }
+
+        if(true) {
+            // then drop any existing table
+            jdbcTemplate.update(DROP_SQL.replace("TABLE_NAME", oldTableName));
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    @Override
+    public boolean deleteKeyTablesByVersion(String keyLanguageVersion) {
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+
+        String sql = "Show tables like \'" + tablePattern + "\'";
+
+        List<String> tableNames = jdbcTemplate.query(sql, (ResultSet resultSet) -> {
+            List<String> results = new ArrayList<>();
+            while(resultSet.next()) {
+                String name = resultSet.getString(1);
+                System.out.println(name);
+
+                results.add(name);
+            }
+
+            return results;
+        });
+
+        // loop over tablenames and drop each one
+        for(String tableName: tableNames) {
+            jdbcTemplate.update(DROP_SQL.replace("TABLE_NAME", tableName));
+        }
+
+        return true;
+    }
+
+    @Override
+    public List<String> findKeyTableNamesByVersion(String keyLanguageVersion) {
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+
+        String sql = "Show tables like \'" + tablePattern + "\'";
+
+        return getTableNames(sql);
+    }
+
+    @Override
+    public List<String> findKeyTableNamesByLangCode(String keyLanguageCode) {
+        String tablePattern = keyLanguageCode + "_%";
+
+        String sql = "Show tables like \'" + tablePattern + "\'";
+
+        return getTableNames(sql);
+    }
+
+    private List<String> getTableNames(String querySQL) {
+        return  jdbcTemplate.query(querySQL, (ResultSet resultSet) -> {
+            List<String> results = new ArrayList<>();
+            while(resultSet.next()) {
+                String name = resultSet.getString(1);
+                System.out.println(name);
+
+                results.add(name);
+            }
+
+            return results;
+        });
     }
 
     @Override
@@ -178,6 +258,11 @@ public class KeysRepositoryImpl implements KeysRepository {
         return results;
     }
 
+    @Override
+    public List<TranslationResourceRec> getKeyById(String tableName, int key_Id) {
+        List <TranslationResourceRec> results = new ArrayList<>();
+        return results;
+    }
     @Override
     public boolean updateKey(String tableName, TranslationResourceRec keyData) {
         String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?" +
