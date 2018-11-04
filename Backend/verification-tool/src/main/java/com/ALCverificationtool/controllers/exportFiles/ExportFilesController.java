@@ -22,9 +22,9 @@ public class ExportFilesController {
             @RequestParam(value="language") String language,
             @RequestParam(value="versionNumber") String versionNumber
     ) throws TransformerException, ParserConfigurationException {
-        //Create empty export folder
-        exportFilesService.createFolder();
+        //Create empty export folders
+        exportFilesService.createFolder(language);
 
-        exportFilesService.createXMLFile(language, versionNumber);
+       exportFilesService.createXMLFile(language, versionNumber);
     }
 }

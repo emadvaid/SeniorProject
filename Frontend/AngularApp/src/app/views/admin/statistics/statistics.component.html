@@ -1,28 +1,43 @@
-<div class="form-group">
-  <input
-  type="text"
-  class = 'form-control'
-  id="language"
-  name="language"
-  placeholder="Enter Language Number"
-  [(ngModel)]="language"
->
+<div class="row">
+  <div class="form-group col-xs-2">
+    <input type="text" class='form-control' id="language" name="language" placeholder="Enter Language Number"
+      [(ngModel)]="language">
+  </div>
 </div>
-  
-  <div class="form-group">
-    <input
-    type="text"
-    class = 'form-control'
-    id="versionNumber"
-    name="versionNumber"
-    placeholder="Enter Version Number"
-    [(ngModel)]="versionNumber"
->
+
+<div class="row">
+  <div class="form-group col-xs-2">
+    <input type="text" class='form-control' id="versionNumber" name="versionNumber" placeholder="Enter Version Number"
+      [(ngModel)]="versionNumber">
   </div>
-  <div class="form-group">
-    <button class="btn btn-primary" (click)="onSubmit()">View Statistics</button>
+  <div class="form-group col-xs-2">
+    <input type="text" class='form-control' id="versionNumber2" name="versionNumber2" placeholder="Enter Version Number for Comparison"
+      [(ngModel)]="versionNumber2">
   </div>
-  
-  New Keys: {{ newKeys }} <br>
-  Approved Keys: {{ approvedKeys }}<br>
-  Total Keys: {{ totalKeys }}
+</div>
+<div class="form-group">
+  <button class="btn btn-primary" (click)="onSubmit()">View Statistics</button>
+</div>
+
+<table class="comparison">
+  <thead>
+    <th>Version Number</th>
+  </thead>
+
+  <tr>
+    <td>{{ versionNumber }}</td>
+  </tr>
+  <tr>
+    <td>New Keys: {{ firstNewKeys }}      {{ secondNewKeys }}</td>
+  </tr>
+  <tr>
+    <td>Approved Keys: {{ firstApprovedKeys }}      {{ secondApprovedKeys }}</td>
+  </tr>
+  <tr>
+    <td>Total Keys: {{ firstTotalKeys }}    {{ secondTotalKeys }}</td>
+  </tr>
+</table>
+<!-- {{versionNumber}}                   
+New Keys: {{ newKeys }} <br>
+Approved Keys: {{ approvedKeys }}<br>
+Total Keys: {{ totalKeys }} -->
