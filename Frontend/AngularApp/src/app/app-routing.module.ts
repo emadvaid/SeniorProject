@@ -48,13 +48,8 @@ const appRoutes: Routes = [
       {path: 'createVersion', component: VersionComponent},
       {path: 'exportFile', component: ExportFilesComponent},
       {path: 'statistics', component: StatisticsComponent},
-<<<<<<< HEAD
-      {path: 'keyView', component: KeyViewComponent}
-=======
+      {path: 'keyView', component: KeyViewComponent},
       {path: 'deleteLangByVerNum', component: DeleteLanguageByVerNumComponent},
-
-
->>>>>>> master
     ]
   },
   {
