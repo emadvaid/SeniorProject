@@ -54,104 +54,123 @@ public class ExportFilesServiceImpl implements ExportFilesService {
         String previousFileName = keys.get(0).getFileName();
         String previousNotes = "";
         String previousID = "";
-        for (int i = 0; i < keys.size(); i++) {
+        int i = 0;
+        while (i < keys.size()) {
+       // for (int i = 0; i < keys.size(); ) {
             String currentFileName = keys.get(i).getFileName();
 
-            if (!currentFileName.equals(previousFileName)) {
-                doc = dBuilder.newDocument();
-                resourceBase = doc.createElement("resource-base");
-                doc.appendChild(resourceBase);
-                previousNotes = "";
-                previousFileName = currentFileName;
-            }
-
-            if (previousFileName.equals(currentFileName)) {
-
-                //XML header
-                resourceBase.setAttribute("id", currentFileName); //File name
-                resourceBase.setAttribute("version", "1.0");
-                resourceBase.setAttribute("xml:lang", language);
-                resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
-
-                //File notes
-                String fileNotesDB = "";
-                fileNotesDB = keys.get(i).getFileNotes();
-                Element fileNotes = doc.createElement("note");
-                if (!previousNotes.equals(fileNotesDB)) {
-                    fileNotes.appendChild(doc.createTextNode(fileNotesDB));
-                    resourceBase.appendChild(fileNotes);
-                    previousNotes = fileNotesDB;
+            int j = i;
+            while (j < keys.size()) {
+                if (!currentFileName.equals(previousFileName)) {
+                    doc = dBuilder.newDocument();
+                    resourceBase = doc.createElement("resource-base");
+                    doc.appendChild(resourceBase);
+                    previousNotes = "";
+                    previousFileName = currentFileName;
                 }
 
-                //Section ID
-                String sectionDB = "";
-                sectionDB = keys.get(i).getSectionId();
-                Element section = doc.createElement("section");
+                if (previousFileName.equals(currentFileName)) {
 
-                if (!previousID.equals(sectionDB)) {
-                    section.setAttribute("id", sectionDB);
-                    resourceBase.appendChild(section);
-                    previousID = sectionDB;
+                    //XML header
+                    resourceBase.setAttribute("id", currentFileName); //File name
+                    resourceBase.setAttribute("version", "1.0");
+                    resourceBase.setAttribute("xml:lang", language);
+                    resourceBase.setAttribute("xmlns", "http://www.controlj.com/rbase1.0");
 
-                    //Section Note
-                    String sectionNoteDB = keys.get(i).getSectionNote();
-                    //sectionNoteDB = keys.get(i).getSectionNote();
-                    if (sectionNoteDB != null) {
-                        Element sectionNote = doc.createElement("note");
-                        sectionNote.appendChild(doc.createTextNode(sectionNoteDB));
-                        section.appendChild(sectionNote);
+                    //File notes
+                    String fileNotesDB;
+                    fileNotesDB = keys.get(j).getFileNotes();
+                    if (fileNotesDB.length() == 0) {
+                        fileNotesDB = "";
+                        System.out.println("null");
+                    }
+                    Element fileNotes = doc.createElement("note");
+                    if (!previousNotes.equals(fileNotesDB)) {
+                        fileNotes.appendChild(doc.createTextNode(fileNotesDB));
+                        resourceBase.appendChild(fileNotes);
+                        previousNotes = fileNotesDB;
                     }
 
-                    for (int j = 0; j < keys.size(); j++) {
-                        currentFileName = keys.get(j).getFileName();
-                        sectionDB = keys.get(j).getSectionId();
-                        if (previousFileName.equals(currentFileName)) {
-                            if (previousID.equals(sectionDB)) {
-                                //Translation key, approved, and new
-                                String keyNameDB = "";
-                                keyNameDB = keys.get(j).getKeyName();
-                                boolean keyApprovedDB = keys.get(j).getApproved();
-                                boolean keyNewDB = keys.get(j).getKeyNew();
-                                Element translationKey = doc.createElement("translation");
-                                translationKey.setAttribute("key", keyNameDB);
-                                translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
-                                translationKey.setAttribute("new", String.valueOf(keyNewDB));
-                                section.appendChild(translationKey);
-                                //Key note
-                                String keyNoteDB = "";
-                                keyNoteDB = keys.get(j).getKeyNote();
-                                Element translationNote = doc.createElement("note");
-                                if (!keyNoteDB.equals("")) {
-                                    translationNote.appendChild(doc.createTextNode(keyNoteDB));
-                                    translationKey.appendChild(translationNote);
-                                }
-                                //Key variant values
-                                String keyVariantDB = "";
-                                keyVariantDB = keys.get(j).getKeyVariant();
-                                Element translationVariant = doc.createElement("variant");
-                                translationVariant.appendChild(doc.createTextNode(keyVariantDB));
-                                translationKey.appendChild(translationVariant);
-                                previousID = keys.get(j).getSectionId();
-                                TransformerFactory transformerFactory = TransformerFactory.newInstance();
-                                Transformer transformer = transformerFactory.newTransformer();
-                                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-                                transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-                                DOMSource source = new DOMSource(doc);
+                    //Section ID
+                    String sectionDB;
+//                int j = i;
+//                while (j < keys.size()) {
+                    //for (int j = 0; j < keys.size(); j++) {
+                    currentFileName = keys.get(j).getFileName();
+                    sectionDB = keys.get(j).getSectionId();
+                    Element section = doc.createElement("section");
 
-                                String desktopPath = System.getProperty("user.home") + "/Desktop";
-                                StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + language + "/"+ keys.get(i).getFileName() + ".xml"));
+                    if (!previousID.equals(sectionDB)) {
+                        section.setAttribute("id", sectionDB);
+                        resourceBase.appendChild(section);
+                        previousID = sectionDB;
 
-                                transformer.transform(source, result);
-
-                                previousFileName = currentFileName;
-                            }
+                        //Section Note
+                        String sectionNoteDB = keys.get(i).getSectionNote();
+                        //sectionNoteDB = keys.get(i).getSectionNote();
+                        if (!sectionNoteDB.equals("")) {
+                            Element sectionNote = doc.createElement("note");
+                            sectionNote.appendChild(doc.createTextNode(sectionNoteDB));
+                            section.appendChild(sectionNote);
                         }
                     }
-                    previousID = keys.get(i).getSectionId();
+                    if (previousFileName.equals(currentFileName)) {
+                        if (previousID.equals(sectionDB)) {
+                            //Translation key, approved, and new
+                            String keyNameDB = "";
+                            keyNameDB = keys.get(j).getKeyName();
+                            boolean keyApprovedDB = keys.get(j).getApproved();
+                            boolean keyNewDB = keys.get(j).getKeyNew();
+                            Element translationKey = doc.createElement("translation");
+                            translationKey.setAttribute("key", keyNameDB);
+                            translationKey.setAttribute("approved", String.valueOf(keyApprovedDB));
+                            translationKey.setAttribute("new", String.valueOf(keyNewDB));
+                            section.appendChild(translationKey);
+                            //Key note
+                            String keyNoteDB = "";
+                            keyNoteDB = keys.get(j).getKeyNote();
+                            Element translationNote = doc.createElement("note");
+                            if (!keyNoteDB.equals("")) {
+                                translationNote.appendChild(doc.createTextNode(keyNoteDB));
+                                translationKey.appendChild(translationNote);
+                            }
+                            //Key variant values
+                            String keyVariantDB = "";
+                            keyVariantDB = keys.get(j).getKeyVariant();
+                            Element translationVariant = doc.createElement("variant");
+                            translationVariant.appendChild(doc.createTextNode(keyVariantDB));
+                            translationKey.appendChild(translationVariant);
+                            previousID = keys.get(j).getSectionId();
+                            i = j;
+                            j++;
+
+
+                            //section.appendChild(translationKey);
+                            //resourceBase.appendChild(section);
+
+
+                            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                            Transformer transformer = transformerFactory.newTransformer();
+                            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+                            DOMSource source = new DOMSource(doc);
+                            String desktopPath = System.getProperty("user.home") + "/Desktop";
+                            StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + language + "/" + keys.get(i).getFileName() + ".xml"));
+                            //StreamResult result = new StreamResult(System.out);
+
+                            transformer.transform(source, result);
+
+                            previousFileName = currentFileName;
+                        }
+                    }
                 }
-                previousFileName = currentFileName;
+                previousID = keys.get(i).getSectionId();
+                System.out.println(i);
             }
-            System.out.println("File " + keys.get(i).getFileName() + " created");
+            i = j + 1;
+            previousFileName = currentFileName;
         }
+//        System.out.println("File " + keys.get(i).getFileName() + " created");
     }
 }

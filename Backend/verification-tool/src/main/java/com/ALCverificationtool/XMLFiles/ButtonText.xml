@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource-base id="ButtonText" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
-    <note>This text is used to label various buttons throughout WebCTRL.</note>
     <section id="PROPERTY PAGE BUTTONS">
-        <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
+        <note></note>
         <translation approved="true" key="Active" new="false">
             <note>Location: In the GEO tree, select a piece of equipment, the click its Properties action button.</note>
             <variant>Activo</variant>
