@@ -6,7 +6,6 @@ import java.util.List;
 
 
 public interface KeysRepository {
-
     default boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion) {
         return createKeyTable(keyLanguageCode, keyLanguageVersion, false);
     }
@@ -16,4 +15,6 @@ public interface KeysRepository {
     TranslationResourceRec create(TranslationResourceRec keyData);
 
     List<TranslationResourceRec> getKeys(String tableName);
+
+    boolean updateKey(String tableName, TranslationResourceRec keyData);
 }
