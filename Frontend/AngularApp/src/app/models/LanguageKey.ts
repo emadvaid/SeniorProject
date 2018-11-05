@@ -5,7 +5,7 @@ export class LanguageKey {
   keyName: string;
   keyApproved: Boolean;
   keyNew: Boolean;
-  keyVarient: string;
+  keyVariant: string;
   keyNote: string;
   sectionId: string;
   sectionNote: string;

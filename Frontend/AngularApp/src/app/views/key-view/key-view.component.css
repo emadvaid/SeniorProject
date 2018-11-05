@@ -47,3 +47,7 @@
   position: relative;
   right: 5%;
 }
+
+.multi_lines_text {
+  white-space: pre-line;
+}

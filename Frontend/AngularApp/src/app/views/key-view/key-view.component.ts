@@ -13,12 +13,30 @@ import { Language } from 'src/app/models/Language';
   styleUrls: ['./key-view.component.css']
 })
 export class KeyViewComponent implements OnInit {
-
-  keys = [];
+  englisTranslation = 'none';
+  keys = []; //keylist must be static
+  keys2 = [];  //this keylist can change
+  englishKeys = [];
   sortedKeys = [];
   versionLanguageList = [];
+
+
   model: any = {};
   languages: any = {};
+  //current selected key
+  currKey: LanguageKey = {keyId: -1,
+       languageCode: 'none',
+       LanguageVersion: 'none',
+       keyName: 'none',
+       keyApproved: false,
+       keyNew: false,
+       keyVariant: 'none',
+       keyNote: 'none',
+       sectionId: 'none',
+       sectionNote: 'none',
+       fileName: 'none',
+       fileNotes: 'none',
+  };
 
   //current Data
   currLang: Language;
@@ -38,6 +56,8 @@ export class KeyViewComponent implements OnInit {
     await this.getVersions();
     await this.getLanguages();
     await this.getKeyList();
+    this.getEnglishKeys();
+    console.log(this.currKey.keyVariant);
 
   }
 
@@ -56,16 +76,26 @@ export class KeyViewComponent implements OnInit {
       console.log(this.currLanguage);
 
   }
+  //returns all the english keys for this version, needed for key comparison
+  async getEnglishKeys(){
+    let tempString = this.currVersion;
+    if(this.currVersion.indexOf('.') > -1){
+      tempString = tempString.replace(/\./g, '_');
+    }
+    console.log(tempString);
 
-  setLangCode() {
-    console.log(this.currLanguage);
+    const resultList =  await this.keySevice.getNewKeys('en', tempString).toPromise();
+
+    this.englishKeys = resultList.keysDetails;
   }
 
+
+  //this is all the keys for the current language
   async getKeyList(){
 
     console.log(this.currLanguage + '' + this.currVersion);
     let tempString = this.currVersion;
-    if(this.currVersion.indexOf('.') > -1){
+    if(this.currVersion.indexOf('.') > -1) {
       tempString = tempString.replace(/\./g, '_');
     }
     console.log(tempString);
@@ -73,7 +103,38 @@ export class KeyViewComponent implements OnInit {
     const resultList =  await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
 
     this.keys = resultList.keysDetails;
+    this.keys = this.keys.sort(function(a, b) {
+      let textA = a.keyName.toUpperCase();
+      let textB = b.keyName.toUpperCase();
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    this.keys2 = this.keys;
     console.log(this.keys);
+  }
+
+  selectKey(key: LanguageKey){
+    this.currKey = key;
+    for(let thiskey of this.englishKeys){
+      if(thiskey.keyName === this.currKey.keyName){
+        this.englisTranslation = thiskey.keyVariant;
+        break;
+      }
+    }
+
+    console.log(this.currKey);
+  }
+
+  searchList(criteria: string){
+    this.keys2 = [];
+    this.keys2.length = 0;
+    if(criteria == null || criteria == ''){
+      this.keys2 = this.keys;
+    }else {
+      for(let key1 of this.keys){
+        if(key1.keyName.includes(criteria)){
+         this.keys2.push(key1);}
+      }
+    }
   }
 
 }

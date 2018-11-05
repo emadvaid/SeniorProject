@@ -1,24 +1,25 @@
 
-<form>
+<form #keyViewForm="ngForm">
 <div>
   <div>
     <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
             [(ngModel)]="currVersion"
+
             #lang="ngModel"
             name="verselect">
       <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
     </select>
     <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
             [(ngModel)]="currLanguage"
-            (ngModelChange)="setLangCode()"
+            (ngModelChange)="getKeyList()"
             #lang="ngModel"
             name="langselect">
       <option *ngFor="let lang of languages.lang" >{{lang.langCode}}</option>
     </select>
 
     <input type="text" class="form-control" id="searchBar"  style="width: 300px; left: 6px;position:  relative;left: 50%; display: inline-block"
-           placeholder="Search" [(ngModel)]="criteria"
-           name="search" >
+           placeholder="Search" [(ngModel)]="criteria" (ngModelChange)="searchList($event)"
+           name="search1" >
 
   </div>
 
@@ -30,24 +31,27 @@
 
     <table id="ledgerTable" style=" table-layout:fixed">
 
-      <tr *ngFor="let key of keys">
-        <td *ngIf="key.keyApproved == true" style="color: green">{{key.keyName}}</td>
-        <td *ngIf="key.keyApproved == false" style="color: red">{{key.keyName}}</td>
+      <tr *ngFor="let key of keys2">
+        <td *ngIf="key.approved == true" >
+          <button class="btn btn-link btn-xs" style="color: green; font-size: medium" (click)="selectKey(key)">{{key.keyName}}</button>
+        </td>
+        <td *ngIf="key.approved == false" >
+          <button class="btn btn-link btn-xs" style="color: red; font-size: medium" (click)="selectKey(key)">{{key.keyName}}</button>
+        </td>
       </tr>
 
       </table>
 
 
-
-
   </div>
 </div>
+
   <div id="rightChild">
     <div style="position: relative; left: 5%">
       <label >Key Text</label>
       <div id="keyInput">
         <input type="text" class="form-control" id="input"  style="width: 90vh; height: 100%;padding-bottom: 135px "
-               placeholder="Translation Text" [(ngModel)]="criteria"
+               placeholder="Translation Text" [(ngModel)]="currKey.keyVariant" [value]="currKey.keyVariant"
                name="search" >
 
       </div>
@@ -59,15 +63,16 @@
       <hr>
       <label >Key Text in English</label>
       <div id="keyEnglish" class="panel panel-default">
+        <p style="position:relative; left: 9px">{{englisTranslation}}</p>
 
       </div>
       <hr>
       <label>Key Descriptions/Notes</label>
       <div id="descriptionInput">
-        <input type="text" class="form-control" id="input2"  style="width: 90vh; height: 100%; left: 6px; padding-bottom: 135px "
-               placeholder="Translation Text" [(ngModel)]="criteria"
-               name="search" >
-
+        <textarea  class="form-control" id="input3" rows="4" style="width: 90vh; height: 100%; left: 6px;
+         padding-bottom: 135px;"
+                  placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote"
+                  name="search2" ></textarea>
       </div>
     </div>
   </div>
