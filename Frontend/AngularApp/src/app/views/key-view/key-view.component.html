@@ -11,7 +11,7 @@
     </select>
     <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
             [(ngModel)]="currLanguage"
-            (ngModelChange)="getKeyList()"
+            (ngModelChange)="getKeyList(); approvalSelection = 'All'"
             #lang="ngModel"
             name="langselect">
       <option *ngFor="let lang of languages.lang" >{{lang.langCode}}</option>
@@ -27,6 +27,14 @@
 <div id="parent">
 <div id="leftChild" >
   <label style="position: relative; left: 10%">List of Keys</label>
+  <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
+          [(ngModel)]="approvalSelection"
+          (ngModelChange)="searchList(criteria)"
+          name="verselect222">
+    <option selected = "selected">All</option>
+    <option >Approved</option>
+    <option >Unapproved</option>
+  </select>
   <div id="keyList" class="panel panel-default">
 
     <table id="ledgerTable" style=" table-layout:fixed">

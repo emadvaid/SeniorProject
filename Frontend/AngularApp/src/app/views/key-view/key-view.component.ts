@@ -14,6 +14,7 @@ import { Language } from 'src/app/models/Language';
 })
 export class KeyViewComponent implements OnInit {
   englisTranslation = 'none';
+  approvalSelection = 'All';
   keys = []; //keylist must be static
   keys2 = [];  //this keylist can change
   englishKeys = [];
@@ -53,6 +54,7 @@ export class KeyViewComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
+    this.approvalSelection = 'All';
     await this.getVersions();
     await this.getLanguages();
     await this.getKeyList();
@@ -124,17 +126,51 @@ export class KeyViewComponent implements OnInit {
     console.log(this.currKey);
   }
 
-  searchList(criteria: string){
+  searchList(criteria: string) {
     this.keys2 = [];
     this.keys2.length = 0;
-    if(criteria == null || criteria == ''){
-      this.keys2 = this.keys;
-    }else {
-      for(let key1 of this.keys){
-        if(key1.keyName.includes(criteria)){
-         this.keys2.push(key1);}
+    if (this.approvalSelection == 'All') {
+      if (criteria == null || criteria == '') {
+        this.keys2 = this.keys;
+      } else {
+        for (let key1 of this.keys) {
+          if (key1.keyName.includes(criteria)) {
+            this.keys2.push(key1);
+          }
+        }
       }
     }
-  }
+    else if(this.approvalSelection == 'Approved'){
+      if (criteria == null || criteria == '') {
+        for (let key1 of this.keys) {
+          if (key1.approved == true) {
+            this.keys2.push(key1);
+          }
+        }
+      } else {
+        for (let key1 of this.keys) {
+          if (key1.keyName.includes(criteria) && key1.approved == true) {
+            this.keys2.push(key1);
+          }
+        }
+      }
+    }
+    else{
 
+      if (criteria == null || criteria == '') {
+        for (let key1 of this.keys) {
+          if (key1.approved == false) {
+            this.keys2.push(key1);
+          }
+        }
+      } else {
+        for (let key1 of this.keys) {
+          if (key1.keyName.includes(criteria) && key1.approved == false) {
+            this.keys2.push(key1);
+          }
+        }
+      }
+
+    }
+  }
 }
