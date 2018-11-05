@@ -72,7 +72,7 @@ export class KeyViewComponent implements OnInit {
 
     const resultList =  await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
 
-    this.keys = resultList;
+    this.keys = resultList.keysDetails;
     console.log(this.keys);
   }
 

@@ -9,4 +9,8 @@ public class KeysResponse {
     private List<TranslationResourceRec> KeysDetails;
 
     public KeysResponse(List<TranslationResourceRec> keysDetails) {KeysDetails = keysDetails;}
+
+    public List<TranslationResourceRec> getKeysDetails() {
+        return KeysDetails;
+    }
 }

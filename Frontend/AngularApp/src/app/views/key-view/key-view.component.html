@@ -27,7 +27,19 @@
 <div id="leftChild" >
   <label style="position: relative; left: 10%">List of Keys</label>
   <div id="keyList" class="panel panel-default">
-    Hello2
+
+    <table id="ledgerTable" style=" table-layout:fixed">
+
+      <tr *ngFor="let key of keys">
+        <td *ngIf="key.keyApproved == true" style="color: green">{{key.keyName}}</td>
+        <td *ngIf="key.keyApproved == false" style="color: red">{{key.keyName}}</td>
+      </tr>
+
+      </table>
+
+
+
+
   </div>
 </div>
   <div id="rightChild">
