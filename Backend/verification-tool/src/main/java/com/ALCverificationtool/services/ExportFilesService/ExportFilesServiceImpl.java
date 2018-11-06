@@ -56,7 +56,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
         String previousID = "";
         int i = 0;
         while (i < keys.size()) {
-       // for (int i = 0; i < keys.size(); ) {
+            // for (int i = 0; i < keys.size(); ) {
             String currentFileName = keys.get(i).getFileName();
 
             int j = i;
@@ -82,7 +82,6 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                     fileNotesDB = keys.get(j).getFileNotes();
                     if (fileNotesDB.length() == 0) {
                         fileNotesDB = "";
-                        System.out.println("null");
                     }
                     Element fileNotes = doc.createElement("note");
                     if (!previousNotes.equals(fileNotesDB)) {
@@ -144,9 +143,8 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                             i = j;
                             j++;
 
-
-                            //section.appendChild(translationKey);
-                            //resourceBase.appendChild(section);
+                            section.appendChild(translationKey);
+                            resourceBase.appendChild(section);
 
 
                             TransformerFactory transformerFactory = TransformerFactory.newInstance();
