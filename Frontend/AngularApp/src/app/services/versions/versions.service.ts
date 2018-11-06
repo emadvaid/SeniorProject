@@ -93,7 +93,7 @@ export class VersionService {
         'Content-Type': 'application/Json'
     });
     const options = new RequestOptions({headers: headers});
-    const deleteLangUri = `http://localhost:8080/versions/${verNum}/${langCode}`;
+    const deleteLangUri = `http://localhost:8080/versions/${langCode}/${verNum}/`;
     console.log(`deleteVerUri=${deleteLangUri}`);
     return this.http.delete(deleteLangUri, options)
         .pipe(

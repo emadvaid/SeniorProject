@@ -35,7 +35,7 @@ export class ManageLanguageComponent implements OnInit {
     }
 
     manageVersions(event: any) {
-        this.router.navigate(['admin/deleteLangByVerNum']);
+        this.router.navigate(['admin/manageVersions']);
 
     }
     get diagnostics() {

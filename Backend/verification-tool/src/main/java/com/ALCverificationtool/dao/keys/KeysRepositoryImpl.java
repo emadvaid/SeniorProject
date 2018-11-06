@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
-import javax.sql.RowSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -44,6 +43,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
 
         String newTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+        newTableName = newTableName.toLowerCase();
         System.out.println(DROP_SQL.replace("TABLE_NAME", newTableName));
         System.out.println(CREATE_SQL.replace("TABLE_NAME", newTableName));
 
@@ -83,7 +83,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     @Override
     public boolean deleteKeyTable(String keyLanguageCode, String keyLanguageVersion) {
         // convert the landCode and VerNum to a table name
-        String oldTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+        String oldTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
 
         if(keyLanguageCode == null && keyLanguageVersion == null) {
             throw new ServiceException("keyLanguageCode & keyLanguageVersion");
@@ -101,7 +101,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public boolean deleteKeyTablesByVersion(String keyLanguageVersion) {
-        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 
@@ -127,7 +127,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public List<String> findKeyTableNamesByVersion(String keyLanguageVersion) {
-        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 
@@ -136,7 +136,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public List<String> findKeyTableNamesByLangCode(String keyLanguageCode) {
-        String tablePattern = keyLanguageCode + "_%";
+        String tablePattern = keyLanguageCode.toLowerCase() + "_%";
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 

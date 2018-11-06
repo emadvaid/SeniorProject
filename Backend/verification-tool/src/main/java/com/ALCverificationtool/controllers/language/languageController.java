@@ -44,6 +44,19 @@ public class languageController {
 
     }
 
+    @CrossOrigin
+    @GetMapping("/lang/version/{versionNumber}")
+    public ResponseEntity<List<LangRec>> findByVersion(
+            @PathVariable("versionNumber") String versionNumber
+    ) {
+        List<LangRec> langRecResults = this.service.findByVersion(versionNumber);
+
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(langRecResults, headers, HttpStatus.OK);
+    }
+
 
 
 }

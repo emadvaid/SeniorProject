@@ -1,6 +1,7 @@
 package com.ALCverificationtool.controllers.version;
 
 import com.ALCverificationtool.controllers.BasicResponse;
+import com.ALCverificationtool.models.LangRec;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.versionService.VersionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,7 +61,7 @@ public class versionController {
      * @return
      */
     @CrossOrigin
-    @DeleteMapping("/versions/{versionNumber}/{langCode}")
+    @DeleteMapping("/versions/{langCode}/{versionNumber}")
     public ResponseEntity<BasicResponse> deleteVersionLanguage(
             @PathVariable("versionNumber") String versionNumber,
             @PathVariable String langCode) {
@@ -90,6 +91,8 @@ public class versionController {
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
+
+
 
 
 
