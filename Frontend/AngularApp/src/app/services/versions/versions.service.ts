@@ -35,6 +35,33 @@ export class VersionService {
         .pipe(catchError(err => this.handleError(err)));
     }
 
+    getByLangCode(langCode: String): Observable<Version[]> {
+
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json'
+
+        });
+        const options = new RequestOptions({ headers: headers});
+
+        return this.http.get(`http://localhost:8080/versions/${langCode}`, options)
+        .pipe(
+            map((resp: any) => {
+                console.log('ManageLanguageComponent ajax response: ', resp);
+                if (resp) {
+                    const respBody = resp.json();
+                    console.log('ManageLanguageComponent loaded languages list: ', respBody);
+                    if (respBody) {
+                        return respBody;
+                    }
+                }
+                return <Array<Version>> [];
+            })
+        )
+        .pipe(catchError(err => this.handleError(err)));
+    }
+
     create(VersionDetails: Version): Observable<Version> {
         if (!this.userLoginService.isLoggedIn) {
             console.log('UserService.createUser: user not logged in');

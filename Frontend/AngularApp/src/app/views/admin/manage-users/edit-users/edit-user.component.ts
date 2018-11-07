@@ -3,9 +3,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LanguagesService } from '../../../../services/languages/languages.service';
 import { UserService } from '../../../../services/users/user.service';
 import { User } from '../../../../models/User';
-import { error } from '@angular/compiler/src/util';
-import { ValidatorFn, AbstractControl } from '@angular/forms';
-import { ForbiddenNameValidatorDirective } from '../../../../validators/user-validator.validator';
 
 @Component({
     selector: 'app-edit-users',

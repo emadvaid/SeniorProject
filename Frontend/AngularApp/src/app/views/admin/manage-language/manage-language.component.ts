@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/Http';
-import { error } from 'util';
 import { Router } from '@angular/router';
 import { Language } from '../../../models/Language';
 import { LanguagesService } from 'src/app/services/languages/languages.service';
@@ -35,7 +33,12 @@ export class ManageLanguageComponent implements OnInit {
     }
 
     manageVersions(event: any) {
-        this.router.navigate(['admin/manageVersions']);
+        // console.log(`event.target`, event.target);
+        // console.log(`event.target.dataset`, event.target.dataset);
+        // alert(`event.target.dataset['lang-code']=${event.target.dataset['lang-code']}`);
+        this.router.navigate(['admin/manageVersions'], {
+            queryParams: {langCode: event.target.dataset['langCode']}
+        });
 
     }
     get diagnostics() {

@@ -40,31 +40,18 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr *ngFor="let languages of model.languages">
-                      <td>{{languages.languages}}</td>
-                   
+                      <tr *ngFor="let versions of model.versions">
+                      <td>{{versions.verNum}}</td>                   
                       <td>
-                            <a class="btn btn-danger" 
+                            <a class="btn btn-danger" attr.data-langCode="{{versions.langCode}}" attr.data-vernum="{{versions.verNum}}"
+                               
                                 (click)=" deleteLanguageByVersion($event)"
-                                attr.data-userid="{{user.id}}"
+                             
                             >
                                 Delete
                             </a>
                       </td>
-                      <td>
-                            <div>
-                                <a class="text-success" *ngIf="!user.active" 
-                                    (click)="activateUser($event)" attr.data-userid="{{user.id}}">Activate User</a>
-                            </div>
-                            <div>
-                                <a class="text-danger" *ngIf="user.active" 
-                                    (click)="deactivateUser($event)" attr.data-userid="{{user.id}}">Deactivate User</a>
-                            </div>
-                            <div>
-                                <a class="text-danger" *ngIf="user.active" 
-                                    (click)="resetPassword($event)" attr.data-userid="{{user.id}}">Reset Password</a>
-                            </div>
-                      </td>
+     
                       </tr>
                   </tbody>
               </table>
