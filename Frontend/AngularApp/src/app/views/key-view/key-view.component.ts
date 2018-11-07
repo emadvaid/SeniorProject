@@ -173,4 +173,9 @@ export class KeyViewComponent implements OnInit {
 
     }
   }
+
+  updateKeys() {
+    const tableName = this.currLanguage + "_" + this.currVersion;
+    this.keySevice.updateKey(tableName, this.currKey).toPromise();
+  }
 }

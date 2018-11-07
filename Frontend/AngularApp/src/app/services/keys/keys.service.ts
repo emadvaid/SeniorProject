@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class KeysService {
   getAllKeysURL = 'http://localhost:8080/getAllKeys';
-  updateKeyURL = 'http://localhost:8080/updateKeys'
+  updateKeyURL = 'http://localhost:8080/updateKeyValues';
 
   constructor(
     private http: HttpClient,
@@ -23,12 +23,14 @@ export class KeysService {
     const tableInfo = new FormData();
     tableInfo.append('language', language);
     tableInfo.append('versionNumber', versionNumber);
-
     return this.http.post(this.getAllKeysURL, tableInfo, httpOptions);
   }
 
   updateKey(tableName: string, key: LanguageKey){
     const keyBody = JSON.stringify(key);
-    return this.http.put(this.getAllKeysURL, {tablename: tableName, keyBody: keyBody}, httpOptions );
+    const keyInfo = new FormData();
+    keyInfo.append('tableName', tableName);
+    keyInfo.append('keyBody', keyBody);
+    return this.http.put(this.updateKeyURL, keyInfo, httpOptions);
   }
 }

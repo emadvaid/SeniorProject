@@ -7,5 +7,5 @@ import java.util.List;
 public interface KeysService {
     List<TranslationResourceRec> getKeys(String tableName);
 
-    
+    boolean updateKeys(String tableName, TranslationResourceRec updatedKey);
 }

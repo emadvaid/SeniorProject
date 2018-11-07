@@ -23,8 +23,32 @@ public class KeysController {
         List<TranslationResourceRec> keysList = this.keysService.getKeys(tableName);
 
         KeysResponse response = new KeysResponse(keysList);
-
+        System.out.println("get keys");
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @PutMapping(value="/updateKeyValues")
+    public boolean updateKey(@RequestBody String tableName,
+                             @RequestBody TranslationResourceRec key){
+        System.out.println("daf");
+        System.out.println(tableName);
+
+
+        //return keysService.updateKeys(tableName, updatedKeys);
+        return true;
+    }
 }
+
+//    @CrossOrigin
+//    @PutMapping(value="/updateKeyValues")
+//    public boolean updateKey(@RequestBody String tableName){
+//        //System.out.println(tableName);
+//        String[] keyDetails = tableName.split(",\"");
+//        System.out.println(keyDetails.length);
+//
+//        //return keysService.updateKeys(tableName, updatedKeys);
+//        return true;
+//    }
+//}
