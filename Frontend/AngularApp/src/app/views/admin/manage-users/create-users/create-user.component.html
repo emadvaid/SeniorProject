@@ -45,48 +45,33 @@
             [(ngModel)]="model.email"
         >
     </div>
+    <div class='form-group'> 
+        <div *ngFor="let lang of model.languages">   
+            <label class="container">{{lang.langCode}}
+                <input 
+                    type="checkbox" 
+                    checked="checked"
+                    name="languages"
+                    [(ngModel)]="lang.checked">
+                <span class="checkmark"></span>
+            </label>
+        </div> 
+    </div> 
     <div class='form-group'>
         <label>
-            Language 1
+            Role
             <select
                 class = 'form-control'
-                id="language1"
-                name="language1"
-                [(ngModel)]="model.language1"
+                id="role"
+                name="role"
+                [(ngModel)]="model.role"
             >
-                <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
+                <option *ngFor="let role of roleArry" [ngValue]="role.name">{{role.name}}</option>
             </select>
         </label>
+    </div>   
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        <a routerLink="/admin/manageUsers" class="btn btn-link">Cancel</a>
     </div>
-    <div class='form-group'>
-            <label>
-                Language 2
-                <select
-                    class = 'form-control'
-                    id="language2"
-                    name="language2"
-                    [(ngModel)]="model.language2"
-                >
-                    <option *ngFor="let lang of langArry" [ngValue]="lang.name">{{lang.name}}</option>
-                </select>
-            </label>
-        </div>
-        <div class='form-group'>
-                <label>
-                    Role
-                    <select
-                        class = 'form-control'
-                        id="role"
-                        name="role"
-                        [(ngModel)]="model.role"
-                    >
-                        <option *ngFor="let role of roleArry" [ngValue]="role.name">{{role.name}}</option>
-                    </select>
-                </label>
-            </div>
-            
-            <div class="form-group">
-                <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
-                <a routerLink="/admin/manageUsers" class="btn btn-link">Cancel</a>
-            </div>
 </form>

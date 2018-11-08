@@ -43,8 +43,7 @@ export class UserLoginService {
                 this._loggedInUser.id = respBody.user.id;
                 this._loggedInUser.isActive =  respBody.user.active;
                 this._loggedInUser.email =  respBody.user.email;
-                this._loggedInUser.language1 =  respBody.user.language1;
-                this._loggedInUser.language2 =  respBody.user.language2;
+                this._loggedInUser.languages =  respBody.user.languages;
                 this._loggedInUser.firstName =  respBody.user.firstName;
                 this._loggedInUser.lastName =  respBody.user.lastName;
                 this._loggedInUser.typeAsStr =  respBody.user.typeAsStr;
