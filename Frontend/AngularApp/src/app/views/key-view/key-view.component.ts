@@ -27,7 +27,7 @@ export class KeyViewComponent implements OnInit {
   //current selected key
   currKey: LanguageKey = {keyId: -1,
        languageCode: 'none',
-       LanguageVersion: 'none',
+       languageVersion: 'none',
        keyName: 'none',
        keyApproved: false,
        keyNew: false,
@@ -175,7 +175,9 @@ export class KeyViewComponent implements OnInit {
   }
 
   updateKeys() {
-    const tableName = this.currLanguage + "_" + this.currVersion;
-    this.keySevice.updateKey(tableName, this.currKey).toPromise();
+    this.currKey.languageCode = this.currLanguage;
+    this.currKey.languageVersion = this.currVersion;
+    this.keySevice.updateKey(this.currKey).toPromise();
+    this.getKeyList();
   }
 }

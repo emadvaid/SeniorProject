@@ -1,7 +1,7 @@
 export class LanguageKey {
   keyId: number;
   languageCode: string;
-  LanguageVersion: string;
+  languageVersion: string;
   keyName: string;
   keyApproved: Boolean;
   keyNew: Boolean;

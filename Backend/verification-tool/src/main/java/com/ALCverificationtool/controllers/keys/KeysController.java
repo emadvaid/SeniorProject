@@ -30,25 +30,11 @@ public class KeysController {
 
     @CrossOrigin
     @PutMapping(value="/updateKeyValues")
-    public boolean updateKey(@RequestBody String tableName,
-                             @RequestBody TranslationResourceRec key){
-        System.out.println("daf");
-        System.out.println(tableName);
-
-
-        //return keysService.updateKeys(tableName, updatedKeys);
+    public boolean updateKey(@RequestBody TranslationResourceRec key){
+        key.setKeyApproved(true);
+        key.setKeyNew(false);
+        String tableName = key.getLanguageCode() + "_" + key.getLanguageVersion();
+        keysService.updateKeys(tableName, key);
         return true;
     }
 }
-
-//    @CrossOrigin
-//    @PutMapping(value="/updateKeyValues")
-//    public boolean updateKey(@RequestBody String tableName){
-//        //System.out.println(tableName);
-//        String[] keyDetails = tableName.split(",\"");
-//        System.out.println(keyDetails.length);
-//
-//        //return keysService.updateKeys(tableName, updatedKeys);
-//        return true;
-//    }
-//}

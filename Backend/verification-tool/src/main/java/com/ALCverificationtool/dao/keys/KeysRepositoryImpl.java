@@ -265,10 +265,10 @@ public class KeysRepositoryImpl implements KeysRepository {
     }
     @Override
     public boolean updateKey(String tableName, TranslationResourceRec keyData) {
-        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?" +
+        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?," +
                 "key_name = ?, key_new = ?, key_note = ?, key_variant = ?, " +
                 "section_id = ?, section_note = ?" +
-                "WHERE key_id = ?";
+                " WHERE key_id = ?";
 
         Object[] parameters = new Object[] {
                 keyData.getKeyApproved(),
