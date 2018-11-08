@@ -3,9 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LanguagesService } from '../../../../services/languages/languages.service';
 import { UserService } from '../../../../services/users/user.service';
 import { User } from '../../../../models/User';
-import { error } from '@angular/compiler/src/util';
-import { ValidatorFn, AbstractControl } from '@angular/forms';
-import { ForbiddenNameValidatorDirective } from '../../../../validators/user-validator.validator';
+import { Language } from 'src/app/models/Language';
 
 @Component({
     selector: 'app-edit-users',
@@ -15,7 +13,6 @@ import { ForbiddenNameValidatorDirective } from '../../../../validators/user-val
 export class EditUserComponent implements OnInit {
     model: any;
     submitted: boolean;
-    langArry: any;
     roleArry: any;
     userId: string;
 
@@ -27,8 +24,21 @@ export class EditUserComponent implements OnInit {
     ngOnInit() {
         this.model = {user: {}};
         this.submitted = false;
-        this.langArry = this.languageService.languages;
         this.roleArry = this.userService.userRoles;
+        this.languageService.getAll().subscribe(
+            (languages: Array<Language>) => {
+                console.log(languages);
+                this.model.languages = languages;
+                this.model.languages.forEach(element => {
+                    element.checked = false;
+                });
+            },
+            (err: any) => {
+                 console.log('ManageLanguageComponent: error getting languages', err);
+            }
+        );
+
+
 
         // get the userId from the parameter list of the activated route
         this.activatedRoute.queryParams.subscribe(
@@ -84,10 +94,14 @@ export class EditUserComponent implements OnInit {
         updatedUserDetails.firstName = this.model.user.firstName;
         updatedUserDetails.lastName = this.model.user.lastName;
         updatedUserDetails.email = this.model.user.email;
-        updatedUserDetails.language1 = this.model.user.language1;
-        updatedUserDetails.language2 = this.model.user.language2;
         updatedUserDetails.isActive = this.model.user.active;
         updatedUserDetails.typeAsStr = this.model.user.typeAsStr;
+        updatedUserDetails.languages = [];
+        this.model.languages.foreach((element) => {
+            if (element.checked) {
+                updatedUserDetails.languages.push(element.langCode);
+            }
+        });
 
         console.log('onSubmit(): newUser = ', updatedUserDetails);
 

@@ -11,4 +11,5 @@ public interface LanguageService {
     LangRec createLang(LangRec newLangDetails);
 
     List<LangRec> getLang();
+    List<LangRec> findByVersion(String versionNumber);
 }

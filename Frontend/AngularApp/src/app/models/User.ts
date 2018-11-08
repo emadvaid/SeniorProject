@@ -8,8 +8,7 @@ export class User {
     firstName: string;
     lastName: string;
     email: string;
-    language1: string;
-    language2: string;
+    languages: Array<string>;
 
     // add any other user details
 
@@ -53,8 +52,7 @@ export class User {
         newUser.firstName = parsedJson['firstName'];
         newUser.lastName  = parsedJson['lastName'];
         newUser.email     = parsedJson['email'];
-        newUser.language1 = parsedJson['language1'];
-        newUser.language2 = parsedJson['language2'];
+        newUser.languages = parsedJson['languages'];
 
         return newUser;
     }
@@ -72,8 +70,7 @@ export class User {
         newUser.firstName = jsonObject['firstName'];
         newUser.lastName  = jsonObject['lastName'];
         newUser.email     = jsonObject['email'];
-        newUser.language1 = jsonObject['language1'];
-        newUser.language2 = jsonObject['language2'];
+        newUser.languages = jsonObject['languages'];
 
         return newUser;
     }

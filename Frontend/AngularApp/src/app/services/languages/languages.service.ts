@@ -5,6 +5,7 @@ import { Http, Headers, RequestOptions } from '@angular/Http';
 import { UserLoginService } from '../user.login/user.login.service';
 
 import { Language} from '../../models/Language';
+import { VersionService } from '../versions/versions.service';
 
 @Injectable({providedIn: 'root'})
 export class LanguagesService {
@@ -57,6 +58,35 @@ export class LanguagesService {
         )
         .pipe(catchError(err => this.handleError(err)));
     }
+
+    getByVersion() {
+
+
+        // Add in JSON header and access token header
+        const headers = new Headers({
+            'Content-Type': 'application/Json'
+
+        });
+        const options = new RequestOptions({ headers: headers});
+
+        return this.http.get('http://localhost:8080/lang/version/{versionNumber}', options)
+        .pipe(
+            map((resp: any) => {
+                console.log('ManageLanguageComponent ajax response: ', resp);
+                if (resp) {
+                    const respBody = resp.json();
+                    console.log('ManageLanguageComponent loaded languages list: ', respBody);
+                    if (respBody.versionNumber) {
+                        return <Array<Language>> respBody.versionNumber;
+                    }
+                }
+
+                return [];
+            })
+        )
+        .pipe(catchError(err => this.handleError(err)));
+    }
+
 
     create(langDetails: Language): Observable<Language> {
         if (!this.userLoginService.isLoggedIn) {

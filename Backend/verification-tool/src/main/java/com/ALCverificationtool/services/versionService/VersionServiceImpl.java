@@ -9,6 +9,7 @@ import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -104,6 +105,38 @@ public class VersionServiceImpl implements VersionService{
         }
 
         return true;
+    }
+
+    @Override
+    public List<VerRec>getByLangCode(String langCode) {
+        // first get the list of table names which end with this version number
+        List<String> keyTableNames =  this.keysDao.findKeyTableNamesByLangCode(langCode);
+
+        // get a list of all the language records
+        List<VerRec> allLangRec = verDao.findAll();
+        List<VerRec> results = new ArrayList<>();
+
+        // remove any lang rec from this list if there is no corresponding key table
+        for(VerRec verRec: allLangRec) {
+
+            // see if there is a key table that begins with <langCode>_
+            String versionSuffix = "_" + verRec.getSafeVersionNumber();
+
+            // loop over our key table names
+            for(String tableName: keyTableNames) {
+
+                // if tableName ends with the version suffix
+                if(tableName.toLowerCase().endsWith(versionSuffix)) {
+
+                    // add langRec to results
+                    results.add(verRec);
+
+                    //  ____ out of this loop
+                    break;
+                }
+            }
+        }
+        return results;
     }
 }
 

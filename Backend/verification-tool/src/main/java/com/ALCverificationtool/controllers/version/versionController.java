@@ -60,7 +60,7 @@ public class versionController {
      * @return
      */
     @CrossOrigin
-    @DeleteMapping("/versions/{versionNumber}/{langCode}")
+    @DeleteMapping("/versions/{langCode}/{versionNumber}")
     public ResponseEntity<BasicResponse> deleteVersionLanguage(
             @PathVariable("versionNumber") String versionNumber,
             @PathVariable String langCode) {
@@ -91,6 +91,19 @@ public class versionController {
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
 
+    /**
+     * This controller method gets a list of all the available versions
+     * @return
+     */
+    @CrossOrigin
+    @GetMapping("/versions/{langCode}")
+    public ResponseEntity<List<VerRec>> getByLangCode(
+            @PathVariable("langCode") String langCode
+    ) {
+        List<VerRec> VerRecResults = this.service.getByLangCode(langCode);
 
+        HttpHeaders headers = new HttpHeaders();
 
+        return new ResponseEntity<>(VerRecResults, headers, HttpStatus.OK);
+    }
 }

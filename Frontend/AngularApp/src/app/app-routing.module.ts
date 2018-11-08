@@ -18,7 +18,7 @@ import { PasswordResetComponent } from './views/login/password-reset/password-re
 import { LogoutComponent } from './views/login/logout.component';
 import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
 import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
-import { DeleteLanguageByVerNumComponent } from './views/admin/manage-language/delete-languageByVerNum/delete-languageByVerNum.component';
+import { ManageVersionComponent } from './views/admin/manage-language/manage-versions/manage-versions.component';
 import { VersionComponent } from './views/version/version.component';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
 import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
@@ -49,7 +49,8 @@ const appRoutes: Routes = [
       {path: 'exportFile', component: ExportFilesComponent},
       {path: 'statistics', component: StatisticsComponent},
       {path: 'keyView', component: KeyViewComponent},
-      {path: 'deleteLangByVerNum', component: DeleteLanguageByVerNumComponent},
+
+      {path: 'manageVersions', component: ManageVersionComponent},
     ]
   },
   {
@@ -91,5 +92,5 @@ export const routingComponents = [
   ErrorPageComponent,
   ExportFilesComponent,
   StatisticsComponent,
-  DeleteLanguageByVerNumComponent
+  ManageVersionComponent
 ];

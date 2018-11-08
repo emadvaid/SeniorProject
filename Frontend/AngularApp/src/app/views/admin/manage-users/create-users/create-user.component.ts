@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { UserService } from '../../../../services/users/user.service';
 import { User } from '../../../../models/User';
 import { LanguagesService } from '../../../../services/languages/languages.service';
+import { Language } from 'src/app/models/Language';
 
 @Component({
     selector: 'app-create-users',
@@ -13,7 +14,6 @@ import { LanguagesService } from '../../../../services/languages/languages.servi
 export class CreateUserComponent implements OnInit {
     model: any;
     submitted: boolean;
-    langArry: any;
     roleArry: any;
 
     constructor(private router: Router,
@@ -23,11 +23,20 @@ export class CreateUserComponent implements OnInit {
     ngOnInit() {
         this.model = {};
         this.submitted = false;
-        this.langArry = this.languageService.languages;
-        this.model.language1 = this.languageService.defaultLanguage;
         this.roleArry = this.userService.userRoles;
         this.model.role = 'dealer';
-
+        this.languageService.getAll().subscribe(
+            (languages: Array<Language>) => {
+                console.log(languages);
+                this.model.languages = languages;
+                this.model.languages.forEach(element => {
+                    element.checked = false;
+                });
+            },
+            (err: any) => {
+                 console.log('ManageLanguageComponent: error getting languages', err);
+            }
+        );
         // just for dev purposes
         const rnd = Math.floor(10000 * Math.random());
         this.model.username = 'testusername' + rnd;
@@ -50,10 +59,15 @@ export class CreateUserComponent implements OnInit {
         newUser.firstName = this.model.firstName;
         newUser.lastName = this.model.lastName;
         newUser.email = this.model.email;
-        newUser.language1 = this.model.language1;
-        newUser.language2 = this.model.language2;
         newUser.isActive = this.model.active;
         newUser.typeAsStr = this.model.role;
+        newUser.languages = [];
+
+        this.model.languages.foreach((element) => {
+            if (element.checked) {
+                newUser.languages.push(element.langCode);
+            }
+        });
 
         console.log('onSubmit(): newUser = ', newUser);
 
