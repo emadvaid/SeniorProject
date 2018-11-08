@@ -5,6 +5,7 @@ import {LanguagesService} from '../../services/languages/languages.service';
 import {KeysService} from '../../services/keys/keys.service';
 import { Version } from 'src/app/models/Version';
 import { Language } from 'src/app/models/Language';
+import { StatisticsService } from '../../services/statistics/statistics.service';
 
 
 @Component({
@@ -43,6 +44,9 @@ export class KeyViewComponent implements OnInit {
   currLang: Language;
   currVersion = '';
   currLanguage = '';
+  newKeys: String;
+  totalKeys: String;
+  approvedKeys: String;
 
 
   criteria = '';
@@ -50,7 +54,8 @@ export class KeyViewComponent implements OnInit {
   constructor(
     private versionService: VersionService,
     private languageService: LanguagesService,
-    private keySevice: KeysService
+    private keySevice: KeysService,
+    private statisticsService: StatisticsService,
   ) { }
 
   async ngOnInit() {
@@ -59,7 +64,7 @@ export class KeyViewComponent implements OnInit {
     await this.getLanguages();
     await this.getKeyList();
     this.getEnglishKeys();
-    console.log(this.currKey.keyVariant);
+    await this.viewStatistics();
 
   }
 
@@ -94,6 +99,7 @@ export class KeyViewComponent implements OnInit {
 
   //this is all the keys for the current language
   async getKeyList(){
+    this.viewStatistics();
 
     console.log(this.currLanguage + '' + this.currVersion);
     let tempString = this.currVersion;
@@ -178,6 +184,30 @@ export class KeyViewComponent implements OnInit {
     this.currKey.languageCode = this.currLanguage;
     this.currKey.languageVersion = this.currVersion;
     this.keySevice.updateKey(this.currKey).toPromise();
+    this.viewStatistics();
     this.getKeyList();
+  }
+
+  async viewStatistics() {
+    //Statistics for first version
+    this.statisticsService.getNewKeys(this.currLanguage, this.currVersion).subscribe(
+      (keys) => {
+        this.newKeys = JSON.stringify(keys);
+        console.log(this.newKeys);
+      }
+    )
+    
+    this.statisticsService.getApprovedKeys(this.currLanguage, this.currVersion).subscribe(
+      (keys) => {
+        this.approvedKeys = JSON.stringify(keys);
+        console.log(this.approvedKeys);
+      }
+    )
+    this.statisticsService.getTotalKeys(this.currLanguage, this.currVersion).subscribe(
+      (keys) => {
+        this.totalKeys = JSON.stringify(keys);
+        console.log(this.totalKeys);
+      }
+    )
   }
 }
