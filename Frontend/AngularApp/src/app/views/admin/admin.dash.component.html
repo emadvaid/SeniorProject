@@ -1,45 +1,57 @@
 Welcome Admin
 <div class="row">
-        <div class="form-group col-xs-2">
-          <input type="text" class='form-control' id="language" name="language" placeholder="Enter Language Number"
-            [(ngModel)]="language">
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="form-group col-xs-2">
-          <input type="text" class='form-control' id="versionNumber" name="versionNumber" placeholder="Enter Version Number"
-            [(ngModel)]="versionNumber">
-        </div>
-        <div class="form-group col-xs-2">
-          <input type="text" class='form-control' id="versionNumber2" name="versionNumber2" placeholder="Enter Version Number for Comparison"
-            [(ngModel)]="versionNumber2">
-        </div>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" (click)="viewStatistics(language, versionNumber)">View Statistics</button>
-        <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)">Compare Versions</button>
-      </div>
-      
-      <table class="comparison">
-        <tr>
-          <td class="col-md-2">Version Number:</td>
-          <td class="col-md-2">{{ firstVersion }}</td>
-          <td class="col-md-2">{{ secondVersion }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">New Keys:</td>
-          <td class="col-md-2">{{ firstNewKeys }}</td>
-          <td class="col-md-2">{{ secondNewKeys }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">Approved Keys:</td>
-          <td class="col-md-2">{{ firstApprovedKeys }}</td>
-          <td class="col-md-2">{{ secondApprovedKeys }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">Total Keys:</td>
-          <td class="col-md-2">{{ firstTotalKeys }}</td>
-          <td class="col-md-2">{{ secondTotalKeys }}</td>
-        </tr>
-      </table>
+    <div class="form-group col-xs-2">
+      <label>Language:</label><br>
+      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currLanguage"
+        #lang="ngModel" name="langselect" (ngModelChange)="changeLanguage()">
+        <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="form-group col-xs-2">
+      <label>Version Number:</label><br>
+      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
+        #lang="ngModel" name="verselect">
+        <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+      </select>
+  
+      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="versionNumber2"
+        #lang="ngModel" name="verselect">
+        <option>2</option>
+        <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+      </select>
+    </div>
+    <div class="form-group col-xs-2">
+      <!-- <input type="text" class='form-control' id="versionNumber2" name="versionNumber2" placeholder="Enter Version Number for Comparison"
+        [(ngModel)]="versionNumber2"> -->
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" (click)="viewStatistics(language, versionNumber)">View Statistics</button>
+    <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)">Compare Versions</button>
+  </div>
+  
+  <table class="comparison">
+    <tr>
+      <td class="col-md-2">Version Number:</td>
+      <td class="col-md-2">{{ firstVersion }}</td>
+      <td class="col-md-2">{{ secondVersion }}</td>
+    </tr>
+    <tr>
+      <td class="col-md-2">New Keys:</td>
+      <td class="col-md-2">{{ firstNewKeys }}</td>
+      <td class="col-md-2">{{ secondNewKeys }}</td>
+    </tr>
+    <tr>
+      <td class="col-md-2">Approved Keys:</td>
+      <td class="col-md-2">{{ firstApprovedKeys }}</td>
+      <td class="col-md-2">{{ secondApprovedKeys }}</td>
+    </tr>
+    <tr>
+      <td class="col-md-2">Total Keys:</td>
+      <td class="col-md-2">{{ firstTotalKeys }}</td>
+      <td class="col-md-2">{{ secondTotalKeys }}</td>
+    </tr>
+  </table>
