@@ -22,7 +22,7 @@ public class AdminUserPreload implements ApplicationRunner {
             // create the admin user
             UserRec adminUserRec = new UserRec(
                     "admin", "admin", true,null,
-                    null, null, null, null);
+                    null, null, null);
             adminUserRec.setPassword("admin");
             userDao.save(adminUserRec);
         }

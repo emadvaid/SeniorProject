@@ -63,9 +63,9 @@ export class CreateUserComponent implements OnInit {
         newUser.typeAsStr = this.model.role;
         newUser.languages = [];
 
-        this.model.languages.foreach((element) => {
+        this.model.languages.forEach((element) => {
             if (element.checked) {
-                newUser.languages.push(element.langCode);
+                newUser.languages.push(new Language(element));
             }
         });
 
@@ -82,14 +82,11 @@ export class CreateUserComponent implements OnInit {
     validate(): boolean {
         console.log('this.model.username', this.model.username,
             'this.isEmpty (this.model.username)', this.isEmpty (this.model.username));
-        console.log('this.model.language1', this.model.language1,
-            'this.isEmpty (this.model.language1)', this.isEmpty (this.model.language1));
         console.log('this.model.role', this.model.role,
             'this.isEmpty (this.model.role)', this.isEmpty (this.model.role));
 
         return (
             !this.isEmpty (this.model.username)
-            && !this.isEmpty(this.model.language1)
             && !this.isEmpty(this.model.role)
             && (this.model.role === 'admin' || this.model.role === 'dealer')
         );

@@ -5,6 +5,9 @@ import { Router } from '@angular/router';
 
 import { UserService } from '../../../services/users/user.service';
 import { User } from '../../../models/User';
+import { Language } from 'src/app/models/Language';
+import { forEach } from '@angular/router/src/utils/collection';
+import { appendFile } from 'fs';
 
 @Component({
   selector: 'app-manage-users',
@@ -32,6 +35,23 @@ export class ManageUsersComponent implements OnInit {
                 console.log('ManageUsersComponent: error getting users', err);
             }
         );
+    }
+
+    /*
+     *  This method concats the languages toget as a string ie
+     *    "en, es, fr"
+     */
+    concatLangs(langArray: Array<Language>): string {
+        // Do the work here
+        let result = '';
+
+        langArray.forEach((lang: Language) => {
+            result += lang.langCode;
+        });
+
+
+
+        return result;
     }
 
 

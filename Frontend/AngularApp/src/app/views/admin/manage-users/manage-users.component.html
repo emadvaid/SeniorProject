@@ -45,7 +45,6 @@
                           <th>User Type</th>
                           <th>is active</th>
                           <th>Language</th>
-                          <th>Language</th>
                           <th></th>
                       </tr>
                   </thead>
@@ -54,8 +53,8 @@
                       <td>{{user.username}}</td>
                       <td>{{user.typeAsStr}}</td>
                       <td>{{user.active}}</td>
-                      <td>{{user.language1}}</td>
-                      <td>{{user.language2}}</td>
+                      <td>{{concatLangs(user.languages)}}</td>
+                   
                       <td>
                             <a class="btn btn-primary" 
                                 (click)="editUser($event)"

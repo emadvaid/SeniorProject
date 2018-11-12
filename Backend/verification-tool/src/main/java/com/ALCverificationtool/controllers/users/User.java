@@ -1,7 +1,9 @@
 package com.ALCverificationtool.controllers.users;
 
+import com.ALCverificationtool.models.LangRec;
 import com.ALCverificationtool.models.UserRec;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -14,8 +16,8 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String language1;
-    private String language2;
+    List<LangRec> languages;
+
 
     public User() {
     }
@@ -28,8 +30,7 @@ public class User {
         this.firstName = original.getFirstName();
         this.lastName = original.getLastName();
         this.email = original.getEmail();
-        this.language1 = original.getLanguage1();
-        this.language2 = original.getLanguage2();
+        this.languages = original.getLanguages();
     }
 
     public User(Optional<UserRec> originalOpt) {
@@ -42,15 +43,14 @@ public class User {
             this.firstName = original.getFirstName();
             this.lastName = original.getLastName();
             this.email = original.getEmail();
-            this.language1 = original.getLanguage1();
-            this.language2 = original.getLanguage2();
+            this.languages = original.getLanguages();
         }
     }
 
     public User(String username, UUID id, String typeAsStr,
                 boolean isActive, String firstName,
                 String lastName, String email,
-                String language1, String language2) {
+                List<LangRec> languages) {
         this.username = username;
         this.id = id;
         this.typeAsStr = typeAsStr;
@@ -58,8 +58,7 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.language1 = language1;
-        this.language2 = language2;
+        this.languages = languages;
     }
 
     public String getUsername() {
@@ -118,19 +117,11 @@ public class User {
         this.email = email;
     }
 
-    public String getLanguage1() {
-        return language1;
+    public List<LangRec> getLanguages() {
+        return languages;
     }
 
-    public void setLanguage1(String language1) {
-        this.language1 = language1;
-    }
-
-    public String getLanguage2() {
-        return language2;
-    }
-
-    public void setLanguage2(String language2) {
-        this.language2 = language2;
+    public void setLanguages(List<LangRec> languages) {
+        this.languages = languages;
     }
 }

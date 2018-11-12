@@ -25,20 +25,6 @@ export class EditUserComponent implements OnInit {
         this.model = {user: {}};
         this.submitted = false;
         this.roleArry = this.userService.userRoles;
-        this.languageService.getAll().subscribe(
-            (languages: Array<Language>) => {
-                console.log(languages);
-                this.model.languages = languages;
-                this.model.languages.forEach(element => {
-                    element.checked = false;
-                });
-            },
-            (err: any) => {
-                 console.log('ManageLanguageComponent: error getting languages', err);
-            }
-        );
-
-
 
         // get the userId from the parameter list of the activated route
         this.activatedRoute.queryParams.subscribe(
@@ -57,6 +43,33 @@ export class EditUserComponent implements OnInit {
                             if (user != null) {
                                 // add the user object to model as user
                                 this.model.user = user;
+
+                                // Now that we have the user get all the languages,
+                                //   this user can see
+                                this.languageService.getAll().subscribe(
+                                    (languages: Array<Language>) => {
+                                        console.log(languages);
+                                        this.model.languages = languages;
+
+                                        // set the checked status of each language
+                                        this.model.languages.forEach((lang => {
+                                            // search for a matching entry inside the user
+                                            const match = user.languages.find(
+                                                (userLang) => (lang.id === userLang.id)
+                                            );
+
+                                            // set the check status based on whether this lang was found
+                                            if (match && match !== null) {
+                                                lang.checked = true;
+                                            } else {
+                                                lang.checked = false;
+                                            }
+                                        }));
+                                    },
+                                    (err: any) => {
+                                         console.log('ManageLanguageComponent: error getting languages', err);
+                                    }
+                                );
                             } else {
                                 // log the error, and redirect to the manage users page
                                 console.log('EditUserComponent: no user found for userId = ', this.userId);
@@ -97,9 +110,9 @@ export class EditUserComponent implements OnInit {
         updatedUserDetails.isActive = this.model.user.active;
         updatedUserDetails.typeAsStr = this.model.user.typeAsStr;
         updatedUserDetails.languages = [];
-        this.model.languages.foreach((element) => {
+        this.model.languages.forEach((element) => {
             if (element.checked) {
-                updatedUserDetails.languages.push(element.langCode);
+                updatedUserDetails.languages.push(new Language(element));
             }
         });
 
@@ -116,7 +129,6 @@ export class EditUserComponent implements OnInit {
     validate(): boolean {
         return (
            !this.isEmpty(this.model.user.username)
-           && !this.isEmpty(this.model.user.language1)
            && !this.isEmpty(this.model.user.typeAsStr)
            && (this.model.user.typeAsStr.toLowerCase() === 'admin' || this.model.user.typeAsStr.toLowerCase() === 'dealer')
         );

@@ -161,8 +161,8 @@ public class UserServiceImpl implements UserService {
         // then copy the relevant values to the userRec Entity
         actualUserRec.setFirstName(userDetails.getFirstName());
         actualUserRec.setLastName(userDetails.getLastName());
-        actualUserRec.setLanguage1(userDetails.getLanguage1());
-        actualUserRec.setLanguage2(userDetails.getLanguage2());
+        actualUserRec.setLanguages(userDetails.getLanguages());
+
 
         // then save
         UserRec newUserRec = this.userDao.save(actualUserRec);

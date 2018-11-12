@@ -1,3 +1,5 @@
+import { Language } from './Language';
+
 export enum UserTypes {admin, dealer, unknown}
 
 export class User {
@@ -8,7 +10,7 @@ export class User {
     firstName: string;
     lastName: string;
     email: string;
-    languages: Array<string>;
+    languages: Array<Language>;
 
     // add any other user details
 
