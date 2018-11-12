@@ -59,4 +59,24 @@ public class StatisticsServiceImpl implements StatisticsService{
         }
         return approvedKeys;
     }
+
+    @Override
+    public int totalFiles(String language, String versionNumber) {
+        String tmp = versionNumber.replaceAll("\\.", "_");
+        String tableName = language + "_" + tmp;
+
+        int totalFiles = 0;
+        String tmpFile = "";
+
+        List<TranslationResourceRec> keys = keysDao.getKeys(tableName);
+        for (int i = 0; i < keys.size(); i++) {
+            if (!tmpFile.equals(keys.get(i).getFileName())) {
+                tmpFile = keys.get(i).getFileName();
+                totalFiles++;
+                System.out.println(tmpFile);
+            }
+        }
+
+        return totalFiles;
+    }
 }

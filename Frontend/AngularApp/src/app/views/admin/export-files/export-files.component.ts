@@ -54,9 +54,12 @@ export class ExportFilesComponent implements OnInit {
     console.log(this.language);
   }
 
-  onSubmit() {
+  specificExport() {
     console.log(this.language);
     console.log(this.versionNumber);
-    this.fileFunctionsService.exportFiles(this.language, this.versionNumber).subscribe();
+    this.fileFunctionsService.specificExport(this.language, this.versionNumber).subscribe();
+  }
+  exportAllLanguages() {
+    this.fileFunctionsService.exportAllLanguages(this.versionNumber).subscribe();
   }
 }

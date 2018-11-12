@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StatisticsService } from '../../services/statistics/statistics.service';
-import {VersionService} from '../../services/versions/versions.service';
-import {LanguagesService} from '../../services/languages/languages.service';
+import { VersionService } from '../../services/versions/versions.service';
+import { LanguagesService } from '../../services/languages/languages.service';
 
 @Component({
   selector: 'app-admin-dash',
@@ -11,9 +11,12 @@ export class AdminDashboardComponent implements OnInit {
   firstNewKeys: string;
   firstApprovedKeys: string;
   firstTotalKeys: string;
+  firstTotalFiles: string;
   secondNewKeys: string;
   secondApprovedKeys: string;
   secondTotalKeys: string;
+  secondTotalFiles: string;
+  
   firstVersion: string;
   secondVersion: string;
 
@@ -22,7 +25,7 @@ export class AdminDashboardComponent implements OnInit {
   public versionNumber = '';
   public language = '';
   model: any = {};
-  languages: any ={};
+  languages: any = {};
 
   constructor(
     private statisticsService: StatisticsService,
@@ -40,16 +43,16 @@ export class AdminDashboardComponent implements OnInit {
   async getVersions() {
     const versions = await this.versionService.getAll().toPromise();
     this.model.versions = versions;
-      this.currVersion = this.model.versions[0].verNum;
-      console.log(this.currVersion);
+    this.currVersion = this.model.versions[0].verNum;
+    console.log(this.currVersion);
   }
 
   async getLanguages() {
     const languages = await this.languageService.getAll().toPromise();
-      this.languages.lang = languages;
-      console.log(languages);
-      this.currLanguage = this.languages.lang[0].langCode;
-      console.log(this.currLanguage);
+    this.languages.lang = languages;
+    console.log(languages);
+    this.currLanguage = this.languages.lang[0].langCode;
+    console.log(this.currLanguage);
   }
 
   changeLanguage() {
@@ -75,10 +78,15 @@ export class AdminDashboardComponent implements OnInit {
         this.firstTotalKeys = JSON.stringify(keys);
       }
     )
-    }
+    this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
+      (keys) => {
+        this.firstTotalFiles = JSON.stringify(keys);
+      }
+    )
+  }
 
-    compareVersions(language: string, versionNumber: string) {
-      this.secondVersion = versionNumber;
+  compareVersions(language: string, versionNumber: string) {
+    this.secondVersion = versionNumber;
     //Statistics for second version
     this.statisticsService.getNewKeys(language, versionNumber).subscribe(
       (keys) => {
@@ -93,6 +101,11 @@ export class AdminDashboardComponent implements OnInit {
     this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
       (keys) => {
         this.secondTotalKeys = JSON.stringify(keys);
+      }
+    )
+    this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
+      (keys) => {
+        this.secondTotalFiles = JSON.stringify(keys);
       }
     )
   }

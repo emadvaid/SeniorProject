@@ -18,7 +18,6 @@
 
     <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="versionNumber2"
       #lang="ngModel" name="verselect">
-      <option>2</option>
       <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
     </select>
   </div>
@@ -28,7 +27,7 @@
   </div>
 </div>
 <div class="form-group">
-  <button class="btn btn-primary" (click)="viewStatistics(language, versionNumber)">View Statistics</button>
+  <button class="btn btn-primary" (click)="viewStatistics(language, currVersion)">View Statistics</button>
   <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)">Compare Versions</button>
 </div>
 
@@ -52,5 +51,10 @@
     <td class="col-md-2">Total Keys:</td>
     <td class="col-md-2">{{ firstTotalKeys }}</td>
     <td class="col-md-2">{{ secondTotalKeys }}</td>
+  </tr>
+  <tr>
+    <td class="col-md-2">Total Files:</td>
+    <td class="col-md-2">{{ firstTotalFiles }}</td>
+    <td class="col-md-2">{{ secondTotalFiles }}</td>
   </tr>
 </table>
