@@ -51,12 +51,3 @@
 .multi_lines_text {
   white-space: pre-line;
 }
-
-.update {
-  top:50px;
-	width:100%;
-	display:none;
-	text-align: center;
-	margin-bottom: 0;
-	padding:10px;
-}
