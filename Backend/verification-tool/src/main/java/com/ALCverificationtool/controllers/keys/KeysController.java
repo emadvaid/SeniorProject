@@ -23,8 +23,18 @@ public class KeysController {
         List<TranslationResourceRec> keysList = this.keysService.getKeys(tableName);
 
         KeysResponse response = new KeysResponse(keysList);
-
+        System.out.println("get keys");
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PutMapping(value="/updateKeyValues")
+    public boolean updateKey(@RequestBody TranslationResourceRec key){
+        key.setKeyApproved(true);
+        key.setKeyNew(false);
+        String tableName = key.getLanguageCode() + "_" + key.getLanguageVersion();
+        keysService.updateKeys(tableName, key);
+        return true;
     }
 }

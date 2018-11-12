@@ -43,4 +43,11 @@ export class StatisticsService {
         tableInfo.append('versionNumber', versionNumber);
         return this.http.post('http://localhost:8080/statistics/total', tableInfo, httpOptions)
     }
+
+    getTotalFiles(language: string, versionNumber: string) {
+        const tableInfo = new FormData();
+        tableInfo.append('language', language);
+        tableInfo.append('versionNumber', versionNumber);
+        return this.http.post('http://localhost:8080/statistics/files', tableInfo, httpOptions)
+    }
 }

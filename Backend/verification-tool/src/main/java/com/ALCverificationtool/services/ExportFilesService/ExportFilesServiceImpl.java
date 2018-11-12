@@ -32,10 +32,10 @@ public class ExportFilesServiceImpl implements ExportFilesService {
 
 
     @Override
-    public void createFolder(String language) {
+    public void createFolder(String language, String versionNumber) {
         //Create export folder on user Desktop
         String homeFolder = System.getProperty("user.home");
-        Paths.get(homeFolder, "Desktop", "Export Files/" + language + "/").toFile().mkdirs();
+        Paths.get(homeFolder, "Desktop", "Export Files/" + versionNumber + "/" + language + "/").toFile().mkdirs();
     }
 
     @Override
@@ -44,6 +44,11 @@ public class ExportFilesServiceImpl implements ExportFilesService {
         String tableName = language + "_" + tmp;
 
         List<TranslationResourceRec> keys = keysDao.getKeys(tableName);
+        //Return if table is empty
+        if (keys.size() < 1) {
+            System.out.println("empty table");
+            return;
+        }
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -154,7 +159,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
 
                             DOMSource source = new DOMSource(doc);
                             String desktopPath = System.getProperty("user.home") + "/Desktop";
-                            StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + language + "/" + keys.get(i).getFileName() + ".xml"));
+                            StreamResult result = new StreamResult(new File(desktopPath + "/Export Files/" + versionNumber + "/" + language + "/" + keys.get(i).getFileName() + ".xml"));
                             //StreamResult result = new StreamResult(System.out);
 
                             transformer.transform(source, result);
@@ -169,6 +174,5 @@ public class ExportFilesServiceImpl implements ExportFilesService {
             i = j + 1;
             previousFileName = currentFileName;
         }
-//        System.out.println("File " + keys.get(i).getFileName() + " created");
     }
 }

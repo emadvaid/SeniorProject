@@ -1,37 +1,30 @@
+Specify Version Number and Language you would like to export:
 <div class="form-group">
-    <!-- <label>Language</label>
-    <select class="form-control" id="language" name="language" [(ngModel)]="language">
-      <option>English</option>
-      <option>Spanish</option>
-      <option>Taiwan</option>
-    </select> -->
-    <input
-    type="text"
-    class = "form-control"
-    id="language"
-    name="language"
-    placeholder="Enter Language Number"
-    [(ngModel)]="language"
->
-  </div>
-  
-  <div class="form-group">
-    <!-- <label>Version</label>
-    <select class="form-control " id="version" name="version" [(ngModel)]="versionNumber">
-      <option>1.0</option>
-      <option>1.5</option>
-      <option>2.0</option>
-      <option>3.0</option>
-    </select> -->
-    <input
-    type="text"
-    class = 'form-control'
-    id="versionNumber"
-    name="versionNumber"
-    placeholder="Enter Version Number"
-    [(ngModel)]="versionNumber"
->
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" (click)="onSubmit()">Export Files</button>
-  </div>
+  <label>Version Number:</label><br>
+  <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
+    #lang="ngModel" name="verselect" (ngModelChange)="changeVersion()">
+    <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+  </select><br>
+
+  <label>Language:</label><br>
+  <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currLanguage"
+    #lang="ngModel" name="langselect" (ngModelChange)="changeLanguage()">
+    <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <button class="btn btn-primary" (click)="specificExport()">Export Files</button>
+</div>
+
+Export All Languages by Version Number:
+<div class="form-group">
+  <label>Version Number:</label><br>
+  <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
+    #lang="ngModel" name="verselect" (ngModelChange)="changeVersion()">
+    <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+  </select><br>
+</div>
+<div class="form-group">
+  <button class="btn btn-primary" (click)="exportAllLanguages()">Export All Languages</button>
+</div>

@@ -11,7 +11,7 @@ public interface ExportFilesService {
 
    // List<TranslationResourceRec> getKeys();
 
-    void createFolder(String language);
+    void createFolder(String language, String versionNumber);
 
     void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException;
 }

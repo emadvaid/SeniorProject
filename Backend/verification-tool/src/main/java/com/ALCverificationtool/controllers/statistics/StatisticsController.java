@@ -41,4 +41,14 @@ public class StatisticsController {
         int keys = statisticsService.approvedKeys(language, versionNumber);
         return keys;
     }
+
+    @CrossOrigin
+    @PostMapping(value = "/statistics/files")
+    public int totalFiles(
+            @RequestParam(value="language") String language,
+            @RequestParam(value="versionNumber") String versionNumber
+    ) {
+        int files = statisticsService.totalFiles(language, versionNumber);
+        return files;
+    }
 }
