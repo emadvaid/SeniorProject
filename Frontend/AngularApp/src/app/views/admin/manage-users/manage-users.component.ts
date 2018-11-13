@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/Http';
-import { error } from 'util';
 import { Router } from '@angular/router';
 
 import { UserService } from '../../../services/users/user.service';
 import { User } from '../../../models/User';
 import { Language } from 'src/app/models/Language';
-import { forEach } from '@angular/router/src/utils/collection';
-import { appendFile } from 'fs';
+
 
 @Component({
   selector: 'app-manage-users',
@@ -43,15 +41,13 @@ export class ManageUsersComponent implements OnInit {
      */
     concatLangs(langArray: Array<Language>): string {
         // Do the work here
-        let result = '';
+        const results = [];
 
         langArray.forEach((lang: Language) => {
-            result += lang.langCode;
+            results.push(lang.langCode);
         });
 
-
-
-        return result;
+        return results.join();
     }
 
 
