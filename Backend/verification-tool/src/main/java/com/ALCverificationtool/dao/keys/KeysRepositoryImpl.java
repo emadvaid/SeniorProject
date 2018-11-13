@@ -1,5 +1,7 @@
 package com.ALCverificationtool.dao.keys;
 
+import com.ALCverificationtool.dao.logs.LogsRepository;
+import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
@@ -38,6 +40,15 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
+
+    private final LogsRepository logsDao;
+
+    @Autowired
+    public KeysRepositoryImpl(
+        LogsRepository logsDao
+    ) {
+        this.logsDao = logsDao;
+    }
 
     @Override
     public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
@@ -284,7 +295,17 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyId()
         };
         int i = jdbcTemplate.update(UPDATE, parameters);
-        if (i == 1)
+
+        Logs logData = new Logs();
+        logData.setUserName("test username");
+        logData.setFileName(keyData.getFileName());
+        logData.setKeyName(keyData.getKeyName());
+        logData.setLanguage(keyData.getLanguageCode());
+        logData.setVariant(keyData.getKeyVariant());
+        logData.setVersion(keyData.getLanguageVersion());
+        logsDao.save(logData);
+
+    if (i == 1)
         {
             return true;
         }

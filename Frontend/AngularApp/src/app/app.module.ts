@@ -16,6 +16,7 @@ import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-fun
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
 import { KeyViewComponent } from './views/key-view/key-view.component';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { KeyViewComponent } from './views/key-view/key-view.component';
   ],
   providers: [
     UserLoginService,
-    UserTypeAuthGuardService
+    UserTypeAuthGuardService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
