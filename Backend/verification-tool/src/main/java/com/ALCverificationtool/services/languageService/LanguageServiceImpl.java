@@ -2,22 +2,27 @@ package com.ALCverificationtool.services.languageService;
 
 import com.ALCverificationtool.dao.keys.KeysRepository;
 import com.ALCverificationtool.dao.language.LanguageRepository;
+import com.ALCverificationtool.dao.logs.LogsRepository;
 import com.ALCverificationtool.models.LangRec;
+import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.services.userService.UserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Service
 public class LanguageServiceImpl implements LanguageService {
     private final LanguageRepository langDao;
     private final KeysRepository keyDao;
+    private final LogsRepository logsDao;
 
     @Autowired
-    public LanguageServiceImpl(LanguageRepository langDao,KeysRepository keyDao ) {
+    public LanguageServiceImpl(LanguageRepository langDao,KeysRepository keyDao, LogsRepository logsDao ) {
         this.langDao = langDao;
         this.keyDao = keyDao;
+        this.logsDao = logsDao;
     }
 
 
@@ -32,6 +37,17 @@ public class LanguageServiceImpl implements LanguageService {
         }
 
         LangRec tmpLangRec = this.langDao.save(newLangDetails);
+        //Create log for create language
+        Logs logData = new Logs();
+        logData.setAction("Language created");
+        logData.setUserName("test username");
+        logData.setLanguage(newLangDetails.getLangName());
+        //Get date and time for log
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        String date = sdf.format(cal.getTime());
+        logData.setDate(date);
+        this.logsDao.save(logData);
 
         if (tmpLangRec == null || tmpLangRec.getId() == null) {
             throw new UserException("Could not create language");

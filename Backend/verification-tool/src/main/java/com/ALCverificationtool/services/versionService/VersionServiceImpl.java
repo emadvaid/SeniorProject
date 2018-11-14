@@ -2,14 +2,18 @@ package com.ALCverificationtool.services.versionService;
 
 import com.ALCverificationtool.dao.keys.KeysRepository;
 import com.ALCverificationtool.dao.language.LanguageRepository;
+import com.ALCverificationtool.dao.logs.LogsRepository;
 import com.ALCverificationtool.dao.version.VersionRepository;
 import com.ALCverificationtool.models.LangRec;
+import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 @Service
@@ -17,16 +21,19 @@ public class VersionServiceImpl implements VersionService{
     private final KeysRepository keysDao;
     private final VersionRepository verDao;
     private final LanguageRepository langDao;
+    private final LogsRepository logsDao;
 
     @Autowired
     VersionServiceImpl(
             KeysRepository keysDao,
             VersionRepository verDao,
-            LanguageRepository langDao
+            LanguageRepository langDao,
+            LogsRepository logsDao
     ) {
         this.keysDao = keysDao;
         this.verDao = verDao;
         this.langDao = langDao;
+        this.logsDao = logsDao;
     }
 
     @Override
@@ -45,6 +52,18 @@ public class VersionServiceImpl implements VersionService{
         }
 
         VerRec newVerRec = this.verDao.save(newVerRecDetails);
+
+        //Create log for create language
+        Logs logData = new Logs();
+        logData.setAction("Version created");
+        logData.setUserName("test username");
+        logData.setVersion(newVerRecDetails.getVerNum());
+        //Get date and time for log
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        String date = sdf.format(cal.getTime());
+        logData.setDate(date);
+        this.logsDao.save(logData);
 
         if(newVerRec== null || newVerRec.getId() ==  null) {
             throw new ServiceException("could not create new version number");

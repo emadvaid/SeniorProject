@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -296,6 +298,12 @@ public class KeysRepositoryImpl implements KeysRepository {
         };
         int i = jdbcTemplate.update(UPDATE, parameters);
 
+        //Log approved key
+        //Get date and time for log
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        String date = sdf.format(cal.getTime());
+
         Logs logData = new Logs();
         logData.setUserName("test username");
         logData.setFileName(keyData.getFileName());
@@ -303,6 +311,8 @@ public class KeysRepositoryImpl implements KeysRepository {
         logData.setLanguage(keyData.getLanguageCode());
         logData.setVariant(keyData.getKeyVariant());
         logData.setVersion(keyData.getLanguageVersion());
+        logData.setAction("Key Approved");
+        logData.setDate(date);
         logsDao.save(logData);
 
     if (i == 1)

@@ -30,6 +30,12 @@ public class Logs {
     @Column(name = "version")
     private String version;
 
+    @Column(name = "action")
+    private String action;
+
+    @Column(name = "date")
+    private String date;
+
     public Logs() {
     }
 
@@ -64,5 +70,13 @@ public class Logs {
     public String getVersion() { return version; }
 
     public void setVersion(String version) { this.version = version; }
+
+    public String getAction() { return action;}
+
+    public void setAction(String action) { this.action = action;}
+
+    public String getDate() { return date;}
+
+    public void setDate(String date) { this.date = date;}
 
 }

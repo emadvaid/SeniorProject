@@ -23,6 +23,7 @@ import { VersionComponent } from './views/version/version.component';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
 import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
 import { KeyViewComponent } from './views/key-view/key-view.component';
+import { LogsComponent } from './views/admin/logs/logs.component';
 
 
 const appRoutes: Routes = [
@@ -49,6 +50,7 @@ const appRoutes: Routes = [
       {path: 'exportFile', component: ExportFilesComponent},
       {path: 'statistics', component: StatisticsComponent},
       {path: 'keyView', component: KeyViewComponent},
+      {path: 'logs', component: LogsComponent},
 
       {path: 'manageVersions', component: ManageVersionComponent},
     ]
@@ -92,5 +94,6 @@ export const routingComponents = [
   ErrorPageComponent,
   ExportFilesComponent,
   StatisticsComponent,
-  ManageVersionComponent
+  ManageVersionComponent,
+  LogsComponent,
 ];

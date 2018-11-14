@@ -51,7 +51,8 @@ export class LoginFormComponent implements OnInit {
 
             //Set username in cookies
             //this.comp.setSession(this.model.username)
-            this.comp.setCookies();
+            //this.comp.setCookies();
+            
             // make sure to remember the username if selected
             if (this.model.remember) {
               localStorage.setItem(REMEMBERED_USERNAME, this.model.username);
