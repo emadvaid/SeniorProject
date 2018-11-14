@@ -1,0 +1,70 @@
+<!-- <table>
+    <tr>
+        <th>Username</th>
+        <th>Action</th>
+        <th>Key Name</th>
+        <th>Key Variant</th>
+        <th>File Name</th>
+        <th>Version Number</th>
+        <th>Language</th>
+        <th>Date</th>
+    </tr>
+    <tr *ngFor="let log of Logs">
+        <td>{{ log.userName }}</td>
+        <td>{{ log.action }}</td>
+        <td>{{ log.keyName }}</td>
+        <td>{{ log.variant }}</td>
+        <td>{{ log.fileName }}</td>
+        <td>{{ log.version }}</td>
+        <td>{{ log.language }}</td>
+        <td>{{ log.date }}</td>
+    </tr>
+</table> -->
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Action</th>
+        <th>Description</th>
+        <th>Date and Time</th>
+    </tr>
+    <tr *ngFor="let log of Logs">
+        <ng-container *ngIf="log.action==='Key Approved'; else languageCreated">
+            <td>{{ log.userName }}</td>
+            <td>{{ log.action }}</td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Key Name</th>
+                        <th>Key Variant</th>
+                        <th>File Name</th>
+                        <th>Version Number</th>
+                        <th>Language</th>
+                    <tr>
+                        <td>{{ log.keyName }}</td>
+                        <td>{{ log.variant }}</td>
+                        <td>{{ log.fileName }}</td>
+                        <td>{{ log.version }}</td>
+                        <td>{{ log.language }}</td>
+                    </tr>
+                </table>
+            </td>
+            <td>{{ log.date }}</td>
+        </ng-container>
+        <ng-template #languageCreated>
+            <ng-container *ngIf="log.action==='Language created'; else versionCreated">
+                    <td>{{ log.userName }}</td>
+                    <td>{{ log.action }}</td>
+                    <td>{{ log.language }}</td>
+                    <td>{{ log.date }}</td>
+            </ng-container>
+        </ng-template>
+        <ng-template #versionCreated>
+            <ng-container *ngIf="log.action==='Version created'; else elseif">
+                    <td>{{ log.userName }}</td>
+                    <td>{{ log.action }}</td>
+                    <td>{{ log.version }}</td>
+                    <td>{{ log.date }}</td>
+            </ng-container>
+        </ng-template>
+    </tr>
+</table>

@@ -2,6 +2,8 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { UserLoginService } from './services/user.login/user.login.service';
 import { UserTypes } from './models/User';
 import { Router } from '@angular/router';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,12 @@ export class AppComponent implements OnInit {
   loggedIn = false;
   isAdmin = false;
 
-  constructor(private userLoginService: UserLoginService, private router: Router) {
+  constructor(private userLoginService: UserLoginService,
+    private router: Router,
+     private _cookieService: CookieService,
+    // private localSt: LocalStorageService,
+    // private sessionSt: SessionStorageService,
+    ) {
   }
 
   ngOnInit() {
@@ -30,4 +37,28 @@ export class AppComponent implements OnInit {
       + ', isAdmin = ' + this.isAdmin
     );
   }
+
+  setCookies(){
+    this._cookieService.put('username', "test");
+}
+getCookie(){
+    alert(this._cookieService.get('username'));
+}
+delCookies(){
+    this._cookieService.remove('username');
+}
+
+  // setSession(userName) {
+  //   this.sessionSt.store('username', userName);
+  // }
+  // getSession() {
+  //   alert(this.sessionSt.retrieve('logged-in'));
+  // }
+  // getUserName() {
+  //   return this.sessionSt.retrieve('userName');
+  // }
+
+  // delSession() {
+  //   this.sessionSt.clear('userName');
+  // }
 }

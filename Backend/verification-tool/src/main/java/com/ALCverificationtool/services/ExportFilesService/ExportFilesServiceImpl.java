@@ -149,7 +149,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                             j++;
 
                             section.appendChild(translationKey);
-                            resourceBase.appendChild(section);
+//                            resourceBase.appendChild(section);
 
 
                             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -167,6 +167,7 @@ public class ExportFilesServiceImpl implements ExportFilesService {
                             previousFileName = currentFileName;
                         }
                     }
+                    resourceBase.appendChild(section);
                 }
                 previousID = keys.get(i).getSectionId();
                 System.out.println(i);
