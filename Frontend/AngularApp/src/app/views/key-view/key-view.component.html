@@ -9,7 +9,7 @@
           <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
         </select>
         <select class="form-control" style="width: 80px;  display: inline-block"
-                [(ngModel)]="currLanguage" (ngModelChange)="consoleii()" #lang="ngModel" name="langselect">
+                [(ngModel)]="currLanguage"  #lang="ngModel" name="langselect">
           <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
         </select>
 
@@ -40,13 +40,14 @@
   <div id="parent">
     <div id="leftChild">
       <label style="position: relative; left: 10%">List of Keys</label>
-      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
+      <select class="form-control" style="width: 140px; position: relative; left: 12%; display: inline-block"
         [(ngModel)]="approvalSelection" (ngModelChange)="searchList(criteria)" name="verselect222">
         <option selected="selected">All</option>
         <option>Approved</option>
         <option>Unapproved</option>
       </select>
-      <div id="keyList" class="panel panel-default">
+      <div style="position: relative; padding-top: 5px">
+      <div id="keyList" class="panel panel-default" >
 
         <table id="ledgerTable" style=" table-layout:fixed">
 
@@ -60,14 +61,29 @@
           </tr>
 
         </table>
-
-
+      </div>
+      </div>
+      <div style="position: relative; left: 44px; padding-top: 7px">
+      <table class="comparison">
+        <tr>
+          <td class="col-md-2">New Keys:</td>
+          <td class="col-md-2">{{ newKeys }}</td>
+        </tr>
+        <tr>
+          <td class="col-md-2">Approved Keys:</td>
+          <td class="col-md-2">{{ approvedKeys }}</td>
+        </tr>
+        <tr>
+          <td class="col-md-2">Total Keys:</td>
+          <td class="col-md-2">{{ totalKeys }}</td>
+        </tr>
+      </table>
       </div>
     </div>
 
     <div id="rightChild">
       <div style="position: relative; left: 5%">
-        <label>Key Text</label>
+        <label>{{'Key Text' + currLanguageFull}}</label>
         <div id="keyInput">
           <input type="text" class="form-control" id="input" style="width: 90vh; height: 100%;padding-bottom: 135px "
             placeholder="Translation Text" [(ngModel)]="currKey.keyVariant" [value]="currKey.keyVariant" name="search">
@@ -89,25 +105,13 @@
             placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote" name="search2"></textarea>
         </div>
         <div style="position: relative; padding-top: 1%; float: right">
-          <button class="btn btn-primary" (click)="updateKeys()">Accept</button>
-          <button class="btn btn-info" style="position: relative; left: 4px">Reset</button>
+          <button class="btn btn-primary" (click)="updateKeys()">Approve</button>
+          <button class="btn btn-info" (click)="saveKeys()" style="position: relative; left: 4px">Save</button>
+          <button class="btn btn-info" (click)="keyReset(currKey)" style="position: relative; left: 8px">Reset</button>
         </div>
       </div>
     </div>
 
   </div>
-  <table class="comparison">
-    <tr>
-      <td class="col-md-2">New Keys:</td>
-      <td class="col-md-2">{{ newKeys }}</td>
-    </tr>
-    <tr>
-      <td class="col-md-2">Approved Keys:</td>
-      <td class="col-md-2">{{ approvedKeys }}</td>
-    </tr>
-    <tr>
-      <td class="col-md-2">Total Keys:</td>
-      <td class="col-md-2">{{ totalKeys }}</td>
-    </tr>
-  </table>
+
 </form>

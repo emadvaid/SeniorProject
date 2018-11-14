@@ -2,6 +2,7 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { UserLoginService } from './services/user.login/user.login.service';
 import { UserTypes } from './models/User';
 import { Router } from '@angular/router';
+import {LocalStorageService, SessionStorageService} from 'ngx-webstorage';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ export class AppComponent implements OnInit {
   loggedIn = false;
   isAdmin = false;
 
-  constructor(private userLoginService: UserLoginService, private router: Router) {
+  constructor(private userLoginService: UserLoginService,
+              private router: Router,
+              private storage: SessionStorageService) {
   }
 
   ngOnInit() {
@@ -30,4 +33,21 @@ export class AppComponent implements OnInit {
       + ', isAdmin = ' + this.isAdmin
     );
   }
+
+  setSession(id, userName, userRole) {
+    this.storage.store('userName', userName);
+    this.storage.store('id', id);
+    this.storage.store('userRole', userRole);
+  }
+  getUserName(){
+    return this.storage.retrieve('userName');
+  }
+  getRole() {
+    return this.storage.retrieve('userRole');
+  }
+    delSession(){
+      this.storage.clear('userName');
+      this.storage.clear('id');
+      this.storage.clear('userRole');
+    }
 }

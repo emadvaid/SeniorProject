@@ -18,6 +18,8 @@ export class KeyViewComponent implements OnInit {
   approvalSelection = 'All';
   keys = []; //keylist must be static
   keys2 = [];  //this keylist can change
+
+  resetKeysList = [];
   englishKeys = [];
   sortedKeys = [];
   versionLanguageList = [];
@@ -41,10 +43,14 @@ export class KeyViewComponent implements OnInit {
     fileNotes: 'none',
   };
 
+   resetKey: LanguageKey;
+
   //current Data
   currLang: Language;
   currVersion = 'None';
   currLanguage = 'None';
+
+  currLanguageFull = '';
   newKeys: String;
   totalKeys: String;
   approvedKeys: String;
@@ -113,17 +119,26 @@ export class KeyViewComponent implements OnInit {
     const resultList = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
 
     this.keys = resultList.keysDetails;
+    this.resetKeysList = resultList.keysDetails;
+
     this.keys = this.keys.sort(function (a, b) {
       let textA = a.keyName.toUpperCase();
       let textB = b.keyName.toUpperCase();
       return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
+
+    for (let lang of this.languages.lang){
+      if (this.currLanguage == lang.langCode){
+        this.currLanguageFull = ' in ' + lang.langName;
+      }
+    }
     this.keys2 = this.keys;
     console.log('keys:');
     console.log(this.keys);
   }
 
   selectKey(key: LanguageKey) {
+    this.getResetKey(key);
     this.currKey = key;
     for (let thiskey of this.englishKeys) {
       if (thiskey.keyName === this.currKey.keyName) {
@@ -186,6 +201,24 @@ export class KeyViewComponent implements OnInit {
   updateKeys() {
     this.currKey.languageCode = this.currLanguage;
     this.currKey.languageVersion = this.currVersion;
+    this.currKey.keyApproved = true;
+    this.keySevice.updateKey(this.currKey).toPromise();
+    this.viewStatistics();
+    this.getKeyList();
+    var alert = document.getElementById("success-alert");
+    //alert.hidden = false;
+    setTimeout(function () {
+      alert.hidden = false;
+    }, 1000);
+    setTimeout(function () {
+      alert.hidden = true;
+    }, 3000);
+  }
+
+  //saves key without accepting it
+  saveKeys() {
+    this.currKey.languageCode = this.currLanguage;
+    this.currKey.languageVersion = this.currVersion;
     this.keySevice.updateKey(this.currKey).toPromise();
     this.viewStatistics();
     this.getKeyList();
@@ -242,7 +275,22 @@ openModal(){
     let modal = document.getElementById('changeVersion');
     modal.style.display = 'none';
   }
-  consoleii(){
-    console.log(this.currLanguage);
+   async getResetKey(key: LanguageKey){
+  }
+
+  async keyReset(key: LanguageKey){
+    let tempString = this.currVersion;
+    if (this.currVersion.indexOf('.') > -1) {
+      tempString = tempString.replace(/\./g, '_');
+    }
+    const resultList = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
+    this.resetKeysList = resultList.keysDetails;
+    for(let key2 of this.resetKeysList){
+      if(key.keyName == key2.keyName){
+        this.resetKey = key2;
+      }
+    }
+    this.currKey = this.resetKey;
+    console.log(this.resetKey);
   }
 }
