@@ -15,6 +15,7 @@ import { FileSelectDirective} from 'ng2-file-upload';
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
 import { KeyViewComponent } from './views/key-view/key-view.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { KeyViewComponent } from './views/key-view/key-view.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    FileDropModule
+    FileDropModule,
+    ChartsModule
   ],
   providers: [
     UserLoginService,
