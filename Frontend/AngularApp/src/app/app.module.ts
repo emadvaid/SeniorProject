@@ -12,7 +12,6 @@ import { FileFunctionsService } from './services/file_functions/file-functions.s
 import { Http, HttpModule } from '@angular/Http';
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { FileSelectDirective} from 'ng2-file-upload';
-import { FileFunctionsRedoComponent } from './views/file-functions-redo/file-functions-redo.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
 import { KeyViewComponent } from './views/key-view/key-view.component';
@@ -23,7 +22,6 @@ import { KeyViewComponent } from './views/key-view/key-view.component';
     routingComponents,
     FileSelectDirective,
     FileFunctionsComponent,
-    FileFunctionsRedoComponent,
     KeyViewComponent
   ],
   imports: [

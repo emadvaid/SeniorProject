@@ -1,19 +1,37 @@
+
+
+<div id="changeVersion" class="modal">
+  <div class="modal-content">
+      <div style="position: relative;">
+        <p>Version</p>
+        <select class="form-control" style="width: 80px;   display: inline-block"
+                [(ngModel)]="currVersion"  #lang="ngModel" name="verselect">
+          <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+        </select>
+        <select class="form-control" style="width: 80px;  display: inline-block"
+                [(ngModel)]="currLanguage" (ngModelChange)="consoleii()" #lang="ngModel" name="langselect">
+          <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
+        </select>
+
+      </div>
+      <button class="btn btn-primary" (click)="submitTable()">Submit</button>
+      <button class="btn btn-primary" (click)="closeModal()">Cancel</button>
+</div>
+</div>
+
+
 <div class="alert alert-success" id="success-alert" hidden=true>
     <strong>Key updated!</strong>
   </div>
 <form #keyViewForm="ngForm">
   <div>
-    <div>
-      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
-        [(ngModel)]="currVersion" #lang="ngModel" name="verselect">
-        <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
-      </select>
-      <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block"
-        [(ngModel)]="currLanguage" (ngModelChange)="getKeyList(); approvalSelection = 'All'" #lang="ngModel" name="langselect">
-        <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
-      </select>
+    <div style="position: relative; left: 12%; display: inline-block" >
+      <p style="display: inline-block">{{"Version: " + currVersion + "  "}}</p>
+      <p style="display: inline-block; position: relative; left: 10px">{{"Language: " + currLanguage + "  "}}</p>
 
-      <input type="text" class="form-control" id="searchBar" style="width: 300px; left: 6px;position:  relative;left: 50%; display: inline-block"
+      <button class="btn btn-primary" style="position: relative; left: 20px" (click)="openModal()">Open Table</button>
+
+      <input type="text" class="form-control" id="searchBar" style="width: 300px; left: 850px;position:  relative; display: inline-block"
         placeholder="Search" [(ngModel)]="criteria" (ngModelChange)="searchList($event)" name="search1">
 
     </div>
@@ -55,15 +73,12 @@
             placeholder="Translation Text" [(ngModel)]="currKey.keyVariant" [value]="currKey.keyVariant" name="search">
 
         </div>
-        <div style=" padding-top: 1%">
-          <button class="btn btn-primary" (click)="updateKeys()">Accept</button>
-          <button class="btn btn-info" style="position: relative; left: 4px">Reset</button>
-        </div>
+
 
         <hr>
         <label>Key Text in English</label>
         <div id="keyEnglish" class="panel panel-default">
-          <p style="position:relative; left: 9px">{{englisTranslation}}</p>
+          <p style="position:relative; left: 9px">{{englishTranslation}}</p>
 
         </div>
         <hr>
@@ -72,6 +87,10 @@
           <textarea class="form-control" id="input3" rows="4" style="width: 90vh; height: 100%; left: 6px;
          padding-bottom: 135px;"
             placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote" name="search2"></textarea>
+        </div>
+        <div style="position: relative; padding-top: 1%; float: right">
+          <button class="btn btn-primary" (click)="updateKeys()">Accept</button>
+          <button class="btn btn-info" style="position: relative; left: 4px">Reset</button>
         </div>
       </div>
     </div>

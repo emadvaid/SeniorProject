@@ -27,6 +27,6 @@ export class KeysService {
   }
 
   updateKey(key: LanguageKey) {
-    return this.http.put(this.updateKeyURL, key, httpOptions)
+    return this.http.put(this.updateKeyURL, key, httpOptions);
   }
 }

@@ -14,7 +14,7 @@ import { StatisticsService } from '../../services/statistics/statistics.service'
   styleUrls: ['./key-view.component.css']
 })
 export class KeyViewComponent implements OnInit {
-  englisTranslation = 'none';
+  englishTranslation = 'none';
   approvalSelection = 'All';
   keys = []; //keylist must be static
   keys2 = [];  //this keylist can change
@@ -43,8 +43,8 @@ export class KeyViewComponent implements OnInit {
 
   //current Data
   currLang: Language;
-  currVersion = '';
-  currLanguage = '';
+  currVersion = 'None';
+  currLanguage = 'None';
   newKeys: String;
   totalKeys: String;
   approvedKeys: String;
@@ -63,16 +63,14 @@ export class KeyViewComponent implements OnInit {
     this.approvalSelection = 'All';
     await this.getVersions();
     await this.getLanguages();
-    await this.getKeyList();
-    this.getEnglishKeys();
-    await this.viewStatistics();
+    //await this.viewStatistics();
 
   }
 
   async getVersions() {
     const versions = await this.versionService.getAll().toPromise();
     this.model.versions = versions;
-    this.currVersion = this.model.versions[0].verNum;
+    //this.currVersion = this.model.versions[0].verNum;
     console.log(this.currVersion);
   }
 
@@ -80,7 +78,7 @@ export class KeyViewComponent implements OnInit {
     const languages = await this.languageService.getAll().toPromise();
     this.languages.lang = languages;
     console.log(languages);
-    this.currLanguage = this.languages.lang[0].langCode;
+    //this.currLanguage = this.languages.lang[0].langCode;
     console.log(this.currLanguage);
 
   }
@@ -90,9 +88,10 @@ export class KeyViewComponent implements OnInit {
     if (this.currVersion.indexOf('.') > -1) {
       tempString = tempString.replace(/\./g, '_');
     }
-    console.log(tempString);
 
     const resultList = await this.keySevice.getNewKeys('en', tempString).toPromise();
+    console.log('english keys');
+    console.log(resultList);
 
     this.englishKeys = resultList.keysDetails;
   }
@@ -102,12 +101,14 @@ export class KeyViewComponent implements OnInit {
   async getKeyList() {
     this.viewStatistics();
 
+
     console.log(this.currLanguage + '' + this.currVersion);
     let tempString = this.currVersion;
     if (this.currVersion.indexOf('.') > -1) {
       tempString = tempString.replace(/\./g, '_');
     }
     console.log(tempString);
+    await this.getEnglishKeys();
 
     const resultList = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
 
@@ -118,6 +119,7 @@ export class KeyViewComponent implements OnInit {
       return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
     this.keys2 = this.keys;
+    console.log('keys:');
     console.log(this.keys);
   }
 
@@ -125,7 +127,7 @@ export class KeyViewComponent implements OnInit {
     this.currKey = key;
     for (let thiskey of this.englishKeys) {
       if (thiskey.keyName === this.currKey.keyName) {
-        this.englisTranslation = thiskey.keyVariant;
+        this.englishTranslation = thiskey.keyVariant;
         break;
       }
     }
@@ -217,6 +219,30 @@ export class KeyViewComponent implements OnInit {
         this.totalKeys = JSON.stringify(keys);
         console.log(this.totalKeys);
       }
-    )
+    );
+  }
+openModal(){
+  let modal = document.getElementById('changeVersion');
+  modal.style.display = 'block';
+}
+
+  closeModal(){
+    let modal = document.getElementById('changeVersion');
+    modal.style.display = 'none';
+  }
+  submitTable(){
+    if(this.currLanguage == 'None'){
+      this.currLanguage = this.languages.lang[0].langCode;
+    }
+    if(this.currVersion == 'None'){
+      this.currVersion = this.model.versions[0].verNum;
+    }
+    this.getKeyList();
+    this.approvalSelection = 'All'
+    let modal = document.getElementById('changeVersion');
+    modal.style.display = 'none';
+  }
+  consoleii(){
+    console.log(this.currLanguage);
   }
 }
