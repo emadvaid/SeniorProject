@@ -2,11 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserLoginService } from '../../services/user.login/user.login.service';
 import { User, UserTypes } from '../../models/User';
-<<<<<<< HEAD
 import { AppComponent } from '../../app.component';
-=======
-import { AppComponent } from '../../app.component'; 
->>>>>>> master
+
+
 
 const REMEMBERED_USERNAME = 'remembered_username';
 
@@ -20,15 +18,10 @@ export class LoginFormComponent implements OnInit {
   submitted = false;
   private returnUrl: string;
 
-<<<<<<< HEAD
+
   constructor(private router: Router, private userLoginService: UserLoginService,
-              private comp: AppComponent) {}
-=======
-  constructor(private router: Router,
-    private userLoginService: UserLoginService,
-    private comp: AppComponent, 
-    ) { }
->>>>>>> master
+              private comp: AppComponent) { }
+
 
   ngOnInit() {
     // first log out of the current session
