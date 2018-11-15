@@ -7,11 +7,11 @@ import { LanguagesService } from '../../../../services/languages/languages.servi
 import { Language } from 'src/app/models/Language';
 
 @Component({
-    selector: 'app-create-users',
+    selector: 'app-create-user-view',
     templateUrl: './create-user.component.html',
     styleUrls: ['./create-user.component.css']
 })
-export class CreateUserComponent implements OnInit {
+export class CreateUserViewComponent implements OnInit {
     model: any;
     submitted: boolean;
     roleArry: any;

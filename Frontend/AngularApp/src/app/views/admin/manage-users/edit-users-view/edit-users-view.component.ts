@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LanguagesService } from '../../../../services/languages/languages.service';
 import { UserService } from '../../../../services/users/user.service';
+import { Language } from '../../../../models/Language';
 import { User } from '../../../../models/User';
-import { Language } from 'src/app/models/Language';
 
 @Component({
     selector: 'app-edit-users',
-    templateUrl: './edit-user.component.html',
-    styleUrls: ['./edit-user.component.css']
+    templateUrl: './edit-users-view.component.html',
+    styleUrls: ['./edit-users-view.component.css']
 })
-export class EditUserComponent implements OnInit {
+export class EditUserViewComponent implements OnInit {
     model: any;
     submitted: boolean;
     roleArry: any;
