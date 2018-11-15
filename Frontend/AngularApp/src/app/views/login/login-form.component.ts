@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserLoginService } from '../../services/user.login/user.login.service';
 import { User, UserTypes } from '../../models/User';
+import { AppComponent } from '../../app.component';
 
 const REMEMBERED_USERNAME = 'remembered_username';
 
@@ -15,7 +16,8 @@ export class LoginFormComponent implements OnInit {
   submitted = false;
   private returnUrl: string;
 
-  constructor(private router: Router, private userLoginService: UserLoginService) {}
+  constructor(private router: Router, private userLoginService: UserLoginService,
+              private comp: AppComponent) {}
 
   ngOnInit() {
     // first log out of the current session
@@ -43,6 +45,8 @@ export class LoginFormComponent implements OnInit {
           if (user) {
             // login was successful
             console.log('Login success, userType = ', this.userLoginService.getUserType);
+            //set session storage
+            this.comp.setSession(user.id, user.username, user.typeAsStr);
 
             // make sure to remember the username if selected
             if (this.model.remember) {
@@ -57,7 +61,7 @@ export class LoginFormComponent implements OnInit {
                 this.router.navigate(['admin']);
                 break;
               case UserTypes.dealer:
-                this.router.navigate(['dealer']);
+                this.router.navigate(['dealer/keyView']);
                 break;
               default:
                 this.router.navigate(['error-page']);

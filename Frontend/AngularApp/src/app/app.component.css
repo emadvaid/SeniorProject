@@ -1,0 +1,16 @@
+.image {
+  background-image:url("../assets/Auto_Logic_Minimum_Web.png");
+  background-position: center;
+  background-size: 200px 350px;
+  width: 200px;
+  height: 350px;
+
+}
+
+.center {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

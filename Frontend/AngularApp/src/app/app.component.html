@@ -1,10 +1,23 @@
     <!--The content below is only a placeholder and can be replaced.-->
+
+
+    <div *ngIf="!loggedIn">
+      <div style=" padding-top: 10px">
+        <img src="../assets/Auto_Logic_Minimum_Web.png" style="position: relative; left: 35%">
+      </div>
+    </div>
+
+
+    <div id="topbar" >
     <header class="container">
+      <div hidden>
       <span>{{diagnostics}}</span>
-      <h1 style="text-align:center">
-        {{title}}
-      </h1>
+      </div>
+
       <div *ngIf="loggedIn; else notLoggedIn">
+        <h1 style="text-align:center">
+          {{title}}
+        </h1>
         <div *ngIf="isAdmin; else notAdmin">
           Admin
           <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -30,11 +43,11 @@
           </nav>
         </ng-template>
       </div>
-      <ng-template #notLoggedIn>
-        Not Logged in
+      <ng-template #notLoggedIn >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
           <a class="navbar-brand" href="#"></a>
-          <ul class="navbar-nav nav  mr-auto">
+          <ul class="navbar-nav nav  mr-auto" style="position: relative; left: 35%;">
             <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
             <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
             <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
@@ -42,4 +55,7 @@
         </nav>
       </ng-template>
     </header>
+    </div>
+
+
     <router-outlet></router-outlet>

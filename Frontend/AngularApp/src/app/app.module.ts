@@ -17,6 +17,7 @@ import {FileDropModule} from 'ngx-file-drop';
 import { KeyViewComponent } from './views/key-view/key-view.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgxWebstorageModule } from 'ngx-webstorage';
+import { SharedDataService } from './services/shared-data/shared-data.service';
 
 @NgModule({
   declarations: [
