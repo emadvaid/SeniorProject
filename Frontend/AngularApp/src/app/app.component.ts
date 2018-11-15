@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   constructor(private userLoginService: UserLoginService,
               private router: Router,
               private storage: SessionStorageService,
-              private _cookieService: CookieService,){}
+              private _cookieService: CookieService, ) {}
 
 
   ngOnInit() {
@@ -42,25 +42,25 @@ export class AppComponent implements OnInit {
     this.storage.store('id', id);
     this.storage.store('userRole', userRole);
   }
-  getUserName(){
+  getUserName() {
     return this.storage.retrieve('userName');
   }
   getRole() {
     return this.storage.retrieve('userRole');
   }
-    delSession(){
+    delSession() {
       this.storage.clear('userName');
       this.storage.clear('id');
       this.storage.clear('userRole');
     }
 
-  setCookies(){
-    this._cookieService.put('username', "test");
+  setCookies() {
+    this._cookieService.put('username', 'test');
 }
-getCookie(){
+getCookie() {
     alert(this._cookieService.get('username'));
 }
-delCookies(){
+delCookies() {
     this._cookieService.remove('username');
 }
 

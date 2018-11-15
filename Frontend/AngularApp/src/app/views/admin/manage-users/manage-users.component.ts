@@ -5,6 +5,9 @@ import { Router } from '@angular/router';
 import { UserService } from '../../../services/users/user.service';
 import { User } from '../../../models/User';
 import { Language } from 'src/app/models/Language';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CreateUserModalComponent } from 'src/app/components/create-user-modal/create-user-modal.component';
+import { EditUserModalComponent } from 'src/app/components/edit-user-modal/edit-user-modal.component';
 
 @Component({
   selector: 'app-manage-users',
@@ -15,7 +18,11 @@ export class ManageUsersComponent implements OnInit {
     model: any = { };
 
     // Inject the http object into our class, so we can use it in our Ajax call
-    constructor(private userService: UserService, private http: Http, private router: Router) {}
+    constructor(private modalService: NgbModal,
+
+         private userService: UserService,
+         private http: Http,
+         private router: Router) {}
 
     // initialize this component by making an Ajax call to our dealer profile service
     //  to get the deal list
@@ -51,12 +58,28 @@ export class ManageUsersComponent implements OnInit {
 
 
     createUser() {
-        this.router.navigate(['admin/createUser']);
+         // popup the modal
+      const modalRef = this.modalService.open(CreateUserModalComponent);
+
+      modalRef.result
+        .then(
+            (res) => {
+
+                console.log('ManageUserComponent.createUser: modal returned ', res);
+                this.refresh();
+        })
+        .catch(
+            err => {
+
+                console.log('ManageUserComponent.createUser(): modal error: ', err);
+            }
+        );
     }
 
     editUser(event: any) {
         console.log('editUser: event.target.dataset[\'userid\'] = ', event.target.dataset['userid']);
-        this.router.navigate(['admin/editUser'], {
+        this.modalService.open(EditUserModalComponent);
+        this.router.navigate(['admin'], {
             queryParams: {userId: event.target.dataset['userid']}
         });
     }

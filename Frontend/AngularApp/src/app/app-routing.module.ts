@@ -11,8 +11,6 @@ import { ErrorPageComponent } from './views/error-page/error-page.component';
 import { UserTypes } from './models/User';
 import { UserTypeAuthGuardService } from './services/auth/authGuard.service';
 import { ManageUsersComponent } from './views/admin/manage-users/manage-users.component';
-import { CreateUserComponent } from './views/admin/manage-users/create-users/create-user.component';
-import { EditUserComponent } from './views/admin/manage-users/edit-users/edit-user.component';
 import { FileFunctionsComponent } from './views/file-functions/file-functions.component';
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
@@ -24,6 +22,8 @@ import { StatisticsComponent } from './views/admin/statistics/statistics.compone
 import { ExportFilesComponent } from './views/admin/export-files/export-files.component';
 import { KeyViewComponent } from './views/key-view/key-view.component';
 import { LogsComponent } from './views/admin/logs/logs.component';
+import { EditUserViewComponent } from './views/admin/manage-users/edit-users-view/edit-users-view.component';
+
 
 
 const appRoutes: Routes = [
@@ -41,8 +41,6 @@ const appRoutes: Routes = [
     children: [
       {path: '', component: AdminDashboardComponent},
       {path: 'manageUsers', component: ManageUsersComponent},
-      {path: 'createUser' , component: CreateUserComponent},
-      {path: 'editUser' , component: EditUserComponent},
       {path: 'manageLanguages' , component: ManageLanguageComponent},
       {path: 'createLanguage' , component: CreateLanguageComponent},
       {path: 'importFile', component: FileFunctionsComponent},
@@ -86,8 +84,7 @@ export const routingComponents = [
   DealerDashboardComponent,
   AdminDashboardComponent,
   ManageUsersComponent,
-  CreateUserComponent,
-  EditUserComponent,
+  EditUserViewComponent,
   ManageLanguageComponent,
   CreateLanguageComponent,
   PageNotFoundComponent,

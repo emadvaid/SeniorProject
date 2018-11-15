@@ -28,9 +28,9 @@ export class StatisticsComponent implements OnInit {
   model: any = {};
   languages: any = {};
 
-  public pieChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-  public pieChartData:number[] = [300, 500, 100];
-  public pieChartType:string = 'pie';
+  public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+  public pieChartData: number[] = [300, 500, 100];
+  public pieChartType: string = 'pie';
 
   constructor(
     private statisticsService: StatisticsService,
@@ -67,51 +67,51 @@ export class StatisticsComponent implements OnInit {
 
   viewStatistics(language: string, versionNumber: string) {
     this.firstVersion = versionNumber;
-    //Statistics for first version
+    // Statistics for first version
     this.statisticsService.getNewKeys(language, versionNumber).subscribe(
       (keys) => {
         this.firstNewKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
       (keys) => {
         this.firstApprovedKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
       (keys) => {
         this.firstTotalKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
       (keys) => {
         this.firstTotalFiles = JSON.stringify(keys);
       }
-    )
+    );
   }
 
   compareVersions(language: string, versionNumber: string) {
     this.secondVersion = versionNumber;
-    //Statistics for second version
+    // Statistics for second version
     this.statisticsService.getNewKeys(language, versionNumber).subscribe(
       (keys) => {
         this.secondNewKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
       (keys) => {
         this.secondApprovedKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
       (keys) => {
         this.secondTotalKeys = JSON.stringify(keys);
       }
-    )
+    );
     this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
       (keys) => {
         this.secondTotalFiles = JSON.stringify(keys);
       }
-    )
+    );
   }
 }

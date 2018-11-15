@@ -1,0 +1,87 @@
+<div></div>
+<h3>Edit User</h3>
+<form #createUserForm="ngForm">
+    <h2>Edit User</h2>
+    <div class='form-group'>
+        <label>Username</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="username"
+            name="username"
+            required minlength="4"
+            appForbiddenName="admin"
+            placeholder="Enter username"
+            [(ngModel)]="model.user.username"
+            #username="ngModel"
+        >
+        <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+            <div *ngIf="username.errors.required">Username is required</div>
+            <div *ngIf="username.errors.minlength">Username must be at least 4 characters.</div>
+            <div *ngIf="username.errors.forbiddenName">Username cannot be admin.</div>
+        </div>
+    </div>
+    <div class='form-group'>
+        <label>First Name</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="firstName"
+            name="firstName"
+            placeholder="Enter first name"
+            [(ngModel)]="model.user.firstName"
+        >
+    </div>
+    <div class='form-group'>
+        <label>Last Name</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="lastName"
+            name="lastName"
+            placeholder="Enter last name"
+            [(ngModel)]="model.user.lastName"
+        >
+    </div>
+    <div class='form-group'>
+        <label>Email</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            [(ngModel)]="model.user.email"
+        >
+    </div>
+    <div class='form-group'> 
+            <div *ngFor="let lang of model.languages">   
+                <label class="container">
+                    <input 
+                        type="checkbox" 
+                        name="{{lang.langCode}}"
+                        [(ngModel)]="lang.checked">
+                    <span class="checkmark">{{lang.langCode}}</span>
+                </label>
+            </div> 
+        </div> 
+ 
+        <div class='form-group'>
+            <label>
+                Role
+                <select
+                    class = 'form-control'
+                    id="role"
+                    name="role"
+                    [(ngModel)]="model.user.typeAsStr"
+                >
+                    <option *ngFor="let role of roleArry" [ngValue]="role.name.toLowerCase()">{{role.name}}</option>
+                </select>
+            </label>
+        </div>
+            
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+            <a (click)="onCancel()">Cancel</a>
+        </div>
+</form>

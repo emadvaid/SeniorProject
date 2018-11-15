@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="common" version="1.0" xml:lang="en" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="common" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
     <!-- This file must be translated a little differently. This represents mnemonics for each menu/menu item
         How this works is the translation (variant) must consist of a single letter from the menu and must be
         unique for each section. This is because each letter is a hotkey to press to select a given menu.
@@ -9,237 +9,229 @@
          Note: these must be single keyboard characters. You cannot use Chinese characters that require multiple
          key strokes to create.-->
     <section id="common-resources">
-        <translation key="button.add.name">
-            <variant>Add</variant>
+        <translation approved="true" key="button.add.name" new="false">
+            <variant>Agregar</variant>
         </translation>
-        <translation key="button.add.tooltip">
-            <variant>Add</variant>
+        <translation approved="true" key="button.add.tooltip" new="false">
+            <variant>Agregar</variant>
         </translation>
-        <translation key="button.delete.name">
-            <variant>Delete</variant>
+        <translation approved="true" key="button.delete.name" new="false">
+            <variant>Eliminar</variant>
         </translation>
-        <translation key="button.delete.tooltip">
-            <variant>Delete</variant>
+        <translation approved="true" key="button.delete.tooltip" new="false">
+            <variant>Eliminar</variant>
         </translation>
-        <translation key="color.chooser.name">
-            <variant>Choose Color</variant>
+        <translation approved="true" key="color.chooser.name" new="false">
+            <variant>Seleccionar color</variant>
         </translation>
-        <translation key="permission.permit-upload.title">
-            <variant>Permit Upload</variant>
+        <translation approved="true" key="permission.permit-upload.title" new="false">
+            <variant>Permitir carga</variant>
         </translation>
-        <translation key="permission.permit-download.title">
-            <variant>Permit Download</variant>
+        <translation approved="true" key="permission.permit-download.title" new="false">
+            <variant>Permitir descarga</variant>
         </translation>
-        <translation key="permission.permit-view-logic.title">
-            <variant>Permit View Logic</variant>
+        <translation approved="true" key="permission.permit-view-logic.title" new="false">
+            <variant>Permitir ver lógica</variant>
         </translation>
-        <translation key="permission.permit-edit.title">
-            <variant>Permit Edit</variant>
+        <translation approved="true" key="permission.permit-edit.title" new="false">
+            <variant>Permitir editar</variant>
         </translation>
-        <translation key="permission.permit-edit-read-only-properties.title">
-            <variant>Permit Edit Of Read Only Equipment Properties</variant>
+        <translation approved="true" key="permission.permit-edit-read-only-properties.title" new="false">
+            <variant>Permitir editar propiedades de equipo de sólo lectura</variant>
         </translation>
-        <translation key="permission.permissions.title">
+        <translation approved="true" key="permission.permissions.title" new="false">
             <note>the title for a dialog where the user edits the permissions for the current file.</note>
-            <variant>File Permissions</variant>
+            <variant>Permisos de archivos</variant>
         </translation>
-        <translation key="permission.permissions.enable.option">
+        <translation approved="true" key="permission.permissions.enable.option" new="false">
             <note>Name for a checkbox that enables permissions.</note>
-            <variant>Enable Permissions</variant>
+            <variant>Activar permisos</variant>
         </translation>
-        <translation key="permission.permissions.menu.item">
+        <translation approved="true" key="permission.permissions.menu.item" new="false">
             <note>a menu that allows the user the to edit the permissions for the current file.</note>
-            <variant>File Permissions...</variant>
+            <variant>Permisos de archivos...</variant>
         </translation>
-        <translation key="default.permission.permissions.tab.name">
+        <translation approved="true" key="default.permission.permissions.tab.name" new="false">
             <note>the name of a tab on a dialog. This tab allows the user to edit the default permissions that are used for new files.</note>
-            <variant>Default Permissions</variant>
+            <variant>Permisos predeterminados</variant>
         </translation>
-        <translation key="permission.simple.title">
+        <translation approved="true" key="permission.simple.title" new="false">
             <note>the title for a dialog where the user edits permissions for the current file.</note>
-            <variant>Permissions</variant>
+            <variant>Permisos</variant>
         </translation>
-        <translation key="permission.at-least-one-vendor.warning">
+        <translation approved="true" key="permission.at-least-one-vendor.warning" new="false">
             <note>Engineer users are allowed to pick more than one vendor, however, at least one vendor must be selected.</note>
-            <variant>At least one vendor must be selected.</variant>
+            <variant>Debe seleccionar al menos un proveedor.</variant>
         </translation>
-        <translation key="permissions.restricted.status.bar.restricted.text">
+        <translation approved="true" key="permissions.restricted.status.bar.restricted.text" new="false">
             <note>status bar text that shows the current file (control program or view) has some form of restricted permissions. We don't specify what.</note>
-            <variant>Restricted</variant>
+            <variant>Restringido</variant>
         </translation>
-        <translation key="permissions.restricted.status.bar.tooltip">
+        <translation approved="true" key="permissions.restricted.status.bar.tooltip" new="false">
             <note>a tooltip for the permissions field on the status bar. It explains what this field is showing and that you can click on it to view and edit the permissions.</note>
-            <variant>Shows whether or not the current file has any permissions restrictions. Click to view/edit.</variant>
+            <variant>Muestra si el archivo actual tiene o no restricciones de permisos. Hacer clic para ver/editar.</variant>
         </translation>
-        <translation key="permissions.cannot-edit-permissions.message">
-            <variant>You are not the owner of this file and can not edit the permissions.</variant>
+        <translation approved="true" key="permissions.cannot-edit-permissions.message" new="false">
+            <variant>No es el propietario del archivo y no puede editar los permisos.</variant>
         </translation>
-        <translation key="permissions.version-warning.message">
-            <variant>Not compatible with all system and driver versions. See Help for details.</variant>
+        <translation approved="true" key="permissions.version-warning.message" new="false">
+            <variant>No compatible con todas las versiones de controlador y de sistema. Consulte la ayuda para obtener más detalles.</variant>
         </translation>
-        <translation key="permissions.file-illegal-state.message">
-            <variant>File is in an illegal state and can not be opened!</variant>
+        <translation approved="true" key="permissions.file-illegal-state.message" new="false">
+            <variant>El archivo tiene un estado no permitido y no se puede abrir.</variant>
         </translation>
-        <translation key="permissions.0_index_param.permit_download.conflict">
-            <variant>Resource ( ''{0}'' ) doesn't permit download and is in conflict with other source files.</variant>
+        <translation approved="true" key="permissions.0_index_param.permit_download.conflict" new="false">
+            <variant>El recurso ( ''{0}'' ) no permite descargas y está en conflicto con otros archivos de origen.</variant>
         </translation>
-        <translation key="permissions.0_index_param.permit_upload.conflict">
-            <variant>Resource ( ''{0}'' ) doesn't permit upload and is in conflict with other source files.</variant>
+        <translation approved="true" key="permissions.0_index_param.permit_upload.conflict" new="false">
+            <variant>El recurso ( ''{0}'' ) no permite cargas y está en conflicto con otros archivos de origen.</variant>
         </translation>
-        <translation key="permissions.permission-denied.edit.message">
-            <variant>You do not have permission to edit this file.</variant>
+        <translation approved="true" key="permissions.permission-denied.edit.message" new="false">
+            <variant>No tiene permiso para editar este archivo.</variant>
         </translation>
-        <translation key="permissions.permission-denied.download.message">
-            <variant>You do not have permission to download this file.</variant>
+        <translation approved="true" key="permissions.permission-denied.download.message" new="false">
+            <variant>No tiene permiso para descargar este archivo.</variant>
         </translation>
-        <translation key="permissions.permission-denied.upload.message">
-            <variant>You do not have permission to upload this file.</variant>
+        <translation approved="true" key="permissions.permission-denied.upload.message" new="false">
+            <variant>No tiene permiso para cargar este archivo.</variant>
         </translation>
-        <translation key="permissions.permission-denied.viewlogic.message">
-            <variant>You do not have permission to view logic on this file.</variant>
+        <translation approved="true" key="permissions.permission-denied.viewlogic.message" new="false">
+            <variant>No tiene permiso para ver la lógica de este archivo.</variant>
         </translation>
-        <translation key="permissions.permission-denied.name-and-id.message">
-            <variant>The owner''s name and id is ''{0}'', ''{1}''.</variant>
+        <translation approved="true" key="permissions.permission-denied.name-and-id.message" new="false">
+            <variant>El nombre y el identificador del propietario son ''{0}'', ''{1}''.</variant>
         </translation>
-        <translation key="permissions.permission-denied.id.message">
-            <variant>The owner''s id is ''{0}''.</variant>
+        <translation approved="true" key="permissions.permission-denied.id.message" new="false">
+            <variant>El identificador del propietario es ''{0}''.</variant>
         </translation>
-        <translation key="file-name.invalid-character">
-            <variant>Invalid Character!</variant>
+        <translation approved="true" key="file-name.invalid-character" new="false">
+            <variant>Carácter no válido.</variant>
         </translation>
         <!-- Version Info -->
-        <translation key="permissions.version.five-or-later">
+        <translation approved="true" key="permissions.version.five-or-later" new="false">
             <note>Option for selecting the newer file format version.</note>
-            <variant>With Permissions</variant>
+            <variant>Con permisos</variant>
         </translation>
-        <translation key="permissions.version.four-and-earlier">
+        <translation approved="true" key="permissions.version.four-and-earlier" new="false">
             <note>Option for selecting the older file format version.</note>
-            <variant>Without Permissions</variant>
+            <variant>Sin permisos</variant>
         </translation>
-        <translation key="permissions.version.label.default">
+        <translation approved="true" key="permissions.version.label.default" new="false">
             <note>Label for selecting the default version</note>
-            <variant>Default File Format</variant>
+            <variant>Formato de archivo predeterminado</variant>
         </translation>
-        <translation key="permissions.version.label.normal">
+        <translation approved="true" key="permissions.version.label.normal" new="false">
             <note>Label for selecting the default version</note>
-            <variant>File Format</variant>
+            <variant>Formato de archivo</variant>
         </translation>
     </section>
     <!--begin secion equipment-classifications-->
     <section id="equipment-classifications">
-        <translation key="compile-normal">
+        <translation approved="true" key="compile-normal" new="false">
             <note>a type of module. This is used for specifying compile and validation type. Normal meaning a typical type.</note>
             <variant>Normal</variant>
         </translation>
-        <translation key="compile-UNI">
+        <translation approved="true" key="compile-UNI" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>UNI</variant>
         </translation>
-        <translation key="compile-ZN">
+        <translation approved="true" key="compile-ZN" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>ZN</variant>
         </translation>
-        <translation key="compile-CCN">
+        <translation approved="true" key="compile-CCN" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There is no translation for this. Its a proper name ... well actually an initialism of a proper name.</note>
             <variant>CCN</variant>
         </translation>
-        <translation key="compile-modeled">
+        <translation approved="true" key="compile-modeled" new="false">
             <note>a type of module. This is used for specifying compile and validation type. This refers to modeled as in a representation or imitation or emulation of something.</note>
-            <variant>Modeled</variant>
+            <variant>Modelado</variant>
         </translation>
-        <translation key="compile-alc-modeled">
+        <translation approved="true" key="compile-alc-modeled" new="false">
             <note>a type of module. This is used for specifying compile and validation type. This refers to modeled as in a representation or imitation or emulation of something.</note>
-            <variant>ALC Modeled</variant>
+            <variant>Modelado ALC</variant>
         </translation>
-        <translation key="compile-ivu-integrator">
+        <translation approved="true" key="compile-ivu-integrator" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There is no translation for this. Its a proper name.</note>
-            <variant>I-Vu Integrator</variant>
+            <variant>Integrador I-Vu</variant>
         </translation>
-        <translation key="compile-PSM">
+        <translation approved="true" key="compile-PSM" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>PSM</variant>
         </translation>
-        <translation key="compile-OPT">
-            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>OPT</variant>
-        </translation>
-        <translation key="compile-internal">
+        <translation approved="true" key="compile-internal" new="false">
             <note>This version is for several internal use only. They should never show up to a user, but if they accidentally do, this shows something intentionally vague.</note>
-            <variant>Internal-Only</variant>
+            <variant>Sólo interno</variant>
         </translation>
-        <translation key="compile-unknown">
+        <translation approved="true" key="compile-unknown" new="false">
             <note>This means we don't know the equipment classification. This is for backward compatibilty.</note>
-            <variant>Unknown</variant>
+            <variant>Desconocido</variant>
         </translation>
-        <translation key="compile-ivu-open-router">
+        <translation approved="true" key="compile-ivu-open-router" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>i-Vu Open Router</variant>
+            <variant>Enrutador abierto i-Vu</variant>
         </translation>
-        <translation key="compile-bp-open">
+        <translation approved="true" key="compile-bp-open" new="false">
             <note>a type of module: Variable Volume and Temperature. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>VVT Bypass</variant>
+            <variant>Bypass VVT</variant>
         </translation>
-        <translation key="compile-vvt-open">
+        <translation approved="true" key="compile-vvt-open" new="false">
             <note>a type of module: Variable Volume and Temperature. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>VVT Zone</variant>
+            <variant>Zona VVT</variant>
         </translation>
-        <translation key="compile-wshp-open">
+        <translation approved="true" key="compile-wshp-open" new="false">
             <note>a type of module: Water Source Heat Pump. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>WSHP Open</variant>
+            <variant>WSHP abierto</variant>
         </translation>
-        <translation key="compile-rtu-open">
+        <translation approved="true" key="compile-rtu-open" new="false">
             <note>a type of module: Roof Top Unit. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>RTU-Open</variant>
+            <variant>RTU abierto</variant>
         </translation>
-        <translation key="compile-uc-open">
+        <translation approved="true" key="compile-uc-open" new="false">
             <note>a type of module: Universal Controller. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Open (non-PIC)</variant>
+            <variant>Abierto (no PIC)</variant>
         </translation>
-        <translation key="compile-upc-open">
+        <translation approved="true" key="compile-upc-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>UPC Open</variant>
+            <variant>UPC abierto</variant>
         </translation>
-        <translation key="compile-vav-1bo">
+        <translation approved="true" key="compile-vav-1bo" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>VAV 1BO Zone Controller</variant>
+            <variant>Controlador de zona VAV 1BO</variant>
         </translation>
-        <translation key="compile-vav-3bo">
+        <translation approved="true" key="compile-vav-3bo" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>VAV 3BO Zone Controller</variant>
+            <variant>Controlador de zona VAV 3BO</variant>
         </translation>
-        <translation key="compile-fan-control-open">
+        <translation approved="true" key="compile-fan-control-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Fan Coil Open</variant>
+            <variant>Bobina del ventilador abierta</variant>
         </translation>
-        <translation key="compile-unit-vent-open">
+        <translation approved="true" key="compile-unit-vent-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Unit Vent Open</variant>
+            <variant>Salida de aire de la unidad abierta</variant>
         </translation>
-        <translation key="compile-unit-link-controller">
+        <translation approved="true" key="compile-unit-link-controller" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Open Link</variant>
+            <variant>Abrir vínculo</variant>
         </translation>
-        <translation key="compile-vav-3bp-open">
-            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Zone Controller II</variant>
+        <translation approved="true" key="general.yes-to-all" new="false">
+            <variant>Sí a todo</variant>
         </translation>
-        <translation key="general.yes-to-all">
-            <variant>Yes to all</variant>
+        <translation approved="true" key="general.yes" new="false">
+            <variant>Sí</variant>
         </translation>
-        <translation key="general.yes">
-            <variant>Yes</variant>
+        <translation approved="true" key="general.no-to-all" new="false">
+            <variant>No a todo</variant>
         </translation>
-        <translation key="general.no-to-all">
-            <variant>No to all</variant>
+        <translation approved="true" key="general.cancel" new="false">
+            <variant>Cancelar</variant>
         </translation>
-        <translation key="general.cancel">
-            <variant>Cancel</variant>
+        <translation approved="true" key="general.file.confirm-file-save" new="false">
+            <variant>¿Desea guardar el documento ''{0}''?</variant>
         </translation>
-        <translation key="general.file.confirm-file-save">
-            <variant>Do you want to save the document ''{0}''?</variant>
-        </translation>
-        <translation key="general.file.confirm-file-save-title">
-            <variant>Confirm Save</variant>
+        <translation approved="true" key="general.file.confirm-file-save-title" new="false">
+            <variant>Confirmar guardar</variant>
         </translation>
     </section>
     <!--end secion equipment-classifications-->

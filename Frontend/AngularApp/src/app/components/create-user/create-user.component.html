@@ -1,0 +1,77 @@
+
+<form #createUserForm="ngForm">
+    <h2>Create User</h2>
+    <div class='form-group'>
+        <label>Username</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="username"
+            name="username"
+            placeholder="Enter username"
+            [(ngModel)]="model.username"
+        >
+    </div>
+    <div class='form-group'>
+        <label>First Name</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="firstName"
+            name="firstName"
+            placeholder="Enter first name"
+            [(ngModel)]="model.firstName"
+        >
+    </div>
+    <div class='form-group'>
+        <label>Last Name</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="lastName"
+            name="lastName"
+            placeholder="Enter last name"
+            [(ngModel)]="model.lastName"
+        >
+    </div>
+    <div class='form-group'>
+        <label>Email</label>
+        <input
+            type="text"
+            class = 'form-control'
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            [(ngModel)]="model.email"
+        >
+    </div>
+    <div class='form-group'> 
+        <div *ngFor="let lang of model.languages">   
+            <label class="container">{{lang.langCode}}
+                <input 
+                    type="checkbox" 
+                    checked="checked"
+                    name="languages"
+                    [(ngModel)]="lang.checked">
+                <span class="checkmark"></span>
+            </label>
+        </div> 
+    </div> 
+    <div class='form-group'>
+        <label>
+            Role
+            <select
+                class = 'form-control'
+                id="role"
+                name="role"
+                [(ngModel)]="model.role"
+            >
+                <option *ngFor="let role of roleArry" [ngValue]="role.name">{{role.name}}</option>
+            </select>
+        </label>
+    </div>   
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        <a (click)="onCancel()" class="btn btn-link">Cancel</a>
+    </div>
+</form>
