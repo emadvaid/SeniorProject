@@ -1,5 +1,7 @@
 package com.ALCverificationtool.dao.keys;
 
+import com.ALCverificationtool.dao.logs.LogsRepository;
+import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
@@ -8,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -38,6 +42,15 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
+
+    private final LogsRepository logsDao;
+
+    @Autowired
+    public KeysRepositoryImpl(
+        LogsRepository logsDao
+    ) {
+        this.logsDao = logsDao;
+    }
 
     @Override
     public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
@@ -284,7 +297,25 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyId()
         };
         int i = jdbcTemplate.update(UPDATE, parameters);
-        if (i == 1)
+
+        //Log approved key
+        //Get date and time for log
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        String date = sdf.format(cal.getTime());
+
+        Logs logData = new Logs();
+        logData.setUserName("test username");
+        logData.setFileName(keyData.getFileName());
+        logData.setKeyName(keyData.getKeyName());
+        logData.setLanguage(keyData.getLanguageCode());
+        logData.setVariant(keyData.getKeyVariant());
+        logData.setVersion(keyData.getLanguageVersion());
+        logData.setAction("Key Approved");
+        logData.setDate(date);
+        logsDao.save(logData);
+
+    if (i == 1)
         {
             return true;
         }

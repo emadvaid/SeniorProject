@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserLoginService } from '../../services/user.login/user.login.service';
 import { User, UserTypes } from '../../models/User';
+<<<<<<< HEAD
 import { AppComponent } from '../../app.component';
+=======
+import { AppComponent } from '../../app.component'; 
+>>>>>>> master
 
 const REMEMBERED_USERNAME = 'remembered_username';
 
@@ -16,8 +20,15 @@ export class LoginFormComponent implements OnInit {
   submitted = false;
   private returnUrl: string;
 
+<<<<<<< HEAD
   constructor(private router: Router, private userLoginService: UserLoginService,
               private comp: AppComponent) {}
+=======
+  constructor(private router: Router,
+    private userLoginService: UserLoginService,
+    private comp: AppComponent, 
+    ) { }
+>>>>>>> master
 
   ngOnInit() {
     // first log out of the current session
@@ -41,6 +52,7 @@ export class LoginFormComponent implements OnInit {
     this.userLoginService.authenticateWithUsernamePassword(this.model.username, this.model.password)
       .subscribe(
         (user: User) => {
+
           // main path check to make sure we now have a valid user
           if (user) {
             // login was successful
@@ -48,6 +60,10 @@ export class LoginFormComponent implements OnInit {
             //set session storage
             this.comp.setSession(user.id, user.username, user.typeAsStr);
 
+            //Set username in cookies
+            //this.comp.setSession(this.model.username)
+            //this.comp.setCookies();
+            
             // make sure to remember the username if selected
             if (this.model.remember) {
               localStorage.setItem(REMEMBERED_USERNAME, this.model.username);
@@ -71,14 +87,14 @@ export class LoginFormComponent implements OnInit {
 
           } else {
             // unsuccessfull login path
-              localStorage.removeItem(REMEMBERED_USERNAME);
-              console.log('Login failed');
+            localStorage.removeItem(REMEMBERED_USERNAME);
+            console.log('Login failed');
           }
         },
         (err: any) => {
           // oop caught an error
-              localStorage.removeItem(REMEMBERED_USERNAME);
-              console.log('Login failed with error', err);
+          localStorage.removeItem(REMEMBERED_USERNAME);
+          console.log('Login failed with error', err);
         },
         () => {
           // completion path (cleanup)

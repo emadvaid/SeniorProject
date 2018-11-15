@@ -6,7 +6,6 @@ import { UserService } from '../../../services/users/user.service';
 import { User } from '../../../models/User';
 import { Language } from 'src/app/models/Language';
 
-
 @Component({
   selector: 'app-manage-users',
   templateUrl: './manage-users.component.html',

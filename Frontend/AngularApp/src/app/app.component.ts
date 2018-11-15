@@ -2,7 +2,12 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { UserLoginService } from './services/user.login/user.login.service';
 import { UserTypes } from './models/User';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import {LocalStorageService, SessionStorageService} from 'ngx-webstorage';
+=======
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
+>>>>>>> master
 
 @Component({
   selector: 'app-root',
@@ -14,8 +19,16 @@ export class AppComponent implements OnInit {
   isAdmin = false;
 
   constructor(private userLoginService: UserLoginService,
+<<<<<<< HEAD
               private router: Router,
               private storage: SessionStorageService) {
+=======
+    private router: Router,
+     private _cookieService: CookieService,
+    // private localSt: LocalStorageService,
+    // private sessionSt: SessionStorageService,
+    ) {
+>>>>>>> master
   }
 
   ngOnInit() {
@@ -34,6 +47,7 @@ export class AppComponent implements OnInit {
     );
   }
 
+<<<<<<< HEAD
   setSession(id, userName, userRole) {
     this.storage.store('userName', userName);
     this.storage.store('id', id);
@@ -50,4 +64,29 @@ export class AppComponent implements OnInit {
       this.storage.clear('id');
       this.storage.clear('userRole');
     }
+=======
+  setCookies(){
+    this._cookieService.put('username', "test");
+}
+getCookie(){
+    alert(this._cookieService.get('username'));
+}
+delCookies(){
+    this._cookieService.remove('username');
+}
+
+  // setSession(userName) {
+  //   this.sessionSt.store('username', userName);
+  // }
+  // getSession() {
+  //   alert(this.sessionSt.retrieve('logged-in'));
+  // }
+  // getUserName() {
+  //   return this.sessionSt.retrieve('userName');
+  // }
+
+  // delSession() {
+  //   this.sessionSt.clear('userName');
+  // }
+>>>>>>> master
 }

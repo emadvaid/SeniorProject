@@ -15,9 +15,13 @@ import { FileSelectDirective} from 'ng2-file-upload';
 import {HttpClientModule} from '@angular/common/http';
 import {FileDropModule} from 'ngx-file-drop';
 import { KeyViewComponent } from './views/key-view/key-view.component';
+<<<<<<< HEAD
 import { ChartsModule } from 'ng2-charts';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { SharedDataService } from './services/shared-data/shared-data.service';
+=======
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+>>>>>>> master
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { SharedDataService } from './services/shared-data/shared-data.service';
   ],
   providers: [
     UserLoginService,
-    UserTypeAuthGuardService
+    UserTypeAuthGuardService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
