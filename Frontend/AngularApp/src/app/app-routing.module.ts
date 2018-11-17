@@ -15,7 +15,6 @@ import { FileFunctionsComponent } from './views/file-functions/file-functions.co
 import { PasswordResetComponent } from './views/login/password-reset/password-reset.component';
 import { LogoutComponent } from './views/login/logout.component';
 import { ManageLanguageComponent } from './views/admin/manage-language/manage-language.component';
-import { CreateLanguageComponent } from './views/admin/manage-language/create-language/create-language.component';
 import { ManageVersionComponent } from './views/admin/manage-language/manage-versions/manage-versions.component';
 import { VersionComponent } from './views/version/version.component';
 import { StatisticsComponent } from './views/admin/statistics/statistics.component';
@@ -23,6 +22,8 @@ import { ExportFilesComponent } from './views/admin/export-files/export-files.co
 import { KeyViewComponent } from './views/key-view/key-view.component';
 import { LogsComponent } from './views/admin/logs/logs.component';
 import { EditUserViewComponent } from './views/admin/manage-users/edit-users-view/edit-users-view.component';
+import { CreateLanguageViewComponent } from './views/admin/manage-language/create-language-view/create-language-view.component';
+
 
 
 
@@ -42,15 +43,14 @@ const appRoutes: Routes = [
       {path: '', component: AdminDashboardComponent},
       {path: 'manageUsers', component: ManageUsersComponent},
       {path: 'manageLanguages' , component: ManageLanguageComponent},
-      {path: 'createLanguage' , component: CreateLanguageComponent},
+      {path: 'createLanguage' , component: CreateLanguageViewComponent},
+      {path: 'manageVersions', component: ManageVersionComponent},
       {path: 'importFile', component: FileFunctionsComponent},
       {path: 'createVersion', component: VersionComponent},
       {path: 'exportFile', component: ExportFilesComponent},
       {path: 'statistics', component: StatisticsComponent},
       {path: 'keyView', component: KeyViewComponent},
       {path: 'logs', component: LogsComponent},
-
-      {path: 'manageVersions', component: ManageVersionComponent},
     ]
   },
   {
@@ -86,7 +86,7 @@ export const routingComponents = [
   ManageUsersComponent,
   EditUserViewComponent,
   ManageLanguageComponent,
-  CreateLanguageComponent,
+  CreateLanguageViewComponent,
   PageNotFoundComponent,
   ErrorPageComponent,
   ExportFilesComponent,

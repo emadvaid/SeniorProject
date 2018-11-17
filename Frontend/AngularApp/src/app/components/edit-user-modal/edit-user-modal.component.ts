@@ -6,36 +6,36 @@ import { ModalComponent } from '../modal/modal.component';
     template: `
         <app-modal title={{title}}>
           <app-edit-users-comp
-              (save)="onSave()"
-              (cancel)="onCancel()"
+              userId={{userId}}
+              (save)="onSave($event)"
+              (cancel)="onCancel($event)"
           ></app-edit-users-comp>
         </app-modal>
     `,
     styles: []
 })
 export class EditUserModalComponent implements OnInit, AfterViewInit {
-    title = '';
-    username = '';
+    private title = 'Edit User';
+    public userId = '';
 
     @ViewChild(ModalComponent) activeModal: ModalComponent;
 
     ngOnInit() {
-        this.title = 'Create User';
     }
 
     ngAfterViewInit() {
         console.log();
     }
 
-    onSave() {
+    onSave(msg) {
         //
         console.log();
-        this.activeModal.activeModal.close('save');
+        this.activeModal.activeModal.close(msg);
     }
 
-    onCancel() {
+    onCancel(msg) {
         //
         console.log();
-        this.activeModal.activeModal.close('cancel');
+        this.activeModal.activeModal.close(msg);
     }
 }

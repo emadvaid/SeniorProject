@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LanguagesService } from '../../services/languages/languages.service';
 import { UserService } from '../../services/users/user.service';
@@ -15,7 +15,7 @@ export class EditUserComponent implements OnInit {
     model: any;
     submitted: boolean;
     roleArry: any;
-    userId: string;
+    @Input() userId: string;
     @Output() save: EventEmitter<any> = new EventEmitter();
     @Output() cancel: EventEmitter<any> = new EventEmitter();
 
@@ -30,67 +30,59 @@ export class EditUserComponent implements OnInit {
         this.roleArry = this.userService.userRoles;
 
         // get the userId from the parameter list of the activated route
-        this.activatedRoute.queryParams.subscribe(
-            (params: Params) => {
+        // now check to see that we have a valid user id
+        if (this.userService.validateUserId(this.userId)) {
+            // get the User object for this user id, using the UserService
+            // and add to the model
+            this.userService.getById(this.userId).subscribe(
+                (user: User) => {
+                    // make sure the user object is not null
+                    if (user != null) {
+                        // add the user object to model as user
+                        this.model.user = user;
 
-                console.log('EditUserComponent.ngOnInit(): queryParams: ', params);
-                this.userId = params['userId'];
+                        // Now that we have the user get all the languages,
+                        //   this user can see
+                        this.languageService.getAll().subscribe(
+                            (languages: Array<Language>) => {
+                                console.log(languages);
+                                this.model.languages = languages;
 
-                // now check to see that we have a valid user id
-                if (this.userService.validateUserId(this.userId)) {
-                    // get the User object for this user id, using the UserService
-                    // and add to the model
-                    this.userService.getById(this.userId).subscribe(
-                        (user: User) => {
-                            // make sure the user object is not null
-                            if (user != null) {
-                                // add the user object to model as user
-                                this.model.user = user;
+                                // set the checked status of each language
+                                this.model.languages.forEach((lang => {
+                                    // search for a matching entry inside the user
+                                    const match = user.languages.find(
+                                        (userLang) => (lang.id === userLang.id)
+                                    );
 
-                                // Now that we have the user get all the languages,
-                                //   this user can see
-                                this.languageService.getAll().subscribe(
-                                    (languages: Array<Language>) => {
-                                        console.log(languages);
-                                        this.model.languages = languages;
-
-                                        // set the checked status of each language
-                                        this.model.languages.forEach((lang => {
-                                            // search for a matching entry inside the user
-                                            const match = user.languages.find(
-                                                (userLang) => (lang.id === userLang.id)
-                                            );
-
-                                            // set the check status based on whether this lang was found
-                                            if (match && match !== null) {
-                                                lang.checked = true;
-                                            } else {
-                                                lang.checked = false;
-                                            }
-                                        }));
-                                    },
-                                    (err: any) => {
-                                         console.log('ManageLanguageComponent: error getting languages', err);
+                                    // set the check status based on whether this lang was found
+                                    if (match && match !== null) {
+                                        lang.checked = true;
+                                    } else {
+                                        lang.checked = false;
                                     }
-                                );
-                            } else {
-                                // log the error, and redirect to the manage users page
-                                console.log('EditUserComponent: no user found for userId = ', this.userId);
-                                this.router.navigate(['/admin/manageUsers']);
+                                }));
+                            },
+                            (err: any) => {
+                                    console.log('ManageLanguageComponent: error getting languages', err);
                             }
-                        },
-                        (err: any) => {
-                            // console log the error, and redirect back to manage user page
-                                console.log('EditUserComponent: error trying to get User for userId = ', this.userId, err);
-                                this.router.navigate(['/admin/manageUsers']);
-                        }
-                    );
-                } else {
-                    console.log('EditUserComponent: invalid userId = ', this.userId);
-                    this.router.navigate(['/admin/manageUsers']);
+                        );
+                    } else {
+                        // log the error, and redirect to the manage users page
+                        console.log('EditUserComponent: no user found for userId = ', this.userId);
+                        this.router.navigate(['/admin/manageUsers']);
+                    }
+                },
+                (err: any) => {
+                    // console log the error, and redirect back to manage user page
+                        console.log('EditUserComponent: error trying to get User for userId = ', this.userId, err);
+                        this.router.navigate(['/admin/manageUsers']);
                 }
-            }
-        );
+            );
+        } else {
+            console.log('EditUserComponent: invalid userId = ', this.userId);
+            this.router.navigate(['/admin/manageUsers']);
+        }
     }
 
     onSubmit(): void {
@@ -124,7 +116,7 @@ export class EditUserComponent implements OnInit {
         this.userService.update(this.userId, updatedUserDetails)
             .subscribe((result: boolean) => {
                 // succesfully created a new user so redirect to the manage user page
-                this.save.emit('saved');
+                this.save.emit(`Updated User Details for ${updatedUserDetails.username}`);
             });
 
     }

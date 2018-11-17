@@ -74,7 +74,7 @@ export class CreateUserComponent implements OnInit {
         this.userService.create(newUser)
             .subscribe((user: User) => {
                 // succesfully created a new user so redirect to the manage user page
-                this.save.emit('saved');
+                this.save.emit(`Created new User for ${newUser.username}`);
             });
 
     }

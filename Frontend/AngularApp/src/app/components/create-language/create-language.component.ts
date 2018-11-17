@@ -1,22 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/Http';
-import { error } from 'util';
-import { Router } from '@angular/router';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LanguagesService } from 'src/app/services/languages/languages.service';
 import { Language } from 'src/app/models/Language';
 
 
+
 @Component({
-    selector: 'app-create-language',
+    selector: 'app-create-language-comp',
     templateUrl: './create-language.component.html',
-    styleUrls: ['./create-language.component.css']
+    styleUrls: ['./create-language.component.css'],
+
   })
 
 export class CreateLanguageComponent implements OnInit {
   model: any = {};
   submitted: boolean;
+  @Output() save: EventEmitter<any> = new EventEmitter();
+  @Output() cancel: EventEmitter<any> = new EventEmitter();
 
-  constructor(private router: Router,
+  constructor(
     private languageService: LanguagesService) {}
 
   public ngOnInit() {
@@ -42,10 +43,16 @@ export class CreateLanguageComponent implements OnInit {
 
     this.languageService.create(newLanguage)
     .subscribe((language: Language) => { // succesfully created a new user so redirect to the manage user page
-        this.router.navigate(['/admin/manageLanguages']);
+        this.save.emit(`Create new language for ${newLanguage.langName}`);
     });
 
 
+}
+
+
+onCancel() {
+    //
+    this.cancel.emit('canceled');
 }
 
 validate(): boolean {

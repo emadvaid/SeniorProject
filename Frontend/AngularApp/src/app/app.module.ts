@@ -20,12 +20,14 @@ import { ModalComponent } from './components/modal/modal.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { EditUserModalComponent } from './components/edit-user-modal/edit-user-modal.component';
-
 import { ChartsModule } from 'ng2-charts';
-import { NgxWebstorageModule } from 'ngx-webstorage';
 import { SharedDataService } from './services/shared-data/shared-data.service';
 
 import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { CreateLanguageComponent } from './components/create-language/create-language.component';
+import { CreateLanguageModalComponent } from './components/create-language-modal/create-language-modal.component';
+
+
 
 
 @NgModule({
@@ -39,7 +41,11 @@ import { CookieService } from 'angular2-cookie/services/cookies.service';
     CreateUserComponent,
     CreateUserModalComponent,
     EditUserComponent,
-    EditUserModalComponent
+    EditUserModalComponent,
+    CreateLanguageModalComponent,
+    CreateLanguageComponent,
+
+
 
   ],
   imports: [
@@ -49,6 +55,7 @@ import { CookieService } from 'angular2-cookie/services/cookies.service';
     AppRoutingModule,
     HttpClientModule,
     FileDropModule,
+    ChartsModule,
     NgbModule.forRoot()
   ],
   providers: [
@@ -60,7 +67,11 @@ import { CookieService } from 'angular2-cookie/services/cookies.service';
   bootstrap: [AppComponent],
   entryComponents: [
     CreateUserModalComponent,
-    EditUserModalComponent
+    EditUserModalComponent,
+    CreateUserModalComponent,
+    CreateLanguageModalComponent
+
+
   ]
 })
 export class AppModule { }

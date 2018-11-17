@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/Http';
 import { error } from 'util';
 import { Router } from '@angular/router';
@@ -6,17 +6,21 @@ import { LanguagesService } from 'src/app/services/languages/languages.service';
 import { Language } from 'src/app/models/Language';
 
 
+
+
 @Component({
-    selector: 'app-create-language',
-    templateUrl: './create-language.component.html',
-    styleUrls: ['./create-language.component.css']
+    selector: 'app-create-language-view',
+    templateUrl: './create-language-view.component.html',
+    styleUrls: ['./create-language-view.component.css']
   })
 
-export class CreateLanguageComponent implements OnInit {
+export class CreateLanguageViewComponent implements OnInit {
   model: any = {};
   submitted: boolean;
+  @Output() save: EventEmitter<any> = new EventEmitter();
+  @Output() cancel: EventEmitter<any> = new EventEmitter();
 
-  constructor(private router: Router,
+  constructor(
     private languageService: LanguagesService) {}
 
   public ngOnInit() {
@@ -42,11 +46,17 @@ export class CreateLanguageComponent implements OnInit {
 
     this.languageService.create(newLanguage)
     .subscribe((language: Language) => { // succesfully created a new user so redirect to the manage user page
-        this.router.navigate(['/admin/manageLanguages']);
+        this.save.emit('saved');
     });
 
 
 }
+
+onCancel() {
+    //
+    this.cancel.emit('canceled');
+}
+
 
 validate(): boolean {
     console.log('this.model.langName', this.model.langName,

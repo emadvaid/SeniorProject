@@ -50,13 +50,11 @@ export class LoginFormComponent implements OnInit {
           if (user) {
             // login was successful
             console.log('Login success, userType = ', this.userLoginService.getUserType);
-            //set session storage
-            this.comp.setSession(user.id, user.username, user.typeAsStr);
+            // set session storage
 
-            //Set username in cookies
-            //this.comp.setSession(this.model.username)
-            //this.comp.setCookies();
-            
+            // Set username in cookies
+            // this.comp.setSession(this.model.username)
+            // this.comp.setCookies();
             // make sure to remember the username if selected
             if (this.model.remember) {
               localStorage.setItem(REMEMBERED_USERNAME, this.model.username);

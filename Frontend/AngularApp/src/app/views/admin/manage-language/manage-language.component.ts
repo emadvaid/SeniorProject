@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Language } from '../../../models/Language';
 import { LanguagesService } from 'src/app/services/languages/languages.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CreateLanguageModalComponent } from '../../../components/create-language-modal/create-language-modal.component';
 
 @Component({
     selector: 'app-manage-language',
@@ -11,8 +13,9 @@ import { LanguagesService } from 'src/app/services/languages/languages.service';
 export class ManageLanguageComponent implements OnInit {
     model: any = { };
 
-    constructor(private languageService: LanguagesService, private router: Router) {}
-
+    constructor(private modalService: NgbModal,
+        private languageService: LanguagesService,
+        private router: Router) {}
     public ngOnInit() {
         this.refresh();
     }
@@ -29,7 +32,27 @@ export class ManageLanguageComponent implements OnInit {
     }
 
     createLanguages() {
-        this.router.navigate(['admin/createLanguage']);
+            // popup the modal
+      const modalRef = this.modalService.open(CreateLanguageModalComponent);
+
+      modalRef.result
+        .then(
+            (res) => {
+
+                console.log('ManageLanguageComponent.createLanguage: modal returned ', res);
+                this.refresh();
+                alert(res);
+        })
+        .catch(
+            err => {
+
+                console.log('ManageLanguageComponent.createLanguage(): modal error: ', err);
+                this.refresh();
+                alert(err);
+
+
+            }
+        );
     }
 
     manageVersions(event: any) {

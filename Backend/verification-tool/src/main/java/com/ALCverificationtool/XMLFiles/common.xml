@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource-base id="common" version="1.0" xml:lang="es" xmlns="http://www.controlj.com/rbase1.0">
+<resource-base id="common" version="1.0" xml:lang="zh_TW" xmlns="http://www.controlj.com/rbase1.0">
     <!-- This file must be translated a little differently. This represents mnemonics for each menu/menu item
         How this works is the translation (variant) must consist of a single letter from the menu and must be
         unique for each section. This is because each letter is a hotkey to press to select a given menu.
@@ -10,126 +10,128 @@
          key strokes to create.-->
     <section id="common-resources">
         <translation approved="true" key="button.add.name" new="false">
-            <variant>Agregar</variant>
+            <variant>添加</variant>
         </translation>
         <translation approved="true" key="button.add.tooltip" new="false">
-            <variant>Agregar</variant>
+            <variant>添加</variant>
         </translation>
         <translation approved="true" key="button.delete.name" new="false">
-            <variant>Eliminar</variant>
+            <variant>刪除</variant>
         </translation>
         <translation approved="true" key="button.delete.tooltip" new="false">
-            <variant>Eliminar</variant>
+            <variant>刪除</variant>
         </translation>
         <translation approved="true" key="color.chooser.name" new="false">
-            <variant>Seleccionar color</variant>
+            <variant>選擇色彩</variant>
         </translation>
         <translation approved="true" key="permission.permit-upload.title" new="false">
-            <variant>Permitir carga</variant>
+            <variant>允許上載</variant>
         </translation>
         <translation approved="true" key="permission.permit-download.title" new="false">
-            <variant>Permitir descarga</variant>
+            <variant>允許下載</variant>
         </translation>
         <translation approved="true" key="permission.permit-view-logic.title" new="false">
-            <variant>Permitir ver lógica</variant>
+            <variant>允許檢視邏輯</variant>
         </translation>
         <translation approved="true" key="permission.permit-edit.title" new="false">
-            <variant>Permitir editar</variant>
+            <variant>允許編輯</variant>
         </translation>
         <translation approved="true" key="permission.permit-edit-read-only-properties.title" new="false">
-            <variant>Permitir editar propiedades de equipo de sólo lectura</variant>
+            <variant>允許編輯為讀設備屬性</variant>
         </translation>
         <translation approved="true" key="permission.permissions.title" new="false">
             <note>the title for a dialog where the user edits the permissions for the current file.</note>
-            <variant>Permisos de archivos</variant>
+            <variant>檔案權限</variant>
         </translation>
         <translation approved="true" key="permission.permissions.enable.option" new="false">
             <note>Name for a checkbox that enables permissions.</note>
-            <variant>Activar permisos</variant>
+            <variant>啟用權限</variant>
         </translation>
         <translation approved="true" key="permission.permissions.menu.item" new="false">
             <note>a menu that allows the user the to edit the permissions for the current file.</note>
-            <variant>Permisos de archivos...</variant>
+            <variant>檔案權限...</variant>
         </translation>
         <translation approved="true" key="default.permission.permissions.tab.name" new="false">
             <note>the name of a tab on a dialog. This tab allows the user to edit the default permissions that are used for new files.</note>
-            <variant>Permisos predeterminados</variant>
+            <variant>預設的授權
+</variant>
         </translation>
         <translation approved="true" key="permission.simple.title" new="false">
             <note>the title for a dialog where the user edits permissions for the current file.</note>
-            <variant>Permisos</variant>
+            <variant>權限</variant>
         </translation>
         <translation approved="true" key="permission.at-least-one-vendor.warning" new="false">
             <note>Engineer users are allowed to pick more than one vendor, however, at least one vendor must be selected.</note>
-            <variant>Debe seleccionar al menos un proveedor.</variant>
+            <variant>必須至少選取一個供應商。</variant>
         </translation>
         <translation approved="true" key="permissions.restricted.status.bar.restricted.text" new="false">
             <note>status bar text that shows the current file (control program or view) has some form of restricted permissions. We don't specify what.</note>
-            <variant>Restringido</variant>
+            <variant>受限</variant>
         </translation>
         <translation approved="true" key="permissions.restricted.status.bar.tooltip" new="false">
             <note>a tooltip for the permissions field on the status bar. It explains what this field is showing and that you can click on it to view and edit the permissions.</note>
-            <variant>Muestra si el archivo actual tiene o no restricciones de permisos. Hacer clic para ver/editar.</variant>
+            <variant>顯示目前檔案是否有任何權限的限制。點選以檢視/編輯。</variant>
         </translation>
         <translation approved="true" key="permissions.cannot-edit-permissions.message" new="false">
-            <variant>No es el propietario del archivo y no puede editar los permisos.</variant>
+            <variant>您不是此檔案的擁有人，因此無法編輯權限。</variant>
         </translation>
         <translation approved="true" key="permissions.version-warning.message" new="false">
-            <variant>No compatible con todas las versiones de controlador y de sistema. Consulte la ayuda para obtener más detalles.</variant>
+            <variant>非與所有的系統及應用程式版本相容。請參閱支援以取得詳細資料。</variant>
         </translation>
         <translation approved="true" key="permissions.file-illegal-state.message" new="false">
-            <variant>El archivo tiene un estado no permitido y no se puede abrir.</variant>
+            <variant>檔案不合法, 無法開啟！
+</variant>
         </translation>
         <translation approved="true" key="permissions.0_index_param.permit_download.conflict" new="false">
-            <variant>El recurso ( ''{0}'' ) no permite descargas y está en conflicto con otros archivos de origen.</variant>
+            <variant>資源 (「{0}」) 不允許下載，而且與其他來源檔案發生衝突。</variant>
         </translation>
         <translation approved="true" key="permissions.0_index_param.permit_upload.conflict" new="false">
-            <variant>El recurso ( ''{0}'' ) no permite cargas y está en conflicto con otros archivos de origen.</variant>
+            <variant>資源 (「{0}」) 不允許上載，而且與其他來源檔案發生衝突。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.edit.message" new="false">
-            <variant>No tiene permiso para editar este archivo.</variant>
+            <variant>您沒有編輯此檔案的權限。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.download.message" new="false">
-            <variant>No tiene permiso para descargar este archivo.</variant>
+            <variant>您沒有下載此檔案的權限。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.upload.message" new="false">
-            <variant>No tiene permiso para cargar este archivo.</variant>
+            <variant>您沒有上載此檔案的權限。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.viewlogic.message" new="false">
-            <variant>No tiene permiso para ver la lógica de este archivo.</variant>
+            <variant>您沒有檢視此檔案之邏輯的權限。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.name-and-id.message" new="false">
-            <variant>El nombre y el identificador del propietario son ''{0}'', ''{1}''.</variant>
+            <variant>擁有人的名稱和識別碼為「{0}」、「{1}」。</variant>
         </translation>
         <translation approved="true" key="permissions.permission-denied.id.message" new="false">
-            <variant>El identificador del propietario es ''{0}''.</variant>
+            <variant>擁有人的 ID 為「{0}」。</variant>
         </translation>
         <translation approved="true" key="file-name.invalid-character" new="false">
-            <variant>Carácter no válido.</variant>
+            <variant>字元無效！</variant>
         </translation>
         <!-- Version Info -->
         <translation approved="true" key="permissions.version.five-or-later" new="false">
             <note>Option for selecting the newer file format version.</note>
-            <variant>Con permisos</variant>
+            <variant>具有權限</variant>
         </translation>
         <translation approved="true" key="permissions.version.four-and-earlier" new="false">
             <note>Option for selecting the older file format version.</note>
-            <variant>Sin permisos</variant>
+            <variant>不具有權限</variant>
         </translation>
         <translation approved="true" key="permissions.version.label.default" new="false">
             <note>Label for selecting the default version</note>
-            <variant>Formato de archivo predeterminado</variant>
+            <variant>預設檔案格式</variant>
         </translation>
         <translation approved="true" key="permissions.version.label.normal" new="false">
             <note>Label for selecting the default version</note>
-            <variant>Formato de archivo</variant>
+            <variant>檔案格式</variant>
         </translation>
     </section>
     <!--begin secion equipment-classifications-->
     <section id="equipment-classifications">
         <translation approved="true" key="compile-normal" new="false">
             <note>a type of module. This is used for specifying compile and validation type. Normal meaning a typical type.</note>
-            <variant>Normal</variant>
+            <variant>正常</variant>
         </translation>
         <translation approved="true" key="compile-UNI" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
@@ -145,93 +147,102 @@
         </translation>
         <translation approved="true" key="compile-modeled" new="false">
             <note>a type of module. This is used for specifying compile and validation type. This refers to modeled as in a representation or imitation or emulation of something.</note>
-            <variant>Modelado</variant>
+            <variant>模式化</variant>
         </translation>
         <translation approved="true" key="compile-alc-modeled" new="false">
             <note>a type of module. This is used for specifying compile and validation type. This refers to modeled as in a representation or imitation or emulation of something.</note>
-            <variant>Modelado ALC</variant>
+            <variant>ALC 模型</variant>
         </translation>
         <translation approved="true" key="compile-ivu-integrator" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There is no translation for this. Its a proper name.</note>
-            <variant>Integrador I-Vu</variant>
+            <variant>I-Vu Integrator</variant>
         </translation>
         <translation approved="true" key="compile-PSM" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
             <variant>PSM</variant>
         </translation>
+        <translation approved="false" key="compile-OPT" new="true">
+            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
+            <variant>OPT</variant>
+        </translation>
         <translation approved="true" key="compile-internal" new="false">
             <note>This version is for several internal use only. They should never show up to a user, but if they accidentally do, this shows something intentionally vague.</note>
-            <variant>Sólo interno</variant>
+            <variant>只供内部使用</variant>
         </translation>
         <translation approved="true" key="compile-unknown" new="false">
             <note>This means we don't know the equipment classification. This is for backward compatibilty.</note>
-            <variant>Desconocido</variant>
+            <variant>未知</variant>
         </translation>
         <translation approved="true" key="compile-ivu-open-router" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Enrutador abierto i-Vu</variant>
+            <variant>i-Vu Open Router</variant>
         </translation>
         <translation approved="true" key="compile-bp-open" new="false">
             <note>a type of module: Variable Volume and Temperature. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Bypass VVT</variant>
+            <variant>VVT 旁路</variant>
         </translation>
         <translation approved="true" key="compile-vvt-open" new="false">
             <note>a type of module: Variable Volume and Temperature. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Zona VVT</variant>
+            <variant>VVT 区域</variant>
         </translation>
         <translation approved="true" key="compile-wshp-open" new="false">
             <note>a type of module: Water Source Heat Pump. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>WSHP abierto</variant>
+            <variant>WSHP Open</variant>
         </translation>
         <translation approved="true" key="compile-rtu-open" new="false">
             <note>a type of module: Roof Top Unit. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>RTU abierto</variant>
+            <variant>RTU-Open</variant>
         </translation>
         <translation approved="true" key="compile-uc-open" new="false">
             <note>a type of module: Universal Controller. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Abierto (no PIC)</variant>
+            <variant>開啟 (非 PIC)</variant>
         </translation>
         <translation approved="true" key="compile-upc-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>UPC abierto</variant>
+            <variant>UPC Open</variant>
         </translation>
         <translation approved="true" key="compile-vav-1bo" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Controlador de zona VAV 1BO</variant>
+            <variant>VAV 1BO 区域控制器</variant>
         </translation>
         <translation approved="true" key="compile-vav-3bo" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Controlador de zona VAV 3BO</variant>
+            <variant>VAV 3BO 区域控制器</variant>
         </translation>
         <translation approved="true" key="compile-fan-control-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Bobina del ventilador abierta</variant>
+            <variant>風機盤管啟動</variant>
         </translation>
         <translation approved="true" key="compile-unit-vent-open" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Salida de aire de la unidad abierta</variant>
+            <variant>小型送風機開啟
+</variant>
         </translation>
         <translation approved="true" key="compile-unit-link-controller" new="false">
             <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
-            <variant>Abrir vínculo</variant>
+            <variant>Open Link</variant>
+        </translation>
+        <translation approved="false" key="compile-vav-3bp-open" new="true">
+            <note>a type of module. This is used for specifying compile and validation type. There's probably no translation for this.</note>
+            <variant>區域控制器</variant>
         </translation>
         <translation approved="true" key="general.yes-to-all" new="false">
-            <variant>Sí a todo</variant>
+            <variant>全部皆是</variant>
         </translation>
         <translation approved="true" key="general.yes" new="false">
-            <variant>Sí</variant>
+            <variant>是</variant>
         </translation>
         <translation approved="true" key="general.no-to-all" new="false">
-            <variant>No a todo</variant>
+            <variant>全部皆否</variant>
         </translation>
         <translation approved="true" key="general.cancel" new="false">
-            <variant>Cancelar</variant>
+            <variant>取消</variant>
         </translation>
         <translation approved="true" key="general.file.confirm-file-save" new="false">
-            <variant>¿Desea guardar el documento ''{0}''?</variant>
+            <variant>您是否要儲存文件「{0}」？</variant>
         </translation>
         <translation approved="true" key="general.file.confirm-file-save-title" new="false">
-            <variant>Confirmar guardar</variant>
+            <variant>確認儲存</variant>
         </translation>
     </section>
     <!--end secion equipment-classifications-->

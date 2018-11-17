@@ -67,21 +67,37 @@ export class ManageUsersComponent implements OnInit {
 
                 console.log('ManageUserComponent.createUser: modal returned ', res);
                 this.refresh();
+                alert(res);
         })
         .catch(
             err => {
 
                 console.log('ManageUserComponent.createUser(): modal error: ', err);
+                this.refresh();
+                alert(err);
             }
         );
     }
 
     editUser(event: any) {
         console.log('editUser: event.target.dataset[\'userid\'] = ', event.target.dataset['userid']);
-        this.modalService.open(EditUserModalComponent);
-        this.router.navigate(['admin'], {
-            queryParams: {userId: event.target.dataset['userid']}
-        });
+        const modalRef = this.modalService.open(EditUserModalComponent);
+        modalRef.componentInstance.userId = event.target.dataset['userid'];
+
+        modalRef.result
+          .then(
+              (res) => {
+                  console.log('ManageUserComponent.createUser: modal returned ', res);
+                  this.refresh();
+                  alert(res);
+          })
+          .catch(
+              err => {
+                  console.log('ManageUserComponent.createUser(): modal error: ', err);
+                  this.refresh();
+                  alert(err);
+              }
+          );
     }
 
     activateUser(event: any) {
