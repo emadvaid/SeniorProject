@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -23,7 +24,7 @@ public class ExportFilesController {
     public void exportFile(
             @RequestParam(value="language") String language,
             @RequestParam(value="versionNumber") String versionNumber
-    ) throws TransformerException, ParserConfigurationException {
+    ) throws TransformerException, ParserConfigurationException, IOException {
         //Create empty export folders
         exportFilesService.createFolder(language, versionNumber);
 
@@ -33,7 +34,7 @@ public class ExportFilesController {
     @CrossOrigin
     @PostMapping(value="/exportAllLanguages")
     public void exportAllLanguages(
-            @RequestParam(value="versionNumber") String versionNumber) throws TransformerException, ParserConfigurationException {
+            @RequestParam(value="versionNumber") String versionNumber) throws TransformerException, ParserConfigurationException, IOException {
         List<LangRec> languages = this.languageService.getLang();
         for (int i = 0; i < languages.size(); i++) {
             System.out.println(languages.get(i).getLangCode());
