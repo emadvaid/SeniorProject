@@ -15,7 +15,7 @@ export class PasswordService {
         });
         const options = new RequestOptions({headers: headers});
 
-        return this.http.put('http://localhost:8080/password', {
+        return this.http.put('/api/password', {
             resetId: tokenId,
             newPassword: newPassword
         }, options).pipe(map((resp: any) => {

@@ -13,6 +13,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 
 @RestController
+@RequestMapping("/api")
 public class FileUploadController {
 
     private final FileUploadService service;

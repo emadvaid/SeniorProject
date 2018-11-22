@@ -17,7 +17,7 @@ export class VersionService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get('http://localhost:8080/versions', options)
+        return this.http.get('/api/versions', options)
         .pipe(
             map((resp: any) => {
                 console.log('versionService', resp);
@@ -46,7 +46,7 @@ export class VersionService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get(`http://localhost:8080/versions/${langCode}`, options)
+        return this.http.get(`/api/versions/${langCode}`, options)
         .pipe(
             map((resp: any) => {
                 console.log('ManageLanguageComponent ajax response: ', resp);
@@ -76,7 +76,7 @@ export class VersionService {
 
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.post('http://localhost:8080/versions', {
+        return this.http.post('/api/versions', {
             versionDetails: {
                 verNum: VersionDetails.verNum
             }
@@ -106,7 +106,7 @@ export class VersionService {
             'Content-Type': 'application/Json'
         });
         const options = new RequestOptions({ headers: headers});
-        const deleteVerUri = `http://localhost:8080/versions/${verNum}`;
+        const deleteVerUri = `/api/versions/${verNum}`;
         console.log(`deleteVerUri=${deleteVerUri}`);
         return this.http.delete(deleteVerUri, options)
             .pipe(
@@ -121,7 +121,7 @@ export class VersionService {
         'Content-Type': 'application/Json'
     });
     const options = new RequestOptions({headers: headers});
-    const deleteLangUri = `http://localhost:8080/versions/${langCode}/${verNum}/`;
+    const deleteLangUri = `/api/versions/${langCode}/${verNum}/`;
     console.log(`deleteVerUri=${deleteLangUri}`);
     return this.http.delete(deleteLangUri, options)
         .pipe(

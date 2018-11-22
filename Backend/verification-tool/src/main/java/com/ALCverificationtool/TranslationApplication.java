@@ -33,26 +33,6 @@ public class TranslationApplication {
 	}
 
 	@Bean
-	public JavaMailSender getJavaMailSender() {
-
-		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-
-		mailSender.setHost("smtp.gmail.com");
-		mailSender.setPort(587);
-
-		mailSender.setUsername("translationtoolverify@gmail.com");
-		mailSender.setPassword("Success$12");
-
-		Properties props = mailSender.getJavaMailProperties();
-		props.put("mail.transport.protocol", "smtp");
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.starttls.enable", "true");
-		props.put("mail.debug", "true");
-
-		return mailSender;
-	}
-
-	@Bean
 	public DataSource mySQLDataSource() {
 		//System.out.println(jdbcDriverClassName + jdbcUrl + jdbcUsername);
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();

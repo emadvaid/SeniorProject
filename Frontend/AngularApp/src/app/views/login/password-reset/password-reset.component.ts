@@ -17,7 +17,6 @@ export class PasswordResetComponent implements OnInit {
         private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
-        // http://localhost:4200/resetpass?resetId=1823237c-84c8-46cc-a9f7-4e790ab6f809&newUser=true
         this.activatedRoute.queryParams.subscribe(
             (params: Params) => {
                 console.log('PasswordResetComponent.ngOnInit: prarams =', params);

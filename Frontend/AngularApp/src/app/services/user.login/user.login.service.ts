@@ -21,7 +21,7 @@ export class UserLoginService {
         const headers = new Headers({ 'Content-Type': 'application/json' });
         const  options = new RequestOptions({ headers: headers });
 
-        return this.http.post('http://localhost:8080/authorizeUser', {
+        return this.http.post('/api/authorizeUser', {
                 username: username,
                 password: password
         }, options).pipe(map((resp: any) => {

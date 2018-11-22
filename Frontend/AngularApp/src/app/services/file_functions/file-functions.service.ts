@@ -12,7 +12,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class FileFunctionsService {
-  private serverUrl = 'http://localhost:8080/uploadFile';
+  private serverUrl = 'api/uploadFile';
 
 
   constructor(
@@ -38,12 +38,12 @@ export class FileFunctionsService {
     const tableInfo = new FormData();
     tableInfo.append('language', language);
     tableInfo.append('versionNumber', versionNumber);
-    return this.http.post('http://localhost:8080/exportFile', tableInfo, httpOptions);
+    return this.http.post('api/exportFile', tableInfo, httpOptions);
   }
 
   exportAllLanguages(versionNumber: string) {
     const tableInfo = new FormData();
     tableInfo.append('versionNumber', versionNumber);
-    return this.http.post('http://localhost:8080/exportAllLanguages', tableInfo, httpOptions);
+    return this.http.post('api/exportAllLanguages', tableInfo, httpOptions);
   }
 }

@@ -12,8 +12,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class KeysService {
-  getAllKeysURL = 'http://localhost:8080/getAllKeys';
-  updateKeyURL = 'http://localhost:8080/updateKeyValues';
+  getAllKeysURL = '/api/getAllKeys';
+  updateKeyURL = '/api/updateKeyValues';
 
   constructor(
     private http: HttpClient,

@@ -15,6 +15,7 @@ import java.util.Optional;
 import java.awt.geom.RectangularShape;
 
 @RestController
+@RequestMapping("/api")
 public class languageController {
 
     @Autowired
