@@ -6,6 +6,7 @@ import com.ALCverificationtool.models.ResetToken;
 import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.services.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
@@ -23,7 +24,10 @@ public class AuthResetServiceImpl implements AuthResetService  {
     private final JavaMailSender mailSender;
     private final UserRepository userDao;
     private final ResetTokenRepository resetDao;
-    private final String passwordResetURLPref;
+
+    @Value("${alcverificationtool.url}")
+    private String passwordResetUrl;
+
 
     @Autowired
     AuthResetServiceImpl(JavaMailSender mailSender,
@@ -33,9 +37,6 @@ public class AuthResetServiceImpl implements AuthResetService  {
         this.mailSender = mailSender;
         this.userDao = userDao;
         this.resetDao = resetDao;
-
-        // should come from the properties
-        passwordResetURLPref = "http://localhost:4200/resetpass";
     }
 
     @Override
@@ -144,12 +145,12 @@ public class AuthResetServiceImpl implements AuthResetService  {
 
             if(newUser) {
                 templateLoc = "classpath:email-templates/password-reset/newUserEmail.template";
-                resetLink = "<a href=\"" + passwordResetURLPref + "?resetId=" +
+                resetLink = "<a href=\"" + this.passwordResetUrl + "?resetId=" +
                         newResetEntity.getId() + "&newUser=true\">Click here to reset Password</a>";
             }
             else {
                 templateLoc = "classpath:email-templates/password-reset/passwordResetEmail.template";
-                resetLink = "<a href=\"" +passwordResetURLPref + "?resetId=" +
+                resetLink = "<a href=\"" + this.passwordResetUrl + "?resetId=" +
                         newResetEntity.getId() + "\">Click here to reset Password</a>";
             }
 

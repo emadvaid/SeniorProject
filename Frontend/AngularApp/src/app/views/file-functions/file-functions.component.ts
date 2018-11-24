@@ -23,7 +23,7 @@ const httpOptions = {
   styleUrls: ['./file-functions.component.css']
 })
 export class FileFunctionsComponent implements OnInit {
-  private serverUrl = 'http://localhost:8080/uploadFile';
+  private serverUrl = '/api/uploadFile';
   public files: UploadFile[] = [];
   public  sendFiles: Array<File> = [];
   public  pathList: Array<String> = [];

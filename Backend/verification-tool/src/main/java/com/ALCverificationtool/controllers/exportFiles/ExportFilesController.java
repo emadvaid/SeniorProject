@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class ExportFilesController {
     @Autowired
     private ExportFilesService exportFilesService;

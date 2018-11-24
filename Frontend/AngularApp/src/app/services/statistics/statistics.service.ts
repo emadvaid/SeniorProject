@@ -27,27 +27,27 @@ export class StatisticsService {
         tableInfo.append('language', language);
         tableInfo.append('versionNumber', versionNumber);
 
-        return this.http.post('http://localhost:8080/statistics/new', tableInfo, httpOptions);
+        return this.http.post('/api/statistics/new', tableInfo, httpOptions);
     }
 
     getApprovedKeys(language: string, versionNumber: string) {
         const tableInfo = new FormData();
         tableInfo.append('language', language);
         tableInfo.append('versionNumber', versionNumber);
-        return this.http.post('http://localhost:8080/statistics/approved', tableInfo, httpOptions);
+        return this.http.post('/api//statistics/approved', tableInfo, httpOptions);
     }
 
     getTotalKeys(language: string, versionNumber: string) {
         const tableInfo = new FormData();
         tableInfo.append('language', language);
         tableInfo.append('versionNumber', versionNumber);
-        return this.http.post('http://localhost:8080/statistics/total', tableInfo, httpOptions);
+        return this.http.post('/api//statistics/total', tableInfo, httpOptions);
     }
 
     getTotalFiles(language: string, versionNumber: string) {
         const tableInfo = new FormData();
         tableInfo.append('language', language);
         tableInfo.append('versionNumber', versionNumber);
-        return this.http.post('http://localhost:8080/statistics/files', tableInfo, httpOptions);
+        return this.http.post('/api//statistics/files', tableInfo, httpOptions);
     }
 }

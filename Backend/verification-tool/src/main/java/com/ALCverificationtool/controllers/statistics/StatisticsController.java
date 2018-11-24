@@ -2,12 +2,10 @@ package com.ALCverificationtool.controllers.statistics;
 
 import com.ALCverificationtool.services.statisticsService.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api")
 public class StatisticsController {
     @Autowired
     private StatisticsService statisticsService;

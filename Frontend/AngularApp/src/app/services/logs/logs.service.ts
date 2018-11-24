@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class LogsService {
-    getLogsURL = 'http://localhost:8080/logs';
+    getLogsURL = '/api/logs';
 
   constructor(
       private http: HttpClient,

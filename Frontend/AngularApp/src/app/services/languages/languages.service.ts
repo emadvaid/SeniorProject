@@ -41,7 +41,7 @@ export class LanguagesService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get('http://localhost:8080/lang', options)
+        return this.http.get('/api/lang', options)
         .pipe(
             map((resp: any) => {
                 console.log('ManageLanguageComponent ajax response: ', resp);
@@ -69,7 +69,7 @@ export class LanguagesService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get('http://localhost:8080/lang/version/{versionNumber}', options)
+        return this.http.get('/api/lang/version/{versionNumber}', options)
         .pipe(
             map((resp: any) => {
                 console.log('ManageLanguageComponent ajax response: ', resp);
@@ -104,7 +104,7 @@ export class LanguagesService {
             console.log(JSON.stringify(msg));
 
 
-            return this.http.post('http://localhost:8080/lang', msg, options)
+            return this.http.post('/api/lang', msg, options)
             .pipe(
                 map((resp: any) => {
                     if (resp && resp.langDetails) {
