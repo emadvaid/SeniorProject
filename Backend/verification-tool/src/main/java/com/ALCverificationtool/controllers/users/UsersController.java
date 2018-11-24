@@ -23,7 +23,6 @@ public class UsersController {
     @CrossOrigin
     @PostMapping("/authorizeUser")
     public ResponseEntity<AuthUserResponse> authUser(@RequestBody AuthUserRequest request) {
-
         AuthUserResponse response = service.authByUsernamePassword(request.getUsername(), request.getPassword());
 
         HttpHeaders headers = new HttpHeaders();
@@ -85,6 +84,19 @@ public class UsersController {
 
         return new ResponseEntity<>(response, headers, HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @GetMapping("/username/{username}")
+    public ResponseEntity<GetUserDetailResponse> getLangByUsername(@PathVariable("username") String username) {
+
+        Optional<UserRec> userRecResult = this.service.getLangByName(username);
+        GetUserDetailResponse response = new GetUserDetailResponse(new User(userRecResult));
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(response, headers, HttpStatus.OK);
+    }
+
 
     @CrossOrigin
     @PutMapping("/user/{userId}")

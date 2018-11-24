@@ -29,7 +29,7 @@ export class LanguagesService {
     public get languages(): any {
         return this.langArry.slice();
     }
-    constructor( private http: Http, private userLoginService: UserLoginService) {}
+    constructor( private http: Http, private userLoginService: UserLoginService,) {}
 
     getAll() {
 
@@ -87,8 +87,7 @@ export class LanguagesService {
         .pipe(catchError(err => this.handleError(err)));
     }
 
-
-    create(langDetails: Language): Observable<Language> {
+    create(langDetails: Language): Observable<Language> {   
         if (!this.userLoginService.isLoggedIn) {
             console.log('UserService.createUser: user not logged in');
             return null;

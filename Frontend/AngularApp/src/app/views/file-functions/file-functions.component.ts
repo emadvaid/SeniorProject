@@ -8,6 +8,7 @@ import {HttpClient, HttpHeaders, HttpParams} from '../../../../node_modules/@ang
 import {VersionService} from '../../services/versions/versions.service';
 import { Version } from 'src/app/models/Version';
 import { DeclareFunctionStmt } from '@angular/compiler';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
 
 
 
@@ -35,7 +36,8 @@ export class FileFunctionsComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private versionService: VersionService
+    private versionService: VersionService,
+    private cookies: CookieService
   ) { }
 
   ngOnInit() {
@@ -100,7 +102,9 @@ export class FileFunctionsComponent implements OnInit {
 
   createVersion() {
 
-    const newVersion = new Version(null, this.versionNumber);
+    const newVersion = new Version(null, this.versionNumber, null);
+    let username = this.cookies.get('username');
+    newVersion.username = username;
 
     console.log(newVersion);
     this.versionService.create(newVersion)

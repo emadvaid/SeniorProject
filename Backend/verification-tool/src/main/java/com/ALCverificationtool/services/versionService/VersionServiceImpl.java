@@ -56,8 +56,7 @@ public class VersionServiceImpl implements VersionService{
         //Create log for create language
         Logs logData = new Logs();
         logData.setAction("Version created");
-        logData.setUserName("test username");
-        logData.setVersion(newVerRecDetails.getVerNum());
+        logData.setVersion(newVerRec.getVerNum());
         //Get date and time for log
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -79,6 +78,7 @@ public class VersionServiceImpl implements VersionService{
         for(LangRec langRec :languages) {
             this.keysDao.createKeyTable(langRec.getLangCode(), newVerRec.getSafeVersionNumber(),true);
         }
+
 
         return newVerRec;
     }
@@ -158,4 +158,3 @@ public class VersionServiceImpl implements VersionService{
         return results;
     }
 }
-

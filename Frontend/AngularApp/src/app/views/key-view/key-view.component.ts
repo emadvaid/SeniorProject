@@ -6,6 +6,8 @@ import { KeysService } from '../../services/keys/keys.service';
 import { Version } from 'src/app/models/Version';
 import { Language } from 'src/app/models/Language';
 import { StatisticsService } from '../../services/statistics/statistics.service';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { UserService } from 'src/app/services/users/user.service';
 
 
 @Component({
@@ -14,13 +16,10 @@ import { StatisticsService } from '../../services/statistics/statistics.service'
   styleUrls: ['./key-view.component.css']
 })
 export class KeyViewComponent implements OnInit {
-  englishTranslation = 'none';
+  englisTranslation = 'none';
   approvalSelection = 'All';
   keys = []; //keylist must be static
   keys2 = [];  //this keylist can change
-  keys3 = [];
-
-  resetKeysList = [];
   englishKeys = [];
   sortedKeys = [];
   versionLanguageList = [];
@@ -42,18 +41,13 @@ export class KeyViewComponent implements OnInit {
     sectionNote: 'none',
     fileName: 'none',
     fileNotes: 'none',
+    username: 'none'
   };
-
-   resetKey: LanguageKey;
 
   //current Data
   currLang: Language;
-  currVersion = 'None';
-  currLanguage = 'None';
-
-  searchType = 'Key';
-
-  currLanguageFull = '';
+  currVersion = '';
+  currLanguage = '';
   newKeys: String;
   totalKeys: String;
   approvedKeys: String;
@@ -66,28 +60,36 @@ export class KeyViewComponent implements OnInit {
     private languageService: LanguagesService,
     private keySevice: KeysService,
     private statisticsService: StatisticsService,
+    private cookies: CookieService,
+    private userService: UserService
   ) { }
 
   async ngOnInit() {
     this.approvalSelection = 'All';
     await this.getVersions();
     await this.getLanguages();
-    //await this.viewStatistics();
+    await this.getKeyList();
+    this.getEnglishKeys();
+    await this.viewStatistics();
 
   }
 
   async getVersions() {
     const versions = await this.versionService.getAll().toPromise();
     this.model.versions = versions;
-    //this.currVersion = this.model.versions[0].verNum;
+    this.currVersion = this.model.versions[0].verNum;
     console.log(this.currVersion);
   }
 
   async getLanguages() {
-    const languages = await this.languageService.getAll().toPromise();
+    const username = this.cookies.get('username');
+    //const language = await this.userService.getByUsername(username).toPromise();
+    const userLanguages = await this.userService.getByUsername(username).toPromise();
+    const languages = userLanguages.languages;
+    //const languages = await this.languageService.getAll().toPromise();
     this.languages.lang = languages;
     console.log(languages);
-    //this.currLanguage = this.languages.lang[0].langCode;
+    this.currLanguage = this.languages.lang[0].langCode;
     console.log(this.currLanguage);
 
   }
@@ -97,10 +99,9 @@ export class KeyViewComponent implements OnInit {
     if (this.currVersion.indexOf('.') > -1) {
       tempString = tempString.replace(/\./g, '_');
     }
+    console.log(tempString);
 
     const resultList = await this.keySevice.getNewKeys('en', tempString).toPromise();
-    console.log('english keys');
-    console.log(resultList);
 
     this.englishKeys = resultList.keysDetails;
   }
@@ -110,66 +111,30 @@ export class KeyViewComponent implements OnInit {
   async getKeyList() {
     this.viewStatistics();
 
-
     console.log(this.currLanguage + '' + this.currVersion);
     let tempString = this.currVersion;
     if (this.currVersion.indexOf('.') > -1) {
       tempString = tempString.replace(/\./g, '_');
     }
     console.log(tempString);
-    await this.getEnglishKeys();
 
     const resultList = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
 
     this.keys = resultList.keysDetails;
-    this.resetKeysList = resultList.keysDetails;
-
-    //temporarily set keys to english in order to sort list
-    this.keys3 = this.keys;
-    for(let key of this.keys3){
-      for(let key2 of this.englishKeys){
-        if(key.keyName == key2.keyName){
-          key.keyVariant = '' + key2.keyVariant + '';
-        }
-      }
-    }
-
-    this.keys3 = this.keys.sort(function (a, b) {
-      let textA = a.keyVariant.toUpperCase();
-      let textB = b.keyVariant.toUpperCase();
+    this.keys = this.keys.sort(function (a, b) {
+      let textA = a.keyName.toUpperCase();
+      let textB = b.keyName.toUpperCase();
       return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
-    //end sort
-    var result = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
-    console.log('dddddd');
-    console.log(result);
-
-    //set key variant back to original
-    for(let key of this.keys3){
-      for(let key2 of result.keysDetails){
-        if(key.keyName === key2.keyName){
-          console.log(key2.keyVariant);
-          key.keyVariant = '' + key2.keyVariant + '';
-        }
-      }
-    }
-    //set Language display
-    for (let lang of this.languages.lang){
-      if (this.currLanguage == lang.langCode){
-        this.currLanguageFull = ' in ' + lang.langName;
-      }
-    }
-    this.keys2 = this.keys3;
-    console.log('keys:');
+    this.keys2 = this.keys;
     console.log(this.keys);
   }
 
   selectKey(key: LanguageKey) {
-    this.getResetKey(key);
     this.currKey = key;
     for (let thiskey of this.englishKeys) {
       if (thiskey.keyName === this.currKey.keyName) {
-        this.englishTranslation = thiskey.keyVariant;
+        this.englisTranslation = thiskey.keyVariant;
         break;
       }
     }
@@ -185,18 +150,25 @@ export class KeyViewComponent implements OnInit {
         this.keys2 = this.keys;
       } else {
         for (let key1 of this.keys) {
-          this.pushKeyAllApprove(key1, criteria, this.searchType);}
+          if (key1.keyName.includes(criteria)) {
+            this.keys2.push(key1);
+          }
+        }
       }
     }
     else if (this.approvalSelection == 'Approved') {
       if (criteria == null || criteria == '') {
         for (let key1 of this.keys) {
           if (key1.approved == true) {
-            this.keys2.push(key1);}
+            this.keys2.push(key1);
+          }
         }
       } else {
         for (let key1 of this.keys) {
-          this.pushKeyCriteria(key1, criteria, this.searchType, true);}
+          if (key1.keyName.includes(criteria) && key1.approved == true) {
+            this.keys2.push(key1);
+          }
+        }
       }
     }
     else {
@@ -204,70 +176,31 @@ export class KeyViewComponent implements OnInit {
       if (criteria == null || criteria == '') {
         for (let key1 of this.keys) {
           if (key1.approved == false) {
-            this.keys2.push(key1);}
+            this.keys2.push(key1);
+          }
         }
       } else {
         for (let key1 of this.keys) {
-          this.pushKeyCriteria(key1, criteria, this.searchType, false);}
+          if (key1.keyName.includes(criteria) && key1.approved == false) {
+            this.keys2.push(key1);
+          }
+        }
       }
-    }
 
-  }
-
-  pushKeyCriteria(key: any, criteria: string, strType: string, bool: Boolean){
-    if(strType == 'Key'){
-
-      let str = this.returnEnglishName(key)
-      if (str.includes(criteria) && key.approved == bool) {
-        this.keys2.push(key);}
-    }
-    else if(strType == 'Translated Variant'){
-      if (key.keyVariant.includes(criteria) && key.approved == bool) {
-        this.keys2.push(key);}
-    }
-    else{
-      if (key.keyNote.includes(criteria) && key.approved == bool) {
-        this.keys2.push(key);}
-    }
-  }
-
-  pushKeyAllApprove(key: any, criteria: string, strType: string){
-    if(strType == 'Key'){
-      let str = this.returnEnglishName(key)
-      if (str.includes(criteria)) {
-        this.keys2.push(key);}
-    }
-    else if(strType == 'Translated Variant'){
-      if (key.keyVariant.includes(criteria)) {
-        this.keys2.push(key);}
-    }
-    else{
-      if (key.keyNote.includes(criteria)) {
-        this.keys2.push(key);}
     }
   }
 
   updateKeys() {
-    this.currKey.languageCode = this.currLanguage;
-    this.currKey.languageVersion = this.currVersion;
-    this.currKey.keyApproved = true;
-    this.keySevice.updateKey(this.currKey).toPromise();
-    this.viewStatistics();
-    this.getKeyList();
-    var alert = document.getElementById("success-alert");
-    //alert.hidden = false;
-    setTimeout(function () {
-      alert.hidden = false;
-    }, 1000);
-    setTimeout(function () {
-      alert.hidden = true;
-    }, 3000);
-  }
+    let username = this.cookies.get('username');
+    this.currKey.username = username;
 
-  //saves key without accepting it
-  saveKeys() {
     this.currKey.languageCode = this.currLanguage;
     this.currKey.languageVersion = this.currVersion;
+    let tempString = this.currVersion;
+    if (this.currVersion.indexOf('.') > -1) {
+      tempString = tempString.replace(/\./g, '_');
+    }
+    this.currKey.languageVersion = tempString;
     this.keySevice.updateKey(this.currKey).toPromise();
     this.viewStatistics();
     this.getKeyList();
@@ -301,53 +234,6 @@ export class KeyViewComponent implements OnInit {
         this.totalKeys = JSON.stringify(keys);
         console.log(this.totalKeys);
       }
-    );
-  }
-openModal(){
-  let modal = document.getElementById('changeVersion');
-  modal.style.display = 'block';
-}
-
-  closeModal(){
-    let modal = document.getElementById('changeVersion');
-    modal.style.display = 'none';
-  }
-  submitTable(){
-    if(this.currLanguage == 'None'){
-      this.currLanguage = this.languages.lang[0].langCode;
-    }
-    if(this.currVersion == 'None'){
-      this.currVersion = this.model.versions[0].verNum;
-    }
-    this.getKeyList();
-    this.approvalSelection = 'All'
-    let modal = document.getElementById('changeVersion');
-    modal.style.display = 'none';
-  }
-   async getResetKey(key: LanguageKey){
-  }
-
-  async keyReset(key: LanguageKey){
-    let tempString = this.currVersion;
-    if (this.currVersion.indexOf('.') > -1) {
-      tempString = tempString.replace(/\./g, '_');
-    }
-    const resultList = await this.keySevice.getNewKeys(this.currLanguage, tempString).toPromise();
-    this.resetKeysList = resultList.keysDetails;
-    for(let key2 of this.resetKeysList){
-      if(key.keyName == key2.keyName){
-        this.resetKey = key2;
-      }
-    }
-    this.currKey = this.resetKey;
-    console.log(this.resetKey);
-  }
-
-  returnEnglishName(key: LanguageKey): string{
-    for(let key1 of this.englishKeys){
-      if(key.keyName == key1.keyName){
-        return key1.keyVariant;
-      }
-    }
+    )
   }
 }

@@ -31,7 +31,6 @@ public class KeysController {
     @CrossOrigin
     @PutMapping(value="/updateKeyValues")
     public boolean updateKey(@RequestBody TranslationResourceRec key){
-        //                             @CookieValue("username") String username)
         key.setKeyApproved(true);
         key.setKeyNew(false);
         String tableName = key.getLanguageCode() + "_" + key.getLanguageVersion();

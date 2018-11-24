@@ -16,7 +16,7 @@ public class TranslationResourceRec {
     private String fileName;
     private String fileNotes;
     private boolean approved;
-    private String folderPath;
+    private String username;
 
     public TranslationResourceRec() {
         keyId = null;
@@ -33,7 +33,7 @@ public class TranslationResourceRec {
         this.fileName = original.fileName;
         this.fileNotes = original.fileNotes;
         this.approved = original.approved;
-        this.folderPath = original.folderPath;
+        this.username = original.username;
         this.languageCode = original.languageCode;
         this.languageVersion = original.languageVersion;
         keyId = null;
@@ -42,7 +42,7 @@ public class TranslationResourceRec {
     public TranslationResourceRec(String keyName, boolean keyApproved, boolean keyNew,
                                   String keyVariant, String keyNote, String sectionId,
                                   String sectionNote, String fileName, String fileNotes,
-                                  boolean approved, String folderPath, String languageCode, String languageVersion){
+                                  boolean approved, String username, String languageCode, String languageVersion){
         this.keyName = keyName;
         this.keyApproved = keyApproved;
         this.keyNew = keyNew;
@@ -53,7 +53,7 @@ public class TranslationResourceRec {
         this.fileName = fileName;
         this.fileNotes = fileNotes;
         this.approved = approved;
-        this.folderPath = folderPath;
+        this.username = username;
         this.languageCode = languageCode;
         this.languageVersion = languageVersion ;
         keyId = null;
@@ -92,8 +92,8 @@ public class TranslationResourceRec {
     public boolean getApproved() { return approved;}
     public void setApproved(boolean approved) {this.approved = approved;}
 
-    public String getFolderPath() { return folderPath;}
-    public void setFolderPath(String folderPath) { this.folderPath = folderPath;}
+    public String getUsername() { return username;}
+    public void setUsername(String folderPath) { this.username = username;}
 
     public String getLanguageCode() { return languageCode;}
     public void setLanguageCode(String languageCode) {this.languageCode = languageCode ;}
