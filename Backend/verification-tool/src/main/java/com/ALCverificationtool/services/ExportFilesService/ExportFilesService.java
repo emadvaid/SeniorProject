@@ -4,14 +4,15 @@ import com.ALCverificationtool.models.TranslationResourceRec;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+import java.io.IOException;
 import java.util.List;
 
 public interface ExportFilesService {
-   // void createFolder();
+    // void createFolder();
 
-   // List<TranslationResourceRec> getKeys();
+    // List<TranslationResourceRec> getKeys();
 
     void createFolder(String language, String versionNumber);
 
-    void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException;
+    void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException, IOException;
 }
