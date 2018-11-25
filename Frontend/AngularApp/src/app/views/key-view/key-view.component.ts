@@ -6,6 +6,8 @@ import { KeysService } from '../../services/keys/keys.service';
 import { Version } from 'src/app/models/Version';
 import { Language } from 'src/app/models/Language';
 import { StatisticsService } from '../../services/statistics/statistics.service';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { UserService } from 'src/app/services/users/user.service';
 
 
 @Component({
@@ -42,9 +44,10 @@ export class KeyViewComponent implements OnInit {
     sectionNote: 'none',
     fileName: 'none',
     fileNotes: 'none',
+    username: 'none'
   };
 
-   resetKey: LanguageKey;
+  resetKey: LanguageKey;
 
   //current Data
   currLang: Language;
@@ -66,6 +69,8 @@ export class KeyViewComponent implements OnInit {
     private languageService: LanguagesService,
     private keySevice: KeysService,
     private statisticsService: StatisticsService,
+    private cookies: CookieService,
+    private userService: UserService
   ) { }
 
   async ngOnInit() {
@@ -84,10 +89,14 @@ export class KeyViewComponent implements OnInit {
   }
 
   async getLanguages() {
-    const languages = await this.languageService.getAll().toPromise();
+    const username = this.cookies.get('username');
+    //const language = await this.userService.getByUsername(username).toPromise();
+    const userLanguages = await this.userService.getLangByUsername(username).toPromise();
+    const languages = userLanguages.languages;
+    //const languages = await this.languageService.getAll().toPromise();
     this.languages.lang = languages;
     console.log(languages);
-    //this.currLanguage = this.languages.lang[0].langCode;
+    this.currLanguage = this.languages.lang[0].langCode;
     console.log(this.currLanguage);
 
   }

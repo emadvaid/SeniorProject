@@ -4,6 +4,7 @@ import com.ALCverificationtool.models.TranslationResourceRec;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+import java.io.IOException;
 import java.util.List;
 
 public interface ExportFilesService {
@@ -13,5 +14,5 @@ public interface ExportFilesService {
 
     void createFolder(String language, String versionNumber);
 
-    void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException;
+    void createXMLFile(String language, String versionNumber) throws ParserConfigurationException, TransformerException, IOException;
 }

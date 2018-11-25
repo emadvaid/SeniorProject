@@ -2,19 +2,16 @@ package com.ALCverificationtool.services.userService;
 
 import com.ALCverificationtool.controllers.users.AuthUserResponse;
 import com.ALCverificationtool.dao.authentication.UserAuthenticationRepository;
+import com.ALCverificationtool.dao.logs.LogsRepository;
 import com.ALCverificationtool.dao.users.UserRepository;
-import com.ALCverificationtool.models.ResetToken;
+import com.ALCverificationtool.models.*;
 import com.ALCverificationtool.controllers.users.User;
-import com.ALCverificationtool.models.UserAuthentication;
-import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.services.authResetService.AuthResetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -24,16 +21,19 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userDao;
     private final UserAuthenticationRepository authDao;
     private final AuthResetService authResetService;
+    private final LogsRepository logsDao;
 
     @Autowired
     public UserServiceImpl(
-        UserRepository userDao,
-        UserAuthenticationRepository authDao,
-        AuthResetService authResetService
+            UserRepository userDao,
+            UserAuthenticationRepository authDao,
+            AuthResetService authResetService,
+            LogsRepository logsDao
     ) {
-       this.userDao = userDao;
-       this.authDao = authDao;
-       this.authResetService = authResetService;
+        this.userDao = userDao;
+        this.authDao = authDao;
+        this.authResetService = authResetService;
+        this.logsDao = logsDao;
     }
 
     @Override
@@ -62,6 +62,18 @@ public class UserServiceImpl implements UserService {
         // userRec is authenticated so create a auth record
         UserAuthentication auth = authDao.save(
                 new UserAuthentication(userRec.getId(), userRec.getType()));
+
+        //Create log
+        //Get date and time for log
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        String date = sdf.format(cal.getTime());
+        Logs logData = new Logs();
+        logData.setUserName(userRec.getUsername());
+        logData.setAction("User login");
+        logData.setDate(date);
+        logsDao.save(logData);
+
 
         // create a temp userRec object to return
         UserRec tmp = new UserRec(userRec);
@@ -199,7 +211,7 @@ public class UserServiceImpl implements UserService {
         }
 
         // then copy the relevant values to the userRec Entity
-       // actualUserRec.setPassword(null);
+        // actualUserRec.setPassword(null);
 
         // then save
         UserRec newUserRec = this.userDao.save(actualUserRec);
@@ -299,4 +311,7 @@ public class UserServiceImpl implements UserService {
             return false;
         }
     }
+
+    @Override
+    public Optional<UserRec> getLangByName(String username) { return this.userDao.findByUsername(username); }
 }

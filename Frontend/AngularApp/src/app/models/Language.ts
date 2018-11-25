@@ -2,6 +2,7 @@ export class Language {
     id: string;
     langName: string;
     langCode: string;
+    username: string;
 
     constructor(details: any = null) {
         if (details && details != null) {
@@ -22,7 +23,7 @@ export class Language {
         newLanguage.id        = parsedJson['id'];
         newLanguage.langName  = parsedJson['langName'];
         newLanguage.langCode = parsedJson['langCode'];
-
+        newLanguage.username = parsedJson['username'];
 
         return newLanguage;
     }
@@ -35,7 +36,7 @@ export class Language {
         newLanguage.id        = parsedJson['id'];
         newLanguage.langName  = parsedJson['langName'];
         newLanguage.langCode = parsedJson['langCode'];
-
+        newLanguage.username = parsedJson['username'];
 
         return newLanguage;
     }

@@ -24,5 +24,7 @@ public interface UserService {
     Optional<UserRec> activateUser(String userId);
 
     Optional<UserRec> deactivateUser(String userId);
+
+    Optional<UserRec> getLangByName(String username);
 }
 

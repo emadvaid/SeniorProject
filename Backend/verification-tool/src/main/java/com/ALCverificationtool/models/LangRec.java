@@ -14,6 +14,7 @@ public class LangRec {
     private UUID id = null;
     private String langName;
     private String langCode;
+    private String username;
 
     public LangRec() {
     }
@@ -46,4 +47,8 @@ public class LangRec {
     public void setLangCode(String langCode) {
         this.langCode = langCode;
     }
+
+    public String getUsername() { return username; }
+
+    public void setUsername(String username) { this.username = username; }
 }

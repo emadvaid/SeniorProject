@@ -28,7 +28,6 @@ public class KeysRepositoryImpl implements KeysRepository {
             "  `approved` tinyint(4) NOT NULL," +
             "  `file_name` varchar(255) DEFAULT NULL," +
             "  `file_notes` varchar(2000) DEFAULT NULL," +
-            "  `folder_path` varchar(255) DEFAULT NULL," +
             "  `key_name` varchar(255) NOT NULL," +
             "  `key_new` tinyint(4) NOT NULL," +
             "  `key_note` varchar(2000) DEFAULT NULL," +
@@ -179,17 +178,17 @@ public class KeysRepositoryImpl implements KeysRepository {
         String tableName = toTableName(keyData.getLanguageCode(), keyData.getLanguageVersion());
 
 
-        String INSERT = "INSERT INTO " + tableName + " (approved,file_name,file_notes,folder_path,\n" +
+        String INSERT = "INSERT INTO " + tableName + " (approved,file_name,file_notes,\n" +
                 "key_name,key_new,key_note,key_variant,\n" +
                 "section_id,section_note)\n" +
-                "VALUES (?,?,?,?,?,?,?,?,?,?);\n";
+                "VALUES (?,?,?,?,?,?,?,?,?);\n";
 
 
         Object[] parameters = new Object[] {
                 keyData.getKeyApproved(),
                 keyData.getFileName(),
                 keyData.getFileNotes(),
-                keyData.getFolderPath(),
+                keyData.getUsername(),
                 keyData.getKeyName(),
                 keyData.getKeyNew(),
                 keyData.getKeyNote(),
@@ -222,9 +221,6 @@ public class KeysRepositoryImpl implements KeysRepository {
 ////                }
 ////                if (key.equals("file_notes")) {
 ////                    result.setFileNotes(value.toString());
-////                }
-////                if (key.equals("folder_path")) {
-////                    result.setFolderPath(value.toString());
 ////                }
 ////                if (key.equals("key_name")) {
 ////                    result.setKeyName(value.toString());
@@ -278,7 +274,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     }
     @Override
     public boolean updateKey(String tableName, TranslationResourceRec keyData) {
-        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?," +
+        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?," +
                 "key_name = ?, key_new = ?, key_note = ?, key_variant = ?, " +
                 "section_id = ?, section_note = ?" +
                 " WHERE key_id = ?";
@@ -287,7 +283,6 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyApproved(),
                 keyData.getFileName(),
                 keyData.getFileNotes(),
-                keyData.getFolderPath(),
                 keyData.getKeyName(),
                 keyData.getKeyNew(),
                 keyData.getKeyNote(),
@@ -305,7 +300,7 @@ public class KeysRepositoryImpl implements KeysRepository {
         String date = sdf.format(cal.getTime());
 
         Logs logData = new Logs();
-        logData.setUserName("test username");
+        logData.setUserName(keyData.getUsername());
         logData.setFileName(keyData.getFileName());
         logData.setKeyName(keyData.getKeyName());
         logData.setLanguage(keyData.getLanguageCode());

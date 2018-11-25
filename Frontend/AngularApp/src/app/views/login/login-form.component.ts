@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserLoginService } from '../../services/user.login/user.login.service';
 import { User, UserTypes } from '../../models/User';
-import { AppComponent } from '../../app.component';
-
-
+import { AppComponent } from '../../app.component'; 
+import { CookieService } from 'angular2-cookie/services/cookies.service';
 
 const REMEMBERED_USERNAME = 'remembered_username';
 
@@ -18,10 +17,11 @@ export class LoginFormComponent implements OnInit {
   submitted = false;
   private returnUrl: string;
 
-
-  constructor(private router: Router, private userLoginService: UserLoginService,
-              private comp: AppComponent) { }
-
+  constructor(private router: Router,
+    private userLoginService: UserLoginService,
+    private comp: AppComponent, 
+    private cookies: CookieService
+    ) { }
 
   ngOnInit() {
     // first log out of the current session
@@ -42,6 +42,9 @@ export class LoginFormComponent implements OnInit {
     // set the sumbitted flag to true
     this.submitted = true;
 
+    //Set username in cookies
+    this.cookies.put('username', this.model.username);
+
     this.userLoginService.authenticateWithUsernamePassword(this.model.username, this.model.password)
       .subscribe(
         (user: User) => {
@@ -50,11 +53,7 @@ export class LoginFormComponent implements OnInit {
           if (user) {
             // login was successful
             console.log('Login success, userType = ', this.userLoginService.getUserType);
-            // set session storage
-
-            // Set username in cookies
-            // this.comp.setSession(this.model.username)
-            // this.comp.setCookies();
+            
             // make sure to remember the username if selected
             if (this.model.remember) {
               localStorage.setItem(REMEMBERED_USERNAME, this.model.username);
@@ -68,7 +67,7 @@ export class LoginFormComponent implements OnInit {
                 this.router.navigate(['admin']);
                 break;
               case UserTypes.dealer:
-                this.router.navigate(['dealer/keyView']);
+                this.router.navigate(['dealer']);
                 break;
               default:
                 this.router.navigate(['error-page']);
@@ -103,4 +102,3 @@ export class LoginFormComponent implements OnInit {
       + ', returnUrl = ' + this.returnUrl;
   }
 }
-
