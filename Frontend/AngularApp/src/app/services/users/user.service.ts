@@ -32,7 +32,7 @@ export class UserService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.post('/api/users', {
+        return this.http.post('http://localhost:8080/users', {
             userDetails: user
         }, options)
         .pipe(
@@ -72,7 +72,7 @@ export class UserService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get('/api/users', options)
+        return this.http.get('http://localhost:8080/users', options)
         .pipe(
             map((resp: any) => {
                 console.log('ManageUsersComponent ajax response: ', resp);
@@ -103,7 +103,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.get(`/api/user/${userId}`, options)
+        return this.http.get(`api/user/${userId}`, options)
         .pipe(
             map((resp: any) => {
                 // find the user from the response body
@@ -122,14 +122,14 @@ export class UserService {
             }));
     }
 
-    public getLangByUsername(username: string): Observable<User> {
+    public getByUsername(username: string): Observable<User> {
         // Add in JSON header and access token header
         const headers = new Headers({
             'Content-Type': 'application/Json',
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        const URL = 'http://localhost:8080/username'
+        const URL = 'api/username'
         return this.http.get(`${URL}/${username}`, options)
         .pipe(
             map((resp: any) => {
@@ -162,7 +162,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`/api/user/${userId}`, {
+        return this.http.put(`http://localhost:8080/user/${userId}`, {
             userDetail
         }, options)
         .pipe(
@@ -191,7 +191,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`/api/user/${userId}/activate`, options)
+        return this.http.put(`http://localhost:8080/user/${userId}/activate`, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);
@@ -213,7 +213,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`/api/user/deactivate/${userId}`, {userDetail: {}}, options)
+        return this.http.put(`http://localhost:8080/user/deactivate/${userId}`, {userDetail: {}}, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);
@@ -234,7 +234,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`/api/user/${userId}/resetpass`, options)
+        return this.http.put(`http://localhost:8080/user/${userId}/resetpass`, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);

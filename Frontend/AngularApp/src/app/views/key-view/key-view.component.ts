@@ -76,7 +76,7 @@ export class KeyViewComponent implements OnInit {
   async ngOnInit() {
     this.approvalSelection = 'All';
     await this.getVersions();
-    await this.getLanguages();
+    this.getLanguages();
     //await this.viewStatistics();
 
   }
@@ -89,9 +89,8 @@ export class KeyViewComponent implements OnInit {
   }
 
   async getLanguages() {
-    const username = this.cookies.get('username');
     //const language = await this.userService.getByUsername(username).toPromise();
-    const userLanguages = await this.userService.getLangByUsername(username).toPromise();
+    const userLanguages = await this.userService.getByUsername(this.cookies.get('username')).toPromise();
     const languages = userLanguages.languages;
     //const languages = await this.languageService.getAll().toPromise();
     this.languages.lang = languages;
