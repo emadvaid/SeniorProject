@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
@@ -24,6 +25,7 @@ public class AuthResetServiceImpl implements AuthResetService  {
     private final JavaMailSender mailSender;
     private final UserRepository userDao;
     private final ResetTokenRepository resetDao;
+    private final PasswordEncoder passwordEncoder;
 
     @Value("${alcverificationtool.url}")
     private String passwordResetUrl;
@@ -32,11 +34,13 @@ public class AuthResetServiceImpl implements AuthResetService  {
     @Autowired
     AuthResetServiceImpl(JavaMailSender mailSender,
                          UserRepository userDao,
-                         ResetTokenRepository resetDao) {
+                         ResetTokenRepository resetDao,
+                         PasswordEncoder passwordEncoder) {
 
         this.mailSender = mailSender;
         this.userDao = userDao;
         this.resetDao = resetDao;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -74,7 +78,8 @@ public class AuthResetServiceImpl implements AuthResetService  {
             throw  new ServiceException("Cannot change password for inactive user.");
         }
 
-        userRec.setPassword(newPassword);
+        // We need to save the encoded password hash+salt
+        userRec.setPassword(passwordEncoder.encode(newPassword));
 
         UserRec result = this.userDao.save(userRec);
 

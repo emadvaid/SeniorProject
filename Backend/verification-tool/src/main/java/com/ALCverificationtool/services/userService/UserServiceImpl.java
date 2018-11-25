@@ -9,6 +9,7 @@ import com.ALCverificationtool.models.UserAuthentication;
 import com.ALCverificationtool.models.UserRec;
 import com.ALCverificationtool.services.authResetService.AuthResetService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -24,16 +25,19 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userDao;
     private final UserAuthenticationRepository authDao;
     private final AuthResetService authResetService;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
     public UserServiceImpl(
         UserRepository userDao,
         UserAuthenticationRepository authDao,
-        AuthResetService authResetService
+        AuthResetService authResetService,
+        PasswordEncoder passwordEncoder
     ) {
        this.userDao = userDao;
        this.authDao = authDao;
        this.authResetService = authResetService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -55,7 +59,7 @@ public class UserServiceImpl implements UserService {
         UserRec userRec = userOpt.get();
 
         // fail if the passwords don't match
-        if(!password.equals(userRec.getPassword())){
+        if(!passwordEncoder.matches(password, userRec.getPassword())){
             throw new UserAuthenticationException("Password not match for userRec: username = " + username);
         }
 
@@ -198,29 +202,26 @@ public class UserServiceImpl implements UserService {
             throw new UserException("user not active");
         }
 
-        // then copy the relevant values to the userRec Entity
-       // actualUserRec.setPassword(null);
+        // Set the password field to null
+        actualUserRec.setPassword(null);
 
         // then save
         UserRec newUserRec = this.userDao.save(actualUserRec);
 
         // then check the user was updated return the updated userRecEntity
-//        if(newUserRec == null|| newUserRec.getPassword() == null) {
-//            throw new UserException("user not updated");
-//        }
-
-        // create a reset Entity for the user (sends the email)
-
+        if(newUserRec == null|| newUserRec.getPassword() != null) {
+            throw new UserException("user not updated");
+        }
 
         // Now create a password reset entity for user
         ResetToken reset = this.authResetService.createPasswordResetToken(newUserRec, false);
 
         // make sure valid reset
-//        if (reset == null
-//                || reset.getId() == null || !reset.isActive()
-//                || !newUserRec.getId().equals(reset.getUserId())) {
-//            throw new UserException("Error creating password reset for user");
-//        }
+        if (reset == null
+                || reset.getId() == null || !reset.isActive()
+                || !newUserRec.getId().equals(reset.getUserId())) {
+            throw new UserException("Error creating password reset for user");
+        }
 
         return Optional.of(newUserRec);
 
