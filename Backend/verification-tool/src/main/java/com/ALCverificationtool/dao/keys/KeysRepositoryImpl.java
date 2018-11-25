@@ -188,7 +188,7 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyApproved(),
                 keyData.getFileName(),
                 keyData.getFileNotes(),
-                keyData.getFolderPath(),
+                keyData.getUsername(),
                 keyData.getKeyName(),
                 keyData.getKeyNew(),
                 keyData.getKeyNote(),
