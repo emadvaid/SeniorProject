@@ -4,6 +4,7 @@ import { error } from 'util';
 import { Router } from '@angular/router';
 import { LanguagesService } from 'src/app/services/languages/languages.service';
 import { Language } from 'src/app/models/Language';
+import { CookieService } from 'angular2-cookie/services/cookies.service';
 
 
 
@@ -21,7 +22,8 @@ export class CreateLanguageViewComponent implements OnInit {
   @Output() cancel: EventEmitter<any> = new EventEmitter();
 
   constructor(
-    private languageService: LanguagesService) {}
+    private languageService: LanguagesService,
+    private cookies: CookieService) {}
 
   public ngOnInit() {
         this.model = {};
@@ -40,7 +42,9 @@ export class CreateLanguageViewComponent implements OnInit {
     const newLanguage: Language = new Language();
     newLanguage.langName = this.model.langName;
     newLanguage.langCode = this.model.langCode;
-
+    let username = this.cookies.get('username');
+    newLanguage.username = username;
+    
     console.log(newLanguage);
     console.log(JSON.stringify(newLanguage));
 

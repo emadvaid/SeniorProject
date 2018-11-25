@@ -27,7 +27,6 @@ public class versionController {
     @PostMapping("/versions")
     public ResponseEntity<CreateVersionsResponse> createVersion(@RequestBody CreateVersionsRequest request) {
         VerRec newVer = this.service.createVer(request.getVersionDetails());
-
         CreateVersionsResponse response =  new CreateVersionsResponse(newVer);
 
         HttpHeaders headers = new HttpHeaders();

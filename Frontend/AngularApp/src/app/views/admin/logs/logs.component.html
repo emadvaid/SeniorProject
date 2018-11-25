@@ -52,18 +52,26 @@
         </ng-container>
         <ng-template #languageCreated>
             <ng-container *ngIf="log.action==='Language created'; else versionCreated">
-                    <td>{{ log.userName }}</td>
-                    <td>{{ log.action }}</td>
-                    <td>{{ log.language }}</td>
-                    <td>{{ log.date }}</td>
+                <td>{{ log.userName }}</td>
+                <td>{{ log.action }}</td>
+                <td>{{ log.language }}</td>
+                <td>{{ log.date }}</td>
             </ng-container>
         </ng-template>
         <ng-template #versionCreated>
-            <ng-container *ngIf="log.action==='Version created'; else elseif">
-                    <td>{{ log.userName }}</td>
-                    <td>{{ log.action }}</td>
-                    <td>{{ log.version }}</td>
-                    <td>{{ log.date }}</td>
+            <ng-container *ngIf="log.action==='Version created'; else login">
+                <td>{{ log.userName }}</td>
+                <td>{{ log.action }}</td>
+                <td>{{ log.version }}</td>
+                <td>{{ log.date }}</td>
+            </ng-container>
+        </ng-template>
+        <ng-template #login>
+            <ng-container *ngIf="log.action==='User login'; else elseif">
+                <td>{{ log.userName }}</td>
+                <td>{{ log.action }}</td>
+                <td></td>
+                <td>{{ log.date }}</td>
             </ng-container>
         </ng-template>
     </tr>

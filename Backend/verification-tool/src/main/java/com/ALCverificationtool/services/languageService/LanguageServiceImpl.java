@@ -40,7 +40,7 @@ public class LanguageServiceImpl implements LanguageService {
         //Create log for create language
         Logs logData = new Logs();
         logData.setAction("Language created");
-        logData.setUserName("test username");
+        logData.setUserName(newLangDetails.getUsername());
         logData.setLanguage(newLangDetails.getLangName());
         //Get date and time for log
         Calendar cal = Calendar.getInstance();
@@ -95,4 +95,3 @@ public class LanguageServiceImpl implements LanguageService {
         return results;
     }
 }
-

@@ -11,12 +11,10 @@ public class VerRec {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", columnDefinition = "BINARY(16)")
-
     private UUID id = null;
 
     @Column(name="verNum")
     private String rawVerNum;
-
 
     public VerRec() {
     }

@@ -11,5 +11,6 @@ export class LanguageKey {
   sectionNote: string;
   fileName: string;
   fileNotes: string;
+  username: string;
 }
 
