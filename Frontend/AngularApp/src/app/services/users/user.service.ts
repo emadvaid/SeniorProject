@@ -122,7 +122,7 @@ export class UserService {
             }));
     }
 
-    public getByUsername(username: string): Observable<User> {
+    public getLangByUsername(username: string): Observable<User> {
         // Add in JSON header and access token header
         const headers = new Headers({
             'Content-Type': 'application/Json',
