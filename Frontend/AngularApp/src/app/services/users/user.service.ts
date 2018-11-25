@@ -32,7 +32,7 @@ export class UserService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.post('http://localhost:8080/users', {
+        return this.http.post('/api/users', {
             userDetails: user
         }, options)
         .pipe(
@@ -72,7 +72,7 @@ export class UserService {
         });
         const options = new RequestOptions({ headers: headers});
 
-        return this.http.get('http://localhost:8080/users', options)
+        return this.http.get('/api/users', options)
         .pipe(
             map((resp: any) => {
                 console.log('ManageUsersComponent ajax response: ', resp);
@@ -129,7 +129,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        const URL = 'api/username'
+        const URL = 'api/username';
         return this.http.get(`${URL}/${username}`, options)
         .pipe(
             map((resp: any) => {
@@ -234,7 +234,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`http://localhost:8080/user/${userId}/resetpass`, options)
+        return this.http.put(`/api/user/${userId}/resetpass`, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);
