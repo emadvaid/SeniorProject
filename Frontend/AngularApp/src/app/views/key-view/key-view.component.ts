@@ -16,8 +16,8 @@ import { StatisticsService } from '../../services/statistics/statistics.service'
 export class KeyViewComponent implements OnInit {
   englishTranslation = 'none';
   approvalSelection = 'All';
-  keys = []; //keylist must be static
-  keys2 = [];  //this keylist can change
+  keys = []; // keylist must be static
+  keys2 = [];  // this keylist can change
   keys3 = [];
 
   resetKeysList = [];
@@ -28,7 +28,7 @@ export class KeyViewComponent implements OnInit {
 
   model: any = {};
   languages: any = {};
-  //current selected key
+  // current selected key
   currKey: LanguageKey = {
     keyId: -1,
     languageCode: 'none',
@@ -46,7 +46,7 @@ export class KeyViewComponent implements OnInit {
 
    resetKey: LanguageKey;
 
-  //current Data
+  // current Data
   currLang: Language;
   currVersion = 'None';
   currLanguage = 'None';
@@ -72,14 +72,14 @@ export class KeyViewComponent implements OnInit {
     this.approvalSelection = 'All';
     await this.getVersions();
     await this.getLanguages();
-    //await this.viewStatistics();
+    // await this.viewStatistics();
 
   }
 
   async getVersions() {
     const versions = await this.versionService.getAll().toPromise();
     this.model.versions = versions;
-    //this.currVersion = this.model.versions[0].verNum;
+    // this.currVersion = this.model.versions[0].verNum;
     console.log(this.currVersion);
   }
 
@@ -87,11 +87,11 @@ export class KeyViewComponent implements OnInit {
     const languages = await this.languageService.getAll().toPromise();
     this.languages.lang = languages;
     console.log(languages);
-    //this.currLanguage = this.languages.lang[0].langCode;
+    // this.currLanguage = this.languages.lang[0].langCode;
     console.log(this.currLanguage);
 
   }
-  //returns all the english keys for this version, needed for key comparison
+  // returns all the english keys for this version, needed for key comparison
   async getEnglishKeys() {
     let tempString = this.currVersion;
     if (this.currVersion.indexOf('.') > -1) {
@@ -106,7 +106,7 @@ export class KeyViewComponent implements OnInit {
   }
 
 
-  //this is all the keys for the current language
+  //  is all the keys for the current language
   async getKeyList() {
     this.viewStatistics();
 
@@ -124,7 +124,7 @@ export class KeyViewComponent implements OnInit {
     this.keys = resultList.keysDetails;
     this.resetKeysList = resultList.keysDetails;
 
-    //temporarily set keys to english in order to sort list
+    // temporarily set keys to english in order to sort list
     this.keys3 = this.keys;
     for(let key of this.keys3){
       for(let key2 of this.englishKeys){
