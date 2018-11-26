@@ -83,7 +83,12 @@ public class AuthResetServiceImpl implements AuthResetService  {
 
         UserRec result = this.userDao.save(userRec);
 
-        if(result==null || !result.getPassword().equals(newPassword) || !result.getId().equals(userRec.getId())) {
+        this.resetDao.delete(reset);
+
+        if(result==null
+                || !passwordEncoder.matches(newPassword, result.getPassword())
+                || !result.getId().equals(userRec.getId())) {
+
             throw new ServiceException("Bad error.");
         }
     }
