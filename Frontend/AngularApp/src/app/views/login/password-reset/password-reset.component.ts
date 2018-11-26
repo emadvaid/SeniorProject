@@ -47,9 +47,12 @@ export class PasswordResetComponent implements OnInit {
                 (result: boolean) => {
                     //
                     console.log('Succesfully changed password.');
+
                     this.router.navigate(['/login']);
+                    console.log(result);
                 },
                 (err: any) => {
+                    console.log(err);
                     //
                 }
             );
