@@ -38,11 +38,11 @@ export class CreateUserComponent implements OnInit {
             }
         );
         // just for dev purposes
-        const rnd = Math.floor(10000 * Math.random());
-        this.model.username = 'testusername' + rnd;
-        this.model.firstName = 'first' + rnd;
-        this.model.lastName = 'last' + rnd;
-        this.model.email = 'testusername' + rnd + '@test.com';
+        // const rnd = Math.floor(10000 * Math.random());
+        // this.model.username = 'testusername' + rnd;
+        // this.model.firstName = 'first' + rnd;
+        // this.model.lastName = 'last' + rnd;
+        // this.model.email = 'testusername' + rnd + '@test.com';
     }
 
     onSubmit(): void {
