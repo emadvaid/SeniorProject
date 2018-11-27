@@ -8,6 +8,8 @@ import { Language } from 'src/app/models/Language';
 import { StatisticsService } from '../../services/statistics/statistics.service';
 import { CookieService } from 'angular2-cookie/services/cookies.service';
 import { UserService } from 'src/app/services/users/user.service';
+import {UserLoginService} from '../../services/user.login/user.login.service';
+import { User, UserTypes } from '../../models/User';
 
 
 @Component({
@@ -21,6 +23,8 @@ export class KeyViewComponent implements OnInit {
   keys = []; // keylist must be static
   keys2 = [];  // this keylist can change
   keys3 = [];
+
+  userLanguages: User;
 
   resetKeysList = [];
   englishKeys = [];
@@ -70,7 +74,8 @@ export class KeyViewComponent implements OnInit {
     private keySevice: KeysService,
     private statisticsService: StatisticsService,
     private cookies: CookieService,
-    private userService: UserService
+    private userService: UserService,
+    private userLoginService: UserLoginService,
   ) { }
 
   async ngOnInit() {
@@ -95,9 +100,23 @@ export class KeyViewComponent implements OnInit {
 
   async getLanguages() {
     //const language = await this.userService.getByUsername(username).toPromise();
-    const userLanguages = await this.userService.getByUsername(this.cookies.get('username')).toPromise();
+
+    switch (this.userLoginService.getUserType) {
+      case UserTypes.admin:
+        const languages = await this.languageService.getAll().toPromise();
+        this.languages.lang = languages;
+        break;
+      case UserTypes.dealer:
+        this.userLanguages = await this.userService.getByUsername(this.cookies.get('username')).toPromise();
+        this.languages.lang = this.userLanguages.languages;
+        break;
+      default:
+        console.log('nothing');
+    }
+
+
     //const languages = await this.languageService.getAll().toPromise();
-    this.languages.lang = userLanguages.languages;
+
 
     console.log(this.currLanguage);
 
