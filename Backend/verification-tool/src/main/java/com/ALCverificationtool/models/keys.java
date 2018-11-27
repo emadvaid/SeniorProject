@@ -14,8 +14,29 @@ public class keys {
     private String sectionNote;
     private String fileName;
     private String fileNotes;
+    private String folderPath;
 
-    public keys() {}
+    public keys() {
+    }
+
+    public keys(Long keyId, String languageCode, String languageVersion, String keyName,
+                boolean keyApproved, boolean keyNew, String keyVariant, String keyNote,
+                String sectionId, String sectionNote, String fileName, String fileNotes,
+                String folderPath) {
+        this.keyId = keyId;
+        this.languageCode = languageCode;
+        LanguageVersion = languageVersion;
+        this.keyName = keyName;
+        this.keyApproved = keyApproved;
+        this.keyNew = keyNew;
+        this.keyVariant = keyVariant;
+        this.keyNote = keyNote;
+        this.sectionId = sectionId;
+        this.sectionNote = sectionNote;
+        this.fileName = fileName;
+        this.fileNotes = fileNotes;
+        this.folderPath = folderPath;
+    }
 
     public keys(TranslationResourceRec original) {
         this.keyName = original.getKeyName();
@@ -27,22 +48,10 @@ public class keys {
         this.sectionNote = original.getSectionNote();
         this.fileName = original.getFileName();
         this.fileNotes = original.getFileNotes();
+        this.folderPath = original.getFolderPath();
+
     }
 
-    public keys(Long keyId, String keyName, boolean keyApproved, boolean keyNew,
-                String keyVariant, String keyNote, String sectionId,
-                String sectionNote, String fileName, String fileNotes){
-        this.keyId = keyId;
-        this.keyName = keyName;
-        this.keyApproved = keyApproved;
-        this.keyNew = keyNew;
-        this.keyVariant = keyVariant;
-        this.keyNote = keyNote;
-        this.sectionId = sectionId;
-        this.sectionNote = sectionNote;
-        this.fileName = fileName;
-        this.fileNotes = fileNotes;
-    }
 
     public Long getKeyId() {return keyId;}
     public void setKeyId(Long keyId) {this.keyId = keyId;}
@@ -73,4 +82,40 @@ public class keys {
 
     public String getFileNotes() {return fileNotes;}
     public void setFileNotes(String fileNotes) {this.fileNotes = fileNotes;}
+
+    public String getLanguageCode() {
+        return languageCode;
+    }
+
+    public void setLanguageCode(String languageCode) {
+        this.languageCode = languageCode;
+    }
+
+    public String getLanguageVersion() {
+        return LanguageVersion;
+    }
+
+    public void setLanguageVersion(String languageVersion) {
+        LanguageVersion = languageVersion;
+    }
+
+    public boolean isKeyApproved() {
+        return keyApproved;
+    }
+
+    public boolean isKeyNew() {
+        return keyNew;
+    }
+
+    public void setKeyNew(boolean keyNew) {
+        this.keyNew = keyNew;
+    }
+
+    public String getFolderPath() {
+        return folderPath;
+    }
+
+    public void setFolderPath(String folderPath) {
+        this.folderPath = folderPath;
+    }
 }

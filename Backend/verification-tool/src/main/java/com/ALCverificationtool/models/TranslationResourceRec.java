@@ -17,9 +17,32 @@ public class TranslationResourceRec {
     private String fileNotes;
     private boolean approved;
     private String username;
+    private String folderPath;
+
 
     public TranslationResourceRec() {
-        keyId = null;
+    }
+
+    public TranslationResourceRec(String languageCode, String languageVersion, Long keyId, String keyName,
+                                  boolean keyApproved, boolean keyNew, String keyVariant, String keyNote,
+                                  String sectionId, String sectionNote, String fileName, String fileNotes,
+                                  boolean approved, String username,
+                                  String folderPath) {
+        this.languageCode = languageCode;
+        this.languageVersion = languageVersion;
+        this.keyId = keyId;
+        this.keyName = keyName;
+        this.keyApproved = keyApproved;
+        this.keyNew = keyNew;
+        this.keyVariant = keyVariant;
+        this.keyNote = keyNote;
+        this.sectionId = sectionId;
+        this.sectionNote = sectionNote;
+        this.fileName = fileName;
+        this.fileNotes = fileNotes;
+        this.approved = approved;
+        this.username = username;
+        this.folderPath = folderPath;
     }
 
     public TranslationResourceRec(TranslationResourceRec original) {
@@ -36,28 +59,12 @@ public class TranslationResourceRec {
         this.username = original.username;
         this.languageCode = original.languageCode;
         this.languageVersion = original.languageVersion;
+        this.folderPath = original.folderPath;
         keyId = null;
     }
 
-    public TranslationResourceRec(String keyName, boolean keyApproved, boolean keyNew,
-                                  String keyVariant, String keyNote, String sectionId,
-                                  String sectionNote, String fileName, String fileNotes,
-                                  boolean approved, String username, String languageCode, String languageVersion){
-        this.keyName = keyName;
-        this.keyApproved = keyApproved;
-        this.keyNew = keyNew;
-        this.keyVariant = keyVariant;
-        this.keyNote = keyNote;
-        this.sectionId = sectionId;
-        this.sectionNote = sectionNote;
-        this.fileName = fileName;
-        this.fileNotes = fileNotes;
-        this.approved = approved;
-        this.username = username;
-        this.languageCode = languageCode;
-        this.languageVersion = languageVersion ;
-        keyId = null;
-    }
+
+
 
     public Long getKeyId() {return keyId;}
     public void setKeyId(Long keyId) {this.keyId = keyId;}
@@ -100,4 +107,24 @@ public class TranslationResourceRec {
 
     public String getLanguageVersion() { return languageVersion;}
     public void setLanguageVersion(String languageVersion) {this.languageVersion = languageVersion ;}
+
+    public boolean isKeyApproved() {
+        return keyApproved;
+    }
+
+    public boolean isKeyNew() {
+        return keyNew;
+    }
+
+    public boolean isApproved() {
+        return approved;
+    }
+
+    public String getFolderPath() {
+        return folderPath;
+    }
+
+    public void setFolderPath(String folderPath) {
+        this.folderPath = folderPath;
+    }
 }

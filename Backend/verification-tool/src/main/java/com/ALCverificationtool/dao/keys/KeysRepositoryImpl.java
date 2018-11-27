@@ -1,7 +1,5 @@
 package com.ALCverificationtool.dao.keys;
 
-import com.ALCverificationtool.dao.logs.LogsRepository;
-import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
@@ -10,9 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
-import java.text.SimpleDateFormat;
+import javax.sql.RowSet;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -25,37 +22,28 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     private static final String CREATE_SQL =
             "CREATE TABLE `TABLE_NAME` ( " +
-            "  `approved` tinyint(4) NOT NULL," +
-            "  `file_name` varchar(255) DEFAULT NULL," +
-            "  `file_notes` varchar(2000) DEFAULT NULL," +
-            "  `key_name` varchar(255) NOT NULL," +
-            "  `key_new` tinyint(4) NOT NULL," +
-            "  `key_note` varchar(2000) DEFAULT NULL," +
-            "  `key_variant` varchar(2000) DEFAULT NULL," +
-            "  `section_id` varchar(255) DEFAULT NULL," +
-            "  `section_note` varchar(2000) DEFAULT NULL," +
-            "  `key_id` bigint(20) NOT NULL AUTO_INCREMENT," +
-            "  PRIMARY KEY (`key_id`)" +
-            ") ENGINE=MyISAM DEFAULT CHARSET=utf8";
+                    "  `approved` tinyint(4) NOT NULL," +
+                    "  `file_name` varchar(255) DEFAULT NULL," +
+                    "  `file_notes` varchar(2000) DEFAULT NULL," +
+                    "  `folder_path` varchar(255) DEFAULT NULL," +
+                    "  `key_name` varchar(255) NOT NULL," +
+                    "  `key_new` tinyint(4) NOT NULL," +
+                    "  `key_note` varchar(2000) DEFAULT NULL," +
+                    "  `key_variant` varchar(2000) DEFAULT NULL," +
+                    "  `section_id` varchar(255) DEFAULT NULL," +
+                    "  `section_note` varchar(2000) DEFAULT NULL," +
+                    "  `key_id` bigint(20) NOT NULL AUTO_INCREMENT," +
+                    "  PRIMARY KEY (`key_id`)" +
+                    ") ENGINE=MyISAM DEFAULT CHARSET=utf8";
 
 
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    private final LogsRepository logsDao;
-
-    @Autowired
-    public KeysRepositoryImpl(
-        LogsRepository logsDao
-    ) {
-        this.logsDao = logsDao;
-    }
-
     @Override
     public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
 
         String newTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
-        newTableName = newTableName.toLowerCase();
         System.out.println(DROP_SQL.replace("TABLE_NAME", newTableName));
         System.out.println(CREATE_SQL.replace("TABLE_NAME", newTableName));
 
@@ -95,7 +83,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     @Override
     public boolean deleteKeyTable(String keyLanguageCode, String keyLanguageVersion) {
         // convert the landCode and VerNum to a table name
-        String oldTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
+        String oldTableName= keyLanguageCode + "_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
 
         if(keyLanguageCode == null && keyLanguageVersion == null) {
             throw new ServiceException("keyLanguageCode & keyLanguageVersion");
@@ -113,7 +101,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public boolean deleteKeyTablesByVersion(String keyLanguageVersion) {
-        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 
@@ -139,7 +127,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public List<String> findKeyTableNamesByVersion(String keyLanguageVersion) {
-        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion).toLowerCase();
+        String tablePattern = "%_" + VerRec.getSafeVersionNumber(keyLanguageVersion);
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 
@@ -148,7 +136,7 @@ public class KeysRepositoryImpl implements KeysRepository {
 
     @Override
     public List<String> findKeyTableNamesByLangCode(String keyLanguageCode) {
-        String tablePattern = keyLanguageCode.toLowerCase() + "_%";
+        String tablePattern = keyLanguageCode + "_%";
 
         String sql = "Show tables like \'" + tablePattern + "\'";
 
@@ -178,17 +166,17 @@ public class KeysRepositoryImpl implements KeysRepository {
         String tableName = toTableName(keyData.getLanguageCode(), keyData.getLanguageVersion());
 
 
-        String INSERT = "INSERT INTO " + tableName + " (approved,file_name,file_notes,\n" +
+        String INSERT = "INSERT INTO " + tableName + " (approved,file_name,file_notes,folder_path,\n" +
                 "key_name,key_new,key_note,key_variant,\n" +
                 "section_id,section_note)\n" +
-                "VALUES (?,?,?,?,?,?,?,?,?);\n";
+                "VALUES (?,?,?,?,?,?,?,?,?,?);\n";
 
 
         Object[] parameters = new Object[] {
                 keyData.getKeyApproved(),
                 keyData.getFileName(),
                 keyData.getFileNotes(),
-                keyData.getUsername(),
+                keyData.getFolderPath(),
                 keyData.getKeyName(),
                 keyData.getKeyNew(),
                 keyData.getKeyNote(),
@@ -221,6 +209,9 @@ public class KeysRepositoryImpl implements KeysRepository {
 ////                }
 ////                if (key.equals("file_notes")) {
 ////                    result.setFileNotes(value.toString());
+////                }
+////                if (key.equals("folder_path")) {
+////                    result.setFolderPath(value.toString());
 ////                }
 ////                if (key.equals("key_name")) {
 ////                    result.setKeyName(value.toString());
@@ -274,7 +265,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     }
     @Override
     public boolean updateKey(String tableName, TranslationResourceRec keyData) {
-        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?," +
+        String UPDATE = "UPDATE " + tableName + " SET approved = ?, file_name = ?, file_notes = ?, folder_path = ?," +
                 "key_name = ?, key_new = ?, key_note = ?, key_variant = ?, " +
                 "section_id = ?, section_note = ?" +
                 " WHERE key_id = ?";
@@ -283,6 +274,7 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyApproved(),
                 keyData.getFileName(),
                 keyData.getFileNotes(),
+                keyData.getFolderPath(),
                 keyData.getKeyName(),
                 keyData.getKeyNew(),
                 keyData.getKeyNote(),
@@ -292,25 +284,7 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyId()
         };
         int i = jdbcTemplate.update(UPDATE, parameters);
-
-        //Log approved key
-        //Get date and time for log
-        Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-        String date = sdf.format(cal.getTime());
-
-        Logs logData = new Logs();
-        logData.setUserName(keyData.getUsername());
-        logData.setFileName(keyData.getFileName());
-        logData.setKeyName(keyData.getKeyName());
-        logData.setLanguage(keyData.getLanguageCode());
-        logData.setVariant(keyData.getKeyVariant());
-        logData.setVersion(keyData.getLanguageVersion());
-        logData.setAction("Key Approved");
-        logData.setDate(date);
-        logsDao.save(logData);
-
-    if (i == 1)
+        if (i == 1)
         {
             return true;
         }

@@ -103,7 +103,7 @@ export class FileFunctionsComponent implements OnInit {
   createVersion() {
 
     const newVersion = new Version(null, this.versionNumber, null);
-    let username = this.cookies.get('username');
+    const username = this.cookies.get('username');
     newVersion.username = username;
 
     console.log(newVersion);
