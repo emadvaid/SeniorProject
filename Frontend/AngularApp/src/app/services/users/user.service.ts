@@ -162,7 +162,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`http://localhost:8080/user/${userId}`, {
+        return this.http.put(`/api/user/${userId}`, {
             userDetail
         }, options)
         .pipe(
@@ -191,7 +191,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`http://localhost:8080/user/${userId}/activate`, options)
+        return this.http.put(`/api/user/${userId}/activate`, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);
@@ -213,7 +213,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`http://localhost:8080/user/deactivate/${userId}`, {userDetail: {}}, options)
+        return this.http.put(`/api/deactivate/${userId}`, {userDetail: {}}, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);

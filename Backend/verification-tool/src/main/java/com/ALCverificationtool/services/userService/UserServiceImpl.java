@@ -220,7 +220,6 @@ public class UserServiceImpl implements UserService {
 
         // Set the password field to null
         actualUserRec.setPassword(null);
-
         // then copy the relevant values to the userRec Entity
         // actualUserRec.setPassword(null);
 
