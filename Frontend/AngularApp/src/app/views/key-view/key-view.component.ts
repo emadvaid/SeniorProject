@@ -80,7 +80,7 @@ export class KeyViewComponent implements OnInit {
     await this.getLanguages();
     // await this.viewStatistics();
 
-    this.getLanguages();
+    //this.getLanguages();
     //await this.viewStatistics();
 
 
@@ -96,14 +96,8 @@ export class KeyViewComponent implements OnInit {
   async getLanguages() {
     //const language = await this.userService.getByUsername(username).toPromise();
     const userLanguages = await this.userService.getByUsername(this.cookies.get('username')).toPromise();
-    const languages = userLanguages.languages;
     //const languages = await this.languageService.getAll().toPromise();
-    this.languages.lang = languages;
-    console.log(languages);
-
-    // this.currLanguage = this.languages.lang[0].langCode;
-
-    this.currLanguage = this.languages.lang[0].langCode;
+    this.languages.lang = userLanguages.languages;
 
     console.log(this.currLanguage);
 
