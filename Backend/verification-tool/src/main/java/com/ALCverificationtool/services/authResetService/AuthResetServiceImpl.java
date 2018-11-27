@@ -83,7 +83,7 @@ public class AuthResetServiceImpl implements AuthResetService  {
 
         UserRec result = this.userDao.save(userRec);
 
-        if(result==null || !result.getPassword().equals(newPassword) || !result.getId().equals(userRec.getId())) {
+        if(result==null || !passwordEncoder.matches(newPassword, userRec.getPassword()) || !result.getId().equals(userRec.getId())) {
             throw new ServiceException("Bad error.");
         }
     }
@@ -186,6 +186,6 @@ public class AuthResetServiceImpl implements AuthResetService  {
             throw new AuthResetException("Could not send reset email", e);
         }
 
-        return null;
+        return newResetEntity;
     }
 }

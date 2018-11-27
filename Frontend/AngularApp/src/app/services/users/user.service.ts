@@ -213,7 +213,7 @@ export class UserService {
             'access-token': this.userLoginService.accessToken
         });
         const options = new RequestOptions({ headers: headers});
-        return this.http.put(`/api/deactivate/${userId}`, {userDetail: {}}, options)
+        return this.http.put(`/api/user/deactivate/${userId}`, {userDetail: {}}, options)
         .pipe(
             map((resp: any) => {
                 console.log(resp);
