@@ -10,7 +10,7 @@ import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  title = 'Translation Verification ';
+  title = 'Translation Verification Tool ';
   loggedIn = false;
   isAdmin = false;
 
@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log(this.loggedIn);
     this.loggedIn = this.userLoginService.isLoggedIn;
     this.isAdmin = this.userLoginService.isUserType(UserTypes.admin);
     this.router.events.subscribe((val) => {
