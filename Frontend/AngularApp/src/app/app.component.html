@@ -1,59 +1,73 @@
-    <!--The content below is only a placeholder and can be replaced.-->
-
-
-    <div *ngIf="!loggedIn">
-      <div style=" padding-top: 10px">
-        <img src="../assets/Auto_Logic_Minimum_Web.png" style="position: relative; left: 35%">
+   <!--The content below is only a placeholder and can be replaced.-->
+   <div id="holder">
+    <div id="body">
+  
+      <div *ngIf="!loggedIn">
+        <div style=" position: relative; padding-top: 20px">
+          <img src="../assets/Auto_Logic_Minimum_Web.png" style="position: relative; left: 35%">
+        </div>
       </div>
-    </div>
-
-
-    <div id="topbar" >
-    <header class="container">
-      <div hidden>
-      <span>{{diagnostics}}</span>
-      </div>
-
-      <div *ngIf="loggedIn; else notLoggedIn">
-        <h1 style="text-align:center">
-          {{title}}
-        </h1>
-        <div *ngIf="isAdmin; else notAdmin">
-          <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <h3>Admin</h3>
-            <ul class="navbar-nav nav">
-
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/manageUsers" routerLinkActive="active">Manage Users</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/manageLanguages" routerLinkActive="active">Manage languages</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/importFile" routerLinkActive="active">Import XML Files</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/exportFile" routerLinkActive="active">Export into XML File</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/statistics" routerLinkActive="active">Statistics</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/keyView" routerLinkActive="active">Translation Tool </a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/admin/logs" routerLinkActive="active">Logs</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/logout" routerLinkActive="active">Logout</a></li>
-            </ul>
-          </nav>
-        </div> 
-        <ng-template #notAdmin>
-          Dealer
+  
+  
+      <div id="topbar" style="padding-top: 10px">
+  
+  
+        <div *ngIf="loggedIn; else notLoggedIn">
+  
+          <div *ngIf="isAdmin; else notAdmin">
+            <div>
+              <img src="../assets/Auto_Logic_Minimum_bar.png" style="position: relative; left: 28%">
+              <h5 style="display: inline-block; position: relative; left: 56%">Access: Administrator</h5>
+            </div>
+            <div style="position: relative; left: 6%; padding-top: 8px">
+            </div>
+            <div style="background-color: red; height: 40px">
+              <div style="text-align: center; padding-top: 10px">
+              <a class="nav-link" routerLink="/admin/manageUsers" routerLinkActive="active" style="margin-right: 1%; color: white">Manage Users</a>
+                <a class="nav-link" routerLink="/admin/manageLanguages" routerLinkActive="active" style="margin-right: 1%; color: white">Manage languages</a>
+              <a class="nav-link" routerLink="/admin/importFile" routerLinkActive="active" style="margin-right: 1%; color: white">Import XML Files</a>
+              <a class="nav-link" routerLink="/admin/exportFile" routerLinkActive="active" style="margin-right: 1%; color: white">Export into XML File</a>
+              <a class="nav-link" routerLink="/admin/statistics" routerLinkActive="active" style="margin-right: 1%; color: white">Statistics</a>
+              <a class="nav-link" routerLink="/admin/keyView" routerLinkActive="active" style="margin-right: 1%; color: white">Translation Tool </a>
+              <a class="nav-link" routerLink="/admin/logs" routerLinkActive="active" style="margin-right: 1%; color: white">Logs</a>
+              <a class="nav-link" routerLink="/logout" routerLinkActive="active" style="margin-right: 1%; color: white">Logout</a>
+              </div>
+            </div>
+            <hr>
+          </div> 
+          <ng-template #notAdmin>
+            <div>
+              <img src="../assets/Auto_Logic_Minimum_bar.png" style="position: relative; left: 28%">
+              <h5 style="display: inline-block; position: relative; left: 56%">Access: Dealer</h5>
+            </div>
+            <div style="background-color: red; height: 40px; padding-top: 10px">
+              <div style="position: relative; left: 95%">
+              <a class="nav-link" routerLink="/logout" routerLinkActive="active" style="margin-right: 1%; color: white">Logout</a>
+              </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <ul class="navbar-nav nav">
+                <li class="nav-item"></li>
+              </ul>
+            </nav>
+          </ng-template>
+        </div>
+        <div *ngIf="temp == true">
+        <ng-template #notLoggedIn >
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul class="navbar-nav nav">
-              <li class="nav-item"><a class="nav-link" routerLink="/dealer/keyView" routerLinkActive="active">Translaton Tool</a></li>
-              <li class="nav-item"><a class="nav-link" routerLink="/logout" routerLinkActive="active">Logout</a></li>
+  
+            <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav nav  mr-auto" style="position: relative; left: 35%;">
+              <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
             </ul>
           </nav>
         </ng-template>
+        </div>
       </div>
-      <ng-template #notLoggedIn >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-          <a class="navbar-brand" href="#"></a>
-          <ul class="navbar-nav nav  mr-auto" style="position: relative; left: 35%;">
-          </ul>
-        </nav>
-      </ng-template>
-    </header>
+  
+  
+      <router-outlet></router-outlet>
     </div>
-
-
-    <router-outlet></router-outlet>
+  </div>

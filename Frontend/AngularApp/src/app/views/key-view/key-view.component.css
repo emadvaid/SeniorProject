@@ -1,3 +1,7 @@
+hr{
+  border-color: red;
+}
+
 #parent {
   width: 100%;
   border: 1px;
@@ -72,5 +76,5 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;
+  width: 18%;
 }

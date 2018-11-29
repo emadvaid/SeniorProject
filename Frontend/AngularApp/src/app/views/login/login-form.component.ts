@@ -44,7 +44,7 @@ export class LoginFormComponent implements OnInit {
     // set the sumbitted flag to true
     this.submitted = true;
 
-    // Set username in cookies
+    //Set username in cookies
     this.cookies.put('username', this.model.username);
 
     this.userLoginService.authenticateWithUsernamePassword(this.model.username, this.model.password)
@@ -66,10 +66,10 @@ export class LoginFormComponent implements OnInit {
             // now navigate to the the correct route
             switch (this.userLoginService.getUserType) {
               case UserTypes.admin:
-                this.router.navigate(['admin']);
+                this.router.navigate(['admin/statistics']);
                 break;
               case UserTypes.dealer:
-                this.router.navigate(['dealer']);
+                this.router.navigate(['dealer/keyView']);
                 break;
               default:
                 this.router.navigate(['error-page']);
@@ -81,7 +81,7 @@ export class LoginFormComponent implements OnInit {
             // unsuccessfull login path
             localStorage.removeItem(REMEMBERED_USERNAME);
             console.log('Login failed');
-            // display a flash message
+              // display a flash message
             this.flashMessage.show('Login failed', {cssClass: 'alert alert-danger', timeout: 5000});
           }
         },

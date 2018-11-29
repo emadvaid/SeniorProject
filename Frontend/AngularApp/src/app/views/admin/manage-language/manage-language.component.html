@@ -1,44 +1,43 @@
-
-
-<nav>
+<div>
+    <div style="text-align: center">
+      <h2>Manage Languages</h2>
+    </div>
   
-  </nav>
-<div style="position: relative; left: 18%">
-  <h2>Manage Languages</h2>
-</div>
-  <div class="container">
-      <div class="row">
-          <button (click)="createLanguages()">Create Language</button>
-      </div>
-      <div class="row">
-          <div class="col-sm-6">
-       
-          </div>
-          <div class="col-sm-6">
-              <div class="dataTables_filter">
-                 
-              </div>
-          </div>
-      </div>
-      <div class="row"></div>
-      <div class="row">
-          <div class="col-sm-12">
-              <table width="100%" class="table table-striped  table-hover dataTable no-footer dtr-inline collapsed">
-                  <thead>
-                      <tr role="row">
-                          <th>Language Name</th>
-                          <th>Language Code</th>                       
-                          <th></th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr *ngFor="let language of model.languages">
-                      <td>{{language.langName}}</td>
-                      <td>{{language.langCode}}</td>
-                      <td><a (click)="manageVersions($event)" attr.data-lang-code="{{language.langCode}}">Manage versions</a></td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-      </div>
+    <div class="container">
+        <div class="row">
+            <button (click)="createLanguages()">Create Language</button>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+         
+            </div>
+            <div class="col-sm-6">
+                <div class="dataTables_filter">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table width="100%" class="table table-striped  table-hover dataTable no-footer dtr-inline collapsed">
+                    <thead>
+                        <tr role="row">
+                            <th>Language Name</th>
+                            <th>Language Code</th>                       
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let language of model.languages">
+                        <td>{{language.langName}}</td>
+                        <td>{{language.langCode}}</td>
+                        <td><a (click)="manageVersions($event)" attr.data-lang-code="{{language.langCode}}">Manage versions</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
   </div>

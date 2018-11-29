@@ -21,16 +21,53 @@ export class StatisticsComponent implements OnInit {
   firstVersion: string;
   secondVersion: string;
 
+  compare: Boolean = true;
+
   currVersion = '';
   currLanguage = '';
   public versionNumber = '';
   public language = '';
   model: any = {};
   languages: any = {};
+  unapprovedkeys1 = 0;
+  unapprovedkeys2 = 0;
 
-  public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-  public pieChartData: number[] = [300, 500, 100];
-  public pieChartType: string = 'pie';
+
+
+  public barChartData: number[] = [0, 0, 0];
+  public barChartData2: number[] = [0, 0, 0];
+  public barChartLabels: Array<any> = [['Approved', 'Keys'], ['Unapproved', 'Keys'], ['New', 'Keys']];
+  public barChartType:string = 'bar';
+
+  public colors:Array<any> = [{
+    backgroundColor: ['rgba(0,128,0,0.7)', 'rgba(255,0,0,0.7)', 'rgba(255,0,0,0.7)']}
+  ];
+
+  public colors2:Array<any> = [{
+    backgroundColor: ['rgba(255,0,255,0.7)', 'rgba(0,255,255,0.7)', 'rgba(0,255,255,0.7)']}
+  ];
+
+  public barChartOptions: any = {
+    scaleShowVerticalLines: false,
+    responsive: true,
+    legend: {
+      display: false
+    },
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem) {
+          return tooltipItem.yLabel;
+        }
+      }
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  };
 
   constructor(
     private statisticsService: StatisticsService,
@@ -65,53 +102,39 @@ export class StatisticsComponent implements OnInit {
     console.log(this.language);
   }
 
-  viewStatistics(language: string, versionNumber: string) {
+  async viewStatistics(language: string, versionNumber: string) {
     this.firstVersion = versionNumber;
     // Statistics for first version
-    this.statisticsService.getNewKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.firstNewKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.firstApprovedKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.firstTotalKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
-      (keys) => {
-        this.firstTotalFiles = JSON.stringify(keys);
-      }
-    );
+   let keys1 = await this.statisticsService.getNewKeys(language, versionNumber).toPromise();
+   this.firstNewKeys = JSON.stringify(keys1);
+    let keys2 = await this.statisticsService.getApprovedKeys(language, versionNumber).toPromise();
+        this.firstApprovedKeys = JSON.stringify(keys2);
+    let keys3 = await this.statisticsService.getTotalKeys(language, versionNumber).toPromise();
+    this.firstTotalKeys = JSON.stringify(keys3);
+    let keys4 = await this.statisticsService.getTotalFiles(language, versionNumber).toPromise();
+        this.firstTotalFiles = JSON.stringify(keys4);
+    this.unapprovedkeys1 = +this.firstTotalKeys - +this.firstApprovedKeys;
+    this.barChartData = [+this.firstApprovedKeys, this.unapprovedkeys1, +this.firstNewKeys];
   }
 
-  compareVersions(language: string, versionNumber: string) {
+  async compareVersions(language: string, versionNumber: string) {
+    this.viewStatistics(this.language, this.currVersion);
     this.secondVersion = versionNumber;
     // Statistics for second version
-    this.statisticsService.getNewKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.secondNewKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getApprovedKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.secondApprovedKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getTotalKeys(language, versionNumber).subscribe(
-      (keys) => {
-        this.secondTotalKeys = JSON.stringify(keys);
-      }
-    );
-    this.statisticsService.getTotalFiles(language, versionNumber).subscribe(
-      (keys) => {
-        this.secondTotalFiles = JSON.stringify(keys);
-      }
-    );
+    let keys1 = await this.statisticsService.getNewKeys(language, versionNumber).toPromise();
+        this.secondNewKeys = JSON.stringify(keys1);
+
+    let keys2 = await this.statisticsService.getApprovedKeys(language, versionNumber).toPromise();
+        this.secondApprovedKeys = JSON.stringify(keys2);
+    let keys3 = await this.statisticsService.getTotalKeys(language, versionNumber).toPromise();
+        this.secondTotalKeys = JSON.stringify(keys3);
+    let keys4 = await this.statisticsService.getTotalFiles(language, versionNumber).toPromise();
+        this.secondTotalFiles = JSON.stringify(keys4);
+    this.unapprovedkeys2 = +this.secondTotalKeys - +this.secondApprovedKeys;
+    this.barChartData2 = [+this.secondApprovedKeys, this.unapprovedkeys2, +this.secondNewKeys];
+  }
+
+  setCompare(){
+    this.compare = false;
   }
 }

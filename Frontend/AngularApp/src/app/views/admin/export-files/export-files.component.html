@@ -1,5 +1,9 @@
-Specify Version Number and Language you would like to export:
-<div class="form-group">
+<div style="position: relative; left: 33%">
+
+  <div style="float: left">
+Specify Version Number and Language
+    <br>you would like to export:
+<div class="form-group" style="padding-top: 14px">
   <label>Version Number:</label><br>
   <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
     #lang="ngModel" name="verselect" (ngModelChange)="changeVersion()">
@@ -14,17 +18,25 @@ Specify Version Number and Language you would like to export:
 </div>
 
 <div class="form-group">
+  <hr>
   <button class="btn btn-primary" (click)="specificExport()">Export Files</button>
 </div>
+  </div>
 
+
+  <div style="float: left; position: relative; left: 6%">
 Export All Languages by Version Number:
-<div class="form-group">
+<div class="form-group" style="padding-top: 34px">
   <label>Version Number:</label><br>
   <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
     #lang="ngModel" name="verselect" (ngModelChange)="changeVersion()">
     <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
   </select><br>
 </div>
-<div class="form-group">
+
+<div class="form-group" style="padding-top: 44px">
+  <hr>
   <button class="btn btn-primary" (click)="exportAllLanguages()">Export All Languages</button>
+</div>
+</div>
 </div>

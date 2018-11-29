@@ -1,0 +1,30 @@
+td, th {
+    border: 1px solid #6e7d93;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #e0e3e6;
+  }
+  
+  .column{
+    width: 100px;
+  }
+  
+  .seperator2 {
+    padding-top: 10%;
+    height: 55%;
+    width: 1px;
+    background: red;
+    position: absolute;
+    left: 36%;
+  }
+  
+  .seperator3 {
+    padding-top: 10%;
+    height: 55%;
+    width: 1px;
+    background: red;
+    position: absolute;
+    left: 58%;
+  }

@@ -1,26 +1,35 @@
+
 <div id="changeVersion" class="modal">
   <div class="modal-content">
-      <div style="position: relative;">
-        <p>Version</p>
-        <select class="form-control" style="width: 80px;   display: inline-block"
-                [(ngModel)]="currVersion"  #lang="ngModel" name="verselect">
-          <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
-        </select>
-        <select class="form-control" style="width: 80px;  display: inline-block"
-                [(ngModel)]="currLanguage"  #lang="ngModel" name="langselect">
-          <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
-        </select>
+    <div style="position: relative;">
 
+      <div>
+        <p>Version</p>
+      <select class="form-control" style="width: 80px;   display: inline-block"
+              [(ngModel)]="currVersion"  #lang="ngModel" name="verselect">
+        <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+      </select>
       </div>
-      <button class="btn btn-primary" (click)="submitTable()">Submit</button>
-      <button class="btn btn-primary" (click)="closeModal()">Cancel</button>
-</div>
+      <div style="padding-top: 10px">
+        <p>Language</p>
+      <select class="form-control" style="width: 80px;  display: inline-block"
+              [(ngModel)]="currLanguage"  #lang="ngModel" name="langselect">
+        <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
+      </select>
+      </div>
+
+    </div>
+    <div style="padding-top: 10px">
+    <button class="btn btn-primary" (click)="submitTable()">Submit</button>
+    <button class="btn btn-primary" (click)="closeModal()">Cancel</button>
+    </div>
+  </div>
 </div>
 
 
 <div class="alert alert-success" id="success-alert" hidden=true>
-    <strong>Key updated!</strong>
-  </div>
+  <strong>Key updated!</strong>
+</div>
 <form #keyViewForm="ngForm">
   <div>
     <div style="position: relative; left: 12%; display: inline-block" >
@@ -49,62 +58,62 @@
     <div id="leftChild">
       <label style="position: relative; left: 10%">List of Keys</label>
       <select class="form-control" style="width: 140px; position: relative; left: 12%; display: inline-block"
-        [(ngModel)]="approvalSelection" (ngModelChange)="searchList(criteria)" name="verselect222">
+              [(ngModel)]="approvalSelection" (ngModelChange)="searchList(criteria)" name="verselect222">
         <option selected="selected">All</option>
         <option>Approved</option>
         <option>Unapproved</option>
       </select>
       <div style="position: relative; padding-top: 5px">
-      <div id="keyList" class="panel panel-default" style="  word-wrap: break-word">
+        <div id="keyList" class="panel panel-default" style="  word-wrap: break-word">
 
-        <table id="ledgerTable" style=" table-layout:fixed">
+          <table id="ledgerTable" style=" table-layout:fixed">
 
-          <tr *ngFor="let key of keys2">
-          <table>
-            <tr>
-            <td *ngIf="key.approved == true">
-              <button class="btn btn-link btn-xs" style="color: green; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
-            </td>
-            <td *ngIf="key.approved == false">
-              <button class="btn btn-link btn-xs" style="color: red; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
-            </td>
+            <tr *ngFor="let key of keys2">
+              <table>
+                <tr>
+                  <td *ngIf="key.approved == true">
+                    <button class="btn btn-link btn-xs" style="color: green; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
+                  </td>
+                  <td *ngIf="key.approved == false">
+                    <button class="btn btn-link btn-xs" style="color: red; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
+                  </td>
+                </tr>
+                <tr *ngIf="searchType =='Translated Variant'">
+                  <td >
+                    <p style="position: relative; left: 10px">{{"Key Variant: "+key.keyVariant}}</p>
+                  </td>
+                </tr>
+                <tr *ngIf="searchType =='Description/note'">
+                  <td >
+                    <p style="position: relative; left: 10px">{{"Key note: "+key.keyNote}}</p>
+                  </td>
+                </tr>
+              </table>
             </tr>
-            <tr *ngIf="searchType =='Translated Variant'">
-              <td >
-                <p style="position: relative; left: 10px">{{"Key Variant: "+key.keyVariant}}</p>
-              </td>
-            </tr>
-            <tr *ngIf="searchType =='Description/note'">
-              <td >
-                <p style="position: relative; left: 10px">{{"Key note: "+key.keyNote}}</p>
-              </td>
-            </tr>
+
+
           </table>
-          </tr>
-
-
-        </table>
-      </div>
+        </div>
       </div>
       <div style="position: relative; left: 44px; padding-top: 7px">
-      <table class="comparison">
-        <tr>
-          <td class="col-md-2">New Keys:</td>
-          <td class="col-md-2">{{ newKeys }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">Approved Keys:</td>
-          <td class="col-md-2">{{ approvedKeys }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">Total Keys:</td>
-          <td class="col-md-2">{{ totalKeys }}</td>
-        </tr>
-        <tr>
-          <td class="col-md-2">Duplicate Keys:</td>
-          <td class="col-md-2">{{ dupString }}</td>
-        </tr>
-      </table>
+        <table class="comparison">
+          <tr>
+            <td class="col-md-2">New Keys:</td>
+            <td class="col-md-2">{{ newKeys }}</td>
+          </tr>
+          <tr>
+            <td class="col-md-2">Approved Keys:</td>
+            <td class="col-md-2">{{ approvedKeys }}</td>
+          </tr>
+          <tr>
+            <td class="col-md-2">Total Keys:</td>
+            <td class="col-md-2">{{ totalKeys }}</td>
+          </tr>
+          <tr>
+            <td class="col-md-2">Duplicate Keys:</td>
+            <td class="col-md-2">{{ dupString }}</td>
+          </tr>
+        </table>
       </div>
     </div>
 
@@ -113,7 +122,7 @@
         <label>{{'Key Text' + currLanguageFull}}</label>
         <div id="keyInput">
           <input type="text" class="form-control" id="input" style="width: 90vh; height: 100%;padding-bottom: 135px "
-            placeholder="Translation Text" [(ngModel)]="currKey.keyVariant" [value]="currKey.keyVariant" name="search">
+                 placeholder="Translation Text" [(ngModel)]="currKey.keyVariant" [value]="currKey.keyVariant" name="search">
 
         </div>
 
@@ -129,7 +138,7 @@
         <div id="descriptionInput">
           <textarea class="form-control" id="input3" rows="4" style="width: 90vh; height: 100%; left: 6px;
          padding-bottom: 135px;"
-            placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote" name="search2"></textarea>
+                    placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote" name="search2"></textarea>
         </div>
         <div style="position: relative; padding-top: 1%; float: right">
           <button class="btn btn-primary" (click)="updateKeys()" [disabled]="available">Approve</button>

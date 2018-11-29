@@ -1,62 +1,129 @@
-<div style="position: relative; left: 20%">
-<div class="row">
-  <div class="form-group col-xs-2">
+
+<div style="position: relative;left: 20%; float: left; width: 300px" >
+<div >
+<div>
+  <div class="form-group">
     <label>Language:</label><br>
-    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currLanguage"
+    <select class="form-control" style="width: 200px; position: relative; display: inline-block" [(ngModel)]="currLanguage"
       #lang="ngModel" name="langselect" (ngModelChange)="changeLanguage()">
       <option *ngFor="let lang of languages.lang">{{lang.langCode}}</option>
     </select>
   </div>
 </div>
 
-<div class="row">
-  <div class="form-group col-xs-2">
-    <label>Version Number:</label><br>
-    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="currVersion"
+
+<div >
+  <div class="form-group">
+
+    <div>
+    <label *ngIf="compare == true">Version Number:</label><br *ngIf="compare == true">
+      <label *ngIf="compare == false">First Version:</label><br *ngIf="compare == false">
+    <select class="form-control" style="width: 200px; position: relative; display: inline-block" [(ngModel)]="currVersion"
       #lang="ngModel" name="verselect">
       <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
     </select>
 
-    <select class="form-control" style="width: 200px; position: relative; left: 12%; display: inline-block" [(ngModel)]="versionNumber2"
-      #lang="ngModel" name="verselect">
-      <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
-    </select>
+      <div *ngIf="compare == false">
+        <label>Second Version:</label><br>
+      <select class="form-control" style="width: 200px; position: relative; display: inline-block" [(ngModel)]="versionNumber2"
+              #lang="ngModel" name="verselect">
+        <option *ngFor="let ver of model.versions">{{ver.verNum}}</option>
+      </select>
+      </div>
+    </div>
+    <div style="padding-top: 10px">
+      <div class="form-group">
+        <button class="btn btn-primary" (click)="viewStatistics(language, currVersion)" *ngIf="compare == true">View Statistics</button>
+        <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)" *ngIf="compare == false">Compare Statistics</button>
+        <button class="btn btn-info" (click)="compare = false" *ngIf="compare == true">Compare Versions</button>
+        <button class="btn btn-danger" (click)="compare = true" *ngIf="compare == false">Back</button>
+      </div>
+    </div>
+    <div>
+
+    </div>
   </div>
   <div class="form-group col-xs-2">
-    <!-- <input type="text" class='form-control' id="versionNumber2" name="versionNumber2" placeholder="Enter Version Number for Comparison"
-      [(ngModel)]="versionNumber2"> -->
+    
   </div>
 </div>
 <div class="form-group">
-  <button class="btn btn-primary" (click)="viewStatistics(language, currVersion)">View Statistics</button>
-  <button class="btn btn-primary" (click)="compareVersions(language, versionNumber2)">Compare Versions</button>
+
+
 </div>
 
-<table class="comparison">
-  <tr>
-    <td class="col-md-2">Version Number:</td>
-    <td class="col-md-2">{{ firstVersion }}</td>
-    <td class="col-md-2">{{ secondVersion }}</td>
-  </tr>
-  <tr>
-    <td class="col-md-2">New Keys:</td>
-    <td class="col-md-2">{{ firstNewKeys }}</td>
-    <td class="col-md-2">{{ secondNewKeys }}</td>
-  </tr>
-  <tr>
-    <td class="col-md-2">Approved Keys:</td>
-    <td class="col-md-2">{{ firstApprovedKeys }}</td>
-    <td class="col-md-2">{{ secondApprovedKeys }}</td>
-  </tr>
-  <tr>
-    <td class="col-md-2">Total Keys:</td>
-    <td class="col-md-2">{{ firstTotalKeys }}</td>
-    <td class="col-md-2">{{ secondTotalKeys }}</td>
-  </tr>
-  <tr>
-    <td class="col-md-2">Total Files:</td>
-    <td class="col-md-2">{{ firstTotalFiles }}</td>
-    <td class="col-md-2">{{ secondTotalFiles }}</td>
-  </tr>
-</table>
+</div>
+</div>
+
+<div class="seperator2"></div>
+
+<div style="position: relative;left: 25%;float: left">
+  <table>
+    <tr>
+      <td>Version Number</td>
+      <td class="column">{{ firstVersion }}</td>
+    </tr>
+    <tr>
+      <td>New Keys</td>
+      <td class="column">{{ firstNewKeys }}</td>
+    </tr>
+    <tr>
+      <td>Approved Keys</td>
+      <td class="column">{{ firstApprovedKeys }}</td>
+    </tr>
+    <tr>
+      <td>Total Keys</td>
+      <td class="column">{{ firstTotalKeys }}</td>
+    </tr>
+    <tr>
+      <td>Total Files</td>
+      <td class="column">{{ firstTotalFiles }}</td>
+    </tr>
+  </table>
+
+  <div style="position: relative; margin: 0 auto;width: 260px; height: 360px;  padding-top: 20px">
+    <canvas baseChart width="2" height="2"
+            [data]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [chartType]="barChartType"
+            [colors]="colors" ></canvas>
+
+  </div>
+</div>
+
+<div class="seperator3"></div>
+
+<div style="position: relative;left: 33%; float: left" *ngIf="compare == false">
+  <table>
+    <tr>
+      <td>Version Number</td>
+      <td class="column">{{ secondVersion }}</td>
+    </tr>
+    <tr>
+      <td>New Keys</td>
+      <td class="column">{{ secondNewKeys }}</td>
+    </tr>
+    <tr>
+      <td>Approved Keys</td>
+      <td class="column">{{ secondApprovedKeys }}</td>
+    </tr>
+    <tr>
+      <td>Total Keys</td>
+      <td class="column">{{ secondTotalKeys }}</td>
+    </tr>
+    <tr>
+      <td>Total Files</td>
+      <td class="column">{{ secondTotalFiles }}</td>
+    </tr>
+  </table>
+  <div style="position: relative; margin: 0 auto;width: 260px; height: 360px; padding-top: 20px">
+    <canvas baseChart width="2" height="2"
+            [data]="barChartData2"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [chartType]="barChartType"
+            [colors]="colors2" ></canvas>
+
+  </div>
 </div>
