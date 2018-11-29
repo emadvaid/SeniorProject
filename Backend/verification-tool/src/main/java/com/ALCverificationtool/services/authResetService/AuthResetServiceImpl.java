@@ -44,6 +44,11 @@ public class AuthResetServiceImpl implements AuthResetService  {
     }
 
     @Override
+    public String encodePassword(String rawPassword) {
+        return passwordEncoder.encode(rawPassword);
+    }
+
+    @Override
     public void resetPasswordWithResetToken(String resetTokenId, String newPassword) {
         // from the resetToken, get the reset entity
 

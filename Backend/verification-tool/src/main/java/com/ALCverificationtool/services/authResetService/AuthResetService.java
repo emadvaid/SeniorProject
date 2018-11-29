@@ -11,4 +11,5 @@ public interface AuthResetService {
 
     ResetToken createPasswordResetToken(UserRec userRec, boolean newUser);
 
+    String encodePassword(String rawPassword);
 }

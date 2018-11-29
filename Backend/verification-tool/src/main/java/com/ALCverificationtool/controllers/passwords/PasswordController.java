@@ -22,6 +22,16 @@ public class PasswordController {
         this.userService = userService;
     }
 
+    @GetMapping(value = "/private/encode/{rawPassword}")
+    public ResponseEntity<String> resetPassword(@PathVariable String rawPassword) {
+
+        String encodedPass = this.authResetService.encodePassword(rawPassword);
+
+        HttpHeaders headers = new HttpHeaders();
+
+        return new ResponseEntity<>(encodedPass, headers, HttpStatus.OK);
+    }
+
     @CrossOrigin
     @PutMapping(value = "/password")
     public ResponseEntity<String> resetPassword(@RequestBody ResetPasswordRequest request) {
