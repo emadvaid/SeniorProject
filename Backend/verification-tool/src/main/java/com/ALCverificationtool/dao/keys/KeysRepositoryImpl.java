@@ -1,5 +1,7 @@
 package com.ALCverificationtool.dao.keys;
 
+import com.ALCverificationtool.dao.logs.LogsRepository;
+import com.ALCverificationtool.models.Logs;
 import com.ALCverificationtool.models.TranslationResourceRec;
 import com.ALCverificationtool.models.VerRec;
 import com.ALCverificationtool.services.ServiceException;
@@ -9,11 +11,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
 import javax.sql.RowSet;
-<<<<<<< .merge_file_a04368
+
 import java.text.SimpleDateFormat;
-=======
->>>>>>> .merge_file_a02452
+
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -44,7 +46,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-<<<<<<< .merge_file_a04368
+
     private final LogsRepository logsDao;
 
     @Autowired
@@ -55,8 +57,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     }
 
 
-=======
->>>>>>> .merge_file_a02452
+
     @Override
     public boolean createKeyTable(String keyLanguageCode, String keyLanguageVersion, boolean dropExisting) {
 
@@ -301,7 +302,6 @@ public class KeysRepositoryImpl implements KeysRepository {
                 keyData.getKeyId()
         };
         int i = jdbcTemplate.update(UPDATE, parameters);
-<<<<<<< .merge_file_a04368
 
         //Log approved key
         //Get date and time for log
@@ -320,8 +320,7 @@ public class KeysRepositoryImpl implements KeysRepository {
         logData.setDate(date);
         logsDao.save(logData);
 
-=======
->>>>>>> .merge_file_a02452
+
         if (i == 1)
         {
             return true;
