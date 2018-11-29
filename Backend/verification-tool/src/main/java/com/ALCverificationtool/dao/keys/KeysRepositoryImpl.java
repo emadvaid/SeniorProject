@@ -11,7 +11,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
 import javax.sql.RowSet;
+
 import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -44,6 +46,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+
     private final LogsRepository logsDao;
 
     @Autowired
@@ -52,6 +55,7 @@ public class KeysRepositoryImpl implements KeysRepository {
     ) {
         this.logsDao = logsDao;
     }
+
 
 
     @Override
@@ -315,6 +319,7 @@ public class KeysRepositoryImpl implements KeysRepository {
         logData.setAction("Key Approved");
         logData.setDate(date);
         logsDao.save(logData);
+
 
         if (i == 1)
         {

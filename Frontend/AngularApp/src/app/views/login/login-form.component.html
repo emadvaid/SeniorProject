@@ -1,7 +1,8 @@
 <div class="col-md-6 col-md-offset-3" [hidden]="!submitted">
   Please wait ...
 </div>
-<div class="col-md-6 col-md-offset-3" [hidden]="submitted">
+<div style="position: relative; left: 2%;margin: 0 auto; width: 50%">
+<div class="col-md-6 col-md-offset-3" [hidden]="submitted" style=" width: 34%">
   <h2>Login</h2>
   <flash-messages></flash-messages>
   <form #loginForm="ngForm">
@@ -42,4 +43,5 @@
       <a href="" class="btn btn-link">Cancel</a>
     </div>
   </form>
+</div>
 </div>
