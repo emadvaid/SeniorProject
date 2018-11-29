@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PasswordService } from '../../../services/passwords/password.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { FlashMessagesService } from 'angular2-flash-messages';
 
 @Component({
     selector: 'app-reset-pass',
@@ -13,8 +14,11 @@ export class PasswordResetComponent implements OnInit {
     tokenId: string;
     newUser = false;
 
-    constructor(private passService: PasswordService, private router: Router,
-        private activatedRoute: ActivatedRoute) {}
+    constructor(private passService: PasswordService,
+        private router: Router,
+        private activatedRoute: ActivatedRoute,
+        private flashMessage: FlashMessagesService
+        ) {}
 
     ngOnInit() {
         this.activatedRoute.queryParams.subscribe(
@@ -36,6 +40,7 @@ export class PasswordResetComponent implements OnInit {
         //   and meet the minimum password requirements
         if (!this.model.newPassword || this.model.newPassword.length < 8) {
             console.log('bad password format');
+            this.flashMessage.show('Login failed', {cssClass: 'alert alert-danger', timeout: 5000});
             return;
         }
 

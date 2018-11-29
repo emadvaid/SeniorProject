@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -56,7 +57,8 @@ import { CreateLanguageModalComponent } from './components/create-language-modal
     HttpClientModule,
     FileDropModule,
     ChartsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FlashMessagesModule.forRoot()
   ],
   providers: [
     NgbActiveModal,

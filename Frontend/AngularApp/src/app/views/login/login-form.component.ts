@@ -4,6 +4,7 @@ import { UserLoginService } from '../../services/user.login/user.login.service';
 import { User, UserTypes } from '../../models/User';
 import { AppComponent } from '../../app.component'; 
 import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { FlashMessagesService } from 'angular2-flash-messages';
 
 const REMEMBERED_USERNAME = 'remembered_username';
 
@@ -19,8 +20,9 @@ export class LoginFormComponent implements OnInit {
 
   constructor(private router: Router,
     private userLoginService: UserLoginService,
-    private comp: AppComponent, 
-    private cookies: CookieService
+    private comp: AppComponent,
+    private cookies: CookieService,
+    private flashMessage: FlashMessagesService
     ) { }
 
   ngOnInit() {
@@ -42,7 +44,7 @@ export class LoginFormComponent implements OnInit {
     // set the sumbitted flag to true
     this.submitted = true;
 
-    //Set username in cookies
+    // Set username in cookies
     this.cookies.put('username', this.model.username);
 
     this.userLoginService.authenticateWithUsernamePassword(this.model.username, this.model.password)
@@ -53,7 +55,7 @@ export class LoginFormComponent implements OnInit {
           if (user) {
             // login was successful
             console.log('Login success, userType = ', this.userLoginService.getUserType);
-            
+
             // make sure to remember the username if selected
             if (this.model.remember) {
               localStorage.setItem(REMEMBERED_USERNAME, this.model.username);
@@ -79,6 +81,8 @@ export class LoginFormComponent implements OnInit {
             // unsuccessfull login path
             localStorage.removeItem(REMEMBERED_USERNAME);
             console.log('Login failed');
+            // display a flash message
+            this.flashMessage.show('Login failed', {cssClass: 'alert alert-danger', timeout: 5000});
           }
         },
         (err: any) => {
