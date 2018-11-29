@@ -19,10 +19,10 @@
           {{title}}
         </h1>
         <div *ngIf="isAdmin; else notAdmin">
-          Admin
           <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <h3>Admin</h3>
             <ul class="navbar-nav nav">
-              <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+
               <li class="nav-item"><a class="nav-link" routerLink="/admin/manageUsers" routerLinkActive="active">Manage Users</a></li>
               <li class="nav-item"><a class="nav-link" routerLink="/admin/manageLanguages" routerLinkActive="active">Manage languages</a></li>
               <li class="nav-item"><a class="nav-link" routerLink="/admin/importFile" routerLinkActive="active">Import XML Files</a></li>
@@ -49,9 +49,6 @@
 
           <a class="navbar-brand" href="#"></a>
           <ul class="navbar-nav nav  mr-auto" style="position: relative; left: 35%;">
-            <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
           </ul>
         </nav>
       </ng-template>
