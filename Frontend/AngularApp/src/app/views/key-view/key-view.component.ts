@@ -23,8 +23,11 @@ export class KeyViewComponent implements OnInit {
   keys = []; // keylist must be static
   keys2 = [];  // this keylist can change
   keys3 = [];
+  keys4 = [];
 
   userLanguages: User;
+
+  available = true;
 
   resetKeysList = [];
   englishKeys = [];
@@ -64,6 +67,8 @@ export class KeyViewComponent implements OnInit {
   newKeys: String;
   totalKeys: String;
   approvedKeys: String;
+  dupString: String;
+  duplicateKeys = 0;
 
 
   criteria = '';
@@ -189,7 +194,31 @@ export class KeyViewComponent implements OnInit {
         this.currLanguageFull = ' in ' + lang.langName;
       }
     }
-    this.keys2 = this.keys3;
+    var bool = true;
+    this.duplicateKeys = 0;
+    this.keys2 = [];
+    this.keys4 = [];
+
+
+     //remove duplicate keys of same key name
+    for(let key of this.keys3){
+      for(let key2 of this.keys4){
+        if(key.keyName === key2.keyName){
+          bool = false;
+          this.duplicateKeys = +this.duplicateKeys + 1;
+          break;
+        }
+        else{
+          bool = true;
+        }
+      }
+      if(bool == true) {
+        this.keys2.push(key);
+      }
+      this.keys4.push(key);
+    }
+    this.dupString = '' + this.duplicateKeys;
+    //this.keys2 = this.keys3;
     console.log('keys:');
     console.log(this.keys);
   }
@@ -278,6 +307,8 @@ export class KeyViewComponent implements OnInit {
   }
 
   updateKeys() {
+    let username = this.cookies.get('username');
+    this.currKey.username = username;
     this.currKey.languageCode = this.currLanguage;
     this.currKey.languageVersion = this.currVersion;
     this.currKey.keyApproved = true;
@@ -285,6 +316,7 @@ export class KeyViewComponent implements OnInit {
     this.viewStatistics();
     this.getKeyList();
     var alert = document.getElementById("success-alert");
+
     //alert.hidden = false;
     setTimeout(function () {
       alert.hidden = false;
@@ -353,6 +385,25 @@ openModal(){
     this.approvalSelection = 'All'
     let modal = document.getElementById('changeVersion');
     modal.style.display = 'none';
+
+    this.currKey = {
+      keyId: -1,
+      languageCode: 'none',
+      languageVersion: 'none',
+      keyName: 'none',
+      keyApproved: false,
+      keyNew: false,
+      keyVariant: 'none',
+      keyNote: 'none',
+      sectionId: 'none',
+      sectionNote: 'none',
+      fileName: 'none',
+      fileNotes: 'none',
+      username: 'none'
+    };
+    this.englishTranslation = 'none';
+    this.available = true;
+
   }
    async getResetKey(key: LanguageKey){
   }

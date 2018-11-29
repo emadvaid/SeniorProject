@@ -57,7 +57,7 @@
         <option>Unapproved</option>
       </select>
       <div style="position: relative; padding-top: 5px">
-      <div id="keyList" class="panel panel-default" >
+      <div id="keyList" class="panel panel-default" style="  word-wrap: break-word">
 
         <table id="ledgerTable" style=" table-layout:fixed">
 
@@ -65,10 +65,10 @@
           <table>
             <tr>
             <td *ngIf="key.approved == true">
-              <button class="btn btn-link btn-xs" style="color: green; font-size: medium" (click)="selectKey(key)">{{returnEnglishName(key)}}</button>
+              <button class="btn btn-link btn-xs" style="color: green; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
             </td>
             <td *ngIf="key.approved == false">
-              <button class="btn btn-link btn-xs" style="color: red; font-size: medium" (click)="selectKey(key)">{{returnEnglishName(key)}}</button>
+              <button class="btn btn-link btn-xs" style="color: red; font-size: medium" (click)="selectKey(key); available = false">{{returnEnglishName(key)}}</button>
             </td>
             </tr>
             <tr *ngIf="searchType =='Translated Variant'">
@@ -102,6 +102,10 @@
           <td class="col-md-2">Total Keys:</td>
           <td class="col-md-2">{{ totalKeys }}</td>
         </tr>
+        <tr>
+          <td class="col-md-2">Duplicate Keys:</td>
+          <td class="col-md-2">{{ dupString }}</td>
+        </tr>
       </table>
       </div>
     </div>
@@ -130,9 +134,9 @@
             placeholder="Translation Text" [(ngModel)]="currKey.keyNote" [value]="currKey.keyNote" name="search2"></textarea>
         </div>
         <div style="position: relative; padding-top: 1%; float: right">
-          <button class="btn btn-primary" (click)="updateKeys()">Approve</button>
-          <button class="btn btn-info" (click)="saveKeys()" style="position: relative; left: 4px">Save</button>
-          <button class="btn btn-info" (click)="keyReset(currKey)" style="position: relative; left: 8px">Reset</button>
+          <button class="btn btn-primary" (click)="updateKeys()" [disabled]="available">Approve</button>
+          <button class="btn btn-info" (click)="saveKeys()" style="position: relative; left: 4px" [disabled]="available">Save</button>
+          <button class="btn btn-info" (click)="keyReset(currKey)" style="position: relative; left: 8px" [disabled]="available">Reset</button>
         </div>
       </div>
     </div>

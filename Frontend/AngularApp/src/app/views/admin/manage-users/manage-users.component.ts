@@ -3,7 +3,7 @@ import { Http } from '@angular/Http';
 import { Router } from '@angular/router';
 
 import { UserService } from '../../../services/users/user.service';
-import { User } from '../../../models/User';
+import { User, UserTypes } from '../../../models/User';
 import { Language } from 'src/app/models/Language';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CreateUserModalComponent } from 'src/app/components/create-user-modal/create-user-modal.component';
@@ -45,9 +45,14 @@ export class ManageUsersComponent implements OnInit {
      *  This method concats the languages toget as a string ie
      *    "en, es, fr"
      */
-    concatLangs(langArray: Array<Language>): string {
+    concatLangs(user: User): string {
+        if (user.typeAsStr === 'admin') {
+            return 'All Languages';
+        }
         // Do the work here
         const results = [];
+
+        const langArray: Array<Language> = user.languages;
 
         langArray.forEach((lang: Language) => {
             results.push(lang.langCode);

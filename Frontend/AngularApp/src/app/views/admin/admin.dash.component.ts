@@ -5,7 +5,9 @@ import { LanguagesService } from '../../services/languages/languages.service';
 
 @Component({
   selector: 'app-admin-dash',
-  templateUrl: './admin.dash.component.html'
+  templateUrl: './admin.dash.component.html',
+  styleUrls: ['./admin.dash.component.css']
+
 })
 export class AdminDashboardComponent implements OnInit {
   firstNewKeys: string;

@@ -100,7 +100,7 @@ public class TranslationResourceRec {
     public void setApproved(boolean approved) {this.approved = approved;}
 
     public String getUsername() { return username;}
-    public void setUsername(String folderPath) { this.username = username;}
+    public void setUsername(String username) { this.username = username;}
 
     public String getLanguageCode() { return languageCode;}
     public void setLanguageCode(String languageCode) {this.languageCode = languageCode ;}
