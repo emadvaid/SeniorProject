@@ -11,20 +11,3 @@ td, th {
     width: 100px;
   }
   
-  .seperator2 {
-    padding-top: 10%;
-    height: 55%;
-    width: 1px;
-    background: red;
-    position: absolute;
-    left: 36%;
-  }
-  
-  .seperator3 {
-    padding-top: 10%;
-    height: 55%;
-    width: 1px;
-    background: red;
-    position: absolute;
-    left: 58%;
-  }
