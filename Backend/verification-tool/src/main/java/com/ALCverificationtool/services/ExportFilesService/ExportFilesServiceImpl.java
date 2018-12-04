@@ -78,8 +78,6 @@ public class ExportFilesServiceImpl implements ExportFilesService {
             }
 
             while (i < keys.size() && keys.get(i).getFileName().equals(previousFileName)) {
-                //Create new section root
-                //Element section = new Element("section", root.getNamespace());
 
                 //Section ID
                 String sectionDB = keys.get(i).getSectionId();
