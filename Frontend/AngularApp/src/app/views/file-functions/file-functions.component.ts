@@ -165,6 +165,7 @@ export class FileFunctionsComponent implements OnInit {
           console.log('file-DeclareFunctionStmt.onUpload: error: ', err);
         }
       );
+      location.reload();
   }
 
   deleteVersion(event: any) {
