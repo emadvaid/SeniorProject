@@ -15,9 +15,9 @@ public class AdminUserPreload implements ApplicationRunner {
 
     @Value("${createAdmin:#{null}}")
     private String createAdmin;
-    @Value("${adminUserName:#{null}")
+    @Value("${adminUsername:#{null}}")
     private String adminUserName;
-    @Value("${adminPass:#{null}")
+    @Value("${adminPass:#{null}}")
     private String adminPassword;
 
     @Autowired
